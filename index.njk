@@ -1,51 +1,63 @@
-import { useEffect, useRef } from "preact/hooks";
-import * as THREE from "three";
+---
+layout: layout.njk
+title: ホームページ
+---
 
-interface IndexProps {
-  categories: string[];
-  articles: {
-    title: string;
-    category: string;
-    date: string;
-    url: string;
-  }[];
-}
+<div class="index-container">
+  <canvas id="gridCanvas" style="width: 100%; height: calc(100vh - 100px)"></canvas>
+</div>
 
-export default function Index({ categories = ['Resources', 'Article', 'Grossary', 'Person', 'Others'], articles = [] }: IndexProps) {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const sceneRef = useRef<THREE.Scene | null>(null);
-  const cameraRef = useRef<THREE.OrthographicCamera | null>(null);
-  const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
-  const tilesRef = useRef<THREE.Mesh[][]>([]);
-  const animationFrameRef = useRef<number>(0);
+<style>
+  .index-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+</style>
 
+<script type="module">
+  import * as THREE from "https://esm.sh/three@0.150.1";
+
+  // 変数の初期化
+  let canvas, scene, camera, renderer;
+  let tiles = [];
+  let animationFrame;
+
+  // カテゴリーとデータの設定
+  const categories = ['Resources', 'Article', 'Grossary', 'Person', 'Others'];
+  const articles = []; // ここに記事データが入ります
+  
   // カテゴリーごとの記事数を計算
   const categoryCount = categories.reduce((acc, category) => {
     acc[category] = articles.filter(article => article.category === category).length || 1;
     return acc;
-  }, {} as Record<string, number>);
+  }, {});
 
-  // 3Dシーンの初期化
-  useEffect(() => {
-    if (!canvasRef.current) return;
+  // 初期化関数
+  function init() {
+    canvas = document.getElementById('gridCanvas');
+    if (!canvas) return;
 
     // シーン作成
-    const scene = new THREE.Scene();
+    scene = new THREE.Scene();
     scene.background = new THREE.Color(0xf5f5f5);
-    sceneRef.current = scene;
 
     // レンダラー設定
-    const renderer = new THREE.WebGLRenderer({
-      canvas: canvasRef.current,
+    renderer = new THREE.WebGLRenderer({
+      canvas: canvas,
       antialias: true
     });
     renderer.setPixelRatio(window.devicePixelRatio);
-    rendererRef.current = renderer;
+    
+    // キャンバスサイズの設定
+    updateCanvasSize();
 
     // カメラ設定（等角投影）
     const aspect = window.innerWidth / (window.innerHeight - 100); // フッター高さを考慮
     const frustumSize = 10;
-    const camera = new THREE.OrthographicCamera(
+    camera = new THREE.OrthographicCamera(
       frustumSize * aspect / -2,
       frustumSize * aspect / 2,
       frustumSize / 2,
@@ -55,7 +67,6 @@ export default function Index({ categories = ['Resources', 'Article', 'Grossary'
     );
     camera.position.set(5, 5, 5);
     camera.lookAt(0, 0, 0);
-    cameraRef.current = camera;
 
     // 光源設定
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
@@ -66,10 +77,21 @@ export default function Index({ categories = ['Resources', 'Article', 'Grossary'
     scene.add(directionalLight);
 
     // グリッド作成
+    createGrid();
+
+    // イベントリスナー
+    canvas.addEventListener('click', handleCanvasClick);
+    window.addEventListener('resize', handleResize);
+
+    // アニメーション開始
+    animate();
+  }
+
+  // グリッド作成関数
+  function createGrid() {
     const gridSize = 5;
     const tileSize = 1;
     const spacing = 0.1;
-    const tiles: THREE.Mesh[][] = [];
 
     for (let x = 0; x < gridSize; x++) {
       tiles[x] = [];
@@ -103,80 +125,43 @@ export default function Index({ categories = ['Resources', 'Article', 'Grossary'
         
         tile.position.set(posX, posY, posZ);
         
-        // タイルをシーンに追加
+        // シーンに追加
         scene.add(tile);
         tiles[x][z] = tile;
       }
     }
+  }
+
+  // アニメーション関数
+  function animate() {
+    animationFrame = requestAnimationFrame(animate);
     
-    tilesRef.current = tiles;
-
-    // ウィンドウリサイズ対応
-    const handleResize = () => {
-      if (!cameraRef.current || !rendererRef.current || !canvasRef.current) return;
-      
-      const aspect = window.innerWidth / (window.innerHeight - 100); // フッター高さを考慮
-      const frustumSize = 10;
-      
-      cameraRef.current.left = frustumSize * aspect / -2;
-      cameraRef.current.right = frustumSize * aspect / 2;
-      cameraRef.current.top = frustumSize / 2;
-      cameraRef.current.bottom = frustumSize / -2;
-      cameraRef.current.updateProjectionMatrix();
-      
-      rendererRef.current.setSize(window.innerWidth, window.innerHeight - 100);
-    };
-
-    window.addEventListener('resize', handleResize);
-    handleResize();
-
-    // アニメーションループ
-    const animate = () => {
-      if (!sceneRef.current || !cameraRef.current || !rendererRef.current) return;
-      
-      animationFrameRef.current = requestAnimationFrame(animate);
-      rendererRef.current.render(sceneRef.current, cameraRef.current);
-    };
+    // カメラの回転アニメーション（オプション）
+    // camera.position.x = 5 * Math.cos(Date.now() * 0.0005);
+    // camera.position.z = 5 * Math.sin(Date.now() * 0.0005);
+    // camera.lookAt(0, 0, 0);
     
-    animate();
-
-    // クリーンアップ関数
-    return () => {
-      window.removeEventListener('resize', handleResize);
-      cancelAnimationFrame(animationFrameRef.current);
-      
-      // メモリリーク防止
-      tilesRef.current.forEach(row => {
-        row.forEach(tile => {
-          if (tile.geometry) tile.geometry.dispose();
-          if (tile.material instanceof THREE.Material) tile.material.dispose();
-        });
-      });
-      
-      if (rendererRef.current) {
-        rendererRef.current.dispose();
-      }
-    };
-  }, [categories, articles]);
+    renderer.render(scene, camera);
+  }
 
   // タイルクリック処理
-  const handleCanvasClick = (event: MouseEvent) => {
-    if (!canvasRef.current || !cameraRef.current || !sceneRef.current) return;
+  function handleCanvasClick(event) {
+    if (!canvas) return;
     
-    const rect = canvasRef.current.getBoundingClientRect();
+    const rect = canvas.getBoundingClientRect();
     const x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
     const y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
     
     const raycaster = new THREE.Raycaster();
-    raycaster.setFromCamera({ x, y }, cameraRef.current);
+    raycaster.setFromCamera({ x, y }, camera);
     
-    const intersects = raycaster.intersectObjects(sceneRef.current.children);
+    const intersects = raycaster.intersectObjects(scene.children);
     
     if (intersects.length > 0) {
       const clickedObject = intersects[0].object;
       
       // タイルを見つける
-      tilesRef.current.forEach((row, rowIndex) => {
+      tiles.forEach((row, rowIndex) => {
         row.forEach((tile, colIndex) => {
           if (tile === clickedObject) {
             if (rowIndex === 0) {
@@ -190,7 +175,7 @@ export default function Index({ categories = ['Resources', 'Article', 'Grossary'
               const targetHeight = currentHeight === 1 ? 1.5 : 1;
               
               // アニメーション
-              const animate = () => {
+              const animateTile = () => {
                 const diff = targetHeight - tile.scale.y;
                 if (Math.abs(diff) < 0.01) {
                   tile.scale.y = targetHeight;
@@ -198,33 +183,68 @@ export default function Index({ categories = ['Resources', 'Article', 'Grossary'
                 }
                 
                 tile.scale.y += diff * 0.1;
-                requestAnimationFrame(animate);
+                requestAnimationFrame(animateTile);
               };
               
-              animate();
+              animateTile();
             }
           }
         });
       });
     }
-  };
+  }
 
-  return (
-    <div className="index-container">
-      <canvas
-        ref={canvasRef}
-        onClick={handleCanvasClick}
-        style={{ width: '100%', height: 'calc(100vh - 100px)' }}
-      />
-      <style>{`
-        .index-container {
-          width: 100%;
-          height: 100vh;
-          overflow: hidden;
-          display: flex;
-          flex-direction: column;
-        }
-      `}</style>
-    </div>
-  );
-}
+  // リサイズ処理
+  function handleResize() {
+    updateCanvasSize();
+    
+    const aspect = window.innerWidth / (window.innerHeight - 100);
+    const frustumSize = 10;
+    
+    camera.left = frustumSize * aspect / -2;
+    camera.right = frustumSize * aspect / 2;
+    camera.top = frustumSize / 2;
+    camera.bottom = frustumSize / -2;
+    
+    camera.updateProjectionMatrix();
+    renderer.render(scene, camera);
+  }
+
+  // キャンバスサイズ更新
+  function updateCanvasSize() {
+    if (!canvas || !renderer) return;
+    
+    renderer.setSize(window.innerWidth, window.innerHeight - 100);
+  }
+
+  // クリーンアップ関数
+  function cleanup() {
+    if (animationFrame) {
+      cancelAnimationFrame(animationFrame);
+    }
+    
+    // イベントリスナー削除
+    if (canvas) {
+      canvas.removeEventListener('click', handleCanvasClick);
+    }
+    window.removeEventListener('resize', handleResize);
+    
+    // メモリ解放
+    tiles.forEach(row => {
+      row.forEach(tile => {
+        if (tile.geometry) tile.geometry.dispose();
+        if (tile.material instanceof THREE.Material) tile.material.dispose();
+      });
+    });
+    
+    if (renderer) {
+      renderer.dispose();
+    }
+  }
+
+  // DOMContentLoadedイベントでの初期化
+  document.addEventListener('DOMContentLoaded', init);
+  
+  // ページ離脱時のクリーンアップ
+  window.addEventListener('beforeunload', cleanup);
+</script>

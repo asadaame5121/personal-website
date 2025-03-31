@@ -1,10 +1,4 @@
-import { ComponentChildren } from "preact";
-
-interface FooterProps {
-  children?: ComponentChildren;
-}
-
-export default function Footer({ children }: FooterProps) {
+export default function Footer({ children }) {
   return (
     <>
       <footer className="site-footer">
@@ -17,7 +11,7 @@ export default function Footer({ children }: FooterProps) {
           </div>
         </div>
         <div className="footer-section">
-          <div className="copyright">© 2025 個人ウェブサイト All Rights Reserved.</div>
+          <div className="copyright"> 2025 個人ウェブサイト All Rights Reserved.</div>
         </div>
       </footer>
       <style>{`

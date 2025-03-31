@@ -1,10 +1,4 @@
-import { ComponentChildren } from "preact";
-
-interface HeaderProps {
-  children?: ComponentChildren;
-}
-
-export default function Header({ children }: HeaderProps) {
+export default function Header({ children }) {
   return (
     <>
       <header className="site-header">
