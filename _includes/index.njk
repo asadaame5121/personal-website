@@ -1,11 +1,17 @@
----
-title: 個人ウェブサイト
-layout: layout.njk
----
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <title>ホームページ</title>
+</head>
 
+<body>
+{{ comp.header() | safe }}
 <div id="canvas-container"></div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
     // シーンの作成
     const scene = new THREE.Scene();
@@ -165,13 +171,11 @@ layout: layout.njk
                 const categoryName = categories[tileNumber];
                 const count = categoryArticleCounts[categoryName];
                 console.log(`${categoryName}: ${count}記事`);
-                
-                // カテゴリータイルをクリックした場合は高さを変更しない
-                // 代わりにカテゴリー情報を表示
+                // カテゴリータイルをクリックした場合の処理
+                // 将来的にはここでカテゴリーページへの遷移などを実装
             } else {
-                // 通常のタイルは従来通り高さを変更
-                tile.scale.y = tile.scale.y === 1 ? 1.5 : 1;
-                tile.position.y = tile.scale.y / 2;
+                // 通常のタイルをクリックした場合の処理
+                console.log(`タイル番号: ${tileNumber}`);
             }
         }
     });
@@ -210,3 +214,6 @@ layout: layout.njk
         overflow: hidden;
     }
 </style>
+{{ comp.footer() | safe }}
+</body>
+</html>
