@@ -16,6 +16,7 @@
 <script>
     // シーンの作成
     const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xF2EFE2); // イングリッシュガーデンの象牙色に設定
     
     // カメラの設定（遠近感をなくすためにOrthographicCameraを使用）
     const aspect = window.innerWidth / window.innerHeight;
@@ -57,8 +58,40 @@
     
     // タイルマップの作成
     const tileSize = 1;
-    const gridSize = 12; // グリッドサイズを拡大
+    const maxGridSize = 20; // 最大グリッドサイズ
+    const minGridSize = 3;  // 最小グリッドサイズ
     const tiles = [];
+    
+    // 背景タイルのサイズと範囲
+    const bgTileSize = 1;
+    const bgGridSize = 40; // 背景グリッドは非常に広く
+    const bgTileHeight = 0.2; // 背景タイルは低く
+    
+    // 背景タイルの作成（メインのグリッドよりも広い範囲）
+    for (let x = -bgGridSize/2; x < bgGridSize/2; x++) {
+        for (let z = -bgGridSize/2; z < bgGridSize/2; z++) {
+            // メインのグリッド範囲内はスキップ（後で別に描画）
+            if (x >= -maxGridSize/2 && x < maxGridSize/2 && z >= -maxGridSize/2 && z < maxGridSize/2) {
+                continue;
+            }
+            
+            const geometry = new THREE.BoxGeometry(bgTileSize, bgTileHeight, bgTileSize);
+            const material = new THREE.MeshLambertMaterial({ 
+                color: 0x8B7355, // 土色の背景タイル
+                opacity: 0.8,
+                transparent: true
+            });
+            const bgTile = new THREE.Mesh(geometry, material);
+            
+            bgTile.position.set(
+                x * bgTileSize,
+                bgTileHeight / 2, // 高さの半分
+                z * bgTileSize
+            );
+            bgTile.receiveShadow = true;
+            sceneGroup.add(bgTile);
+        }
+    }
     
     function createTextTexture(text) {
         const canvas = document.createElement('canvas');
@@ -79,7 +112,7 @@
     const categories = {
         1: 'Resources',
         6: 'Article',
-        11: 'Grossary',
+        11: 'Glossary',
         16: 'Person',
         21: 'Others',
         // 追加カテゴリー
@@ -94,7 +127,7 @@
     const categoryArticleCounts = {
         'Resources': 1000,
         'Article': 20,
-        'Grossary': 50,
+        'Glossary': 50,
         'Person': 1000,
         'Others': 100,
         // 追加カテゴリーの記事数
@@ -126,52 +159,144 @@
         return minHeight + normalizedHeight * (maxHeight - minHeight);
     }
 
-    let counter = 1;
-    for (let x = 0; x < gridSize; x++) {
-        for (let z = 0; z < gridSize; z++) {
-            const geometry = new THREE.BoxGeometry(tileSize, tileSize, tileSize);
-            
-            // カテゴリータイルの色を変更
-            let tileColor = 0x6B8E23; // デフォルト色
-            let tileHeight = 1; // デフォルト高さ
-            
-            if (categories[counter]) {
-                tileColor = 0x4682B4; // カテゴリータイルの色
-                const categoryName = categories[counter];
-                const articleCount = categoryArticleCounts[categoryName];
-                tileHeight = calculateHeightFromCount(articleCount);
-            }
-            
-            const material = new THREE.MeshLambertMaterial({ color: tileColor });
-            const tile = new THREE.Mesh(geometry, material);
-            
-            // 高さに基づいてスケールと位置を調整
-            tile.scale.y = tileHeight;
-            
-            tile.position.set(
-                (x - gridSize / 2) * tileSize,
-                tileHeight * tileSize / 2, // 高さに応じて位置調整
-                (z - gridSize / 2) * tileSize
-            );
-            tile.castShadow = true;
-            tile.receiveShadow = true;
-            
-            // テキスト表示（カテゴリーまたは番号）
-            const displayText = categories[counter] || counter.toString();
-            const textSize = categories[counter] ? 0.7 : 0.5; // テキストサイズを調整
-            
-            const textMaterial = new THREE.MeshBasicMaterial({ map: createTextTexture(displayText), transparent: true });
+    // 総記事数を計算
+    const totalArticles = Object.values(categoryArticleCounts).reduce((sum, count) => sum + count, 0);
+    
+    // 総記事数からグリッドサイズを計算
+    function calculateGridSize(totalCount) {
+        const minArticles = 100;  // この記事数でminGridSize
+        const maxArticles = 3000; // この記事数でmaxGridSize
+        
+        if (totalCount <= minArticles) return minGridSize;
+        if (totalCount >= maxArticles) return maxGridSize;
+        
+        // 線形に補間
+        const ratio = (totalCount - minArticles) / (maxArticles - minArticles);
+        return Math.floor(minGridSize + ratio * (maxGridSize - minGridSize));
+    }
+    
+    // 現在の記事数に基づいてグリッドサイズを決定
+    const currentGridSize = calculateGridSize(totalArticles);
+    console.log(`総記事数: ${totalArticles}, グリッドサイズ: ${currentGridSize}`);
+    
+    // タイルの配置をランダム化するための関数
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    // カテゴリータイルの位置を決定（中心付近に配置）
+    const categoryPositions = {};
+    const usedPositions = new Set(); // 既に使用された位置を記録
+    
+    // カテゴリータイルを配置する関数
+    function placeCategoryTile(categoryId, categoryName) {
+        // カテゴリーの記事数に応じた半径を計算
+        const articleCount = categoryArticleCounts[categoryName];
+        const radius = Math.min(Math.floor(currentGridSize / 3), Math.ceil(Math.sqrt(articleCount) / 2));
+        
+        // 中心付近のランダムな位置を選択
+        let x, z;
+        let attempts = 0;
+        const maxAttempts = 50;
+        
+        do {
+            x = getRandomInt(-radius, radius);
+            z = getRandomInt(-radius, radius);
+            attempts++;
+        } while (usedPositions.has(`${x},${z}`) && attempts < maxAttempts);
+        
+        // 位置が見つからなかった場合は適当な位置を使用
+        if (attempts >= maxAttempts) {
+            x = getRandomInt(-currentGridSize/2 + 1, currentGridSize/2 - 1);
+            z = getRandomInt(-currentGridSize/2 + 1, currentGridSize/2 - 1);
+        }
+        
+        usedPositions.add(`${x},${z}`);
+        categoryPositions[categoryId] = {x, z, articleCount};
+    }
+    
+    // カテゴリータイルを配置
+    Object.entries(categories).forEach(([id, name]) => {
+        placeCategoryTile(parseInt(id), name);
+    });
+    
+    // タイルを生成する関数
+    function createTile(x, z, isCategory = false, categoryName = null) {
+        const geometry = new THREE.BoxGeometry(tileSize, tileSize, tileSize);
+        
+        // タイルの色と高さを設定
+        let tileColor = 0x6B8E23; // デフォルト色
+        let tileHeight = 1; // デフォルト高さ
+        
+        if (isCategory && categoryName) {
+            tileColor = 0x4682B4; // カテゴリータイルの色
+            const articleCount = categoryArticleCounts[categoryName];
+            tileHeight = calculateHeightFromCount(articleCount);
+        }
+        
+        const material = new THREE.MeshLambertMaterial({ color: tileColor });
+        const tile = new THREE.Mesh(geometry, material);
+        
+        // 高さに基づいてスケールと位置を調整
+        tile.scale.y = tileHeight;
+        
+        tile.position.set(
+            x * tileSize,
+            tileHeight * tileSize / 2, // 高さに応じて位置調整
+            z * tileSize
+        );
+        tile.castShadow = true;
+        tile.receiveShadow = true;
+        
+        if (isCategory) {
+            // テキスト表示（カテゴリー名）
+            const textSize = 0.7; // カテゴリー名は小さめに
+            const textMaterial = new THREE.MeshBasicMaterial({ map: createTextTexture(categoryName), transparent: true });
             const textGeometry = new THREE.PlaneGeometry(tileSize * textSize, tileSize * textSize);
             const textMesh = new THREE.Mesh(textGeometry, textMaterial);
             textMesh.position.set(tile.position.x, tileHeight * tileSize + 0.1, tile.position.z);
             textMesh.rotation.x = -Math.PI / 2;
             sceneGroup.add(textMesh);
-            
-            sceneGroup.add(tile);
-            tiles.push(tile);
-            counter++;
         }
+        
+        sceneGroup.add(tile);
+        tiles.push(tile);
+        return tile;
     }
+    
+    // カテゴリータイルを生成
+    Object.entries(categories).forEach(([id, name]) => {
+        const pos = categoryPositions[parseInt(id)];
+        if (pos) {
+            createTile(pos.x, pos.z, true, name);
+            
+            // カテゴリーの記事数に応じてその周りにタイルを生成
+            const articleCount = pos.articleCount;
+            const tileCount = Math.min(Math.ceil(Math.sqrt(articleCount)), 20); // 最大20個のタイル
+            
+            // カテゴリータイルの周りにタイルを生成
+            for (let i = 0; i < tileCount; i++) {
+                const radius = Math.min(i / 2 + 1, currentGridSize / 2 - 1);
+                const angle = (i / tileCount) * Math.PI * 2;
+                
+                const offsetX = Math.round(Math.cos(angle) * radius);
+                const offsetZ = Math.round(Math.sin(angle) * radius);
+                
+                const tileX = pos.x + offsetX;
+                const tileZ = pos.z + offsetZ;
+                
+                // グリッド内かつ未使用の位置にのみタイルを配置
+                if (
+                    tileX >= -currentGridSize/2 && tileX < currentGridSize/2 &&
+                    tileZ >= -currentGridSize/2 && tileZ < currentGridSize/2 &&
+                    !usedPositions.has(`${tileX},${tileZ}`)
+                ) {
+                    usedPositions.add(`${tileX},${tileZ}`);
+                    createTile(tileX, tileZ);
+                }
+            }
+        }
+    });
     
     // Raycasterを使ってクリックしたタイルを検出
     const raycaster = new THREE.Raycaster();
@@ -185,19 +310,13 @@
         
         if (intersects.length > 0) {
             const tile = intersects[0].object;
-            const tileIndex = tiles.indexOf(tile);
-            const tileNumber = tileIndex + 1;
+            // タイルをクリックした時の処理
+            console.log(`タイルがクリックされました: 位置(${tile.position.x}, ${tile.position.z})`);
             
-            if (categories[tileNumber]) {
-                const categoryName = categories[tileNumber];
-                const count = categoryArticleCounts[categoryName];
-                console.log(`${categoryName}: ${count}記事`);
-                // カテゴリータイルをクリックした場合の処理
-                // 将来的にはここでカテゴリーページへの遷移などを実装
-            } else {
-                // 通常のタイルをクリックした場合の処理
-                console.log(`タイル番号: ${tileNumber}`);
-            }
+            // タイルの高さをランダムに変更（デモ用）
+            const newHeight = 1 + Math.random() * 4;
+            tile.scale.y = newHeight;
+            tile.position.y = newHeight * tileSize / 2;
         }
     });
     
@@ -237,5 +356,6 @@
     }
 </style>
 
+{{ comp.footer() | safe }}
 </body>
 </html>

@@ -115,7 +115,7 @@ site.process([".html"], (pages) => {
           // ファイル名の比較（大文字小文字を無視）
           return pageFilename === filename || 
                  (p.data.title && p.data.title.toLowerCase() === filename) ||
-                 (p.data.id && p.data.id.toLowerCase() === filename);
+                 (p.data.id && typeof p.data.id === 'string' && p.data.id.toLowerCase() === filename);
         });
         
         if (found) {
