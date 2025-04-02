@@ -1,7 +1,8 @@
 ---
 layout: index.njk
 title: ホームページ
+url: /Index
 ---
-Index.md
+
 
 hogehoge
