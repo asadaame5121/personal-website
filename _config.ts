@@ -56,7 +56,7 @@ site.use(postcss({
   // 処理対象の拡張子
   extensions: [".css"],
   // インクルードパス（@importで参照するディレクトリ）
-  includes: "_includes",
+  includes: "assets/styles.css",
   // 使用するプラグイン
   plugins: [
     autoprefixer(), // ベンダープレフィックスを自動追加

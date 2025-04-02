@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <link rel="stylesheet" href="/assets/styles.css">
-    <title>ホームページ</title>
+    <title>DropGarden</title>
 </head>
 
 <body>
-{{ comp.header() | safe }}
+
 <div id="canvas-container"></div>
 
 <script>
@@ -19,13 +19,13 @@
     
     // カメラの設定（遠近感をなくすためにOrthographicCameraを使用）
     const aspect = window.innerWidth / window.innerHeight;
-    const camera = new THREE.OrthographicCamera(-5 * aspect, 5 * aspect, 5, -5, 0.1, 100);
-    camera.position.set(10, 5, 10); // カメラの位置を下げる
+    const camera = new THREE.OrthographicCamera(-10 * aspect, 10 * aspect, 10, -10, 0.1, 100);
+    camera.position.set(15, 10, 15); // カメラの位置を調整
     camera.lookAt(0, -2, 0); // カメラの角度を調整
     
     // レンダラーの設定
     const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth, window.innerHeight - 180); // ヘッダーとフッターの高さを考慮
+    renderer.setSize(window.innerWidth, window.innerHeight); // ウィンドウ全体を使用
     renderer.shadowMap.enabled = true;
     
     // DOMが読み込まれた後にレンダラーを追加
@@ -37,19 +37,27 @@
     const sceneGroup = new THREE.Group();
     scene.add(sceneGroup);
     
-    // シーンを下に移動してフッターに接するように調整
-    sceneGroup.position.y = -5; // さらに下に移動
+    // シーンを下に移動して調整
+    sceneGroup.position.y = -5; // 位置調整
     
     // ライトの追加
     const light = new THREE.DirectionalLight(0xffffff, 1);
-    light.position.set(10, 5, 10); // ライトの位置を下げる
+    light.position.set(15, 10, 15); // ライトの位置を調整
     light.castShadow = true;
+    light.shadow.mapSize.width = 2048;
+    light.shadow.mapSize.height = 2048;
+    light.shadow.camera.near = 0.5;
+    light.shadow.camera.far = 50;
+    light.shadow.camera.left = -20;
+    light.shadow.camera.right = 20;
+    light.shadow.camera.top = 20;
+    light.shadow.camera.bottom = -20;
     sceneGroup.add(light);
     sceneGroup.add(new THREE.AmbientLight(0x404040));
     
     // タイルマップの作成
     const tileSize = 1;
-    const gridSize = 5;
+    const gridSize = 12; // グリッドサイズを拡大
     const tiles = [];
     
     function createTextTexture(text) {
@@ -73,16 +81,28 @@
         6: 'Article',
         11: 'Grossary',
         16: 'Person',
-        21: 'Others'
+        21: 'Others',
+        // 追加カテゴリー
+        36: 'Projects',
+        48: 'Books',
+        60: 'Media',
+        72: 'Tools',
+        100: 'Archive'
     };
 
     // カテゴリごとの記事数
     const categoryArticleCounts = {
         'Resources': 1000,
         'Article': 20,
-        'Grossary': 50,  // 仮の値
+        'Grossary': 50,
         'Person': 1000,
-        'Others': 100    // 仮の値
+        'Others': 100,
+        // 追加カテゴリーの記事数
+        'Projects': 30,
+        'Books': 200,
+        'Media': 80,
+        'Tools': 45,
+        'Archive': 500
     };
 
     // 記事数から高さを計算する関数
@@ -138,7 +158,7 @@
             
             // テキスト表示（カテゴリーまたは番号）
             const displayText = categories[counter] || counter.toString();
-            const textSize = categories[counter] ? 0.7 : 1; // カテゴリー名は小さめに
+            const textSize = categories[counter] ? 0.7 : 0.5; // テキストサイズを調整
             
             const textMaterial = new THREE.MeshBasicMaterial({ map: createTextTexture(displayText), transparent: true });
             const textGeometry = new THREE.PlaneGeometry(tileSize * textSize, tileSize * textSize);
@@ -158,7 +178,7 @@
     const mouse = new THREE.Vector2();
     window.addEventListener('click', (event) => {
         mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-        mouse.y = -(event.clientY / (window.innerHeight - 180)) * 2 + 1;
+        mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
         
         raycaster.setFromCamera(mouse, camera);
         const intersects = raycaster.intersectObjects(tiles);
@@ -183,11 +203,11 @@
     
     // ウィンドウのリサイズ対応
     window.addEventListener('resize', () => {
-        const newAspect = window.innerWidth / (window.innerHeight - 180);
-        camera.left = -5 * newAspect;
-        camera.right = 5 * newAspect;
+        const newAspect = window.innerWidth / window.innerHeight;
+        camera.left = -10 * newAspect;
+        camera.right = 10 * newAspect;
         camera.updateProjectionMatrix();
-        renderer.setSize(window.innerWidth, window.innerHeight - 180);
+        renderer.setSize(window.innerWidth, window.innerHeight);
     });
     
     // アニメーションループ
@@ -199,22 +219,23 @@
 </script>
 
 <style>
-    body { 
-        margin: 0; 
+    body, html {
+        margin: 0;
         padding: 0;
-        overflow: hidden; 
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-    }
-    #canvas-container {
-        flex: 1;
-        position: relative;
-        display: flex;
-        align-items: flex-end; /* Canvasを下寄せにする */
         overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #canvas-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
     }
 </style>
-{{ comp.footer() | safe }}
+
 </body>
 </html>
