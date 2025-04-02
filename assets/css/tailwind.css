@@ -1,0 +1,52 @@
+/* TailwindCSS基本スタイル */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* カスタムスタイル */
+@layer base {
+  body {
+    @apply antialiased;
+  }
+  
+  h1 {
+    @apply text-3xl font-bold mb-4 text-deep-green;
+  }
+  
+  h2 {
+    @apply text-2xl font-bold mb-3 text-deep-green;
+  }
+  
+  h3 {
+    @apply text-xl font-bold mb-2 text-deep-green;
+  }
+  
+  a {
+    @apply text-lavender hover:text-rose-pink transition-colors;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-deep-green text-ivory hover:bg-opacity-90;
+  }
+  
+  .btn-secondary {
+    @apply bg-lavender text-ivory hover:bg-opacity-90;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md p-4 border border-gray-200;
+  }
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 768px) {
+  .container {
+    @apply px-4;
+  }
+}

@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* カスタムスタイル */
+@layer components {
+  /* ここにコンポーネントスタイルを追加 */
+}
+
+@layer utilities {
+  /* ここにユーティリティクラスを追加 */
+}
