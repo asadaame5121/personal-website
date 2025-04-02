@@ -1,0 +1,140 @@
+/* Obsidianスタイルのコールアウト */
+.callout {
+  border-left: 4px solid;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.callout-title {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.1em;
+}
+
+.callout-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2em;
+}
+
+.callout-content {
+  margin-left: 1.5rem;
+}
+
+/* 各種コールアウトタイプのスタイル */
+.callout-note {
+  border-color: var(--color-main-lavender, #A991C5);
+  background-color: rgba(169, 145, 197, 0.1);
+}
+
+.callout-note .callout-icon::before {
+  content: "📝";
+}
+
+.callout-warning, .callout-caution {
+  border-color: #e7c000;
+  background-color: rgba(231, 192, 0, 0.1);
+}
+
+.callout-warning .callout-icon::before, 
+.callout-caution .callout-icon::before {
+  content: "⚠️";
+}
+
+.callout-danger, .callout-error {
+  border-color: #ff5555;
+  background-color: rgba(255, 85, 85, 0.1);
+}
+
+.callout-danger .callout-icon::before,
+.callout-error .callout-icon::before {
+  content: "🚫";
+}
+
+.callout-info, .callout-tip {
+  border-color: var(--color-main-green, #2E5A30);
+  background-color: rgba(46, 90, 48, 0.1);
+}
+
+.callout-info .callout-icon::before,
+.callout-tip .callout-icon::before {
+  content: "💡";
+}
+
+.callout-important {
+  border-color: var(--color-accent-pink, #D6798E);
+  background-color: rgba(214, 121, 142, 0.1);
+}
+
+.callout-important .callout-icon::before {
+  content: "❗";
+}
+
+/* ウィキリンクのスタイル */
+.wiki-link {
+  color: var(--color-main-lavender, #A991C5);
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+.wiki-link:hover {
+  color: var(--color-accent-pink, #D6798E);
+}
+
+/* 存在しないページへのリンク */
+.wiki-link-missing {
+  color: var(--color-accent-pink, #D6798E);
+  border-bottom: 1px dashed red;
+}
+
+.wiki-link-missing:hover {
+  color: #ff4d6d;
+  background-color: rgba(255, 0, 0, 0.05);
+}
+
+/* バックリンク（逆参照）セクション */
+.backlinks-container {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: rgba(169, 145, 197, 0.1);
+  border-radius: 4px;
+  border-left: 4px solid var(--color-main-lavender, #A991C5);
+}
+
+.backlinks-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.1em;
+  color: var(--color-main-lavender, #A991C5);
+}
+
+.backlinks-list {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.backlinks-list li {
+  margin-bottom: 0.5rem;
+}
+
+.backlinks-list a {
+  color: var(--color-main-lavender, #A991C5);
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+.backlinks-list a:hover {
+  color: var(--color-accent-pink, #D6798E);
+}
+
+/* ダークモード対応 */
+@media (prefers-color-scheme: dark) {
+  .callout {
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+}
