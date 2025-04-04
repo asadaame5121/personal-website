@@ -66,9 +66,10 @@ site.use(postcss({
     }),
   ],
 }));
-
-site.copy("assets");
-
+// assetsディレクトリ内のファイルを個別にコピー
+site.copy("assets/css");
+site.copy("assets/images");
+site.copy("assets/styles.css");
 site.data("components", {
   header: "_components/header.njk",
   footer: "_components/footer.njk",

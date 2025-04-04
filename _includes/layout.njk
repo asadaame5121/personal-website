@@ -4,170 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/styles.css">
-    <link rel="stylesheet" href="/assets/obsidian-styles.css">
+    <link rel="icon" href="/assets/images/favicon.jpeg" type="image/jpeg">
     <title>{{ title }}</title>
-    <style>
-        :root {
-            /* イングリッシュガーデンカラースキーム */
-            --color-main-green: #2E5A30;
-            --color-main-lavender: #A991C5;
-            --color-main-ivory: #F2EFE2;
-            --color-accent-pink: #D6798E;
-            --color-accent-brown: #785E49;
-            
-            /* ダークモード用 */
-            --color-dark-bg: #1A2A1C;
-            --color-dark-text: #E8E6DD;
-        }
-        
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: var(--color-main-ivory);
-            margin: 0;
-            padding: 0;
-        }
-        
-        /* ダークモード */
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: var(--color-dark-bg);
-                color: var(--color-dark-text);
-            }
-        }
-        
-        header {
-            background-color: var(--color-main-green);
-            color: white;
-            padding: 1rem;
-        }
-        
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-        
-        footer {
-            background-color: var(--color-main-green);
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        
-        /* 記事スタイル */
-        article {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 2rem;
-            margin-bottom: 2rem;
-        }
-        
-        @media (prefers-color-scheme: dark) {
-            article {
-                background-color: #2A3A2C;
-            }
-        }
-        
-        /* タグとカテゴリー */
-        .tags {
-            margin: 1.5rem 0;
-        }
-        
-        .tag {
-            display: inline-block;
-            background-color: var(--color-main-lavender);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
-        }
-        
-        .category {
-            display: inline-block;
-            background-color: var(--color-accent-pink);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 4px;
-            margin-right: 0.5rem;
-            font-weight: bold;
-        }
-        
-        /* 前後記事ナビゲーション */
-        .post-navigation {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 3rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid #ddd;
-        }
-        
-        .post-navigation a {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background-color: var(--color-main-green);
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-        
-        .post-navigation a:hover {
-            background-color: #1E3A20;
-        }
-        
-        /* レスポンシブデザイン */
-        @media (max-width: 768px) {
-            main {
-                padding: 1rem;
-            }
-            
-            article {
-                padding: 1.5rem;
-            }
-        }
-    </style>
 </head>
 <body>
     {{ comp.header() | safe }}
     
     <main>
-        <article>
-            <h1>{{ title }}</h1>
+        <article class="h-entry">
+            <h1 class="p-name">{{ title }}</h1>
             
             {% if date %}
-            <div class="post-date">{{ date }}</div>
+            <div class="post-date">
+                <time class="dt-published" datetime="{{ date }}">{{ date }}</time>
+            </div>
             {% endif %}
             
             {% if category %}
-            <div class="category">{{ category }}</div>
+            <div>
+                <a href="/category/{{ category }}" class="category-main p-category">{{ category }}</a>
+            </div>
             {% endif %}
             
-            <div class="content">
+            <div class="e-content">
                 {{ content | safe }}
             </div>
             
             {% if tags %}
             <div class="tags">
                 {% for tag in tags %}
-                <span class="tag">{{ tag }}</span>
+                <a href="/tags/{{ tag }}" class="p-category">{{ tag }}</a>
                 {% endfor %}
+            </div>
+            {% endif %}
+            
+            {% if author %}
+            <div class="p-author h-card">
+                {% if author.photo %}
+                <img src="{{ author.photo }}" alt="{{ author.name }}">
+                {% endif %}
+                <div class="p-author-info">
+                    <div class="p-author-name">{{ author.name }}</div>
+                    {% if author.bio %}
+                    <div>{{ author.bio }}</div>
+                    {% endif %}
+                </div>
             </div>
             {% endif %}
             
             <div class="post-navigation">
                 {% if previousPost %}
-                <a href="{{ previousPost.url }}" class="prev-post">← 前の記事</a>
+                <a href="{{ previousPost.url }}" class="prev-post u-url">← 前の記事</a>
                 {% else %}
                 <span></span>
                 {% endif %}
                 
                 {% if nextPost %}
-                <a href="{{ nextPost.url }}" class="next-post">次の記事 →</a>
+                <a href="{{ nextPost.url }}" class="next-post u-url">次の記事 →</a>
                 {% else %}
                 <span></span>
                 {% endif %}

@@ -1,3 +1,11 @@
+---
+layout: article.njk
+title: readme
+---
+
+
+hogehoge
+---
 とりあえず
 
 [[Index.md]]
