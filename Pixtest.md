@@ -1,0 +1,3 @@
+---
+layout: pixi-isometric.njk
+---

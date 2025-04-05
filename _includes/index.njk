@@ -18,6 +18,22 @@
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0xF2EFE2); // イングリッシュガーデンの象牙色に設定
     
+    // テクスチャーローダーの作成
+    const textureLoader = new THREE.TextureLoader();
+    
+    // テクスチャーの読み込み
+    const waterTexture = textureLoader.load('/assets/images/Tiles/water_center_N.png');
+    const grassTexture = textureLoader.load('/assets/images/Tiles/grass_center_N.png');
+    const sandTexture = textureLoader.load('/assets/images/Tiles/sand_center_N.png');
+    
+    // テクスチャーの繰り返し設定
+    waterTexture.wrapS = THREE.RepeatWrapping;
+    waterTexture.wrapT = THREE.RepeatWrapping;
+    grassTexture.wrapS = THREE.RepeatWrapping;
+    grassTexture.wrapT = THREE.RepeatWrapping;
+    sandTexture.wrapS = THREE.RepeatWrapping;
+    sandTexture.wrapT = THREE.RepeatWrapping;
+    
     // カメラの設定（遠近感をなくすためにOrthographicCameraを使用）
     const aspect = window.innerWidth / window.innerHeight;
     const camera = new THREE.OrthographicCamera(-10 * aspect, 10 * aspect, 10, -10, 0.1, 100);
@@ -209,7 +225,8 @@
             
             const geometry = new THREE.BoxGeometry(bgTileSize, bgTileHeight, bgTileSize);
             const material = new THREE.MeshLambertMaterial({ 
-                color: landColors.shallowSand, // 浅瀬の砂色を使用
+                map: sandTexture,
+                color: 0xFFFFFF, // テクスチャーの色を活かすために白色
                 opacity: 0.8,
                 transparent: true
             });
@@ -299,10 +316,43 @@
     // 大陸型配置のタイルを生成
     const continentTiles = createContinentMap(currentGridSize);
     
+    // テクスチャーは既に読み込み済み
+    
     // タイルを作成して配置
     continentTiles.forEach(tile => {
         const geometry = new THREE.BoxGeometry(tileSize, tile.height, tileSize);
-        const material = new THREE.MeshLambertMaterial({ color: tile.color });
+        
+        // タイルの種類に応じたマテリアルを作成
+        let material;
+        
+        if (tile.type === 'river') {
+            // 川のタイル
+            material = new THREE.MeshLambertMaterial({ 
+                map: waterTexture,
+                color: 0xFFFFFF, // テクスチャーの色を保持するために白色を使用
+                transparent: true,
+                opacity: 0.9
+            });
+        } else if (tile.type === 'land') {
+            // 地面のタイル
+            material = new THREE.MeshLambertMaterial({ 
+                map: grassTexture,
+                color: 0xFFFFFF // テクスチャーの色を保持するために白色を使用
+            });
+        } else if (tile.type === 'category' || tile.type === 'article') {
+            // カテゴリーと記事のタイル
+            material = new THREE.MeshLambertMaterial({ color: tile.color });
+        } else if (tile.type === 'topicnote') {
+            // Topicnoteのタイル
+            material = new THREE.MeshLambertMaterial({ 
+                map: sandTexture,
+                color: 0xFFD700 // 黄金色を適用
+            });
+        } else {
+            // その他のタイル
+            material = new THREE.MeshLambertMaterial({ color: tile.color });
+        }
+        
         const mesh = new THREE.Mesh(geometry, material);
         
         mesh.position.set(
