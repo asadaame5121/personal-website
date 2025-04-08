@@ -1,0 +1,145 @@
+{
+  "frames": {
+    "box.png": {
+      "frame": {"x": 546, "y": 519, "w": 24, "h": 28},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 24, "h": 28},
+      "sourceSize": {"w": 24, "h": 28}
+    },
+    "box_treasure.png": {
+      "frame": {"x": 546, "y": 465, "w": 32, "h": 28},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 32, "h": 28},
+      "sourceSize": {"w": 32, "h": 28}
+    },
+    "box_wide.png": {
+      "frame": {"x": 512, "y": 403, "w": 36, "h": 28},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 36, "h": 28},
+      "sourceSize": {"w": 36, "h": 28}
+    },
+    "cart.png": {
+      "frame": {"x": 512, "y": 356, "w": 40, "h": 27},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 40, "h": 27},
+      "sourceSize": {"w": 40, "h": 27}
+    },
+    "cart_horse.png": {
+      "frame": {"x": 0, "y": 104, "w": 64, "h": 34},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 64, "h": 34},
+      "sourceSize": {"w": 64, "h": 34}
+    },
+    "cart_top.png": {
+      "frame": {"x": 512, "y": 48, "w": 58, "h": 48},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 58, "h": 48},
+      "sourceSize": {"w": 58, "h": 48}
+    },
+    "character_horse.png": {
+      "frame": {"x": 546, "y": 431, "w": 32, "h": 34},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 32, "h": 34},
+      "sourceSize": {"w": 32, "h": 34}
+    },
+    "character_man.png": {
+      "frame": {"x": 564, "y": 164, "w": 16, "h": 25},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 16, "h": 25},
+      "sourceSize": {"w": 16, "h": 25}
+    },
+    "character_wizard.png": {
+      "frame": {"x": 570, "y": 48, "w": 16, "h": 25},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 16, "h": 25},
+      "sourceSize": {"w": 16, "h": 25}
+    },
+    "character_woman.png": {
+      "frame": {"x": 570, "y": 519, "w": 16, "h": 26},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 16, "h": 26},
+      "sourceSize": {"w": 16, "h": 26}
+    },
+    "tileGrass.png": {
+      "frame": {"x": 256, "y": 220, "w": 64, "h": 74},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 64, "h": 74},
+      "sourceSize": {"w": 64, "h": 74}
+    },
+    "tileWater_1.png": {
+      "frame": {"x": 0, "y": 489, "w": 64, "h": 75},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 64, "h": 75},
+      "sourceSize": {"w": 64, "h": 75}
+    },
+    "tileWater_2.png": {
+      "frame": {"x": 0, "y": 415, "w": 64, "h": 74},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 64, "h": 74},
+      "sourceSize": {"w": 64, "h": 74}
+    },
+    "tileWater_3.png": {
+      "frame": {"x": 0, "y": 340, "w": 64, "h": 75},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 64, "h": 75},
+      "sourceSize": {"w": 64, "h": 75}
+    },
+    "tileWater_4.png": {
+      "frame": {"x": 0, "y": 265, "w": 64, "h": 75},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 64, "h": 75},
+      "sourceSize": {"w": 64, "h": 75}
+    },
+    "tileStone.png": {
+      "frame": {"x": 64, "y": 366, "w": 64, "h": 74},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 64, "h": 74},
+      "sourceSize": {"w": 64, "h": 74}
+    },
+    "tileDirt.png": {
+      "frame": {"x": 320, "y": 440, "w": 64, "h": 74},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 64, "h": 74},
+      "sourceSize": {"w": 64, "h": 74}
+    },
+    "tileWood.png": {
+      "frame": {"x": 0, "y": 191, "w": 64, "h": 74},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 64, "h": 74},
+      "sourceSize": {"w": 64, "h": 74}
+    },
+    "foliageTree_green.png": {
+      "frame": {"x": 552, "y": 336, "w": 29, "h": 90},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 29, "h": 90},
+      "sourceSize": {"w": 29, "h": 90}
+    }
+  },
+  "meta": {
+    "app": "Manual",
+    "version": "1.0",
+    "image": "blockPack_spritesheet.png",
+    "format": "RGBA8888",
+    "size": {"w": 600, "h": 600},
+    "scale": "1"
+  }
+}

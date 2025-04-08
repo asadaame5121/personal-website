@@ -14,6 +14,7 @@ class PixiIsometricMap {
       mapWidth: 60,
       mapHeight: 40,
       onTileClick: null,
+      tileOverlap: 4,  // タイル同士の重なり具合を調整するパラメータ（値が大きいほど密着する）
     }, options);
 
     this.container = typeof this.options.container === 'string'
@@ -221,12 +222,15 @@ class PixiIsometricMap {
     // スプライトの作成
     const tile = new PIXI.Sprite(texture);
     
-    // アイソメトリック座標の計算
-    const isoX = (x - y) * this.options.tileWidth / 2;
-    const isoY = (x + y) * this.options.tileHeight / 2 - height * this.options.tileHeight;
+    // アイソメトリック座標の計算（タイルを密着させるための調整）
+    // X方向の計算：タイルを横方向に密着させる
+    const isoX = (x - y) * (this.options.tileWidth / 2 - this.options.tileOverlap);
+    // Y方向の計算：タイルを縦方向に密着させる
+    const isoY = (x + y) * (this.options.tileHeight / 2 - this.options.tileOverlap / 2) - height * this.options.tileHeight;
     
     tile.x = isoX;
     tile.y = isoY;
+    // タイルの表示サイズを調整（幅と高さを正確に設定）
     tile.width = this.options.tileWidth;
     tile.height = this.options.tileWidth; // 正方形のタイル
     

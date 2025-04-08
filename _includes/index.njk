@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <link rel="stylesheet" href="/assets/styles.css">
     <title>DropGarden</title>
 </head>
@@ -12,444 +10,374 @@
 <body>
 
 <div id="canvas-container"></div>
+<div class="tile-info" id="tile-info"></div>
 
+<script src="https://pixijs.download/v8.8.0/pixi.min.js"></script>
 <script>
-    // シーンの作成
-    const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0xF2EFE2); // イングリッシュガーデンの象牙色に設定
-    
-    // テクスチャーローダーの作成
-    const textureLoader = new THREE.TextureLoader();
-    
-    // テクスチャーの読み込み
-    const waterTexture = textureLoader.load('/assets/images/Tiles/water_center_N.png');
-    const grassTexture = textureLoader.load('/assets/images/Tiles/grass_center_N.png');
-    const sandTexture = textureLoader.load('/assets/images/Tiles/sand_center_N.png');
-    
-    // テクスチャーの繰り返し設定
-    waterTexture.wrapS = THREE.RepeatWrapping;
-    waterTexture.wrapT = THREE.RepeatWrapping;
-    grassTexture.wrapS = THREE.RepeatWrapping;
-    grassTexture.wrapT = THREE.RepeatWrapping;
-    sandTexture.wrapS = THREE.RepeatWrapping;
-    sandTexture.wrapT = THREE.RepeatWrapping;
-    
-    // カメラの設定（遠近感をなくすためにOrthographicCameraを使用）
-    const aspect = window.innerWidth / window.innerHeight;
-    const camera = new THREE.OrthographicCamera(-10 * aspect, 10 * aspect, 10, -10, 0.1, 100);
-    camera.position.set(15, 10, 15); // カメラの位置を調整
-    camera.lookAt(0, -2, 0); // カメラの角度を調整
-    
-    // レンダラーの設定
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(window.innerWidth, window.innerHeight); // ウィンドウ全体を使用
-    renderer.shadowMap.enabled = true;
-    
-    // DOMが読み込まれた後にレンダラーを追加
-    document.addEventListener('DOMContentLoaded', () => {
-        document.getElementById('canvas-container').appendChild(renderer.domElement);
-    });
-    
-    // シーン全体の位置調整用のグループ
-    const sceneGroup = new THREE.Group();
-    scene.add(sceneGroup);
-    
-    // シーンを下に移動して調整
-    sceneGroup.position.y = -5; // 位置調整
-    
-    // ライトの追加
-    const light = new THREE.DirectionalLight(0xffffff, 1);
-    light.position.set(15, 10, 15); // ライトの位置を調整
-    light.castShadow = true;
-    light.shadow.mapSize.width = 2048;
-    light.shadow.mapSize.height = 2048;
-    light.shadow.camera.near = 0.5;
-    light.shadow.camera.far = 50;
-    light.shadow.camera.left = -20;
-    light.shadow.camera.right = 20;
-    light.shadow.camera.top = 20;
-    light.shadow.camera.bottom = -20;
-    sceneGroup.add(light);
-    sceneGroup.add(new THREE.AmbientLight(0x404040));
-    
-    // タイルマップの作成
-    const tileSize = 1;
-    const maxGridSize = 20; // 最大グリッドサイズ
-    const minGridSize = 3;  // 最小グリッドサイズ
-    const tiles = [];
-    
-    // 背景タイルのサイズと範囲
-    const bgTileSize = 1;
-    const bgGridSize = 40; // 背景グリッドは非常に広く
-    const bgTileHeight = 0.2; // 背景タイルは低く
-    
-    // 土と砂浜の色を定義
-    const landColors = {
-        sand: 0xE2C391, // 砂浜の黄金色
-        shallowSand: 0xD8C3A5, // 浅瀬の砂色
-        volcanicSoil: 0x5D4037, // 火山性の暗褐色
-        coralSand: 0xF5D6C6, // 珊瑚砂の薄桃色
-        tropicalSoil: 0x8B4513 // 熱帯土壌の赤褐色
+    // カテゴリーごとの記事数（例）
+    const categoryArticleCounts = {
+        'Resources': 15,
+        'Article': 25,
+        'Glossary': 10
     };
-    
-    // 大陸型配置の設定
-    const continentConfig = {
-        centerSize: 6, // 中央の正方形エリアのサイズ
-        riverColor: 0x40BCD8, // 川の色（カリビアンターコイズ）
-        mainLandColor: 0x2E6D32, // 主要な土地の色（熱帯の緑）
-        categoryColors: {
-            'Resources': 0x1A3A5F, // 海洋の深いブルー
-            'Article': 0x2E6D32, // 熱帯の緑
-            'Glossary': 0xE8D0AA // アンティーク地図の古紙色
-        },
-        topicnoteColor: 0xFFCC33 // Topicnote用の色（黄金/コイン色）
-    };
-    
-    // ボロノイ図生成のためのライブラリ（d3-voronoi）の代わりに簡易的な実装
-    function createContinentMap(gridSize) {
-        // カテゴリーの位置を決定
-        const categoryPositions = {
-            'Resources': { x: -Math.floor(gridSize/4), z: -Math.floor(gridSize/4) },
-            'Article': { x: Math.floor(gridSize/4), z: -Math.floor(gridSize/4) },
-            'Glossary': { x: 0, z: Math.floor(gridSize/4) }
-        };
-        
-        // 中央にTopicnote用の6x6エリアを確保
-        const topicnoteArea = {
-            startX: -Math.floor(continentConfig.centerSize/2),
-            endX: Math.floor(continentConfig.centerSize/2),
-            startZ: -Math.floor(continentConfig.centerSize/2),
-            endZ: Math.floor(continentConfig.centerSize/2)
-        };
-        
-        // 各タイルの情報を格納する配列
-        const continentTiles = [];
-        
-        // グリッド全体をループ
-        for (let x = -Math.floor(gridSize/2); x < Math.ceil(gridSize/2); x++) {
-            for (let z = -Math.floor(gridSize/2); z < Math.ceil(gridSize/2); z++) {
-                // タイルの種類を決定
-                let tileType = 'land'; // デフォルトは土地
-                let category = null;
-                let height = bgTileHeight;
-                let color = continentConfig.mainLandColor;
+
+    class DropGardenMap {
+        constructor(options = {}) {
+            this.options = Object.assign({
+                container: document.getElementById('canvas-container'),
+                width: window.innerWidth,
+                height: window.innerHeight,
+                tileSize: 64, // Kenney Block Packのタイルサイズは64x64
+                mapWidth: 30,
+                mapHeight: 20,
+                backgroundColor: 0xF2EFE2, // イングリッシュガーデンの象牙色
+                onTileClick: null,
+            }, options);
+
+            this.container = typeof this.options.container === 'string'
+                ? document.querySelector(this.options.container)
+                : this.options.container;
+
+            this.app = null;
+            this.mapContainer = null;
+            this.tiles = [];
+            this.textures = {};
+            this.categories = ['Resources', 'Article', 'Glossary']; // カテゴリー
+
+            this.init();
+        }
+
+        /**
+         * 初期化
+         */
+        async init() {
+            // PixiJS v8用のアプリケーションの作成
+            this.app = new PIXI.Application({
+                width: this.options.width,
+                height: this.options.height,
+                backgroundColor: this.options.backgroundColor,
+                resolution: window.devicePixelRatio || 1,
+                autoDensity: true,
+            });
+
+            // v8ではレンダラーを明示的に作成してコンテナに追加する
+            await this.app.init();
+            this.container.appendChild(this.app.canvas);
+
+            // マップコンテナの作成
+            this.mapContainer = new PIXI.Container();
+            this.app.stage.addChild(this.mapContainer);
+            
+            // レイヤーの作成
+            this.terrainLayer = new PIXI.Container(); // 地形レイヤー
+            this.objectLayer = new PIXI.Container();  // オブジェクトレイヤー
+            
+            // レイヤーをマップコンテナに追加
+            this.mapContainer.addChild(this.terrainLayer);
+            this.mapContainer.addChild(this.objectLayer);
+
+            // 中央に配置
+            this.mapContainer.x = this.options.width / 2;
+            this.mapContainer.y = this.options.height / 2;
+
+            // テクスチャーの読み込み
+            await this.loadTextures();
+
+            // マップの生成
+            this.generateMap();
+
+            // イベントリスナーの設定
+            this.setupEventListeners();
+        }
+
+        /**
+         * テクスチャーの読み込み
+         */
+        async loadTextures() {
+            // PixiJS v8ではAssets APIを使用
+            await PIXI.Assets.init();
+            
+            // スプライトシートとJSONデータの読み込み
+            const baseUrl = window.location.origin;
+            
+            // スプライトシートの読み込み
+            const spritesheet = await PIXI.Assets.load(baseUrl + '/assets/images/medievalRTS_spritesheet.json');
+            
+            // テクスチャの設定
+            this.textures = {
+                // 基本的な地形
+                water: spritesheet.textures["medievalTile_27.png"],
+                grass: spritesheet.textures["medievalTile_57.png"],
+                dirt: spritesheet.textures["medievalTile_13.png"],
+                stone: spritesheet.textures["medievalTile_28.png"],
                 
-                // 中央のTopicnoteエリア内かチェック
-                if (x >= topicnoteArea.startX && x <= topicnoteArea.endX && 
-                    z >= topicnoteArea.startZ && z <= topicnoteArea.endZ) {
-                    tileType = 'topicnote';
-                    color = continentConfig.topicnoteColor;
-                    height = 0.5; // Topicnoteエリアは少し高く
-                } 
-                // カテゴリーエリアかチェック
-                else {
-                    // 各カテゴリーからの距離を計算
-                    let minDistance = Infinity;
-                    let closestCategory = null;
-                    
-                    for (const [catName, pos] of Object.entries(categoryPositions)) {
-                        const distance = Math.sqrt(Math.pow(x - pos.x, 2) + Math.pow(z - pos.z, 2));
-                        if (distance < minDistance) {
-                            minDistance = distance;
-                            closestCategory = catName;
-                        }
-                    }
-                    
-                    // カテゴリーの中心に近いほど高く
-                    const categoryPos = categoryPositions[closestCategory];
-                    const distanceFromCenter = Math.sqrt(Math.pow(x - categoryPos.x, 2) + Math.pow(z - categoryPos.z, 2));
-                    
-                    // カテゴリーの記事数に基づいて影響範囲を決定
-                    const categoryInfluence = Math.sqrt(categoryArticleCounts[closestCategory]) / 5;
-                    
-                    if (distanceFromCenter < 1) {
-                        // カテゴリーの中心
-                        tileType = 'category';
-                        category = closestCategory;
-                        color = continentConfig.categoryColors[closestCategory];
-                        height = calculateHeightFromCount(categoryArticleCounts[closestCategory]);
-                    } else if (distanceFromCenter < categoryInfluence) {
-                        // カテゴリーの影響範囲内
-                        tileType = 'article';
-                        category = closestCategory;
-                        color = continentConfig.categoryColors[closestCategory];
+                // 自然物
+                tree: spritesheet.textures["medievalTile_42.png"],
+                
+                // 特殊タイル
+                treasure: spritesheet.textures["medievalStructure_07.png"],
+                character: spritesheet.textures["medievalUnit_01.png"]
+            };
+        }
+
+        /**
+         * マップの生成
+         */
+        generateMap() {
+            // 大陸型の配置を生成
+            const continentMap = this.createContinentMap();
+            
+            // タイルの配置
+            for (let y = 0; y < this.options.mapHeight; y++) {
+                for (let x = 0; x < this.options.mapWidth; x++) {
+                    const tileInfo = continentMap[y][x];
+                    this.createTile(x, y, tileInfo);
+                }
+            }
+            
+            // 深度ソート
+            this.terrainLayer.sortChildren();
+            this.objectLayer.sortChildren();
+        }
+
+        /**
+         * 大陸型マップの生成
+         */
+        createContinentMap() {
+            const map = [];
+            const width = this.options.mapWidth;
+            const height = this.options.mapHeight;
+            
+            // カテゴリーの中心位置
+            const categoryPositions = [
+                { x: Math.floor(width * 0.25), y: Math.floor(height * 0.25), name: 'Resources' },
+                { x: Math.floor(width * 0.75), y: Math.floor(height * 0.25), name: 'Article' },
+                { x: Math.floor(width * 0.5), y: Math.floor(height * 0.75), name: 'Glossary' }
+            ];
+            
+            // Topicnoteの中心位置（マップの中央）
+            const topicnoteCenter = { x: Math.floor(width * 0.5), y: Math.floor(height * 0.4) };
+            
+            // マップの初期化（すべて水で埋める）
+            for (let y = 0; y < height; y++) {
+                map[y] = [];
+                for (let x = 0; x < width; x++) {
+                    map[y][x] = { 
+                        type: 'water', 
+                        texture: 'water',
+                        height: 0,
+                        category: null
+                    };
+                }
+            }
+            
+            // カテゴリーエリアの生成
+            categoryPositions.forEach(category => {
+                const radius = Math.floor(Math.min(width, height) * 0.15); // カテゴリーエリアの半径
+                
+                for (let y = 0; y < height; y++) {
+                    for (let x = 0; x < width; x++) {
+                        const distance = Math.sqrt(Math.pow(x - category.x, 2) + Math.pow(y - category.y, 2));
                         
-                        // 中心からの距離に応じて高さを減少
-                        const heightRatio = 1 - (distanceFromCenter / categoryInfluence);
-                        height = bgTileHeight + heightRatio * (calculateHeightFromCount(categoryArticleCounts[closestCategory]) - bgTileHeight);
-                    }
-                    
-                    // カテゴリー間の境界に川を配置
-                    if (tileType === 'land') {
-                        // 最も近いカテゴリーと2番目に近いカテゴリーの距離の差が小さい場合は川
-                        let secondMinDistance = Infinity;
-                        
-                        for (const [catName, pos] of Object.entries(categoryPositions)) {
-                            if (catName !== closestCategory) {
-                                const distance = Math.sqrt(Math.pow(x - pos.x, 2) + Math.pow(z - pos.z, 2));
-                                if (distance < secondMinDistance) {
-                                    secondMinDistance = distance;
+                        if (distance < radius) {
+                            // カテゴリーエリア内
+                            if (distance < radius * 0.2) {
+                                // カテゴリーの中心
+                                map[y][x] = {
+                                    type: 'category',
+                                    texture: 'treasure',  // house → treasure に変更
+                                    height: 1.0,
+                                    category: category.name
+                                };
+                            } else {
+                                // カテゴリーエリア（記事）
+                                map[y][x] = {
+                                    type: 'article',
+                                    texture: 'grass',
+                                    height: 0.5,
+                                    category: category.name
+                                };
+                                
+                                // ランダムに木を配置
+                                if (Math.random() < 0.1) {
+                                    map[y][x].texture = 'tree';
+                                    map[y][x].height = 1.0;
+                                } else if (Math.random() < 0.05) {
+                                    map[y][x].texture = 'character';  // rock → character に変更
+                                    map[y][x].height = 0.7;
                                 }
                             }
-                        }
-                        
-                        if (Math.abs(minDistance - secondMinDistance) < 1) {
-                            tileType = 'river';
-                            color = continentConfig.riverColor;
-                            height = bgTileHeight * 0.5; // 川は低く
+                        } else if (map[y][x].type === 'water') {
+                            // カテゴリーエリアの境界付近は砂浜にする
+                            if (distance < radius + 2) {
+                                map[y][x] = {
+                                    type: 'shore',
+                                    texture: 'dirt',
+                                    height: 0.2,
+                                    category: null
+                                };
+                            }
                         }
                     }
                 }
-                
-                continentTiles.push({
-                    x,
-                    z,
-                    type: tileType,
-                    category,
-                    height,
-                    color
-                });
-            }
-        }
-        
-        return continentTiles;
-    }
-    
-    // 背景タイルの作成（メインのグリッド範囲内はスキップ）
-    for (let x = -bgGridSize/2; x < bgGridSize/2; x++) {
-        for (let z = -bgGridSize/2; z < bgGridSize/2; z++) {
-            // メインのグリッド範囲内はスキップ（後で別に描画）
-            if (x >= -maxGridSize/2 && x < maxGridSize/2 && z >= -maxGridSize/2 && z < maxGridSize/2) {
-                continue;
-            }
+            });
             
-            const geometry = new THREE.BoxGeometry(bgTileSize, bgTileHeight, bgTileSize);
-            const material = new THREE.MeshLambertMaterial({ 
-                map: sandTexture,
-                color: 0xFFFFFF, // テクスチャーの色を活かすために白色
-                opacity: 0.8,
-                transparent: true
-            });
-            const bgTile = new THREE.Mesh(geometry, material);
+            // Topicnoteエリアの生成（マップの中央付近）
+            const topicnoteRadius = Math.floor(Math.min(width, height) * 0.1);
             
-            bgTile.position.set(
-                x * bgTileSize,
-                bgTileHeight / 2, // 高さの半分
-                z * bgTileSize
-            );
-            bgTile.receiveShadow = true;
-            sceneGroup.add(bgTile);
-        }
-    }
-    
-    // カテゴリー名を定義
-    const categories = {
-        1: 'Resources',
-        6: 'Article',
-        11: 'Glossary',
-        16: 'Person',
-        21: 'Others',
-        // 追加カテゴリー
-        36: 'Projects',
-        48: 'Books',
-        60: 'Media',
-        72: 'Tools',
-        100: 'Archive'
-    };
-
-    // カテゴリごとの記事数
-    const categoryArticleCounts = {
-        'Resources': 1000,
-        'Article': 20,
-        'Glossary': 50,
-        'Person': 1000,
-        'Others': 100,
-        // 追加カテゴリーの記事数
-        'Projects': 30,
-        'Books': 200,
-        'Media': 80,
-        'Tools': 45,
-        'Archive': 500
-    };
-
-    // 記事数から高さを計算する関数
-    function calculateHeightFromCount(count) {
-        // 対数スケールで高さを計算（値の範囲が広いため）
-        const minHeight = 1;
-        const maxHeight = 5;
-        const minCount = 10;  // 最小記事数（これより少ない場合は最小高さ）
-        const maxCount = 1000; // 最大記事数（これより多い場合は最大高さ）
-        
-        if (count <= minCount) return minHeight;
-        if (count >= maxCount) return maxHeight;
-        
-        // 対数スケールで高さを計算
-        const logMinCount = Math.log(minCount);
-        const logMaxCount = Math.log(maxCount);
-        const logCount = Math.log(count);
-        
-        // 正規化して高さの範囲にマッピング
-        const normalizedHeight = (logCount - logMinCount) / (logMaxCount - logMinCount);
-        return minHeight + normalizedHeight * (maxHeight - minHeight);
-    }
-
-    // 総記事数を計算
-    const totalArticles = Object.values(categoryArticleCounts).reduce((sum, count) => sum + count, 0);
-    
-    // 総記事数からグリッドサイズを計算
-    function calculateGridSize(totalCount) {
-        const minArticles = 100;  // この記事数でminGridSize
-        const maxArticles = 3000; // この記事数でmaxGridSize
-        
-        if (totalCount <= minArticles) return minGridSize;
-        if (totalCount >= maxArticles) return maxGridSize;
-        
-        // 線形に補間
-        const ratio = (totalCount - minArticles) / (maxArticles - minArticles);
-        return Math.floor(minGridSize + ratio * (maxGridSize - minGridSize));
-    }
-    
-    // 現在の記事数に基づいてグリッドサイズを決定
-    const currentGridSize = calculateGridSize(totalArticles);
-    console.log(`総記事数: ${totalArticles}, グリッドサイズ: ${currentGridSize}`);
-    
-    // 大陸型配置のタイルを生成
-    const continentTiles = createContinentMap(currentGridSize);
-    
-    // テクスチャーは既に読み込み済み
-    
-    // タイルを作成して配置
-    continentTiles.forEach(tile => {
-        const geometry = new THREE.BoxGeometry(tileSize, tile.height, tileSize);
-        
-        // タイルの種類に応じたマテリアルを作成
-        let material;
-        
-        if (tile.type === 'river') {
-            // 川のタイル
-            material = new THREE.MeshLambertMaterial({ 
-                map: waterTexture,
-                color: 0xFFFFFF, // テクスチャーの色を保持するために白色を使用
-                transparent: true,
-                opacity: 0.9
-            });
-        } else if (tile.type === 'land') {
-            // 地面のタイル
-            material = new THREE.MeshLambertMaterial({ 
-                map: grassTexture,
-                color: 0xFFFFFF // テクスチャーの色を保持するために白色を使用
-            });
-        } else if (tile.type === 'category' || tile.type === 'article') {
-            // カテゴリーと記事のタイル
-            material = new THREE.MeshLambertMaterial({ color: tile.color });
-        } else if (tile.type === 'topicnote') {
-            // Topicnoteのタイル
-            material = new THREE.MeshLambertMaterial({ 
-                map: sandTexture,
-                color: 0xFFD700 // 黄金色を適用
-            });
-        } else {
-            // その他のタイル
-            material = new THREE.MeshLambertMaterial({ color: tile.color });
-        }
-        
-        const mesh = new THREE.Mesh(geometry, material);
-        
-        mesh.position.set(
-            tile.x * tileSize,
-            tile.height / 2, // 高さの半分
-            tile.z * tileSize
-        );
-        
-        mesh.receiveShadow = true;
-        mesh.castShadow = true;
-        
-        // タイルの種類と情報を保存
-        mesh.userData = {
-            type: tile.type,
-            category: tile.category,
-            x: tile.x,
-            z: tile.z
-        };
-        
-        // クリックイベントの追加
-        mesh.callback = function() {
-            if (tile.type === 'category') {
-                console.log(`カテゴリー: ${tile.category}, 記事数: ${categoryArticleCounts[tile.category]}`);
-                // カテゴリー情報を表示するコードをここに追加
-            } else if (tile.type === 'topicnote') {
-                console.log(`Topicnoteエリア: x=${tile.x}, z=${tile.z}`);
-                // Topicnote情報を表示するコードをここに追加
-            } else if (tile.type === 'article') {
-                console.log(`記事タイル: カテゴリー=${tile.category}, 位置=(${tile.x}, ${tile.z})`);
-                // タイルの高さを変更するアニメーション
-                const currentHeight = mesh.scale.y;
-                const targetHeight = currentHeight < 2 ? 2 : 1;
-                
-                // アニメーションの設定
-                const duration = 500; // ミリ秒
-                const startTime = Date.now();
-                const startHeight = currentHeight;
-                
-                function animateHeight() {
-                    const elapsed = Date.now() - startTime;
-                    const progress = Math.min(elapsed / duration, 1);
+            for (let y = 0; y < height; y++) {
+                for (let x = 0; x < width; x++) {
+                    const distance = Math.sqrt(Math.pow(x - topicnoteCenter.x, 2) + Math.pow(y - topicnoteCenter.y, 2));
                     
-                    // イージング関数（簡単なもの）
-                    const easeProgress = 0.5 - 0.5 * Math.cos(progress * Math.PI);
-                    
-                    // 高さを更新
-                    const newHeight = startHeight + (targetHeight - startHeight) * easeProgress;
-                    mesh.scale.y = newHeight;
-                    
-                    // 位置も調整（スケールの中心が変わるため）
-                    mesh.position.y = (tile.height * newHeight) / 2;
-                    
-                    if (progress < 1) {
-                        requestAnimationFrame(animateHeight);
+                    if (distance < topicnoteRadius) {
+                        map[y][x] = {
+                            type: 'topicnote',
+                            texture: 'stone',
+                            height: 0.8,
+                            category: null
+                        };
                     }
                 }
-                
-                animateHeight();
             }
-        };
-        
-        tiles.push(mesh);
-        sceneGroup.add(mesh);
-    });
-    
-    // Raycasterを使ってクリックしたタイルを検出
-    const raycaster = new THREE.Raycaster();
-    const mouse = new THREE.Vector2();
-    window.addEventListener('click', (event) => {
-        mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-        mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-        
-        raycaster.setFromCamera(mouse, camera);
-        const intersects = raycaster.intersectObjects(tiles);
-        
-        if (intersects.length > 0) {
-            const tile = intersects[0].object;
-            // タイルをクリックした時の処理
-            tile.callback();
+            
+            return map;
         }
-    });
-    
-    // ウィンドウのリサイズ対応
-    window.addEventListener('resize', () => {
-        const newAspect = window.innerWidth / window.innerHeight;
-        camera.left = -10 * newAspect;
-        camera.right = 10 * newAspect;
-        camera.updateProjectionMatrix();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-    });
-    
-    // アニメーションループ
-    function animate() {
-        requestAnimationFrame(animate);
-        renderer.render(scene, camera);
+
+        /**
+         * タイルの作成
+         */
+        createTile(x, y, tileInfo) {
+            // タイルのスプライトを作成
+            const sprite = new PIXI.Sprite(this.textures[tileInfo.texture]);
+            
+            // スプライトの設定
+            sprite.anchor.set(0.5);
+            sprite.x = (x - this.options.mapWidth / 2) * this.options.tileSize;
+            sprite.y = (y - this.options.mapHeight / 2) * this.options.tileSize;
+            
+            // 等角投影風の見た目にするための調整
+            sprite.y -= tileInfo.height * 20; // 高さに応じてY座標を調整
+            
+            // タイルの種類に応じた色調整
+            if (tileInfo.type === 'category') {
+                sprite.tint = 0xFFCC33; // 黄金色
+            } else if (tileInfo.type === 'topicnote') {
+                sprite.tint = 0xE8D0AA; // アンティーク地図の古紙色
+            }
+            
+            // タイルデータを保存
+            sprite.tileData = tileInfo;
+            
+            // クリックイベントの設定
+            sprite.eventMode = 'static';
+            sprite.cursor = 'pointer';
+            sprite.on('pointerdown', () => this.onTileClick(tileInfo));
+            
+            // 適切なレイヤーに追加
+            if (this.isTerrainTile(tileInfo)) {
+                this.terrainLayer.addChild(sprite);
+            } else {
+                this.objectLayer.addChild(sprite);
+            }
+            
+            this.tiles.push(sprite);
+            
+            // 深度ソート用のzIndex設定
+            sprite.zIndex = y * this.options.mapWidth + x;
+        }
+
+        /**
+         * 地形タイルかどうかを判定
+         */
+        isTerrainTile(tileInfo) {
+            // 地形タイルの判定（水、草、土、石など）
+            const terrainTextures = ['water', 'grass', 'dirt', 'stone'];
+            return terrainTextures.includes(tileInfo.texture);
+        }
+        
+        /**
+         * タイルクリック時の処理
+         */
+        onTileClick(tileInfo) {
+            console.log(`Clicked on ${tileInfo.type} tile`);
+            
+            if (this.options.onTileClick) {
+                this.options.onTileClick(tileInfo);
+            }
+            
+            // タイル情報の表示
+            const tileInfoElement = document.getElementById('tile-info');
+            if (tileInfoElement) {
+                if (tileInfo.type === 'category') {
+                    tileInfoElement.innerHTML = `<h3>${tileInfo.category}カテゴリー</h3>
+                                              <p>このカテゴリーの記事一覧を表示します。</p>`;
+                } else if (tileInfo.type === 'article') {
+                    tileInfoElement.innerHTML = `<h3>${tileInfo.category}の記事</h3>
+                                              <p>この記事を読むにはクリックしてください。</p>`;
+                } else if (tileInfo.type === 'topicnote') {
+                    tileInfoElement.innerHTML = `<h3>Topicnote</h3>
+                                              <p>トピックノートを表示します。</p>`;
+                } else {
+                    tileInfoElement.innerHTML = `<p>タイプ: ${tileInfo.type}</p>`;
+                }
+            }
+        }
+
+        /**
+         * イベントリスナーの設定
+         */
+        setupEventListeners() {
+            // ウィンドウリサイズ時の処理
+            window.addEventListener('resize', () => {
+                this.app.renderer.resize(window.innerWidth, window.innerHeight);
+                this.mapContainer.x = window.innerWidth / 2;
+                this.mapContainer.y = window.innerHeight / 2;
+            });
+            
+            // マップのドラッグ移動機能
+            let isDragging = false;
+            let prevX = 0;
+            let prevY = 0;
+            
+            this.app.stage.eventMode = 'static';
+            
+            this.app.stage.on('pointerdown', (e) => {
+                isDragging = true;
+                prevX = e.global.x;
+                prevY = e.global.y;
+            });
+            
+            this.app.stage.on('pointermove', (e) => {
+                if (isDragging) {
+                    const dx = e.global.x - prevX;
+                    const dy = e.global.y - prevY;
+                    
+                    this.mapContainer.x += dx;
+                    this.mapContainer.y += dy;
+                    
+                    prevX = e.global.x;
+                    prevY = e.global.y;
+                }
+            });
+            
+            this.app.stage.on('pointerup', () => {
+                isDragging = false;
+            });
+            
+            this.app.stage.on('pointerupoutside', () => {
+                isDragging = false;
+            });
+        }
     }
-    animate();
+
+    // DOMが読み込まれた後にマップを初期化
+    document.addEventListener('DOMContentLoaded', () => {
+        const map = new DropGardenMap({
+            container: '#canvas-container',
+            width: window.innerWidth,
+            height: window.innerHeight
+        });
+    });
 </script>
 
 <style>
@@ -469,8 +397,17 @@
         height: 100%;
         z-index: -1;
     }
+    
+    .tile-info {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        z-index: 100;
+        background-color: rgba(126, 84, 84, 0.7);
+        padding: 10px;
+        border-radius: 5px;
+        font-family: sans-serif;
+    }
 </style>
-
-{{ comp.footer() | safe }}
 </body>
 </html>

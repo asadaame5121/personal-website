@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} - Kenney Block Map</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #87CEEB;
+    }
+    #map-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 100;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 10px;
+      border-radius: 5px;
+      font-family: sans-serif;
+    }
+    .tile-info {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      z-index: 100;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 10px;
+      border-radius: 5px;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="map-container"></div>
+  
+  <div class="controls">
+    <h2>Kenney Block Map</h2>
+    <p>カテゴリーをクリックして記事を探索しましょう</p>
+  </div>
+  
+  <div class="tile-info" id="tile-info"></div>
+
+  <script src="https://pixijs.download/v8.8.0/pixi.min.js"></script>
+  
+  <!-- カスタムスクリプト -->
+  <script src="/assets/js/kenney-block-map.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // マップの初期化
+      const map = new KenneyBlockMap({
+        container: '#map-container',
+        width: window.innerWidth,
+        height: window.innerHeight,
+        tileSize: 64,
+        mapWidth: 30,
+        mapHeight: 20,
+        onTileClick: (tileData) => {
+          const tileInfo = document.getElementById('tile-info');
+          
+          if (tileData.type === 'category') {
+            tileInfo.innerHTML = `<h3>${tileData.category}カテゴリー</h3>
+                                  <p>このカテゴリーの記事一覧を表示します。</p>`;
+            // カテゴリーページへのリンク
+            // window.location.href = `/${tileData.category.toLowerCase()}/`;
+          } else if (tileData.type === 'article') {
+            tileInfo.innerHTML = `<h3>${tileData.category}の記事</h3>
+                                  <p>この記事を読むにはクリックしてください。</p>`;
+          } else if (tileData.type === 'topicnote') {
+            tileInfo.innerHTML = `<h3>Topicnote</h3>
+                                  <p>トピックノートを表示します。</p>`;
+          } else {
+            tileInfo.innerHTML = `<p>タイプ: ${tileData.type}</p>`;
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

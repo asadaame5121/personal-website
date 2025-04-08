@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medieval RTS スプライトプレビュー</title>
+    <script src="https://pixijs.download/v8.0.0/pixi.min.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+        .sprite-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .sprite-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .sprite-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .sprite-container {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            background-color: #fff;
+            border-radius: 4px;
+            border: 1px dashed #ccc;
+        }
+        .sprite-name {
+            font-size: 14px;
+            text-align: center;
+            word-break: break-all;
+        }
+        .sprite-size {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+        .copy-button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .copy-button:hover {
+            background-color: #45a049;
+        }
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+        .filter-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .search-box {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Medieval RTS スプライトプレビュー</h1>
+        
+        <div class="controls">
+            <div class="filter-group">
+                <span class="filter-title">カテゴリー</span>
+                <select id="category-filter">
+                    <option value="all">すべて</option>
+                    <option value="Tile">タイル (Tile)</option>
+                    <option value="Environment">環境 (Environment)</option>
+                    <option value="Structure">建物 (Structure)</option>
+                    <option value="Unit">ユニット (Unit)</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <span class="filter-title">検索</span>
+                <input type="text" id="search-input" class="search-box" placeholder="スプライト名を検索...">
+            </div>
+        </div>
+        
+        <div id="sprite-grid" class="sprite-grid">
+            <!-- スプライトカードがここに動的に追加されます -->
+        </div>
+    </div>
+
+    <script>
+        class SpritePreview {
+            constructor() {
+                this.app = null;
+                this.spriteData = null;
+                this.sprites = [];
+                this.categoryFilter = document.getElementById('category-filter');
+                this.searchInput = document.getElementById('search-input');
+                this.spriteGrid = document.getElementById('sprite-grid');
+                
+                this.init();
+            }
+            
+            async init() {
+                // PixiJSの初期化
+                await PIXI.Assets.init();
+                
+                // スプライトシートの読み込み
+                const baseUrl = window.location.origin;
+                try {
+                    this.spriteData = await PIXI.Assets.load(baseUrl + '/assets/images/medievalRTS_spritesheet.json');
+                    this.loadSprites();
+                    this.setupEventListeners();
+                } catch (error) {
+                    console.error('スプライトシートの読み込みに失敗しました:', error);
+                    this.spriteGrid.innerHTML = `<p>エラー: スプライトシートの読み込みに失敗しました。${error.message}</p>`;
+                }
+            }
+            
+            loadSprites() {
+                // スプライトデータの取得
+                const frames = this.spriteData.data.frames;
+                
+                // スプライトカードの作成
+                for (const spriteName in frames) {
+                    const frameData = frames[spriteName];
+                    const category = this.getSpriteCategory(spriteName);
+                    
+                    // スプライトカードの作成
+                    const card = this.createSpriteCard(spriteName, frameData, category);
+                    this.sprites.push({
+                        name: spriteName,
+                        category: category,
+                        element: card
+                    });
+                    
+                    this.spriteGrid.appendChild(card);
+                }
+            }
+            
+            getSpriteCategory(spriteName) {
+                if (spriteName.includes('medievalTile_')) {
+                    return 'Tile';
+                } else if (spriteName.includes('medievalEnvironment_')) {
+                    return 'Environment';
+                } else if (spriteName.includes('medievalStructure_')) {
+                    return 'Structure';
+                } else if (spriteName.includes('medievalUnit_')) {
+                    return 'Unit';
+                }
+                return 'Other';
+            }
+            
+            createSpriteCard(spriteName, frameData, category) {
+                const card = document.createElement('div');
+                card.className = 'sprite-card';
+                card.dataset.category = category;
+                
+                // スプライトコンテナ
+                const spriteContainer = document.createElement('div');
+                spriteContainer.className = 'sprite-container';
+                
+                // スプライト画像
+                const img = document.createElement('img');
+                img.src = `${window.location.origin}/assets/images/medievalRTS_spritesheet.png`;
+                img.style.clipPath = `inset(${frameData.frame.y}px ${548 - frameData.frame.x - frameData.frame.w}px ${476 - frameData.frame.y - frameData.frame.h}px ${frameData.frame.x}px)`;
+                img.style.width = '548px';
+                img.style.height = '476px';
+                img.style.transform = `scale(${Math.min(100 / frameData.frame.w, 100 / frameData.frame.h)})`;
+                img.style.transformOrigin = `${frameData.frame.x + frameData.frame.w/2}px ${frameData.frame.y + frameData.frame.h/2}px`;
+                
+                spriteContainer.appendChild(img);
+                card.appendChild(spriteContainer);
+                
+                // スプライト名
+                const nameElement = document.createElement('div');
+                nameElement.className = 'sprite-name';
+                nameElement.textContent = spriteName;
+                card.appendChild(nameElement);
+                
+                // スプライトサイズ
+                const sizeElement = document.createElement('div');
+                sizeElement.className = 'sprite-size';
+                sizeElement.textContent = `${frameData.frame.w}x${frameData.frame.h}`;
+                card.appendChild(sizeElement);
+                
+                // コピーボタン
+                const copyButton = document.createElement('button');
+                copyButton.className = 'copy-button';
+                copyButton.textContent = 'コピー';
+                copyButton.addEventListener('click', () => {
+                    navigator.clipboard.writeText(spriteName)
+                        .then(() => {
+                            copyButton.textContent = 'コピー完了!';
+                            setTimeout(() => {
+                                copyButton.textContent = 'コピー';
+                            }, 2000);
+                        })
+                        .catch(err => {
+                            console.error('クリップボードへのコピーに失敗しました:', err);
+                            copyButton.textContent = 'コピー失敗';
+                            setTimeout(() => {
+                                copyButton.textContent = 'コピー';
+                            }, 2000);
+                        });
+                });
+                card.appendChild(copyButton);
+                
+                return card;
+            }
+            
+            setupEventListeners() {
+                // カテゴリーフィルター
+                this.categoryFilter.addEventListener('change', () => {
+                    this.filterSprites();
+                });
+                
+                // 検索フィルター
+                this.searchInput.addEventListener('input', () => {
+                    this.filterSprites();
+                });
+            }
+            
+            filterSprites() {
+                const category = this.categoryFilter.value;
+                const searchText = this.searchInput.value.toLowerCase();
+                
+                this.sprites.forEach(sprite => {
+                    const matchesCategory = category === 'all' || sprite.category === category;
+                    const matchesSearch = sprite.name.toLowerCase().includes(searchText);
+                    
+                    if (matchesCategory && matchesSearch) {
+                        sprite.element.style.display = '';
+                    } else {
+                        sprite.element.style.display = 'none';
+                    }
+                });
+            }
+        }
+        
+        // DOMが読み込まれた後にプレビューを初期化
+        document.addEventListener('DOMContentLoaded', () => {
+            new SpritePreview();
+        });
+    </script>
+</body>
+</html>
