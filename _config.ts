@@ -14,6 +14,28 @@ import backlinks from "./plugins/backlinks.js";
 const site = lume({
   src: ".",
   dest: "_site",
+  location: new URL("https://asadaame5121.github.io/personal-website/"),
+});
+
+// 特定のフォルダを除外する設定
+site.ignore((path) => {
+  const excludePaths = [
+    "/obsidian/",
+    "/.git/",
+    "/_archive/",
+    "/.gitmodules",
+    "/attachments/",
+    "/Extra/",
+    "/forpixel8/",
+    "/.obsidian/",
+    "/Omnivore/",
+    "/Publish/",
+    "/scripts/",
+    "/template/",
+    "/Workinprogress/"
+  ];
+  
+  return excludePaths.some(prefix => path.startsWith(prefix));
 });
 
 site.use(nunjucks());
