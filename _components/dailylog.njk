@@ -1,0 +1,43 @@
+<div class="daily-log">
+  <h2>日報</h2>
+  
+  <!-- Blueskyポスト -->
+  <div class="bluesky-posts">
+    <h3>本日のBlueskyポスト</h3>
+    {% set blueskyPosts = filters.getBlueskyPosts("asadaame5121.bsky.social") %}
+    
+    {% if blueskyPosts.length > 0 %}
+      {% for post in blueskyPosts %}
+      <div class="bluesky-post">
+        <div class="post-time">{{ post.indexedAt | date("HH:mm") }}</div>
+        <div class="post-content">{{ post.record.text }}</div>
+        
+        {% if post.record.embed and post.record.embed.images %}
+        <div class="post-images">
+          {% for image in post.record.embed.images %}
+          <img src="{{ image.fullsize }}" alt="{{ image.alt }}" />
+          {% endfor %}
+        </div>
+        {% endif %}
+        
+        <div class="post-stats">
+          👍 {{ post.likeCount }} | 🔄 {{ post.repostCount }}
+        </div>
+      </div>
+      {% endfor %}
+    {% else %}
+      <p>本日のBlueskyポストはありません。</p>
+    {% endif %}
+  </div>
+  
+  <!-- 既存の日報エントリ -->
+  <div class="obsidian-logs">
+    <h3>Obsidian日報</h3>
+    {% for log in search.pages("url^=/obsidian/log/", "date=desc", 5) %}
+    <div class="log-entry">
+      <div class="log-date">{{ log.date | date("YYYY年MM月DD日") }}</div>
+      <div class="log-content">{{ log.content | safe }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

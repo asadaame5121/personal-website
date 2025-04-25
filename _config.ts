@@ -3,24 +3,34 @@ import jsx from "lume/plugins/jsx_preact.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import postcss from "lume/plugins/postcss.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
+import getBlueskyPosts from "./_filters/get-bluesky-posts.js";
 import autoprefixer from "npm:autoprefixer";
 import nesting from "npm:postcss-nesting";
 import cssnano from "npm:cssnano";
 import wikilinks from "https://deno.land/x/lume_markdown_plugins@v0.9.0/wikilinks.ts";
-import backlinks from "./plugins/backlinks.js";
+import callout from "npm:markdown-it-obsidian-callouts";
+
+// import backlinks from "./plugins/backlinks.js";
+import date from "lume/plugins/date.ts";
 // import obsidian from "./plugins/obsidian.js";
 
+const markdown = {
+  plugin: [callout]
+}
 
 const site = lume({
   src: ".",
   dest: "_site",
   location: new URL("https://asadaame5121.github.io/personal-website/"),
-});
+  prettyUrls: false, // 特殊文字を含むURLの問題を回避するために無効化
+}, { markdown });
+
+// Bluesky投稿取得フィルターを登録
+site.filter("getBlueskyPosts", getBlueskyPosts);
 
 // 特定のフォルダを除外する設定
 site.ignore((path) => {
   const excludePaths = [
-    "/obsidian/",
     "/.git/",
     "/_archive/",
     "/.gitmodules",
@@ -32,16 +42,27 @@ site.ignore((path) => {
     "/Publish/",
     "/scripts/",
     "/template/",
-    "/Workinprogress/"
+    "/Workinprogress/",
+    // obsidianフォルダ直下のmarkdownファイルを除外
+    "/obsidian/*.md",
   ];
   
-  return excludePaths.some(prefix => path.startsWith(prefix));
+  // 特殊文字を含むファイル名を除外
+  const problematicFiles = [
+    "ＮＨＫ「100分ｄｅ名著」",  // 部分一致でフィルタリング
+    "名著"
+  ];
+  
+  return excludePaths.some(prefix => path.startsWith(prefix)) || 
+         problematicFiles.some(keyword => path.includes(keyword));
 });
 
+// TailwindCSSとPostCSSの設定
+site.use(date());
 site.use(nunjucks());
 site.use(jsx());
 site.use(wikilinks());
-site.use(backlinks());
+// site.use(backlinks());
 // site.use(obsidian());
 site.use(tailwindcss({
   extensions: [".html", ".jsx", ".njk"],
@@ -96,7 +117,12 @@ site.copy("assets/js");
 site.data("components", {
   header: "_components/header.njk",
   footer: "_components/footer.njk",
+  readinglist: "_components/readinglist.njk",
+  dailylog: "_components/dailylog.njk",
 });
+
+// Blueskyポスト取得フィルターを登録
+site.filter("getBlueskyPosts", getBlueskyPosts().getBlueskyPosts);
 
 site.ignore((path) => path.endsWith('.jsx') || path.endsWith('.tsx'));
 
@@ -138,7 +164,7 @@ site.process([".html"], (pages) => {
           
           // ファイル名の比較（大文字小文字を無視）
           return pageFilename === filename || 
-                 (p.data.title && p.data.title.toLowerCase() === filename) ||
+                 (p.data.title && typeof p.data.title === 'string' && p.data.title.toLowerCase() === filename) ||
                  (p.data.id && typeof p.data.id === 'string' && p.data.id.toLowerCase() === filename);
         });
         
