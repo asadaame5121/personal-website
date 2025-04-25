@@ -6,7 +6,7 @@ const SOURCE_DIR = "C:\\Users\\Yudai\\Documents\\Obsidian\\log"; // デイリー
 const OUTPUT_PATH = "./data/dailylog.json";
 
 // 日報エントリ抽出用の正規表現
-const ENTRY_REGEX = /^###### (\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})\n([\s\S]*?)(?=\n###### |\n*$)/gm;
+const ENTRY_REGEX = /^###### (\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,3})?(?:[+-]\d{2}:\d{2})?)\s*\n([\s\S]*?)(?=\n###### |\n*$)/gm;
 
 const PUBLIC_MARK = "🌐";
 

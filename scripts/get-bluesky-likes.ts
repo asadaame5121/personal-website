@@ -48,7 +48,34 @@ async function getLikedPosts(limit = 10) {
     });
     
     const likedPosts = likesResult.data.feed;
-    
+
+    // 最新10件をdate（indexedAt）降順で取得
+    const sorted = likedPosts
+      .filter(item => item.post && item.post.indexedAt)
+      .sort((a, b) => new Date(b.post.indexedAt) - new Date(a.post.indexedAt))
+      .slice(0, 10);
+
+    // JSON出力用データ整形
+    const output = sorted.map(item => {
+      const post = item.post;
+      const author = post.author;
+      // 埋め込み用URL: https://bsky.app/profile/{author.handle}/post/{post.uri.split("/").pop()}
+      const postId = post.uri.split("/").pop();
+      const postUrl = `https://bsky.app/profile/${author.handle}/post/${postId}`;
+      return {
+        author: author.displayName || author.handle,
+        handle: author.handle,
+        text: post.record?.text || "",
+        date: post.indexedAt,
+        url: postUrl
+      };
+    });
+
+    // dataディレクトリ作成
+    try { await Deno.mkdir("data", { recursive: true }); } catch (_) {}
+    await Deno.writeTextFile("./data/bluesky-likes.json", JSON.stringify(output, null, 2));
+    console.log(`\n最新10件のいいねを./data/bluesky-likes.jsonに保存しました`);
+
     console.log(`取得結果: ${likedPosts.length}件のいいね投稿`);
     
     if (likedPosts.length > 0) {

@@ -1,0 +1,45 @@
+{# _components/bluesky-likes.njk #}
+{% set likes = require('../data/bluesky-likes.json') %}
+
+<div class="bluesky-likes-list">
+  {% for item in likes %}
+    <div class="bluesky-like">
+      <div class="bluesky-like-meta">
+        <span class="bluesky-like-author">{{ item.author }} (@{{ item.handle }})</span>
+        <span class="bluesky-like-date">{{ item.date | date('YYYY-MM-DD HH:mm') }}</span>
+      </div>
+      <div class="bluesky-like-embed">
+        <iframe
+          src="https://embed.bsky.app/?url={{ item.url | url_encode }}"
+          allowfullscreen
+          loading="lazy"
+          style="border:none;width:100%;min-height:200px;max-width:600px;"
+        ></iframe>
+      </div>
+      <div class="bluesky-like-text">
+        {{ item.text | safe }}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+.bluesky-likes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.bluesky-like-meta {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 0.3em;
+}
+.bluesky-like-embed iframe {
+  border-radius: 8px;
+  background: #fafbfc;
+}
+.bluesky-like-text {
+  margin-top: 0.5em;
+  font-size: 1em;
+}
+</style>
