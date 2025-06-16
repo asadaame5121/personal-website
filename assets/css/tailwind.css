@@ -1,7 +1,5 @@
 /* TailwindCSS基本スタイル */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss"
 
 /* カスタムスタイル */
 @layer base {

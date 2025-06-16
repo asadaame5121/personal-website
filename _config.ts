@@ -3,7 +3,6 @@ import jsx from "lume/plugins/jsx.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import postcss from "lume/plugins/postcss.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
-
 import autoprefixer from "npm:autoprefixer";
 import nesting from "npm:postcss-nesting";
 import cssnano from "npm:cssnano";
@@ -56,16 +55,52 @@ site.ignore((path) => {
          problematicFiles.some(keyword => path.includes(keyword));
 });
 
-// TailwindCSSとPostCSSの設定
+// obsidianディレクトリを削除対象から除外
+// site.clean()の動作を調整
+site.addEventListener("beforeBuild", () => {
+  // obsidianディレクトリをクリーンアップ時に無視するための設定
+  site.ignore("/obsidian/**/*");
+});
+
+// 基本プラグインの設定
 site.use(date());
 site.use(nunjucks());
 site.use(jsx());
 site.use(wikilinks());
+
+// TailwindCSSとPostCSSの設定
+// CSS処理のエントリーポイントを明示的に設定
+// 注意: ファイルが存在しない場合は作成する
+site.page({
+  url: "/assets/styles.css",
+  content: `@tailwind base;
+@tailwind components;
+@tailwind utilities;
+`,
+  draft: false
+});
+
+// 本番環境かどうかの判定
+const _isProduction = Deno.env.get("LUME_MODE") === "production";
+
+// TailwindCSS設定
 site.use(tailwindcss({
   extensions: [".html", ".jsx", ".njk"],
+  // JITモードを有効化して効率化
   options: {
+    mode: "jit",
     theme: {
       colors: {
+        // モノトーンカラーパレット（デジタル庁デザインシステム参考）
+        'mono-black': '#1A1A1A',    // 最も濃い黒（見出しなど）
+        'mono-darkgray': '#333333', // 濃い灰色（本文テキストなど）
+        'mono-gray': '#666666',     // 中間の灰色（補助テキストなど）
+        'mono-lightgray': '#999999',// 薄い灰色（境界線など）
+        'mono-silver': '#CCCCCC',   // シルバー（無効状態など）
+        'mono-white': '#F8F8F8',    // オフホワイト（背景色）
+        'mono-accent': '#4A5568',   // アクセントカラー
+        
+        // 既存のカラーパレット（参照用に残す）
         'garden-green': '#2E5A30',
         'garden-lavender': '#A991C5',
         'garden-ivory': '#F2EFE2',
@@ -93,30 +128,37 @@ site.use(tailwindcss({
 
 // PostCSSプラグインの設定
 site.use(postcss({
-  // 処理対象の拡張子
-  extensions: [".css"],
-  // インクルードパス（@importで参照するディレクトリ）
-  includes: "assets/styles.css",
-  // 使用するプラグイン
+  // Lume v3のプラグインオプションに合わせて修正
+  // プラグインオブジェクトのみを指定し、環境に応じた設定を適用
   plugins: [
+    // 常に有効なプラグイン
     autoprefixer(), // ベンダープレフィックスを自動追加
     nesting(),      // CSSネスト記法のサポート
-    cssnano({       // CSS最小化（本番環境用）
-      preset: 'default',
-    }),
+    
+    // 本番環境でのみ有効なプラグイン
+    ..._isProduction ? [
+      cssnano({     // CSS最小化（本番環境用）
+        preset: 'default',
+      })
+    ] : [],
   ],
 }));
-// assetsディレクトリ内のファイルを個別にコピー
+
+// 静的ファイルのコピー設定
+// ディレクトリ単位でコピーするように整理
 site.copy("assets/css");
 site.copy("assets/images");
-site.copy("assets/styles.css");
 site.copy("assets/js");
-site.data("components", {
-  header: "_components/header.njk",
-  footer: "_components/footer.njk",
-  readinglist: "_components/readinglist.njk",
-  dailylog: "_components/dailylog.njk",
-});
+
+// コンポーネント設定
+// _componentsフォルダ内のコンポーネントは自動的に読み込まれるため、
+// 個別に登録する必要はありません。
+
+// コンポーネントのCSSとJSの出力設定
+site.options.components = {
+  cssFile: "/assets/components.css",
+  jsFile: "/assets/components.js"
+};
 
 // Blueskyポスト取得フィルターを登録
 site.filter("getBlueskyPosts", () => []); // ★ダミー実装（ビルド通過用）
