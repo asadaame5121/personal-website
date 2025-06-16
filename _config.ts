@@ -33,6 +33,7 @@ site.ignore((path) => {
   const excludePaths = [
     "/.git/",
     "/_archive/",
+    "/_archive/get-bluesky-posts.js", // 一時的に除外するファイル
     "/.gitmodules",
     "/attachments/",
     "/Extra/",
