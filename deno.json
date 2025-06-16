@@ -5,7 +5,8 @@
     "@std/front-matter": "jsr:@std/front-matter@^1.0.9",
     "@std/fs": "jsr:@std/fs@^1.0.16",
     "fast-xml-parser": "npm:fast-xml-parser@^5.2.0",
-    "lume/": "https://deno.land/x/lume@v2.5.3/"
+    "lume/": "https://deno.land/x/lume@v3.0.4/",
+    "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.9/jsx-runtime.ts"
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
@@ -17,6 +18,6 @@
       "lume/types.ts"
     ],
     "jsx": "react-jsx",
-    "jsxImportSource": "npm:preact"
+    "jsxImportSource": "lume"
   }
 }
