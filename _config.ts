@@ -3,7 +3,7 @@ import jsx from "lume/plugins/jsx_preact.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import postcss from "lume/plugins/postcss.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
-import getBlueskyPosts from "./_filters/get-bluesky-posts.js";
+import getBlueskyPosts from "./_archive/get-bluesky-posts.js";
 import autoprefixer from "npm:autoprefixer";
 import nesting from "npm:postcss-nesting";
 import cssnano from "npm:cssnano";
