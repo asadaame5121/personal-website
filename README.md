@@ -1,5 +1,5 @@
 ---
-layout: article.njk
+layout: layout-grid.jsx
 title: readme
 ---
 

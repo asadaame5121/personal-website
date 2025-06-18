@@ -2,20 +2,16 @@
 
 
 /* カスタムスタイル */
-:root {
-    /* 海洋・探検テーマカラースキーム */
-    --color-deep-blue: #1A3A5F;
-    --color-tropical-green: #2E6D32;
-    --color-antique-paper: #E8D0AA;
-    --color-gold: #FFCC33;
-    --color-coral-red: #E63946;
-    --color-mahogany: #6D4C3D;
-    --color-caribbean: #40BCD8;
-    
-    /* ダークモード用 */
-    --color-dark-bg: #0D1B2A;
-    --color-dark-text: #E8D0AA;
+@theme {
+  'mono-black': '#1A1A1A',    // 最も濃い黒（見出しなど）
+  'mono-darkgray': '#333333', // 濃い灰色（本文テキストなど）
+  'mono-gray': '#666666',     // 中間の灰色（補助テキストなど）
+  'mono-lightgray': '#999999',// 薄い灰色（境界線など）
+  'mono-silver': '#CCCCCC',   // シルバー（無効状態など）
+  'mono-white': '#F8F8F8',    // オフホワイト（背景色）
+  'mono-accent': '#4A5568',   // アクセントカラー
 }
+
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;

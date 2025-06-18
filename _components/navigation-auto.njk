@@ -1,0 +1,56 @@
+<div class="bg-mono-white p-4 rounded border border-mono-lightgray">
+  <h2 class="text-xl font-bold mb-4 text-mono-black border-b border-mono-lightgray pb-2">ナビゲーション</h2>
+  
+  {% set rootMenu = nav.menu() %}
+  {% if rootMenu.children.length > 0 %}
+    <ul class="space-y-2">
+      {# ホームページ #}
+      <li>
+        {% if page.url == "/" %}
+          <span class="font-bold text-mono-black">ホーム</span>
+        {% else %}
+          <a href="/" class="text-mono-accent hover:text-mono-black">ホーム</a>
+        {% endif %}
+      </li>
+      
+      {# 自動生成されたトップレベルのナビゲーション項目 #}
+      {% for item in rootMenu.children %}
+        {% if item.data and item.data.url and not item.data.url.includes("/_") and not item.data.url.includes("/obsidian/") %}
+          <li>
+            {% if page.url == item.data.url %}
+              <span class="font-bold text-mono-black">{{ item.data.title or item.data.basename }}</span>
+            {% else %}
+              <a href="{{ item.data.url }}" class="text-mono-accent hover:text-mono-black">{{ item.data.title or item.data.basename }}</a>
+            {% endif %}
+            
+            {# サブメニュー（最初のレベルのみ） #}
+            {% if item.children and item.children.length > 0 %}
+              <ul class="pl-4 mt-1 space-y-1 text-sm">
+                {% for child in item.children %}
+                  {% if child.data and child.data.url and not child.data.url.includes("/_") %}
+                    <li>
+                      {% if page.url == child.data.url %}
+                        <span class="font-bold text-mono-black">{{ child.data.title or child.data.basename }}</span>
+                      {% else %}
+                        <a href="{{ child.data.url }}" class="text-mono-accent hover:text-mono-black">{{ child.data.title or child.data.basename }}</a>
+                      {% endif %}
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% else %}
+    {# フォールバック：メニューが生成されなかった場合 #}
+    <ul class="space-y-2">
+      <li><a href="/" class="text-mono-accent hover:text-mono-black">ホーム</a></li>
+      <li><a href="/dailylog" class="text-mono-accent hover:text-mono-black">Daily Log</a></li>
+      <li><a href="/readinglist" class="text-mono-accent hover:text-mono-black">Reading List</a></li>
+      <li><a href="/clippingshare" class="text-mono-accent hover:text-mono-black">Clipping Share</a></li>
+      <li><a href="/about" class="text-mono-accent hover:text-mono-black">About</a></li>
+    </ul>
+  {% endif %}
+</div>

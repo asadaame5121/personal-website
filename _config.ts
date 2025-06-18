@@ -1,8 +1,8 @@
 import lume from "lume/mod.ts";
 import jsx from "lume/plugins/jsx.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
-import postcss from "lume/plugins/postcss.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
+import nav from "lume/plugins/nav.ts";
 import autoprefixer from "npm:autoprefixer";
 import nesting from "npm:postcss-nesting";
 import cssnano from "npm:cssnano";
@@ -67,6 +67,7 @@ site.use(date());
 site.use(nunjucks());
 site.use(jsx());
 site.use(wikilinks());
+site.use(nav());
 
 // TailwindCSSとPostCSSの設定
 // CSS処理のエントリーポイントを明示的に設定
@@ -126,29 +127,12 @@ site.use(tailwindcss({
   },
 }));
 
-// PostCSSプラグインの設定
-site.use(postcss({
-  // Lume v3のプラグインオプションに合わせて修正
-  // プラグインオブジェクトのみを指定し、環境に応じた設定を適用
-  plugins: [
-    // 常に有効なプラグイン
-    autoprefixer(), // ベンダープレフィックスを自動追加
-    nesting(),      // CSSネスト記法のサポート
-    
-    // 本番環境でのみ有効なプラグイン
-    ..._isProduction ? [
-      cssnano({     // CSS最小化（本番環境用）
-        preset: 'default',
-      })
-    ] : [],
-  ],
-}));
 
 // 静的ファイルのコピー設定
 // ディレクトリ単位でコピーするように整理
-site.copy("assets/css");
-site.copy("assets/images");
-site.copy("assets/js");
+site.add("assets/css");
+site.add("assets/images");
+site.add("assets/js");
 
 // コンポーネント設定
 // _componentsフォルダ内のコンポーネントは自動的に読み込まれるため、
@@ -163,7 +147,14 @@ site.options.components = {
 // Blueskyポスト取得フィルターを登録
 site.filter("getBlueskyPosts", () => []); // ★ダミー実装（ビルド通過用）
 
-site.ignore((path) => path.endsWith('.jsx') || path.endsWith('.tsx'));
+// JSXファイルをプライマリーテンプレートとして使用するため、下記の行をコメントアウト
+// site.ignore((path) => path.endsWith('.jsx') || path.endsWith('.tsx'));
+site.ignore((path) => {
+  // /obsidian/example.mdのようなパスに一致し、さらに深いディレクトリ構造を持たないものを除外
+  return /^\/obsidian\/[^\/]+\.md$/.test(path);
+});
+
+
 
 site.process([".html"], (pages) => {
   for (const page of pages) {

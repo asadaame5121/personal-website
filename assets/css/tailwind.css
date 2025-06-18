@@ -1,5 +1,19 @@
 /* TailwindCSS基本スタイル */
 @import "tailwindcss";
+@plugin "daisyui";
+
+/* Tailwind CSS 4のカスタムカラー定義 */
+@layer theme {
+  :root {
+    --color-mono-black: #1A1A1A;    /* 最も濃い黒（見出しなど） */
+    --color-mono-darkgray: #333333; /* 濃い灰色（本文テキストなど） */
+    --color-mono-gray: #666666;     /* 中間の灰色（補助テキストなど） */
+    --color-mono-lightgray: #999999;/* 薄い灰色（境界線など） */
+    --color-mono-silver: #CCCCCC;   /* シルバー（無効状態など） */
+    --color-mono-white: #F8F8F8;    /* オフホワイト（背景色） */
+    --color-mono-accent: #4A5568;   /* アクセントカラー */
+  }
+}
 
 /* カスタムスタイル */
 @layer base {
@@ -8,19 +22,19 @@
   }
   
   h1 {
-    @apply text-3xl font-bold mb-4 text-deep-green;
+    @apply text-3xl font-bold mb-4 text-[--color-mono-black];
   }
   
   h2 {
-    @apply text-2xl font-bold mb-3 text-deep-green;
+    @apply text-2xl font-bold mb-3 text-[--color-mono-black];
   }
   
   h3 {
-    @apply text-xl font-bold mb-2 text-deep-green;
+    @apply text-xl font-bold mb-2 text-[--color-mono-black];
   }
   
   a {
-    @apply text-lavender hover:text-rose-pink transition-colors;
+    @apply text-[--color-mono-accent] hover:text-[--color-mono-darkgray] transition-colors;
   }
 }
 
@@ -30,15 +44,22 @@
   }
   
   .btn-primary {
-    @apply bg-deep-green text-ivory hover:bg-opacity-90;
+    @apply bg-[--color-mono-accent] text-[--color-mono-white] font-bold py-2 px-4 rounded hover:bg-[--color-mono-accent/90];
   }
   
   .btn-secondary {
-    @apply bg-lavender text-ivory hover:bg-opacity-90;
+    @apply bg-[--color-mono-gray] text-[--color-mono-white] hover:bg-[--color-mono-gray/90];
   }
   
   .card {
-    @apply bg-white rounded-lg shadow-md p-4 border border-gray-200;
+    @apply bg-[--color-mono-white] rounded-lg shadow-md p-4 border border-[--color-mono-lightgray];
+  }
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 768px) {
+  .container {
+    @apply px-4;
   }
 }
 
