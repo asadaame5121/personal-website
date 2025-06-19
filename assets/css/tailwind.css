@@ -1,6 +1,6 @@
 /* TailwindCSS基本スタイル */
 @import "tailwindcss";
-@plugin "daisyui";
+/* @plugin "daisyui"; */
 
 /* Tailwind CSS 4のカスタムカラー定義 */
 @layer theme {
