@@ -10,5 +10,7 @@
 			"path": "../Website"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"powershell.cwd": "personal-website"
+	}
 }
