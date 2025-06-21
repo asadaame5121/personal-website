@@ -29,24 +29,17 @@ export default function LayoutGrid({ title, content, date, category, tags, autho
         </header>
         
         <div className="container mx-auto px-4 py-8">
-          <div className="grid grid-cols-12 gap-6">
+          <div className="flex flex-col lg:flex-row gap-6">
             {/* 左カラム：ナビゲーション */}
-            <nav className="col-span-12 md:col-span-3 lg:col-span-2">
-              <div className="bg-mono-white p-4 rounded border border-mono-lightgray">
-                <h2 className="text-xl font-bold mb-4 text-mono-black border-b border-mono-lightgray pb-2">ナビゲーション</h2>
-                <ul className="space-y-2">
-                  <li><a href="/" className="text-mono-accent hover:text-mono-black">ホーム</a></li>
-                  <li><a href="/dailylog" className="text-mono-accent hover:text-mono-black">Daily Log</a></li>
-                  <li><a href="/readinglist" className="text-mono-accent hover:text-mono-black">Reading List</a></li>
-                  <li><a href="/clippingshare" className="text-mono-accent hover:text-mono-black">Clipping Share</a></li>
-                  <li><a href="/about" className="text-mono-accent hover:text-mono-black">About</a></li>
-                </ul>
-              </div>
+            <nav className="flex-none w-full lg:w-1/5">
+              <div className="bg-mono-white p-4 rounded border border-mono-lightgray space-y-4">
+
               <comp.nav />
+              </div>
             </nav>
             
             {/* 中央カラム：メインコンテンツ */}
-            <main className="col-span-12 md:col-span-9 lg:col-span-7">
+            <main className="flex-1">
               <div className="bg-mono-white p-6 rounded border border-mono-lightgray">
                 <article className="h-entry">
                   <h1 className="p-name text-2xl font-bold mb-4 text-mono-black">{title}</h1>
@@ -107,7 +100,7 @@ export default function LayoutGrid({ title, content, date, category, tags, autho
             </main>
             
             {/* 右カラム：サイドメニュー（デスクトップのみ） */}
-            <aside className="col-span-12 md:hidden lg:block lg:col-span-3">
+            <aside className="hidden lg:block flex-none lg:w-1/5">
               <div className="bg-mono-white p-4 rounded border border-mono-lightgray">
                 <h2 className="text-xl font-bold mb-4 text-mono-black border-b border-mono-lightgray pb-2">サイド</h2>
                 <div className="space-y-4">
