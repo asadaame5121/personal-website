@@ -1,7 +1,7 @@
 <div class="reading-list">
   <h2>現在読んでいる本</h2>
   
-  {% set readingBooks = search.pages("tags=📚/読んでる") %}
+  {% set readingBooks = search.pages("📚/読んでる") %}
   
   {% if readingBooks | length > 0 %}
     <ul class="book-list">

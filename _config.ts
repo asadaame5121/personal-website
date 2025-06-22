@@ -3,13 +3,14 @@ import jsx from "lume/plugins/jsx.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
 import nav from "lume/plugins/nav.ts";
+import pagefind from "lume/plugins/pagefind.ts";
 import autoprefixer from "npm:autoprefixer";
-import nesting from "npm:postcss-nesting";
-import cssnano from "npm:cssnano";
+import mdx from "lume/plugins/mdx.ts";
 import wikilinks from "https://deno.land/x/lume_markdown_plugins@v0.9.0/wikilinks.ts";
 import callout from "npm:markdown-it-obsidian-callouts";
 
 import date from "lume/plugins/date.ts";
+import extractLog from "./_filters/extract-log-content.js";
 
 const markdown = {
   plugin: [callout]
@@ -57,10 +58,10 @@ site.ignore((path) => {
 
 // obsidianディレクトリを削除対象から除外
 // site.clean()の動作を調整
-site.addEventListener("beforeBuild", () => {
-  // obsidianディレクトリをクリーンアップ時に無視するための設定
-  site.ignore("/obsidian/**/*");
-});
+// site.addEventListener("beforeBuild", () => {
+//   // obsidianディレクトリをクリーンアップ時に無視するための設定
+//   site.ignore("/obsidian/**/*");
+// });
 
 // 基本プラグインの設定
 site.use(date());
@@ -68,7 +69,10 @@ site.use(nunjucks());
 site.use(jsx());
 site.use(wikilinks());
 site.use(nav());
+site.use(pagefind());
+site.use(mdx());
 
+site.filter("extractLog", extractLog);
 // TailwindCSSとPostCSSの設定
 // CSS処理のエントリーポイントを明示的に設定
 // 注意: ファイルが存在しない場合は作成する

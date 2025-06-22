@@ -1,14 +1,10 @@
 <div class="daily-log">
-  <h2>日報</h2>
-  
-
-  <!-- 既存の日報エントリ -->
+  <div class="current-date">{{ "now" | date("yyyy-MM-dd") }}</div>
   <div class="obsidian-logs">
-    <h3>Obsidian日報</h3>
-    {% for log in search.pages("url^=/obsidian/log/", "date=desc", 5) %}
+    {% for log in search.pages("dailynote", "date=desc", 5) %}
     <div class="log-entry">
-      <div class="log-date">{{ log.date | date("YYYY年MM月DD日") }}</div>
-      <div class="log-content">{{ log.content | safe }}</div>
+      <div class="log-date">{{ log.date | date("yyyy-MM-dd") }}</div>
+      <div class="log-content">{{ log.content | extractLog | safe }}</div>
     </div>
     {% endfor %}
   </div>

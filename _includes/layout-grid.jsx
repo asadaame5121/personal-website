@@ -1,4 +1,4 @@
-export default function LayoutGrid({ title, content, date, category, tags, author, previousPost, nextPost, children, comp }) {
+export default function LayoutGrid({ title, content, date, category, tags, author, previousPost, nextPost, children, comp, resentPages }) {
   return (
     <>
       {`<!DOCTYPE html>`}
@@ -33,7 +33,7 @@ export default function LayoutGrid({ title, content, date, category, tags, autho
             {/* 左カラム：ナビゲーション */}
             <nav className="flex-none w-full lg:w-1/5">
               <div className="bg-mono-white p-4 rounded border border-mono-lightgray space-y-4">
-
+              <div id="search"></div>
               <comp.nav />
               </div>
             </nav>
@@ -104,6 +104,7 @@ export default function LayoutGrid({ title, content, date, category, tags, autho
               <div className="bg-mono-white p-4 rounded border border-mono-lightgray">
                 <h2 className="text-xl font-bold mb-4 text-mono-black border-b border-mono-lightgray pb-2">サイド</h2>
                 <div className="space-y-4">
+                  <comp.resentPages />
                   {children?.sidebar}
                 </div>
               </div>

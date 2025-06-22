@@ -3,7 +3,7 @@ export const frontmatter = {
   title: "DropGarden"
 };
 
-export default function NewIndex({ comp, clippingshare, categories, tags }) {
+export default function NewIndex({ comp, clippingshare, categories, tags, dailylog, readinglist }) {
   return (
     <>
       <h1 className="text-3xl font-bold mb-6 text-mono-black">DropGarden</h1>
@@ -22,7 +22,7 @@ export default function NewIndex({ comp, clippingshare, categories, tags }) {
             <h2 className="text-xl font-bold">Daily Log</h2>
           </div>
           <div className="p-4">
-            {comp.dailylog()}
+            <comp.dailylog />
             <div className="mt-4">
               <a href="/dailylog" className="text-mono-accent hover:text-mono-black font-medium">すべて見る →</a>
             </div>
@@ -35,7 +35,7 @@ export default function NewIndex({ comp, clippingshare, categories, tags }) {
             <h2 className="text-xl font-bold">Reading List</h2>
           </div>
           <div className="p-4">
-            {comp.readinglist()}
+            <comp.readinglist />
             <div className="mt-4">
               <a href="/readinglist" className="text-mono-accent hover:text-mono-black font-medium">すべて見る →</a>
             </div>

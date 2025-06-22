@@ -2,6 +2,8 @@
 layout: layout-grid.jsx
 title: DropGarden
 url: /
+renderOrder: 1
+templateEngine: [njk, md]
 description: 個人的なノート、リソース、用語集、書籍メモなどを織り交ぜたデジタルガーデン
 ---
 
@@ -22,10 +24,7 @@ description: 個人的なノート、リソース、用語集、書籍メモな�
       <h2 class="text-xl font-bold">Daily Log</h2>
     </div>
     <div class="p-4">
-      {{ comp.dailylog() | safe }}
-      <div class="mt-4">
-        <a href="/dailylog" class="text-mono-accent hover:text-mono-black font-medium">すべて見る →</a>
-      </div>
+      {{ comp.dailylog ()| await | safe }}
     </div>
   </div>
   
@@ -35,10 +34,7 @@ description: 個人的なノート、リソース、用語集、書籍メモな�
       <h2 class="text-xl font-bold">Reading List</h2>
     </div>
     <div class="p-4">
-      {{ comp.readinglist() | safe }}
-      <div class="mt-4">
-        <a href="/readinglist" class="text-mono-accent hover:text-mono-black font-medium">すべて見る →</a>
-      </div>
+      {{ comp.readinglist ()| await | safe }}
     </div>
   </div>
 </div>
@@ -68,19 +64,6 @@ description: 個人的なノート、リソース、用語集、書籍メモな�
 {% endblock %}
 
 {% block sidebar %}
-<div class="mb-6">
-  <h3 class="text-lg font-bold mb-2 text-mono-black">カテゴリー</h3>
-  <ul class="space-y-1">
-    {% for category in categories %}
-    <li>
-      <a href="/category/{{ category.name | slug }}" class="text-mono-accent hover:text-mono-black">
-        {{ category.name }} ({{ category.count }})
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
-
 <div>
   <h3 class="text-lg font-bold mb-2 text-mono-black">タグクラウド</h3>
   <div class="flex flex-wrap gap-2">
