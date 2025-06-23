@@ -12,6 +12,11 @@ jobs:
           token: ${{ secrets.PAT_FOR_COMMIT }}   # 上と同じトークンでも可
           submodules: 'recursive'
 
+      - name: Set git identity
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Update submodule
         run: |
           git submodule update --remote obsidian
