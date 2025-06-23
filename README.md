@@ -1,3 +1,11 @@
+---
+layout: layout-grid.jsx
+title: readme
+---
+
+
+hogehoge
+---
 とりあえず
 
 [[Index.md]]

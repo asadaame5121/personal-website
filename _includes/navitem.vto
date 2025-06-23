@@ -1,0 +1,18 @@
+{{ if item.data.url }}
+  <a href="{{ item.data.url }}">
+    {{ item.data.title }}
+  </a>
+{{ else }}
+  <span>{{ item.data.basename }}</span>
+{{ /if }}
+
+<!-- 子要素がある場合のみリストを表示、最大深さを制限 -->
+{{ if item.children && item.children.length > 0 && (!depth || depth < 1) }}
+<ul>
+  {{ for child of item.children }}
+  <li>
+    {{ include "navitem.vto" { item: child, depth: (depth || 0) + 1 } }}
+  </li>
+  {{ /for }}
+</ul>
+{{ /if }}

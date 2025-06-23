@@ -1,0 +1,90 @@
+{
+  "frames": {
+    "Ground/Grass_0": {
+      "frame": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "sourceSize": {"w": 32, "h": 32}
+    },
+    "Ground/Shore_0": {
+      "frame": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "sourceSize": {"w": 32, "h": 32}
+    },
+    "Ground/DeadGrass_0": {
+      "frame": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "sourceSize": {"w": 32, "h": 32}
+    },
+    "Ground/TexturedGrass_0": {
+      "frame": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "sourceSize": {"w": 32, "h": 32}
+    },
+    "Ground/Cliff_0": {
+      "frame": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "sourceSize": {"w": 32, "h": 32}
+    },
+    "Nature/Trees_0": {
+      "frame": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "sourceSize": {"w": 32, "h": 32}
+    },
+    "Nature/Rocks_0": {
+      "frame": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "sourceSize": {"w": 32, "h": 32}
+    },
+    "Nature/PineTrees_0": {
+      "frame": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "sourceSize": {"w": 32, "h": 32}
+    },
+    "Buildings/Wood/Houses_0": {
+      "frame": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "sourceSize": {"w": 32, "h": 32}
+    },
+    "Buildings/Wood/Tower_0": {
+      "frame": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "sourceSize": {"w": 32, "h": 32}
+    },
+    "Buildings/Wood/Huts_0": {
+      "frame": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {"x": 0, "y": 0, "w": 32, "h": 32},
+      "sourceSize": {"w": 32, "h": 32}
+    }
+  },
+  "meta": {
+    "app": "https://github.com/asadaame5121/personal-website",
+    "version": "1.0",
+    "image": "spritesheet.png",
+    "format": "RGBA8888",
+    "size": {"w": 384, "h": 128},
+    "scale": "1",
+    "related_multi_packs": []
+  }
+}
