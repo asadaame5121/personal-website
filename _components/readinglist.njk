@@ -7,7 +7,7 @@
     <ul class="book-list">
       {% for book in readingBooks %}
       <li class="book-item">
-        <a href="{{ book.data.url }}">{{ book.data.title }}</a>
+        <a href="{{ book.url }}">{{ book.title }}</a>
       </li>
       {% endfor %}
     </ul>
