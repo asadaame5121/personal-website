@@ -1,0 +1,17 @@
+<div class="reading-list">
+  <h2>現在読んでいる本</h2>
+  
+  {% set readingBooks = search.pages("📚/読んでる") %}
+  
+  {% if readingBooks | length > 0 %}
+    <ul class="book-list">
+      {% for book in readingBooks %}
+      <li class="book-item">
+        <a href="{{ book.url }}">{{ book.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>現在読んでいる本は見つかりません。</p>
+  {% endif %}
+</div>

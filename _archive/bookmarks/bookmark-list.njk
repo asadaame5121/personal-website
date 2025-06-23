@@ -1,0 +1,49 @@
+{% if view == "grid" %}
+<div class="bookmarks-grid" id="bookmarks-container">
+  {% for bookmark in bookmarks %}
+  <div class="bookmark-card" data-tags="{{ bookmark.tags | join(',') }}">
+    <div class="bookmark-content">
+      <h3 class="bookmark-title">
+        <a href="{{ bookmark.url }}" target="_blank" rel="noopener">
+          {{ bookmark.title }}
+          {% if bookmark.favorite %}<span class="bookmark-favorite">★</span>{% endif %}
+        </a>
+      </h3>
+      <p class="bookmark-description">{{ bookmark.description }}</p>
+      <div class="bookmark-meta">
+        <div class="bookmark-tags">
+          {% for tag in bookmark.tags %}
+          <a href="#" class="bookmark-tag" data-tag="{{ tag }}">{{ tag }}</a>
+          {% endfor %}
+        </div>
+        <div class="bookmark-date">{{ bookmark.created }}</div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<div class="bookmarks-list" id="bookmarks-container">
+  {% for bookmark in bookmarks %}
+  <div class="bookmark-item" data-tags="{{ bookmark.tags | join(',') }}">
+    <div class="bookmark-item-content">
+      <h3 class="bookmark-title">
+        <a href="{{ bookmark.url }}" target="_blank" rel="noopener">
+          {{ bookmark.title }}
+          {% if bookmark.favorite %}<span class="bookmark-favorite">★</span>{% endif %}
+        </a>
+      </h3>
+      <p class="bookmark-description">{{ bookmark.description }}</p>
+      <div class="bookmark-meta">
+        <div class="bookmark-tags">
+          {% for tag in bookmark.tags %}
+          <a href="#" class="bookmark-tag" data-tag="{{ tag }}">{{ tag }}</a>
+          {% endfor %}
+        </div>
+        <div class="bookmark-date">{{ bookmark.created }}</div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}

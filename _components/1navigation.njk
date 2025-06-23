@@ -1,0 +1,33 @@
+<div class="bg-mono-white p-4 rounded border border-mono-lightgray">
+  <h2 class="text-xl font-bold mb-4 text-mono-black border-b border-mono-lightgray pb-2">ナビゲーション</h2>
+  <ul class="space-y-2">
+    {% set menu = nav.menu() %}
+    
+    {# ホームページ #}
+    <li>
+      {% if page.url == "/" %}
+        <span class="font-bold text-mono-black">ホーム</span>
+      {% else %}
+        <a href="/" class="text-mono-accent hover:text-mono-black">ホーム</a>
+      {% endif %}
+    </li>
+    
+    {# 主要セクション #}
+    {% set mainSections = [
+      { path: "/dailylog", title: "Daily Log" },
+      { path: "/readinglist", title: "Reading List" },
+      { path: "/clippingshare", title: "Clipping Share" },
+      { path: "/about", title: "About" }
+    ] %}
+    
+    {% for section in mainSections %}
+      <li>
+        {% if page.url == section.path %}
+          <span class="font-bold text-mono-black">{{ section.title }}</span>
+        {% else %}
+          <a href="{{ section.path }}" class="text-mono-accent hover:text-mono-black">{{ section.title }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

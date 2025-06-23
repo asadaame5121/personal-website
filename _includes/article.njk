@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/tailwind.css">
+    <link rel="stylesheet" href="/assets/obsidian-styles.css">
+    <title>{{ title }}</title>
+    <style>
+        :root {
+            /* 海洋・探検テーマカラースキーム */
+            --color-deep-blue: #1A3A5F;
+            --color-tropical-green: #2E6D32;
+            --color-antique-paper: #E8D0AA;
+            --color-gold: #FFCC33;
+            --color-coral-red: #E63946;
+            --color-mahogany: #6D4C3D;
+            --color-caribbean: #40BCD8;
+            
+            /* ダークモード用 */
+            --color-dark-bg: #0D1B2A;
+            --color-dark-text: #E8D0AA;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--color-antique-paper);
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* ダークモード */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: var(--color-dark-bg);
+                color: var(--color-dark-text);
+            }
+        }
+        
+        header {
+            background-color: var(--color-deep-blue);
+            color: white;
+            padding: 1rem;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        footer {
+            background-color: var(--color-deep-blue);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        /* 記事スタイル */
+        article.h-entry {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            article.h-entry {
+                background-color: #1A2A3A;
+            }
+        }
+        
+        /* 記事タイトル */
+        .p-name {
+            color: var(--color-deep-blue);
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 2.2rem;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .p-name {
+                color: var(--color-caribbean);
+            }
+        }
+        
+        /* 投稿日 */
+        .post-date {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .dt-published {
+            font-style: italic;
+        }
+        
+        /* 記事内容 */
+        .e-content {
+            margin-bottom: 2rem;
+        }
+        
+        /* タグとカテゴリー */
+        .tags {
+            margin: 1.5rem 0;
+        }
+        
+        .p-category {
+            display: inline-block;
+            background-color: var(--color-tropical-green);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+        
+        .p-category:hover {
+            background-color: var(--color-deep-blue);
+        }
+        
+        .category-main {
+            display: inline-block;
+            background-color: var(--color-coral-red);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            margin-right: 0.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .category-main:hover {
+            background-color: var(--color-mahogany);
+        }
+        
+        /* 前後記事ナビゲーション */
+        .post-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #ddd;
+        }
+        
+        .post-navigation a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: var(--color-deep-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .post-navigation a:hover {
+            background-color: var(--color-caribbean);
+        }
+        
+        /* 著者情報 */
+        .p-author {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+        }
+        
+        .p-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+        
+        .p-author-info {
+            font-size: 0.9rem;
+        }
+        
+        .p-author-name {
+            font-weight: bold;
+            color: var(--color-deep-blue);
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .p-author-name {
+                color: var(--color-caribbean);
+            }
+        }
+        
+        /* レスポンシブデザイン */
+        @media (max-width: 768px) {
+            main {
+                padding: 1rem;
+            }
+            
+            article.h-entry {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    {{ comp.header() | safe }}
+    
+    <main>
+        <article class="h-entry">
+            <h1 class="p-name">{{ title }}</h1>
+            
+            {% if date %}
+            <div class="post-date">
+                <time class="dt-published" datetime="{{ date }}">{{ date }}</time>
+            </div>
+            {% endif %}
+            
+            {% if category %}
+            <div>
+                <a href="/category/{{ category | slug }}" class="category-main p-category">{{ category }}</a>
+            </div>
+            {% endif %}
+            
+            <div class="e-content">
+                {{ content | safe }}
+            </div>
+            
+            {% if tags %}
+            <div class="tags">
+                {% for tag in tags %}
+                <a href="/tags/{{ tag | slug }}" class="p-category">{{ tag }}</a>
+                {% endfor %}
+            </div>
+            {% endif %}
+            
+            {% if author %}
+            <div class="p-author h-card">
+                {% if author.photo %}
+                <img src="{{ author.photo }}" alt="{{ author.name }}">
+                {% endif %}
+                <div class="p-author-info">
+                    <div class="p-author-name">{{ author.name }}</div>
+                    {% if author.bio %}
+                    <div>{{ author.bio }}</div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+            
+            <div class="post-navigation">
+                {% if previousPost %}
+                <a href="{{ previousPost.url }}" class="prev-post u-url">← 前の記事</a>
+                {% else %}
+                <span></span>
+                {% endif %}
+                
+                {% if nextPost %}
+                <a href="{{ nextPost.url }}" class="next-post u-url">次の記事 →</a>
+                {% else %}
+                <span></span>
+                {% endif %}
+            </div>
+        </article>
+    </main>
+    
+    {{ comp.footer() | safe }}
+</body>
+</html>
