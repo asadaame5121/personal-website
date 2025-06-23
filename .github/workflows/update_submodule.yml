@@ -1,0 +1,22 @@
+name: Update Obsidian submodule
+on:
+  repository_dispatch:
+    types: [obsidian-updated]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_FOR_COMMIT }}   # 上と同じトークンでも可
+          submodules: 'recursive'
+
+      - name: Update submodule
+        run: |
+          git submodule update --remote obsidian
+          git add obsidian
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update obsidian submodule"
+            git push origin HEAD
+          fi
