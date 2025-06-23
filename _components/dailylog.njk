@@ -4,7 +4,7 @@
     {% for log in search.pages("dailynote", "date=desc", 5) %}
     <div class="log-entry">
       <div class="log-date">{{ log.date | date("yyyy-MM-dd") }}</div>
-      <div class="log-content">{{ log.content | extractLog | safe }}</div>
+      <div class="log-content">{{ log | safe }}</div>
     </div>
     {% endfor %}
   </div>
