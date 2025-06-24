@@ -1,7 +1,6 @@
 export default function LayoutGrid({ title, content, date, category, tags, author, previousPost, nextPost, children, comp, resentPages }) {
   return (
     <>
-      {`<!DOCTYPE html>`}
       <html lang="ja">
       <head>
         <meta charSet="UTF-8" />
