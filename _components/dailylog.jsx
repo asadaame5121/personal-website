@@ -10,16 +10,17 @@ export default async function Dailylog() {
   let raw = "";
   try {
     raw = await Deno.readTextFile("./data/dailylog.md");
-  } catch (_) {
-    return <div class="daily-log-error">No dailylog found.</div>;
+  } catch (e) {
+    return <div>dailylog.mdが読めません: {e.message}</div>;
   }
-  // ## YYYY-MM-DDのメモ で分割
-  const regex = /##\s(\d{4}-\d{2}-\d{2})のメモ[\r\n]+([\s\S]*?)(?=^##\s\d{4}-\d{2}-\d{2}のメモ|\Z)/gm;
+  // "## YYYY-MM-DDのメモ" で分割し、各ブロックの先頭行から日付を抽出
+  const blocks = raw.split(/^##\s*(\d{4}-\d{2}-\d{2})のメモ.*$/m).slice(1);
   const entries = [];
-  let match;
-  while ((match = regex.exec(raw)) !== null) {
-    entries.push({ date: match[1], body: match[2].trim() });
+  for (let i = 0; i < blocks.length; i += 2) {
+    // blocks[i] = 日付, blocks[i+1] = 本文
+    entries.push({ date: blocks[i], body: blocks[i + 1]?.trim() ?? "" });
   }
+
   // 今日・昨日のみ表示
   const today = new Date();
   const yyyy = today.getFullYear();

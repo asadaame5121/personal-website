@@ -22,8 +22,8 @@ async function extractMemoSection(md: string): Promise<string | null> {
   const lines = md.split("\n");
   const idx = lines.findIndex(l => l.trim().startsWith("## きょうのメモ"));
   if (idx === -1) return null;
-  // idx行以降を抽出
-  return lines.slice(idx).join("\n").trim();
+  // idx行以降の1行目（見出し）を除外し、本文のみ返す
+  return lines.slice(idx + 1).join("\n").trim();
 }
 
 async function main() {
