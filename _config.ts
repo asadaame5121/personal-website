@@ -12,6 +12,7 @@ import callout from "npm:markdown-it-obsidian-callouts";
 import date from "lume/plugins/date.ts";
 import extractLog from "./_filters/extract-log-content.js";
 
+
 const markdown = {
   plugin: [callout]
 }
