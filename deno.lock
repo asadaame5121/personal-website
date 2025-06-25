@@ -3502,7 +3502,9 @@
     "https://deno.land/x/vento@v1.14.0/src/js.ts": "071e188dbc4bf0ce0fe44132b7161c83345a353820ff000494920cce8e2fca72",
     "https://deno.land/x/vento@v1.14.0/src/loader.ts": "a7089dea54db2b4d437e74a2d0a45341bc21763ca13f6adb60a38b524cc86255",
     "https://deno.land/x/vento@v1.14.0/src/tokenizer.ts": "127ddad02054f63b8b646e4dfbf555e1e34e9b8dcbd58d86b3729a4de95abd27",
-    "https://deno.land/x/vento@v1.14.0/src/transformer.ts": "9ff70c554b3889151745b5f7117bc5c02b889e6e16ca53e5b8c1fa6b767fb451"
+    "https://deno.land/x/vento@v1.14.0/src/transformer.ts": "9ff70c554b3889151745b5f7117bc5c02b889e6e16ca53e5b8c1fa6b767fb451",
+    "https://esm.sh/markdown-it@13.0.1/denonext/markdown-it.bundle.mjs": "925a47cf7ddf44d121c18177364ce3eda715659a7b8b4f9324755b9a25da4c5c",
+    "https://esm.sh/markdown-it@13.0.1?bundle": "302fc506fa911be5e16c0065397f718f9e008758ea49eda9c71b77b13440dc81"
   },
   "workspace": {
     "dependencies": [
