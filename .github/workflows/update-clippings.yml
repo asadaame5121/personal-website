@@ -1,11 +1,11 @@
-name: Update Dailylog
+name: Update Clippingshare
 
 on:
   push:
     branches: [main]
 
 jobs:
-  update-dailylog:
+  update-clippingshare:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository (with submodules)
@@ -20,7 +20,7 @@ jobs:
         with:
           deno-version: v2.x
 
-      - name: Run update-dailylog script
+      - name: Run update-clippingshare script
         run: deno run --allow-read --allow-write scripts/extract-clippingshare.ts
 
       - name: Commit and push changes
