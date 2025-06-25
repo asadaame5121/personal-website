@@ -45,17 +45,7 @@ description: 個人的なノート、リソース、用語集、書籍メモな�
     <h2 class="text-xl font-bold">Clipping Share</h2>
   </div>
   <div class="p-4">
-    {% for clipping in clippingshare %}
-      <div class="mb-4 pb-4 {% if not loop.last %}border-b border-mono-lightgray{% endif %}">
-        <h3 class="text-lg font-bold mb-2">
-          <a href="{{ clipping.url }}" class="text-mono-accent hover:text-mono-black">{{ clipping.title }}</a>
-        </h3>
-        <div class="text-mono-gray text-sm">{{ clipping.date | date }}</div>
-        {% if clipping.excerpt %}
-          <p class="mt-2">{{ clipping.excerpt }}</p>
-        {% endif %}
-      </div>
-    {% endfor %}
+    {{ comp.clippinglist() | await | safe }}
     <div class="mt-4">
       <a href="/clippingshare" class="text-mono-accent hover:text-mono-black font-medium">すべて見る →</a>
     </div>
