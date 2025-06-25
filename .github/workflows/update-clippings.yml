@@ -1,45 +1,37 @@
-name: Update Clippings Data
+name: Update Dailylog
 
 on:
-  # 毎日午前3時（UTC）に実行
-  schedule:
-    - cron: '0 3 * * *'
-  # 手動実行も可能に
-  workflow_dispatch:
+  push:
+    branches: [main]
 
 jobs:
-  update-clippings:
+  update-dailylog:
     runs-on: ubuntu-latest
-    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Checkout repository (with submodules)
+        uses: actions/checkout@v4
         with:
-          submodules: true  # obsidianサブモジュールを含めて取得
-      
-      - name: Setup Deno
-        uses: denoland/setup-deno@v1
+          submodules: 'recursive'
+          token: ${{ secrets.PAT_FOR_COMMIT }}
+
+
+      - name: Set up Deno
+        uses: denoland/setup-deno@v2
         with:
-          deno-version: v1.x
-      
-      - name: Update obsidian submodule
-        run: |
-          git submodule update --remote obsidian
-      
-      - name: Install Lume
-        run: deno run -A https://deno.land/x/lume/install.ts
-      
-      - name: Build site
-        run: deno task build
-        env:
-          BLUESKY_IDENTIFIER: ${{ secrets.BLUESKY_IDENTIFIER }}
-          BLUESKY_PASSWORD: ${{ secrets.BLUESKY_PASSWORD }}
-      
+          deno-version: v2.x
+
+      - name: Run update-dailylog script
+        run: deno run --allow-read --allow-write scripts/extract-clippingshare.ts
+
       - name: Commit and push changes
         run: |
-          git config --global user.name 'GitHub Actions Bot'
-          git config --global user.email 'actions@github.com'
-          git add obsidian
-          git add _site
-          git commit -m "Update clippings data and site build [skip ci]" || echo "No changes to commit"
-          git push
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data/clippingshare.md
+          if git diff --cached --quiet; then
+            echo 'No changes to commit.'
+          else
+            git commit -m 'Update clippingshare.md [GitHub Actions]'
+            git push
+          fi
+
