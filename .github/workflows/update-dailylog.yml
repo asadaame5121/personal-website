@@ -3,6 +3,8 @@ name: Update Dailylog
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'data/dailylog.md'
 
 jobs:
   update-dailylog:
