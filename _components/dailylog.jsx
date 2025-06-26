@@ -26,6 +26,15 @@ export default async function Dailylog() {
     entries.push({ date: blocks[i], body: blocks[i + 1]?.trim() ?? "" });
   }
 
+  // 同じ日付のセクションが複数ある場合は最初のものだけ採用
+  const uniqMap = new Map();
+  for (const e of entries) {
+    if (!uniqMap.has(e.date)) {
+      uniqMap.set(e.date, e);
+    }
+  }
+  const uniqEntries = Array.from(uniqMap.values());
+
   // 今日・昨日のみ表示
   const today = new Date();
   const yyyy = today.getFullYear();
@@ -38,7 +47,7 @@ export default async function Dailylog() {
   const mmm = String(yest.getMonth() + 1).padStart(2, '0');
   const ddd = String(yest.getDate()).padStart(2, '0');
   const yestStr = `${yyy}-${mmm}-${ddd}`;
-  const show = entries.filter(e => e.date === todayStr || e.date === yestStr);
+  const show = uniqEntries.filter(e => e.date === todayStr || e.date === yestStr);
 
   // JSX内でawaitを使わず、事前にHTML化
   const htmlEntries = await Promise.all(
