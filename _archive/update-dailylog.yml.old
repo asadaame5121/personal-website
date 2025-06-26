@@ -1,18 +1,17 @@
-name: Update Clippingshare
+# 旧仕様: Update Dailylog ワークフロー
+# 2025-06-26 アーカイブ
+
+name: Update Dailylog
 
 on:
-  schedule:
-    - cron: '0 3 * * *'
-  workflow_dispatch:
-    # 手動実行を許可
   push:
     branches: [main]
     paths-ignore:
-      - 'data/clippingshare.md'
       - 'data/dailylog.md'
+      - 'data/clippingshare.md'
 
 jobs:
-  update-clippingshare:
+  update-dailylog:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository (with submodules)
@@ -21,24 +20,22 @@ jobs:
           submodules: 'recursive'
           token: ${{ secrets.PAT_FOR_COMMIT }}
 
-
       - name: Set up Deno
         uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
 
-      - name: Run update-clippingshare script
-        run: deno run --allow-read --allow-write scripts/extract-clippingshare.ts
+      - name: Run update-dailylog script
+        run: deno run --allow-read --allow-write scripts/update-dailylog.ts
 
       - name: Commit and push changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add data/clippingshare.md
+          git add data/dailylog.md
           if git diff --cached --quiet; then
             echo 'No changes to commit.'
           else
-            git commit -m 'Update clippingshare.md [GitHub Actions]'
+            git commit -m 'Update dailylog.md [GitHub Actions]'
             git push
           fi
-
