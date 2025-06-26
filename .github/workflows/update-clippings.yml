@@ -3,6 +3,9 @@ name: Update Clippingshare
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'data/clippingshare.md'
+      - 'data/dailylog.md'
 
 jobs:
   update-clippingshare:
