@@ -1,3 +1,6 @@
+2025-06-26 13:25[戦後最大の生活保護費削減　背景にあった「バッシング」と政権交代：朝日新聞.md](https://digital.asahi.com/sp/articles/AST6S56R8T6SUTFL022M.html?ptoken=01JYN0C7Y4DQCRWK4CC9B0TTMN)
+
+
 2025-06-26 11:38[「多文化共生」の行きづまりを打破するために――塩原良和『共生の思考法』｜じんぶん堂.md](https://book.asahi.com/jinbun/article/15752038)
 
 
