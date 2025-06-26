@@ -8,10 +8,13 @@ import autoprefixer from "npm:autoprefixer";
 import mdx from "lume/plugins/mdx.ts";
 import wikilinks from "https://deno.land/x/lume_markdown_plugins@v0.9.0/wikilinks.ts";
 import callout from "npm:markdown-it-obsidian-callouts";
-
+import metas from "lume/plugins/metas.ts";
 import date from "lume/plugins/date.ts";
 import extractLog from "./_filters/extract-log-content.js";
-
+import Server from "lume/core/server.ts";
+import redirectAS2, { bridgyFed } from "lume/middlewares/redirect_as2.ts";
+import sitemap from "lume/plugins/sitemap.ts";
+import feed from "lume/plugins/feed.ts";
 
 const markdown = {
   plugin: [callout]
@@ -72,6 +75,25 @@ site.use(wikilinks());
 site.use(nav());
 site.use(pagefind());
 site.use(mdx());
+site.use(metas());
+site.use(sitemap());
+site.use(feed({
+  output: ["/posts.rss", "/posts.json"],
+  query: "type=post",
+  info: {
+    title: "=site.title",
+    description: "=site.description",
+  },
+  items: {
+    title: "=title",
+    description: "=excerpt",
+  },
+}));
+const server = new Server();
+
+const rewriteUrl = bridgyFed();
+
+server.use(redirectAS2({ rewriteUrl }));
 
 site.filter("extractLog", extractLog);
 // TailwindCSSとPostCSSの設定
