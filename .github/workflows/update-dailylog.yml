@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths-ignore:
       - 'data/dailylog.md'
+      - 'data/clippingshare.md'
 
 jobs:
   update-dailylog:
