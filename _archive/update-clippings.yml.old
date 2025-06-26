@@ -1,10 +1,9 @@
+# 旧仕様: Update Clippingshare ワークフロー
+# 2025-06-26 アーカイブ
+
 name: Update Clippingshare
 
 on:
-  schedule:
-    - cron: '0 3 * * *'
-  workflow_dispatch:
-    # 手動実行を許可
   push:
     branches: [main]
     paths-ignore:
@@ -20,7 +19,6 @@ jobs:
         with:
           submodules: 'recursive'
           token: ${{ secrets.PAT_FOR_COMMIT }}
-
 
       - name: Set up Deno
         uses: denoland/setup-deno@v2
@@ -41,4 +39,3 @@ jobs:
             git commit -m 'Update clippingshare.md [GitHub Actions]'
             git push
           fi
-

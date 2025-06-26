@@ -1,6 +1,10 @@
 name: Update Dailylog
 
 on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+    # 手動実行を許可
   push:
     branches: [main]
     paths-ignore:
