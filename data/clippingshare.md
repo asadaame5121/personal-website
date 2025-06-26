@@ -451,5 +451,8 @@ undefined[Thread by @yasgreen615.md](https://x.com/yasgreen615/status/1936223314
 undefined[（インタビュー）「嫌税」の時代　経済学者・諸富徹さん：朝日新聞.md](https://digital.asahi.com/sp/articles/DA3S16242447.html?ptoken=01JYJ1BK7KWS067A16NSGNW05T)
 
 
+undefined[「多文化共生」の行きづまりを打破するために――塩原良和『共生の思考法』｜じんぶん堂.md](https://book.asahi.com/jinbun/article/15752038)
+
+
 undefined[‘The Dawn of Everything’ and the Politics of Human Prehistory.md](https://quillette.com/2022/10/22/the-dawn-of-everything-and-the-politics-of-human-prehistory/)
 
