@@ -5,7 +5,7 @@ import { extract } from "@std/front-matter/yaml";
 
 
 const SOURCE_DIR = "./obsidian/Clippings";
-const OUTPUT_PATH = "./data/clippingshare.md";
+const OUTPUT_PATH = "./src/clippingshare.md";
 
 
 
