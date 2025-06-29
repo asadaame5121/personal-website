@@ -95,6 +95,10 @@ const rewriteUrl = bridgyFed();
 
 server.use(redirectAS2({ rewriteUrl }));
 
+// 404ページ（Not found middleware）
+import notFound from "lume/middlewares/not_found.ts";
+server.use(notFound({ page: "/404.html" }));
+
 site.filter("extractLog", extractLog);
 // TailwindCSSとPostCSSの設定
 // CSS処理のエントリーポイントを明示的に設定
