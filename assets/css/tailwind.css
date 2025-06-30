@@ -1,6 +1,7 @@
 /* TailwindCSS基本スタイル */
 @import "tailwindcss";
 @plugin "daisyui"; 
+@plugin "@tailwindcss/typography";
 
 /* Tailwind CSS 4のカスタムカラー定義 */
 @layer theme {
@@ -19,6 +20,23 @@
 @layer base {
   body {
     @apply antialiased;
+  }
+  /* prose内のリンク色カスタマイズ */
+  .prose a {
+    color: var(--color-mono-accent);
+    text-decoration: underline;
+    transition: color 0.2s;
+  }
+  .prose a:visited {
+    color: var(--color-mono-silver);
+  }
+  .prose a:hover {
+    color: var(--color-mono-black);
+  }
+  .prose a.wiki-link-missing {
+    color: var(--color-mono-error, #dc2626);
+    text-decoration: underline wavy;
+    text-underline-offset: 4px;
   }
   
   h1 {

@@ -4,8 +4,8 @@
 import { join } from "https://deno.land/std@0.224.0/path/mod.ts";
 
 // 設定
-const OBSIDIAN_LOG_DIR = join("./obsidian/log");
-const DAILYLOG_PATH = join("./src/dailylog.md");
+const OBSIDIAN_LOG_DIR = join("C:/Users/Yudai/Documents/Obsidian/log");
+const DAILYLOG_PATH = join("C:/Users/Yudai/personal-website/src/dailylog.md");
 // 日付取得（コマンドライン引数 or 今日）
 function getTargetDate(): string {
   const arg = Deno.args[0];

@@ -9,6 +9,17 @@ export default function LayoutGrid({ title, content, date, category, tags, autho
         <link rel="stylesheet" href="/assets/css/dailylog.css" />
         <link rel="icon" href="/assets/images/favicon.jpeg" type="image/jpeg" />
         <title>{title}</title>
+        <script src="/pagefind/pagefind-ui.js"></script>
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.addEventListener('DOMContentLoaded', () => {
+            if (document.getElementById('search-mobile')) {
+              new PagefindUI({ element: "#search-mobile", showImages: false, excerptLength: 0, showEmptyFilters: true, showSubResults: false, resetStyles: true, bundlePath: "/pagefind/", baseUrl: "/" });
+            }
+            if (document.getElementById('search-pc')) {
+              new PagefindUI({ element: "#search-pc", showImages: false, excerptLength: 0, showEmptyFilters: true, showSubResults: false, resetStyles: true, bundlePath: "/pagefind/", baseUrl: "/" });
+            }
+          });
+        `}} />
       </head>
       <body className="bg-mono-white text-mono-darkgray">
         <header className="bg-mono-black text-mono-white shadow-md">
@@ -30,18 +41,37 @@ export default function LayoutGrid({ title, content, date, category, tags, autho
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col lg:flex-row gap-6">
             {/* 左カラム：ナビゲーション */}
-            <nav className="flex-none w-full lg:w-1/5">
-              <div className="bg-mono-white p-4 rounded border border-mono-lightgray space-y-4">
-              <div id="search"></div>
-              <comp.nav />
+            {/* サイドバー（モバイル: Drawer, PC: aside常時表示） */}
+            {/* モバイルDrawer */}
+            <div className="drawer lg:hidden">
+              <input id="drawer-nav" type="checkbox" className="drawer-toggle" />
+              <div className="drawer-content">
+                {/* ハンバーガーメニュー */}
+                <label htmlFor="drawer-nav" className="btn btn-primary btn-sm m-2 drawer-button">
+                  ≡ メニュー
+                </label>
               </div>
-            </nav>
+              <div className="drawer-side z-40">
+                <label htmlFor="drawer-nav" className="drawer-overlay"></label>
+                <aside className="w-64 bg-base-100 text-base-content h-full card shadow-md p-4 space-y-4">
+                  <div id="search-mobile" className="mb-4"></div>
+                  <comp.nav />
+                </aside>
+              </div>
+            </div>
+            {/* PC用サイドバー */}
+            <aside className="hidden lg:block w-full lg:w-1/5">
+              <div className="card bg-base-100 shadow-md p-4 space-y-4">
+                <div id="search-pc" className="mb-4"></div>
+                <comp.nav />
+              </div>
+            </aside>
             
             {/* 中央カラム：メインコンテンツ */}
             <main className="flex-1">
-              <div className="bg-mono-white p-6 rounded border border-mono-lightgray">
-                <article className="h-entry">
-                  <h1 className="p-name text-2xl font-bold mb-4 text-mono-black">{title}</h1>
+              <div className="card bg-base-100 shadow-md p-6">
+  <article className="h-entry">
+    <h1 className="p-name text-2xl font-bold mb-4">{title}</h1>
                   
                   {date && (
                     <div className="post-date mb-4">
@@ -51,7 +81,7 @@ export default function LayoutGrid({ title, content, date, category, tags, autho
                   
                   {category && (
                     <div className="mb-4">
-                      <a href={`/category/${category.toLowerCase().replace(/\s+/g, '-')}`} className="category-main p-category">{category}</a>
+                      <a href={`/category/${category.toLowerCase().replace(/\s+/g, '-')}`} className="badge badge-secondary">{category}</a>
                     </div>
                   )}
                   
@@ -62,7 +92,7 @@ export default function LayoutGrid({ title, content, date, category, tags, autho
                   {tags && tags.length > 0 && (
                     <div className="tags mt-6">
                       {tags.map((tag, index) => (
-                        <a key={index} href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}`} className="p-category">{tag}</a>
+                        <a key={index} href={`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}`} className="badge badge-outline mr-1">{tag}</a>
                       ))}
                     </div>
                   )}
@@ -100,7 +130,7 @@ export default function LayoutGrid({ title, content, date, category, tags, autho
             
             {/* 右カラム：サイドメニュー（デスクトップのみ） */}
             <aside className="hidden lg:block flex-none lg:w-1/5">
-              <div className="bg-mono-white p-4 rounded border border-mono-lightgray">
+              <div className="card bg-base-100 shadow-md p-4">
                 <h2 className="text-xl font-bold mb-4 text-mono-black border-b border-mono-lightgray pb-2">サイド</h2>
                 <div className="space-y-4">
                   <comp.resentPages />

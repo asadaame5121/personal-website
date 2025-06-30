@@ -15,7 +15,7 @@ export default async function ClippingList() {
   // dailylog.mdのパスをLumeのdataディレクトリに合わせて調整
   let raw = "";
   try {
-    raw = await Deno.readTextFile("./data/clippingshare.md");
+    raw = await Deno.readTextFile("./src/clippingshare.md");
   } catch (e) {
     return <div>clippingshare.mdが読めません: {e.message}</div>;
   }
@@ -63,22 +63,24 @@ export default async function ClippingList() {
   // - あればul/liで上位5件リスト表示。本文はMarkdown→HTML変換してli内に描画
   // - dangerouslySetInnerHTMLはXSSリスクがあるが、信頼できる自作データのみを対象とする前提
   return (
-    <div className="clipping-list">
-      <div className="clippings">
-        {top5.length === 0 ? (
-          <div>クリッピングがありません</div>
-        ) : (
-          <ul>
-            {top5.map(e => (
-              <li className="clipping" key={e.date + e.body.slice(0,20)}>
-                <div className="clipping-date">{e.date}</div>
-                <div className="clipping-content" dangerouslySetInnerHTML={{ __html: mdParser.render(e.body) }}></div>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
-    </div>
+    <div className="p-4 max-w-xl mx-auto">
+  <div className="">
+    {top5.length === 0 ? (
+      <div className="alert alert-info">クリッピングがありません</div>
+    ) : (
+      <ul className="space-y-4">
+        {top5.map(e => (
+          <li className="card bg-base-100 shadow-md mb-4" key={e.date + e.body.slice(0,20)}>
+            <div className="card-body p-4">
+              <div className="badge badge-accent mb-2">{e.date}</div>
+              <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: mdParser.render(e.body) }}></div>
+            </div>
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+</div>
   );
 }
 

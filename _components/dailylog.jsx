@@ -14,7 +14,7 @@ export default async function Dailylog() {
   // dailylog.mdのパスをLumeのdataディレクトリに合わせて調整
   let raw = "";
   try {
-    raw = await Deno.readTextFile("./data/dailylog.md");
+    raw = await Deno.readTextFile("./src/dailylog.md");
   } catch (e) {
     return <div>dailylog.mdが読めません: {e.message}</div>;
   }
@@ -58,20 +58,22 @@ export default async function Dailylog() {
   );
 
   return (
-    <div class="daily-log">
-      <div class="current-date">{todayStr}</div>
-      <div class="obsidian-logs">
-        {htmlEntries.length === 0 ? (
-          <div>きょう・きのうのメモはありません</div>
-        ) : (
-          htmlEntries.map(e => (
-            <div class="log-entry" key={e.date}>
-              <div class="log-date">{e.date}</div>
-              <div class="log-content" dangerouslySetInnerHTML={{ __html: e.html }}></div>
-            </div>
-          ))
-        )}
-      </div>
-    </div>
+    <div class="p-4 max-w-xl mx-auto">
+  <div class="text-lg font-bold mb-2 badge badge-primary">{todayStr}</div>
+  <div class="space-y-4">
+    {htmlEntries.length === 0 ? (
+      <div class="alert alert-info">きょう・きのうのメモはありません</div>
+    ) : (
+      htmlEntries.map(e => (
+        <div class="card bg-base-100 shadow-md" key={e.date}>
+          <div class="card-body p-4">
+            <div class="card-title text-base-content/80 text-sm mb-1">{e.date}</div>
+            <div class="prose max-w-none" dangerouslySetInnerHTML={{ __html: e.html }}></div>
+          </div>
+        </div>
+      ))
+    )}
+  </div>
+</div>
   );
 }
