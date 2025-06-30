@@ -4,7 +4,7 @@
 
 // 3:00 JST = 18:00 UTC
 Deno.cron("sync-obsidian", "0 * * * *", async () => {
-  console.log("[cron] 3:00(JST) sync-obsidian.ts 実行");
+  console.log("[cron] 毎時0分 sync-obsidian.ts 実行");
   const command = new Deno.Command("deno", {
     args: [
       "run",
@@ -24,7 +24,7 @@ Deno.cron("sync-obsidian", "0 * * * *", async () => {
 
 // 3:10 JST = 18:10 UTC
 Deno.cron("extract-clippingshare", "10 * * * *", async () => {
-  console.log("[cron] 3:10(JST) extract-clippingshare.ts 実行");
+  console.log("[cron] 毎時10分 extract-clippingshare.ts 実行");
   const command = new Deno.Command("deno", {
     args: [
       "run",
@@ -43,7 +43,7 @@ Deno.cron("extract-clippingshare", "10 * * * *", async () => {
 
 // 3:15 JST = 18:15 UTC
 Deno.cron("update-dailylog", "15 * * * *", async () => {
-  console.log("[cron] 3:15(JST) update-dailylog.ts 実行");
+  console.log("[cron] 毎時15分 update-dailylog.ts 実行");
   const command = new Deno.Command("deno", {
     args: [
       "run",
