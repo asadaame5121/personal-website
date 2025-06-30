@@ -3,7 +3,7 @@
 // 実行例: deno run --allow-read --allow-write --allow-run --unstable-cron scripts/cron-local-automation.ts
 
 // 3:00 JST = 18:00 UTC
-Deno.cron("sync-obsidian", "0 18 * * *", async () => {
+Deno.cron("sync-obsidian", "0 * * * *", async () => {
   console.log("[cron] 3:00(JST) sync-obsidian.ts 実行");
   const command = new Deno.Command("deno", {
     args: [
@@ -23,7 +23,7 @@ Deno.cron("sync-obsidian", "0 18 * * *", async () => {
 });
 
 // 3:10 JST = 18:10 UTC
-Deno.cron("extract-clippingshare", "10 18 * * *", async () => {
+Deno.cron("extract-clippingshare", "10 * * * *", async () => {
   console.log("[cron] 3:10(JST) extract-clippingshare.ts 実行");
   const command = new Deno.Command("deno", {
     args: [
@@ -42,7 +42,7 @@ Deno.cron("extract-clippingshare", "10 18 * * *", async () => {
 });
 
 // 3:15 JST = 18:15 UTC
-Deno.cron("update-dailylog", "15 18 * * *", async () => {
+Deno.cron("update-dailylog", "15 * * * *", async () => {
   console.log("[cron] 3:15(JST) update-dailylog.ts 実行");
   const command = new Deno.Command("deno", {
     args: [

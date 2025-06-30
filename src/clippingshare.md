@@ -1,3 +1,18 @@
+2025-06-28 21:20[SNSにあふれる中傷　問われる個々人の人権感覚　生活保護費判決.md](https://mainichi.jp/articles/20250627/k00/00m/040/391000c)
+
+
+2025-06-28 21:20[「家族が崩壊、日本は滅亡」夫婦別姓反対を自民に迫った保守系団体：朝日新聞.md](https://digital.asahi.com/sp/articles/AST6V31DST6VUTFK00TM.html?ptoken=01JYQFWM766WA9D4ETAKK0ZV7J)
+
+
+2025-06-28 21:20[トランプ政権のDEI廃止、プライド月間のアメリカに影を落とす　企業も対応割れる：朝日新聞GLOBE＋.md](https://globe.asahi.com/article/15845779)
+
+
+2025-06-28 21:20[参政党支持層の研究.md](https://news.yahoo.co.jp/expert/articles/a8c540ceeac4bad06c7f110d2c927b1b0f2763e2)
+
+
+2025-06-28 21:19[陰謀論ライターが都市伝説解体センターをやってみた（前編）雨宮純.md](https://note.com/caffelover/n/n350fc02af2fc?sub_rt=share_pb)
+
+
 2025-06-27 17:11[【ELSI News Update】パブコメ異常件数／AIにかける言葉／捏造画像訴訟  SYNCHRONOUS シンクロナス.md](https://www.synchronous.jp/articles/-/2566)
 
 
@@ -485,19 +500,4 @@
 
 
 2025-03-27 16:47[（論壇時評）不確実な未来に耐える　過去に軸を置き、今を捉え直す　政治学者・宇野重規：朝日新聞デジタル.md](https://digital.asahi.com/sp/articles/DA3S16114429.html?ptoken=01JFZWH89WYECA07787RSW0659)
-
-
-undefined[SNSにあふれる中傷　問われる個々人の人権感覚　生活保護費判決.md](https://mainichi.jp/articles/20250627/k00/00m/040/391000c)
-
-
-undefined[「家族が崩壊、日本は滅亡」夫婦別姓反対を自民に迫った保守系団体：朝日新聞.md](https://digital.asahi.com/sp/articles/AST6V31DST6VUTFK00TM.html?ptoken=01JYQFWM766WA9D4ETAKK0ZV7J)
-
-
-undefined[トランプ政権のDEI廃止、プライド月間のアメリカに影を落とす　企業も対応割れる：朝日新聞GLOBE＋.md](https://globe.asahi.com/article/15845779)
-
-
-undefined[参政党支持層の研究.md](https://news.yahoo.co.jp/expert/articles/a8c540ceeac4bad06c7f110d2c927b1b0f2763e2)
-
-
-undefined[陰謀論ライターが都市伝説解体センターをやってみた（前編）雨宮純.md](https://note.com/caffelover/n/n350fc02af2fc?sub_rt=share_pb)
 
