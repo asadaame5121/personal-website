@@ -1,17 +1,15 @@
-<div class="reading-list">
-  <h2>現在読んでいる本</h2>
-  
+<div class="p-4 max-w-xl mx-auto">
+  <h2 class="text-xl font-bold mb-4">現在読んでいる本</h2>
   {% set readingBooks = search.pages("📚/読んでる") %}
-  
   {% if readingBooks | length > 0 %}
-    <ul class="book-list">
+    <ul class="menu bg-base-100 rounded-box">
       {% for book in readingBooks %}
-      <li class="book-item">
+      <li class="menu-item">
         <a href="{{ book.url }}">{{ book.title }}</a>
       </li>
       {% endfor %}
     </ul>
   {% else %}
-    <p>現在読んでいる本は見つかりません。</p>
+    <div class="alert alert-warning">現在読んでいる本は見つかりません。</div>
   {% endif %}
 </div>

@@ -4,8 +4,8 @@ import { walk } from "@std/fs";
 import { extract } from "@std/front-matter/yaml";
 
 
-const SOURCE_DIR = "./obsidian/Clippings";
-const OUTPUT_PATH = "./src/clippingshare.md";
+const SOURCE_DIR = "C:/Users/Yudai/Documents/Obsidian/Clippings";
+const OUTPUT_PATH = "C:/Users/Yudai/personal-website/src/clippingshare.md";
 
 
 

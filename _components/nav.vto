@@ -1,20 +1,113 @@
-<nav class="site-navbar">
-  <ul class="menu">
-    <!-- ハードコーディングしたカテゴリ -->
-    <li>
-      <a href="/Article/" class="nav-link">記事</a>
+<div class="space-y-2">
+  <div class="collapse collapse-arrow bg-base-200">
+    <input type="checkbox" class="peer">
+    <div class="collapse-title font-bold">Article</div>
+    <div class="collapse-content">
+      <!--同じ名前のフォルダに入っているページの一覧を表示するリスト-->
+      <a href="/Article/" class="btn btn-ghost w-full text-left">Articleページへ</a>
+      <ul class="menu bg-base-100 rounded-box mt-2">
+  {{ if nav.menu("/Article/") && nav.menu("/Article/").children && nav.menu("/Article/").children.length }}
+    {{ for item of nav.menu("/Article/").children }}
+    <li class="menu-item">
+      {{ if item.data.url }}
+        <a href="{{ item.data.url }}">{{ item.data.title }}</a>
+      {{ else }}
+        <span>{{ item.data.basename }}</span>
+      {{ /if }}
+      {{ if item.children && item.children.length }}
+        <ul class="ml-4">
+          {{ for child of item.children }}
+            <li class="menu-item"><a href="{{ child.data.url }}">{{ child.data.title }}</a></li>
+          {{ /for }}
+        </ul>
+      {{ /if }}
     </li>
-    <li>
-      <a href="/Book/" class="nav-link">書籍</a>
+  {{ /for }}
+</ul>
+    </div>
+  </div>
+  <div class="collapse collapse-arrow bg-base-200">
+    <input type="checkbox" class="peer">
+    <div class="collapse-title font-bold">Book</div>
+    <!--同じ名前のフォルダに入っているページの一覧を表示するコンポーネントを呼び出す -->
+    <div class="collapse-content">
+      <!--同じ名前のフォルダに入っているページの一覧を表示するリスト-->
+      <a href="/Book/" class="btn btn-ghost w-full text-left">Bookページへ</a>
+      <ul class="menu bg-base-100 rounded-box mt-2">
+  {{ if nav.menu("/Book/") && nav.menu("/Book/").children && nav.menu("/Book/").children.length }}
+    {{ for item of nav.menu("/Book/").children }}
+    <li class="menu-item">
+      {{ if item.data.url }}
+        <a href="{{ item.data.url }}">{{ item.data.title }}</a>
+      {{ else }}
+        <span>{{ item.data.basename }}</span>
+      {{ /if }}
+      {{ if item.children && item.children.length }}
+        <ul class="ml-4">
+          {{ for child of item.children }}
+            <li class="menu-item"><a href="{{ child.data.url }}">{{ child.data.title }}</a></li>
+          {{ /for }}
+        </ul>
+      {{ /if }}
     </li>
-    <li>
-      <a href="/Glossary/" class="nav-link">用語集</a>
+  {{ /for }}
+</ul>
+    </div>
+  </div>
+  <div class="collapse collapse-arrow bg-base-200">
+    <input type="checkbox" class="peer">
+    <div class="collapse-title font-bold">Glossary</div>
+    <!--同じ名前のフォルダに入っているページの一覧を表示するコンポーネントを呼び出す -->
+    <div class="collapse-content">
+      <!--同じ名前のフォルダに入っているページの一覧を表示するリスト-->
+      <a href="/Glossary/" class="btn btn-ghost w-full text-left">Glossaryページへ</a>
+      <ul class="menu bg-base-100 rounded-box mt-2">
+  {{ if nav.menu("/Glossary/") && nav.menu("/Glossary/").children && nav.menu("/Glossary/").children.length }}
+    {{ for item of nav.menu("/Glossary/").children }}
+    <li class="menu-item">
+      {{ if item.data.url }}
+        <a href="{{ item.data.url }}">{{ item.data.title }}</a>
+      {{ else }}
+        <span>{{ item.data.basename }}</span>
+      {{ /if }}
+      {{ if item.children && item.children.length }}
+        <ul class="ml-4">
+          {{ for child of item.children }}
+            <li class="menu-item"><a href="{{ child.data.url }}">{{ child.data.title }}</a></li>
+          {{ /for }}
+        </ul>
+      {{ /if }}
     </li>
-    <li>
-      <a href="/Clippings/" class="nav-link">クリッピング</a>
+  {{ /for }}
+</ul>
+    </div>
+  </div>
+  <div class="collapse collapse-arrow bg-base-200">
+    <input type="checkbox" class="peer">
+    <div class="collapse-title font-bold">People</div>
+    <!--同じ名前のフォルダに入っているページの一覧を表示するコンポーネントを呼び出す -->
+    <div class="collapse-content">
+      <!--同じ名前のフォルダに入っているページの一覧を表示するリスト-->
+      <a href="/People/" class="btn btn-ghost w-full text-left">Peopleページへ</a>
+      <ul class="menu bg-base-100 rounded-box mt-2">
+  {{ if nav.menu("/People/") && nav.menu("/People/").children && nav.menu("/People/").children.length }}
+    {{ for item of nav.menu("/People/").children }}
+    <li class="menu-item">
+      {{ if item.data.url }}
+        <a href="{{ item.data.url }}">{{ item.data.title }}</a>
+      {{ else }}
+        <span>{{ item.data.basename }}</span>
+      {{ /if }}
+      {{ if item.children && item.children.length }}
+        <ul class="ml-4">
+          {{ for child of item.children }}
+            <li class="menu-item"><a href="{{ child.data.url }}">{{ child.data.title }}</a></li>
+          {{ /for }}
+        </ul>
+      {{ /if }}
     </li>
-    <li>
-      <a href="/Inbox/" class="nav-link">インボックス</a>
-    </li>
-  </ul>
-</nav>
+  {{ /for }}
+</ul>
+    </div>
+  </div>
+</div>
