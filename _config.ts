@@ -186,7 +186,7 @@ site.ignore((path) => {
   return /^\/obsidian\/[^\/]+\.md$/.test(path);
 });
 
-site.ignore("obsidian/template", "obsidian/template/*", "obsidian/Workinprogress", "obsidian/Clippings/*", "obsidian/.obsidian", "obsidian/Extra", "obsidian/forpixel8", "obsidian/Omnivore");
+site.ignore("README.md", "obsidian/template", "obsidian/template/*", "obsidian/Workinprogress", "obsidian/Clippings/*", "obsidian/.obsidian", "obsidian/Extra", "obsidian/forpixel8", "obsidian/Omnivore");
 site.script("extract-log-content", "./_filters/extract-log-content.js");
 
 site.process([".html"], (pages) => {
