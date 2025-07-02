@@ -4,3 +4,4 @@ metas:
   lang: ja
   icon: /assets/images/favicon.jpeg
   twitter: "@asadaame5121"
+openGraphLayout: /_includes/og_images.jsx

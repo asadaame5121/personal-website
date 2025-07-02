@@ -8,6 +8,7 @@ import autoprefixer from "npm:autoprefixer";
 import mdx from "lume/plugins/mdx.ts";
 import wikilinks from "https://deno.land/x/lume_markdown_plugins@v0.9.0/wikilinks.ts";
 import callout from "npm:markdown-it-obsidian-callouts";
+import ogImages from "lume/plugins/og_images.ts";
 import metas from "lume/plugins/metas.ts";
 import date from "lume/plugins/date.ts";
 import extractLog from "./_filters/extract-log-content.js";
@@ -76,6 +77,22 @@ site.use(wikilinks());
 site.use(nav());
 site.use(pagefind());
 site.use(mdx());
+await (async () => {
+  site.use(ogImages({
+    options: {
+      width: 1200,
+      height: 630,
+      fonts: [
+        {
+          name: "Shippori Mincho B1",
+          data: await Deno.readFile("assets/fonts/ShipporiMinchoB1-ExtraBold.ttf"),
+          weight: 800,
+          style: "normal",
+        },
+      ],
+    },
+  }));
+})();
 site.use(metas());
 site.use(sitemap());
 site.use(feed({

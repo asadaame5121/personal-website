@@ -1,0 +1,15 @@
+[build]
+  publish = "_site"
+  command = "deno task build"
+
+[build.environment]
+  DENO_DEPLOY_TOKEN = ""
+
+[dev]
+  command = "deno task serve"
+  port = 8888
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
