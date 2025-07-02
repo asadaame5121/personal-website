@@ -24,6 +24,6 @@ jobs:
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: quiet-koala-94
+          project: dropgarden5121
           import-map: "./deno.json"
           entrypoint: "server.ts"
