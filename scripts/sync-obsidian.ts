@@ -34,7 +34,7 @@ async function copyMarkdownIfDraftFalse(srcDir: string, destDir: string, errorLo
         }
         try {
           const frontmatter: any = parse(match[1]);
-          const body = match[2] ? match[2].trim() : '';
+          const body = text.replace(match[0], "").trim();
           if (frontmatter && typeof frontmatter === "object" && frontmatter.draft === false) {
             // metas自動付与・更新処理
             frontmatter.metas = frontmatter.metas || {};
