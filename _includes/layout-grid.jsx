@@ -26,7 +26,6 @@ export default function LayoutGrid({ title, content, date, category, tags, autho
           <div className="container mx-auto px-4 py-4 flex justify-between items-center">
             <div className="site-title">
               <a href="/" className="flex items-center no-underline">
-                <img src="/assets/images/logo.jpg" alt="DropGarden Logo" className="h-6 mr-2" />
                 <span className="text-mono-white text-2xl font-bold">DropGarden</span>
               </a>
             </div>
@@ -71,13 +70,14 @@ export default function LayoutGrid({ title, content, date, category, tags, autho
             <main className="flex-1">
               <div className="card bg-base-100 shadow-md p-6">
   <article className="h-entry">
-    <h1 className="p-name text-2xl font-bold mb-4">{title}</h1>
-                  
-                  {date && (
-                    <div className="post-date mb-4">
-                      <time className="dt-published" dateTime={date}>{date}</time>
-                    </div>
-                  )}
+    {title && title !== 'DropGarden' && (
+      <h1 className="p-name text-2xl font-bold mb-4">{title}</h1>
+    )}
+    {date && (!title || title !== 'DropGarden') && (
+      <div className="post-date mb-4">
+        <time className="dt-published" dateTime={date}>{date}</time>
+      </div>
+    )}
                   
                   {category && (
                     <div className="mb-4">

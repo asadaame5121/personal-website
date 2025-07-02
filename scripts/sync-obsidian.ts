@@ -1,5 +1,5 @@
 // Obsidianリポジトリから特定ディレクトリのみ同期コピーするDenoスクリプト
-import { parse } from "jsr:@std/yaml";
+import { parse, stringify } from "jsr:@std/yaml";
 
 // 設定
 const OBSIDIAN_REPO_URL = "https://github.com/asadaame5121/Obsidianbackup.git";
@@ -29,16 +29,42 @@ async function copyMarkdownIfDraftFalse(srcDir: string, destDir: string, errorLo
         const text = await Deno.readTextFile(srcPath);
         const match = text.match(/^---([\s\S]+?)---/);
         if (!match) {
-          errorLog.push(srcPath);
+          errorLog.push(`${srcPath} | フロントマター無し`);
           continue;
         }
-        const frontmatter = parse(match[1]);
-        if (frontmatter && typeof frontmatter === "object" && frontmatter.draft === false) {
-          await Deno.mkdir(destDir, { recursive: true });
-          await Deno.copyFile(srcPath, destPath);
+        try {
+          const frontmatter: any = parse(match[1]);
+          const body = match[2] ? match[2].trim() : '';
+          if (frontmatter && typeof frontmatter === "object" && frontmatter.draft === false) {
+            // metas自動付与・更新処理
+            frontmatter.metas = frontmatter.metas || {};
+
+            // title補完
+            if (!frontmatter.metas.title && frontmatter.title) {
+              frontmatter.metas.title = frontmatter.title;
+            }
+            // description補完
+            if (!frontmatter.metas.description || frontmatter.metas.description === null || frontmatter.metas.description === "") {
+              if (frontmatter.title) {
+                frontmatter.metas.description = `${frontmatter.title}についてのページです。`;
+              }
+            }
+            // keywords補完
+            if (!frontmatter.metas.keywords && frontmatter.keywords) {
+              frontmatter.metas.keywords = frontmatter.keywords;
+            }
+            // 既存のmetas値は保持し、上書きはしない
+            const { metas, ...rest } = frontmatter;
+            const newYaml = stringify({ ...rest, metas });
+            const newText = `---\n${newYaml}---\n${body}\n`;
+            await Deno.mkdir(destDir, { recursive: true });
+            await Deno.writeTextFile(destPath, newText);
+          }
+        } catch (e) {
+          errorLog.push(`${srcPath} | YAMLパースエラー: ${e}`);
         }
-      } catch (_) {
-        errorLog.push(srcPath);
+      } catch (e) {
+        errorLog.push(`${srcPath} | ${e}`);
       }
     }
   }

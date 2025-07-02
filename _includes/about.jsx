@@ -3,86 +3,120 @@ export default function About({ title, comp, photo, name, note, email, url, tel,
     <>
       {`<!DOCTYPE html>`}
       <html lang="ja">
-      <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/assets/styles.css" />
-        <link rel="icon" href="/assets/images/favicon.jpeg" type="image/jpeg" />
-        <title>{title}</title>
-      </head>
-      <body>
-        {comp.header()}
-        
-        <main>
-          <div className="about-container">
-            {/* microformats2のh-card要素 */}
-            <div className="h-card">
-              {photo && (
-                <img className="u-photo" src={photo} alt={name} />
-              )}
-              
-              <h1 className="p-name">{name}</h1>
-              
-              {note && (
-                <div className="p-note">{note}</div>
-              )}
-              
-              <div className="contact-info">
-                {email && (
-                  <div className="contact-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                    <a className="u-email" href={`mailto:${email}`}>{email}</a>
-                  </div>
-                )}
-                
-                {url && (
-                  <div className="contact-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
-                    <a className="u-url" href={url}>{url}</a>
-                  </div>
-                )}
-                
-                {tel && (
-                  <div className="contact-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                    <a className="p-tel" href={`tel:${tel}`}>{tel}</a>
-                  </div>
-                )}
-                
-                {location && (
-                  <div className="contact-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                    <span className="p-locality">{location}</span>
-                  </div>
-                )}
+        <head>
+          <meta charSet="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link rel="stylesheet" href="/assets/styles.css" />
+          <link rel="icon" href="/assets/images/favicon.jpeg" type="image/jpeg" />
+          <title>{title}</title>
+        </head>
+        <body className="bg-mono-white text-mono-darkgray">
+          <header className="bg-mono-black text-mono-white shadow-md">
+            <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+              <div className="site-title">
+                <a href="/" className="flex items-center no-underline">
+                  <span className="text-mono-white text-2xl font-bold">DropGarden</span>
+                </a>
               </div>
-              
-              {social && social.length > 0 && (
-                <div className="social-links">
-                  {social.map((platform, index) => (
-                    <a key={index} href={platform.url} className="u-url" rel="me">{platform.name}</a>
-                  ))}
-                </div>
-              )}
             </div>
-            
-            <div className="content" dangerouslySetInnerHTML={{ __html: content }} />
-            
-            {skills && skills.length > 0 && (
-              <div className="skills-section">
-                <h2>スキル</h2>
-                <div className="skills-grid">
-                  {skills.map((skill, index) => (
-                    <div key={index} className="skill-item">{skill}</div>
-                  ))}
+          </header>
+          <div className="container mx-auto px-4 py-8">
+            <div className="flex flex-col lg:flex-row gap-6">
+              {/* モバイルDrawerサイドバー */}
+              <div className="drawer lg:hidden">
+                <input id="drawer-nav" type="checkbox" className="drawer-toggle" />
+                <div className="drawer-content">
+                  <label htmlFor="drawer-nav" className="btn btn-primary btn-sm m-2 drawer-button">
+                    ≡ メニュー
+                  </label>
+                </div>
+                <div className="drawer-side z-40">
+                  <label htmlFor="drawer-nav" className="drawer-overlay"></label>
+                  <aside className="w-64 bg-base-100 text-base-content h-full card shadow-md p-4 space-y-4">
+                    <div id="search-mobile" className="mb-4"></div>
+                    {comp && comp.nav && <comp.nav />}
+                  </aside>
                 </div>
               </div>
-            )}
+              {/* PC用サイドバー */}
+              <aside className="hidden lg:block w-full lg:w-1/5">
+                <div className="card bg-base-100 shadow-md p-4 space-y-4">
+                  <div id="search-pc" className="mb-4"></div>
+                  {comp && comp.nav && <comp.nav />}
+                </div>
+              </aside>
+              {/* 中央カラム：プロフィール・本文 */}
+              <main className="flex-1">
+                <div className="card bg-base-100 shadow-md p-6">
+                  <article className="h-entry">
+                    <div className="h-card mb-6">
+                      {photo && (
+                        <img className="u-photo mb-4 rounded-full w-32 h-32 object-cover" src={photo} alt={name} />
+                      )}
+                      <h1 className="p-name text-3xl font-bold mb-2">{name}</h1>
+                      {note && (
+                        <div className="p-note mb-2">{note}</div>
+                      )}
+                      <div className="contact-info mb-2">
+                        {email && (
+                          <div className="contact-item">
+                            <a className="u-email" href={`mailto:${email}`}>{email}</a>
+                          </div>
+                        )}
+                        {url && (
+                          <div className="contact-item">
+                            <a className="u-url" href={url}>{url}</a>
+                          </div>
+                        )}
+                        {tel && (
+                          <div className="contact-item">
+                            <a className="p-tel" href={`tel:${tel}`}>{tel}</a>
+                          </div>
+                        )}
+                        {location && (
+                          <div className="contact-item">
+                            <span className="p-locality">{location}</span>
+                          </div>
+                        )}
+                      </div>
+                      {social && social.length > 0 && (
+                        <div className="social-links flex flex-wrap gap-2 mt-2">
+                          {social.map((platform, idx) => (
+                            <a href={platform.url} className="u-url underline text-mono-accent" rel="me" key={idx}>{platform.name}</a>
+                          ))}
+                        </div>
+                      )}
+                      {skills && skills.length > 0 && (
+                        <div className="skills mt-4">
+                          <h2 className="text-xl font-bold">Skills</h2>
+                          <ul className="list-disc ml-6">
+                            {skills.map((skill, idx) => (
+                              <li key={idx}>{skill}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                    <div className="about-content prose mt-8">
+                      {content}
+                    </div>
+                  </article>
+                </div>
+              </main>
+              {/* 右カラム：サイドメニュー（デスクトップのみ） */}
+              <aside className="hidden lg:block flex-none lg:w-1/5">
+                <div className="card bg-base-100 shadow-md p-4">
+                  <h2 className="text-xl font-bold mb-4 text-mono-black border-b border-mono-lightgray pb-2">サイド</h2>
+                  <div className="space-y-4">
+                    {comp && comp.resentPages && <comp.resentPages />}
+                    {/* aboutページ用の追加サイド情報があればここに */}
+                  </div>
+                </div>
+              </aside>
+            </div>
           </div>
-        </main>
-        
-        {comp.footer()}
-      </body>
+          {comp.footer && comp.footer()}
+        </body>
       </html>
     </>
   );

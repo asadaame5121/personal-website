@@ -16,7 +16,7 @@ for await (const entry of walk(SOURCE_DIR, { exts: [".md"], includeDirs: false }
   const { attrs } = extract(text);
   const fm = attrs as Record<string, unknown>;
   clippings.push({
-    filename: entry.name,
+    filename: typeof fm.title === "string" ? fm.title : entry.name,
     source: typeof fm.source === "string" ? fm.source : undefined,
     created: typeof fm.created === "string" ? fm.created : undefined
   });
