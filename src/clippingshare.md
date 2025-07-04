@@ -505,6 +505,12 @@
 2025-03-27 16:47[（論壇時評）不確実な未来に耐える　過去に軸を置き、今を捉え直す　政治学者・宇野重規：朝日新聞デジタル](https://digital.asahi.com/sp/articles/DA3S16114429.html?ptoken=01JFZWH89WYECA07787RSW0659)
 
 
+undefined[AIボットよ、金を払え--訓練用コンテンツの「タダ乗り」にCloudflareが突きつけたメッセージ](https://japan.cnet.com/article/35235125/)
+
+
+undefined[Home](https://garden.cotan-en.com/)
+
+
 undefined[うつ病と炎症に相関はあるか？　5万人以上を対象に調査　海外チームが発表](https://www.itmedia.co.jp/news/spv/2507/03/news027.html)
 
 
