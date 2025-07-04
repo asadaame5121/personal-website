@@ -1,3 +1,9 @@
+2025-07-04 16:00[Home](https://www.itmedia.co.jp/news/spv/2507/03/news027.html)
+
+
+2025-07-04 16:00[西田昌司氏の「ひめゆり」侮辱発言は、この30年の政治劣化の集大成　岡野八代さんインタビュー](https://s-newscommons.com/article/8623)
+
+
 2025-07-01 20:02[ダグラス・アダムスの法則をキミは知っているか？](https://ascii.jp/elem/000/004/213/4213879/)
 
 
@@ -508,16 +514,7 @@
 undefined[AIボットよ、金を払え--訓練用コンテンツの「タダ乗り」にCloudflareが突きつけたメッセージ](https://japan.cnet.com/article/35235125/)
 
 
-undefined[Home](https://garden.cotan-en.com/)
-
-
-undefined[うつ病と炎症に相関はあるか？　5万人以上を対象に調査　海外チームが発表](https://www.itmedia.co.jp/news/spv/2507/03/news027.html)
-
-
 undefined[デジタルガーデンと個人サイトを育てること。 | 世界のねじを巻くラジオ](https://nejimaki-radio.com/digital-garden-blog-indie-website-personal-internet/)
-
-
-undefined[西田昌司氏の「ひめゆり」侮辱発言は、この30年の政治劣化の集大成　岡野八代さんインタビュー](https://s-newscommons.com/article/8623)
 
 
 undefined[🌱 My blog is a digital garden, not a blog](https://joelhooks.com/digital-garden/)
