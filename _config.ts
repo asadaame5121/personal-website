@@ -12,6 +12,7 @@ import ogImages from "lume/plugins/og_images.ts";
 import metas from "lume/plugins/metas.ts";
 import date from "lume/plugins/date.ts";
 import extractLog from "./_filters/extract-log-content.js";
+import decodeURIComponentFilter from "./_filters/decodeURIComponent.js";
 import Server from "lume/core/server.ts";
 import redirectAS2, { bridgyFed } from "lume/middlewares/redirect_as2.ts";
 import sitemap from "lume/plugins/sitemap.ts";
@@ -30,6 +31,7 @@ const site = lume({
 
 // Bluesky投稿取得フィルターを登録
 site.filter("getBlueskyPosts", () => []); // ★ダミー実装（ビルド通過用）
+site.filter("decodeURIComponent", decodeURIComponentFilter);
 
 // 特定のフォルダを除外する設定
 site.ignore((path) => {
@@ -210,6 +212,43 @@ site.process([".html"], (pages) => {
   for (const page of pages) {
     // Search all wikilinks in the page
     for (const link of page.document!.querySelectorAll("a[data-wikilink]")) {
+  // --- alias対応追加: [[ページ名|エイリアス]]形式の処理 ---
+  // 元のリンクテキストを取得
+  let originalText = link.textContent || "";
+  // [[...]] の場合は外側を除去
+  if (originalText.startsWith("[[") && originalText.endsWith("]]")) {
+    originalText = originalText.slice(2, -2);
+  }
+  // パイプの分割（エスケープ\|対応）
+  let pageName = originalText;
+  let alias = "";
+  let splitIndex = -1;
+  let inEscape = false;
+  for (let i = 0; i < originalText.length; i++) {
+    if (originalText[i] === "\\" && originalText[i+1] === "|") {
+      inEscape = true;
+      i++; // skip next
+      continue;
+    }
+    if (originalText[i] === "|" && !inEscape) {
+      splitIndex = i;
+      break;
+    }
+    inEscape = false;
+  }
+  if (splitIndex !== -1) {
+    pageName = originalText.slice(0, splitIndex);
+    alias = originalText.slice(splitIndex + 1);
+  }
+  // エスケープ解除: \\| → |
+  pageName = pageName.replace(/\\\|/g, "|");
+  alias = alias.replace(/\\\|/g, "|");
+  // エイリアスがあればリンクテキストを書き換え
+  if (alias) {
+    link.textContent = alias;
+  }
+  // --- ここまで alias対応追加 ---
+
       // Get the link id and remove the attribute
       const encodedId = link.getAttribute("data-wikilink");
       

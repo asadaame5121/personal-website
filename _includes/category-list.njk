@@ -1,0 +1,27 @@
+{# カテゴリページ用レイアウト #}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ categoryName }}の記事一覧</title>
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+</head>
+<body>
+  <div class="p-4 max-w-xl mx-auto">
+    <h2 class="text-xl font-bold mb-4">{{ categoryName }}の記事一覧</h2>
+    {% set items = nav.menu(categoryUrl).children %}
+    {% if items and items | length > 0 %}
+      <ul class="menu bg-base-100 rounded-box">
+        {% for item in items | sort(attribute="data.title") %}
+          <li class="menu-item">
+            <a href="{{ item.data.url }}">{{ item.data.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <div class="alert alert-warning">記事が見つかりません。</div>
+    {% endif %}
+  </div>
+</body>
+</html>
+

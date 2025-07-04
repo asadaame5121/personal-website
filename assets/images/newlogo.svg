@@ -1,0 +1,9 @@
+<svg width="130" height="40" viewBox="0 0 130 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- しずく -->
+  <ellipse cx="22" cy="20" rx="8" ry="16" fill="#222" opacity="0.8"/>
+  <!-- 葉っぱ（しずくのすぐ右に寄せる） -->
+  <path d="M34 26 Q40 8 64 18 Q42 36 34 26 Z" fill="#888" opacity="0.7"/>
+  <!-- テキスト -->
+  <text x="70" y="20" font-family="Segoe UI, sans-serif" font-size="16" font-weight="bold" fill="#222">Drop</text>
+  <text x="70" y="36" font-family="Segoe UI, sans-serif" font-size="16" font-weight="bold" fill="#888">Garden</text>
+</svg>
