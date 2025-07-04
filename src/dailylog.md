@@ -1,3 +1,80 @@
+## 2025-07-04のメモ
+###### 2025-07-04T16:01:39.609+09:00
+
+あまりにも暑い。
+
+## 2025-07-04のメモ
+###### 2025-07-04T16:01:39.609+09:00
+
+あまりにも暑い。
+
+## 2025-07-04のメモ
+###### 2025-07-04T16:01:39.609+09:00
+
+あまりにも暑い。
+
+## 2025-07-02のメモ
+### 個人サイト OGP/metas自動付与スクリプト進捗
+- layout-article.jsxにトップページ同様のサイドバー構造を移植
+- about.njk→about.jsx変換・サイドバー・3カラム構造適用
+- _data.yamlで共通metas管理、各mdで個別metas（description等）管理方針確定
+- scripts/sync-obsidian.tsでmetas自動付与・更新処理を設計・実装
+  - descriptionがnullの場合「$Titleについてのページです。」を自動生成
+  - keywordsはfrontmatter.keywordsがあればmetas.keywordsにコピー
+  - エラー詳細をerror logに記録するcatch節実装
+- スクリプト動作テスト：正常にmetas自動付与・エラー詳細記録が動作することを確認
+
+---
+
+### Lume OGimagesプラグイン導入・日本語OGP画像対応
+- LumeのOGimagesプラグインを導入し、_config.tsで有効化
+- OGP画像レイアウト用og_images.jsxを新規作成、サイト基調色でデザイン
+- 2バイト文字（日本語）がOG画像で化ける問題を確認→原因はデフォルトフォント未対応
+- Shippori Mincho B1 ExtraBold（TTF）をassets/fontsに配置し、_config.tsでDeno.readFile＋options.fontsで明示指定
+- og_images.jsxのfontFamilyも"Shippori Mincho B1"に変更
+- Lumeビルド後、OG画像で日本語テキストが正しく表示されることを確認
+
+#### 次のタスク
+- サイト全体のOGP出力・メタタグの最終確認
+- LumeのOGimagesプラグイン導入検討
+- 本文からdescription自動生成や他プロパティ補完ロジックの拡張検討
+
+
+###### 2025-07-02T17:09:35.141+09:00
+
+もうビルドして良くないかこれ
+
+## 2025-07-02のメモ
+### 個人サイト OGP/metas自動付与スクリプト進捗
+- layout-article.jsxにトップページ同様のサイドバー構造を移植
+- about.njk→about.jsx変換・サイドバー・3カラム構造適用
+- _data.yamlで共通metas管理、各mdで個別metas（description等）管理方針確定
+- scripts/sync-obsidian.tsでmetas自動付与・更新処理を設計・実装
+  - descriptionがnullの場合「$Titleについてのページです。」を自動生成
+  - keywordsはfrontmatter.keywordsがあればmetas.keywordsにコピー
+  - エラー詳細をerror logに記録するcatch節実装
+- スクリプト動作テスト：正常にmetas自動付与・エラー詳細記録が動作することを確認
+
+---
+
+### Lume OGimagesプラグイン導入・日本語OGP画像対応
+- LumeのOGimagesプラグインを導入し、_config.tsで有効化
+- OGP画像レイアウト用og_images.jsxを新規作成、サイト基調色でデザイン
+- 2バイト文字（日本語）がOG画像で化ける問題を確認→原因はデフォルトフォント未対応
+- Shippori Mincho B1 ExtraBold（TTF）をassets/fontsに配置し、_config.tsでDeno.readFile＋options.fontsで明示指定
+- og_images.jsxのfontFamilyも"Shippori Mincho B1"に変更
+- Lumeビルド後、OG画像で日本語テキストが正しく表示されることを確認
+
+#### 次のタスク
+- サイト全体のOGP出力・メタタグの最終確認
+- LumeのOGimagesプラグイン導入検討
+- 本文からdescription自動生成や他プロパティ補完ロジックの拡張検討
+
+
+###### 2025-07-02T17:09:35.141+09:00
+
+もうビルドして良くないかこれ
+
 ## 2025-07-02のメモ
 ### 個人サイト OGP/metas自動付与スクリプト進捗
 - layout-article.jsxにトップページ同様のサイドバー構造を移植
