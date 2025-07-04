@@ -5,7 +5,68 @@ let mdParser = null;
 async function md2html(md) {
   if (!mdParser) {
     const mdmod = (await import("https://esm.sh/markdown-it@13.0.1?bundle"));
-    mdParser = new mdmod.default();
+    const MarkdownIt = mdmod.default;
+    // Wikilinkプラグイン（簡易実装）
+    function wikilinkPlugin(md) {
+      md.inline.ruler.before('emphasis', 'wikilink', function wikilink(state, silent) {
+        const max = state.posMax;
+        const start = state.pos;
+        if (state.src.charCodeAt(start) !== 0x5B/* [ */ || state.src.charCodeAt(start+1) !== 0x5B/* [ */) return false;
+        let pos = start + 2;
+        let found = false;
+        while (pos < max) {
+          if (state.src.charCodeAt(pos) === 0x5D/* ] */ && state.src.charCodeAt(pos+1) === 0x5D/* ] */) {
+            found = true;
+            break;
+          }
+          pos++;
+        }
+        if (!found) return false;
+        if (!silent) {
+          const content = state.src.slice(start+2, pos);
+          // |区切りでページ名とエイリアスに分割（\|はエスケープ）
+          let page = "";
+          let alias = "";
+          let buf = "";
+          let escape = false;
+          let splitted = false;
+          for (let i = 0; i < content.length; i++) {
+            if (!escape && content[i] === "\\") {
+              escape = true;
+              continue;
+            }
+            if (!escape && !splitted && content[i] === "|") {
+              page = buf;
+              buf = "";
+              splitted = true;
+              continue;
+            }
+            buf += content[i];
+            escape = false;
+          }
+          if (splitted) {
+            alias = buf;
+          } else {
+            page = buf;
+            alias = "";
+          }
+          // エスケープ解除
+          page = page.replace(/\\\|/g, "|");
+          alias = alias.replace(/\\\|/g, "|");
+          // data-wikilink属性を付与
+          const token = state.push('link_open', 'a', 1);
+          token.attrs = [['data-wikilink', encodeURIComponent(page)]];
+          token.markup = 'wikilink';
+          const textToken = state.push('text', '', 0);
+          textToken.content = alias || page;
+          state.push('link_close', 'a', -1);
+        }
+        state.pos = pos + 2;
+        return true;
+      });
+    }
+    mdParser = new MarkdownIt();
+    mdParser.use(wikilinkPlugin);
   }
   return mdParser.render(md);
 }

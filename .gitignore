@@ -28,6 +28,9 @@ Thumbs.db
 # Project specific
 site-plan.md
 
+# Lume cache
+_cache/
+
 # Environment variables
 .env
 .env.*
