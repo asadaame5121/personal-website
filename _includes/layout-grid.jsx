@@ -20,6 +20,7 @@ export default function LayoutGrid({ title, content, date, category, tags, autho
             }
           });
         `}} />
+        <a className="u-bridgy-fed" href="https://fed.brid.gy/" hidden="from-humans"></a>
       </head>
       <body className="bg-mono-white text-mono-darkgray">
         <header className="bg-mono-black text-mono-white shadow-md">
@@ -70,6 +71,9 @@ export default function LayoutGrid({ title, content, date, category, tags, autho
             <main className="flex-1">
               <div className="card bg-base-100 shadow-md p-6">
   <article className="h-entry">
+  {/* microformats for Webmention/IndieWeb: 非表示で出力 */}
+  <a className="u-url" href="https://asadaame5121.net/" style={{display: 'none'}} tabIndex={-1}>https://asadaame5121.net/</a>
+  <time className="dt-published" dateTime="2025-07-06T00:00:00+09:00" style={{display: 'none'}} tabIndex={-1}>2025-07-06</time>
   {/* 記事の正規URLをu-urlで明示 */}
   {typeof url === 'string' && (
     <link rel="canonical" className="u-url" href={url} />

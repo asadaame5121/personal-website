@@ -9,6 +9,7 @@ export default function LayoutArticle({ title, content, date, category, tags, au
         <link rel="stylesheet" href="/assets/css/dailylog.css" />
         <link rel="icon" href="/assets/images/favicon.jpeg" type="image/jpeg" />
         <title>{title}</title>
+        <a className="u-bridgy-fed" href="https://fed.brid.gy/" hidden="from-humans"></a>
       </head>
       <body className="bg-mono-white text-mono-darkgray">
         <header className="bg-mono-black text-mono-white shadow-md">
