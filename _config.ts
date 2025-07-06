@@ -11,7 +11,6 @@ import callout from "npm:markdown-it-obsidian-callouts";
 import ogImages from "lume/plugins/og_images.ts";
 import metas from "lume/plugins/metas.ts";
 import date from "lume/plugins/date.ts";
-import extractLog from "./_filters/extract-log-content.js";
 import decodeURIComponentFilter from "./_filters/decodeURIComponent.js";
 import Server from "lume/core/server.ts";
 import redirectAS2, { bridgyFed } from "lume/middlewares/redirect_as2.ts";
@@ -120,7 +119,6 @@ server.use(redirectAS2({ rewriteUrl }));
 import notFound from "lume/middlewares/not_found.ts";
 server.use(notFound({ page: "/404.html" }));
 
-site.filter("extractLog", extractLog);
 // TailwindCSSとPostCSSの設定
 // CSS処理のエントリーポイントを明示的に設定
 // 注意: ファイルが存在しない場合は作成する
