@@ -16,6 +16,7 @@ import decodeURIComponentFilter from "./_filters/decodeURIComponent.js";
 import Server from "lume/core/server.ts";
 import redirectAS2, { bridgyFed } from "lume/middlewares/redirect_as2.ts";
 import sitemap from "lume/plugins/sitemap.ts";
+import transformImages from "lume/plugins/transform_images.ts";
 import feed from "lume/plugins/feed.ts";
 
 const markdown = {
@@ -136,6 +137,7 @@ site.page({
 const _isProduction = Deno.env.get("LUME_MODE") === "production";
 
 // TailwindCSS設定
+site.use(transformImages());
 site.use(tailwindcss({
   extensions: [".html", ".jsx", ".njk"],
   // JITモードを有効化して効率化
