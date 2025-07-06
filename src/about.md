@@ -19,5 +19,6 @@ metas:
   color: "#fff"
   fediverse: "@asadaame5121@bsky.app"
 ---
+<link href="https://github.com/asadaame5121" rel="me">
 
 本を読んだりするおじさん。

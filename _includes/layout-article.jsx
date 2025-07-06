@@ -15,7 +15,7 @@ export default function LayoutArticle({ title, content, date, category, tags, au
           <div className="container mx-auto px-4 py-4 flex justify-between items-center">
             <div className="site-title">
               <a href="/" className="flex items-center no-underline">
-                <span className="text-mono-white text-2xl font-bold">DropGarden</span>
+                <img src="/assets/images/newlogo.svg" alt="DropGardenロゴ" style={{height: "28px"}} />
               </a>
             </div>
           </div>

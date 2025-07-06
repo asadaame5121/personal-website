@@ -6,6 +6,9 @@ renderOrder: 1
 templateEngine: [njk, md]
 description: 個人的なノート、リソース、用語集、書籍メモなどを織り交ぜたデジタルガーデン
 ---
+{% block head %}
+  <link rel="me" href="https://github.com/asadaame5121">
+{% endblock %}
 
 {% block content %}
 <h1 class="text-3xl font-bold mb-6 text-mono-black">DropGarden</h1>
