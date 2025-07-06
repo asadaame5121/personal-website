@@ -8,6 +8,12 @@
 		},
 		{
 			"path": "../Website"
+		},
+		{
+			"path": "D:/Downloads/logs_41248263074/build"
+		},
+		{
+			"path": "D:/Downloads/logs_41248263074/runner-diagnostic-logs"
 		}
 	],
 	"settings": {
