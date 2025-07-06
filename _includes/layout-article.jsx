@@ -1,4 +1,4 @@
-export default function LayoutArticle({ title, content, date, category, tags, author, previousPost, nextPost, children, comp }) {
+export default function LayoutArticle({ title, content, date, category, tags, author, previousPost, nextPost, children, comp, url }) {
   return (
     <>
       <html lang="ja">
@@ -49,12 +49,10 @@ export default function LayoutArticle({ title, content, date, category, tags, au
             <main className="flex-1">
               <div className="card bg-base-100 shadow-md p-6">
                 <article className="h-entry">
-  {/* 記事の正規URLをu-urlで明示 */}
-  {typeof url === 'string' && (
-    <link rel="canonical" className="u-url" href={url} />
-  )}
                   {title && (
-                    <h1 className="p-name text-3xl font-bold mb-4">{title}</h1>
+                    <h1 className="text-3xl font-bold mb-4">
+                      <a className="p-name u-url" href={url}>{title}</a>
+                    </h1>
                   )}
                   {date && (
   <div className="post-date mb-2">
