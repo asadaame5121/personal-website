@@ -52,6 +52,8 @@ site.ignore((path) => {
     // obsidianフォルダ直下のmarkdownファイルを除外
     "/obsidian/*.md",
     "README.md",
+    "/pagefind/",
+    "**/*.pf_*",
   ];
   
   // 特殊文字を含むファイル名を除外
