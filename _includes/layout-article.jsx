@@ -49,14 +49,19 @@ export default function LayoutArticle({ title, content, date, category, tags, au
             <main className="flex-1">
               <div className="card bg-base-100 shadow-md p-6">
                 <article className="h-entry">
+  {/* 記事の正規URLをu-urlで明示 */}
+  {typeof url === 'string' && (
+    <link rel="canonical" className="u-url" href={url} />
+  )}
                   {title && (
                     <h1 className="p-name text-3xl font-bold mb-4">{title}</h1>
                   )}
                   {date && (
-                    <div className="post-date mb-2">
-                      <time className="dt-published" dateTime={date}>{date}</time>
-                    </div>
-                  )}
+  <div className="post-date mb-2">
+    {/* ISO8601形式で出力 */}
+    <time className="dt-published" dateTime={new Date(date).toISOString()}>{new Date(date).toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })}</time>
+  </div>
+)}
                   {category && (
                     <div className="mb-2">
                       <a href={`/category/${category}`} className="category-main p-category">{category}</a>
