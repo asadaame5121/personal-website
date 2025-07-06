@@ -1,3 +1,0 @@
----
-layout: sprite-preview.njk
----
