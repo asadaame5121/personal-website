@@ -8,9 +8,18 @@ description: 個人的なノート、リソース、用語集、書籍メモな�
 ---
 {% block head %}
   <link rel="me" href="https://github.com/asadaame5121">
+  <link rel="webmention" href="https://webmention.io/asadaame5121.net/webmention" />
 {% endblock %}
 
 {% block content %}
+<!-- IndieWeb h-card for Webmention/IndieLogin -->
+<div class="h-card" style="display:none">
+  <a class="u-url u-uid p-name" href="https://asadaame5121.net/">あさだあめ</a>
+  <img class="u-photo" src="/assets/images/profile.jpg" alt="あさだあめ" />
+  <span class="p-note">本を読んだりするおじさん。</span>
+  <a class="u-github" rel="me" href="https://github.com/asadaame5121">GitHub</a>
+  <a class="u-fediverse" rel="me" href="https://bsky.app/profile/asadaame5121.bsky.social">Fediverse</a>
+</div>
 <h1 class="text-3xl font-bold mb-6 text-mono-black">DropGarden</h1>
 
 <div class="prose max-w-none mb-8">
