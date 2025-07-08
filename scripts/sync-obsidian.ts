@@ -53,6 +53,17 @@ async function copyMarkdownIfDraftFalse(srcDir: string, destDir: string, errorLo
             if (!frontmatter.metas.keywords && frontmatter.keywords) {
               frontmatter.metas.keywords = frontmatter.keywords;
             }
+            // image補完
+            if (!frontmatter.metas.image) {
+              // frontmatterにimageフィールドがあれば優先
+              if (frontmatter.image) {
+                frontmatter.metas.image = frontmatter.image;
+              } else {
+                // ファイル名から .png を生成
+                const pngName = entry.name.replace(/\.md$/, ".png");
+                frontmatter.metas.image = pngName;
+              }
+            }
             // 既存のmetas値は保持し、上書きはしない
             const { metas, ...rest } = frontmatter;
             const newYaml = stringify({ ...rest, metas });

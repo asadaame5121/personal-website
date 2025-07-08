@@ -10,6 +10,8 @@ export default function LayoutGrid({ title, content, date, category, tags, autho
         <link rel="icon" href="/assets/images/favicon.jpeg" type="image/jpeg" />
         <title>{title}</title>
         <script src="/pagefind/pagefind-ui.js"></script>
+        {/* Alpine.js CDN追加 */}
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
         <script dangerouslySetInnerHTML={{ __html: `
           window.addEventListener('DOMContentLoaded', () => {
             if (document.getElementById('search-mobile')) {

@@ -1,11 +1,12 @@
 // Deno用: Obsidianのデイリーノートから「## きょうのメモ」以降を抽出し、_data/dailylog.mdの先頭に追記するスクリプト
 // 2025-06-24仕様
 
-import { join } from "https://deno.land/std@0.224.0/path/mod.ts";
+import { join } from "jsr:@std/path";
 
 // 設定
 const OBSIDIAN_LOG_DIR = join("C:/Users/Yudai/Documents/Obsidian/log");
 const DAILYLOG_PATH = join("C:/Users/Yudai/personal-website/src/dailylog.md");
+const DAILYLOG_JSON = join("C:/Users/Yudai/personal-website/_data/dailylog.json");
 // 日付取得（コマンドライン引数 or 今日）
 function getTargetDate(): string {
   const arg = Deno.args[0];
@@ -41,17 +42,70 @@ async function main() {
   const memo = await extractMemoSection(md);
   if (!memo) return;
 
-  // 新規分を整形
-  const newEntry = `## ${date}のメモ\n${memo}\n\n`;
-
   // 既存dailylog.mdを読み込み
   let prev = "";
   try {
     prev = await Deno.readTextFile(DAILYLOG_PATH);
   } catch (_) {}
 
-  // 先頭に追加して保存
-  await Deno.writeTextFile(DAILYLOG_PATH, newEntry + prev);
+  // 既存エントリを配列化
+  const entries = prev.split(/^## .+のメモ$/m)
+    .map(e => e.trim())
+    .filter(e => e.length > 0);
+
+  // 新規エントリが既存と重複しない場合のみ追加
+  const newBody = memo.trim();
+  const newHeading = `## ${date}のメモ`;
+  const newEntryBlock = `${newHeading}\n${newBody}\n\n`;
+  const exists = entries.some(e => e === newBody);
+  const result = exists ? prev : newEntryBlock + prev;
+
+  await Deno.writeTextFile(DAILYLOG_PATH, result);
+
+  // --- JSON出力処理 ---
+  // 既存JSON読み込み
+  let jsonArr: { id: string; date: string; content: string }[] = [];
+  try {
+    const jsonText = await Deno.readTextFile(DAILYLOG_JSON);
+    jsonArr = JSON.parse(jsonText);
+  } catch (_) {}
+
+    // idはUUIDで一意に生成
+  const id = crypto.randomUUID();
+
+  // datetime抽出（見出しからISO8601形式を抽出、なければ現在時刻）
+  const lines = newBody.split("\n");
+  const headingLine = lines.find(l => l.trim().startsWith("###### "));
+  let datetime = "";
+  if (headingLine) {
+    // 例: "###### 2025-07-08T14:58:11.031+09:00"
+    const m = headingLine.match(/^######\s*(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:[+-]\d{2}:?\d{2})?)/);
+    if (m) {
+      datetime = m[1];
+    }
+  }
+  if (!datetime) {
+    datetime = new Date().toISOString();
+  }
+
+  // contentから見出し行（###### ...）を除去
+  let contentBody = newBody;
+  if (headingLine) {
+    const idx = lines.indexOf(headingLine);
+    if (idx !== -1) {
+      contentBody = lines.slice(idx + 1).join("\n").trim();
+    }
+  }
+
+  // 重複判定（datetime, content両方一致ならスキップ）
+  const existsJson = jsonArr.some(e => e.datetime === datetime && e.content.trim() === contentBody);
+  if (!existsJson) {
+    jsonArr.unshift({ id, datetime, content: contentBody });
+    await Deno.writeTextFile(
+      DAILYLOG_JSON,
+      JSON.stringify(jsonArr, null, 2)
+    );
+  }
 }
 
 if (import.meta.main) {
