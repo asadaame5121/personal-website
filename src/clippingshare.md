@@ -1,7 +1,19 @@
+2025-07-07 17:54[Static Files on Deno Deploy](https://deno.com/blog/deploy-static-files)
+
+
 2025-07-06 15:02[Iaponia（Android用無料日本語キーボード）  benesult](https://benesult.com/ja/iaponia/index.html)
 
 
-2025-07-04 16:00[Home](https://www.itmedia.co.jp/news/spv/2507/03/news027.html)
+2025-07-04 19:30[AIボットよ、金を払え--訓練用コンテンツの「タダ乗り」にCloudflareが突きつけたメッセージ](https://japan.cnet.com/article/35235125/)
+
+
+2025-07-04 16:58[デジタルガーデンと個人サイトを育てること。  世界のねじを巻くラジオ 1](https://nejimaki-radio.com/digital-garden-blog-indie-website-personal-internet/)
+
+
+2025-07-04 16:57[🌱 My blog is a digital garden, not a blog](https://joelhooks.com/digital-garden/)
+
+
+2025-07-04 16:00[うつ病と炎症に相関はあるか？　5万人以上を対象に調査海外チームが発表](https://www.itmedia.co.jp/news/spv/2507/03/news027.html)
 
 
 2025-07-04 16:00[西田昌司氏の「ひめゆり」侮辱発言は、この30年の政治劣化の集大成　岡野八代さんインタビュー](https://s-newscommons.com/article/8623)
@@ -542,13 +554,4 @@
 
 
 2025-03-27 16:47[（論壇時評）不確実な未来に耐える　過去に軸を置き、今を捉え直す　政治学者・宇野重規：朝日新聞デジタル](https://digital.asahi.com/sp/articles/DA3S16114429.html?ptoken=01JFZWH89WYECA07787RSW0659)
-
-
-undefined[AIボットよ、金を払え--訓練用コンテンツの「タダ乗り」にCloudflareが突きつけたメッセージ](https://japan.cnet.com/article/35235125/)
-
-
-undefined[デジタルガーデンと個人サイトを育てること。 | 世界のねじを巻くラジオ](https://nejimaki-radio.com/digital-garden-blog-indie-website-personal-internet/)
-
-
-undefined[🌱 My blog is a digital garden, not a blog](https://joelhooks.com/digital-garden/)
 

@@ -29,6 +29,10 @@ const site = lume({
   prettyUrls: false, // 特殊文字を含むURLの問題を回避するために無効化
 }, { markdown });
 
+// --- JSONデータを静的ファイルとして出力に含める ---
+site.add("_data/clippingshare.json");
+site.add("_data/dailylog.json");
+
 // Bluesky投稿取得フィルターを登録
 site.filter("getBlueskyPosts", () => []); // ★ダミー実装（ビルド通過用）
 site.filter("decodeURIComponent", decodeURIComponentFilter);
@@ -52,8 +56,6 @@ site.ignore((path) => {
     // obsidianフォルダ直下のmarkdownファイルを除外
     "/obsidian/*.md",
     "README.md",
-    "/pagefind/",
-    "**/*.pf_*",
   ];
   
   // 特殊文字を含むファイル名を除外

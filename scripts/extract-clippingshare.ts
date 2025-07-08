@@ -5,7 +5,7 @@ import { extract } from "@std/front-matter/yaml";
 
 
 const SOURCE_DIR = "C:/Users/Yudai/Documents/Obsidian/Clippings";
-const OUTPUT_PATH = "C:/Users/Yudai/personal-website/src/clippingshare.md";
+const OUTPUT_PATH = "C:/Users/Yudai/personal-website/_data/clippingshare.json";
 
 
 
@@ -32,8 +32,21 @@ clippings.sort((a, b) => {
   return new Date(b.created).getTime() - new Date(a.created).getTime();
 });
 
+// JSON出力用にマッピング
+const mapped = clippings.map(c => {
+  // created: "2025-03-29 17:41" など → id: "20250329174100"
+  // idはUUIDで一意に生成
+  const id = crypto.randomUUID();
+  return {
+    id,
+    title: c.filename,
+    url: c.source || "",
+    source: "",
+    comment: ""
+  };
+});
 await Deno.writeTextFile(
   OUTPUT_PATH,
-  clippings.map(clipping => `${clipping.created}[${clipping.filename}](${clipping.source})\n\n`).join("\n")
+  JSON.stringify(mapped, null, 2)
 );
 console.log(`Extracted ${clippings.length} clippings to ${OUTPUT_PATH}`);
