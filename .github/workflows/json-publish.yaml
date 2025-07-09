@@ -59,6 +59,8 @@ jobs:
         env:
           OBSIDIAN_LOG_DIR: obsidian-latest/log
           CLIPPINGS_SOURCE_DIR: obsidian-latest/Clippings
+          DAILYLOG_PATH: src/dailylog.md
+          DAILYLOG_JSON: external_data/dailylog.json
 
       - name: Check for JSON changes
         run: |
