@@ -77,6 +77,10 @@ jobs:
           git fetch origin external-json || git checkout --orphan external-json
           git checkout external-json || git checkout -b external-json
 
+      - name: Rebase external-json branch with remote
+        run: |
+          git pull --rebase origin external-json || echo "No remote changes or rebase failed"
+
       - name: Sync netlify.toml from main branch
         run: |
           git checkout main -- netlify.toml
