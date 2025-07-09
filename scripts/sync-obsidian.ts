@@ -2,7 +2,7 @@
 import { parse, stringify } from "jsr:@std/yaml";
 
 // 設定
-const OBSIDIAN_REPO_URL = "https://github.com/asadaame5121/Obsidianbackup.git";
+const OBSIDIAN_REPO_URL = Deno.env.get("OBSIDIAN_REPO_URL") ?? "https://github.com/asadaame5121/Obsidianbackup.git";
 const TARGET_DIRS = ["Article", "Book", "Glossary", "People"];
 const DEST_ROOT = "./src";
 const ERROR_LOG = "./scripts/sync-obsidian-error.log";
