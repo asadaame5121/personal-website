@@ -45,7 +45,7 @@ jobs:
 
       - name: Sync required directories (run sync-obsidian.ts)
         run: |
-          deno run --allow-read --allow-write --allow-run scripts/sync-obsidian.ts
+          deno run --allow-read --allow-write --allow-run --allow-env scripts/sync-obsidian.ts
         env:
           OBSIDIAN_REPO_URL: https://x-access-token:${{ secrets.PAT_FOR_COMMIT }}@github.com/asadaame5121/Obsidianbackup.git
 
