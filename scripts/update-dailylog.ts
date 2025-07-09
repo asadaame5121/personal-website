@@ -6,7 +6,7 @@ import { join } from "jsr:@std/path";
 // 設定
 const OBSIDIAN_LOG_DIR = join("C:/Users/Yudai/Documents/Obsidian/log");
 const DAILYLOG_PATH = join("C:/Users/Yudai/personal-website/src/dailylog.md");
-const DAILYLOG_JSON = join("C:/Users/Yudai/personal-website/_data/dailylog.json");
+const DAILYLOG_JSON = join("C:/Users/Yudai/personal-website/external_data/dailylog.json");
 // 日付取得（コマンドライン引数 or 今日）
 function getTargetDate(): string {
   const arg = Deno.args[0];
