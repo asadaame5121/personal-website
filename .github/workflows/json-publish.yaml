@@ -61,6 +61,8 @@ jobs:
           CLIPPINGS_SOURCE_DIR: obsidian-latest/Clippings
           DAILYLOG_PATH: src/dailylog.md
           DAILYLOG_JSON: external_data/dailylog.json
+          CLIPPINGS_OUTPUT_PATH: external_data/clippingshare.json
+          
 
       - name: Check for JSON changes
         run: |
