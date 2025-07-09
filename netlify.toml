@@ -1,4 +1,8 @@
-
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    
 [build.environment]
   DENO_DEPLOY_TOKEN = ""
 
