@@ -38,7 +38,7 @@ jobs:
 
       - name: Clone latest Obsidianbackup (shallow)
         run: |
-          git clone --depth=1 https://github.com/asadaame5121/Obsidianbackup.git obsidian-latest
+          git clone --depth=1 https://x-access-token:${{ secrets.PAT_FOR_COMMIT }}@github.com/asadaame5121/Obsidianbackup.git obsidian-latest
 
       - name: Sync required directories (run sync-obsidian.ts)
         run: |
