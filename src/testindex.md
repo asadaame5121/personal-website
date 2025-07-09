@@ -15,7 +15,7 @@ templateEngine: [njk, md]
         logs: [],
         loading: true,
         async fetchLogs() {
-          const res = await fetch('/dailylog.json');
+          const res = await fetch('https://asadaame5121externaldata.netlify.app/dailylog.json');
           let all = await res.json();
           // 昨日・今日のみ抽出
           const today = new Date();
@@ -64,7 +64,7 @@ templateEngine: [njk, md]
     clippings: [],
     loading: true,
     async fetchClippings() {
-      const res = await fetch('/clippingshare.json');
+      const res = await fetch('https://asadaame5121externaldata.netlify.app/clippingshare.json');
       const all = await res.json();
       this.clippings = Array.isArray(all) ? all.slice(0, 10) : [];
       this.loading = false;
