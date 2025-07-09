@@ -3,9 +3,9 @@ import { parse, stringify } from "jsr:@std/yaml";
 
 // 設定
 const OBSIDIAN_REPO_URL = Deno.env.get("OBSIDIAN_REPO_URL") ?? "https://github.com/asadaame5121/Obsidianbackup.git";
-const TARGET_DIRS = ["Article", "Book", "Glossary", "People"];
-const DEST_ROOT = "./src";
-const ERROR_LOG = "./scripts/sync-obsidian-error.log";
+const TARGET_DIRS = (Deno.env.get("TARGET_DIRS")?.split(",") ?? ["Article", "Book", "Glossary", "People"]);
+const DEST_ROOT = Deno.env.get("DEST_ROOT") ?? "./src";
+const ERROR_LOG = Deno.env.get("ERROR_LOG") ?? "./scripts/sync-obsidian-error.log";
 
 // 必要なDeno権限: --allow-read --allow-write --allow-run
 

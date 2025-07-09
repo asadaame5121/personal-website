@@ -4,7 +4,7 @@ import { walk } from "@std/fs";
 import { extract } from "@std/front-matter/yaml";
 
 
-const SOURCE_DIR = "C:/Users/Yudai/Documents/Obsidian/Clippings";
+const SOURCE_DIR = Deno.env.get("CLIPPINGS_SOURCE_DIR") ?? "C:/Users/Yudai/Documents/Obsidian/Clippings";
 const OUTPUT_PATH = "C:/Users/Yudai/personal-website/external_data/clippingshare.json";
 
 
