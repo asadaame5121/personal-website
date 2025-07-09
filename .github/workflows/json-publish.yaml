@@ -77,6 +77,12 @@ jobs:
           git fetch origin external-json || git checkout --orphan external-json
           git checkout external-json || git checkout -b external-json
 
+      - name: Sync netlify.toml from main branch
+        run: |
+          git checkout main -- netlify.toml
+          git add netlify.toml
+          git commit -m "Sync netlify.toml from main" || echo "No changes to commit."
+
       - name: Commit and push JSON (external-json branch)
         run: |
           git config --global user.name 'github-actions[bot]'
