@@ -40,6 +40,9 @@ jobs:
         run: |
           git clone --depth=1 https://x-access-token:${{ secrets.PAT_FOR_COMMIT }}@github.com/asadaame5121/Obsidianbackup.git obsidian-latest
 
+      - name: Setup Deno environment
+        uses: denoland/setup-deno@v2
+
       - name: Sync required directories (run sync-obsidian.ts)
         run: |
           deno run --allow-read --allow-write --allow-run scripts/sync-obsidian.ts
