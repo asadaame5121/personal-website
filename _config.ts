@@ -1,5 +1,6 @@
 import lume from "lume/mod.ts";
 import jsx from "lume/plugins/jsx.ts";
+import brotli from "lume/plugins/brotli.ts";
 import basePath from "lume/plugins/base_path.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
@@ -31,7 +32,7 @@ const markdown = {
 const site = lume({
   src: ".",
   dest: "_site",
-  location: new URL("https://asadaame5121.github.io/personal-website/"),
+  location: new URL("https://asadaame5121.net"),
   prettyUrls: false, // 特殊文字を含むURLの問題を回避するために無効化
 }, { markdown });
 
@@ -94,6 +95,7 @@ site.use(wikilinks());
 site.use(nav());
 site.use(pagefind());
 site.use(mdx());
+site.use(brotli());
 await (async () => {
   site.use(ogImages({
     options: {
