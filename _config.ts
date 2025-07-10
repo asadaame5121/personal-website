@@ -1,6 +1,5 @@
 import lume from "lume/mod.ts";
 import jsx from "lume/plugins/jsx.ts";
-import brotli from "lume/plugins/brotli.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
 import nav from "lume/plugins/nav.ts";
@@ -93,7 +92,7 @@ site.use(wikilinks());
 site.use(nav());
 site.use(pagefind());
 site.use(mdx());
-site.use(brotli());
+
 await (async () => {
   site.use(ogImages({
     options: {
