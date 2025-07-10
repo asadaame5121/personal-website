@@ -65,9 +65,8 @@ async function copyMarkdownIfDraftFalse(srcDir: string, destDir: string, errorLo
                 frontmatter.metas.image = `${relDir}/${pngName}`;
               }
             }
-            // 既存のmetas値は保持し、上書きはしない
-            const { metas, ...rest } = frontmatter;
-            const newYaml = stringify({ ...rest, metas });
+            // Obsidian側frontmatterでmetasも含めて常に上書き
+            const newYaml = stringify(frontmatter);
             const newText = `---\n${newYaml}---\n${body}\n`;
             await Deno.mkdir(destDir, { recursive: true });
             await Deno.writeTextFile(destPath, newText);
