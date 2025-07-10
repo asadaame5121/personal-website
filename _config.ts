@@ -1,5 +1,6 @@
 import lume from "lume/mod.ts";
 import jsx from "lume/plugins/jsx.ts";
+import basePath from "lume/plugins/base_path.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
 import nav from "lume/plugins/nav.ts";
@@ -33,6 +34,8 @@ const site = lume({
   location: new URL("https://asadaame5121.github.io/personal-website/"),
   prettyUrls: false, // 特殊文字を含むURLの問題を回避するために無効化
 }, { markdown });
+
+site.use(basePath());
 
 // --- JSONデータを静的ファイルとして出力に含める ---
 site.add("_data/clippingshare.json");
