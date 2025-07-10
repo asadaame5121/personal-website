@@ -1,4 +1,27 @@
-export default function LayoutArticle({ title, content, date, category, tags, author, previousPost, nextPost, children, comp, url }) {
+function renderToc(toc) {
+  if (!Array.isArray(toc) || toc.length === 0) return null;
+  return (
+    <ul>
+      {toc.map((item) => (
+        <li key={item.slug}>
+          <a href={`#${item.slug}`}>{item.text}</a>
+          {item.children && item.children.length > 0 && (
+            <ul>
+              {item.children.map((child) => (
+                <li key={child.slug}>
+                  <a href={`#${child.slug}`}>{child.text}</a>
+                </li>
+              ))}
+            </ul>
+          )}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export default function LayoutArticle({ title, content, date, category, tags, author, previousPost, nextPost, children, comp, url, toc }) {
+  console.log("toc:", toc);
   return (
     <>
       <html lang="ja">
@@ -9,6 +32,7 @@ export default function LayoutArticle({ title, content, date, category, tags, au
         <link rel="stylesheet" href="/assets/css/dailylog.css" />
         <link rel="icon" href="/assets/images/favicon.jpeg" type="image/jpeg" />
         <title>{title}</title>
+        <meta property="og:url" content={url} />
         <a className="u-bridgy-fed" href="https://fed.brid.gy/" hidden="from-humans"></a>
       </head>
       <body className="bg-mono-white text-mono-darkgray">
@@ -56,14 +80,34 @@ export default function LayoutArticle({ title, content, date, category, tags, au
                     </h1>
                   )}
                   {date && (
-  <div className="post-date mb-2">
-    {/* ISO8601形式で出力 */}
-    <time className="dt-published" dateTime={new Date(date).toISOString()}>{new Date(date).toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })}</time>
-  </div>
-)}
+                    <div className="post-date mb-2">
+                      {/* ISO8601形式で出力 */}
+                      <time className="dt-published" dateTime={new Date(date).toISOString()}>{new Date(date).toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })}</time>
+                    </div>
+                  )}
+                  {Array.isArray(toc) && toc.length > 0 && (
+                    <div className="card border border-base-300 bg-base-100 shadow-sm mb-4 hidden lg:block">
+                      <div className="card-body p-4">
+                        <h2 className="card-title text-base font-bold mb-2">ToC</h2>
+                        <nav className="toc">
+                          {renderToc(toc)}
+                        </nav>
+                      </div>
+                    </div>
+                  )}
                   {category && (
                     <div className="mb-2">
                       <a href={`/category/${category}`} className="category-main p-category">{category}</a>
+                    </div>
+                  )}
+                  {Array.isArray(toc) && toc.length > 0 && (
+                    <div className="card border border-base-300 bg-base-100 shadow-sm mb-4 block lg:hidden">
+                      <div className="card-body p-4">
+                        <h2 className="card-title text-base font-bold mb-2">ToC</h2>
+                        <nav className="toc">
+                          {renderToc(toc)}
+                        </nav>
+                      </div>
                     </div>
                   )}
                   <div className="e-content prose max-w-none">
@@ -104,6 +148,8 @@ export default function LayoutArticle({ title, content, date, category, tags, au
               <div className="card bg-base-100 shadow-md p-4">
                 <h2 className="text-xl font-bold mb-4 text-mono-black border-b border-mono-lightgray pb-2">サイド</h2>
                 <div className="space-y-4">
+                  {/* PC用TOC（右サイドバー上部、sticky） */}
+                  
                   {comp && comp.resentPages && <comp.resentPages />}
                   {children?.sidebar}
                 </div>

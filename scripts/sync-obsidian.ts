@@ -59,9 +59,10 @@ async function copyMarkdownIfDraftFalse(srcDir: string, destDir: string, errorLo
               if (frontmatter.image) {
                 frontmatter.metas.image = frontmatter.image;
               } else {
-                // ファイル名から .png を生成
+                // ディレクトリ込みの相対パスで .png を生成
+                const relDir = srcDir.replace(/^.*?([^/\\]+)$/, '$1'); // 末尾ディレクトリ名（Book, Article等）
                 const pngName = entry.name.replace(/\.md$/, ".png");
-                frontmatter.metas.image = pngName;
+                frontmatter.metas.image = `${relDir}/${pngName}`;
               }
             }
             // 既存のmetas値は保持し、上書きはしない
