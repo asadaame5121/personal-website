@@ -9,6 +9,7 @@ export default function LayoutGrid({ title, content, date, category, tags, autho
         <link rel="stylesheet" href="/assets/css/dailylog.css" />
         <link rel="icon" href="/assets/images/favicon.jpeg" type="image/jpeg" />
         <link rel="syndication" href="https://bsky.app/profile/asadaame5121.bsky.social" />
+        <link rel="webmention" href="https://webmention.io/asadaame5121.net/webmention" />
         <a href="https://brid.gy/publish/bluesky"></a>
         <title>{title}</title>
         <script src="/pagefind/pagefind-ui.js"></script>

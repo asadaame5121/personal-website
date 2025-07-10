@@ -31,6 +31,7 @@ export default function LayoutArticle({ title, content, date, category, tags, au
         <link rel="stylesheet" href="/assets/css/tailwind.css" />
         <link rel="stylesheet" href="/assets/css/dailylog.css" />
         <link rel="icon" href="/assets/images/favicon.jpeg" type="image/jpeg" />
+        <link rel="webmention" href="https://webmention.io/asadaame5121.net/webmention" />
         <title>{title}</title>
         <meta property="og:url" content={url} />
         <a className="u-bridgy-fed" href="https://fed.brid.gy/" hidden="from-humans"></a>
@@ -118,6 +119,12 @@ export default function LayoutArticle({ title, content, date, category, tags, au
                     <a className="u-syndication" href="https://bsky.app/profile/asadaame5121.bsky.social" target="_blank" rel="noopener noreferrer">Blueskyで見る</a>
                     <a href="https://brid.gy/publish/bluesky"></a>
                   </div>
+                  {/* Webmentionコメント表示エリア */}
+                  <div className="mt-8">
+                    <h2 className="text-lg font-bold mb-2">Webmention コメント</h2>
+                    <div id="webmention-comments"></div>
+                  </div>
+                  <script src="/assets/js/webmention.js" defer></script>
                   {tags && tags.length > 0 && (
                     <div className="tags mt-4">
                       {tags.map((tag) => (
