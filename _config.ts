@@ -1,7 +1,6 @@
 import lume from "lume/mod.ts";
 import jsx from "lume/plugins/jsx.ts";
 import brotli from "lume/plugins/brotli.ts";
-import basePath from "lume/plugins/base_path.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
 import nav from "lume/plugins/nav.ts";
