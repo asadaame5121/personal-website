@@ -59,10 +59,13 @@ async function copyMarkdownIfDraftFalse(srcDir: string, destDir: string, errorLo
               if (frontmatter.image) {
                 frontmatter.metas.image = frontmatter.image;
               } else {
-                // ディレクトリ込みの相対パスで .png を生成
-                const relDir = srcDir.replace(/^.*?([^/\\]+)$/, '$1'); // 末尾ディレクトリ名（Book, Article等）
+                // 設定ファイルからベースURLを取得し、パス結合も堅牢に
+                const config = JSON.parse(await Deno.readTextFile("config.json"));
+                const baseUrl = config.baseUrl ?? "";
+                const { join } = await import("jsr:@std/path");
+                const relDir = srcDir.replace(/^.*?([^/\\]+)$/, '$1');
                 const pngName = entry.name.replace(/\.md$/, ".png");
-                frontmatter.metas.image = `${relDir}/${pngName}`;
+                frontmatter.metas.image = `${baseUrl}${join("/", relDir, pngName)}`;
               }
             }
             // Obsidian側frontmatterでmetasも含めて常に上書き
