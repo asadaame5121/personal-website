@@ -113,15 +113,24 @@ this.logs = all.filter(l => {
           <div class="alert alert-info">クリッピングはありません</div>
         </template>
         <template x-for="c in clippings" :key="c.id">
-          <div class="card bg-base-100 shadow-md">
-            <div class="card-body p-4">
-              <div class="card-title text-base-content/80 text-sm mb-1">
-  <a :href="c.url" class="link link-primary" x-text="c.title"></a>
-</div>
-              <div class="prose max-w-none" x-text="c.content"></div>
-            </div>
-          </div>
-        </template>
+  <div class="card bg-base-100 shadow-md">
+    <div class="card-body p-4">
+      <div class="card-title text-base-content/80 text-sm mb-1">
+        <a :href="c.url" class="link link-primary" x-text="c.title"></a>
+      </div>
+      <div class="prose max-w-none" x-text="c.content"></div>
+      <template x-if="c.comment && c.comment.length > 0">
+        <div class="mt-2 text-xs text-mono-black/70" x-text="c.comment"></div>
+      </template>
+      <template x-if="c.source && c.source.length > 0">
+        <div class="mt-1 text-xs">
+          <span class="text-mono-silver">出典: </span>
+          <span x-text="c.source"></span>
+        </div>
+      </template>
+    </div>
+  </div>
+</template>
       </div>
       <div class="mt-4">
         <a href="/clippingshare" class="text-mono-accent hover:text-mono-black font-medium">すべて見る →</a>
