@@ -44,12 +44,16 @@ description: 個人的なノート、リソース、用語集、書籍メモな�
           let all = await res.json();
           // 昨日・今日のみ抽出
           const today = new Date();
-          const ymd = d => d.toISOString().slice(0, 10);
-          const todayStr = ymd(today);
-          const yesterday = new Date(today);
-          yesterday.setDate(today.getDate() - 1);
-          const yesterdayStr = ymd(yesterday);
-          this.logs = all.filter(l => l.date === todayStr || l.date === yesterdayStr);
+const ymd = d => d.toISOString().slice(0, 10);
+const todayStr = ymd(today);
+const yesterday = new Date(today);
+yesterday.setDate(today.getDate() - 1);
+const yesterdayStr = ymd(yesterday);
+this.logs = all.filter(l => {
+  if (!l.datetime) return false;
+  const entryDate = ymd(new Date(l.datetime));
+  return entryDate === todayStr || entryDate === yesterdayStr;
+});
           this.loading = false;
         }
       }"
@@ -65,7 +69,7 @@ description: 個人的なノート、リソース、用語集、書籍メモな�
         <template x-for="l in logs" :key="l.id">
           <div class="card bg-base-100 shadow-md">
             <div class="card-body p-4">
-              <div class="card-title text-base-content/80 text-sm mb-1" x-text="l.date"></div>
+              <div class="card-title text-base-content/80 text-sm mb-1" x-text="l.datetime ? l.datetime.slice(0,10) : ''"></div>
               <div class="prose max-w-none" x-text="l.content"></div>
             </div>
           </div>
@@ -111,7 +115,9 @@ description: 個人的なノート、リソース、用語集、書籍メモな�
         <template x-for="c in clippings" :key="c.id">
           <div class="card bg-base-100 shadow-md">
             <div class="card-body p-4">
-              <div class="card-title text-base-content/80 text-sm mb-1" x-text="c.title"></div>
+              <div class="card-title text-base-content/80 text-sm mb-1">
+  <a :href="c.url" class="link link-primary" x-text="c.title"></a>
+</div>
               <div class="prose max-w-none" x-text="c.content"></div>
             </div>
           </div>

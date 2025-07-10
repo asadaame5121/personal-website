@@ -4,7 +4,6 @@ import tailwindcss from "lume/plugins/tailwindcss.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
 import nav from "lume/plugins/nav.ts";
 import pagefind from "lume/plugins/pagefind.ts";
-import autoprefixer from "npm:autoprefixer";
 import mdx from "lume/plugins/mdx.ts";
 import wikilinks from "https://deno.land/x/lume_markdown_plugins@v0.9.0/wikilinks.ts";
 import callout from "npm:markdown-it-obsidian-callouts";
@@ -17,6 +16,12 @@ import redirectAS2, { bridgyFed } from "lume/middlewares/redirect_as2.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 import feed from "lume/plugins/feed.ts";
+import toc from "https://deno.land/x/lume_markdown_plugins@v0.9.0/toc.ts";
+import footnotes from "https://deno.land/x/lume_markdown_plugins@v0.9.0/footnotes.ts";
+import references from "./scripts/references.ts";
+
+
+
 
 const markdown = {
   plugin: [callout]
@@ -76,6 +81,9 @@ site.ignore((path) => {
 // });
 
 // 基本プラグインの設定
+site.use(toc())
+site.use(footnotes())
+site.use(references())
 site.use(date());
 site.use(nunjucks());
 site.use(jsx());
