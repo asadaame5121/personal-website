@@ -8,6 +8,8 @@ export default function LayoutGrid({ title, content, date, category, tags, autho
         <link rel="stylesheet" href="/assets/css/tailwind.css" />
         <link rel="stylesheet" href="/assets/css/dailylog.css" />
         <link rel="icon" href="/assets/images/favicon.jpeg" type="image/jpeg" />
+        <link rel="syndication" href="https://bsky.app/profile/asadaame5121.bsky.social" />
+        <a href="https://brid.gy/publish/bluesky"></a>
         <title>{title}</title>
         <script src="/pagefind/pagefind-ui.js"></script>
         {/* Alpine.js CDN追加 */}

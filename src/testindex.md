@@ -96,5 +96,5 @@ templateEngine: [njk, md]
     </template>
   </div>
 </div>
-
-
+[[referencetest]]
+<a href="/referencetest.html">referencetest</a>

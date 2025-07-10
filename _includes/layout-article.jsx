@@ -112,12 +112,16 @@ export default function LayoutArticle({ title, content, date, category, tags, au
                   )}
                   <div className="e-content prose max-w-none">
                     {/* ここで本文にproseのみ適用。ただしリンクはnot-prose化 */}
-                    <div dangerouslySetInnerHTML={{ __html: content.replace(/<a /g, '<a class=\"not-prose\" ') }} />
+                    <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: content.replace(/<a /g, '<a class=\"not-prose\" ') }} />
+                  </div>
+                  <div className="mt-8">
+                    <a className="u-syndication" href="https://bsky.app/profile/asadaame5121.bsky.social" target="_blank" rel="noopener noreferrer">Blueskyで見る</a>
+                    <a href="https://brid.gy/publish/bluesky"></a>
                   </div>
                   {tags && tags.length > 0 && (
                     <div className="tags mt-4">
                       {tags.map((tag) => (
-                        <a key={tag} href={`/tags/${tag}`} className="p-category mr-2">{tag}</a>
+                        <a key={tag} href={`/tags/${encodeURIComponent(tag)}/`} className="p-category mr-2">{tag}</a>
                       ))}
                     </div>
                   )}
