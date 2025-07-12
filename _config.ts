@@ -19,8 +19,10 @@ import feed from "lume/plugins/feed.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins@v0.9.0/toc.ts";
 import footnotes from "https://deno.land/x/lume_markdown_plugins@v0.9.0/footnotes.ts";
 import references from "./scripts/references.ts";
+import esbuild from "lume/plugins/esbuild.ts";
 import brotli from "lume/plugins/brotli.ts";
-
+import minifyHTML from "lume/plugins/minify_html.ts";
+import precompress from "lume/middlewares/precompress.ts";
 
 
 
@@ -33,6 +35,9 @@ const site = lume({
   dest: "_site",
   location: new URL("https://asadaame5121.net"),
   prettyUrls: false, // 特殊文字を含むURLの問題を回避するために無効化
+  server: {
+    middlewares: [precompress()],
+  },
 }, { markdown });
 
 // site.use(basePath());
@@ -94,7 +99,16 @@ site.use(wikilinks());
 site.use(nav());
 site.use(pagefind());
 site.use(mdx());
-site.use(brotli());
+
+// --- JS/TS バンドル & 最適化 ---
+site.use(esbuild({
+  extensions: [".ts", ".js", ".tsx", ".jsx"]
+}));
+site.use(minifyHTML());
+site.use(brotli({
+  extensions: [".html"] 
+}));
+
 
 await (async () => {
   site.use(ogImages({
