@@ -101,13 +101,6 @@ site.use(pagefind());
 site.use(mdx());
 
 // --- JS/TS バンドル & 最適化 ---
-site.use(esbuild({
-  extensions: [".ts", ".js", ".tsx", ".jsx"]
-}));
-site.use(minifyHTML());
-site.use(brotli({
-  extensions: [".html"] 
-}));
 
 
 await (async () => {
@@ -328,5 +321,13 @@ site.process([".html"], (pages) => {
     }
   }
 });
+site.use(esbuild({
+  extensions: [".ts", ".js", ".tsx", ".jsx"]
+}));
+site.use(minifyHTML());
+site.use(brotli({
+  extensions: [".html"] 
+}));
+
 
 export default site;
