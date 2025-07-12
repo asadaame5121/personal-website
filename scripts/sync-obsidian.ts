@@ -61,7 +61,7 @@ async function copyMarkdownIfDraftFalse(srcDir: string, destDir: string, errorLo
               } else {
                 // 設定ファイルからベースURLを取得し、パス結合も堅牢に
                 const config = JSON.parse(await Deno.readTextFile("config.json"));
-                const baseUrl = config.baseUrl ?? "";
+                const baseUrl = config.baseUrl ?? "https://asadaame5121.net";
                 const { join } = await import("jsr:@std/path");
                 const relDir = srcDir.replace(/^.*?([^/\\]+)$/, '$1');
                 const pngName = entry.name.replace(/\.md$/, ".png");

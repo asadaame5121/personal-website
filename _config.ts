@@ -30,6 +30,7 @@ const markdown = {
 const site = lume({
   src: ".",
   dest: "_site",
+  location: new URL("https://asadaame5121.net"),
   prettyUrls: false, // 特殊文字を含むURLの問題を回避するために無効化
 }, { markdown });
 
