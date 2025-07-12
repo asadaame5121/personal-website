@@ -18,13 +18,38 @@ function getTargetDate(): string {
   return `${yyyy}-${mm}-${dd}`;
 }
 
+// 「## きょうのメモ」以降の本文を取得
 async function extractMemoSection(md: string): Promise<string | null> {
   const lines = md.split("\n");
   const idx = lines.findIndex(l => l.trim().startsWith("## きょうのメモ"));
   if (idx === -1) return null;
-  // idx行以降の1行目（見出し）を除外し、本文のみ返す
   return lines.slice(idx + 1).join("\n").trim();
 }
+
+// 「###### YYYY-MM-DDTHH:mm:ss...」ごとに分割してエントリ配列を返す
+function splitDailylogEntries(memo: string): { datetime: string; content: string }[] {
+  const result: { datetime: string; content: string }[] = [];
+  const regex = /^######\s*(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:[+-]\d{2}:?\d{2})?)/gm;
+  let match: RegExpExecArray | null;
+  let lastIndex = 0;
+  let prevDatetime = "";
+  while ((match = regex.exec(memo)) !== null) {
+    if (prevDatetime) {
+      // 直前のdatetimeから今回のmatch.indexまでをcontentとして抽出
+      const content = memo.slice(lastIndex, match.index).trim();
+      if (content) result.push({ datetime: prevDatetime, content });
+    }
+    prevDatetime = match[1];
+    lastIndex = regex.lastIndex;
+  }
+  // 最後のエントリ
+  if (prevDatetime && lastIndex < memo.length) {
+    const content = memo.slice(lastIndex).trim();
+    if (content) result.push({ datetime: prevDatetime, content });
+  }
+  return result;
+}
+
 
 async function main() {
   const date = getTargetDate();
@@ -63,49 +88,26 @@ async function main() {
   await Deno.writeTextFile(DAILYLOG_PATH, result);
 
   // --- JSON出力処理 ---
-  // 既存JSON読み込み
-  let jsonArr: { id: string; date: string; content: string }[] = [];
-  try {
-    const jsonText = await Deno.readTextFile(DAILYLOG_JSON);
-    jsonArr = JSON.parse(jsonText);
-  } catch (_) {}
+// 既存JSON読み込み
+let jsonArr: { id: string; datetime: string; content: string }[] = [];
+try {
+  const jsonText = await Deno.readTextFile(DAILYLOG_JSON);
+  jsonArr = JSON.parse(jsonText);
+} catch (_) {}
 
-    // idはUUIDで一意に生成
-  const id = crypto.randomUUID();
-
-  // datetime抽出（見出しからISO8601形式を抽出、なければ現在時刻）
-  const lines = newBody.split("\n");
-  const headingLine = lines.find(l => l.trim().startsWith("###### "));
-  let datetime = "";
-  if (headingLine) {
-    // 例: "###### 2025-07-08T14:58:11.031+09:00"
-    const m = headingLine.match(/^######\s*(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:[+-]\d{2}:?\d{2})?)/);
-    if (m) {
-      datetime = m[1];
-    }
-  }
-  if (!datetime) {
-    datetime = new Date().toISOString();
-  }
-
-  // contentから見出し行（###### ...）を除去
-  let contentBody = newBody;
-  if (headingLine) {
-    const idx = lines.indexOf(headingLine);
-    if (idx !== -1) {
-      contentBody = lines.slice(idx + 1).join("\n").trim();
-    }
-  }
-
+// 「きょうのメモ」本文からエントリを分割
+const entriesJson = splitDailylogEntries(newBody);
+for (const entry of entriesJson) {
   // 重複判定（datetime, content両方一致ならスキップ）
-  const existsJson = jsonArr.some(e => e.datetime === datetime && e.content.trim() === contentBody);
+  const existsJson = jsonArr.some(e => e.datetime === entry.datetime && e.content.trim() === entry.content.trim());
   if (!existsJson) {
-    jsonArr.unshift({ id, datetime, content: contentBody });
-    await Deno.writeTextFile(
-      DAILYLOG_JSON,
-      JSON.stringify(jsonArr, null, 2)
-    );
+    jsonArr.unshift({ id: crypto.randomUUID(), datetime: entry.datetime, content: entry.content });
   }
+}
+await Deno.writeTextFile(
+  DAILYLOG_JSON,
+  JSON.stringify(jsonArr, null, 2)
+);
 }
 
 if (import.meta.main) {
