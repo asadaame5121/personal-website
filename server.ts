@@ -12,6 +12,7 @@ const server = new Server({
 const rewriteUrl = bridgyFed();
 server.use(redirectAS2({ rewriteUrl }));
 server.use(notFound({ page: "/404.html" }));
+server.use(precompress());
 
 server.start();
 
