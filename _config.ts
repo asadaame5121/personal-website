@@ -19,6 +19,7 @@ import feed from "lume/plugins/feed.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins@v0.9.0/toc.ts";
 import footnotes from "https://deno.land/x/lume_markdown_plugins@v0.9.0/footnotes.ts";
 import references from "./scripts/references.ts";
+import brotli from "lume/plugins/brotli.ts";
 
 
 
@@ -93,6 +94,7 @@ site.use(wikilinks());
 site.use(nav());
 site.use(pagefind());
 site.use(mdx());
+site.use(brotli());
 
 await (async () => {
   site.use(ogImages({
