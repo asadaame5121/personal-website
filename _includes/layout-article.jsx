@@ -20,7 +20,7 @@ function renderToc(toc) {
   );
 }
 
-export default function LayoutArticle({ title, content, date, category, tags, author, previousPost, nextPost, children, comp, url, baseUrl, toc }) {
+export default function LayoutArticle({ title, content, date, category, tags, author, previousPost, nextPost, children, comp, url, baseUrl, toc, bluesky }) {
   
   return (
     <>
@@ -116,10 +116,28 @@ export default function LayoutArticle({ title, content, date, category, tags, au
                     {/* ここで本文にproseのみ適用。ただしリンクはnot-prose化 */}
                     <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: content.replace(/<a /g, '<a class=\"not-prose\" ') }} />
                   </div>
-                  <div className="mt-8">
-                    <a className="u-syndication" href="https://bsky.app/profile/asadaame5121.bsky.social" target="_blank" rel="noopener noreferrer">Blueskyで見る</a>
-                    <a href="https://brid.gy/publish/bluesky"></a>
-                  </div>
+                  {bluesky && (
+                    <div className="mt-8">
+                      <a
+                        className="u-syndication inline-block align-middle"
+                        href={bluesky}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Bluesky で見る"
+                      >
+                        {/* Bluesky icon (simple heart shape placeholder) */}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          className="w-5 h-5 text-blue-500 hover:opacity-80"
+                        >
+                          <path d="M12 2c2.21 0 4.2.9 5.66 2.34A7.978 7.978 0 0120 10a7.978 7.978 0 01-2.34 5.66L12 21.32l-5.66-5.66A7.978 7.978 0 014 10c0-2.21.9-4.2 2.34-5.66A7.978 7.978 0 0112 2zm0 2a6 6 0 00-4.24 1.76A5.978 5.978 0 006 10c0 1.66.67 3.16 1.76 4.24L12 18.47l4.24-4.23A5.978 5.978 0 0018 10a5.978 5.978 0 00-1.76-4.24A6 6 0 0012 4z" />
+                        </svg>
+                      </a>
+                      <a href="https://brid.gy/publish/bluesky" hidden></a>
+                    </div>
+                  )}
                   {/* Webmentionコメント表示エリア */}
                   <div className="mt-8">
                     <h2 className="text-lg font-bold mb-2">Webmention コメント</h2>
