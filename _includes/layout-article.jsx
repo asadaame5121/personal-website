@@ -20,7 +20,7 @@ function renderToc(toc) {
   );
 }
 
-export default function LayoutArticle({ title, content, date, category, tags, author, previousPost, nextPost, children, comp, url, baseUrl, toc, bluesky }) {
+export default function LayoutArticle({ title, content, date, category, tags, author, previousPost, nextPost, children, comp, url, toc, bluesky }) {
   
   return (
     <>
@@ -33,8 +33,6 @@ export default function LayoutArticle({ title, content, date, category, tags, au
         <link rel="icon" href="/assets/images/favicon.jpeg" type="image/jpeg" />
         <link rel="webmention" href="https://webmention.io/asadaame5121.net/webmention" />
         <title>{title}</title>
-        {/* OGP用URLはbaseUrl+encodeURI(url)で絶対パス化 */}
-        <meta property="og:url" content={baseUrl + encodeURI(url)} />
         <a className="u-bridgy-fed" href="https://fed.brid.gy/" hidden="from-humans"></a>
       </head>
       <body className="bg-mono-white text-mono-darkgray">

@@ -27,7 +27,7 @@ import precompress from "lume/middlewares/precompress.ts";
 
 
 const markdown = {
-  plugin: [callout]
+  plugins: [callout]
 }
 
 const site = lume({
@@ -40,7 +40,7 @@ const site = lume({
   },
 }, { markdown });
 
-// site.use(basePath());
+
 
 // --- JSONデータを静的ファイルとして出力に含める ---
 site.add("_data/clippingshare.json");
@@ -58,16 +58,6 @@ site.ignore((path) => {
     "/_archive/get-bluesky-posts.js", // 一時的に除外するファイル
     "/.gitmodules",
     "/attachments/",
-    "/Extra/",
-    "/forpixel8/",
-    "/.obsidian/",
-    "/Omnivore/",
-    "/Publish/",
-    "/scripts/",
-    "/template/",
-    "/Workinprogress/",
-    // obsidianフォルダ直下のmarkdownファイルを除外
-    "/obsidian/*.md",
     "README.md",
   ];
   
@@ -99,6 +89,9 @@ site.use(wikilinks());
 site.use(nav());
 site.use(pagefind());
 site.use(mdx());
+site.use(esbuild({
+  extensions: [".ts", ".js", ".tsx", ".jsx"]
+}));
 
 // --- JS/TS バンドル & 最適化 ---
 
@@ -111,7 +104,7 @@ await (async () => {
       fonts: [
         {
           name: "Shippori Mincho B1",
-          data: await Deno.readFile("assets/fonts/ShipporiMinchoB1-ExtraBold.ttf"),
+          data: (await Deno.readFile("assets/fonts/ShipporiMinchoB1-ExtraBold.ttf")).buffer,
           weight: 800,
           style: "normal",
         },
@@ -139,9 +132,6 @@ const rewriteUrl = bridgyFed();
 
 server.use(redirectAS2({ rewriteUrl }));
 
-// 404ページ（Not found middleware）
-import notFound from "lume/middlewares/not_found.ts";
-server.use(notFound({ page: "/404.html" }));
 
 // TailwindCSSとPostCSSの設定
 // CSS処理のエントリーポイントを明示的に設定
@@ -155,52 +145,14 @@ site.page({
   draft: false
 });
 
-// 本番環境かどうかの判定
-const _isProduction = Deno.env.get("LUME_MODE") === "production";
 
-// TailwindCSS設定
-site.use(transformImages());
+
+// TailwindCSS 設定（詳細は tailwind.config.js と CSS に記述）
 site.use(tailwindcss({
-  extensions: [".html", ".jsx", ".njk"],
-  // JITモードを有効化して効率化
-  options: {
-    mode: "jit",
-    theme: {
-      colors: {
-        // モノトーンカラーパレット（デジタル庁デザインシステム参考）
-        'mono-black': '#1A1A1A',    // 最も濃い黒（見出しなど）
-        'mono-darkgray': '#333333', // 濃い灰色（本文テキストなど）
-        'mono-gray': '#666666',     // 中間の灰色（補助テキストなど）
-        'mono-lightgray': '#999999',// 薄い灰色（境界線など）
-        'mono-silver': '#CCCCCC',   // シルバー（無効状態など）
-        'mono-white': '#F8F8F8',    // オフホワイト（背景色）
-        'mono-accent': '#4A5568',   // アクセントカラー
-        
-        // 既存のカラーパレット（参照用に残す）
-        'garden-green': '#2E5A30',
-        'garden-lavender': '#A991C5',
-        'garden-ivory': '#F2EFE2',
-        'garden-rose': '#D6798E',
-        'garden-brown': '#785E49',
-        'medieval-gray': '#7D8491',
-        'medieval-blue': '#4C6F8A',
-        'medieval-brown': '#8B6E4F',
-        'medieval-red': '#8A3033',
-        'medieval-gold': '#C5A84C',
-        'neon-navy': '#0D1B2A',
-        'neon-gray': '#2C363F',
-        'neon-blue-dark': '#354F60',
-        'neon-pink': '#FF2A6D',
-        'neon-blue': '#01C8EE',
-        'neon-purple': '#D159D8',
-      },
-      fontFamily: {
-        sans: ["Noto Sans JP", "sans-serif"],
-        serif: ["Noto Serif JP", "serif"],
-      },
-    },
-  },
+  minify: true,
 }));
+site.use(transformImages());
+
 
 
 // 静的ファイルのコピー設定
@@ -321,10 +273,12 @@ site.process([".html"], (pages) => {
     }
   }
 });
-site.use(esbuild({
-  extensions: [".ts", ".js", ".tsx", ".jsx"]
+
+site.use(minifyHTML({
+  options: {
+    keep_html_and_head_opening_tags: true,
+  },
 }));
-site.use(minifyHTML());
 site.use(brotli({
   extensions: [".html"] 
 }));
