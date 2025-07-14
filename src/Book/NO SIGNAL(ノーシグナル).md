@@ -28,11 +28,12 @@ metas:
 ![cover|150](http://books.google.com/books/content?id=6hQuzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api)
 
 # NO SIGNAL(ノーシグナル)
-## author: [[ブリス・ポルトラーノ]]
-## publisher: 日経ナショナルジオグラフィック社
-## publish: 2022-06-24
-## cover: http://books.google.com/books/content?id=6hQuzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
-## created: [[2023-01-01]]
+## 書誌情報
+author: [[ブリス・ポルトラーノ]]
+publisher: 日経ナショナルジオグラフィック社
+publish: 2022-06-24
+cover: http://books.google.com/books/content?id=6hQuzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+created: [[2023-01-01]]
 
 ## 読書メモ
 社会的慣習からの自由。 自然とのシンプルな関係
