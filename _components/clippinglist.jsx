@@ -12,76 +12,55 @@ function md2html(md) {
 }
 
 export default async function ClippingList() {
-  // dailylog.mdのパスをLumeのdataディレクトリに合わせて調整
+  // external_data ディレクトリに配置した JSON を読み込む
   let raw = "";
   try {
-    raw = await Deno.readTextFile("./src/clippingshare.md");
+    raw = await Deno.readTextFile("./external_data/clippingshare.json");
   } catch (e) {
-    return <div>clippingshare.mdが読めません: {e.message}</div>;
+    return <div>clippingshare.json が読めません: {e.message}</div>;
   }
-  
-    // clippingshare.mdの内容を「日付＋本文」のペアで抽出する。
-  // 例: 2025-03-27 16:49\n本文...\n\n2025-03-28 10:12\n本文...
-  // 正規表現で日付部分(YYYY-MM-DD hh:mm)をキャプチャし、splitで分割。
-  // splitの結果は [日付1, 本文1, 日付2, 本文2, ...] のような配列になる。
-  // slice(1)で最初の空要素を除去。
-  const lines = raw.split('\n').filter(line => line.trim() !== "");
-  const entries = lines.map(line => {
-    const m = line.match(/^(\d{4}-\d{2}-\d{2} \d{2}:\d{2})(.*)$/);
-    return m
-      ? { date: m[1], body: m[2].trim() }
-      : { date: "", body: line.trim() };
-  });
-  // const blocks = raw.split(/^\s*(\d{4}-\d{2}-\d{2}\s*\d{2}:\d{2})\s*$/m).slice(1);
-  // // entries配列に {date, body} オブジェクトとして格納。
-  // // 2つずつ取り出すことで、日付と本文のペアを作る。
-  // const entries = [];
-  // for (let i = 0; i < blocks.length - 1; i += 2) {
-  //   // blocks[i]: 日付文字列, blocks[i+1]: 本文
-  //   // 本文がundefinedの場合は空文字列にする。
-  //   entries.push({ date: blocks[i].trim(), body: (blocks[i + 1] || "").trim() });
-  // }
-  // // ※もしblocksの長さが奇数の場合、最後の本文がない日付は無視する（データ不整合防止）。
 
-  // markdown-itを使ってMarkdown→HTML変換（リンク・太字等対応）
-  // Deno向け: esm.sh経由でimport
-  // import MarkdownIt from "npm:markdown-it"; // Deno v1.39+ならこれも可
-  let md;
+  // JSON を配列としてパース
+  let entries = [];
   try {
-    // 動的import（Deno用）
-    md = (await import("https://esm.sh/markdown-it@13.0.1?bundle"))?.default;
+    entries = JSON.parse(raw);
   } catch (e) {
-    return <div>markdown-itの読み込みに失敗: {e.message}</div>;
+    return <div>JSON のパースに失敗しました: {e.message}</div>;
   }
-  const mdParser = new md();
 
-  // entries配列を日付（新しい順）でソートし、上位5件のみ抽出
-  const top5 = entries.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 5);
+  // 先頭 20 件のみ表示 (必要であれば調整)
+  const top20 = entries.slice(0, 20);
+
+  // コメント欄は簡易 Markdown → HTML 変換 (改行のみ対応)
+  const mdParser = { render: md2html };
 
   // UI構成：
   // - 1件もなければ「クリッピングがありません」と表示
   // - あればul/liで上位5件リスト表示。本文はMarkdown→HTML変換してli内に描画
   // - dangerouslySetInnerHTMLはXSSリスクがあるが、信頼できる自作データのみを対象とする前提
   return (
-    <div className="p-4 max-w-xl mx-auto">
-  <div className="">
-    {top5.length === 0 ? (
-      <div className="alert alert-info">クリッピングがありません</div>
-    ) : (
-      <ul className="space-y-4">
-        {top5.map(e => (
-          <li className="card bg-base-100 shadow-md mb-4" key={e.date + e.body.slice(0,20)}>
-            <div className="card-body p-4">
-              <div className="badge badge-accent mb-2">{e.date}</div>
-              <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: mdParser.render(e.body) }}></div>
-            </div>
-          </li>
-        ))}
-      </ul>
-    )}
-  </div>
-</div>
+    <div class="p-4 max-w-xl mx-auto">
+      {top20.length === 0 ? (
+        <div class="alert alert-info">クリッピングがありません</div>
+      ) : (
+        <ul class="space-y-4">
+          {top20.map((item) => (
+            <li class="not-prose card bg-base-100 shadow-md" key={item.id}>
+              <div class="card-body p-4 space-y-2">
+                <a href={item.url || "#"} class="u-like-of link link-primary text-lg font-semibold" target="_blank" rel="noopener noreferrer">
+                  {item.title}
+                </a>
+                {item.source && (
+                  <div class="text-sm opacity-70">{item.source}</div>
+                )}
+                {item.comment && (
+                  <div class="prose max-w-none" dangerouslySetInnerHTML={{ __html: mdParser.render(item.comment) }}></div>
+                )}
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   );
 }
-
-
