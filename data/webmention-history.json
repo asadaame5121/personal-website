@@ -1,9 +1,978 @@
 {
   "version": "1.0",
-  "last_updated": "2025-07-17T18:35:36+09:00",
+  "last_updated": "2025-07-17T23:12:48.196Z",
   "sent_webmentions": {
     "dailylog": [],
-    "clippingshare": [],
+    "clippingshare": [
+      {
+        "clip_id": "Buttigieg Warns Trump-Panicked Democrats, ‘We Cannot Be Mesmerized’.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Buttigieg Warns Trump-Panicked Democrats, ‘We Cannot Be Mesmerized’.md",
+        "target_url": "https://www.nytimes.com/2024/11/21/us/politics/pete-buttigieg-trump-democrats.html?unlocked_article_code=1.b04.gAmY.crNey8h19RYO&smid=nytcore-ios-share&referringSource=articleShare",
+        "sent_at": "2025-07-17T14:06:51.339Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/11/21/us/politics/pete-buttigieg-trump-democrats.html?unlocked_article_code=1.b04.gAmY.crNey8h19RYO&smid=nytcore-ios-share&referringSource=articleShare (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Column  The triumph of anti-identity-politics identity politics.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Column  The triumph of anti-identity-politics identity politics.md",
+        "target_url": "https://www.washingtonpost.com/politics/2024/12/10/triumph-anti-identity-politics-identity-politics/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzMzODA2ODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM1MTg5MTk5LCJpYXQiOjE3MzM4MDY4MDAsImp0aSI6IjFlN2FmOWJmLWMwMjgtNDU0ZC05N2RiLTdmODgxMDU1MjU4ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI0LzEyLzEwL3RyaXVtcGgtYW50aS1pZGVudGl0eS1wb2xpdGljcy1pZGVudGl0eS1wb2xpdGljcy8ifQ.-4leB-_Q9is-y6YmrTobhUfFyGTe9NOjshE2g42P238",
+        "sent_at": "2025-07-17T22:41:46.667Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.washingtonpost.com/politics/2024/12/10/triumph-anti-identity-politics-identity-politics/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzMzODA2ODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM1MTg5MTk5LCJpYXQiOjE3MzM4MDY4MDAsImp0aSI6IjFlN2FmOWJmLWMwMjgtNDU0ZC05N2RiLTdmODgxMDU1MjU4ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI0LzEyLzEwL3RyaXVtcGgtYW50aS1pZGVudGl0eS1wb2xpdGljcy1pZGVudGl0eS1wb2xpdGljcy8ifQ.-4leB-_Q9is-y6YmrTobhUfFyGTe9NOjshE2g42P238 (error sending request from 192.168.11.14:59679 for https://www.washingtonpost.com/politics/2024/12/10/triumph-anti-identity-politics-identity-politics/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzMzODA2ODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM1MTg5MTk5LCJpYXQiOjE3MzM4MDY4MDAsImp0aSI6IjFlN2FmOWJmLWMwMjgtNDU0ZC05N2RiLTdmODgxMDU1MjU4ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI0LzEyLzEwL3RyaXVtcGgtYW50aS1pZGVudGl0eS1wb2xpdGljcy1pZGVudGl0eS1wb2xpdGljcy8ifQ.-4leB-_Q9is-y6YmrTobhUfFyGTe9NOjshE2g42P238 (23.47.137.82:443): client error (SendRequest): http2 error: stream error received: unexpected internal error encountered)"
+      },
+      {
+        "clip_id": "DLsiteの“ドスケベメルマガ”、実は若手女性社員率いるチームが書いていた　プロフェッショナルな作業風景.md",
+        "source_url": "https://asadaame5121.net/clippingshare/DLsiteの“ドスケベメルマガ”、実は若手女性社員率いるチームが書いていた　プロフェッショナルな作業風景.md",
+        "target_url": "https://www.itmedia.co.jp/news/spv/2411/29/news026.html",
+        "sent_at": "2025-07-17T22:41:52.899Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.itmedia.co.jp/news/spv/2411/29/news026.html (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Don't Let the Enemies of Truth Ruin Wikipedia.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Don't Let the Enemies of Truth Ruin Wikipedia.md",
+        "target_url": "https://www.arcdigital.media/p/dont-let-the-enemies-of-truth-ruin",
+        "sent_at": "2025-07-17T22:41:59.137Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.arcdigital.media/p/dont-let-the-enemies-of-truth-ruin (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Elon Musk and the Tech Billionaires Steering Trump’s Transition Team.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Elon Musk and the Tech Billionaires Steering Trump’s Transition Team.md",
+        "target_url": "https://www.nytimes.com/2024/12/06/us/politics/trump-elon-musk-silicon-valley.html?unlocked_article_code=1.fk4.t4DI.b2jiZ0jkWFLe&smid=nytcore-ios-share&referringSource=articleShare",
+        "sent_at": "2025-07-17T22:42:05.675Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/06/us/politics/trump-elon-musk-silicon-valley.html?unlocked_article_code=1.fk4.t4DI.b2jiZ0jkWFLe&smid=nytcore-ios-share&referringSource=articleShare (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Elon Musk takes aim at Wikipedia.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Elon Musk takes aim at Wikipedia.md",
+        "target_url": "https://www.newsweek.com/elon-musk-takes-aim-wikipedia-fund-raising-editing-political-woke-2005742",
+        "sent_at": "2025-07-17T22:42:12.559Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.newsweek.com/elon-musk-takes-aim-wikipedia-fund-raising-editing-political-woke-2005742 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Enlightenment Wars Some Reflections on 'Enlightenment Now,' One Year Later.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Enlightenment Wars Some Reflections on 'Enlightenment Now,' One Year Later.md",
+        "target_url": "https://quillette.com/2019/01/14/enlightenment-wars-some-reflections-on-enlightenment-now-one-year-later/",
+        "sent_at": "2025-07-17T22:42:20.573Z",
+        "status": "success",
+        "response_code": 202
+      },
+      {
+        "clip_id": "George Foreman, Boxing Champion and Grilling Magnate, Dies at 76.md",
+        "source_url": "https://asadaame5121.net/clippingshare/George Foreman, Boxing Champion and Grilling Magnate, Dies at 76.md",
+        "target_url": "https://www.nytimes.com/2025/03/21/sports/george-foreman-dead.html?unlocked_article_code=1.504.0UgN.EH0XkuBJd6Qr&smid=bs-share",
+        "sent_at": "2025-07-17T22:42:28.955Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2025/03/21/sports/george-foreman-dead.html?unlocked_article_code=1.504.0UgN.EH0XkuBJd6Qr&smid=bs-share (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "How Gen Z Came to See Books as a Waste of Time.md",
+        "source_url": "https://asadaame5121.net/clippingshare/How Gen Z Came to See Books as a Waste of Time.md",
+        "target_url": "https://www.theatlantic.com/newsletters/archive/2024/11/books-briefing-gen-z-reading-books-waste-time/680586/?gift=NX91pXe_h9-jpMCTAKKndty65e7pWc3ow1FucIBUtZs&utm_source=copy-link&utm_medium=social&utm_campaign=share",
+        "sent_at": "2025-07-17T22:42:36.281Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.theatlantic.com/newsletters/archive/2024/11/books-briefing-gen-z-reading-books-waste-time/680586/?gift=NX91pXe_h9-jpMCTAKKndty65e7pWc3ow1FucIBUtZs&utm_source=copy-link&utm_medium=social&utm_campaign=share (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "How Zelensky’s popularity has sunk after nearly three years of war.md",
+        "source_url": "https://asadaame5121.net/clippingshare/How Zelensky’s popularity has sunk after nearly three years of war.md",
+        "target_url": "https://www.thetimes.com/article/581645cf-e4aa-483f-ac7a-d2d5d841b78b?shareToken=cbb35e487313af77515c19c4b2fb18bd",
+        "sent_at": "2025-07-17T22:42:43.589Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.thetimes.com/article/581645cf-e4aa-483f-ac7a-d2d5d841b78b?shareToken=cbb35e487313af77515c19c4b2fb18bd (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "In ‘Finding Flaco,’ Manhattan’s Beloved Celebrity Owl Is Memorialized.md",
+        "source_url": "https://asadaame5121.net/clippingshare/In ‘Finding Flaco,’ Manhattan’s Beloved Celebrity Owl Is Memorialized.md",
+        "target_url": "https://www.nytimes.com/2024/12/24/books/review/finding-flaco-owl-photo-book.html?unlocked_article_code=1.j04.ZFJo.zwTahFAYxA1U&smid=bs-share",
+        "sent_at": "2025-07-17T22:42:53.745Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/24/books/review/finding-flaco-owl-photo-book.html?unlocked_article_code=1.j04.ZFJo.zwTahFAYxA1U&smid=bs-share (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Insurers Are Deserting Homeowners as Climate Shocks Worsen.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Insurers Are Deserting Homeowners as Climate Shocks Worsen.md",
+        "target_url": "https://www.nytimes.com/interactive/2024/12/18/climate/insurance-non-renewal-climate-crisis.html?unlocked_article_code=1.jE4.lNsl.WilUxKWri2gP&smid=nytcore-ios-share&referringSource=articleShare&tgrp=on",
+        "sent_at": "2025-07-17T22:43:00.535Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/interactive/2024/12/18/climate/insurance-non-renewal-climate-crisis.html?unlocked_article_code=1.jE4.lNsl.WilUxKWri2gP&smid=nytcore-ios-share&referringSource=articleShare&tgrp=on (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "It's Not As Bad As All That.md",
+        "source_url": "https://asadaame5121.net/clippingshare/It's Not As Bad As All That.md",
+        "target_url": "https://democracyjournal.org/magazine/48/its-not-as-bad-as-all-that/?ref=quillette.com",
+        "sent_at": "2025-07-17T22:43:07.147Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://democracyjournal.org/magazine/48/its-not-as-bad-as-all-that/?ref=quillette.com (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Jimmy Carter, Peacemaking President Amid Crises, Is Dead at 100.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Jimmy Carter, Peacemaking President Amid Crises, Is Dead at 100.md",
+        "target_url": "https://www.nytimes.com/2024/12/29/us/politics/jimmy-carter-dead.html?unlocked_article_code=1.lE4.Mw0A.Pg8pMCYL4jg2&smid=url-share",
+        "sent_at": "2025-07-17T22:43:14.110Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/29/us/politics/jimmy-carter-dead.html?unlocked_article_code=1.lE4.Mw0A.Pg8pMCYL4jg2&smid=url-share (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Long a ‘Crown Jewel’ of Government, N.I.H. Is Now a Target.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Long a ‘Crown Jewel’ of Government, N.I.H. Is Now a Target.md",
+        "target_url": "https://www.nytimes.com/2024/12/01/health/nih-trump-kennedy-bhattacharya.html?unlocked_article_code=1.eU4.pd3-.WIzKYj8lDU9M&smid=url-share",
+        "sent_at": "2025-07-17T22:43:21.134Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/01/health/nih-trump-kennedy-bhattacharya.html?unlocked_article_code=1.eU4.pd3-.WIzKYj8lDU9M&smid=url-share (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Luigi Mangione’s manifesto reveals his hatred of insurance companies.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Luigi Mangione’s manifesto reveals his hatred of insurance companies.md",
+        "target_url": "https://www.economist.com/united-states/2024/12/12/luigi-mangiones-manifesto-reveals-his-hatred-of-insurance-companies?giftId=c838abb2-f4ce-4d44-bfa1-7f07c2c9a4b1&utm_campaign=gifted_article",
+        "sent_at": "2025-07-17T22:43:27.457Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.economist.com/united-states/2024/12/12/luigi-mangiones-manifesto-reveals-his-hatred-of-insurance-companies?giftId=c838abb2-f4ce-4d44-bfa1-7f07c2c9a4b1&utm_campaign=gifted_article (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Musk, Thiel and the shadow of apartheid South Africa.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Musk, Thiel and the shadow of apartheid South Africa.md",
+        "target_url": "https://www.ft.com/content/cfbfa1e8-d8f8-42b9-b74c-dae6cc6185a0?accessToken=zwAGKdHEqmkwkdPPv6Ho2PhCudO3TNrmzGGFoA.MEQCIA3h79YXDdcwW1XGH6QelD2ZvifwTUhkRcrmvjgonjUaAiBks4VrNidmmbGBTFHWFk8ryyRmrB4xcjdv59PK6N5l8g&sharetype=gift&token=eb57abd5-ea40-4e4c-9508-277bb72d5173",
+        "sent_at": "2025-07-17T22:43:38.847Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.ft.com/content/cfbfa1e8-d8f8-42b9-b74c-dae6cc6185a0?accessToken=zwAGKdHEqmkwkdPPv6Ho2PhCudO3TNrmzGGFoA.MEQCIA3h79YXDdcwW1XGH6QelD2ZvifwTUhkRcrmvjgonjUaAiBks4VrNidmmbGBTFHWFk8ryyRmrB4xcjdv59PK6N5l8g&sharetype=gift&token=eb57abd5-ea40-4e4c-9508-277bb72d5173 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "NAKAHARA-LAB.NET 東京大学 中原淳研究室 - 大人の学びを科学する 先行研究をまとめる５つのプロセス、陥りやすい３つの罠.md",
+        "source_url": "https://asadaame5121.net/clippingshare/NAKAHARA-LAB.NET 東京大学 中原淳研究室 - 大人の学びを科学する 先行研究をまとめる５つのプロセス、陥りやすい３つの罠.md",
+        "target_url": "https://www.nakahara-lab.net/blog/2011/10/post_1803.html",
+        "sent_at": "2025-07-17T22:43:45.662Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nakahara-lab.net/blog/2011/10/post_1803.html (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "No standing, no marathon speeches, no catheter bags How filibustering got way too easy.md",
+        "source_url": "https://asadaame5121.net/clippingshare/No standing, no marathon speeches, no catheter bags How filibustering got way too easy.md",
+        "target_url": "https://www.washingtonpost.com/lifestyle/style/silent-filibuster-got-too-easy/2021/07/05/93bf2ff2-d9cd-11eb-9bbb-37c30dcf9363_story.html?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzQzMzkzNjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzQ0Nzc1OTk5LCJpYXQiOjE3NDMzOTM2MDAsImp0aSI6IjQyMDJmNTYxLTBjODktNDdhZi05NmUwLTIxMzVmYzAwMzY4OCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9saWZlc3R5bGUvc3R5bGUvc2lsZW50LWZpbGlidXN0ZXItZ290LXRvby1lYXN5LzIwMjEvMDcvMDUvOTNiZjJmZjItZDljZC0xMWViLTliYmItMzdjMzBkY2Y5MzYzX3N0b3J5Lmh0bWwifQ.HlghlSh7JiUTsUMT49YjBN9v_zB0c0bDeCOK7o3zrw0",
+        "sent_at": "2025-07-17T22:43:52.047Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.washingtonpost.com/lifestyle/style/silent-filibuster-got-too-easy/2021/07/05/93bf2ff2-d9cd-11eb-9bbb-37c30dcf9363_story.html?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzQzMzkzNjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzQ0Nzc1OTk5LCJpYXQiOjE3NDMzOTM2MDAsImp0aSI6IjQyMDJmNTYxLTBjODktNDdhZi05NmUwLTIxMzVmYzAwMzY4OCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9saWZlc3R5bGUvc3R5bGUvc2lsZW50LWZpbGlidXN0ZXItZ290LXRvby1lYXN5LzIwMjEvMDcvMDUvOTNiZjJmZjItZDljZC0xMWViLTliYmItMzdjMzBkY2Y5MzYzX3N0b3J5Lmh0bWwifQ.HlghlSh7JiUTsUMT49YjBN9v_zB0c0bDeCOK7o3zrw0 (error sending request from 192.168.11.14:59948 for https://www.washingtonpost.com/lifestyle/style/silent-filibuster-got-too-easy/2021/07/05/93bf2ff2-d9cd-11eb-9bbb-37c30dcf9363_story.html?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzQzMzkzNjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzQ0Nzc1OTk5LCJpYXQiOjE3NDMzOTM2MDAsImp0aSI6IjQyMDJmNTYxLTBjODktNDdhZi05NmUwLTIxMzVmYzAwMzY4OCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9saWZlc3R5bGUvc3R5bGUvc2lsZW50LWZpbGlidXN0ZXItZ290LXRvby1lYXN5LzIwMjEvMDcvMDUvOTNiZjJmZjItZDljZC0xMWViLTliYmItMzdjMzBkY2Y5MzYzX3N0b3J5Lmh0bWwifQ.HlghlSh7JiUTsUMT49YjBN9v_zB0c0bDeCOK7o3zrw0 (23.47.137.82:443): client error (SendRequest): http2 error: stream error received: unexpected internal error encountered)"
+      },
+      {
+        "clip_id": "Obsidian Web Clipper.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Obsidian Web Clipper.md",
+        "target_url": "https://stephango.com/obsidian-web-clipper",
+        "sent_at": "2025-07-17T22:43:58.146Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://stephango.com/obsidian-web-clipper (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Obsidian：Callout形式でタイムラインとチャットバブルを表示 - 叶星优酸乳.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Obsidian：Callout形式でタイムラインとチャットバブルを表示 - 叶星优酸乳.md",
+        "target_url": "https://weiyexing.win/callout-to-timeline-and-chatbubble?locale=ja",
+        "sent_at": "2025-07-17T22:44:05.064Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://weiyexing.win/callout-to-timeline-and-chatbubble?locale=ja (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Obsidian：WebClipperをKindle対応にする.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Obsidian：WebClipperをKindle対応にする.md",
+        "target_url": "https://wineroses.hatenablog.com/entry/2024/12/06/170041",
+        "sent_at": "2025-07-17T22:44:13.016Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://wineroses.hatenablog.com/entry/2024/12/06/170041 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Opinion  My Last Column Finding Hope in an Age of Resentment.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Opinion  My Last Column Finding Hope in an Age of Resentment.md",
+        "target_url": "https://www.nytimes.com/2024/12/09/opinion/elites-euro-social-media.html?unlocked_article_code=1.jU4.YGsX.geR43TP9RUlv&smid=nytcore-ios-share&referringSource=articleShare",
+        "sent_at": "2025-07-17T22:44:19.413Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/09/opinion/elites-euro-social-media.html?unlocked_article_code=1.jU4.YGsX.geR43TP9RUlv&smid=nytcore-ios-share&referringSource=articleShare (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Opinion  Oops! Consumers finally realize that Trump could worsen inflation..md",
+        "source_url": "https://asadaame5121.net/clippingshare/Opinion  Oops! Consumers finally realize that Trump could worsen inflation..md",
+        "target_url": "https://www.washingtonpost.com/opinions/2024/12/26/trump-tariffs-worsen-inflation/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzM1MTg5MjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM2NTcxNTk5LCJpYXQiOjE3MzUxODkyMDAsImp0aSI6ImZjODdlNGNmLTI2MDAtNDM0OC1hOTgxLTFhZmJjMjQ2NDU3YSIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9vcGluaW9ucy8yMDI0LzEyLzI2L3RydW1wLXRhcmlmZnMtd29yc2VuLWluZmxhdGlvbi8ifQ.2ze3RS75QDz6znHHFYRjLkAPSrP6hlsWJOrx-RVTfnk",
+        "sent_at": "2025-07-17T22:44:26.154Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.washingtonpost.com/opinions/2024/12/26/trump-tariffs-worsen-inflation/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzM1MTg5MjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM2NTcxNTk5LCJpYXQiOjE3MzUxODkyMDAsImp0aSI6ImZjODdlNGNmLTI2MDAtNDM0OC1hOTgxLTFhZmJjMjQ2NDU3YSIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9vcGluaW9ucy8yMDI0LzEyLzI2L3RydW1wLXRhcmlmZnMtd29yc2VuLWluZmxhdGlvbi8ifQ.2ze3RS75QDz6znHHFYRjLkAPSrP6hlsWJOrx-RVTfnk (error sending request from 192.168.11.14:59948 for https://www.washingtonpost.com/opinions/2024/12/26/trump-tariffs-worsen-inflation/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzM1MTg5MjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM2NTcxNTk5LCJpYXQiOjE3MzUxODkyMDAsImp0aSI6ImZjODdlNGNmLTI2MDAtNDM0OC1hOTgxLTFhZmJjMjQ2NDU3YSIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9vcGluaW9ucy8yMDI0LzEyLzI2L3RydW1wLXRhcmlmZnMtd29yc2VuLWluZmxhdGlvbi8ifQ.2ze3RS75QDz6znHHFYRjLkAPSrP6hlsWJOrx-RVTfnk (23.47.137.82:443): client error (SendRequest): http2 error: stream error received: unexpected internal error encountered)"
+      },
+      {
+        "clip_id": "Opinion  Paul Krugman on the ‘Biggest Trade Shock in History’.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Opinion  Paul Krugman on the ‘Biggest Trade Shock in History’.md",
+        "target_url": "https://www.nytimes.com/2025/04/05/opinion/ezra-klein-podcast-paul-krugman.html?unlocked_article_code=1.9k4.y_hk.n7or4QsXGnas&smid=url-share",
+        "sent_at": "2025-07-17T22:44:32.419Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2025/04/05/opinion/ezra-klein-podcast-paul-krugman.html?unlocked_article_code=1.9k4.y_hk.n7or4QsXGnas&smid=url-share (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Opinion  Temporarily Disconnected From Politics Feel No Guilt About It..md",
+        "source_url": "https://asadaame5121.net/clippingshare/Opinion  Temporarily Disconnected From Politics Feel No Guilt About It..md",
+        "target_url": "https://www.nytimes.com/2024/12/18/opinion/trump-liberals-resistance.html?unlocked_article_code=1.ik4.jCMw.LGQrqLm3bWVE&smid=url-share",
+        "sent_at": "2025-07-17T22:44:39.156Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/18/opinion/trump-liberals-resistance.html?unlocked_article_code=1.ik4.jCMw.LGQrqLm3bWVE&smid=url-share (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Opinion  The Shock of Faith It’s Nothing Like I Thought It Would Be.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Opinion  The Shock of Faith It’s Nothing Like I Thought It Would Be.md",
+        "target_url": "https://www.nytimes.com/2024/12/19/opinion/faith-god-christianity.html?unlocked_article_code=1.jE4.bKhR.zCct3VH6eOgP&smid=url-share",
+        "sent_at": "2025-07-17T22:44:45.933Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/19/opinion/faith-god-christianity.html?unlocked_article_code=1.jE4.bKhR.zCct3VH6eOgP&smid=url-share (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Opinion  Things Are Terrible in Europe, and They’re Only Going to Get Worse.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Opinion  Things Are Terrible in Europe, and They’re Only Going to Get Worse.md",
+        "target_url": "https://www.nytimes.com/2024/12/22/opinion/europe-germany-france-trump.html?unlocked_article_code=1.kU4.bk8O.k8CTdlH3cyFj&smid=nytcore-ios-share&referringSource=articleShare",
+        "sent_at": "2025-07-17T22:44:52.373Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/22/opinion/europe-germany-france-trump.html?unlocked_article_code=1.kU4.bk8O.k8CTdlH3cyFj&smid=nytcore-ios-share&referringSource=articleShare (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Opinion  Trump’s Shameful Campaign Against Transgender Americans.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Opinion  Trump’s Shameful Campaign Against Transgender Americans.md",
+        "target_url": "https://www.nytimes.com/2025/02/09/opinion/transgender-trump-orders.html?unlocked_article_code=1.v04.1-3q.i9gkm8wm4qy9&smid=url-share",
+        "sent_at": "2025-07-17T22:44:58.722Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2025/02/09/opinion/transgender-trump-orders.html?unlocked_article_code=1.v04.1-3q.i9gkm8wm4qy9&smid=url-share (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Qアノン陰謀論との関連で「物議の映画」が米2位に急浮上  Forbes JAPAN 公式サイト（フォーブス ジャパン）.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Qアノン陰謀論との関連で「物議の映画」が米2位に急浮上  Forbes JAPAN 公式サイト（フォーブス ジャパン）.md",
+        "target_url": "https://forbesjapan.com/articles/detail/64649?read_more=1",
+        "sent_at": "2025-07-17T22:45:05.036Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://forbesjapan.com/articles/detail/64649?read_more=1 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Read Vice President Kamala Harris' Full Concession Speech.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Read Vice President Kamala Harris' Full Concession Speech.md",
+        "target_url": "https://time.com/7173617/kamala-harris-concession-speech-full-transcript/",
+        "sent_at": "2025-07-17T22:45:11.419Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://time.com/7173617/kamala-harris-concession-speech-full-transcript/ (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "SSG with Obsidian and Lume 1.md",
+        "source_url": "https://asadaame5121.net/clippingshare/SSG with Obsidian and Lume 1.md",
+        "target_url": "https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html",
+        "sent_at": "2025-07-17T22:45:18.106Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "SSG with Obsidian and Lume.md",
+        "source_url": "https://asadaame5121.net/clippingshare/SSG with Obsidian and Lume.md",
+        "target_url": "https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html",
+        "sent_at": "2025-07-17T22:45:24.610Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Supercharging Obsidian.md with OpenAI, Qdrant and Rust.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Supercharging Obsidian.md with OpenAI, Qdrant and Rust.md",
+        "target_url": "https://dev.to/joshmo_dev/supercharging-obsidianmd-with-openai-qdrant-and-rust-504f",
+        "sent_at": "2025-07-17T22:45:30.649Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://dev.to/joshmo_dev/supercharging-obsidianmd-with-openai-qdrant-and-rust-504f (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "The Great Grocery Squeeze.md",
+        "source_url": "https://asadaame5121.net/clippingshare/The Great Grocery Squeeze.md",
+        "target_url": "https://www.theatlantic.com/ideas/archive/2024/12/food-deserts-robinson-patman/680765/?gift=-RS5b5Pu_ckblQ1qYX7r4TdLi38JCK1Ooopj_8j-_yM&utm_source=copy-link&utm_medium=social&utm_campaign=share",
+        "sent_at": "2025-07-17T22:45:37.190Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.theatlantic.com/ideas/archive/2024/12/food-deserts-robinson-patman/680765/?gift=-RS5b5Pu_ckblQ1qYX7r4TdLi38JCK1Ooopj_8j-_yM&utm_source=copy-link&utm_medium=social&utm_campaign=share (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "The Top Goal of Project 2025 Is Still to Come.md",
+        "source_url": "https://asadaame5121.net/clippingshare/The Top Goal of Project 2025 Is Still to Come.md",
+        "target_url": "https://www.theatlantic.com/ideas/archive/2025/04/project-2025-top-goal/682142/?gift=HtNVVY5d4WyXVjehmwGKLl0ub7b4Al-S57kFaZPmIP8&utm_source=copy-link&utm_medium=social&utm_campaign=share",
+        "sent_at": "2025-07-17T22:45:44.399Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.theatlantic.com/ideas/archive/2025/04/project-2025-top-goal/682142/?gift=HtNVVY5d4WyXVjehmwGKLl0ub7b4Al-S57kFaZPmIP8&utm_source=copy-link&utm_medium=social&utm_campaign=share (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Trump and Musk are obsessed with genetics – but there’s no science behind their simplistic views  Jonathan Roberts.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Trump and Musk are obsessed with genetics – but there’s no science behind their simplistic views  Jonathan Roberts.md",
+        "target_url": "https://www.theguardian.com/commentisfree/2024/dec/30/donald-trump-elon-musk-genetics-science-right",
+        "sent_at": "2025-07-17T22:45:51.012Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.theguardian.com/commentisfree/2024/dec/30/donald-trump-elon-musk-genetics-science-right (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Tulsa Massacre Was a ‘Coordinated, Military-Style Attack,’ Federal Report Says.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Tulsa Massacre Was a ‘Coordinated, Military-Style Attack,’ Federal Report Says.md",
+        "target_url": "https://www.nytimes.com/2025/01/11/us/tulsa-race-massacre-report.html?unlocked_article_code=1.oU4.TEOz.fQYoQ9jIRDyb&smid=nytcore-ios-share&referringSource=articleShare",
+        "sent_at": "2025-07-17T22:45:58.031Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2025/01/11/us/tulsa-race-massacre-report.html?unlocked_article_code=1.oU4.TEOz.fQYoQ9jIRDyb&smid=nytcore-ios-share&referringSource=articleShare (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "VIAF (Virtual International Authority File)  OCLC Developer Network.md",
+        "source_url": "https://asadaame5121.net/clippingshare/VIAF (Virtual International Authority File)  OCLC Developer Network.md",
+        "target_url": "https://www.oclc.org/developer/api/oclc-apis/viaf.en.html",
+        "sent_at": "2025-07-17T22:46:04.506Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.oclc.org/developer/api/oclc-apis/viaf.en.html (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "Why Earth's History Appears So Miraculous.md",
+        "source_url": "https://asadaame5121.net/clippingshare/Why Earth's History Appears So Miraculous.md",
+        "target_url": "https://www.theatlantic.com/science/archive/2018/03/human-existence-will-look-more-miraculous-the-longer-we-survive/554513/?gift=q1KByJV9yb84eTRhFiNthYz8gd2O-8qrri3Nf7YBmRE&utm_source=copy-link&utm_medium=social&utm_campaign=share",
+        "sent_at": "2025-07-17T22:46:11.548Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.theatlantic.com/science/archive/2018/03/human-existence-will-look-more-miraculous-the-longer-we-survive/554513/?gift=q1KByJV9yb84eTRhFiNthYz8gd2O-8qrri3Nf7YBmRE&utm_source=copy-link&utm_medium=social&utm_campaign=share (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "X Is a White-Supremacist Site.md",
+        "source_url": "https://asadaame5121.net/clippingshare/X Is a White-Supremacist Site.md",
+        "target_url": "https://www.theatlantic.com/technology/archive/2024/11/x-white-supremacist-site/680538/?gift=N2aAVwSqDWDX9rA6Xm7u25Dry_QxlYGW1-QmU-YA3c8&utm_source=copy-link&utm_medium=social&utm_campaign=share",
+        "sent_at": "2025-07-17T22:46:17.927Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.theatlantic.com/technology/archive/2024/11/x-white-supremacist-site/680538/?gift=N2aAVwSqDWDX9rA6Xm7u25Dry_QxlYGW1-QmU-YA3c8&utm_source=copy-link&utm_medium=social&utm_campaign=share (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "‘A Day of Love’ How Trump Inverted the Violent History of Jan. 6.md",
+        "source_url": "https://asadaame5121.net/clippingshare/‘A Day of Love’ How Trump Inverted the Violent History of Jan. 6.md",
+        "target_url": "https://www.nytimes.com/2025/01/05/us/politics/january-6-capitol-riot-trump.html?unlocked_article_code=1.vU4.Nwih.gknVldzlg88a&smid=url-share",
+        "sent_at": "2025-07-17T22:46:24.568Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2025/01/05/us/politics/january-6-capitol-riot-trump.html?unlocked_article_code=1.vU4.Nwih.gknVldzlg88a&smid=url-share (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "“男はこう”“女はこう” ある日、新聞に載った全面広告.md",
+        "source_url": "https://asadaame5121.net/clippingshare/“男はこう”“女はこう” ある日、新聞に載った全面広告.md",
+        "target_url": "https://s-newscommons.com/article/7161",
+        "sent_at": "2025-07-17T22:46:31.938Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://s-newscommons.com/article/7161 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "「そんな人でない」「才能ある」　性加害男性に集まる「ヒムパシー」：朝日新聞.md",
+        "source_url": "https://asadaame5121.net/clippingshare/「そんな人でない」「才能ある」　性加害男性に集まる「ヒムパシー」：朝日新聞.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3L1RZ3T3LUEFT00WM.html?ptoken=01JPVWDQP60SV8FJMCPE4FV53C",
+        "sent_at": "2025-07-17T22:46:38.123Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3L1RZ3T3LUEFT00WM.html?ptoken=01JPVWDQP60SV8FJMCPE4FV53C (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "「ジェンダー先進国」ナミビア、初の女性大統領誕生の陰で募る不安：朝日新聞.md",
+        "source_url": "https://asadaame5121.net/clippingshare/「ジェンダー先進国」ナミビア、初の女性大統領誕生の陰で募る不安：朝日新聞.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3C5W3TT3CUHBI008M.html?ptoken=01JP9R19TA8Z3W65V5PSMH8B16",
+        "sent_at": "2025-07-17T22:46:44.772Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3C5W3TT3CUHBI008M.html?ptoken=01JP9R19TA8Z3W65V5PSMH8B16 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "「僕たちは多文化主義から多自然主義へと向かわなければならない」奥野克巳に訊く“人類学の静かなる革命”.md",
+        "source_url": "https://asadaame5121.net/clippingshare/「僕たちは多文化主義から多自然主義へと向かわなければならない」奥野克巳に訊く“人類学の静かなる革命”.md",
+        "target_url": "https://hagamag.com/uncategory/3529",
+        "sent_at": "2025-07-17T22:46:51.256Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://hagamag.com/uncategory/3529 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "「反戦詩」詠んだ与謝野晶子像に突然の撤去要請　裁判応酬の事態に：朝日新聞デジタル.md",
+        "source_url": "https://asadaame5121.net/clippingshare/「反戦詩」詠んだ与謝野晶子像に突然の撤去要請　裁判応酬の事態に：朝日新聞デジタル.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST172Q3MT17PTIL009M.html?ptoken=01JH4NXYV1SZA23JQSTKKCQ4T0",
+        "sent_at": "2025-07-17T22:46:57.622Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST172Q3MT17PTIL009M.html?ptoken=01JH4NXYV1SZA23JQSTKKCQ4T0 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "「大学の同期が起床標準時を採用しているせいで時間が予測できない」→起床標準時ってなんだよ！と盛大なツッコミ→時刻を可視化してくれるサイトが作られる.md",
+        "source_url": "https://asadaame5121.net/clippingshare/「大学の同期が起床標準時を採用しているせいで時間が予測できない」→起床標準時ってなんだよ！と盛大なツッコミ→時刻を可視化してくれるサイトが作られる.md",
+        "target_url": "https://togetter.com/li/2472403",
+        "sent_at": "2025-07-17T22:47:03.980Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://togetter.com/li/2472403 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "「女さん」「子どもを守れ」…　〝犬笛〟が飛び交う社会で生きるには：朝日新聞.md",
+        "source_url": "https://asadaame5121.net/clippingshare/「女さん」「子どもを守れ」…　〝犬笛〟が飛び交う社会で生きるには：朝日新聞.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST4B1Q3NT4BULLI007M.html?ptoken=01JRSS1KV4KEJAQ7AW05ETFWDG",
+        "sent_at": "2025-07-17T22:47:10.347Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST4B1Q3NT4BULLI007M.html?ptoken=01JRSS1KV4KEJAQ7AW05ETFWDG (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "「嫌ならはっきりと…」の幻想　ゆがんだ性交観と無縁じゃない法廷：朝日新聞.md",
+        "source_url": "https://asadaame5121.net/clippingshare/「嫌ならはっきりと…」の幻想　ゆがんだ性交観と無縁じゃない法廷：朝日新聞.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3F35CMT3FUTFL00GM.html?ptoken=01JPMGDVV049ECX7E3V59MHRPS",
+        "sent_at": "2025-07-17T22:47:16.771Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3F35CMT3FUTFL00GM.html?ptoken=01JPMGDVV049ECX7E3V59MHRPS (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "「実験」とは何か - 東京大学出版会.md",
+        "source_url": "https://asadaame5121.net/clippingshare/「実験」とは何か - 東京大学出版会.md",
+        "target_url": "https://www.utp.or.jp/book/b10087847.html",
+        "sent_at": "2025-07-17T22:47:23.145Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.utp.or.jp/book/b10087847.html (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "「日本の政策はなぜ機能しないのか？」書評　数値目標ありきの解決法はない（好書好日）｜ｄメニューニュース.md",
+        "source_url": "https://asadaame5121.net/clippingshare/「日本の政策はなぜ機能しないのか？」書評　数値目標ありきの解決法はない（好書好日）｜ｄメニューニュース.md",
+        "target_url": "https://topics.smt.docomo.ne.jp/article/book_asahi/trend/book_asahi-15408143?redirect=1",
+        "sent_at": "2025-07-17T22:47:29.592Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://topics.smt.docomo.ne.jp/article/book_asahi/trend/book_asahi-15408143?redirect=1 (HTTP 404: Not Found)"
+      },
+      {
+        "clip_id": "「昭和と平成で大きく変わった」　御厨さんが見た「ナベツネ」の実像：朝日新聞デジタル.md",
+        "source_url": "https://asadaame5121.net/clippingshare/「昭和と平成で大きく変わった」　御厨さんが見た「ナベツネ」の実像：朝日新聞デジタル.md",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSDM2R4DSDMUTFK01PM.html?ptoken=01JFH8BC3JMTHKS0E0KHXW538Y",
+        "sent_at": "2025-07-17T22:47:35.803Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDM2R4DSDMUTFK01PM.html?ptoken=01JFH8BC3JMTHKS0E0KHXW538Y (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "「椿発言」と僕の主義主張は違う　番組打ち切りに「僕があまりにも傲慢になっていた」　話の肖像画　ジャーナリスト・田原総一朗＜25＞.md",
+        "source_url": "https://asadaame5121.net/clippingshare/「椿発言」と僕の主義主張は違う　番組打ち切りに「僕があまりにも傲慢になっていた」　話の肖像画　ジャーナリスト・田原総一朗＜25＞.md",
+        "target_url": "https://www.sankei.com/article/20241026-KYBUOIFN5BKAHCP3G4JLPFCNTI/?outputType=theme_portrait",
+        "sent_at": "2025-07-17T22:47:42.440Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.sankei.com/article/20241026-KYBUOIFN5BKAHCP3G4JLPFCNTI/?outputType=theme_portrait (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "「無知の時代」を生き抜くために｜じんぶん堂.md",
+        "source_url": "https://asadaame5121.net/clippingshare/「無知の時代」を生き抜くために｜じんぶん堂.md",
+        "target_url": "https://book.asahi.com/jinbun/article/15664692",
+        "sent_at": "2025-07-17T22:47:49.277Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://book.asahi.com/jinbun/article/15664692 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "「精神疾患とは何か」について哲学的に考えてみる─精神疾患の定義問題.md",
+        "source_url": "https://asadaame5121.net/clippingshare/「精神疾患とは何か」について哲学的に考えてみる─精神疾患の定義問題.md",
+        "target_url": "https://www.note.kanekoshobo.co.jp/n/n31042f72bcdc",
+        "sent_at": "2025-07-17T22:47:55.713Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.note.kanekoshobo.co.jp/n/n31042f72bcdc (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "「精神疾患とは何か」について哲学的に考えてみる─精神疾患の定義問題―（後編）（九州大学人文科学研究院専門研究員：後藤真理子）.md",
+        "source_url": "https://asadaame5121.net/clippingshare/「精神疾患とは何か」について哲学的に考えてみる─精神疾患の定義問題―（後編）（九州大学人文科学研究院専門研究員：後藤真理子）.md",
+        "target_url": "https://www.note.kanekoshobo.co.jp/n/n68adf5fa7db8",
+        "sent_at": "2025-07-17T22:48:02.369Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.note.kanekoshobo.co.jp/n/n68adf5fa7db8 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "「過疎地を復興させてもね」を許す社会　下り坂の30年が生んだ空気：朝日新聞デジタル.md",
+        "source_url": "https://asadaame5121.net/clippingshare/「過疎地を復興させてもね」を許す社会　下り坂の30年が生んだ空気：朝日新聞デジタル.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST1G7R3MT1GUPQJ001M.html?ptoken=01JHXZ3QJR1HAAW8XGGRKX8GXZ",
+        "sent_at": "2025-07-17T22:48:08.735Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST1G7R3MT1GUPQJ001M.html?ptoken=01JHXZ3QJR1HAAW8XGGRKX8GXZ (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "『文章に生きる』.md",
+        "source_url": "https://asadaame5121.net/clippingshare/『文章に生きる』.md",
+        "target_url": "https://comingbook.honzuki.jp/?detail=9784788518650",
+        "sent_at": "2025-07-17T22:48:15.032Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://comingbook.honzuki.jp/?detail=9784788518650 (error sending request for url (http://jpo.flyingline.info/): client error (Connect): dns error: そのようなホストは不明です。 (os error 11001): そのようなホストは不明です。 (os error 11001))"
+      },
+      {
+        "clip_id": "『新・動物の解放』.md",
+        "source_url": "https://asadaame5121.net/clippingshare/『新・動物の解放』.md",
+        "target_url": "https://comingbook.honzuki.jp/?detail=9784794974549",
+        "sent_at": "2025-07-17T22:48:21.240Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://comingbook.honzuki.jp/?detail=9784794974549 (error sending request for url (http://jpo.flyingline.info/): client error (Connect): dns error: そのようなホストは不明です。 (os error 11001): そのようなホストは不明です。 (os error 11001))"
+      },
+      {
+        "clip_id": "『殺人パンツがせめてくる！』.md",
+        "source_url": "https://asadaame5121.net/clippingshare/『殺人パンツがせめてくる！』.md",
+        "target_url": "https://comingbook.honzuki.jp/?detail=9784472060366",
+        "sent_at": "2025-07-17T22:48:27.446Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://comingbook.honzuki.jp/?detail=9784472060366 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "『社会と調査』(最新号)  社会調査協会.md",
+        "source_url": "https://asadaame5121.net/clippingshare/『社会と調査』(最新号)  社会調査協会.md",
+        "target_url": "https://jasr.or.jp/asr/new/",
+        "sent_at": "2025-07-17T22:48:33.652Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://jasr.or.jp/asr/new/ (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "【Obsidian】Spaced Repetition の使い方 - Qiita.md",
+        "source_url": "https://asadaame5121.net/clippingshare/【Obsidian】Spaced Repetition の使い方 - Qiita.md",
+        "target_url": "https://qiita.com/P-man_Brown/items/76b3abe3f8d7a8ca0dee",
+        "sent_at": "2025-07-17T22:48:41.181Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://qiita.com/P-man_Brown/items/76b3abe3f8d7a8ca0dee (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "【ポケスリ】料理レシピ一覧とおすすめ｜新レシピ掲載！【ポケモンスリープ】｜ゲームエイト.md",
+        "source_url": "https://asadaame5121.net/clippingshare/【ポケスリ】料理レシピ一覧とおすすめ｜新レシピ掲載！【ポケモンスリープ】｜ゲームエイト.md",
+        "target_url": "https://game8.jp/pokemonsleep/542649",
+        "sent_at": "2025-07-17T22:48:47.472Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://game8.jp/pokemonsleep/542649 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "【鼎談】マルチスピーシーズ人類学の可能性（前編）／奥野克巳×近藤祉秋×箭内匡￼.md",
+        "source_url": "https://asadaame5121.net/clippingshare/【鼎談】マルチスピーシーズ人類学の可能性（前編）／奥野克巳×近藤祉秋×箭内匡￼.md",
+        "target_url": "https://www.ibunsha.co.jp/contents/multispecies05/",
+        "sent_at": "2025-07-17T22:48:54.622Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.ibunsha.co.jp/contents/multispecies05/ (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "このブログがFediverseに対応しました.md",
+        "source_url": "https://asadaame5121.net/clippingshare/このブログがFediverseに対応しました.md",
+        "target_url": "https://blog.tyage.net/post/2023/2023-07-17-bridgy-fed/",
+        "sent_at": "2025-07-17T22:49:04.633Z",
+        "status": "success",
+        "response_code": 201
+      },
+      {
+        "clip_id": "どうして働いていても本が読めるのか｜リー・ンゴ　Lee・Ngo.md",
+        "source_url": "https://asadaame5121.net/clippingshare/どうして働いていても本が読めるのか｜リー・ンゴ　Lee・Ngo.md",
+        "target_url": "https://note.com/kori52661/n/n216de0802c48?sub_rt=share_pw",
+        "sent_at": "2025-07-17T22:49:12.515Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://note.com/kori52661/n/n216de0802c48?sub_rt=share_pw (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "みじかい文の連続で文章をかかないといけない理由  Shiki’s weblog.md",
+        "source_url": "https://asadaame5121.net/clippingshare/みじかい文の連続で文章をかかないといけない理由  Shiki’s weblog.md",
+        "target_url": "https://shiki.esrille.com/2018/06/easy.html",
+        "sent_at": "2025-07-17T22:49:18.897Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://shiki.esrille.com/2018/06/easy.html (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "アサド政権、深まる苦境　南部でも蜂起、主要都市の陥落相次ぐ：朝日新聞デジタル.md",
+        "source_url": "https://asadaame5121.net/clippingshare/アサド政権、深まる苦境　南部でも蜂起、主要都市の陥落相次ぐ：朝日新聞デジタル.md",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSD73DF6SD7UHBI02BM.html?ptoken=01JEGZGGKAK56NF4THMY61JQGQ",
+        "sent_at": "2025-07-17T22:49:25.206Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSD73DF6SD7UHBI02BM.html?ptoken=01JEGZGGKAK56NF4THMY61JQGQ (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "イーロン・マスクら大富豪を英雄視するのは危険　ノーベル賞学者の警告.md",
+        "source_url": "https://asadaame5121.net/clippingshare/イーロン・マスクら大富豪を英雄視するのは危険　ノーベル賞学者の警告.md",
+        "target_url": "https://business.nikkei.com/atcl/gen/19/00087/121800419/?gift=8vIHoLnslgBqC6vlqZb%252FqgQ5FtJX49JWdA3SoIe%252FBgo%253D&n_cid=nbpnb_gift",
+        "sent_at": "2025-07-17T22:49:31.575Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://business.nikkei.com/atcl/gen/19/00087/121800419/?gift=8vIHoLnslgBqC6vlqZb%252FqgQ5FtJX49JWdA3SoIe%252FBgo%253D&n_cid=nbpnb_gift (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "イーロン・マスク氏は西洋文明を「共感」から救いたい.md",
+        "source_url": "https://asadaame5121.net/clippingshare/イーロン・マスク氏は西洋文明を「共感」から救いたい.md",
+        "target_url": "https://www.cnn.co.jp/usa/35230176.html",
+        "sent_at": "2025-07-17T22:49:37.856Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.cnn.co.jp/usa/35230176.html (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "ガーデニングが社会運動？　声を上げるのとは違う「静かさ」の意義：朝日新聞デジタル.md",
+        "source_url": "https://asadaame5121.net/clippingshare/ガーデニングが社会運動？　声を上げるのとは違う「静かさ」の意義：朝日新聞デジタル.md",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSDQ7D8MSDQULLI00GM.html?ptoken=01JG3G4R2H4WBV3TQ57VRNBFJ1",
+        "sent_at": "2025-07-17T22:49:44.058Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDQ7D8MSDQULLI00GM.html?ptoken=01JG3G4R2H4WBV3TQ57VRNBFJ1 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "ジェンダー・イデオロギーと闘う？　反トランスの大統領令を読み解く：朝日新聞.md",
+        "source_url": "https://asadaame5121.net/clippingshare/ジェンダー・イデオロギーと闘う？　反トランスの大統領令を読み解く：朝日新聞.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST1W2SB1T1WUTIL00XM.html?ptoken=01JJV7R66BFVY8S2SJ14H4W9MG",
+        "sent_at": "2025-07-17T22:49:50.473Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST1W2SB1T1WUTIL00XM.html?ptoken=01JJV7R66BFVY8S2SJ14H4W9MG (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "デザインシステム｜デジタル庁.md",
+        "source_url": "https://asadaame5121.net/clippingshare/デザインシステム｜デジタル庁.md",
+        "target_url": "https://www.digital.go.jp/policies/servicedesign/designsystem",
+        "sent_at": "2025-07-17T22:49:56.797Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.digital.go.jp/policies/servicedesign/designsystem (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "デジタルガーデンと個人サイトを育てること。  世界のねじを巻くラジオ.md",
+        "source_url": "https://asadaame5121.net/clippingshare/デジタルガーデンと個人サイトを育てること。  世界のねじを巻くラジオ.md",
+        "target_url": "https://nejimaki-radio.com/digital-garden-blog-indie-website-personal-internet/",
+        "sent_at": "2025-07-17T22:50:02.993Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://nejimaki-radio.com/digital-garden-blog-indie-website-personal-internet/ (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "デジタル庁デザインシステムβ版.md",
+        "source_url": "https://asadaame5121.net/clippingshare/デジタル庁デザインシステムβ版.md",
+        "target_url": "https://design.digital.go.jp/",
+        "sent_at": "2025-07-17T22:50:09.794Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://design.digital.go.jp/ (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "トラッドワイフ - Wikipedia.md",
+        "source_url": "https://asadaame5121.net/clippingshare/トラッドワイフ - Wikipedia.md",
+        "target_url": "https://ja.m.wikipedia.org/wiki/%E3%83%88%E3%83%A9%E3%83%83%E3%83%89%E3%83%AF%E3%82%A4%E3%83%95",
+        "sent_at": "2025-07-17T22:50:15.933Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://ja.m.wikipedia.org/wiki/%E3%83%88%E3%83%A9%E3%83%83%E3%83%89%E3%83%AF%E3%82%A4%E3%83%95 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "トランプ2.0政権に内在する亀裂　テック派 vs MAGA派.md",
+        "source_url": "https://asadaame5121.net/clippingshare/トランプ2.0政権に内在する亀裂　テック派 vs MAGA派.md",
+        "target_url": "https://business.nikkei.com/atcl/NBD/19/world/00692/?gift=6ExlxXHrZebEblR5XB8j%252BZnt3tY4j3%252BIZ7JnB4QHOxQ%253D&n_cid=nbpnb_gift",
+        "sent_at": "2025-07-17T22:50:22.497Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://business.nikkei.com/atcl/NBD/19/world/00692/?gift=6ExlxXHrZebEblR5XB8j%252BZnt3tY4j3%252BIZ7JnB4QHOxQ%253D&n_cid=nbpnb_gift (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "ブックガイド2：再野生化（リワイルディング）について  生環境構築史.md",
+        "source_url": "https://asadaame5121.net/clippingshare/ブックガイド2：再野生化（リワイルディング）について  生環境構築史.md",
+        "target_url": "https://hbh.center/05-issue_04/",
+        "sent_at": "2025-07-17T22:50:28.758Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://hbh.center/05-issue_04/ (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "ポップヒストリアンは、いかにして〈未来擬史〉をしたためたのか？──『ホモ・デウス』書評（評者：池田純一）｜Web河出.md",
+        "source_url": "https://asadaame5121.net/clippingshare/ポップヒストリアンは、いかにして〈未来擬史〉をしたためたのか？──『ホモ・デウス』書評（評者：池田純一）｜Web河出.md",
+        "target_url": "https://web.kawade.co.jp/bungei/2313/",
+        "sent_at": "2025-07-17T22:50:35.437Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://web.kawade.co.jp/bungei/2313/ (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "マイクロブログの思想をまとめた「Indie Microblogging」を読んだ感想  世界のねじを巻くラジオ.md",
+        "source_url": "https://asadaame5121.net/clippingshare/マイクロブログの思想をまとめた「Indie Microblogging」を読んだ感想  世界のねじを巻くラジオ.md",
+        "target_url": "https://nejimaki-radio.com/micro-blog-book-philosophy-fediverse-activitypub/",
+        "sent_at": "2025-07-17T22:50:42.983Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://nejimaki-radio.com/micro-blog-book-philosophy-fediverse-activitypub/ (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "マスク氏らによる「政府効率化」のデータ閲覧を差し止め　米連邦地裁：朝日新聞.md",
+        "source_url": "https://asadaame5121.net/clippingshare/マスク氏らによる「政府効率化」のデータ閲覧を差し止め　米連邦地裁：朝日新聞.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST2902JCT29UHBI001M.html?ptoken=01JKMACBEP3JTF72C380W084BR",
+        "sent_at": "2025-07-17T22:50:49.682Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST2902JCT29UHBI001M.html?ptoken=01JKMACBEP3JTF72C380W084BR (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "リング型スケジューラーを複数年分連結して便利に使う：ミドリ プラススタンドダイアリー - tadachi-net 出張所.md",
+        "source_url": "https://asadaame5121.net/clippingshare/リング型スケジューラーを複数年分連結して便利に使う：ミドリ プラススタンドダイアリー - tadachi-net 出張所.md",
+        "target_url": "https://tadachi.txt-nifty.com/blog/2023/11/post-039217.html",
+        "sent_at": "2025-07-17T22:50:56.145Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://tadachi.txt-nifty.com/blog/2023/11/post-039217.html (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "ロシア宇宙主義 - Wikipedia.md",
+        "source_url": "https://asadaame5121.net/clippingshare/ロシア宇宙主義 - Wikipedia.md",
+        "target_url": "https://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%B7%E3%82%A2%E5%AE%87%E5%AE%99%E4%B8%BB%E7%BE%A9",
+        "sent_at": "2025-07-17T22:51:02.527Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%B7%E3%82%A2%E5%AE%87%E5%AE%99%E4%B8%BB%E7%BE%A9 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "一九六八年と宗教 - 株式会社　人文書院.md",
+        "source_url": "https://asadaame5121.net/clippingshare/一九六八年と宗教 - 株式会社　人文書院.md",
+        "target_url": "https://www.jimbunshoin.co.jp/book/b10105730.html",
+        "sent_at": "2025-07-17T22:51:09.881Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.jimbunshoin.co.jp/book/b10105730.html (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "上田淳子さんも最初はびっくり！ フランスで覚えた「キノコの最強の調理法」はこれ（上田 淳子）.md",
+        "source_url": "https://asadaame5121.net/clippingshare/上田淳子さんも最初はびっくり！ フランスで覚えた「キノコの最強の調理法」はこれ（上田 淳子）.md",
+        "target_url": "https://gendai.media/articles/-/141776?page=1&imp=0",
+        "sent_at": "2025-07-17T22:51:16.395Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://gendai.media/articles/-/141776?page=1&imp=0 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "仕事の『点』も『線』も管理出来て便利な机上に立てて使うブロックマンスリー＆プロジェクト管理：ミドリ プラススタンドダイアリー - tadachi-net 出張所.md",
+        "source_url": "https://asadaame5121.net/clippingshare/仕事の『点』も『線』も管理出来て便利な机上に立てて使うブロックマンスリー＆プロジェクト管理：ミドリ プラススタンドダイアリー - tadachi-net 出張所.md",
+        "target_url": "https://tadachi.txt-nifty.com/blog/2022/10/post-973c73.html",
+        "sent_at": "2025-07-17T22:51:23.539Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://tadachi.txt-nifty.com/blog/2022/10/post-973c73.html (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "伊藤詩織さんアカデミー賞候補作　日本未公開のまま、2日の授賞式へ：朝日新聞.md",
+        "source_url": "https://asadaame5121.net/clippingshare/伊藤詩織さんアカデミー賞候補作　日本未公開のまま、2日の授賞式へ：朝日新聞.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST2W26M2T2WUHBI00VM.html?ptoken=01JNFCK1XACTB86NRK8C1M1F7T",
+        "sent_at": "2025-07-17T22:51:29.717Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST2W26M2T2WUHBI00VM.html?ptoken=01JNFCK1XACTB86NRK8C1M1F7T (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "兵庫前県議への批判投稿、13アカウントから　立花氏が2番目の多さ：朝日新聞.md",
+        "source_url": "https://asadaame5121.net/clippingshare/兵庫前県議への批判投稿、13アカウントから　立花氏が2番目の多さ：朝日新聞.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3F1VVNT3FPTIL00MM.html?ptoken=01JQ0CZJS6FB5FA84GB6W5QR72",
+        "sent_at": "2025-07-17T22:51:36.659Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3F1VVNT3FPTIL00MM.html?ptoken=01JQ0CZJS6FB5FA84GB6W5QR72 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "右傾化する億万長者たち　より良い世界に戻る道は　NYTコラム：朝日新聞デジタル.md",
+        "source_url": "https://asadaame5121.net/clippingshare/右傾化する億万長者たち　より良い世界に戻る道は　NYTコラム：朝日新聞デジタル.md",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSDM2199SDMUHBI00LM.html?ptoken=01JFPV64TCM3ZPEY6S6PM25B3J",
+        "sent_at": "2025-07-17T22:51:43.051Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDM2199SDMUHBI00LM.html?ptoken=01JFPV64TCM3ZPEY6S6PM25B3J (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "図書館ＶＳ．出版界にデータの一石　「議論の起点になれば」　新刊売上部数や貸出状況…関係を分析：朝日新聞デジタル.md",
+        "source_url": "https://asadaame5121.net/clippingshare/図書館ＶＳ．出版界にデータの一石　「議論の起点になれば」　新刊売上部数や貸出状況…関係を分析：朝日新聞デジタル.md",
+        "target_url": "https://digital.asahi.com/sp/articles/DA3S16085863.html?ptoken=01JE2PTPB3S9MJT78MBFBCMY99",
+        "sent_at": "2025-07-17T22:51:49.475Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16085863.html?ptoken=01JE2PTPB3S9MJT78MBFBCMY99 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "土砂搬出現場で死亡事故、崩れた暗黙の了解　ダンプ運転手が語る予兆：朝日新聞デジタル.md",
+        "source_url": "https://asadaame5121.net/clippingshare/土砂搬出現場で死亡事故、崩れた暗黙の了解　ダンプ運転手が語る予兆：朝日新聞デジタル.md",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSDW3584SDWUTIL00XM.html?ptoken=01JG63Z57EDD7Y6TB1C5YTCYTY",
+        "sent_at": "2025-07-17T22:51:55.858Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDW3584SDWUTIL00XM.html?ptoken=01JG63Z57EDD7Y6TB1C5YTCYTY (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "子どもではなく類縁関係をつくろう──サイボーグ、伴侶種、堆肥体、クトゥルー新世｜ダナ・ハラウェイが次なる千年紀に向けて語る.md",
+        "source_url": "https://asadaame5121.net/clippingshare/子どもではなく類縁関係をつくろう──サイボーグ、伴侶種、堆肥体、クトゥルー新世｜ダナ・ハラウェイが次なる千年紀に向けて語る.md",
+        "target_url": "https://hagamag.com/uncategory/4293",
+        "sent_at": "2025-07-17T22:52:02.260Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://hagamag.com/uncategory/4293 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "年末年始の“お取り寄せ”スタイリスト・大草直子さんが選ぶ、衝撃のおいしさでリピート中の「ドレッシング」や、最高においしい「湯豆腐」セットなど - 天然生活web.md",
+        "source_url": "https://asadaame5121.net/clippingshare/年末年始の“お取り寄せ”スタイリスト・大草直子さんが選ぶ、衝撃のおいしさでリピート中の「ドレッシング」や、最高においしい「湯豆腐」セットなど - 天然生活web.md",
+        "target_url": "https://tennenseikatsu.jp/_ct/17738586",
+        "sent_at": "2025-07-17T22:52:08.948Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://tennenseikatsu.jp/_ct/17738586 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "広がる「財務省解体」のデモ　SNSに流れる言説に駆り立てられて：朝日新聞 1.md",
+        "source_url": "https://asadaame5121.net/clippingshare/広がる「財務省解体」のデモ　SNSに流れる言説に駆り立てられて：朝日新聞 1.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3G1V44T3GPQIP03WM.html?ptoken=01JPC59QE9Z68JVQFDKB514GB9",
+        "sent_at": "2025-07-17T22:52:15.439Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3G1V44T3GPQIP03WM.html?ptoken=01JPC59QE9Z68JVQFDKB514GB9 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "広がる「財務省解体」のデモ　SNSに流れる言説に駆り立てられて：朝日新聞.md",
+        "source_url": "https://asadaame5121.net/clippingshare/広がる「財務省解体」のデモ　SNSに流れる言説に駆り立てられて：朝日新聞.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3G1V44T3GPQIP03WM.html?ptoken=01JPAJNJ8HVYBG872QCZ2016XP",
+        "sent_at": "2025-07-17T22:52:21.932Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3G1V44T3GPQIP03WM.html?ptoken=01JPAJNJ8HVYBG872QCZ2016XP (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "教養主義はどこへ消えた？　その正体は男子の「純粋さ」競争だった：朝日新聞.md",
+        "source_url": "https://asadaame5121.net/clippingshare/教養主義はどこへ消えた？　その正体は男子の「純粋さ」競争だった：朝日新聞.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3X2GH7T3XUPQJ017M.html?ptoken=01JR1TAWNN2W41XHE8GAK25BEH",
+        "sent_at": "2025-07-17T22:52:28.365Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3X2GH7T3XUPQJ017M.html?ptoken=01JR1TAWNN2W41XHE8GAK25BEH (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "斎藤知事を押し上げた「切り抜き動画」の高揚感　変わる選挙の風景：朝日新聞デジタル.md",
+        "source_url": "https://asadaame5121.net/clippingshare/斎藤知事を押し上げた「切り抜き動画」の高揚感　変わる選挙の風景：朝日新聞デジタル.md",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSDH05R8SDHUTIL01GM.html?ptoken=01JF9SC3CEDRGVB5A98HF09NQT",
+        "sent_at": "2025-07-17T22:52:34.724Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDH05R8SDHUTIL01GM.html?ptoken=01JF9SC3CEDRGVB5A98HF09NQT (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "料理 - ポケモンスリープ攻略・検証 Wiki.md",
+        "source_url": "https://asadaame5121.net/clippingshare/料理 - ポケモンスリープ攻略・検証 Wiki.md",
+        "target_url": "https://wikiwiki.jp/poke_sleep/%E6%96%99%E7%90%86#k850b592",
+        "sent_at": "2025-07-17T22:52:41.080Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://wikiwiki.jp/poke_sleep/%E6%96%99%E7%90%86#k850b592 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "料理レシピの一覧 - ポケモンスリープ攻略・検証 Wiki.md",
+        "source_url": "https://asadaame5121.net/clippingshare/料理レシピの一覧 - ポケモンスリープ攻略・検証 Wiki.md",
+        "target_url": "https://wikiwiki.jp/poke_sleep/%E6%96%99%E7%90%86/%E3%83%AC%E3%82%B7%E3%83%94%E3%81%AE%E4%B8%80%E8%A6%A7",
+        "sent_at": "2025-07-17T22:52:47.302Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://wikiwiki.jp/poke_sleep/%E6%96%99%E7%90%86/%E3%83%AC%E3%82%B7%E3%83%94%E3%81%AE%E4%B8%80%E8%A6%A7 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "日本人は「同情心が低い」　困っているのは「自業自得」と考える心理：朝日新聞.md",
+        "source_url": "https://asadaame5121.net/clippingshare/日本人は「同情心が低い」　困っているのは「自業自得」と考える心理：朝日新聞.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3V20ZRT3VULLI004M.html?ptoken=01JQKH9D2R1648TQS7THF9FG7X",
+        "sent_at": "2025-07-17T22:52:53.378Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3V20ZRT3VULLI004M.html?ptoken=01JQKH9D2R1648TQS7THF9FG7X (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "日本人は同情や共感が低く支援を求めにくい　名古屋大学が文化的背景を指摘.md",
+        "source_url": "https://asadaame5121.net/clippingshare/日本人は同情や共感が低く支援を求めにくい　名古屋大学が文化的背景を指摘.md",
+        "target_url": "https://univ-journal.jp/250863/",
+        "sent_at": "2025-07-17T22:52:59.685Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://univ-journal.jp/250863/ (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "昭和軽薄体 - Wikipedia.md",
+        "source_url": "https://asadaame5121.net/clippingshare/昭和軽薄体 - Wikipedia.md",
+        "target_url": "https://ja.m.wikipedia.org/wiki/%E6%98%AD%E5%92%8C%E8%BB%BD%E8%96%84%E4%BD%93",
+        "sent_at": "2025-07-17T22:53:06.602Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://ja.m.wikipedia.org/wiki/%E6%98%AD%E5%92%8C%E8%BB%BD%E8%96%84%E4%BD%93 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "根深い「女嫌」、見えた韓国社会の溝　崔誠姫・大阪産業大准教授：朝日新聞デジタル.md",
+        "source_url": "https://asadaame5121.net/clippingshare/根深い「女嫌」、見えた韓国社会の溝　崔誠姫・大阪産業大准教授：朝日新聞デジタル.md",
+        "target_url": "https://digital.asahi.com/sp/articles/DA3S16126258.html?ptoken=01JHKQKNSQ956QPT8FNC1H67RK",
+        "sent_at": "2025-07-17T22:53:13.504Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16126258.html?ptoken=01JHKQKNSQ956QPT8FNC1H67RK (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "梅棹忠夫さんの文章作法をもとにした日本語スタイルガイド  Shiki’s weblog.md",
+        "source_url": "https://asadaame5121.net/clippingshare/梅棹忠夫さんの文章作法をもとにした日本語スタイルガイド  Shiki’s weblog.md",
+        "target_url": "https://shiki.esrille.com/2022/06/rules.html",
+        "sent_at": "2025-07-17T22:53:19.881Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://shiki.esrille.com/2022/06/rules.html (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "歴博の研究者が語るデジタル史料と歴史学　膨大な分析、AIと協働：朝日新聞.md",
+        "source_url": "https://asadaame5121.net/clippingshare/歴博の研究者が語るデジタル史料と歴史学　膨大な分析、AIと協働：朝日新聞.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3P3CY0T3PUPQJ003M.html?ptoken=01JQZBYCF5M4X2AAH15GEGZS28",
+        "sent_at": "2025-07-17T22:53:26.550Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3P3CY0T3PUPQJ003M.html?ptoken=01JQZBYCF5M4X2AAH15GEGZS28 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "気候危機訴える名画襲撃は「表現の自由」　活動家に無罪　パリ裁判所：朝日新聞デジタル.md",
+        "source_url": "https://asadaame5121.net/clippingshare/気候危機訴える名画襲撃は「表現の自由」　活動家に無罪　パリ裁判所：朝日新聞デジタル.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST1P7WSPT1PUHBI007M.html?ptoken=01JJ8XR5GVMSCKWF4VBT3YRSKT",
+        "sent_at": "2025-07-17T22:53:33.159Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST1P7WSPT1PUHBI007M.html?ptoken=01JJ8XR5GVMSCKWF4VBT3YRSKT (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "渋谷が文化的廃虚に？再開発で若者散るリスク　識者が説く脱・車社会：朝日新聞デジタル.md",
+        "source_url": "https://asadaame5121.net/clippingshare/渋谷が文化的廃虚に？再開発で若者散るリスク　識者が説く脱・車社会：朝日新聞デジタル.md",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSDR4FNWSDRUCVL009M.html?ptoken=01JGQSHA31FS2F5QZNNWY2AYSB",
+        "sent_at": "2025-07-17T22:53:39.474Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDR4FNWSDRUCVL009M.html?ptoken=01JGQSHA31FS2F5QZNNWY2AYSB (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "牛肉の旨味が溶け出したボルシチ  【公式】dancyu (ダンチュウ).md",
+        "source_url": "https://asadaame5121.net/clippingshare/牛肉の旨味が溶け出したボルシチ  【公式】dancyu (ダンチュウ).md",
+        "target_url": "https://dancyu.jp/recipe/2022_00006408.html",
+        "sent_at": "2025-07-17T22:53:45.949Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://dancyu.jp/recipe/2022_00006408.html (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "現代哲学の研究に哲学史は必要なのか - 研究日誌.md",
+        "source_url": "https://asadaame5121.net/clippingshare/現代哲学の研究に哲学史は必要なのか - 研究日誌.md",
+        "target_url": "https://uemurag.hatenablog.jp/entry/2022/09/24/075600",
+        "sent_at": "2025-07-17T22:53:52.151Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://uemurag.hatenablog.jp/entry/2022/09/24/075600 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "生物多様性を腑分けする  なぜ人は自然を守りたいのか？  深野祐也  WEBみすず.md",
+        "source_url": "https://asadaame5121.net/clippingshare/生物多様性を腑分けする  なぜ人は自然を守りたいのか？  深野祐也  WEBみすず.md",
+        "target_url": "https://magazine.msz.co.jp/series/evolution-ecology/1/",
+        "sent_at": "2025-07-17T22:53:58.553Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://magazine.msz.co.jp/series/evolution-ecology/1/ (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "社会構築主義以降の社会記述法　ストラザーン『部分的つながり』に見るハラウェイの可能性について - ポストフェミニズムに関するブログ.md",
+        "source_url": "https://asadaame5121.net/clippingshare/社会構築主義以降の社会記述法　ストラザーン『部分的つながり』に見るハラウェイの可能性について - ポストフェミニズムに関するブログ.md",
+        "target_url": "https://ytakahashi0505.hatenablog.com/entry/2019/09/05/183654",
+        "sent_at": "2025-07-17T22:54:04.887Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://ytakahashi0505.hatenablog.com/entry/2019/09/05/183654 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "義実家に行かず書店で過ごす年始 あえて三が日に営業する店主の思い：朝日新聞デジタル.md",
+        "source_url": "https://asadaame5121.net/clippingshare/義実家に行かず書店で過ごす年始 あえて三が日に営業する店主の思い：朝日新聞デジタル.md",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSD40QT1SD4UTIL02CM.html?ptoken=01JGK8NT4GKZ9HP3MREE65MRTD",
+        "sent_at": "2025-07-17T22:54:11.436Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSD40QT1SD4UTIL02CM.html?ptoken=01JGK8NT4GKZ9HP3MREE65MRTD (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "読書記録：“Make Kin Not Babies!（赤ん坊でなく類縁関係をつくろう！）”　ハラウェイの思想 - ルジャンドルの読書記録.md",
+        "source_url": "https://asadaame5121.net/clippingshare/読書記録：“Make Kin Not Babies!（赤ん坊でなく類縁関係をつくろう！）”　ハラウェイの思想 - ルジャンドルの読書記録.md",
+        "target_url": "https://nattogohan-suki.hatenablog.com/entry/2019/11/08/125903",
+        "sent_at": "2025-07-17T22:54:17.810Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://nattogohan-suki.hatenablog.com/entry/2019/11/08/125903 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "調査で見えてきた斎藤氏支持する心理　見逃されてきた「常民」的判断：朝日新聞デジタル.md",
+        "source_url": "https://asadaame5121.net/clippingshare/調査で見えてきた斎藤氏支持する心理　見逃されてきた「常民」的判断：朝日新聞デジタル.md",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSDD1VSLSDDUCVL00ZM.html?ptoken=01JJ15MT0KXD1ZY6T1ZJ25SN7R",
+        "sent_at": "2025-07-17T22:54:24.368Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDD1VSLSDDUCVL00ZM.html?ptoken=01JJ15MT0KXD1ZY6T1ZJ25SN7R (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "闇バイトに奪われていく若者たち　社会が育てた都合のいい労働者？：朝日新聞デジタル 1.md",
+        "source_url": "https://asadaame5121.net/clippingshare/闇バイトに奪われていく若者たち　社会が育てた都合のいい労働者？：朝日新聞デジタル 1.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM",
+        "sent_at": "2025-07-17T22:54:30.853Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "闇バイトに奪われていく若者たち　社会が育てた都合のいい労働者？：朝日新聞デジタル.md",
+        "source_url": "https://asadaame5121.net/clippingshare/闇バイトに奪われていく若者たち　社会が育てた都合のいい労働者？：朝日新聞デジタル.md",
+        "target_url": "https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM",
+        "sent_at": "2025-07-17T22:54:37.179Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "📘Dashboard++で魅力的なホームページをつくろう！.md",
+        "source_url": "https://asadaame5121.net/clippingshare/📘Dashboard++で魅力的なホームページをつくろう！.md",
+        "target_url": "https://masaki39.github.io/%F0%9F%93%98Dashboard++%E3%81%A7%E9%AD%85%E5%8A%9B%E7%9A%84%E3%81%AA%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8D%E3%81%86%EF%BC%81",
+        "sent_at": "2025-07-17T22:54:43.460Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://masaki39.github.io/%F0%9F%93%98Dashboard++%E3%81%A7%E9%AD%85%E5%8A%9B%E7%9A%84%E3%81%AA%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8D%E3%81%86%EF%BC%81 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "📘【連載】ホームページを作ろう(2).md",
+        "source_url": "https://asadaame5121.net/clippingshare/📘【連載】ホームページを作ろう(2).md",
+        "target_url": "https://masaki39.github.io/%F0%9F%93%98%E3%80%90%E9%80%A3%E8%BC%89%E3%80%91%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E4%BD%9C%E3%82%8D%E3%81%86(2)",
+        "sent_at": "2025-07-17T22:54:49.741Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://masaki39.github.io/%F0%9F%93%98%E3%80%90%E9%80%A3%E8%BC%89%E3%80%91%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E4%BD%9C%E3%82%8D%E3%81%86(2) (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "（憲法季評）手続き軽視の態度、生まれる分断　「お茶の間の正義」社会の昏さ　安藤馨：朝日新聞.md",
+        "source_url": "https://asadaame5121.net/clippingshare/（憲法季評）手続き軽視の態度、生まれる分断　「お茶の間の正義」社会の昏さ　安藤馨：朝日新聞.md",
+        "target_url": "https://digital.asahi.com/sp/articles/DA3S16148039.html?ptoken=01JKY7TQQ2N2JPFC5TF5Y8TGE4",
+        "sent_at": "2025-07-17T22:54:55.966Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16148039.html?ptoken=01JKY7TQQ2N2JPFC5TF5Y8TGE4 (エンドポイント未対応)"
+      },
+      {
+        "clip_id": "（論壇時評）不確実な未来に耐える　過去に軸を置き、今を捉え直す　政治学者・宇野重規：朝日新聞デジタル.md",
+        "source_url": "https://asadaame5121.net/clippingshare/（論壇時評）不確実な未来に耐える　過去に軸を置き、今を捉え直す　政治学者・宇野重規：朝日新聞デジタル.md",
+        "target_url": "https://digital.asahi.com/sp/articles/DA3S16114429.html?ptoken=01JFZWH89WYECA07787RSW0659",
+        "sent_at": "2025-07-17T22:55:02.267Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16114429.html?ptoken=01JFZWH89WYECA07787RSW0659 (エンドポイント未対応)"
+      }
+    ],
     "blog_updates": []
   }
 }

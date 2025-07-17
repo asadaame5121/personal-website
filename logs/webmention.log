@@ -372,3 +372,606 @@
 [2025-07-17T11:30:17.842Z] DEBUG:    [DRY RUN] ソース: https://asadaame5121.net/clippingshare/How Zelensky’s popularity has sunk after nearly three years of war.md
 [2025-07-17T11:30:17.847Z] DEBUG:    [DRY RUN] ターゲット: https://www.thetimes.com/article/581645cf-e4aa-483f-ac7a-d2d5d841b78b?shareToken=cbb35e487313af77515c19c4b2fb18bd
 [2025-07-17T11:30:23.862Z] INFO: 🎉 Webmention送信完了: 0件送信
+[2025-07-17T13:45:04.341Z] INFO: Webmention送信スクリプト開始
+[2025-07-17T13:45:04.344Z] INFO: モード: DRY RUN (テスト)
+[2025-07-17T13:45:04.359Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-17T13:45:04.360Z] INFO: 履歴: dailylog=0, clipping=0, blog=0
+[2025-07-17T13:45:04.365Z] INFO: 📅 dailylog処理中...
+[2025-07-17T13:45:04.716Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-17T13:45:04.717Z] INFO: dailylog: 0件の新エントリ
+[2025-07-17T13:45:04.733Z] INFO: 🔍 新しいclippingshareエントリ: 10件
+[2025-07-17T13:45:04.736Z] INFO: 📤 clipping送信準備: Buttigieg Warns Trump-Panicked Democrats, ‘We Cannot Be Mesmerized’.md
+[2025-07-17T13:45:04.742Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Buttigieg Warns Trump-Panicked Democrats, ‘We Cannot Be Mesmerized’.md
+[2025-07-17T13:45:04.749Z] DEBUG:    ターゲット: https://www.nytimes.com/2024/11/21/us/politics/pete-buttigieg-trump-democrats.html?unlocked_article_code=1.b04.gAmY.crNey8h19RYO&smid=nytcore-ios-share&referringSource=articleShare
+[2025-07-17T13:45:04.755Z] INFO: 🔍 [DRY RUN] clippingshareエントリ送信予定: Buttigieg Warns Trump-Panicked Democrats, ‘We Cannot Be Mesmerized’.md
+[2025-07-17T13:45:04.759Z] DEBUG:    [DRY RUN] ソース: https://asadaame5121.net/clippingshare/Buttigieg Warns Trump-Panicked Democrats, ‘We Cannot Be Mesmerized’.md
+[2025-07-17T13:45:04.764Z] DEBUG:    [DRY RUN] ターゲット: https://www.nytimes.com/2024/11/21/us/politics/pete-buttigieg-trump-democrats.html?unlocked_article_code=1.b04.gAmY.crNey8h19RYO&smid=nytcore-ios-share&referringSource=articleShare
+[2025-07-17T13:45:10.801Z] INFO: 📤 clipping送信準備: Column  The triumph of anti-identity-politics identity politics.md
+[2025-07-17T13:45:10.851Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Column  The triumph of anti-identity-politics identity politics.md
+[2025-07-17T13:45:10.856Z] DEBUG:    ターゲット: https://www.washingtonpost.com/politics/2024/12/10/triumph-anti-identity-politics-identity-politics/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzMzODA2ODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM1MTg5MTk5LCJpYXQiOjE3MzM4MDY4MDAsImp0aSI6IjFlN2FmOWJmLWMwMjgtNDU0ZC05N2RiLTdmODgxMDU1MjU4ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI0LzEyLzEwL3RyaXVtcGgtYW50aS1pZGVudGl0eS1wb2xpdGljcy1pZGVudGl0eS1wb2xpdGljcy8ifQ.-4leB-_Q9is-y6YmrTobhUfFyGTe9NOjshE2g42P238
+[2025-07-17T13:45:10.864Z] INFO: 🔍 [DRY RUN] clippingshareエントリ送信予定: Column  The triumph of anti-identity-politics identity politics.md
+[2025-07-17T13:45:10.867Z] DEBUG:    [DRY RUN] ソース: https://asadaame5121.net/clippingshare/Column  The triumph of anti-identity-politics identity politics.md
+[2025-07-17T13:45:10.872Z] DEBUG:    [DRY RUN] ターゲット: https://www.washingtonpost.com/politics/2024/12/10/triumph-anti-identity-politics-identity-politics/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzMzODA2ODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM1MTg5MTk5LCJpYXQiOjE3MzM4MDY4MDAsImp0aSI6IjFlN2FmOWJmLWMwMjgtNDU0ZC05N2RiLTdmODgxMDU1MjU4ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI0LzEyLzEwL3RyaXVtcGgtYW50aS1pZGVudGl0eS1wb2xpdGljcy1pZGVudGl0eS1wb2xpdGljcy8ifQ.-4leB-_Q9is-y6YmrTobhUfFyGTe9NOjshE2g42P238
+[2025-07-17T13:45:16.883Z] INFO: 📤 clipping送信準備: DLsiteの“ドスケベメルマガ”、実は若手女性社員率いるチームが書いていた　プロフェッショナルな作業風景.md
+[2025-07-17T13:45:16.885Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/DLsiteの“ドスケベメルマガ”、実は若手女性社員率いるチームが書いていた　プロフェッショナルな作業風景.md
+[2025-07-17T13:45:16.889Z] DEBUG:    ターゲット: https://www.itmedia.co.jp/news/spv/2411/29/news026.html
+[2025-07-17T13:45:16.895Z] INFO: 🔍 [DRY RUN] clippingshareエントリ送信予定: DLsiteの“ドスケベメルマガ”、実は若手女性社員率いるチームが書いていた　プロフェッショナルな作業風景.md
+[2025-07-17T13:45:16.900Z] DEBUG:    [DRY RUN] ソース: https://asadaame5121.net/clippingshare/DLsiteの“ドスケベメルマガ”、実は若手女性社員率いるチームが書いていた　プロフェッショナルな作業風景.md
+[2025-07-17T13:45:16.905Z] DEBUG:    [DRY RUN] ターゲット: https://www.itmedia.co.jp/news/spv/2411/29/news026.html
+[2025-07-17T13:45:22.916Z] INFO: 📤 clipping送信準備: Don't Let the Enemies of Truth Ruin Wikipedia.md
+[2025-07-17T13:45:22.918Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Don't Let the Enemies of Truth Ruin Wikipedia.md
+[2025-07-17T13:45:22.924Z] DEBUG:    ターゲット: https://www.arcdigital.media/p/dont-let-the-enemies-of-truth-ruin
+[2025-07-17T13:45:22.936Z] INFO: 🔍 [DRY RUN] clippingshareエントリ送信予定: Don't Let the Enemies of Truth Ruin Wikipedia.md
+[2025-07-17T13:45:22.940Z] DEBUG:    [DRY RUN] ソース: https://asadaame5121.net/clippingshare/Don't Let the Enemies of Truth Ruin Wikipedia.md
+[2025-07-17T13:45:22.950Z] DEBUG:    [DRY RUN] ターゲット: https://www.arcdigital.media/p/dont-let-the-enemies-of-truth-ruin
+[2025-07-17T13:45:28.971Z] INFO: 📤 clipping送信準備: Elon Musk and the Tech Billionaires Steering Trump’s Transition Team.md
+[2025-07-17T13:45:29.013Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Elon Musk and the Tech Billionaires Steering Trump’s Transition Team.md
+[2025-07-17T13:45:29.016Z] DEBUG:    ターゲット: https://www.nytimes.com/2024/12/06/us/politics/trump-elon-musk-silicon-valley.html?unlocked_article_code=1.fk4.t4DI.b2jiZ0jkWFLe&smid=nytcore-ios-share&referringSource=articleShare
+[2025-07-17T13:45:29.022Z] INFO: 🔍 [DRY RUN] clippingshareエントリ送信予定: Elon Musk and the Tech Billionaires Steering Trump’s Transition Team.md
+[2025-07-17T13:45:29.027Z] DEBUG:    [DRY RUN] ソース: https://asadaame5121.net/clippingshare/Elon Musk and the Tech Billionaires Steering Trump’s Transition Team.md
+[2025-07-17T13:45:29.031Z] DEBUG:    [DRY RUN] ターゲット: https://www.nytimes.com/2024/12/06/us/politics/trump-elon-musk-silicon-valley.html?unlocked_article_code=1.fk4.t4DI.b2jiZ0jkWFLe&smid=nytcore-ios-share&referringSource=articleShare
+[2025-07-17T13:45:35.048Z] INFO: 📤 clipping送信準備: Elon Musk takes aim at Wikipedia.md
+[2025-07-17T13:45:35.050Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Elon Musk takes aim at Wikipedia.md
+[2025-07-17T13:45:35.056Z] DEBUG:    ターゲット: https://www.newsweek.com/elon-musk-takes-aim-wikipedia-fund-raising-editing-political-woke-2005742
+[2025-07-17T13:45:35.062Z] INFO: 🔍 [DRY RUN] clippingshareエントリ送信予定: Elon Musk takes aim at Wikipedia.md
+[2025-07-17T13:45:35.067Z] DEBUG:    [DRY RUN] ソース: https://asadaame5121.net/clippingshare/Elon Musk takes aim at Wikipedia.md
+[2025-07-17T13:45:35.072Z] DEBUG:    [DRY RUN] ターゲット: https://www.newsweek.com/elon-musk-takes-aim-wikipedia-fund-raising-editing-political-woke-2005742
+[2025-07-17T13:45:41.085Z] INFO: 📤 clipping送信準備: Enlightenment Wars Some Reflections on 'Enlightenment Now,' One Year Later.md
+[2025-07-17T13:45:41.088Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Enlightenment Wars Some Reflections on 'Enlightenment Now,' One Year Later.md
+[2025-07-17T13:45:41.092Z] DEBUG:    ターゲット: https://quillette.com/2019/01/14/enlightenment-wars-some-reflections-on-enlightenment-now-one-year-later/
+[2025-07-17T13:45:41.095Z] INFO: 🔍 [DRY RUN] clippingshareエントリ送信予定: Enlightenment Wars Some Reflections on 'Enlightenment Now,' One Year Later.md
+[2025-07-17T13:45:41.101Z] DEBUG:    [DRY RUN] ソース: https://asadaame5121.net/clippingshare/Enlightenment Wars Some Reflections on 'Enlightenment Now,' One Year Later.md
+[2025-07-17T13:45:41.107Z] DEBUG:    [DRY RUN] ターゲット: https://quillette.com/2019/01/14/enlightenment-wars-some-reflections-on-enlightenment-now-one-year-later/
+[2025-07-17T13:45:47.118Z] INFO: 📤 clipping送信準備: George Foreman, Boxing Champion and Grilling Magnate, Dies at 76.md
+[2025-07-17T13:45:47.121Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/George Foreman, Boxing Champion and Grilling Magnate, Dies at 76.md
+[2025-07-17T13:45:47.126Z] DEBUG:    ターゲット: https://www.nytimes.com/2025/03/21/sports/george-foreman-dead.html?unlocked_article_code=1.504.0UgN.EH0XkuBJd6Qr&smid=bs-share
+[2025-07-17T13:45:47.131Z] INFO: 🔍 [DRY RUN] clippingshareエントリ送信予定: George Foreman, Boxing Champion and Grilling Magnate, Dies at 76.md
+[2025-07-17T13:45:47.137Z] DEBUG:    [DRY RUN] ソース: https://asadaame5121.net/clippingshare/George Foreman, Boxing Champion and Grilling Magnate, Dies at 76.md
+[2025-07-17T13:45:47.141Z] DEBUG:    [DRY RUN] ターゲット: https://www.nytimes.com/2025/03/21/sports/george-foreman-dead.html?unlocked_article_code=1.504.0UgN.EH0XkuBJd6Qr&smid=bs-share
+[2025-07-17T13:45:53.163Z] INFO: 📤 clipping送信準備: How Gen Z Came to See Books as a Waste of Time.md
+[2025-07-17T13:45:53.166Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/How Gen Z Came to See Books as a Waste of Time.md
+[2025-07-17T13:45:53.171Z] DEBUG:    ターゲット: https://www.theatlantic.com/newsletters/archive/2024/11/books-briefing-gen-z-reading-books-waste-time/680586/?gift=NX91pXe_h9-jpMCTAKKndty65e7pWc3ow1FucIBUtZs&utm_source=copy-link&utm_medium=social&utm_campaign=share
+[2025-07-17T13:45:53.176Z] INFO: 🔍 [DRY RUN] clippingshareエントリ送信予定: How Gen Z Came to See Books as a Waste of Time.md
+[2025-07-17T13:45:53.180Z] DEBUG:    [DRY RUN] ソース: https://asadaame5121.net/clippingshare/How Gen Z Came to See Books as a Waste of Time.md
+[2025-07-17T13:45:53.192Z] DEBUG:    [DRY RUN] ターゲット: https://www.theatlantic.com/newsletters/archive/2024/11/books-briefing-gen-z-reading-books-waste-time/680586/?gift=NX91pXe_h9-jpMCTAKKndty65e7pWc3ow1FucIBUtZs&utm_source=copy-link&utm_medium=social&utm_campaign=share
+[2025-07-17T13:45:56.236Z] INFO: 🧪 Clippingshare単体テスト開始
+[2025-07-17T13:45:56.243Z] INFO: モード: DRY RUN (テスト)
+[2025-07-17T13:45:56.250Z] INFO: 設定・履歴読み込み完了
+[2025-07-17T13:45:56.258Z] INFO: 検出されたエントリ: 1件
+[2025-07-17T13:45:56.260Z] INFO: 📤 送信準備: Buttigieg Warns Trump-Panicked Democrats, ‘We Cannot Be Mesmerized’.md
+[2025-07-17T13:45:56.265Z] INFO:    ソース: https://asadaame5121.net/clippingshare/Buttigieg Warns Trump-Panicked Democrats, ‘We Cannot Be Mesmerized’.md
+[2025-07-17T13:45:56.269Z] INFO:    ターゲット: https://www.nytimes.com/2024/11/21/us/politics/pete-buttigieg-trump-democrats.html?unlocked_article_code=1.b04.gAmY.crNey8h19RYO&smid=nytcore-ios-share&referringSource=articleShare
+[2025-07-17T13:45:56.273Z] INFO: 🔍 [DRY RUN] 送信予定のエントリ
+[2025-07-17T13:45:56.277Z] INFO: 🧪 テスト完了
+[2025-07-17T13:47:41.291Z] INFO: 🧪 Clippingshare単体テスト開始
+[2025-07-17T13:47:41.296Z] INFO: モード: 本番送信
+[2025-07-17T13:47:41.301Z] INFO: 設定・履歴読み込み完了
+[2025-07-17T13:47:41.308Z] INFO: 検出されたエントリ: 1件
+[2025-07-17T13:47:41.310Z] INFO: 📤 送信準備: Buttigieg Warns Trump-Panicked Democrats, ‘We Cannot Be Mesmerized’.md
+[2025-07-17T13:47:41.314Z] INFO:    ソース: https://asadaame5121.net/clippingshare/Buttigieg Warns Trump-Panicked Democrats, ‘We Cannot Be Mesmerized’.md
+[2025-07-17T13:47:41.318Z] INFO:    ターゲット: https://www.nytimes.com/2024/11/21/us/politics/pete-buttigieg-trump-democrats.html?unlocked_article_code=1.b04.gAmY.crNey8h19RYO&smid=nytcore-ios-share&referringSource=articleShare
+[2025-07-17T13:47:41.324Z] INFO: 🚀 実際の送信を開始...
+[2025-07-17T13:47:50.071Z] INFO: 🧪 Clippingshare単体テスト開始
+[2025-07-17T13:47:50.077Z] INFO: モード: 本番送信
+[2025-07-17T13:47:50.081Z] INFO: 設定・履歴読み込み完了
+[2025-07-17T13:47:50.088Z] INFO: 検出されたエントリ: 1件
+[2025-07-17T13:47:50.091Z] INFO: 📤 送信準備: Buttigieg Warns Trump-Panicked Democrats, ‘We Cannot Be Mesmerized’.md
+[2025-07-17T13:47:50.096Z] INFO:    ソース: https://asadaame5121.net/clippingshare/Buttigieg Warns Trump-Panicked Democrats, ‘We Cannot Be Mesmerized’.md
+[2025-07-17T13:47:50.102Z] INFO:    ターゲット: https://www.nytimes.com/2024/11/21/us/politics/pete-buttigieg-trump-democrats.html?unlocked_article_code=1.b04.gAmY.crNey8h19RYO&smid=nytcore-ios-share&referringSource=articleShare
+[2025-07-17T13:47:50.110Z] INFO: 🚀 実際の送信を開始...
+[2025-07-17T14:06:51.289Z] INFO: 🧪 Clippingshare単体テスト開始
+[2025-07-17T14:06:51.297Z] INFO: モード: 本番送信
+[2025-07-17T14:06:51.303Z] INFO: 設定・履歴読み込み完了
+[2025-07-17T14:06:51.312Z] INFO: 検出されたエントリ: 1件
+[2025-07-17T14:06:51.315Z] INFO: 📤 送信準備: Buttigieg Warns Trump-Panicked Democrats, ‘We Cannot Be Mesmerized’.md
+[2025-07-17T14:06:51.320Z] INFO:    ソース: https://asadaame5121.net/clippingshare/Buttigieg Warns Trump-Panicked Democrats, ‘We Cannot Be Mesmerized’.md
+[2025-07-17T14:06:51.326Z] INFO:    ターゲット: https://www.nytimes.com/2024/11/21/us/politics/pete-buttigieg-trump-democrats.html?unlocked_article_code=1.b04.gAmY.crNey8h19RYO&smid=nytcore-ios-share&referringSource=articleShare
+[2025-07-17T14:06:51.333Z] INFO: 🚀 実際の送信を開始...
+[2025-07-17T14:06:52.037Z] ERROR: FAILURE: ❌ 送信失敗: Buttigieg Warns Trump-Panicked Democrats, ‘We Cannot Be Mesmerized’.md | ["Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/11/21/us/politics/pete-buttigieg-trump-democrats.html?unlocked_article_code=1.b04.gAmY.crNey8h19RYO&smid=nytcore-ios-share&referringSource=articleShare (エンドポイント未対応)"]
+[2025-07-17T14:06:52.039Z] INFO: 🧪 テスト完了
+[2025-07-17T22:41:46.137Z] INFO: Webmention送信スクリプト開始
+[2025-07-17T22:41:46.141Z] INFO: モード: 本番送信
+[2025-07-17T22:41:46.179Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-17T22:41:46.180Z] INFO: 履歴: dailylog=0, clipping=1, blog=0
+[2025-07-17T22:41:46.211Z] INFO: 📅 dailylog処理中...
+[2025-07-17T22:41:46.555Z] INFO: dailylog: 0件の新エントリ
+[2025-07-17T22:41:46.556Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-17T22:41:46.647Z] INFO: 🔍 新しいclippingshareエントリ: 120件
+[2025-07-17T22:41:46.651Z] INFO: 📤 clipping送信準備: Column  The triumph of anti-identity-politics identity politics.md
+[2025-07-17T22:41:46.658Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Column  The triumph of anti-identity-politics identity politics.md
+[2025-07-17T22:41:46.663Z] DEBUG:    ターゲット: https://www.washingtonpost.com/politics/2024/12/10/triumph-anti-identity-politics-identity-politics/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzMzODA2ODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM1MTg5MTk5LCJpYXQiOjE3MzM4MDY4MDAsImp0aSI6IjFlN2FmOWJmLWMwMjgtNDU0ZC05N2RiLTdmODgxMDU1MjU4ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI0LzEyLzEwL3RyaXVtcGgtYW50aS1pZGVudGl0eS1wb2xpdGljcy1pZGVudGl0eS1wb2xpdGljcy8ifQ.-4leB-_Q9is-y6YmrTobhUfFyGTe9NOjshE2g42P238
+[2025-07-17T22:41:46.880Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Column  The triumph of anti-identity-politics identity politics.md | ["Webmentionエンドポイントが見つかりません: https://www.washingtonpost.com/politics/2024/12/10/triumph-anti-identity-politics-identity-politics/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzMzODA2ODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM1MTg5MTk5LCJpYXQiOjE3MzM4MDY4MDAsImp0aSI6IjFlN2FmOWJmLWMwMjgtNDU0ZC05N2RiLTdmODgxMDU1MjU4ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI0LzEyLzEwL3RyaXVtcGgtYW50aS1pZGVudGl0eS1wb2xpdGljcy1pZGVudGl0eS1wb2xpdGljcy8ifQ.-4leB-_Q9is-y6YmrTobhUfFyGTe9NOjshE2g42P238 (error sending request from 192.168.11.14:59679 for https://www.washingtonpost.com/politics/2024/12/10/triumph-anti-identity-politics-identity-politics/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzMzODA2ODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM1MTg5MTk5LCJpYXQiOjE3MzM4MDY4MDAsImp0aSI6IjFlN2FmOWJmLWMwMjgtNDU0ZC05N2RiLTdmODgxMDU1MjU4ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI0LzEyLzEwL3RyaXVtcGgtYW50aS1pZGVudGl0eS1wb2xpdGljcy1pZGVudGl0eS1wb2xpdGljcy8ifQ.-4leB-_Q9is-y6YmrTobhUfFyGTe9NOjshE2g42P238 (23.47.137.82:443): client error (SendRequest): http2 error: stream error received: unexpected internal error encountered)"]
+[2025-07-17T22:41:52.889Z] INFO: 📤 clipping送信準備: DLsiteの“ドスケベメルマガ”、実は若手女性社員率いるチームが書いていた　プロフェッショナルな作業風景.md
+[2025-07-17T22:41:52.891Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/DLsiteの“ドスケベメルマガ”、実は若手女性社員率いるチームが書いていた　プロフェッショナルな作業風景.md
+[2025-07-17T22:41:52.895Z] DEBUG:    ターゲット: https://www.itmedia.co.jp/news/spv/2411/29/news026.html
+[2025-07-17T22:41:53.112Z] ERROR: FAILURE: clippingshareエントリ送信失敗: DLsiteの“ドスケベメルマガ”、実は若手女性社員率いるチームが書いていた　プロフェッショナルな作業風景.md | ["Webmentionエンドポイントが見つかりません: https://www.itmedia.co.jp/news/spv/2411/29/news026.html (エンドポイント未対応)"]
+[2025-07-17T22:41:59.126Z] INFO: 📤 clipping送信準備: Don't Let the Enemies of Truth Ruin Wikipedia.md
+[2025-07-17T22:41:59.128Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Don't Let the Enemies of Truth Ruin Wikipedia.md
+[2025-07-17T22:41:59.132Z] DEBUG:    ターゲット: https://www.arcdigital.media/p/dont-let-the-enemies-of-truth-ruin
+[2025-07-17T22:41:59.646Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Don't Let the Enemies of Truth Ruin Wikipedia.md | ["Webmentionエンドポイントが見つかりません: https://www.arcdigital.media/p/dont-let-the-enemies-of-truth-ruin (エンドポイント未対応)"]
+[2025-07-17T22:42:05.664Z] INFO: 📤 clipping送信準備: Elon Musk and the Tech Billionaires Steering Trump’s Transition Team.md
+[2025-07-17T22:42:05.667Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Elon Musk and the Tech Billionaires Steering Trump’s Transition Team.md
+[2025-07-17T22:42:05.671Z] DEBUG:    ターゲット: https://www.nytimes.com/2024/12/06/us/politics/trump-elon-musk-silicon-valley.html?unlocked_article_code=1.fk4.t4DI.b2jiZ0jkWFLe&smid=nytcore-ios-share&referringSource=articleShare
+[2025-07-17T22:42:06.545Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Elon Musk and the Tech Billionaires Steering Trump’s Transition Team.md | ["Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/06/us/politics/trump-elon-musk-silicon-valley.html?unlocked_article_code=1.fk4.t4DI.b2jiZ0jkWFLe&smid=nytcore-ios-share&referringSource=articleShare (エンドポイント未対応)"]
+[2025-07-17T22:42:12.549Z] INFO: 📤 clipping送信準備: Elon Musk takes aim at Wikipedia.md
+[2025-07-17T22:42:12.551Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Elon Musk takes aim at Wikipedia.md
+[2025-07-17T22:42:12.556Z] DEBUG:    ターゲット: https://www.newsweek.com/elon-musk-takes-aim-wikipedia-fund-raising-editing-political-woke-2005742
+[2025-07-17T22:42:14.547Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Elon Musk takes aim at Wikipedia.md | ["Webmentionエンドポイントが見つかりません: https://www.newsweek.com/elon-musk-takes-aim-wikipedia-fund-raising-editing-political-woke-2005742 (エンドポイント未対応)"]
+[2025-07-17T22:42:20.560Z] INFO: 📤 clipping送信準備: Enlightenment Wars Some Reflections on 'Enlightenment Now,' One Year Later.md
+[2025-07-17T22:42:20.564Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Enlightenment Wars Some Reflections on 'Enlightenment Now,' One Year Later.md
+[2025-07-17T22:42:20.568Z] DEBUG:    ターゲット: https://quillette.com/2019/01/14/enlightenment-wars-some-reflections-on-enlightenment-now-one-year-later/
+[2025-07-17T22:42:22.931Z] INFO: SUCCESS: clippingshareエントリ送信成功: Enlightenment Wars Some Reflections on 'Enlightenment Now,' One Year Later.md
+[2025-07-17T22:42:28.944Z] INFO: 📤 clipping送信準備: George Foreman, Boxing Champion and Grilling Magnate, Dies at 76.md
+[2025-07-17T22:42:28.946Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/George Foreman, Boxing Champion and Grilling Magnate, Dies at 76.md
+[2025-07-17T22:42:28.951Z] DEBUG:    ターゲット: https://www.nytimes.com/2025/03/21/sports/george-foreman-dead.html?unlocked_article_code=1.504.0UgN.EH0XkuBJd6Qr&smid=bs-share
+[2025-07-17T22:42:30.252Z] ERROR: FAILURE: clippingshareエントリ送信失敗: George Foreman, Boxing Champion and Grilling Magnate, Dies at 76.md | ["Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2025/03/21/sports/george-foreman-dead.html?unlocked_article_code=1.504.0UgN.EH0XkuBJd6Qr&smid=bs-share (エンドポイント未対応)"]
+[2025-07-17T22:42:36.268Z] INFO: 📤 clipping送信準備: How Gen Z Came to See Books as a Waste of Time.md
+[2025-07-17T22:42:36.271Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/How Gen Z Came to See Books as a Waste of Time.md
+[2025-07-17T22:42:36.276Z] DEBUG:    ターゲット: https://www.theatlantic.com/newsletters/archive/2024/11/books-briefing-gen-z-reading-books-waste-time/680586/?gift=NX91pXe_h9-jpMCTAKKndty65e7pWc3ow1FucIBUtZs&utm_source=copy-link&utm_medium=social&utm_campaign=share
+[2025-07-17T22:42:37.569Z] ERROR: FAILURE: clippingshareエントリ送信失敗: How Gen Z Came to See Books as a Waste of Time.md | ["Webmentionエンドポイントが見つかりません: https://www.theatlantic.com/newsletters/archive/2024/11/books-briefing-gen-z-reading-books-waste-time/680586/?gift=NX91pXe_h9-jpMCTAKKndty65e7pWc3ow1FucIBUtZs&utm_source=copy-link&utm_medium=social&utm_campaign=share (エンドポイント未対応)"]
+[2025-07-17T22:42:43.577Z] INFO: 📤 clipping送信準備: How Zelensky’s popularity has sunk after nearly three years of war.md
+[2025-07-17T22:42:43.579Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/How Zelensky’s popularity has sunk after nearly three years of war.md
+[2025-07-17T22:42:43.585Z] DEBUG:    ターゲット: https://www.thetimes.com/article/581645cf-e4aa-483f-ac7a-d2d5d841b78b?shareToken=cbb35e487313af77515c19c4b2fb18bd
+[2025-07-17T22:42:47.714Z] ERROR: FAILURE: clippingshareエントリ送信失敗: How Zelensky’s popularity has sunk after nearly three years of war.md | ["Webmentionエンドポイントが見つかりません: https://www.thetimes.com/article/581645cf-e4aa-483f-ac7a-d2d5d841b78b?shareToken=cbb35e487313af77515c19c4b2fb18bd (エンドポイント未対応)"]
+[2025-07-17T22:42:53.732Z] INFO: 📤 clipping送信準備: In ‘Finding Flaco,’ Manhattan’s Beloved Celebrity Owl Is Memorialized.md
+[2025-07-17T22:42:53.735Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/In ‘Finding Flaco,’ Manhattan’s Beloved Celebrity Owl Is Memorialized.md
+[2025-07-17T22:42:53.740Z] DEBUG:    ターゲット: https://www.nytimes.com/2024/12/24/books/review/finding-flaco-owl-photo-book.html?unlocked_article_code=1.j04.ZFJo.zwTahFAYxA1U&smid=bs-share
+[2025-07-17T22:42:54.505Z] ERROR: FAILURE: clippingshareエントリ送信失敗: In ‘Finding Flaco,’ Manhattan’s Beloved Celebrity Owl Is Memorialized.md | ["Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/24/books/review/finding-flaco-owl-photo-book.html?unlocked_article_code=1.j04.ZFJo.zwTahFAYxA1U&smid=bs-share (エンドポイント未対応)"]
+[2025-07-17T22:43:00.524Z] INFO: 📤 clipping送信準備: Insurers Are Deserting Homeowners as Climate Shocks Worsen.md
+[2025-07-17T22:43:00.526Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Insurers Are Deserting Homeowners as Climate Shocks Worsen.md
+[2025-07-17T22:43:00.531Z] DEBUG:    ターゲット: https://www.nytimes.com/interactive/2024/12/18/climate/insurance-non-renewal-climate-crisis.html?unlocked_article_code=1.jE4.lNsl.WilUxKWri2gP&smid=nytcore-ios-share&referringSource=articleShare&tgrp=on
+[2025-07-17T22:43:01.119Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Insurers Are Deserting Homeowners as Climate Shocks Worsen.md | ["Webmentionエンドポイントが見つかりません: https://www.nytimes.com/interactive/2024/12/18/climate/insurance-non-renewal-climate-crisis.html?unlocked_article_code=1.jE4.lNsl.WilUxKWri2gP&smid=nytcore-ios-share&referringSource=articleShare&tgrp=on (エンドポイント未対応)"]
+[2025-07-17T22:43:07.131Z] INFO: 📤 clipping送信準備: It's Not As Bad As All That.md
+[2025-07-17T22:43:07.134Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/It's Not As Bad As All That.md
+[2025-07-17T22:43:07.139Z] DEBUG:    ターゲット: https://democracyjournal.org/magazine/48/its-not-as-bad-as-all-that/?ref=quillette.com
+[2025-07-17T22:43:08.079Z] ERROR: FAILURE: clippingshareエントリ送信失敗: It's Not As Bad As All That.md | ["Webmentionエンドポイントが見つかりません: https://democracyjournal.org/magazine/48/its-not-as-bad-as-all-that/?ref=quillette.com (エンドポイント未対応)"]
+[2025-07-17T22:43:14.098Z] INFO: 📤 clipping送信準備: Jimmy Carter, Peacemaking President Amid Crises, Is Dead at 100.md
+[2025-07-17T22:43:14.100Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Jimmy Carter, Peacemaking President Amid Crises, Is Dead at 100.md
+[2025-07-17T22:43:14.105Z] DEBUG:    ターゲット: https://www.nytimes.com/2024/12/29/us/politics/jimmy-carter-dead.html?unlocked_article_code=1.lE4.Mw0A.Pg8pMCYL4jg2&smid=url-share
+[2025-07-17T22:43:15.113Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Jimmy Carter, Peacemaking President Amid Crises, Is Dead at 100.md | ["Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/29/us/politics/jimmy-carter-dead.html?unlocked_article_code=1.lE4.Mw0A.Pg8pMCYL4jg2&smid=url-share (エンドポイント未対応)"]
+[2025-07-17T22:43:21.122Z] INFO: 📤 clipping送信準備: Long a ‘Crown Jewel’ of Government, N.I.H. Is Now a Target.md
+[2025-07-17T22:43:21.125Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Long a ‘Crown Jewel’ of Government, N.I.H. Is Now a Target.md
+[2025-07-17T22:43:21.131Z] DEBUG:    ターゲット: https://www.nytimes.com/2024/12/01/health/nih-trump-kennedy-bhattacharya.html?unlocked_article_code=1.eU4.pd3-.WIzKYj8lDU9M&smid=url-share
+[2025-07-17T22:43:21.432Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Long a ‘Crown Jewel’ of Government, N.I.H. Is Now a Target.md | ["Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/01/health/nih-trump-kennedy-bhattacharya.html?unlocked_article_code=1.eU4.pd3-.WIzKYj8lDU9M&smid=url-share (エンドポイント未対応)"]
+[2025-07-17T22:43:27.446Z] INFO: 📤 clipping送信準備: Luigi Mangione’s manifesto reveals his hatred of insurance companies.md
+[2025-07-17T22:43:27.449Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Luigi Mangione’s manifesto reveals his hatred of insurance companies.md
+[2025-07-17T22:43:27.454Z] DEBUG:    ターゲット: https://www.economist.com/united-states/2024/12/12/luigi-mangiones-manifesto-reveals-his-hatred-of-insurance-companies?giftId=c838abb2-f4ce-4d44-bfa1-7f07c2c9a4b1&utm_campaign=gifted_article
+[2025-07-17T22:43:32.802Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Luigi Mangione’s manifesto reveals his hatred of insurance companies.md | ["Webmentionエンドポイントが見つかりません: https://www.economist.com/united-states/2024/12/12/luigi-mangiones-manifesto-reveals-his-hatred-of-insurance-companies?giftId=c838abb2-f4ce-4d44-bfa1-7f07c2c9a4b1&utm_campaign=gifted_article (エンドポイント未対応)"]
+[2025-07-17T22:43:38.837Z] INFO: 📤 clipping送信準備: Musk, Thiel and the shadow of apartheid South Africa.md
+[2025-07-17T22:43:38.839Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Musk, Thiel and the shadow of apartheid South Africa.md
+[2025-07-17T22:43:38.843Z] DEBUG:    ターゲット: https://www.ft.com/content/cfbfa1e8-d8f8-42b9-b74c-dae6cc6185a0?accessToken=zwAGKdHEqmkwkdPPv6Ho2PhCudO3TNrmzGGFoA.MEQCIA3h79YXDdcwW1XGH6QelD2ZvifwTUhkRcrmvjgonjUaAiBks4VrNidmmbGBTFHWFk8ryyRmrB4xcjdv59PK6N5l8g&sharetype=gift&token=eb57abd5-ea40-4e4c-9508-277bb72d5173
+[2025-07-17T22:43:39.632Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Musk, Thiel and the shadow of apartheid South Africa.md | ["Webmentionエンドポイントが見つかりません: https://www.ft.com/content/cfbfa1e8-d8f8-42b9-b74c-dae6cc6185a0?accessToken=zwAGKdHEqmkwkdPPv6Ho2PhCudO3TNrmzGGFoA.MEQCIA3h79YXDdcwW1XGH6QelD2ZvifwTUhkRcrmvjgonjUaAiBks4VrNidmmbGBTFHWFk8ryyRmrB4xcjdv59PK6N5l8g&sharetype=gift&token=eb57abd5-ea40-4e4c-9508-277bb72d5173 (エンドポイント未対応)"]
+[2025-07-17T22:43:45.652Z] INFO: 📤 clipping送信準備: NAKAHARA-LAB.NET 東京大学 中原淳研究室 - 大人の学びを科学する 先行研究をまとめる５つのプロセス、陥りやすい３つの罠.md
+[2025-07-17T22:43:45.654Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/NAKAHARA-LAB.NET 東京大学 中原淳研究室 - 大人の学びを科学する 先行研究をまとめる５つのプロセス、陥りやすい３つの罠.md
+[2025-07-17T22:43:45.659Z] DEBUG:    ターゲット: https://www.nakahara-lab.net/blog/2011/10/post_1803.html
+[2025-07-17T22:43:46.027Z] ERROR: FAILURE: clippingshareエントリ送信失敗: NAKAHARA-LAB.NET 東京大学 中原淳研究室 - 大人の学びを科学する 先行研究をまとめる５つのプロセス、陥りやすい３つの罠.md | ["Webmentionエンドポイントが見つかりません: https://www.nakahara-lab.net/blog/2011/10/post_1803.html (エンドポイント未対応)"]
+[2025-07-17T22:43:52.032Z] INFO: 📤 clipping送信準備: No standing, no marathon speeches, no catheter bags How filibustering got way too easy.md
+[2025-07-17T22:43:52.038Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/No standing, no marathon speeches, no catheter bags How filibustering got way too easy.md
+[2025-07-17T22:43:52.046Z] DEBUG:    ターゲット: https://www.washingtonpost.com/lifestyle/style/silent-filibuster-got-too-easy/2021/07/05/93bf2ff2-d9cd-11eb-9bbb-37c30dcf9363_story.html?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzQzMzkzNjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzQ0Nzc1OTk5LCJpYXQiOjE3NDMzOTM2MDAsImp0aSI6IjQyMDJmNTYxLTBjODktNDdhZi05NmUwLTIxMzVmYzAwMzY4OCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9saWZlc3R5bGUvc3R5bGUvc2lsZW50LWZpbGlidXN0ZXItZ290LXRvby1lYXN5LzIwMjEvMDcvMDUvOTNiZjJmZjItZDljZC0xMWViLTliYmItMzdjMzBkY2Y5MzYzX3N0b3J5Lmh0bWwifQ.HlghlSh7JiUTsUMT49YjBN9v_zB0c0bDeCOK7o3zrw0
+[2025-07-17T22:43:52.124Z] ERROR: FAILURE: clippingshareエントリ送信失敗: No standing, no marathon speeches, no catheter bags How filibustering got way too easy.md | ["Webmentionエンドポイントが見つかりません: https://www.washingtonpost.com/lifestyle/style/silent-filibuster-got-too-easy/2021/07/05/93bf2ff2-d9cd-11eb-9bbb-37c30dcf9363_story.html?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzQzMzkzNjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzQ0Nzc1OTk5LCJpYXQiOjE3NDMzOTM2MDAsImp0aSI6IjQyMDJmNTYxLTBjODktNDdhZi05NmUwLTIxMzVmYzAwMzY4OCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9saWZlc3R5bGUvc3R5bGUvc2lsZW50LWZpbGlidXN0ZXItZ290LXRvby1lYXN5LzIwMjEvMDcvMDUvOTNiZjJmZjItZDljZC0xMWViLTliYmItMzdjMzBkY2Y5MzYzX3N0b3J5Lmh0bWwifQ.HlghlSh7JiUTsUMT49YjBN9v_zB0c0bDeCOK7o3zrw0 (error sending request from 192.168.11.14:59948 for https://www.washingtonpost.com/lifestyle/style/silent-filibuster-got-too-easy/2021/07/05/93bf2ff2-d9cd-11eb-9bbb-37c30dcf9363_story.html?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzQzMzkzNjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzQ0Nzc1OTk5LCJpYXQiOjE3NDMzOTM2MDAsImp0aSI6IjQyMDJmNTYxLTBjODktNDdhZi05NmUwLTIxMzVmYzAwMzY4OCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9saWZlc3R5bGUvc3R5bGUvc2lsZW50LWZpbGlidXN0ZXItZ290LXRvby1lYXN5LzIwMjEvMDcvMDUvOTNiZjJmZjItZDljZC0xMWViLTliYmItMzdjMzBkY2Y5MzYzX3N0b3J5Lmh0bWwifQ.HlghlSh7JiUTsUMT49YjBN9v_zB0c0bDeCOK7o3zrw0 (23.47.137.82:443): client error (SendRequest): http2 error: stream error received: unexpected internal error encountered)"]
+[2025-07-17T22:43:58.136Z] INFO: 📤 clipping送信準備: Obsidian Web Clipper.md
+[2025-07-17T22:43:58.138Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Obsidian Web Clipper.md
+[2025-07-17T22:43:58.143Z] DEBUG:    ターゲット: https://stephango.com/obsidian-web-clipper
+[2025-07-17T22:43:59.048Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Obsidian Web Clipper.md | ["Webmentionエンドポイントが見つかりません: https://stephango.com/obsidian-web-clipper (エンドポイント未対応)"]
+[2025-07-17T22:44:05.054Z] INFO: 📤 clipping送信準備: Obsidian：Callout形式でタイムラインとチャットバブルを表示 - 叶星优酸乳.md
+[2025-07-17T22:44:05.056Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Obsidian：Callout形式でタイムラインとチャットバブルを表示 - 叶星优酸乳.md
+[2025-07-17T22:44:05.061Z] DEBUG:    ターゲット: https://weiyexing.win/callout-to-timeline-and-chatbubble?locale=ja
+[2025-07-17T22:44:06.995Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Obsidian：Callout形式でタイムラインとチャットバブルを表示 - 叶星优酸乳.md | ["Webmentionエンドポイントが見つかりません: https://weiyexing.win/callout-to-timeline-and-chatbubble?locale=ja (エンドポイント未対応)"]
+[2025-07-17T22:44:13.006Z] INFO: 📤 clipping送信準備: Obsidian：WebClipperをKindle対応にする.md
+[2025-07-17T22:44:13.008Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Obsidian：WebClipperをKindle対応にする.md
+[2025-07-17T22:44:13.012Z] DEBUG:    ターゲット: https://wineroses.hatenablog.com/entry/2024/12/06/170041
+[2025-07-17T22:44:13.383Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Obsidian：WebClipperをKindle対応にする.md | ["Webmentionエンドポイントが見つかりません: https://wineroses.hatenablog.com/entry/2024/12/06/170041 (エンドポイント未対応)"]
+[2025-07-17T22:44:19.401Z] INFO: 📤 clipping送信準備: Opinion  My Last Column Finding Hope in an Age of Resentment.md
+[2025-07-17T22:44:19.404Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Opinion  My Last Column Finding Hope in an Age of Resentment.md
+[2025-07-17T22:44:19.409Z] DEBUG:    ターゲット: https://www.nytimes.com/2024/12/09/opinion/elites-euro-social-media.html?unlocked_article_code=1.jU4.YGsX.geR43TP9RUlv&smid=nytcore-ios-share&referringSource=articleShare
+[2025-07-17T22:44:20.125Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Opinion  My Last Column Finding Hope in an Age of Resentment.md | ["Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/09/opinion/elites-euro-social-media.html?unlocked_article_code=1.jU4.YGsX.geR43TP9RUlv&smid=nytcore-ios-share&referringSource=articleShare (エンドポイント未対応)"]
+[2025-07-17T22:44:26.143Z] INFO: 📤 clipping送信準備: Opinion  Oops! Consumers finally realize that Trump could worsen inflation..md
+[2025-07-17T22:44:26.145Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Opinion  Oops! Consumers finally realize that Trump could worsen inflation..md
+[2025-07-17T22:44:26.150Z] DEBUG:    ターゲット: https://www.washingtonpost.com/opinions/2024/12/26/trump-tariffs-worsen-inflation/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzM1MTg5MjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM2NTcxNTk5LCJpYXQiOjE3MzUxODkyMDAsImp0aSI6ImZjODdlNGNmLTI2MDAtNDM0OC1hOTgxLTFhZmJjMjQ2NDU3YSIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9vcGluaW9ucy8yMDI0LzEyLzI2L3RydW1wLXRhcmlmZnMtd29yc2VuLWluZmxhdGlvbi8ifQ.2ze3RS75QDz6znHHFYRjLkAPSrP6hlsWJOrx-RVTfnk
+[2025-07-17T22:44:26.401Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Opinion  Oops! Consumers finally realize that Trump could worsen inflation..md | ["Webmentionエンドポイントが見つかりません: https://www.washingtonpost.com/opinions/2024/12/26/trump-tariffs-worsen-inflation/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzM1MTg5MjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM2NTcxNTk5LCJpYXQiOjE3MzUxODkyMDAsImp0aSI6ImZjODdlNGNmLTI2MDAtNDM0OC1hOTgxLTFhZmJjMjQ2NDU3YSIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9vcGluaW9ucy8yMDI0LzEyLzI2L3RydW1wLXRhcmlmZnMtd29yc2VuLWluZmxhdGlvbi8ifQ.2ze3RS75QDz6znHHFYRjLkAPSrP6hlsWJOrx-RVTfnk (error sending request from 192.168.11.14:59948 for https://www.washingtonpost.com/opinions/2024/12/26/trump-tariffs-worsen-inflation/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzM1MTg5MjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM2NTcxNTk5LCJpYXQiOjE3MzUxODkyMDAsImp0aSI6ImZjODdlNGNmLTI2MDAtNDM0OC1hOTgxLTFhZmJjMjQ2NDU3YSIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9vcGluaW9ucy8yMDI0LzEyLzI2L3RydW1wLXRhcmlmZnMtd29yc2VuLWluZmxhdGlvbi8ifQ.2ze3RS75QDz6znHHFYRjLkAPSrP6hlsWJOrx-RVTfnk (23.47.137.82:443): client error (SendRequest): http2 error: stream error received: unexpected internal error encountered)"]
+[2025-07-17T22:44:32.410Z] INFO: 📤 clipping送信準備: Opinion  Paul Krugman on the ‘Biggest Trade Shock in History’.md
+[2025-07-17T22:44:32.413Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Opinion  Paul Krugman on the ‘Biggest Trade Shock in History’.md
+[2025-07-17T22:44:32.416Z] DEBUG:    ターゲット: https://www.nytimes.com/2025/04/05/opinion/ezra-klein-podcast-paul-krugman.html?unlocked_article_code=1.9k4.y_hk.n7or4QsXGnas&smid=url-share
+[2025-07-17T22:44:33.131Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Opinion  Paul Krugman on the ‘Biggest Trade Shock in History’.md | ["Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2025/04/05/opinion/ezra-klein-podcast-paul-krugman.html?unlocked_article_code=1.9k4.y_hk.n7or4QsXGnas&smid=url-share (エンドポイント未対応)"]
+[2025-07-17T22:44:39.145Z] INFO: 📤 clipping送信準備: Opinion  Temporarily Disconnected From Politics Feel No Guilt About It..md
+[2025-07-17T22:44:39.147Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Opinion  Temporarily Disconnected From Politics Feel No Guilt About It..md
+[2025-07-17T22:44:39.152Z] DEBUG:    ターゲット: https://www.nytimes.com/2024/12/18/opinion/trump-liberals-resistance.html?unlocked_article_code=1.ik4.jCMw.LGQrqLm3bWVE&smid=url-share
+[2025-07-17T22:44:39.909Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Opinion  Temporarily Disconnected From Politics Feel No Guilt About It..md | ["Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/18/opinion/trump-liberals-resistance.html?unlocked_article_code=1.ik4.jCMw.LGQrqLm3bWVE&smid=url-share (エンドポイント未対応)"]
+[2025-07-17T22:44:45.920Z] INFO: 📤 clipping送信準備: Opinion  The Shock of Faith It’s Nothing Like I Thought It Would Be.md
+[2025-07-17T22:44:45.923Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Opinion  The Shock of Faith It’s Nothing Like I Thought It Would Be.md
+[2025-07-17T22:44:45.928Z] DEBUG:    ターゲット: https://www.nytimes.com/2024/12/19/opinion/faith-god-christianity.html?unlocked_article_code=1.jE4.bKhR.zCct3VH6eOgP&smid=url-share
+[2025-07-17T22:44:46.362Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Opinion  The Shock of Faith It’s Nothing Like I Thought It Would Be.md | ["Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/19/opinion/faith-god-christianity.html?unlocked_article_code=1.jE4.bKhR.zCct3VH6eOgP&smid=url-share (エンドポイント未対応)"]
+[2025-07-17T22:44:52.363Z] INFO: 📤 clipping送信準備: Opinion  Things Are Terrible in Europe, and They’re Only Going to Get Worse.md
+[2025-07-17T22:44:52.366Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Opinion  Things Are Terrible in Europe, and They’re Only Going to Get Worse.md
+[2025-07-17T22:44:52.370Z] DEBUG:    ターゲット: https://www.nytimes.com/2024/12/22/opinion/europe-germany-france-trump.html?unlocked_article_code=1.kU4.bk8O.k8CTdlH3cyFj&smid=nytcore-ios-share&referringSource=articleShare
+[2025-07-17T22:44:52.701Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Opinion  Things Are Terrible in Europe, and They’re Only Going to Get Worse.md | ["Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/22/opinion/europe-germany-france-trump.html?unlocked_article_code=1.kU4.bk8O.k8CTdlH3cyFj&smid=nytcore-ios-share&referringSource=articleShare (エンドポイント未対応)"]
+[2025-07-17T22:44:58.710Z] INFO: 📤 clipping送信準備: Opinion  Trump’s Shameful Campaign Against Transgender Americans.md
+[2025-07-17T22:44:58.713Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Opinion  Trump’s Shameful Campaign Against Transgender Americans.md
+[2025-07-17T22:44:58.718Z] DEBUG:    ターゲット: https://www.nytimes.com/2025/02/09/opinion/transgender-trump-orders.html?unlocked_article_code=1.v04.1-3q.i9gkm8wm4qy9&smid=url-share
+[2025-07-17T22:44:59.020Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Opinion  Trump’s Shameful Campaign Against Transgender Americans.md | ["Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2025/02/09/opinion/transgender-trump-orders.html?unlocked_article_code=1.v04.1-3q.i9gkm8wm4qy9&smid=url-share (エンドポイント未対応)"]
+[2025-07-17T22:45:05.026Z] INFO: 📤 clipping送信準備: Qアノン陰謀論との関連で「物議の映画」が米2位に急浮上  Forbes JAPAN 公式サイト（フォーブス ジャパン）.md
+[2025-07-17T22:45:05.028Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Qアノン陰謀論との関連で「物議の映画」が米2位に急浮上  Forbes JAPAN 公式サイト（フォーブス ジャパン）.md
+[2025-07-17T22:45:05.032Z] DEBUG:    ターゲット: https://forbesjapan.com/articles/detail/64649?read_more=1
+[2025-07-17T22:45:05.403Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Qアノン陰謀論との関連で「物議の映画」が米2位に急浮上  Forbes JAPAN 公式サイト（フォーブス ジャパン）.md | ["Webmentionエンドポイントが見つかりません: https://forbesjapan.com/articles/detail/64649?read_more=1 (エンドポイント未対応)"]
+[2025-07-17T22:45:11.409Z] INFO: 📤 clipping送信準備: Read Vice President Kamala Harris' Full Concession Speech.md
+[2025-07-17T22:45:11.411Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Read Vice President Kamala Harris' Full Concession Speech.md
+[2025-07-17T22:45:11.415Z] DEBUG:    ターゲット: https://time.com/7173617/kamala-harris-concession-speech-full-transcript/
+[2025-07-17T22:45:12.079Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Read Vice President Kamala Harris' Full Concession Speech.md | ["Webmentionエンドポイントが見つかりません: https://time.com/7173617/kamala-harris-concession-speech-full-transcript/ (エンドポイント未対応)"]
+[2025-07-17T22:45:18.094Z] INFO: 📤 clipping送信準備: SSG with Obsidian and Lume 1.md
+[2025-07-17T22:45:18.097Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/SSG with Obsidian and Lume 1.md
+[2025-07-17T22:45:18.102Z] DEBUG:    ターゲット: https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html
+[2025-07-17T22:45:18.554Z] ERROR: FAILURE: clippingshareエントリ送信失敗: SSG with Obsidian and Lume 1.md | ["Webmentionエンドポイントが見つかりません: https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html (エンドポイント未対応)"]
+[2025-07-17T22:45:24.573Z] INFO: 📤 clipping送信準備: SSG with Obsidian and Lume.md
+[2025-07-17T22:45:24.577Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/SSG with Obsidian and Lume.md
+[2025-07-17T22:45:24.605Z] DEBUG:    ターゲット: https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html
+[2025-07-17T22:45:24.629Z] ERROR: FAILURE: clippingshareエントリ送信失敗: SSG with Obsidian and Lume.md | ["Webmentionエンドポイントが見つかりません: https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html (エンドポイント未対応)"]
+[2025-07-17T22:45:30.639Z] INFO: 📤 clipping送信準備: Supercharging Obsidian.md with OpenAI, Qdrant and Rust.md
+[2025-07-17T22:45:30.641Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Supercharging Obsidian.md with OpenAI, Qdrant and Rust.md
+[2025-07-17T22:45:30.645Z] DEBUG:    ターゲット: https://dev.to/joshmo_dev/supercharging-obsidianmd-with-openai-qdrant-and-rust-504f
+[2025-07-17T22:45:31.161Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Supercharging Obsidian.md with OpenAI, Qdrant and Rust.md | ["Webmentionエンドポイントが見つかりません: https://dev.to/joshmo_dev/supercharging-obsidianmd-with-openai-qdrant-and-rust-504f (エンドポイント未対応)"]
+[2025-07-17T22:45:37.178Z] INFO: 📤 clipping送信準備: The Great Grocery Squeeze.md
+[2025-07-17T22:45:37.180Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/The Great Grocery Squeeze.md
+[2025-07-17T22:45:37.185Z] DEBUG:    ターゲット: https://www.theatlantic.com/ideas/archive/2024/12/food-deserts-robinson-patman/680765/?gift=-RS5b5Pu_ckblQ1qYX7r4TdLi38JCK1Ooopj_8j-_yM&utm_source=copy-link&utm_medium=social&utm_campaign=share
+[2025-07-17T22:45:38.375Z] ERROR: FAILURE: clippingshareエントリ送信失敗: The Great Grocery Squeeze.md | ["Webmentionエンドポイントが見つかりません: https://www.theatlantic.com/ideas/archive/2024/12/food-deserts-robinson-patman/680765/?gift=-RS5b5Pu_ckblQ1qYX7r4TdLi38JCK1Ooopj_8j-_yM&utm_source=copy-link&utm_medium=social&utm_campaign=share (エンドポイント未対応)"]
+[2025-07-17T22:45:44.386Z] INFO: 📤 clipping送信準備: The Top Goal of Project 2025 Is Still to Come.md
+[2025-07-17T22:45:44.392Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/The Top Goal of Project 2025 Is Still to Come.md
+[2025-07-17T22:45:44.395Z] DEBUG:    ターゲット: https://www.theatlantic.com/ideas/archive/2025/04/project-2025-top-goal/682142/?gift=HtNVVY5d4WyXVjehmwGKLl0ub7b4Al-S57kFaZPmIP8&utm_source=copy-link&utm_medium=social&utm_campaign=share
+[2025-07-17T22:45:44.993Z] ERROR: FAILURE: clippingshareエントリ送信失敗: The Top Goal of Project 2025 Is Still to Come.md | ["Webmentionエンドポイントが見つかりません: https://www.theatlantic.com/ideas/archive/2025/04/project-2025-top-goal/682142/?gift=HtNVVY5d4WyXVjehmwGKLl0ub7b4Al-S57kFaZPmIP8&utm_source=copy-link&utm_medium=social&utm_campaign=share (エンドポイント未対応)"]
+[2025-07-17T22:45:51.000Z] INFO: 📤 clipping送信準備: Trump and Musk are obsessed with genetics – but there’s no science behind their simplistic views  Jonathan Roberts.md
+[2025-07-17T22:45:51.002Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Trump and Musk are obsessed with genetics – but there’s no science behind their simplistic views  Jonathan Roberts.md
+[2025-07-17T22:45:51.008Z] DEBUG:    ターゲット: https://www.theguardian.com/commentisfree/2024/dec/30/donald-trump-elon-musk-genetics-science-right
+[2025-07-17T22:45:52.009Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Trump and Musk are obsessed with genetics – but there’s no science behind their simplistic views  Jonathan Roberts.md | ["Webmentionエンドポイントが見つかりません: https://www.theguardian.com/commentisfree/2024/dec/30/donald-trump-elon-musk-genetics-science-right (エンドポイント未対応)"]
+[2025-07-17T22:45:58.019Z] INFO: 📤 clipping送信準備: Tulsa Massacre Was a ‘Coordinated, Military-Style Attack,’ Federal Report Says.md
+[2025-07-17T22:45:58.022Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Tulsa Massacre Was a ‘Coordinated, Military-Style Attack,’ Federal Report Says.md
+[2025-07-17T22:45:58.026Z] DEBUG:    ターゲット: https://www.nytimes.com/2025/01/11/us/tulsa-race-massacre-report.html?unlocked_article_code=1.oU4.TEOz.fQYoQ9jIRDyb&smid=nytcore-ios-share&referringSource=articleShare
+[2025-07-17T22:45:58.474Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Tulsa Massacre Was a ‘Coordinated, Military-Style Attack,’ Federal Report Says.md | ["Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2025/01/11/us/tulsa-race-massacre-report.html?unlocked_article_code=1.oU4.TEOz.fQYoQ9jIRDyb&smid=nytcore-ios-share&referringSource=articleShare (エンドポイント未対応)"]
+[2025-07-17T22:46:04.491Z] INFO: 📤 clipping送信準備: VIAF (Virtual International Authority File)  OCLC Developer Network.md
+[2025-07-17T22:46:04.493Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/VIAF (Virtual International Authority File)  OCLC Developer Network.md
+[2025-07-17T22:46:04.502Z] DEBUG:    ターゲット: https://www.oclc.org/developer/api/oclc-apis/viaf.en.html
+[2025-07-17T22:46:05.350Z] ERROR: FAILURE: clippingshareエントリ送信失敗: VIAF (Virtual International Authority File)  OCLC Developer Network.md | ["Webmentionエンドポイントが見つかりません: https://www.oclc.org/developer/api/oclc-apis/viaf.en.html (エンドポイント未対応)"]
+[2025-07-17T22:46:11.539Z] INFO: 📤 clipping送信準備: Why Earth's History Appears So Miraculous.md
+[2025-07-17T22:46:11.541Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/Why Earth's History Appears So Miraculous.md
+[2025-07-17T22:46:11.545Z] DEBUG:    ターゲット: https://www.theatlantic.com/science/archive/2018/03/human-existence-will-look-more-miraculous-the-longer-we-survive/554513/?gift=q1KByJV9yb84eTRhFiNthYz8gd2O-8qrri3Nf7YBmRE&utm_source=copy-link&utm_medium=social&utm_campaign=share
+[2025-07-17T22:46:11.901Z] ERROR: FAILURE: clippingshareエントリ送信失敗: Why Earth's History Appears So Miraculous.md | ["Webmentionエンドポイントが見つかりません: https://www.theatlantic.com/science/archive/2018/03/human-existence-will-look-more-miraculous-the-longer-we-survive/554513/?gift=q1KByJV9yb84eTRhFiNthYz8gd2O-8qrri3Nf7YBmRE&utm_source=copy-link&utm_medium=social&utm_campaign=share (エンドポイント未対応)"]
+[2025-07-17T22:46:17.915Z] INFO: 📤 clipping送信準備: X Is a White-Supremacist Site.md
+[2025-07-17T22:46:17.917Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/X Is a White-Supremacist Site.md
+[2025-07-17T22:46:17.922Z] DEBUG:    ターゲット: https://www.theatlantic.com/technology/archive/2024/11/x-white-supremacist-site/680538/?gift=N2aAVwSqDWDX9rA6Xm7u25Dry_QxlYGW1-QmU-YA3c8&utm_source=copy-link&utm_medium=social&utm_campaign=share
+[2025-07-17T22:46:18.404Z] ERROR: FAILURE: clippingshareエントリ送信失敗: X Is a White-Supremacist Site.md | ["Webmentionエンドポイントが見つかりません: https://www.theatlantic.com/technology/archive/2024/11/x-white-supremacist-site/680538/?gift=N2aAVwSqDWDX9rA6Xm7u25Dry_QxlYGW1-QmU-YA3c8&utm_source=copy-link&utm_medium=social&utm_campaign=share (エンドポイント未対応)"]
+[2025-07-17T22:46:24.472Z] INFO: 📤 clipping送信準備: ‘A Day of Love’ How Trump Inverted the Violent History of Jan. 6.md
+[2025-07-17T22:46:24.559Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/‘A Day of Love’ How Trump Inverted the Violent History of Jan. 6.md
+[2025-07-17T22:46:24.562Z] DEBUG:    ターゲット: https://www.nytimes.com/2025/01/05/us/politics/january-6-capitol-riot-trump.html?unlocked_article_code=1.vU4.Nwih.gknVldzlg88a&smid=url-share
+[2025-07-17T22:46:25.915Z] ERROR: FAILURE: clippingshareエントリ送信失敗: ‘A Day of Love’ How Trump Inverted the Violent History of Jan. 6.md | ["Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2025/01/05/us/politics/january-6-capitol-riot-trump.html?unlocked_article_code=1.vU4.Nwih.gknVldzlg88a&smid=url-share (エンドポイント未対応)"]
+[2025-07-17T22:46:31.925Z] INFO: 📤 clipping送信準備: “男はこう”“女はこう” ある日、新聞に載った全面広告.md
+[2025-07-17T22:46:31.928Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/“男はこう”“女はこう” ある日、新聞に載った全面広告.md
+[2025-07-17T22:46:31.933Z] DEBUG:    ターゲット: https://s-newscommons.com/article/7161
+[2025-07-17T22:46:32.096Z] ERROR: FAILURE: clippingshareエントリ送信失敗: “男はこう”“女はこう” ある日、新聞に載った全面広告.md | ["Webmentionエンドポイントが見つかりません: https://s-newscommons.com/article/7161 (エンドポイント未対応)"]
+[2025-07-17T22:46:38.112Z] INFO: 📤 clipping送信準備: 「そんな人でない」「才能ある」　性加害男性に集まる「ヒムパシー」：朝日新聞.md
+[2025-07-17T22:46:38.114Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/「そんな人でない」「才能ある」　性加害男性に集まる「ヒムパシー」：朝日新聞.md
+[2025-07-17T22:46:38.119Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST3L1RZ3T3LUEFT00WM.html?ptoken=01JPVWDQP60SV8FJMCPE4FV53C
+[2025-07-17T22:46:38.540Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 「そんな人でない」「才能ある」　性加害男性に集まる「ヒムパシー」：朝日新聞.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3L1RZ3T3LUEFT00WM.html?ptoken=01JPVWDQP60SV8FJMCPE4FV53C (エンドポイント未対応)"]
+[2025-07-17T22:46:44.575Z] INFO: 📤 clipping送信準備: 「ジェンダー先進国」ナミビア、初の女性大統領誕生の陰で募る不安：朝日新聞.md
+[2025-07-17T22:46:44.663Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/「ジェンダー先進国」ナミビア、初の女性大統領誕生の陰で募る不安：朝日新聞.md
+[2025-07-17T22:46:44.762Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST3C5W3TT3CUHBI008M.html?ptoken=01JP9R19TA8Z3W65V5PSMH8B16
+[2025-07-17T22:46:45.236Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 「ジェンダー先進国」ナミビア、初の女性大統領誕生の陰で募る不安：朝日新聞.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3C5W3TT3CUHBI008M.html?ptoken=01JP9R19TA8Z3W65V5PSMH8B16 (エンドポイント未対応)"]
+[2025-07-17T22:46:51.245Z] INFO: 📤 clipping送信準備: 「僕たちは多文化主義から多自然主義へと向かわなければならない」奥野克巳に訊く“人類学の静かなる革命”.md
+[2025-07-17T22:46:51.248Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/「僕たちは多文化主義から多自然主義へと向かわなければならない」奥野克巳に訊く“人類学の静かなる革命”.md
+[2025-07-17T22:46:51.253Z] DEBUG:    ターゲット: https://hagamag.com/uncategory/3529
+[2025-07-17T22:46:51.594Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 「僕たちは多文化主義から多自然主義へと向かわなければならない」奥野克巳に訊く“人類学の静かなる革命”.md | ["Webmentionエンドポイントが見つかりません: https://hagamag.com/uncategory/3529 (エンドポイント未対応)"]
+[2025-07-17T22:46:57.610Z] INFO: 📤 clipping送信準備: 「反戦詩」詠んだ与謝野晶子像に突然の撤去要請　裁判応酬の事態に：朝日新聞デジタル.md
+[2025-07-17T22:46:57.612Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/「反戦詩」詠んだ与謝野晶子像に突然の撤去要請　裁判応酬の事態に：朝日新聞デジタル.md
+[2025-07-17T22:46:57.618Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST172Q3MT17PTIL009M.html?ptoken=01JH4NXYV1SZA23JQSTKKCQ4T0
+[2025-07-17T22:46:57.950Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 「反戦詩」詠んだ与謝野晶子像に突然の撤去要請　裁判応酬の事態に：朝日新聞デジタル.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST172Q3MT17PTIL009M.html?ptoken=01JH4NXYV1SZA23JQSTKKCQ4T0 (エンドポイント未対応)"]
+[2025-07-17T22:47:03.955Z] INFO: 📤 clipping送信準備: 「大学の同期が起床標準時を採用しているせいで時間が予測できない」→起床標準時ってなんだよ！と盛大なツッコミ→時刻を可視化してくれるサイトが作られる.md
+[2025-07-17T22:47:03.958Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/「大学の同期が起床標準時を採用しているせいで時間が予測できない」→起床標準時ってなんだよ！と盛大なツッコミ→時刻を可視化してくれるサイトが作られる.md
+[2025-07-17T22:47:03.962Z] DEBUG:    ターゲット: https://togetter.com/li/2472403
+[2025-07-17T22:47:04.314Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 「大学の同期が起床標準時を採用しているせいで時間が予測できない」→起床標準時ってなんだよ！と盛大なツッコミ→時刻を可視化してくれるサイトが作られる.md | ["Webmentionエンドポイントが見つかりません: https://togetter.com/li/2472403 (エンドポイント未対応)"]
+[2025-07-17T22:47:10.332Z] INFO: 📤 clipping送信準備: 「女さん」「子どもを守れ」…　〝犬笛〟が飛び交う社会で生きるには：朝日新聞.md
+[2025-07-17T22:47:10.334Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/「女さん」「子どもを守れ」…　〝犬笛〟が飛び交う社会で生きるには：朝日新聞.md
+[2025-07-17T22:47:10.341Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST4B1Q3NT4BULLI007M.html?ptoken=01JRSS1KV4KEJAQ7AW05ETFWDG
+[2025-07-17T22:47:10.667Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 「女さん」「子どもを守れ」…　〝犬笛〟が飛び交う社会で生きるには：朝日新聞.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST4B1Q3NT4BULLI007M.html?ptoken=01JRSS1KV4KEJAQ7AW05ETFWDG (エンドポイント未対応)"]
+[2025-07-17T22:47:16.699Z] INFO: 📤 clipping送信準備: 「嫌ならはっきりと…」の幻想　ゆがんだ性交観と無縁じゃない法廷：朝日新聞.md
+[2025-07-17T22:47:16.757Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/「嫌ならはっきりと…」の幻想　ゆがんだ性交観と無縁じゃない法廷：朝日新聞.md
+[2025-07-17T22:47:16.766Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST3F35CMT3FUTFL00GM.html?ptoken=01JPMGDVV049ECX7E3V59MHRPS
+[2025-07-17T22:47:17.072Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 「嫌ならはっきりと…」の幻想　ゆがんだ性交観と無縁じゃない法廷：朝日新聞.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3F35CMT3FUTFL00GM.html?ptoken=01JPMGDVV049ECX7E3V59MHRPS (エンドポイント未対応)"]
+[2025-07-17T22:47:23.097Z] INFO: 📤 clipping送信準備: 「実験」とは何か - 東京大学出版会.md
+[2025-07-17T22:47:23.118Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/「実験」とは何か - 東京大学出版会.md
+[2025-07-17T22:47:23.125Z] DEBUG:    ターゲット: https://www.utp.or.jp/book/b10087847.html
+[2025-07-17T22:47:23.493Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 「実験」とは何か - 東京大学出版会.md | ["Webmentionエンドポイントが見つかりません: https://www.utp.or.jp/book/b10087847.html (エンドポイント未対応)"]
+[2025-07-17T22:47:29.508Z] INFO: 📤 clipping送信準備: 「日本の政策はなぜ機能しないのか？」書評　数値目標ありきの解決法はない（好書好日）｜ｄメニューニュース.md
+[2025-07-17T22:47:29.516Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/「日本の政策はなぜ機能しないのか？」書評　数値目標ありきの解決法はない（好書好日）｜ｄメニューニュース.md
+[2025-07-17T22:47:29.575Z] DEBUG:    ターゲット: https://topics.smt.docomo.ne.jp/article/book_asahi/trend/book_asahi-15408143?redirect=1
+[2025-07-17T22:47:29.760Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 「日本の政策はなぜ機能しないのか？」書評　数値目標ありきの解決法はない（好書好日）｜ｄメニューニュース.md | ["Webmentionエンドポイントが見つかりません: https://topics.smt.docomo.ne.jp/article/book_asahi/trend/book_asahi-15408143?redirect=1 (HTTP 404: Not Found)"]
+[2025-07-17T22:47:35.785Z] INFO: 📤 clipping送信準備: 「昭和と平成で大きく変わった」　御厨さんが見た「ナベツネ」の実像：朝日新聞デジタル.md
+[2025-07-17T22:47:35.788Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/「昭和と平成で大きく変わった」　御厨さんが見た「ナベツネ」の実像：朝日新聞デジタル.md
+[2025-07-17T22:47:35.795Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/ASSDM2R4DSDMUTFK01PM.html?ptoken=01JFH8BC3JMTHKS0E0KHXW538Y
+[2025-07-17T22:47:36.169Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 「昭和と平成で大きく変わった」　御厨さんが見た「ナベツネ」の実像：朝日新聞デジタル.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDM2R4DSDMUTFK01PM.html?ptoken=01JFH8BC3JMTHKS0E0KHXW538Y (エンドポイント未対応)"]
+[2025-07-17T22:47:42.212Z] INFO: 📤 clipping送信準備: 「椿発言」と僕の主義主張は違う　番組打ち切りに「僕があまりにも傲慢になっていた」　話の肖像画　ジャーナリスト・田原総一朗＜25＞.md
+[2025-07-17T22:47:42.368Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/「椿発言」と僕の主義主張は違う　番組打ち切りに「僕があまりにも傲慢になっていた」　話の肖像画　ジャーナリスト・田原総一朗＜25＞.md
+[2025-07-17T22:47:42.438Z] DEBUG:    ターゲット: https://www.sankei.com/article/20241026-KYBUOIFN5BKAHCP3G4JLPFCNTI/?outputType=theme_portrait
+[2025-07-17T22:47:43.256Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 「椿発言」と僕の主義主張は違う　番組打ち切りに「僕があまりにも傲慢になっていた」　話の肖像画　ジャーナリスト・田原総一朗＜25＞.md | ["Webmentionエンドポイントが見つかりません: https://www.sankei.com/article/20241026-KYBUOIFN5BKAHCP3G4JLPFCNTI/?outputType=theme_portrait (エンドポイント未対応)"]
+[2025-07-17T22:47:49.266Z] INFO: 📤 clipping送信準備: 「無知の時代」を生き抜くために｜じんぶん堂.md
+[2025-07-17T22:47:49.269Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/「無知の時代」を生き抜くために｜じんぶん堂.md
+[2025-07-17T22:47:49.273Z] DEBUG:    ターゲット: https://book.asahi.com/jinbun/article/15664692
+[2025-07-17T22:47:49.694Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 「無知の時代」を生き抜くために｜じんぶん堂.md | ["Webmentionエンドポイントが見つかりません: https://book.asahi.com/jinbun/article/15664692 (エンドポイント未対応)"]
+[2025-07-17T22:47:55.703Z] INFO: 📤 clipping送信準備: 「精神疾患とは何か」について哲学的に考えてみる─精神疾患の定義問題.md
+[2025-07-17T22:47:55.705Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/「精神疾患とは何か」について哲学的に考えてみる─精神疾患の定義問題.md
+[2025-07-17T22:47:55.709Z] DEBUG:    ターゲット: https://www.note.kanekoshobo.co.jp/n/n31042f72bcdc
+[2025-07-17T22:47:56.317Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 「精神疾患とは何か」について哲学的に考えてみる─精神疾患の定義問題.md | ["Webmentionエンドポイントが見つかりません: https://www.note.kanekoshobo.co.jp/n/n31042f72bcdc (エンドポイント未対応)"]
+[2025-07-17T22:48:02.354Z] INFO: 📤 clipping送信準備: 「精神疾患とは何か」について哲学的に考えてみる─精神疾患の定義問題―（後編）（九州大学人文科学研究院専門研究員：後藤真理子）.md
+[2025-07-17T22:48:02.357Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/「精神疾患とは何か」について哲学的に考えてみる─精神疾患の定義問題―（後編）（九州大学人文科学研究院専門研究員：後藤真理子）.md
+[2025-07-17T22:48:02.364Z] DEBUG:    ターゲット: https://www.note.kanekoshobo.co.jp/n/n68adf5fa7db8
+[2025-07-17T22:48:02.715Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 「精神疾患とは何か」について哲学的に考えてみる─精神疾患の定義問題―（後編）（九州大学人文科学研究院専門研究員：後藤真理子）.md | ["Webmentionエンドポイントが見つかりません: https://www.note.kanekoshobo.co.jp/n/n68adf5fa7db8 (エンドポイント未対応)"]
+[2025-07-17T22:48:08.727Z] INFO: 📤 clipping送信準備: 「過疎地を復興させてもね」を許す社会　下り坂の30年が生んだ空気：朝日新聞デジタル.md
+[2025-07-17T22:48:08.729Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/「過疎地を復興させてもね」を許す社会　下り坂の30年が生んだ空気：朝日新聞デジタル.md
+[2025-07-17T22:48:08.732Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST1G7R3MT1GUPQJ001M.html?ptoken=01JHXZ3QJR1HAAW8XGGRKX8GXZ
+[2025-07-17T22:48:09.008Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 「過疎地を復興させてもね」を許す社会　下り坂の30年が生んだ空気：朝日新聞デジタル.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST1G7R3MT1GUPQJ001M.html?ptoken=01JHXZ3QJR1HAAW8XGGRKX8GXZ (エンドポイント未対応)"]
+[2025-07-17T22:48:15.019Z] INFO: 📤 clipping送信準備: 『文章に生きる』.md
+[2025-07-17T22:48:15.021Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/『文章に生きる』.md
+[2025-07-17T22:48:15.027Z] DEBUG:    ターゲット: https://comingbook.honzuki.jp/?detail=9784788518650
+[2025-07-17T22:48:15.213Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 『文章に生きる』.md | ["Webmentionエンドポイントが見つかりません: https://comingbook.honzuki.jp/?detail=9784788518650 (error sending request for url (http://jpo.flyingline.info/): client error (Connect): dns error: そのようなホストは不明です。 (os error 11001): そのようなホストは不明です。 (os error 11001))"]
+[2025-07-17T22:48:21.229Z] INFO: 📤 clipping送信準備: 『新・動物の解放』.md
+[2025-07-17T22:48:21.231Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/『新・動物の解放』.md
+[2025-07-17T22:48:21.236Z] DEBUG:    ターゲット: https://comingbook.honzuki.jp/?detail=9784794974549
+[2025-07-17T22:48:21.416Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 『新・動物の解放』.md | ["Webmentionエンドポイントが見つかりません: https://comingbook.honzuki.jp/?detail=9784794974549 (error sending request for url (http://jpo.flyingline.info/): client error (Connect): dns error: そのようなホストは不明です。 (os error 11001): そのようなホストは不明です。 (os error 11001))"]
+[2025-07-17T22:48:27.420Z] INFO: 📤 clipping送信準備: 『殺人パンツがせめてくる！』.md
+[2025-07-17T22:48:27.422Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/『殺人パンツがせめてくる！』.md
+[2025-07-17T22:48:27.442Z] DEBUG:    ターゲット: https://comingbook.honzuki.jp/?detail=9784472060366
+[2025-07-17T22:48:27.633Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 『殺人パンツがせめてくる！』.md | ["Webmentionエンドポイントが見つかりません: https://comingbook.honzuki.jp/?detail=9784472060366 (エンドポイント未対応)"]
+[2025-07-17T22:48:33.642Z] INFO: 📤 clipping送信準備: 『社会と調査』(最新号)  社会調査協会.md
+[2025-07-17T22:48:33.645Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/『社会と調査』(最新号)  社会調査協会.md
+[2025-07-17T22:48:33.649Z] DEBUG:    ターゲット: https://jasr.or.jp/asr/new/
+[2025-07-17T22:48:35.152Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 『社会と調査』(最新号)  社会調査協会.md | ["Webmentionエンドポイントが見つかりません: https://jasr.or.jp/asr/new/ (エンドポイント未対応)"]
+[2025-07-17T22:48:41.171Z] INFO: 📤 clipping送信準備: 【Obsidian】Spaced Repetition の使い方 - Qiita.md
+[2025-07-17T22:48:41.173Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/【Obsidian】Spaced Repetition の使い方 - Qiita.md
+[2025-07-17T22:48:41.177Z] DEBUG:    ターゲット: https://qiita.com/P-man_Brown/items/76b3abe3f8d7a8ca0dee
+[2025-07-17T22:48:41.450Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 【Obsidian】Spaced Repetition の使い方 - Qiita.md | ["Webmentionエンドポイントが見つかりません: https://qiita.com/P-man_Brown/items/76b3abe3f8d7a8ca0dee (エンドポイント未対応)"]
+[2025-07-17T22:48:47.458Z] INFO: 📤 clipping送信準備: 【ポケスリ】料理レシピ一覧とおすすめ｜新レシピ掲載！【ポケモンスリープ】｜ゲームエイト.md
+[2025-07-17T22:48:47.461Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/【ポケスリ】料理レシピ一覧とおすすめ｜新レシピ掲載！【ポケモンスリープ】｜ゲームエイト.md
+[2025-07-17T22:48:47.469Z] DEBUG:    ターゲット: https://game8.jp/pokemonsleep/542649
+[2025-07-17T22:48:48.438Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 【ポケスリ】料理レシピ一覧とおすすめ｜新レシピ掲載！【ポケモンスリープ】｜ゲームエイト.md | ["Webmentionエンドポイントが見つかりません: https://game8.jp/pokemonsleep/542649 (エンドポイント未対応)"]
+[2025-07-17T22:48:54.611Z] INFO: 📤 clipping送信準備: 【鼎談】マルチスピーシーズ人類学の可能性（前編）／奥野克巳×近藤祉秋×箭内匡￼.md
+[2025-07-17T22:48:54.613Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/【鼎談】マルチスピーシーズ人類学の可能性（前編）／奥野克巳×近藤祉秋×箭内匡￼.md
+[2025-07-17T22:48:54.619Z] DEBUG:    ターゲット: https://www.ibunsha.co.jp/contents/multispecies05/
+[2025-07-17T22:48:58.614Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 【鼎談】マルチスピーシーズ人類学の可能性（前編）／奥野克巳×近藤祉秋×箭内匡￼.md | ["Webmentionエンドポイントが見つかりません: https://www.ibunsha.co.jp/contents/multispecies05/ (エンドポイント未対応)"]
+[2025-07-17T22:49:04.623Z] INFO: 📤 clipping送信準備: このブログがFediverseに対応しました.md
+[2025-07-17T22:49:04.625Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/このブログがFediverseに対応しました.md
+[2025-07-17T22:49:04.630Z] DEBUG:    ターゲット: https://blog.tyage.net/post/2023/2023-07-17-bridgy-fed/
+[2025-07-17T22:49:06.494Z] INFO: SUCCESS: clippingshareエントリ送信成功: このブログがFediverseに対応しました.md
+[2025-07-17T22:49:12.504Z] INFO: 📤 clipping送信準備: どうして働いていても本が読めるのか｜リー・ンゴ　Lee・Ngo.md
+[2025-07-17T22:49:12.506Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/どうして働いていても本が読めるのか｜リー・ンゴ　Lee・Ngo.md
+[2025-07-17T22:49:12.510Z] DEBUG:    ターゲット: https://note.com/kori52661/n/n216de0802c48?sub_rt=share_pw
+[2025-07-17T22:49:12.876Z] ERROR: FAILURE: clippingshareエントリ送信失敗: どうして働いていても本が読めるのか｜リー・ンゴ　Lee・Ngo.md | ["Webmentionエンドポイントが見つかりません: https://note.com/kori52661/n/n216de0802c48?sub_rt=share_pw (エンドポイント未対応)"]
+[2025-07-17T22:49:18.887Z] INFO: 📤 clipping送信準備: みじかい文の連続で文章をかかないといけない理由  Shiki’s weblog.md
+[2025-07-17T22:49:18.890Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/みじかい文の連続で文章をかかないといけない理由  Shiki’s weblog.md
+[2025-07-17T22:49:18.894Z] DEBUG:    ターゲット: https://shiki.esrille.com/2018/06/easy.html
+[2025-07-17T22:49:19.177Z] ERROR: FAILURE: clippingshareエントリ送信失敗: みじかい文の連続で文章をかかないといけない理由  Shiki’s weblog.md | ["Webmentionエンドポイントが見つかりません: https://shiki.esrille.com/2018/06/easy.html (エンドポイント未対応)"]
+[2025-07-17T22:49:25.195Z] INFO: 📤 clipping送信準備: アサド政権、深まる苦境　南部でも蜂起、主要都市の陥落相次ぐ：朝日新聞デジタル.md
+[2025-07-17T22:49:25.198Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/アサド政権、深まる苦境　南部でも蜂起、主要都市の陥落相次ぐ：朝日新聞デジタル.md
+[2025-07-17T22:49:25.202Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/ASSD73DF6SD7UHBI02BM.html?ptoken=01JEGZGGKAK56NF4THMY61JQGQ
+[2025-07-17T22:49:25.556Z] ERROR: FAILURE: clippingshareエントリ送信失敗: アサド政権、深まる苦境　南部でも蜂起、主要都市の陥落相次ぐ：朝日新聞デジタル.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSD73DF6SD7UHBI02BM.html?ptoken=01JEGZGGKAK56NF4THMY61JQGQ (エンドポイント未対応)"]
+[2025-07-17T22:49:31.562Z] INFO: 📤 clipping送信準備: イーロン・マスクら大富豪を英雄視するのは危険　ノーベル賞学者の警告.md
+[2025-07-17T22:49:31.565Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/イーロン・マスクら大富豪を英雄視するのは危険　ノーベル賞学者の警告.md
+[2025-07-17T22:49:31.570Z] DEBUG:    ターゲット: https://business.nikkei.com/atcl/gen/19/00087/121800419/?gift=8vIHoLnslgBqC6vlqZb%252FqgQ5FtJX49JWdA3SoIe%252FBgo%253D&n_cid=nbpnb_gift
+[2025-07-17T22:49:31.835Z] ERROR: FAILURE: clippingshareエントリ送信失敗: イーロン・マスクら大富豪を英雄視するのは危険　ノーベル賞学者の警告.md | ["Webmentionエンドポイントが見つかりません: https://business.nikkei.com/atcl/gen/19/00087/121800419/?gift=8vIHoLnslgBqC6vlqZb%252FqgQ5FtJX49JWdA3SoIe%252FBgo%253D&n_cid=nbpnb_gift (エンドポイント未対応)"]
+[2025-07-17T22:49:37.844Z] INFO: 📤 clipping送信準備: イーロン・マスク氏は西洋文明を「共感」から救いたい.md
+[2025-07-17T22:49:37.847Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/イーロン・マスク氏は西洋文明を「共感」から救いたい.md
+[2025-07-17T22:49:37.852Z] DEBUG:    ターゲット: https://www.cnn.co.jp/usa/35230176.html
+[2025-07-17T22:49:38.021Z] ERROR: FAILURE: clippingshareエントリ送信失敗: イーロン・マスク氏は西洋文明を「共感」から救いたい.md | ["Webmentionエンドポイントが見つかりません: https://www.cnn.co.jp/usa/35230176.html (エンドポイント未対応)"]
+[2025-07-17T22:49:44.037Z] INFO: 📤 clipping送信準備: ガーデニングが社会運動？　声を上げるのとは違う「静かさ」の意義：朝日新聞デジタル.md
+[2025-07-17T22:49:44.042Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/ガーデニングが社会運動？　声を上げるのとは違う「静かさ」の意義：朝日新聞デジタル.md
+[2025-07-17T22:49:44.048Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/ASSDQ7D8MSDQULLI00GM.html?ptoken=01JG3G4R2H4WBV3TQ57VRNBFJ1
+[2025-07-17T22:49:44.447Z] ERROR: FAILURE: clippingshareエントリ送信失敗: ガーデニングが社会運動？　声を上げるのとは違う「静かさ」の意義：朝日新聞デジタル.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDQ7D8MSDQULLI00GM.html?ptoken=01JG3G4R2H4WBV3TQ57VRNBFJ1 (エンドポイント未対応)"]
+[2025-07-17T22:49:50.462Z] INFO: 📤 clipping送信準備: ジェンダー・イデオロギーと闘う？　反トランスの大統領令を読み解く：朝日新聞.md
+[2025-07-17T22:49:50.464Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/ジェンダー・イデオロギーと闘う？　反トランスの大統領令を読み解く：朝日新聞.md
+[2025-07-17T22:49:50.469Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST1W2SB1T1WUTIL00XM.html?ptoken=01JJV7R66BFVY8S2SJ14H4W9MG
+[2025-07-17T22:49:50.782Z] ERROR: FAILURE: clippingshareエントリ送信失敗: ジェンダー・イデオロギーと闘う？　反トランスの大統領令を読み解く：朝日新聞.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST1W2SB1T1WUTIL00XM.html?ptoken=01JJV7R66BFVY8S2SJ14H4W9MG (エンドポイント未対応)"]
+[2025-07-17T22:49:56.787Z] INFO: 📤 clipping送信準備: デザインシステム｜デジタル庁.md
+[2025-07-17T22:49:56.789Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/デザインシステム｜デジタル庁.md
+[2025-07-17T22:49:56.794Z] DEBUG:    ターゲット: https://www.digital.go.jp/policies/servicedesign/designsystem
+[2025-07-17T22:49:56.968Z] ERROR: FAILURE: clippingshareエントリ送信失敗: デザインシステム｜デジタル庁.md | ["Webmentionエンドポイントが見つかりません: https://www.digital.go.jp/policies/servicedesign/designsystem (エンドポイント未対応)"]
+[2025-07-17T22:50:02.982Z] INFO: 📤 clipping送信準備: デジタルガーデンと個人サイトを育てること。  世界のねじを巻くラジオ.md
+[2025-07-17T22:50:02.985Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/デジタルガーデンと個人サイトを育てること。  世界のねじを巻くラジオ.md
+[2025-07-17T22:50:02.989Z] DEBUG:    ターゲット: https://nejimaki-radio.com/digital-garden-blog-indie-website-personal-internet/
+[2025-07-17T22:50:03.768Z] ERROR: FAILURE: clippingshareエントリ送信失敗: デジタルガーデンと個人サイトを育てること。  世界のねじを巻くラジオ.md | ["Webmentionエンドポイントが見つかりません: https://nejimaki-radio.com/digital-garden-blog-indie-website-personal-internet/ (エンドポイント未対応)"]
+[2025-07-17T22:50:09.783Z] INFO: 📤 clipping送信準備: デジタル庁デザインシステムβ版.md
+[2025-07-17T22:50:09.785Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/デジタル庁デザインシステムβ版.md
+[2025-07-17T22:50:09.790Z] DEBUG:    ターゲット: https://design.digital.go.jp/
+[2025-07-17T22:50:09.914Z] ERROR: FAILURE: clippingshareエントリ送信失敗: デジタル庁デザインシステムβ版.md | ["Webmentionエンドポイントが見つかりません: https://design.digital.go.jp/ (エンドポイント未対応)"]
+[2025-07-17T22:50:15.923Z] INFO: 📤 clipping送信準備: トラッドワイフ - Wikipedia.md
+[2025-07-17T22:50:15.925Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/トラッドワイフ - Wikipedia.md
+[2025-07-17T22:50:15.930Z] DEBUG:    ターゲット: https://ja.m.wikipedia.org/wiki/%E3%83%88%E3%83%A9%E3%83%83%E3%83%89%E3%83%AF%E3%82%A4%E3%83%95
+[2025-07-17T22:50:16.469Z] ERROR: FAILURE: clippingshareエントリ送信失敗: トラッドワイフ - Wikipedia.md | ["Webmentionエンドポイントが見つかりません: https://ja.m.wikipedia.org/wiki/%E3%83%88%E3%83%A9%E3%83%83%E3%83%89%E3%83%AF%E3%82%A4%E3%83%95 (エンドポイント未対応)"]
+[2025-07-17T22:50:22.483Z] INFO: 📤 clipping送信準備: トランプ2.0政権に内在する亀裂　テック派 vs MAGA派.md
+[2025-07-17T22:50:22.487Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/トランプ2.0政権に内在する亀裂　テック派 vs MAGA派.md
+[2025-07-17T22:50:22.492Z] DEBUG:    ターゲット: https://business.nikkei.com/atcl/NBD/19/world/00692/?gift=6ExlxXHrZebEblR5XB8j%252BZnt3tY4j3%252BIZ7JnB4QHOxQ%253D&n_cid=nbpnb_gift
+[2025-07-17T22:50:22.732Z] ERROR: FAILURE: clippingshareエントリ送信失敗: トランプ2.0政権に内在する亀裂　テック派 vs MAGA派.md | ["Webmentionエンドポイントが見つかりません: https://business.nikkei.com/atcl/NBD/19/world/00692/?gift=6ExlxXHrZebEblR5XB8j%252BZnt3tY4j3%252BIZ7JnB4QHOxQ%253D&n_cid=nbpnb_gift (エンドポイント未対応)"]
+[2025-07-17T22:50:28.748Z] INFO: 📤 clipping送信準備: ブックガイド2：再野生化（リワイルディング）について  生環境構築史.md
+[2025-07-17T22:50:28.751Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/ブックガイド2：再野生化（リワイルディング）について  生環境構築史.md
+[2025-07-17T22:50:28.755Z] DEBUG:    ターゲット: https://hbh.center/05-issue_04/
+[2025-07-17T22:50:29.401Z] ERROR: FAILURE: clippingshareエントリ送信失敗: ブックガイド2：再野生化（リワイルディング）について  生環境構築史.md | ["Webmentionエンドポイントが見つかりません: https://hbh.center/05-issue_04/ (エンドポイント未対応)"]
+[2025-07-17T22:50:35.417Z] INFO: 📤 clipping送信準備: ポップヒストリアンは、いかにして〈未来擬史〉をしたためたのか？──『ホモ・デウス』書評（評者：池田純一）｜Web河出.md
+[2025-07-17T22:50:35.420Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/ポップヒストリアンは、いかにして〈未来擬史〉をしたためたのか？──『ホモ・デウス』書評（評者：池田純一）｜Web河出.md
+[2025-07-17T22:50:35.424Z] DEBUG:    ターゲット: https://web.kawade.co.jp/bungei/2313/
+[2025-07-17T22:50:36.955Z] ERROR: FAILURE: clippingshareエントリ送信失敗: ポップヒストリアンは、いかにして〈未来擬史〉をしたためたのか？──『ホモ・デウス』書評（評者：池田純一）｜Web河出.md | ["Webmentionエンドポイントが見つかりません: https://web.kawade.co.jp/bungei/2313/ (エンドポイント未対応)"]
+[2025-07-17T22:50:42.972Z] INFO: 📤 clipping送信準備: マイクロブログの思想をまとめた「Indie Microblogging」を読んだ感想  世界のねじを巻くラジオ.md
+[2025-07-17T22:50:42.975Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/マイクロブログの思想をまとめた「Indie Microblogging」を読んだ感想  世界のねじを巻くラジオ.md
+[2025-07-17T22:50:42.979Z] DEBUG:    ターゲット: https://nejimaki-radio.com/micro-blog-book-philosophy-fediverse-activitypub/
+[2025-07-17T22:50:43.665Z] ERROR: FAILURE: clippingshareエントリ送信失敗: マイクロブログの思想をまとめた「Indie Microblogging」を読んだ感想  世界のねじを巻くラジオ.md | ["Webmentionエンドポイントが見つかりません: https://nejimaki-radio.com/micro-blog-book-philosophy-fediverse-activitypub/ (エンドポイント未対応)"]
+[2025-07-17T22:50:49.671Z] INFO: 📤 clipping送信準備: マスク氏らによる「政府効率化」のデータ閲覧を差し止め　米連邦地裁：朝日新聞.md
+[2025-07-17T22:50:49.674Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/マスク氏らによる「政府効率化」のデータ閲覧を差し止め　米連邦地裁：朝日新聞.md
+[2025-07-17T22:50:49.678Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST2902JCT29UHBI001M.html?ptoken=01JKMACBEP3JTF72C380W084BR
+[2025-07-17T22:50:50.117Z] ERROR: FAILURE: clippingshareエントリ送信失敗: マスク氏らによる「政府効率化」のデータ閲覧を差し止め　米連邦地裁：朝日新聞.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST2902JCT29UHBI001M.html?ptoken=01JKMACBEP3JTF72C380W084BR (エンドポイント未対応)"]
+[2025-07-17T22:50:56.134Z] INFO: 📤 clipping送信準備: リング型スケジューラーを複数年分連結して便利に使う：ミドリ プラススタンドダイアリー - tadachi-net 出張所.md
+[2025-07-17T22:50:56.137Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/リング型スケジューラーを複数年分連結して便利に使う：ミドリ プラススタンドダイアリー - tadachi-net 出張所.md
+[2025-07-17T22:50:56.142Z] DEBUG:    ターゲット: https://tadachi.txt-nifty.com/blog/2023/11/post-039217.html
+[2025-07-17T22:50:56.496Z] ERROR: FAILURE: clippingshareエントリ送信失敗: リング型スケジューラーを複数年分連結して便利に使う：ミドリ プラススタンドダイアリー - tadachi-net 出張所.md | ["Webmentionエンドポイントが見つかりません: https://tadachi.txt-nifty.com/blog/2023/11/post-039217.html (エンドポイント未対応)"]
+[2025-07-17T22:51:02.513Z] INFO: 📤 clipping送信準備: ロシア宇宙主義 - Wikipedia.md
+[2025-07-17T22:51:02.516Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/ロシア宇宙主義 - Wikipedia.md
+[2025-07-17T22:51:02.522Z] DEBUG:    ターゲット: https://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%B7%E3%82%A2%E5%AE%87%E5%AE%99%E4%B8%BB%E7%BE%A9
+[2025-07-17T22:51:03.773Z] ERROR: FAILURE: clippingshareエントリ送信失敗: ロシア宇宙主義 - Wikipedia.md | ["Webmentionエンドポイントが見つかりません: https://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%B7%E3%82%A2%E5%AE%87%E5%AE%99%E4%B8%BB%E7%BE%A9 (エンドポイント未対応)"]
+[2025-07-17T22:51:09.825Z] INFO: 📤 clipping送信準備: 一九六八年と宗教 - 株式会社　人文書院.md
+[2025-07-17T22:51:09.855Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/一九六八年と宗教 - 株式会社　人文書院.md
+[2025-07-17T22:51:09.876Z] DEBUG:    ターゲット: https://www.jimbunshoin.co.jp/book/b10105730.html
+[2025-07-17T22:51:10.369Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 一九六八年と宗教 - 株式会社　人文書院.md | ["Webmentionエンドポイントが見つかりません: https://www.jimbunshoin.co.jp/book/b10105730.html (エンドポイント未対応)"]
+[2025-07-17T22:51:16.371Z] INFO: 📤 clipping送信準備: 上田淳子さんも最初はびっくり！ フランスで覚えた「キノコの最強の調理法」はこれ（上田 淳子）.md
+[2025-07-17T22:51:16.376Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/上田淳子さんも最初はびっくり！ フランスで覚えた「キノコの最強の調理法」はこれ（上田 淳子）.md
+[2025-07-17T22:51:16.385Z] DEBUG:    ターゲット: https://gendai.media/articles/-/141776?page=1&imp=0
+[2025-07-17T22:51:17.466Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 上田淳子さんも最初はびっくり！ フランスで覚えた「キノコの最強の調理法」はこれ（上田 淳子）.md | ["Webmentionエンドポイントが見つかりません: https://gendai.media/articles/-/141776?page=1&imp=0 (エンドポイント未対応)"]
+[2025-07-17T22:51:23.523Z] INFO: 📤 clipping送信準備: 仕事の『点』も『線』も管理出来て便利な机上に立てて使うブロックマンスリー＆プロジェクト管理：ミドリ プラススタンドダイアリー - tadachi-net 出張所.md
+[2025-07-17T22:51:23.528Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/仕事の『点』も『線』も管理出来て便利な机上に立てて使うブロックマンスリー＆プロジェクト管理：ミドリ プラススタンドダイアリー - tadachi-net 出張所.md
+[2025-07-17T22:51:23.533Z] DEBUG:    ターゲット: https://tadachi.txt-nifty.com/blog/2022/10/post-973c73.html
+[2025-07-17T22:51:23.689Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 仕事の『点』も『線』も管理出来て便利な机上に立てて使うブロックマンスリー＆プロジェクト管理：ミドリ プラススタンドダイアリー - tadachi-net 出張所.md | ["Webmentionエンドポイントが見つかりません: https://tadachi.txt-nifty.com/blog/2022/10/post-973c73.html (エンドポイント未対応)"]
+[2025-07-17T22:51:29.697Z] INFO: 📤 clipping送信準備: 伊藤詩織さんアカデミー賞候補作　日本未公開のまま、2日の授賞式へ：朝日新聞.md
+[2025-07-17T22:51:29.703Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/伊藤詩織さんアカデミー賞候補作　日本未公開のまま、2日の授賞式へ：朝日新聞.md
+[2025-07-17T22:51:29.710Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST2W26M2T2WUHBI00VM.html?ptoken=01JNFCK1XACTB86NRK8C1M1F7T
+[2025-07-17T22:51:30.231Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 伊藤詩織さんアカデミー賞候補作　日本未公開のまま、2日の授賞式へ：朝日新聞.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST2W26M2T2WUHBI00VM.html?ptoken=01JNFCK1XACTB86NRK8C1M1F7T (エンドポイント未対応)"]
+[2025-07-17T22:51:36.368Z] INFO: 📤 clipping送信準備: 兵庫前県議への批判投稿、13アカウントから　立花氏が2番目の多さ：朝日新聞.md
+[2025-07-17T22:51:36.560Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/兵庫前県議への批判投稿、13アカウントから　立花氏が2番目の多さ：朝日新聞.md
+[2025-07-17T22:51:36.612Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST3F1VVNT3FPTIL00MM.html?ptoken=01JQ0CZJS6FB5FA84GB6W5QR72
+[2025-07-17T22:51:37.025Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 兵庫前県議への批判投稿、13アカウントから　立花氏が2番目の多さ：朝日新聞.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3F1VVNT3FPTIL00MM.html?ptoken=01JQ0CZJS6FB5FA84GB6W5QR72 (エンドポイント未対応)"]
+[2025-07-17T22:51:43.038Z] INFO: 📤 clipping送信準備: 右傾化する億万長者たち　より良い世界に戻る道は　NYTコラム：朝日新聞デジタル.md
+[2025-07-17T22:51:43.040Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/右傾化する億万長者たち　より良い世界に戻る道は　NYTコラム：朝日新聞デジタル.md
+[2025-07-17T22:51:43.046Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/ASSDM2199SDMUHBI00LM.html?ptoken=01JFPV64TCM3ZPEY6S6PM25B3J
+[2025-07-17T22:51:43.451Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 右傾化する億万長者たち　より良い世界に戻る道は　NYTコラム：朝日新聞デジタル.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDM2199SDMUHBI00LM.html?ptoken=01JFPV64TCM3ZPEY6S6PM25B3J (エンドポイント未対応)"]
+[2025-07-17T22:51:49.457Z] INFO: 📤 clipping送信準備: 図書館ＶＳ．出版界にデータの一石　「議論の起点になれば」　新刊売上部数や貸出状況…関係を分析：朝日新聞デジタル.md
+[2025-07-17T22:51:49.462Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/図書館ＶＳ．出版界にデータの一石　「議論の起点になれば」　新刊売上部数や貸出状況…関係を分析：朝日新聞デジタル.md
+[2025-07-17T22:51:49.470Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/DA3S16085863.html?ptoken=01JE2PTPB3S9MJT78MBFBCMY99
+[2025-07-17T22:51:49.825Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 図書館ＶＳ．出版界にデータの一石　「議論の起点になれば」　新刊売上部数や貸出状況…関係を分析：朝日新聞デジタル.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16085863.html?ptoken=01JE2PTPB3S9MJT78MBFBCMY99 (エンドポイント未対応)"]
+[2025-07-17T22:51:55.833Z] INFO: 📤 clipping送信準備: 土砂搬出現場で死亡事故、崩れた暗黙の了解　ダンプ運転手が語る予兆：朝日新聞デジタル.md
+[2025-07-17T22:51:55.838Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/土砂搬出現場で死亡事故、崩れた暗黙の了解　ダンプ運転手が語る予兆：朝日新聞デジタル.md
+[2025-07-17T22:51:55.850Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/ASSDW3584SDWUTIL00XM.html?ptoken=01JG63Z57EDD7Y6TB1C5YTCYTY
+[2025-07-17T22:51:56.239Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 土砂搬出現場で死亡事故、崩れた暗黙の了解　ダンプ運転手が語る予兆：朝日新聞デジタル.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDW3584SDWUTIL00XM.html?ptoken=01JG63Z57EDD7Y6TB1C5YTCYTY (エンドポイント未対応)"]
+[2025-07-17T22:52:02.251Z] INFO: 📤 clipping送信準備: 子どもではなく類縁関係をつくろう──サイボーグ、伴侶種、堆肥体、クトゥルー新世｜ダナ・ハラウェイが次なる千年紀に向けて語る.md
+[2025-07-17T22:52:02.253Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/子どもではなく類縁関係をつくろう──サイボーグ、伴侶種、堆肥体、クトゥルー新世｜ダナ・ハラウェイが次なる千年紀に向けて語る.md
+[2025-07-17T22:52:02.257Z] DEBUG:    ターゲット: https://hagamag.com/uncategory/4293
+[2025-07-17T22:52:02.924Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 子どもではなく類縁関係をつくろう──サイボーグ、伴侶種、堆肥体、クトゥルー新世｜ダナ・ハラウェイが次なる千年紀に向けて語る.md | ["Webmentionエンドポイントが見つかりません: https://hagamag.com/uncategory/4293 (エンドポイント未対応)"]
+[2025-07-17T22:52:08.935Z] INFO: 📤 clipping送信準備: 年末年始の“お取り寄せ”スタイリスト・大草直子さんが選ぶ、衝撃のおいしさでリピート中の「ドレッシング」や、最高においしい「湯豆腐」セットなど - 天然生活web.md
+[2025-07-17T22:52:08.939Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/年末年始の“お取り寄せ”スタイリスト・大草直子さんが選ぶ、衝撃のおいしさでリピート中の「ドレッシング」や、最高においしい「湯豆腐」セットなど - 天然生活web.md
+[2025-07-17T22:52:08.944Z] DEBUG:    ターゲット: https://tennenseikatsu.jp/_ct/17738586
+[2025-07-17T22:52:09.417Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 年末年始の“お取り寄せ”スタイリスト・大草直子さんが選ぶ、衝撃のおいしさでリピート中の「ドレッシング」や、最高においしい「湯豆腐」セットなど - 天然生活web.md | ["Webmentionエンドポイントが見つかりません: https://tennenseikatsu.jp/_ct/17738586 (エンドポイント未対応)"]
+[2025-07-17T22:52:15.424Z] INFO: 📤 clipping送信準備: 広がる「財務省解体」のデモ　SNSに流れる言説に駆り立てられて：朝日新聞 1.md
+[2025-07-17T22:52:15.428Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/広がる「財務省解体」のデモ　SNSに流れる言説に駆り立てられて：朝日新聞 1.md
+[2025-07-17T22:52:15.432Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST3G1V44T3GPQIP03WM.html?ptoken=01JPC59QE9Z68JVQFDKB514GB9
+[2025-07-17T22:52:15.924Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 広がる「財務省解体」のデモ　SNSに流れる言説に駆り立てられて：朝日新聞 1.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3G1V44T3GPQIP03WM.html?ptoken=01JPC59QE9Z68JVQFDKB514GB9 (エンドポイント未対応)"]
+[2025-07-17T22:52:21.921Z] INFO: 📤 clipping送信準備: 広がる「財務省解体」のデモ　SNSに流れる言説に駆り立てられて：朝日新聞.md
+[2025-07-17T22:52:21.924Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/広がる「財務省解体」のデモ　SNSに流れる言説に駆り立てられて：朝日新聞.md
+[2025-07-17T22:52:21.928Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST3G1V44T3GPQIP03WM.html?ptoken=01JPAJNJ8HVYBG872QCZ2016XP
+[2025-07-17T22:52:22.331Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 広がる「財務省解体」のデモ　SNSに流れる言説に駆り立てられて：朝日新聞.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3G1V44T3GPQIP03WM.html?ptoken=01JPAJNJ8HVYBG872QCZ2016XP (エンドポイント未対応)"]
+[2025-07-17T22:52:28.347Z] INFO: 📤 clipping送信準備: 教養主義はどこへ消えた？　その正体は男子の「純粋さ」競争だった：朝日新聞.md
+[2025-07-17T22:52:28.351Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/教養主義はどこへ消えた？　その正体は男子の「純粋さ」競争だった：朝日新聞.md
+[2025-07-17T22:52:28.357Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST3X2GH7T3XUPQJ017M.html?ptoken=01JR1TAWNN2W41XHE8GAK25BEH
+[2025-07-17T22:52:28.696Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 教養主義はどこへ消えた？　その正体は男子の「純粋さ」競争だった：朝日新聞.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3X2GH7T3XUPQJ017M.html?ptoken=01JR1TAWNN2W41XHE8GAK25BEH (エンドポイント未対応)"]
+[2025-07-17T22:52:34.703Z] INFO: 📤 clipping送信準備: 斎藤知事を押し上げた「切り抜き動画」の高揚感　変わる選挙の風景：朝日新聞デジタル.md
+[2025-07-17T22:52:34.713Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/斎藤知事を押し上げた「切り抜き動画」の高揚感　変わる選挙の風景：朝日新聞デジタル.md
+[2025-07-17T22:52:34.718Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/ASSDH05R8SDHUTIL01GM.html?ptoken=01JF9SC3CEDRGVB5A98HF09NQT
+[2025-07-17T22:52:35.054Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 斎藤知事を押し上げた「切り抜き動画」の高揚感　変わる選挙の風景：朝日新聞デジタル.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDH05R8SDHUTIL01GM.html?ptoken=01JF9SC3CEDRGVB5A98HF09NQT (エンドポイント未対応)"]
+[2025-07-17T22:52:41.065Z] INFO: 📤 clipping送信準備: 料理 - ポケモンスリープ攻略・検証 Wiki.md
+[2025-07-17T22:52:41.068Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/料理 - ポケモンスリープ攻略・検証 Wiki.md
+[2025-07-17T22:52:41.073Z] DEBUG:    ターゲット: https://wikiwiki.jp/poke_sleep/%E6%96%99%E7%90%86#k850b592
+[2025-07-17T22:52:41.271Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 料理 - ポケモンスリープ攻略・検証 Wiki.md | ["Webmentionエンドポイントが見つかりません: https://wikiwiki.jp/poke_sleep/%E6%96%99%E7%90%86#k850b592 (エンドポイント未対応)"]
+[2025-07-17T22:52:47.285Z] INFO: 📤 clipping送信準備: 料理レシピの一覧 - ポケモンスリープ攻略・検証 Wiki.md
+[2025-07-17T22:52:47.289Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/料理レシピの一覧 - ポケモンスリープ攻略・検証 Wiki.md
+[2025-07-17T22:52:47.296Z] DEBUG:    ターゲット: https://wikiwiki.jp/poke_sleep/%E6%96%99%E7%90%86/%E3%83%AC%E3%82%B7%E3%83%94%E3%81%AE%E4%B8%80%E8%A6%A7
+[2025-07-17T22:52:47.358Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 料理レシピの一覧 - ポケモンスリープ攻略・検証 Wiki.md | ["Webmentionエンドポイントが見つかりません: https://wikiwiki.jp/poke_sleep/%E6%96%99%E7%90%86/%E3%83%AC%E3%82%B7%E3%83%94%E3%81%AE%E4%B8%80%E8%A6%A7 (エンドポイント未対応)"]
+[2025-07-17T22:52:53.368Z] INFO: 📤 clipping送信準備: 日本人は「同情心が低い」　困っているのは「自業自得」と考える心理：朝日新聞.md
+[2025-07-17T22:52:53.370Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/日本人は「同情心が低い」　困っているのは「自業自得」と考える心理：朝日新聞.md
+[2025-07-17T22:52:53.374Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST3V20ZRT3VULLI004M.html?ptoken=01JQKH9D2R1648TQS7THF9FG7X
+[2025-07-17T22:52:53.655Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 日本人は「同情心が低い」　困っているのは「自業自得」と考える心理：朝日新聞.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3V20ZRT3VULLI004M.html?ptoken=01JQKH9D2R1648TQS7THF9FG7X (エンドポイント未対応)"]
+[2025-07-17T22:52:59.672Z] INFO: 📤 clipping送信準備: 日本人は同情や共感が低く支援を求めにくい　名古屋大学が文化的背景を指摘.md
+[2025-07-17T22:52:59.676Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/日本人は同情や共感が低く支援を求めにくい　名古屋大学が文化的背景を指摘.md
+[2025-07-17T22:52:59.681Z] DEBUG:    ターゲット: https://univ-journal.jp/250863/
+[2025-07-17T22:53:00.579Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 日本人は同情や共感が低く支援を求めにくい　名古屋大学が文化的背景を指摘.md | ["Webmentionエンドポイントが見つかりません: https://univ-journal.jp/250863/ (エンドポイント未対応)"]
+[2025-07-17T22:53:06.591Z] INFO: 📤 clipping送信準備: 昭和軽薄体 - Wikipedia.md
+[2025-07-17T22:53:06.593Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/昭和軽薄体 - Wikipedia.md
+[2025-07-17T22:53:06.598Z] DEBUG:    ターゲット: https://ja.m.wikipedia.org/wiki/%E6%98%AD%E5%92%8C%E8%BB%BD%E8%96%84%E4%BD%93
+[2025-07-17T22:53:07.474Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 昭和軽薄体 - Wikipedia.md | ["Webmentionエンドポイントが見つかりません: https://ja.m.wikipedia.org/wiki/%E6%98%AD%E5%92%8C%E8%BB%BD%E8%96%84%E4%BD%93 (エンドポイント未対応)"]
+[2025-07-17T22:53:13.490Z] INFO: 📤 clipping送信準備: 根深い「女嫌」、見えた韓国社会の溝　崔誠姫・大阪産業大准教授：朝日新聞デジタル.md
+[2025-07-17T22:53:13.493Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/根深い「女嫌」、見えた韓国社会の溝　崔誠姫・大阪産業大准教授：朝日新聞デジタル.md
+[2025-07-17T22:53:13.499Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/DA3S16126258.html?ptoken=01JHKQKNSQ956QPT8FNC1H67RK
+[2025-07-17T22:53:13.806Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 根深い「女嫌」、見えた韓国社会の溝　崔誠姫・大阪産業大准教授：朝日新聞デジタル.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16126258.html?ptoken=01JHKQKNSQ956QPT8FNC1H67RK (エンドポイント未対応)"]
+[2025-07-17T22:53:19.817Z] INFO: 📤 clipping送信準備: 梅棹忠夫さんの文章作法をもとにした日本語スタイルガイド  Shiki’s weblog.md
+[2025-07-17T22:53:19.870Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/梅棹忠夫さんの文章作法をもとにした日本語スタイルガイド  Shiki’s weblog.md
+[2025-07-17T22:53:19.873Z] DEBUG:    ターゲット: https://shiki.esrille.com/2022/06/rules.html
+[2025-07-17T22:53:20.226Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 梅棹忠夫さんの文章作法をもとにした日本語スタイルガイド  Shiki’s weblog.md | ["Webmentionエンドポイントが見つかりません: https://shiki.esrille.com/2022/06/rules.html (エンドポイント未対応)"]
+[2025-07-17T22:53:26.260Z] INFO: 📤 clipping送信準備: 歴博の研究者が語るデジタル史料と歴史学　膨大な分析、AIと協働：朝日新聞.md
+[2025-07-17T22:53:26.341Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/歴博の研究者が語るデジタル史料と歴史学　膨大な分析、AIと協働：朝日新聞.md
+[2025-07-17T22:53:26.548Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST3P3CY0T3PUPQJ003M.html?ptoken=01JQZBYCF5M4X2AAH15GEGZS28
+[2025-07-17T22:53:26.843Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 歴博の研究者が語るデジタル史料と歴史学　膨大な分析、AIと協働：朝日新聞.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3P3CY0T3PUPQJ003M.html?ptoken=01JQZBYCF5M4X2AAH15GEGZS28 (エンドポイント未対応)"]
+[2025-07-17T22:53:32.862Z] INFO: 📤 clipping送信準備: 気候危機訴える名画襲撃は「表現の自由」　活動家に無罪　パリ裁判所：朝日新聞デジタル.md
+[2025-07-17T22:53:32.964Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/気候危機訴える名画襲撃は「表現の自由」　活動家に無罪　パリ裁判所：朝日新聞デジタル.md
+[2025-07-17T22:53:33.054Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST1P7WSPT1PUHBI007M.html?ptoken=01JJ8XR5GVMSCKWF4VBT3YRSKT
+[2025-07-17T22:53:33.440Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 気候危機訴える名画襲撃は「表現の自由」　活動家に無罪　パリ裁判所：朝日新聞デジタル.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST1P7WSPT1PUHBI007M.html?ptoken=01JJ8XR5GVMSCKWF4VBT3YRSKT (エンドポイント未対応)"]
+[2025-07-17T22:53:39.457Z] INFO: 📤 clipping送信準備: 渋谷が文化的廃虚に？再開発で若者散るリスク　識者が説く脱・車社会：朝日新聞デジタル.md
+[2025-07-17T22:53:39.460Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/渋谷が文化的廃虚に？再開発で若者散るリスク　識者が説く脱・車社会：朝日新聞デジタル.md
+[2025-07-17T22:53:39.468Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/ASSDR4FNWSDRUCVL009M.html?ptoken=01JGQSHA31FS2F5QZNNWY2AYSB
+[2025-07-17T22:53:39.925Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 渋谷が文化的廃虚に？再開発で若者散るリスク　識者が説く脱・車社会：朝日新聞デジタル.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDR4FNWSDRUCVL009M.html?ptoken=01JGQSHA31FS2F5QZNNWY2AYSB (エンドポイント未対応)"]
+[2025-07-17T22:53:45.936Z] INFO: 📤 clipping送信準備: 牛肉の旨味が溶け出したボルシチ  【公式】dancyu (ダンチュウ).md
+[2025-07-17T22:53:45.939Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/牛肉の旨味が溶け出したボルシチ  【公式】dancyu (ダンチュウ).md
+[2025-07-17T22:53:45.944Z] DEBUG:    ターゲット: https://dancyu.jp/recipe/2022_00006408.html
+[2025-07-17T22:53:46.133Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 牛肉の旨味が溶け出したボルシチ  【公式】dancyu (ダンチュウ).md | ["Webmentionエンドポイントが見つかりません: https://dancyu.jp/recipe/2022_00006408.html (エンドポイント未対応)"]
+[2025-07-17T22:53:52.139Z] INFO: 📤 clipping送信準備: 現代哲学の研究に哲学史は必要なのか - 研究日誌.md
+[2025-07-17T22:53:52.141Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/現代哲学の研究に哲学史は必要なのか - 研究日誌.md
+[2025-07-17T22:53:52.148Z] DEBUG:    ターゲット: https://uemurag.hatenablog.jp/entry/2022/09/24/075600
+[2025-07-17T22:53:52.534Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 現代哲学の研究に哲学史は必要なのか - 研究日誌.md | ["Webmentionエンドポイントが見つかりません: https://uemurag.hatenablog.jp/entry/2022/09/24/075600 (エンドポイント未対応)"]
+[2025-07-17T22:53:58.543Z] INFO: 📤 clipping送信準備: 生物多様性を腑分けする  なぜ人は自然を守りたいのか？  深野祐也  WEBみすず.md
+[2025-07-17T22:53:58.546Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/生物多様性を腑分けする  なぜ人は自然を守りたいのか？  深野祐也  WEBみすず.md
+[2025-07-17T22:53:58.550Z] DEBUG:    ターゲット: https://magazine.msz.co.jp/series/evolution-ecology/1/
+[2025-07-17T22:53:58.860Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 生物多様性を腑分けする  なぜ人は自然を守りたいのか？  深野祐也  WEBみすず.md | ["Webmentionエンドポイントが見つかりません: https://magazine.msz.co.jp/series/evolution-ecology/1/ (エンドポイント未対応)"]
+[2025-07-17T22:54:04.871Z] INFO: 📤 clipping送信準備: 社会構築主義以降の社会記述法　ストラザーン『部分的つながり』に見るハラウェイの可能性について - ポストフェミニズムに関するブログ.md
+[2025-07-17T22:54:04.875Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/社会構築主義以降の社会記述法　ストラザーン『部分的つながり』に見るハラウェイの可能性について - ポストフェミニズムに関するブログ.md
+[2025-07-17T22:54:04.879Z] DEBUG:    ターゲット: https://ytakahashi0505.hatenablog.com/entry/2019/09/05/183654
+[2025-07-17T22:54:05.349Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 社会構築主義以降の社会記述法　ストラザーン『部分的つながり』に見るハラウェイの可能性について - ポストフェミニズムに関するブログ.md | ["Webmentionエンドポイントが見つかりません: https://ytakahashi0505.hatenablog.com/entry/2019/09/05/183654 (エンドポイント未対応)"]
+[2025-07-17T22:54:11.355Z] INFO: 📤 clipping送信準備: 義実家に行かず書店で過ごす年始 あえて三が日に営業する店主の思い：朝日新聞デジタル.md
+[2025-07-17T22:54:11.374Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/義実家に行かず書店で過ごす年始 あえて三が日に営業する店主の思い：朝日新聞デジタル.md
+[2025-07-17T22:54:11.393Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/ASSD40QT1SD4UTIL02CM.html?ptoken=01JGK8NT4GKZ9HP3MREE65MRTD
+[2025-07-17T22:54:11.767Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 義実家に行かず書店で過ごす年始 あえて三が日に営業する店主の思い：朝日新聞デジタル.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSD40QT1SD4UTIL02CM.html?ptoken=01JGK8NT4GKZ9HP3MREE65MRTD (エンドポイント未対応)"]
+[2025-07-17T22:54:17.784Z] INFO: 📤 clipping送信準備: 読書記録：“Make Kin Not Babies!（赤ん坊でなく類縁関係をつくろう！）”　ハラウェイの思想 - ルジャンドルの読書記録.md
+[2025-07-17T22:54:17.796Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/読書記録：“Make Kin Not Babies!（赤ん坊でなく類縁関係をつくろう！）”　ハラウェイの思想 - ルジャンドルの読書記録.md
+[2025-07-17T22:54:17.801Z] DEBUG:    ターゲット: https://nattogohan-suki.hatenablog.com/entry/2019/11/08/125903
+[2025-07-17T22:54:18.144Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 読書記録：“Make Kin Not Babies!（赤ん坊でなく類縁関係をつくろう！）”　ハラウェイの思想 - ルジャンドルの読書記録.md | ["Webmentionエンドポイントが見つかりません: https://nattogohan-suki.hatenablog.com/entry/2019/11/08/125903 (エンドポイント未対応)"]
+[2025-07-17T22:54:24.162Z] INFO: 📤 clipping送信準備: 調査で見えてきた斎藤氏支持する心理　見逃されてきた「常民」的判断：朝日新聞デジタル.md
+[2025-07-17T22:54:24.178Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/調査で見えてきた斎藤氏支持する心理　見逃されてきた「常民」的判断：朝日新聞デジタル.md
+[2025-07-17T22:54:24.282Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/ASSDD1VSLSDDUCVL00ZM.html?ptoken=01JJ15MT0KXD1ZY6T1ZJ25SN7R
+[2025-07-17T22:54:24.826Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 調査で見えてきた斎藤氏支持する心理　見逃されてきた「常民」的判断：朝日新聞デジタル.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDD1VSLSDDUCVL00ZM.html?ptoken=01JJ15MT0KXD1ZY6T1ZJ25SN7R (エンドポイント未対応)"]
+[2025-07-17T22:54:30.841Z] INFO: 📤 clipping送信準備: 闇バイトに奪われていく若者たち　社会が育てた都合のいい労働者？：朝日新聞デジタル 1.md
+[2025-07-17T22:54:30.843Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/闇バイトに奪われていく若者たち　社会が育てた都合のいい労働者？：朝日新聞デジタル 1.md
+[2025-07-17T22:54:30.849Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM
+[2025-07-17T22:54:31.153Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 闇バイトに奪われていく若者たち　社会が育てた都合のいい労働者？：朝日新聞デジタル 1.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM (エンドポイント未対応)"]
+[2025-07-17T22:54:37.167Z] INFO: 📤 clipping送信準備: 闇バイトに奪われていく若者たち　社会が育てた都合のいい労働者？：朝日新聞デジタル.md
+[2025-07-17T22:54:37.170Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/闇バイトに奪われていく若者たち　社会が育てた都合のいい労働者？：朝日新聞デジタル.md
+[2025-07-17T22:54:37.175Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM
+[2025-07-17T22:54:37.439Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 闇バイトに奪われていく若者たち　社会が育てた都合のいい労働者？：朝日新聞デジタル.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM (エンドポイント未対応)"]
+[2025-07-17T22:54:43.450Z] INFO: 📤 clipping送信準備: 📘Dashboard++で魅力的なホームページをつくろう！.md
+[2025-07-17T22:54:43.453Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/📘Dashboard++で魅力的なホームページをつくろう！.md
+[2025-07-17T22:54:43.457Z] DEBUG:    ターゲット: https://masaki39.github.io/%F0%9F%93%98Dashboard++%E3%81%A7%E9%AD%85%E5%8A%9B%E7%9A%84%E3%81%AA%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8D%E3%81%86%EF%BC%81
+[2025-07-17T22:54:43.718Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 📘Dashboard++で魅力的なホームページをつくろう！.md | ["Webmentionエンドポイントが見つかりません: https://masaki39.github.io/%F0%9F%93%98Dashboard++%E3%81%A7%E9%AD%85%E5%8A%9B%E7%9A%84%E3%81%AA%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8D%E3%81%86%EF%BC%81 (エンドポイント未対応)"]
+[2025-07-17T22:54:49.727Z] INFO: 📤 clipping送信準備: 📘【連載】ホームページを作ろう(2).md
+[2025-07-17T22:54:49.730Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/📘【連載】ホームページを作ろう(2).md
+[2025-07-17T22:54:49.737Z] DEBUG:    ターゲット: https://masaki39.github.io/%F0%9F%93%98%E3%80%90%E9%80%A3%E8%BC%89%E3%80%91%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E4%BD%9C%E3%82%8D%E3%81%86(2)
+[2025-07-17T22:54:49.945Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 📘【連載】ホームページを作ろう(2).md | ["Webmentionエンドポイントが見つかりません: https://masaki39.github.io/%F0%9F%93%98%E3%80%90%E9%80%A3%E8%BC%89%E3%80%91%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E4%BD%9C%E3%82%8D%E3%81%86(2) (エンドポイント未対応)"]
+[2025-07-17T22:54:55.956Z] INFO: 📤 clipping送信準備: （憲法季評）手続き軽視の態度、生まれる分断　「お茶の間の正義」社会の昏さ　安藤馨：朝日新聞.md
+[2025-07-17T22:54:55.959Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/（憲法季評）手続き軽視の態度、生まれる分断　「お茶の間の正義」社会の昏さ　安藤馨：朝日新聞.md
+[2025-07-17T22:54:55.963Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/DA3S16148039.html?ptoken=01JKY7TQQ2N2JPFC5TF5Y8TGE4
+[2025-07-17T22:54:56.242Z] ERROR: FAILURE: clippingshareエントリ送信失敗: （憲法季評）手続き軽視の態度、生まれる分断　「お茶の間の正義」社会の昏さ　安藤馨：朝日新聞.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16148039.html?ptoken=01JKY7TQQ2N2JPFC5TF5Y8TGE4 (エンドポイント未対応)"]
+[2025-07-17T22:55:02.256Z] INFO: 📤 clipping送信準備: （論壇時評）不確実な未来に耐える　過去に軸を置き、今を捉え直す　政治学者・宇野重規：朝日新聞デジタル.md
+[2025-07-17T22:55:02.258Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/（論壇時評）不確実な未来に耐える　過去に軸を置き、今を捉え直す　政治学者・宇野重規：朝日新聞デジタル.md
+[2025-07-17T22:55:02.263Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/DA3S16114429.html?ptoken=01JFZWH89WYECA07787RSW0659
+[2025-07-17T22:55:02.641Z] ERROR: FAILURE: clippingshareエントリ送信失敗: （論壇時評）不確実な未来に耐える　過去に軸を置き、今を捉え直す　政治学者・宇野重規：朝日新聞デジタル.md | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16114429.html?ptoken=01JFZWH89WYECA07787RSW0659 (エンドポイント未対応)"]
+[2025-07-17T22:55:19.767Z] INFO: 💾 履歴保存完了
+[2025-07-17T22:55:19.769Z] INFO: 🎉 Webmention送信完了: 2件送信
+[2025-07-17T23:07:26.660Z] INFO: Webmention送信スクリプト開始
+[2025-07-17T23:07:26.663Z] INFO: モード: 本番送信
+[2025-07-17T23:07:26.672Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-17T23:07:26.674Z] INFO: 履歴: dailylog=0, clipping=121, blog=0
+[2025-07-17T23:07:26.696Z] INFO: 📅 dailylog処理中...
+[2025-07-17T23:07:26.722Z] INFO: dailylog: 2件の新エントリ
+[2025-07-17T23:12:48.150Z] INFO: Webmention送信スクリプト開始
+[2025-07-17T23:12:48.155Z] INFO: モード: 本番送信
+[2025-07-17T23:12:48.163Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-17T23:12:48.164Z] INFO: 履歴: dailylog=0, clipping=121, blog=0
+[2025-07-17T23:12:48.168Z] INFO: 📅 dailylog処理中...
+[2025-07-17T23:12:48.178Z] INFO: dailylog: 0件の新エントリ
+[2025-07-17T23:12:48.180Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-17T23:12:48.194Z] INFO: 🔍 新しいclippingshareエントリ: 0件
+[2025-07-17T23:13:13.998Z] INFO: 💾 履歴保存完了
+[2025-07-17T23:13:13.999Z] INFO: 🎉 Webmention送信完了: 0件送信

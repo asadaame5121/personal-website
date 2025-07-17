@@ -15,6 +15,172 @@ import type {
 import { extractHEntriesFromLocalFile, fetchHtmlContent, extractHEntriesFromHtml } from './html-parser.ts';
 
 /**
+ * Webmentionエンドポイント発見結果
+ */
+export interface WebmentionEndpointDiscoveryResult {
+  endpoint: string | null;
+  method: 'http-header' | 'html-link' | 'html-a' | 'not-found';
+  error?: string;
+}
+
+/**
+ * W3C仕様に基づいてWebmentionエンドポイントを発見
+ * https://www.w3.org/TR/2017/REC-webmention-20170112/#sender-discovers-receiver-webmention-endpoint
+ */
+export async function discoverWebmentionEndpoint(targetUrl: string): Promise<WebmentionEndpointDiscoveryResult> {
+  try {
+    console.log(`Webmentionエンドポイント発見開始: ${targetUrl}`);
+    
+    // ターゲットURLをフェッチ（リダイレクト追従）
+    const response = await fetch(targetUrl, {
+      method: 'GET',
+      headers: {
+        'User-Agent': 'Webmention Discovery Bot (https://asadaame5121.net/)'
+      },
+      redirect: 'follow'
+    });
+    
+    if (!response.ok) {
+      return {
+        endpoint: null,
+        method: 'not-found',
+        error: `HTTP ${response.status}: ${response.statusText}`
+      };
+    }
+    
+    // 1. HTTPヘッダーをチェック（最優先）
+    const linkHeader = response.headers.get('Link');
+    if (linkHeader) {
+      const webmentionEndpoint = parseLinkHeaderForWebmention(linkHeader);
+      if (webmentionEndpoint) {
+        const absoluteEndpoint = resolveUrl(webmentionEndpoint, response.url);
+        console.log(`HTTPヘッダーでWebmentionエンドポイント発見: ${absoluteEndpoint}`);
+        return {
+          endpoint: absoluteEndpoint,
+          method: 'http-header'
+        };
+      }
+    }
+    
+    // 2. HTMLコンテンツをチェック（Content-Typeがtext/htmlの場合のみ）
+    const contentType = response.headers.get('Content-Type') || '';
+    if (contentType.includes('text/html')) {
+      const html = await response.text();
+      
+      // 2a. HTML <link>要素をチェック
+      const linkEndpoint = extractWebmentionFromHtmlLink(html);
+      if (linkEndpoint) {
+        const absoluteEndpoint = resolveUrl(linkEndpoint, response.url);
+        console.log(`HTML <link>でWebmentionエンドポイント発見: ${absoluteEndpoint}`);
+        return {
+          endpoint: absoluteEndpoint,
+          method: 'html-link'
+        };
+      }
+      
+      // 2b. HTML <a>要素をチェック
+      const aEndpoint = extractWebmentionFromHtmlA(html);
+      if (aEndpoint) {
+        const absoluteEndpoint = resolveUrl(aEndpoint, response.url);
+        console.log(`HTML <a>でWebmentionエンドポイント発見: ${absoluteEndpoint}`);
+        return {
+          endpoint: absoluteEndpoint,
+          method: 'html-a'
+        };
+      }
+    }
+    
+    console.log(`Webmentionエンドポイントが見つかりませんでした: ${targetUrl}`);
+    return {
+      endpoint: null,
+      method: 'not-found'
+    };
+    
+  } catch (error) {
+    console.error(`Webmentionエンドポイント発見エラー: ${error.message}`);
+    return {
+      endpoint: null,
+      method: 'not-found',
+      error: error.message
+    };
+  }
+}
+
+/**
+ * HTTPのLinkヘッダーからWebmentionエンドポイントを抽出
+ */
+function parseLinkHeaderForWebmention(linkHeader: string): string | null {
+  // Link: <https://example.com/webmention>; rel="webmention"
+  // Link: <https://example.com/webmention>; rel=webmention
+  // 複数のリンクがある場合: Link: <url1>; rel="foo", <url2>; rel="webmention"
+  
+  const links = linkHeader.split(',');
+  for (const link of links) {
+    const trimmedLink = link.trim();
+    // <URL>; rel="webmention" または <URL>; rel=webmention の形式をチェック
+    const match = trimmedLink.match(/^<([^>]+)>;\s*rel=["']?webmention["']?/i);
+    if (match) {
+      return match[1];
+    }
+  }
+  return null;
+}
+
+/**
+ * HTMLの<link>要素からWebmentionエンドポイントを抽出
+ */
+function extractWebmentionFromHtmlLink(html: string): string | null {
+  // <link rel="webmention" href="https://example.com/webmention">
+  const linkRegex = /<link[^>]+rel=["']?[^"']*webmention[^"']*["']?[^>]*href=["']([^"']+)["'][^>]*>/i;
+  const match = html.match(linkRegex);
+  if (match) {
+    return match[1];
+  }
+  
+  // href が先に来る場合も考慮
+  const linkRegex2 = /<link[^>]+href=["']([^"']+)["'][^>]*rel=["']?[^"']*webmention[^"']*["']?[^>]*>/i;
+  const match2 = html.match(linkRegex2);
+  if (match2) {
+    return match2[1];
+  }
+  
+  return null;
+}
+
+/**
+ * HTMLの<a>要素からWebmentionエンドポイントを抽出
+ */
+function extractWebmentionFromHtmlA(html: string): string | null {
+  // <a rel="webmention" href="https://example.com/webmention">Webmention</a>
+  const aRegex = /<a[^>]+rel=["']?[^"']*webmention[^"']*["']?[^>]*href=["']([^"']+)["'][^>]*>/i;
+  const match = html.match(aRegex);
+  if (match) {
+    return match[1];
+  }
+  
+  // href が先に来る場合も考慮
+  const aRegex2 = /<a[^>]+href=["']([^"']+)["'][^>]*rel=["']?[^"']*webmention[^"']*["']?[^>]*>/i;
+  const match2 = html.match(aRegex2);
+  if (match2) {
+    return match2[1];
+  }
+  
+  return null;
+}
+
+/**
+ * 相対URLを絶対URLに変換
+ */
+function resolveUrl(url: string, baseUrl: string): string {
+  try {
+    return new URL(url, baseUrl).href;
+  } catch (error) {
+    console.warn(`URL解決エラー: ${url} (base: ${baseUrl}) - ${error.message}`);
+    return url; // フォールバック
+  }
+}
+
+/**
  * Webmention履歴JSONファイルを読み込み
  */
 export async function loadWebmentionHistory(filePath: string): Promise<WebmentionHistory> {
@@ -60,23 +226,57 @@ export async function sleep(seconds: number): Promise<void> {
 }
 
 /**
- * レート制限を考慮したWebmention送信
+ * W3C仕様に準拠したWebmention送信（エンドポイント発見機能付き）
  */
 export async function sendWebmention(
   sourceUrl: string,
   targetUrl: string,
-  config: WebmentionConfig
+  config: WebmentionConfig,
+  history?: WebmentionHistory,
+  historyType?: 'dailylog' | 'clippingshare' | 'blog_updates',
+  entryId?: string
 ): Promise<WebmentionSendResult> {
   const startTime = new Date().toISOString();
   
+  // まずWebmentionエンドポイントを発見
+  console.log(`Webmention送信開始: ${sourceUrl} -> ${targetUrl}`);
+  const discovery = await discoverWebmentionEndpoint(targetUrl);
+  
+  if (!discovery.endpoint) {
+    const errorMessage = `Webmentionエンドポイントが見つかりません: ${targetUrl} (${discovery.error || 'エンドポイント未対応'})`;
+    console.warn(`❌ ${errorMessage}`);
+    // 履歴に"failed"として記録（未対応サイトも再送不可に）
+    if (history && historyType && entryId) {
+      appendWebmentionHistory(history, historyType, {
+        id: entryId,
+        source: sourceUrl,
+        target: targetUrl,
+        result: {
+          success: false,
+          error_message: errorMessage,
+          sent_at: startTime
+        }
+      });
+    }
+    return {
+      success: false,
+      error_message: errorMessage,
+      sent_at: startTime
+    };
+  }
+  
+  console.log(`Webmentionエンドポイント発見: ${discovery.endpoint} (方法: ${discovery.method})`);
+  
+  // 発見されたエンドポイントに送信
   for (let attempt = 1; attempt <= config.rate_limit.retry_attempts; attempt++) {
     try {
-      console.log(`Webmention送信試行 ${attempt}/${config.rate_limit.retry_attempts}: ${sourceUrl} -> ${targetUrl}`);
+      console.log(`Webmention送信試行 ${attempt}/${config.rate_limit.retry_attempts}: ${sourceUrl} -> ${targetUrl} (endpoint: ${discovery.endpoint})`);
       
-      const response = await fetch(targetUrl, {
+      const response = await fetch(discovery.endpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
+          'User-Agent': 'Webmention Sender (https://asadaame5121.net/)'
         },
         body: new URLSearchParams({
           source: sourceUrl,
@@ -91,7 +291,15 @@ export async function sendWebmention(
       };
 
       if (response.ok) {
-        console.log(`✅ Webmention送信成功: ${response.status}`);
+        console.log(`✅ Webmention送信成功: ${response.status} (endpoint: ${discovery.endpoint})`);
+        if (history && historyType && entryId) {
+          appendWebmentionHistory(history, historyType, {
+            id: entryId,
+            source: sourceUrl,
+            target: targetUrl,
+            result
+          });
+        }
         return result;
       } else {
         const errorText = await response.text();
@@ -102,6 +310,14 @@ export async function sendWebmention(
           console.log(`${config.rate_limit.retry_delay_seconds}秒後にリトライします...`);
           await sleep(config.rate_limit.retry_delay_seconds);
         } else {
+          if (history && historyType && entryId) {
+            appendWebmentionHistory(history, historyType, {
+              id: entryId,
+              source: sourceUrl,
+              target: targetUrl,
+              result
+            });
+          }
           return result;
         }
       }
@@ -118,16 +334,33 @@ export async function sendWebmention(
         console.log(`${config.rate_limit.retry_delay_seconds}秒後にリトライします...`);
         await sleep(config.rate_limit.retry_delay_seconds);
       } else {
+        if (history && historyType && entryId) {
+          appendWebmentionHistory(history, historyType, {
+            id: entryId,
+            source: sourceUrl,
+            target: targetUrl,
+            result
+          });
+        }
         return result;
       }
     }
   }
 
-  return {
+  const finalResult: WebmentionSendResult = {
     success: false,
     error_message: "最大リトライ回数に達しました",
     sent_at: startTime
   };
+  if (history && historyType && entryId) {
+    appendWebmentionHistory(history, historyType, {
+      id: entryId,
+      source: sourceUrl,
+      target: targetUrl,
+      result: finalResult
+    });
+  }
+  return finalResult;
 }
 
 /**
@@ -142,56 +375,85 @@ export async function sendToBridgy(
 }
 
 /**
+ * Webmention履歴にエントリを追加
+ */
+function appendWebmentionHistory(
+  history: WebmentionHistory,
+  type: 'dailylog' | 'clippingshare' | 'blog_updates',
+  data: { id: string; source: string; target: string; result: WebmentionSendResult }
+) {
+  const { id, source, target, result } = data;
+  const base = {
+    source_url: source,
+    target_url: target,
+    sent_at: result.sent_at,
+    status: result.success ? 'success' : 'failed',
+    response_code: result.response_code,
+    error_message: result.error_message
+  } as const;
+
+  switch (type) {
+    case 'dailylog':
+      history.sent_webmentions.dailylog.push({
+        entry_id: id,
+        ...base
+      });
+      break;
+    case 'clippingshare':
+      history.sent_webmentions.clippingshare.push({
+        clip_id: id,
+        ...base
+      });
+      break;
+    case 'blog_updates':
+      history.sent_webmentions.blog_updates.push({
+        update_id: id,
+        ...base,
+        bridgy_url: '', // placeholder if needed
+        post_url: '',
+        post_title: '',
+        update_comment: '',
+        format: 'note'
+      } as any);
+      break;
+  }
+}
+
+/**
  * 新しいdailylogエントリを検出（HTML解析版）
  */
 export async function detectNewDailylogEntries(
-  _dataFilePath: string,
+  dataFilePath: string,
   history: WebmentionHistory,
   baseUrl: string
 ): Promise<DailylogEntry[]> {
   try {
-    console.log('🔍 dailylogページからh-entryを抽出中...');
-    
+    console.log(`[detectNewDailylogEntries] (json版) called with dataFilePath: ${dataFilePath}, baseUrl: ${baseUrl}`);
+    const content = await Deno.readTextFile(dataFilePath);
+    const dailylogData = JSON.parse(content);
     const sentEntryIds = new Set(history.sent_webmentions.dailylog.map(w => w.entry_id));
     const newEntries: DailylogEntry[] = [];
-    
-    // 方法1: ローカルの生成済みHTMLファイルから抽出
-    const localHtmlPath = '_site/dailylog/index.html';
-    let hEntries = await extractHEntriesFromLocalFile(localHtmlPath, baseUrl);
-    
-    // ローカルファイルがない場合はリモートから取得
-    if (hEntries.length === 0) {
-      console.log('🌐 リモートからdailylogページを取得中...');
-      const dailylogUrl = `${baseUrl.replace(/\/$/, '')}/dailylog/`;
-      const html = await fetchHtmlContent(dailylogUrl);
-      hEntries = extractHEntriesFromHtml(html, baseUrl);
-    }
-    
-    console.log(`📊 検出したh-entry数: ${hEntries.length}件`);
-    
-    // 未送信かつリンクを含むエントリをフィルタリング
-    for (const hEntry of hEntries) {
-      const entryId = hEntry.id;
-      
-      if (!sentEntryIds.has(entryId) && hEntry.links.length > 0) {
-        console.log(`✅ 新しいエントリ検出: ${entryId}`);
-        console.log(`   コンテンツ: ${hEntry.content.substring(0, 100)}...`);
-        console.log(`   リンク数: ${hEntry.links.length}`);
-        console.log(`   リンク: ${hEntry.links.join(', ')}`);
-        
+
+    for (const entry of dailylogData) {
+      const entryId = entry.id;
+      if (!entryId) {
+        console.warn(`⚠️ id未定義のエントリをスキップ: ${JSON.stringify(entry)}`);
+        continue;
+      }
+      if (!sentEntryIds.has(entryId)) {
+        // URL生成仕様: https://asadaame5121.net/dailylog/#entry-${id}
+        const entryUrl = `${baseUrl.replace(/\/$/, '')}/#entry-${entryId}`;
         newEntries.push({
           id: entryId,
-          content: hEntry.content,
-          timestamp: hEntry.datetime,
-          links: hEntry.links
+          content: entry.content,
+          timestamp: entry.datetime,
+          links: [entryUrl]
         });
-      } else if (sentEntryIds.has(entryId)) {
-        console.log(`⏭️ 送信済みエントリをスキップ: ${entryId}`);
-      } else if (hEntry.links.length === 0) {
-        console.log(`⏭️ リンクなしエントリをスキップ: ${entryId}`);
+        console.log(`✅ 新規dailylogエントリ: ${entryId} → ${entryUrl}`);
+      } else {
+        console.log(`⏭️ 送信済みdailylogエントリをスキップ: ${entryId}`);
       }
     }
-    
     return newEntries;
   } catch (error) {
     console.error(`dailylogエントリ検出エラー: ${error.message}`);
