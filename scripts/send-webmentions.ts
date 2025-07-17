@@ -29,6 +29,7 @@ const CONFIG_FILE = 'data/webmention-config.json';
  * メイン処理
  */
 async function main() {
+  console.log('send-webmentions start');
   const isDryRun = Deno.args.includes('--dry-run');
   
   logger.info('Webmention送信スクリプト開始');
@@ -54,6 +55,8 @@ async function main() {
       );
       
       logger.info(`dailylog: ${newDailylogEntries.length}件の新エントリ`);
+      console.log(`[debug] dailylog: ${newDailylogEntries.length}件の新エントリ`);
+      console.log('[debug] newDailylogEntries:', JSON.stringify(newDailylogEntries, null, 2));
       
       for (const entry of newDailylogEntries) {
         const sourceUrl = `${config.sources.dailylog.base_url}#${entry.id}`;
