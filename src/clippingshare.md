@@ -1,3 +1,8 @@
+---
+draft: true
+---
+
+
 2025-07-07 17:54[Static Files on Deno Deploy](https://deno.com/blog/deploy-static-files)
 
 
