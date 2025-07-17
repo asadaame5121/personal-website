@@ -1,0 +1,65 @@
+name: Webmention送信自動化
+
+on:
+  schedule:
+    # 毎日午前9時（JST）に実行
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'ドライランモードで実行'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  send-webmentions:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: チェックアウト
+      uses: actions/checkout@v4
+      
+    - name: Deno セットアップ
+      uses: denoland/setup-deno@v1
+      with:
+        deno-version: v1.x
+        
+    - name: 依存関係キャッシュ
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/deno
+        key: ${{ runner.os }}-deno-${{ hashFiles('**/deno.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-deno-
+          
+    - name: Webmention送信実行
+      run: |
+        cd scripts
+        if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+          echo "🔍 ドライランモードで実行中..."
+          deno run --allow-net --allow-read --allow-write send-webmentions.ts --dry-run
+        else
+          echo "🚀 本番モードで実行中..."
+          deno run --allow-net --allow-read --allow-write send-webmentions.ts
+        fi
+      working-directory: .
+      
+    - name: 履歴ファイルコミット
+      if: github.event.inputs.dry_run != 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data/webmention-history.json
+        if git diff --staged --quiet; then
+          echo "変更なし - コミットをスキップ"
+        else
+          git commit -m "🤖 Webmention送信履歴を更新 $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
+        fi
+        
+    - name: 実行結果通知
+      if: failure()
+      run: |
+        echo "❌ Webmention送信でエラーが発生しました"
+        echo "詳細はログを確認してください"

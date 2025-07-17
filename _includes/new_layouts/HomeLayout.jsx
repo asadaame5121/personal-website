@@ -3,13 +3,15 @@ import DrawerMenu from "../../_components/new_components/DrawerMenu.jsx";
 
 import SearchBox from "../../_components/new_components/SearchBox.jsx";
 
+import { siteAuthor } from "../../_components/site-author.js";
+
 export default function HomeLayout({
   title = "DropGarden",
   url,
   date,
   category,
   tags,
-  author,
+  author = siteAuthor,
   children,
   comp,
 }) {
