@@ -11,8 +11,8 @@
   "sources": {
     "dailylog": {
       "enabled": true,
-      "data_file": "data/dailylog.json",
-      "base_url": "https://asadaame5121.net/dailylog/"
+      "data_file": "external_data/dailylog.json",
+      "base_url": "https://asadaame5121.net/dailylog"
     },
     "clippingshare": {
       "enabled": true,

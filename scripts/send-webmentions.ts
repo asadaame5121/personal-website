@@ -59,7 +59,7 @@ async function main() {
       console.log('[debug] newDailylogEntries:', JSON.stringify(newDailylogEntries, null, 2));
       
       for (const entry of newDailylogEntries) {
-        const sourceUrl = `${config.sources.dailylog.base_url}#${entry.id}`;
+        const sourceUrl = `${config.sources.dailylog.base_url}#entry-${entry.id}`;
         const targetUrl = config.endpoints.bridgy_bluesky;
         
         if (!isDryRun) {

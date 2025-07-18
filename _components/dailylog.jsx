@@ -103,6 +103,7 @@ export default async function Dailylog({ showAll = false } = {}) {
                 </time>
                 <div class="e-content prose max-w-none" 
                      dangerouslySetInnerHTML={{ __html: e.html }}></div>
+                <a href="https://brid.gy/publish/bluesky" hidden="from-humans"></a>
               </div>
             </article>
           ))

@@ -8,7 +8,7 @@ async function main() {
   const baseUrl = 'https://asadaame5121.net/dailylog/';
   const history = await loadWebmentionHistory(historyPath);
 
-  const entries = await detectNewDailylogEntries('https://asadaame5121.net/dailylog', history, baseUrl);
+  const entries = await detectNewDailylogEntries('./external_data/dailylog.json', history, baseUrl);
   console.log(`h-entry抽出結果: ${entries.length}件`);
   for (const entry of entries) {
     console.log(`--- id: ${entry.id}`);
