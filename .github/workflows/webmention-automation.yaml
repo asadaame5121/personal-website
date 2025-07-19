@@ -35,13 +35,12 @@ jobs:
           
     - name: Webmention送信実行
       run: |
-        cd scripts
         if [ "${{ github.event.inputs.dry_run }}" = true ]; then
           echo "🔍 ドライランモードで実行中..."
-          deno run --allow-net --allow-read --allow-write send-webmentions.ts --dry-run
+          deno run --allow-net --allow-read --allow-write scripts/send-webmentions.ts --dry-run
         else
           echo "🚀 本番モードで実行中..."
-          deno run --allow-net --allow-read --allow-write send-webmentions.ts
+          deno run --allow-net --allow-read --allow-write scripts/send-webmentions.ts
         fi
       working-directory: .
       
