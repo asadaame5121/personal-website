@@ -92,7 +92,7 @@ async function main() {
     if (config.sources.clippingshare.enabled) {
       await logger.info('🔍 clippingshareエントリを検出中...');
       const clippingEntries = await detectNewClippingEntries(
-        'data/clippingshare.json',
+        config.sources.clippingshare.data_file,
         history,
         config.sources.clippingshare.base_url,
         isDryRun ? 10 : undefined // ドライラン時は10件までに制限
