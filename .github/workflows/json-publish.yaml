@@ -29,8 +29,16 @@ jobs:
           DEST_ROOT: ./src
           ERROR_LOG: ./scripts/sync-obsidian-error.log
 
-      - name: Update dailylog JSON
+      - name: Update dailylog JSON (today)
         run: deno run --allow-read --allow-write --allow-env scripts/update-dailylog.ts
+        env:
+          OBSIDIAN_LOG_DIR: obsidian-latest/log
+          DAILYLOG_JSON: external_data/dailylog.json
+
+      - name: Update dailylog JSON (yesterday)
+        run: |
+          YESTERDAY=$(date -d 'yesterday' +"%Y-%m-%d")
+          deno run --allow-read --allow-write --allow-env scripts/update-dailylog.ts "$YESTERDAY"
         env:
           OBSIDIAN_LOG_DIR: obsidian-latest/log
           DAILYLOG_JSON: external_data/dailylog.json
