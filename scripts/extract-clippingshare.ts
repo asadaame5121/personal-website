@@ -34,12 +34,16 @@ clippings.sort((a, b) => {
   return new Date(b.created).getTime() - new Date(a.created).getTime();
 });
 
-// JSON出力用にマッピング
+// 既存clippingshare.jsonのIDを引き継ぐ
+let prevEntries: any[] = [];
+try {
+  const prevJson = await Deno.readTextFile(OUTPUT_PATH);
+  prevEntries = JSON.parse(prevJson);
+} catch (_) {}
 const mapped = clippings.map(c => {
-  // created: "2025-03-29 17:41" など → id: "20250329174100"
-  // idはUUIDで一意に生成
-  const id = crypto.randomUUID();
-  // sitename, commentが存在し、かつ'unidentified'でなければ反映
+  // titleとurlが一致する既存エントリがあればidを引き継ぐ
+  const prev = prevEntries.find((e) => e.title === c.filename && e.url === (c.source || ""));
+  const id = prev ? prev.id : crypto.randomUUID();
   const sitename = (typeof c.sitename === "string" && c.sitename !== "unidentified") ? c.sitename : "";
   const comment = (typeof c.comment === "string" && c.comment !== "unidentified") ? c.comment : "";
   return {
