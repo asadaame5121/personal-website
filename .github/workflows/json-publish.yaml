@@ -1,13 +1,9 @@
-name: Publish Static JSON Only
+name: Publish Static JSON Simple
 
 on:
   schedule:
     - cron: '0 18 * * *'  # JST 3:00 (UTC 18:00)
   workflow_dispatch:
-
-concurrency:
-  group: external-json
-  cancel-in-progress: true
 
 jobs:
   publish-json:
@@ -18,34 +14,41 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Get latest Obsidianbackup commit hash
-        id: obsidian_hash
-        run: |
-          git ls-remote https://github.com/asadaame5121/Obsidianbackup.git HEAD | awk '{print $1}' > obsidian_commit.txt
-          echo "commit_hash=$(cat obsidian_commit.txt)" >> $GITHUB_OUTPUT
-
-      - name: Restore last processed commit hash
-        id: last_hash
-        uses: actions/cache@v4
-        with:
-          path: obsidian_commit.txt
-          key: obsidian-commit-${{ github.run_id }}
-          restore-keys: |
-            obsidian-commit-
-
-      - name: Compare commit hashes and skip if unchanged
-        run: |
-          if [ -f obsidian_commit.txt ] && [ "$(cat obsidian_commit.txt)" = "${{ steps.obsidian_hash.outputs.commit_hash }}" ]; then
-            echo "No new commit in Obsidianbackup. Skipping."
-            exit 0
-          fi
-
       - name: Clone latest Obsidianbackup (shallow)
         run: |
           git clone --depth=1 https://x-access-token:${{ secrets.PAT_FOR_COMMIT }}@github.com/asadaame5121/Obsidianbackup.git obsidian-latest
 
       - name: Setup Deno environment
         uses: denoland/setup-deno@v2
+
+      - name: Sync Obsidian data
+        run: deno run --allow-read --allow-write --allow-run --allow-env scripts/sync-obsidian.ts
+        env:
+          OBSIDIAN_REPO_URL: https://x-access-token:${{ secrets.PAT_FOR_COMMIT }}@github.com/asadaame5121/Obsidianbackup.git
+          TARGET_DIRS: Article,Book,Glossary,People
+          DEST_ROOT: ./src
+          ERROR_LOG: ./scripts/sync-obsidian-error.log
+
+      - name: Update dailylog JSON
+        run: deno run --allow-read --allow-write --allow-env scripts/update-dailylog.ts
+        env:
+          OBSIDIAN_LOG_DIR: obsidian-latest/log
+          DAILYLOG_JSON: external_data/dailylog.json
+
+      - name: Extract clippingshare JSON
+        run: deno run --allow-read --allow-write --allow-env scripts/extract-clippingshare.ts
+        env:
+          CLIPPINGS_SOURCE_DIR: obsidian-latest/Clippings
+          CLIPPINGS_OUTPUT_PATH: external_data/clippingshare.json
+
+      - name: Commit and push JSON
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add external_data/*.json
+          git commit -m "日報・clippingshare自動更新" || echo "No changes to commit."
+          git push origin main
+
 
       - name: Sync required directories (run sync-obsidian.ts)
         run: |
@@ -63,7 +66,6 @@ jobs:
         env:
           OBSIDIAN_LOG_DIR: obsidian-latest/log
           CLIPPINGS_SOURCE_DIR: obsidian-latest/Clippings
-          DAILYLOG_PATH: src/dailylog.md
           DAILYLOG_JSON: external_data/dailylog.json
           CLIPPINGS_OUTPUT_PATH: external_data/clippingshare.json
           

@@ -1009,3 +1009,383 @@
 [2025-07-18T00:00:33.448Z] INFO: 履歴: dailylog=0, clipping=121, blog=0
 [2025-07-18T00:00:33.452Z] INFO: 📅 dailylog処理中...
 [2025-07-18T00:00:33.469Z] INFO: dailylog: 5件の新エントリ
+[2025-07-18T00:16:26.374Z] INFO: Webmention送信スクリプト開始
+[2025-07-18T00:16:26.377Z] INFO: モード: 本番送信
+[2025-07-18T00:16:26.385Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-18T00:16:26.386Z] INFO: 履歴: dailylog=0, clipping=121, blog=0
+[2025-07-18T00:16:26.390Z] INFO: 📅 dailylog処理中...
+[2025-07-18T00:16:26.409Z] INFO: dailylog: 5件の新エントリ
+[2025-07-18T00:16:28.424Z] INFO: SUCCESS: dailylog 346023cb-a59e-4323-bf1b-fa19d8a2e5bf
+[2025-07-18T00:16:30.379Z] INFO: SUCCESS: dailylog 35621cb1-9a6b-4c6f-ab3d-5b2160b692f3
+[2025-07-18T00:16:31.879Z] INFO: SUCCESS: dailylog 6c1dc6f7-c948-430c-b893-a745a9e086cf
+[2025-07-18T00:16:33.428Z] INFO: SUCCESS: dailylog dab83fd9-f9d7-4896-a9ed-2e9c5de1ebe2
+[2025-07-18T00:16:34.754Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-18T00:16:34.755Z] INFO: SUCCESS: dailylog 2be19893-65f4-4ba8-873e-026de8c5ebb6
+[2025-07-18T00:16:34.797Z] INFO: 🔍 新しいclippingshareエントリ: 0件
+[2025-07-18T00:16:34.803Z] INFO: 💾 履歴保存完了
+[2025-07-18T00:16:34.806Z] INFO: 🎉 Webmention送信完了: 5件送信
+[2025-07-18T00:22:37.904Z] INFO: Webmention送信スクリプト開始
+[2025-07-18T00:22:37.907Z] INFO: モード: 本番送信
+[2025-07-18T00:22:37.918Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-18T00:22:37.919Z] INFO: 履歴: dailylog=5, clipping=121, blog=0
+[2025-07-18T00:22:37.924Z] INFO: 📅 dailylog処理中...
+[2025-07-18T00:22:37.930Z] INFO: dailylog: 0件の新エントリ
+[2025-07-18T00:22:37.933Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-18T00:22:37.944Z] INFO: 🔍 新しいclippingshareエントリ: 0件
+[2025-07-18T00:22:37.950Z] INFO: 💾 履歴保存完了
+[2025-07-18T00:22:37.953Z] INFO: 🎉 Webmention送信完了: 0件送信
+[2025-07-18T00:24:06.338Z] INFO: Webmention送信スクリプト開始
+[2025-07-18T00:24:06.342Z] INFO: モード: 本番送信
+[2025-07-18T00:24:06.353Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-18T00:24:06.354Z] INFO: 履歴: dailylog=5, clipping=121, blog=0
+[2025-07-18T00:24:06.360Z] INFO: 📅 dailylog処理中...
+[2025-07-18T00:24:06.366Z] INFO: dailylog: 0件の新エントリ
+[2025-07-18T00:24:06.369Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-18T00:24:06.381Z] INFO: 🔍 新しいclippingshareエントリ: 0件
+[2025-07-18T00:24:06.389Z] INFO: 💾 履歴保存完了
+[2025-07-18T00:24:06.392Z] INFO: 🎉 Webmention送信完了: 0件送信
+[2025-07-18T00:24:44.507Z] INFO: Webmention送信スクリプト開始
+[2025-07-18T00:24:44.510Z] INFO: モード: 本番送信
+[2025-07-18T00:24:44.518Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-18T00:24:44.519Z] INFO: 履歴: dailylog=5, clipping=121, blog=0
+[2025-07-18T00:24:44.524Z] INFO: 📅 dailylog処理中...
+[2025-07-18T00:24:44.532Z] INFO: dailylog: 0件の新エントリ
+[2025-07-18T00:24:44.538Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-18T00:24:44.552Z] INFO: 🔍 新しいclippingshareエントリ: 0件
+[2025-07-18T00:24:44.558Z] INFO: 💾 履歴保存完了
+[2025-07-18T00:24:44.561Z] INFO: 🎉 Webmention送信完了: 0件送信
+[2025-07-18T00:27:18.678Z] INFO: Webmention送信スクリプト開始
+[2025-07-18T00:27:18.681Z] INFO: モード: 本番送信
+[2025-07-18T00:27:18.690Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-18T00:27:18.691Z] INFO: 履歴: dailylog=5, clipping=121, blog=0
+[2025-07-18T00:27:18.696Z] INFO: 📅 dailylog処理中...
+[2025-07-18T00:27:18.707Z] INFO: dailylog: 0件の新エントリ
+[2025-07-18T00:27:18.711Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-18T00:27:18.719Z] INFO: 🔍 新しいclippingshareエントリ: 0件
+[2025-07-18T00:27:18.726Z] INFO: 💾 履歴保存完了
+[2025-07-18T00:27:18.729Z] INFO: 🎉 Webmention送信完了: 0件送信
+[2025-07-18T00:29:15.804Z] INFO: Webmention送信スクリプト開始
+[2025-07-18T00:29:15.807Z] INFO: モード: 本番送信
+[2025-07-18T00:29:15.817Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-18T00:29:15.818Z] INFO: 履歴: dailylog=5, clipping=121, blog=0
+[2025-07-18T00:29:15.823Z] INFO: 📅 dailylog処理中...
+[2025-07-18T00:29:15.828Z] INFO: dailylog: 0件の新エントリ
+[2025-07-18T00:29:15.832Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-18T00:29:15.843Z] INFO: 🔍 新しいclippingshareエントリ: 0件
+[2025-07-18T00:29:15.849Z] INFO: 💾 履歴保存完了
+[2025-07-18T00:29:15.853Z] INFO: 🎉 Webmention送信完了: 0件送信
+[2025-07-18T00:37:50.674Z] INFO: Webmention送信スクリプト開始
+[2025-07-18T00:37:50.676Z] INFO: モード: 本番送信
+[2025-07-18T00:37:50.685Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-18T00:37:50.686Z] INFO: 履歴: dailylog=5, clipping=121, blog=0
+[2025-07-18T00:37:50.690Z] INFO: 📅 dailylog処理中...
+[2025-07-18T00:37:50.700Z] INFO: dailylog: 0件の新エントリ
+[2025-07-18T00:37:50.701Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-18T00:37:50.708Z] INFO: 🔍 新しいclippingshareエントリ: 0件
+[2025-07-18T00:37:50.715Z] INFO: 💾 履歴保存完了
+[2025-07-18T00:37:50.717Z] INFO: 🎉 Webmention送信完了: 0件送信
+[2025-07-18T00:41:01.609Z] INFO: Webmention送信スクリプト開始
+[2025-07-18T00:41:01.612Z] INFO: モード: 本番送信
+[2025-07-18T00:41:01.622Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-18T00:41:01.624Z] INFO: 履歴: dailylog=5, clipping=121, blog=0
+[2025-07-18T00:41:01.628Z] INFO: 📅 dailylog処理中...
+[2025-07-18T00:41:01.637Z] INFO: dailylog: 0件の新エントリ
+[2025-07-18T00:41:01.639Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-18T00:41:01.649Z] INFO: 🔍 新しいclippingshareエントリ: 0件
+[2025-07-18T00:41:01.655Z] INFO: 💾 履歴保存完了
+[2025-07-18T00:41:01.659Z] INFO: 🎉 Webmention送信完了: 0件送信
+[2025-07-18T00:41:59.354Z] INFO: Webmention送信スクリプト開始
+[2025-07-18T00:41:59.358Z] INFO: モード: 本番送信
+[2025-07-18T00:41:59.369Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-18T00:41:59.370Z] INFO: 履歴: dailylog=5, clipping=121, blog=0
+[2025-07-18T00:41:59.374Z] INFO: 📅 dailylog処理中...
+[2025-07-18T00:41:59.382Z] INFO: dailylog: 0件の新エントリ
+[2025-07-18T00:41:59.387Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-18T00:41:59.396Z] INFO: 🔍 新しいclippingshareエントリ: 0件
+[2025-07-18T00:41:59.422Z] INFO: 💾 履歴保存完了
+[2025-07-18T00:41:59.425Z] INFO: 🎉 Webmention送信完了: 0件送信
+[2025-07-19T05:36:37.100Z] INFO: Webmention送信スクリプト開始
+[2025-07-19T05:36:37.103Z] INFO: モード: 本番送信
+[2025-07-19T05:36:37.111Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-19T05:36:37.112Z] INFO: 履歴: dailylog=5, clipping=121, blog=0
+[2025-07-19T05:36:37.117Z] INFO: 📅 dailylog処理中...
+[2025-07-19T05:36:37.125Z] INFO: dailylog: 0件の新エントリ
+[2025-07-19T05:36:37.126Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-19T05:36:37.138Z] INFO: 🔍 新しいclippingshareエントリ: 0件
+[2025-07-19T05:36:37.146Z] INFO: 💾 履歴保存完了
+[2025-07-19T05:36:37.150Z] INFO: 🎉 Webmention送信完了: 0件送信
+[2025-07-19T05:41:13.563Z] INFO: Webmention送信スクリプト開始
+[2025-07-19T05:41:13.566Z] INFO: モード: 本番送信
+[2025-07-19T05:41:13.577Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-19T05:41:13.577Z] INFO: 履歴: dailylog=5, clipping=121, blog=0
+[2025-07-19T05:41:13.581Z] INFO: 📅 dailylog処理中...
+[2025-07-19T05:41:13.589Z] INFO: dailylog: 0件の新エントリ
+[2025-07-19T05:41:13.592Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-19T05:41:13.633Z] INFO: 🔍 新しいclippingshareエントリ: 61件
+[2025-07-19T05:41:13.636Z] INFO: 📤 clipping送信準備: 2ba81ebe-2963-4eea-bec7-013c95871874
+[2025-07-19T05:41:13.640Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/2ba81ebe-2963-4eea-bec7-013c95871874
+[2025-07-19T05:41:13.644Z] DEBUG:    ターゲット: https://tybx.jp/posts/introduction-of-webmention
+[2025-07-19T05:49:45.074Z] INFO: Webmention送信スクリプト開始
+[2025-07-19T05:49:45.077Z] INFO: モード: 本番送信
+[2025-07-19T05:49:45.086Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-19T05:49:45.088Z] INFO: 履歴: dailylog=5, clipping=121, blog=0
+[2025-07-19T05:49:45.091Z] INFO: 📅 dailylog処理中...
+[2025-07-19T05:49:45.101Z] INFO: dailylog: 0件の新エントリ
+[2025-07-19T05:49:45.102Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-19T05:49:45.134Z] INFO: 🔍 新しいclippingshareエントリ: 61件
+[2025-07-19T05:49:45.136Z] INFO: 📤 clipping送信準備: 2ba81ebe-2963-4eea-bec7-013c95871874
+[2025-07-19T05:49:45.140Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/2ba81ebe-2963-4eea-bec7-013c95871874
+[2025-07-19T05:49:45.143Z] DEBUG:    ターゲット: https://tybx.jp/posts/introduction-of-webmention
+[2025-07-19T05:50:46.864Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 2ba81ebe-2963-4eea-bec7-013c95871874 | ["HTTP 404: POST &#x2F;tybx.jp&#x2F;webmention&#x2F;"]
+[2025-07-19T05:50:52.876Z] INFO: 📤 clipping送信準備: 6ad4e831-1dd7-4742-a38f-2ff74dc1fa3a
+[2025-07-19T05:50:52.879Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/6ad4e831-1dd7-4742-a38f-2ff74dc1fa3a
+[2025-07-19T05:50:52.884Z] DEBUG:    ターゲット: https://nawashiro.dev/posts/240613-ideal-social-media
+[2025-07-19T05:50:53.812Z] INFO: SUCCESS: clippingshareエントリ送信成功: 6ad4e831-1dd7-4742-a38f-2ff74dc1fa3a
+[2025-07-19T05:50:59.831Z] INFO: 📤 clipping送信準備: 84ee69ed-b647-488c-8cc4-576b40533e95
+[2025-07-19T05:50:59.833Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/84ee69ed-b647-488c-8cc4-576b40533e95
+[2025-07-19T05:50:59.838Z] DEBUG:    ターゲット: https://www.nytimes.com/2025/07/15/opinion/israel-gaza-holocaust-genocide-palestinians.html?unlocked_article_code=1.W08.IFir.Li7qrZMUzEFt
+[2025-07-19T05:51:00.429Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 84ee69ed-b647-488c-8cc4-576b40533e95 | ["Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2025/07/15/opinion/israel-gaza-holocaust-genocide-palestinians.html?unlocked_article_code=1.W08.IFir.Li7qrZMUzEFt (not-found)"]
+[2025-07-19T05:51:06.441Z] INFO: 📤 clipping送信準備: 133df793-fbe8-4e27-8274-d2eab79dc9a7
+[2025-07-19T05:51:06.444Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/133df793-fbe8-4e27-8274-d2eab79dc9a7
+[2025-07-19T05:51:06.448Z] DEBUG:    ターゲット: https://wirelesswire.jp/2025/07/88919/
+[2025-07-19T05:51:06.704Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 133df793-fbe8-4e27-8274-d2eab79dc9a7 | ["Webmentionエンドポイントが見つかりません: https://wirelesswire.jp/2025/07/88919/ (not-found)"]
+[2025-07-19T05:51:12.713Z] INFO: 📤 clipping送信準備: 5c65fd8d-b89a-45a3-8d0e-8b831fdca3b9
+[2025-07-19T05:51:12.716Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/5c65fd8d-b89a-45a3-8d0e-8b831fdca3b9
+[2025-07-19T05:51:12.719Z] DEBUG:    ターゲット: https://mainichi.jp/articles/20250712/k00/00m/010/201000c
+[2025-07-19T05:51:13.699Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 5c65fd8d-b89a-45a3-8d0e-8b831fdca3b9 | ["Webmentionエンドポイントが見つかりません: https://mainichi.jp/articles/20250712/k00/00m/010/201000c (not-found)"]
+[2025-07-19T05:51:19.715Z] INFO: 📤 clipping送信準備: c2584654-f235-4894-ad36-60125fadebca
+[2025-07-19T05:51:19.718Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/c2584654-f235-4894-ad36-60125fadebca
+[2025-07-19T05:51:19.721Z] DEBUG:    ターゲット: https://aboutmonica.com/blog/automate-webmentions-with-github-actions/
+[2025-07-19T05:51:20.152Z] INFO: SUCCESS: clippingshareエントリ送信成功: c2584654-f235-4894-ad36-60125fadebca
+[2025-07-19T05:51:26.164Z] INFO: 📤 clipping送信準備: d92daa2d-9528-4673-ad63-28798054472e
+[2025-07-19T05:51:26.167Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/d92daa2d-9528-4673-ad63-28798054472e
+[2025-07-19T05:51:26.170Z] DEBUG:    ターゲット: https://partytown.qwik.dev/
+[2025-07-19T05:51:26.728Z] ERROR: FAILURE: clippingshareエントリ送信失敗: d92daa2d-9528-4673-ad63-28798054472e | ["Webmentionエンドポイントが見つかりません: https://partytown.qwik.dev/ (not-found)"]
+[2025-07-19T05:51:32.739Z] INFO: 📤 clipping送信準備: b245d02f-8e59-4af3-b3b7-360eb8a69e58
+[2025-07-19T05:51:32.741Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/b245d02f-8e59-4af3-b3b7-360eb8a69e58
+[2025-07-19T05:51:32.745Z] DEBUG:    ターゲット: https://honeshabri.hatenablog.com/entry/books-2024-2025#2-%E3%83%B4%E3%82%A3%E3%82%AF%E3%83%88%E3%83%AA%E3%82%A2%E6%9C%9D%E6%99%82%E4%BB%A3%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88
+[2025-07-19T05:51:32.904Z] ERROR: FAILURE: clippingshareエントリ送信失敗: b245d02f-8e59-4af3-b3b7-360eb8a69e58 | ["Webmentionエンドポイントが見つかりません: https://honeshabri.hatenablog.com/entry/books-2024-2025#2-%E3%83%B4%E3%82%A3%E3%82%AF%E3%83%88%E3%83%AA%E3%82%A2%E6%9C%9D%E6%99%82%E4%BB%A3%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88 (not-found)"]
+[2025-07-19T05:51:38.920Z] INFO: 📤 clipping送信準備: bc1f9b52-788d-4fba-a0de-df42f042cbf6
+[2025-07-19T05:51:38.921Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/bc1f9b52-788d-4fba-a0de-df42f042cbf6
+[2025-07-19T05:51:38.925Z] DEBUG:    ターゲット: https://dlt.kitetu.com/
+[2025-07-19T05:51:39.239Z] ERROR: FAILURE: clippingshareエントリ送信失敗: bc1f9b52-788d-4fba-a0de-df42f042cbf6 | ["Webmentionエンドポイントが見つかりません: https://dlt.kitetu.com/ (not-found)"]
+[2025-07-19T05:51:45.255Z] INFO: 📤 clipping送信準備: 6e90ad6c-e288-4e07-82b3-385523d5b562
+[2025-07-19T05:51:45.258Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/6e90ad6c-e288-4e07-82b3-385523d5b562
+[2025-07-19T05:51:45.261Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST771PC0T77UPQJ00JM.html?ptoken=01JZKK0K93AX0F5BE6NRNVHQES
+[2025-07-19T05:51:45.648Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 6e90ad6c-e288-4e07-82b3-385523d5b562 | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST771PC0T77UPQJ00JM.html?ptoken=01JZKK0K93AX0F5BE6NRNVHQES (not-found)"]
+[2025-07-19T05:51:51.658Z] INFO: 📤 clipping送信準備: 6833ad0e-79ed-4e89-9a77-c9bd50c9f0c4
+[2025-07-19T05:51:51.661Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/6833ad0e-79ed-4e89-9a77-c9bd50c9f0c4
+[2025-07-19T05:51:51.664Z] DEBUG:    ターゲット: https://deno.com/blog/deploy-static-files
+[2025-07-19T05:51:52.252Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 6833ad0e-79ed-4e89-9a77-c9bd50c9f0c4 | ["Webmentionエンドポイントが見つかりません: https://deno.com/blog/deploy-static-files (not-found)"]
+[2025-07-19T05:51:58.262Z] INFO: 📤 clipping送信準備: 3a6e041b-ea44-4d16-9918-d0ccdc4089fe
+[2025-07-19T05:51:58.264Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/3a6e041b-ea44-4d16-9918-d0ccdc4089fe
+[2025-07-19T05:51:58.268Z] DEBUG:    ターゲット: https://benesult.com/ja/iaponia/index.html
+[2025-07-19T05:51:58.558Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 3a6e041b-ea44-4d16-9918-d0ccdc4089fe | ["Webmentionエンドポイントが見つかりません: https://benesult.com/ja/iaponia/index.html (not-found)"]
+[2025-07-19T05:52:04.563Z] INFO: 📤 clipping送信準備: adb6f5ae-0ac8-4806-a266-6b08ebc723bd
+[2025-07-19T05:52:04.566Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/adb6f5ae-0ac8-4806-a266-6b08ebc723bd
+[2025-07-19T05:52:04.570Z] DEBUG:    ターゲット: https://japan.cnet.com/article/35235125/
+[2025-07-19T05:52:04.760Z] ERROR: FAILURE: clippingshareエントリ送信失敗: adb6f5ae-0ac8-4806-a266-6b08ebc723bd | ["Webmentionエンドポイントが見つかりません: https://japan.cnet.com/article/35235125/ (not-found)"]
+[2025-07-19T05:52:10.769Z] INFO: 📤 clipping送信準備: 00a2e963-3841-4363-8ff8-3868ca887337
+[2025-07-19T05:52:10.771Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/00a2e963-3841-4363-8ff8-3868ca887337
+[2025-07-19T05:52:10.775Z] DEBUG:    ターゲット: https://nejimaki-radio.com/digital-garden-blog-indie-website-personal-internet/
+[2025-07-19T05:52:11.706Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 00a2e963-3841-4363-8ff8-3868ca887337 | ["Webmentionエンドポイントが見つかりません: https://nejimaki-radio.com/digital-garden-blog-indie-website-personal-internet/ (not-found)"]
+[2025-07-19T05:52:17.713Z] INFO: 📤 clipping送信準備: 0b0cbb97-a719-4b48-8eb9-56eb4f0e9c99
+[2025-07-19T05:52:17.715Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/0b0cbb97-a719-4b48-8eb9-56eb4f0e9c99
+[2025-07-19T05:52:17.719Z] DEBUG:    ターゲット: https://joelhooks.com/digital-garden/
+[2025-07-19T05:52:17.831Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 0b0cbb97-a719-4b48-8eb9-56eb4f0e9c99 | ["Webmentionエンドポイントが見つかりません: https://joelhooks.com/digital-garden/ (not-found)"]
+[2025-07-19T05:52:23.848Z] INFO: 📤 clipping送信準備: 9e890620-4d09-4651-a36b-233a687704ba
+[2025-07-19T05:52:23.850Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/9e890620-4d09-4651-a36b-233a687704ba
+[2025-07-19T05:52:23.855Z] DEBUG:    ターゲット: https://www.itmedia.co.jp/news/spv/2507/03/news027.html
+[2025-07-19T05:52:24.069Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 9e890620-4d09-4651-a36b-233a687704ba | ["Webmentionエンドポイントが見つかりません: https://www.itmedia.co.jp/news/spv/2507/03/news027.html (not-found)"]
+[2025-07-19T05:52:30.078Z] INFO: 📤 clipping送信準備: 1edad7b9-0906-4b97-b4ba-b2737dcd4667
+[2025-07-19T05:52:30.080Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/1edad7b9-0906-4b97-b4ba-b2737dcd4667
+[2025-07-19T05:52:30.084Z] DEBUG:    ターゲット: https://s-newscommons.com/article/8623
+[2025-07-19T05:52:30.313Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 1edad7b9-0906-4b97-b4ba-b2737dcd4667 | ["Webmentionエンドポイントが見つかりません: https://s-newscommons.com/article/8623 (not-found)"]
+[2025-07-19T05:52:36.322Z] INFO: 📤 clipping送信準備: e89c33dd-4015-4a50-bec5-edc0af233112
+[2025-07-19T05:52:36.324Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/e89c33dd-4015-4a50-bec5-edc0af233112
+[2025-07-19T05:52:36.327Z] DEBUG:    ターゲット: https://ascii.jp/elem/000/004/213/4213879/
+[2025-07-19T05:52:36.670Z] ERROR: FAILURE: clippingshareエントリ送信失敗: e89c33dd-4015-4a50-bec5-edc0af233112 | ["Webmentionエンドポイントが見つかりません: https://ascii.jp/elem/000/004/213/4213879/ (not-found)"]
+[2025-07-19T05:52:42.676Z] INFO: 📤 clipping送信準備: 75195c90-79c5-4f36-8a54-33e98428a904
+[2025-07-19T05:52:42.678Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/75195c90-79c5-4f36-8a54-33e98428a904
+[2025-07-19T05:52:42.682Z] DEBUG:    ターゲット: https://mainichi.jp/articles/20250627/k00/00m/040/391000c
+[2025-07-19T05:52:43.250Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 75195c90-79c5-4f36-8a54-33e98428a904 | ["Webmentionエンドポイントが見つかりません: https://mainichi.jp/articles/20250627/k00/00m/040/391000c (not-found)"]
+[2025-07-19T05:52:49.264Z] INFO: 📤 clipping送信準備: 88801a60-47bb-4888-bcfd-a6e314a3037b
+[2025-07-19T05:52:49.266Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/88801a60-47bb-4888-bcfd-a6e314a3037b
+[2025-07-19T05:52:49.270Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST6V31DST6VUTFK00TM.html?ptoken=01JYQFWM766WA9D4ETAKK0ZV7J
+[2025-07-19T05:52:49.568Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 88801a60-47bb-4888-bcfd-a6e314a3037b | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST6V31DST6VUTFK00TM.html?ptoken=01JYQFWM766WA9D4ETAKK0ZV7J (not-found)"]
+[2025-07-19T05:52:55.587Z] INFO: 📤 clipping送信準備: 74cacb13-0574-4a30-805d-1c027d6f3db6
+[2025-07-19T05:52:55.589Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/74cacb13-0574-4a30-805d-1c027d6f3db6
+[2025-07-19T05:52:55.592Z] DEBUG:    ターゲット: https://globe.asahi.com/article/15845779
+[2025-07-19T05:52:56.753Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 74cacb13-0574-4a30-805d-1c027d6f3db6 | ["Webmentionエンドポイントが見つかりません: https://globe.asahi.com/article/15845779 (not-found)"]
+[2025-07-19T05:53:02.761Z] INFO: 📤 clipping送信準備: 001402bc-1188-495c-bd9e-0726f3c8f5de
+[2025-07-19T05:53:02.763Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/001402bc-1188-495c-bd9e-0726f3c8f5de
+[2025-07-19T05:53:02.766Z] DEBUG:    ターゲット: https://news.yahoo.co.jp/expert/articles/a8c540ceeac4bad06c7f110d2c927b1b0f2763e2
+[2025-07-19T05:53:03.130Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 001402bc-1188-495c-bd9e-0726f3c8f5de | ["Webmentionエンドポイントが見つかりません: https://news.yahoo.co.jp/expert/articles/a8c540ceeac4bad06c7f110d2c927b1b0f2763e2 (not-found)"]
+[2025-07-19T05:53:09.143Z] INFO: 📤 clipping送信準備: 9320063f-471b-4091-a140-dba86c2d0a8e
+[2025-07-19T05:53:09.145Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/9320063f-471b-4091-a140-dba86c2d0a8e
+[2025-07-19T05:53:09.149Z] DEBUG:    ターゲット: https://note.com/caffelover/n/n350fc02af2fc?sub_rt=share_pb
+[2025-07-19T05:53:09.571Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 9320063f-471b-4091-a140-dba86c2d0a8e | ["Webmentionエンドポイントが見つかりません: https://note.com/caffelover/n/n350fc02af2fc?sub_rt=share_pb (not-found)"]
+[2025-07-19T05:53:15.576Z] INFO: 📤 clipping送信準備: 1a2cc571-c728-44ac-a17b-39d02b8e7553
+[2025-07-19T05:53:15.578Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/1a2cc571-c728-44ac-a17b-39d02b8e7553
+[2025-07-19T05:53:15.583Z] DEBUG:    ターゲット: https://www.synchronous.jp/articles/-/2566
+[2025-07-19T05:53:15.991Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 1a2cc571-c728-44ac-a17b-39d02b8e7553 | ["Webmentionエンドポイントが見つかりません: https://www.synchronous.jp/articles/-/2566 (not-found)"]
+[2025-07-19T05:53:22.000Z] INFO: 📤 clipping送信準備: 5344aa91-f482-4809-b0cf-d5bd66a07997
+[2025-07-19T05:53:22.003Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/5344aa91-f482-4809-b0cf-d5bd66a07997
+[2025-07-19T05:53:22.007Z] DEBUG:    ターゲット: https://globe.asahi.com/article/15845779
+[2025-07-19T05:53:22.038Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 5344aa91-f482-4809-b0cf-d5bd66a07997 | ["Webmentionエンドポイントが見つかりません: https://globe.asahi.com/article/15845779 (not-found)"]
+[2025-07-19T05:53:28.056Z] INFO: 📤 clipping送信準備: 81f86c3e-54ba-4dff-b210-8b542e2aa90c
+[2025-07-19T05:53:28.059Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/81f86c3e-54ba-4dff-b210-8b542e2aa90c
+[2025-07-19T05:53:28.063Z] DEBUG:    ターゲット: https://www.soc.hit-u.ac.jp/~methodology/review.html
+[2025-07-19T05:53:28.228Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 81f86c3e-54ba-4dff-b210-8b542e2aa90c | ["Webmentionエンドポイントが見つかりません: https://www.soc.hit-u.ac.jp/~methodology/review.html (not-found)"]
+[2025-07-19T05:53:34.231Z] INFO: 📤 clipping送信準備: 05c4f681-8a95-475c-ba82-be16f797e143
+[2025-07-19T05:53:34.234Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/05c4f681-8a95-475c-ba82-be16f797e143
+[2025-07-19T05:53:34.238Z] DEBUG:    ターゲット: https://blog.overkast.jp/2011/06/%E3%83%A9%E3%82%AB%E3%83%B3%E7%90%86%E8%AB%96%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86-2/
+[2025-07-19T05:53:34.509Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 05c4f681-8a95-475c-ba82-be16f797e143 | ["Webmentionエンドポイントが見つかりません: https://blog.overkast.jp/2011/06/%E3%83%A9%E3%82%AB%E3%83%B3%E7%90%86%E8%AB%96%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86-2/ (not-found)"]
+[2025-07-19T05:53:40.514Z] INFO: 📤 clipping送信準備: 4a57dba4-a1e7-4425-990b-061311e7776b
+[2025-07-19T05:53:40.516Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/4a57dba4-a1e7-4425-990b-061311e7776b
+[2025-07-19T05:53:40.519Z] DEBUG:    ターゲット: https://blog.overkast.jp/2011/07/%E3%83%A9%E3%82%AB%E3%83%B3%E7%90%86%E8%AB%96%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86-3/
+[2025-07-19T05:53:40.763Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 4a57dba4-a1e7-4425-990b-061311e7776b | ["Webmentionエンドポイントが見つかりません: https://blog.overkast.jp/2011/07/%E3%83%A9%E3%82%AB%E3%83%B3%E7%90%86%E8%AB%96%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86-3/ (not-found)"]
+[2025-07-19T05:53:46.769Z] INFO: 📤 clipping送信準備: 32e33dee-625a-410b-8fa2-8b9804bf4f21
+[2025-07-19T05:53:46.771Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/32e33dee-625a-410b-8fa2-8b9804bf4f21
+[2025-07-19T05:53:46.775Z] DEBUG:    ターゲット: https://blog.overkast.jp/2011/06/%E3%83%A9%E3%82%AB%E3%83%B3%E7%90%86%E8%AB%96%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86-1/
+[2025-07-19T05:53:47.017Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 32e33dee-625a-410b-8fa2-8b9804bf4f21 | ["Webmentionエンドポイントが見つかりません: https://blog.overkast.jp/2011/06/%E3%83%A9%E3%82%AB%E3%83%B3%E7%90%86%E8%AB%96%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86-1/ (not-found)"]
+[2025-07-19T05:53:53.036Z] INFO: 📤 clipping送信準備: 98ad9c46-37a8-457d-b472-a54a047c32cb
+[2025-07-19T05:53:53.037Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/98ad9c46-37a8-457d-b472-a54a047c32cb
+[2025-07-19T05:53:53.041Z] DEBUG:    ターゲット: https://github.com/amatya-aditya/obsidian-rss-dashboard
+[2025-07-19T05:53:53.732Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 98ad9c46-37a8-457d-b472-a54a047c32cb | ["Webmentionエンドポイントが見つかりません: https://github.com/amatya-aditya/obsidian-rss-dashboard (not-found)"]
+[2025-07-19T05:53:59.746Z] INFO: 📤 clipping送信準備: d92728cb-8095-4aa5-82ab-319f3b5333bd
+[2025-07-19T05:53:59.748Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/d92728cb-8095-4aa5-82ab-319f3b5333bd
+[2025-07-19T05:53:59.752Z] DEBUG:    ターゲット: https://www.reddit.com/r/ObsidianMD/comments/1jd5ccf/working_on_a_new_obsidian_plugin_rss_dashboard/
+[2025-07-19T05:54:00.422Z] ERROR: FAILURE: clippingshareエントリ送信失敗: d92728cb-8095-4aa5-82ab-319f3b5333bd | ["Webmentionエンドポイントが見つかりません: https://www.reddit.com/r/ObsidianMD/comments/1jd5ccf/working_on_a_new_obsidian_plugin_rss_dashboard/ (not-found)"]
+[2025-07-19T05:54:06.430Z] INFO: 📤 clipping送信準備: 442f3293-51ad-4896-97a2-9d33840bae74
+[2025-07-19T05:54:06.432Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/442f3293-51ad-4896-97a2-9d33840bae74
+[2025-07-19T05:54:06.437Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST6S56R8T6SUTFL022M.html?ptoken=01JYN0C7Y4DQCRWK4CC9B0TTMN
+[2025-07-19T05:54:10.440Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 442f3293-51ad-4896-97a2-9d33840bae74 | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST6S56R8T6SUTFL022M.html?ptoken=01JYN0C7Y4DQCRWK4CC9B0TTMN (not-found)"]
+[2025-07-19T05:54:16.458Z] INFO: 📤 clipping送信準備: 3c232c7e-390d-4628-8286-3a622ab8f848
+[2025-07-19T05:54:16.459Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/3c232c7e-390d-4628-8286-3a622ab8f848
+[2025-07-19T05:54:16.463Z] DEBUG:    ターゲット: https://book.asahi.com/jinbun/article/15752038
+[2025-07-19T05:54:16.809Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 3c232c7e-390d-4628-8286-3a622ab8f848 | ["Webmentionエンドポイントが見つかりません: https://book.asahi.com/jinbun/article/15752038 (not-found)"]
+[2025-07-19T05:54:22.826Z] INFO: 📤 clipping送信準備: 151b7275-f333-408f-9a3f-9164f8303d26
+[2025-07-19T05:54:22.828Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/151b7275-f333-408f-9a3f-9164f8303d26
+[2025-07-19T05:54:22.831Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/DA3S16242447.html?ptoken=01JYJ1BK7KWS067A16NSGNW05T
+[2025-07-19T05:54:23.177Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 151b7275-f333-408f-9a3f-9164f8303d26 | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16242447.html?ptoken=01JYJ1BK7KWS067A16NSGNW05T (not-found)"]
+[2025-07-19T05:54:29.185Z] INFO: 📤 clipping送信準備: c343adb7-d52b-4a32-81c8-05c8de8b27e0
+[2025-07-19T05:54:29.187Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/c343adb7-d52b-4a32-81c8-05c8de8b27e0
+[2025-07-19T05:54:29.190Z] DEBUG:    ターゲット: https://x.com/yasgreen615/status/1936223314932121735
+[2025-07-19T05:54:29.560Z] ERROR: FAILURE: clippingshareエントリ送信失敗: c343adb7-d52b-4a32-81c8-05c8de8b27e0 | ["Webmentionエンドポイントが見つかりません: https://x.com/yasgreen615/status/1936223314932121735 (not-found)"]
+[2025-07-19T05:54:35.576Z] INFO: 📤 clipping送信準備: e965d0d9-9338-4af2-800e-b64286b369b5
+[2025-07-19T05:54:35.579Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/e965d0d9-9338-4af2-800e-b64286b369b5
+[2025-07-19T05:54:35.583Z] DEBUG:    ターゲット: https://quillette.com/2022/10/22/the-dawn-of-everything-and-the-politics-of-human-prehistory/
+[2025-07-19T05:54:36.564Z] INFO: SUCCESS: clippingshareエントリ送信成功: e965d0d9-9338-4af2-800e-b64286b369b5
+[2025-07-19T05:54:42.574Z] INFO: 📤 clipping送信準備: 0ed3e517-23cc-4645-b05c-a279c4473e11
+[2025-07-19T05:54:42.577Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/0ed3e517-23cc-4645-b05c-a279c4473e11
+[2025-07-19T05:54:42.583Z] DEBUG:    ターゲット: https://x.com/konoy541/status/1935296081367355739
+[2025-07-19T05:54:42.844Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 0ed3e517-23cc-4645-b05c-a279c4473e11 | ["Webmentionエンドポイントが見つかりません: https://x.com/konoy541/status/1935296081367355739 (not-found)"]
+[2025-07-19T05:54:48.852Z] INFO: 📤 clipping送信準備: b76f5c7b-a33d-4917-811a-4eff5f68f75b
+[2025-07-19T05:54:48.855Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/b76f5c7b-a33d-4917-811a-4eff5f68f75b
+[2025-07-19T05:54:48.858Z] DEBUG:    ターゲット: https://lume.land/plugins/nav/
+[2025-07-19T05:54:50.251Z] ERROR: FAILURE: clippingshareエントリ送信失敗: b76f5c7b-a33d-4917-811a-4eff5f68f75b | ["Webmentionエンドポイントが見つかりません: https://lume.land/plugins/nav/ (not-found)"]
+[2025-07-19T05:54:56.260Z] INFO: 📤 clipping送信準備: c9451e43-2e03-46ac-8f11-2c63076d0765
+[2025-07-19T05:54:56.263Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/c9451e43-2e03-46ac-8f11-2c63076d0765
+[2025-07-19T05:54:56.268Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST6D20T1T6DULLI005M.html?ptoken=01JXYJY4WYK36NWAG7R00C8S9S
+[2025-07-19T05:54:56.567Z] ERROR: FAILURE: clippingshareエントリ送信失敗: c9451e43-2e03-46ac-8f11-2c63076d0765 | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST6D20T1T6DULLI005M.html?ptoken=01JXYJY4WYK36NWAG7R00C8S9S (not-found)"]
+[2025-07-19T05:55:02.581Z] INFO: 📤 clipping送信準備: f314b284-b7ab-4e70-8a98-acfc82e21602
+[2025-07-19T05:55:02.583Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/f314b284-b7ab-4e70-8a98-acfc82e21602
+[2025-07-19T05:55:02.587Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST6C2HS0T6CULLI007M.html?ptoken=01JXVRRJ9W57CDM9M09TN83N01
+[2025-07-19T05:55:03.074Z] ERROR: FAILURE: clippingshareエントリ送信失敗: f314b284-b7ab-4e70-8a98-acfc82e21602 | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST6C2HS0T6CULLI007M.html?ptoken=01JXVRRJ9W57CDM9M09TN83N01 (not-found)"]
+[2025-07-19T05:55:09.080Z] INFO: 📤 clipping送信準備: 3e69563b-bbcd-4c20-bb5d-d6a668049506
+[2025-07-19T05:55:09.081Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/3e69563b-bbcd-4c20-bb5d-d6a668049506
+[2025-07-19T05:55:09.085Z] DEBUG:    ターゲット: https://www.wsj.com/politics/national-security/ufo-us-disinformation-45376f7e?st=NWhKJy&reflink=desktopwebshare_permalink
+[2025-07-19T05:55:09.213Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 3e69563b-bbcd-4c20-bb5d-d6a668049506 | ["Webmentionエンドポイントが見つかりません: https://www.wsj.com/politics/national-security/ufo-us-disinformation-45376f7e?st=NWhKJy&reflink=desktopwebshare_permalink (HTTP 401: Unauthorized)"]
+[2025-07-19T05:55:15.221Z] INFO: 📤 clipping送信準備: e44dabcd-386c-4010-843b-607259a201c4
+[2025-07-19T05:55:15.224Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/e44dabcd-386c-4010-843b-607259a201c4
+[2025-07-19T05:55:15.228Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST633V2TT63UTIL03SM.html?ptoken=01JXF8Y5E3R338V310ASQF2D5H
+[2025-07-19T05:55:15.656Z] ERROR: FAILURE: clippingshareエントリ送信失敗: e44dabcd-386c-4010-843b-607259a201c4 | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST633V2TT63UTIL03SM.html?ptoken=01JXF8Y5E3R338V310ASQF2D5H (not-found)"]
+[2025-07-19T05:55:21.661Z] INFO: 📤 clipping送信準備: 86058d04-6c35-4fe3-909f-a4d35a5536d1
+[2025-07-19T05:55:21.663Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/86058d04-6c35-4fe3-909f-a4d35a5536d1
+[2025-07-19T05:55:21.666Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST613JXGT61UTIL033M.html?ptoken=01JWQ2CGVZBDTQV8QVS8W70JS7
+[2025-07-19T05:55:21.975Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 86058d04-6c35-4fe3-909f-a4d35a5536d1 | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST613JXGT61UTIL033M.html?ptoken=01JWQ2CGVZBDTQV8QVS8W70JS7 (not-found)"]
+[2025-07-19T05:55:27.982Z] INFO: 📤 clipping送信準備: e7720de5-096e-470f-9396-4b2fce144e79
+[2025-07-19T05:55:27.984Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/e7720de5-096e-470f-9396-4b2fce144e79
+[2025-07-19T05:55:27.988Z] DEBUG:    ターゲット: https://dancyu.jp/recipe/2022_00005549.html
+[2025-07-19T05:55:28.105Z] ERROR: FAILURE: clippingshareエントリ送信失敗: e7720de5-096e-470f-9396-4b2fce144e79 | ["Webmentionエンドポイントが見つかりません: https://dancyu.jp/recipe/2022_00005549.html (not-found)"]
+[2025-07-19T05:55:34.113Z] INFO: 📤 clipping送信準備: 0b42e396-0109-4432-bd7e-d7a176bb1ae4
+[2025-07-19T05:55:34.115Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/0b42e396-0109-4432-bd7e-d7a176bb1ae4
+[2025-07-19T05:55:34.120Z] DEBUG:    ターゲット: https://book.asahi.com/article/15820534
+[2025-07-19T05:55:34.446Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 0b42e396-0109-4432-bd7e-d7a176bb1ae4 | ["Webmentionエンドポイントが見つかりません: https://book.asahi.com/article/15820534 (not-found)"]
+[2025-07-19T05:55:40.460Z] INFO: 📤 clipping送信準備: 0033945c-edbe-401c-9506-f1b8d94cce5a
+[2025-07-19T05:55:40.462Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/0033945c-edbe-401c-9506-f1b8d94cce5a
+[2025-07-19T05:55:40.465Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/DA3S16233362.html?ptoken=01JXGEM0YPTF3AKHPJKD1QJXPB
+[2025-07-19T05:55:40.730Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 0033945c-edbe-401c-9506-f1b8d94cce5a | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16233362.html?ptoken=01JXGEM0YPTF3AKHPJKD1QJXPB (not-found)"]
+[2025-07-19T05:55:46.744Z] INFO: 📤 clipping送信準備: 75804702-5f1d-45b8-8472-e1d040307a25
+[2025-07-19T05:55:46.747Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/75804702-5f1d-45b8-8472-e1d040307a25
+[2025-07-19T05:55:46.753Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/DA3S16231896.html?ptoken=01JXEDE2DBQC0HSJVPBNDVTR7S
+[2025-07-19T05:55:47.116Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 75804702-5f1d-45b8-8472-e1d040307a25 | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16231896.html?ptoken=01JXEDE2DBQC0HSJVPBNDVTR7S (not-found)"]
+[2025-07-19T05:55:53.134Z] INFO: 📤 clipping送信準備: e94ba439-591c-44f6-9598-b8d391ae19b4
+[2025-07-19T05:55:53.136Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/e94ba439-591c-44f6-9598-b8d391ae19b4
+[2025-07-19T05:55:53.141Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/DA3S16218774.html?ptoken=01JVTEDTNMS8KCS6X3R6WVA5FS
+[2025-07-19T05:55:53.420Z] ERROR: FAILURE: clippingshareエントリ送信失敗: e94ba439-591c-44f6-9598-b8d391ae19b4 | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16218774.html?ptoken=01JVTEDTNMS8KCS6X3R6WVA5FS (not-found)"]
+[2025-07-19T05:55:59.437Z] INFO: 📤 clipping送信準備: 55cf66e8-5086-482c-b457-613ba678949f
+[2025-07-19T05:55:59.440Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/55cf66e8-5086-482c-b457-613ba678949f
+[2025-07-19T05:55:59.444Z] DEBUG:    ターゲット: https://masatler.hatenablog.com/entry/2025/05/09/160801
+[2025-07-19T05:55:59.805Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 55cf66e8-5086-482c-b457-613ba678949f | ["Webmentionエンドポイントが見つかりません: https://masatler.hatenablog.com/entry/2025/05/09/160801 (not-found)"]
+[2025-07-19T05:56:05.831Z] INFO: 📤 clipping送信準備: 712d311b-bdec-46d7-9fd2-429c87ef94aa
+[2025-07-19T05:56:05.837Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/712d311b-bdec-46d7-9fd2-429c87ef94aa
+[2025-07-19T05:56:05.853Z] DEBUG:    ターゲット: https://www.kikkoman.co.jp/homecook/search/recipe/00057246/
+[2025-07-19T05:56:05.974Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 712d311b-bdec-46d7-9fd2-429c87ef94aa | ["Webmentionエンドポイントが見つかりません: https://www.kikkoman.co.jp/homecook/search/recipe/00057246/ (not-found)"]
+[2025-07-19T05:56:11.981Z] INFO: 📤 clipping送信準備: 811af1c0-3791-431a-93af-3432469bf413
+[2025-07-19T05:56:11.984Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/811af1c0-3791-431a-93af-3432469bf413
+[2025-07-19T05:56:11.987Z] DEBUG:    ターゲット: https://chatgpt.com/c/67e7cb29-8c5c-800b-b7b8-0a756f6d93bc
+[2025-07-19T05:56:12.548Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 811af1c0-3791-431a-93af-3432469bf413 | ["Webmentionエンドポイントが見つかりません: https://chatgpt.com/c/67e7cb29-8c5c-800b-b7b8-0a756f6d93bc (not-found)"]
+[2025-07-19T05:56:18.563Z] INFO: 📤 clipping送信準備: b85ec568-e02a-44e1-8f5c-b8ef568537fc
+[2025-07-19T05:56:18.565Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/b85ec568-e02a-44e1-8f5c-b8ef568537fc
+[2025-07-19T05:56:18.569Z] DEBUG:    ターゲット: https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html
+[2025-07-19T05:56:19.098Z] ERROR: FAILURE: clippingshareエントリ送信失敗: b85ec568-e02a-44e1-8f5c-b8ef568537fc | ["Webmentionエンドポイントが見つかりません: https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html (not-found)"]
+[2025-07-19T05:56:25.106Z] INFO: 📤 clipping送信準備: 9ca6c296-2aa1-4652-ac06-25764dfe36f5
+[2025-07-19T05:56:25.108Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/9ca6c296-2aa1-4652-ac06-25764dfe36f5
+[2025-07-19T05:56:25.113Z] DEBUG:    ターゲット: https://chatgpt.com/c/67e7a8bf-100c-800b-b260-24db207b8d94
+[2025-07-19T05:56:25.884Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 9ca6c296-2aa1-4652-ac06-25764dfe36f5 | ["Webmentionエンドポイントが見つかりません: https://chatgpt.com/c/67e7a8bf-100c-800b-b260-24db207b8d94 (not-found)"]
+[2025-07-19T05:56:31.890Z] INFO: 📤 clipping送信準備: a326fc48-b388-42e9-91e3-de44e7b439c4
+[2025-07-19T05:56:31.893Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/a326fc48-b388-42e9-91e3-de44e7b439c4
+[2025-07-19T05:56:31.896Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM
+[2025-07-19T05:56:32.213Z] ERROR: FAILURE: clippingshareエントリ送信失敗: a326fc48-b388-42e9-91e3-de44e7b439c4 | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM (not-found)"]
+[2025-07-19T05:56:38.220Z] INFO: 📤 clipping送信準備: 66aa8c8c-0e29-4789-9929-8049feb5f8ef
+[2025-07-19T05:56:38.221Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/66aa8c8c-0e29-4789-9929-8049feb5f8ef
+[2025-07-19T05:56:38.225Z] DEBUG:    ターゲット: https://localghost.dev/blog/sending-webmentions-from-a-static-site/
+[2025-07-19T05:56:40.422Z] INFO: SUCCESS: clippingshareエントリ送信成功: 66aa8c8c-0e29-4789-9929-8049feb5f8ef
+[2025-07-19T05:56:46.438Z] INFO: 📤 clipping送信準備: b5602b7f-2e40-443d-a986-8f0d48d2ea95
+[2025-07-19T05:56:46.439Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/b5602b7f-2e40-443d-a986-8f0d48d2ea95
+[2025-07-19T05:56:46.443Z] DEBUG:    ターゲット: https://edition.cnn.com/2025/07/16/politics/trump-manosphere-theo-von?utm_medium=social&utm_source=blueskyCNN&utm_content=2025-07-16T11:08:57
+[2025-07-19T05:56:47.453Z] ERROR: FAILURE: clippingshareエントリ送信失敗: b5602b7f-2e40-443d-a986-8f0d48d2ea95 | ["Webmentionエンドポイントが見つかりません: https://edition.cnn.com/2025/07/16/politics/trump-manosphere-theo-von?utm_medium=social&utm_source=blueskyCNN&utm_content=2025-07-16T11:08:57 (not-found)"]
+[2025-07-19T05:56:53.465Z] INFO: 📤 clipping送信準備: 92c2213e-6c80-4a45-be02-a2190b0d57bb
+[2025-07-19T05:56:53.467Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/92c2213e-6c80-4a45-be02-a2190b0d57bb
+[2025-07-19T05:56:53.471Z] DEBUG:    ターゲット: https://note.com/noobie1920/n/na35bdf5874d5
+[2025-07-19T05:56:53.829Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 92c2213e-6c80-4a45-be02-a2190b0d57bb | ["Webmentionエンドポイントが見つかりません: https://note.com/noobie1920/n/na35bdf5874d5 (not-found)"]
+[2025-07-19T05:56:59.835Z] INFO: 📤 clipping送信準備: dcda005b-7611-4e7f-b594-d294bbc60087
+[2025-07-19T05:56:59.837Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/dcda005b-7611-4e7f-b594-d294bbc60087
+[2025-07-19T05:56:59.841Z] DEBUG:    ターゲット: https://note.com/simpleway/n/n430c35e3afcd
+[2025-07-19T05:57:00.087Z] ERROR: FAILURE: clippingshareエントリ送信失敗: dcda005b-7611-4e7f-b594-d294bbc60087 | ["Webmentionエンドポイントが見つかりません: https://note.com/simpleway/n/n430c35e3afcd (not-found)"]
+[2025-07-19T05:57:06.104Z] INFO: 📤 clipping送信準備: 96f26f00-c2bd-4f23-ae77-22f5cd542c67
+[2025-07-19T05:57:06.106Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/96f26f00-c2bd-4f23-ae77-22f5cd542c67
+[2025-07-19T05:57:06.109Z] DEBUG:    ターゲット: https://mainichi.jp/articles/20250715/k00/00m/010/230000c
+[2025-07-19T05:57:06.507Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 96f26f00-c2bd-4f23-ae77-22f5cd542c67 | ["Webmentionエンドポイントが見つかりません: https://mainichi.jp/articles/20250715/k00/00m/010/230000c (not-found)"]
+[2025-07-19T05:57:12.511Z] INFO: 📤 clipping送信準備: b6384545-d912-410f-beb6-81acf5b1ceb8
+[2025-07-19T05:57:12.513Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/b6384545-d912-410f-beb6-81acf5b1ceb8
+[2025-07-19T05:57:12.516Z] DEBUG:    ターゲット: https://digital.asahi.com/sp/articles/AST7C2C1LT7CUCVL02PM.html?ptoken=01K08XVF3AWD66313STE94XKSX
+[2025-07-19T05:57:12.861Z] ERROR: FAILURE: clippingshareエントリ送信失敗: b6384545-d912-410f-beb6-81acf5b1ceb8 | ["Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST7C2C1LT7CUCVL02PM.html?ptoken=01K08XVF3AWD66313STE94XKSX (not-found)"]
+[2025-07-19T05:57:18.866Z] INFO: 📤 clipping送信準備: 377f2702-7091-442f-abb7-d0a64a95d122
+[2025-07-19T05:57:18.868Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/377f2702-7091-442f-abb7-d0a64a95d122
+[2025-07-19T05:57:18.873Z] DEBUG:    ターゲット: https://www.msz.co.jp/book/upcoming/
+[2025-07-19T05:57:19.133Z] ERROR: FAILURE: clippingshareエントリ送信失敗: 377f2702-7091-442f-abb7-d0a64a95d122 | ["Webmentionエンドポイントが見つかりません: https://www.msz.co.jp/book/upcoming/ (not-found)"]
+[2025-07-19T05:57:25.140Z] INFO: 💾 履歴保存完了
+[2025-07-19T05:57:25.142Z] INFO: 🎉 Webmention送信完了: 4件送信
+[2025-07-19T06:10:44.531Z] INFO: Webmention送信スクリプト開始
+[2025-07-19T06:10:44.533Z] INFO: モード: 本番送信
+[2025-07-19T06:10:44.541Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-19T06:10:44.542Z] INFO: 履歴: dailylog=5, clipping=182, blog=0
+[2025-07-19T06:10:44.545Z] INFO: 📅 dailylog処理中...
+[2025-07-19T06:10:44.551Z] INFO: dailylog: 0件の新エントリ
+[2025-07-19T06:10:44.553Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-19T06:10:44.561Z] INFO: 🔍 新しいclippingshareエントリ: 0件
+[2025-07-19T06:10:44.565Z] INFO: 💾 履歴保存完了
+[2025-07-19T06:10:44.567Z] INFO: 🎉 Webmention送信完了: 0件送信

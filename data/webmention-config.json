@@ -16,7 +16,7 @@
     },
     "clippingshare": {
       "enabled": true,
-      "data_file": "data/clippingshare.json",
+      "data_file": "external_data/clippingshare.json",
       "base_url": "https://asadaame5121.net/clippingshare/"
     },
     "blog_updates": {

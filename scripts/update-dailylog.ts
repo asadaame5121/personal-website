@@ -5,7 +5,7 @@ import { join } from "jsr:@std/path";
 
 // 設定
 const OBSIDIAN_LOG_DIR = join(Deno.env.get("OBSIDIAN_LOG_DIR") ?? "C:/Users/Yudai/Documents/Obsidian/log");
-const DAILYLOG_PATH = join(Deno.env.get("DAILYLOG_PATH") ?? "C:/Users/Yudai/personal-website/src/dailylog.md");
+// DAILYLOG_PATHは不要（md出力廃止）
 const DAILYLOG_JSON = join(Deno.env.get("DAILYLOG_JSON") ?? "C:/Users/Yudai/personal-website/external_data/dailylog.json");
 // 日付取得（コマンドライン引数 or 今日）
 function getTargetDate(): string {
@@ -19,7 +19,7 @@ function getTargetDate(): string {
 }
 
 // 「## きょうのメモ」以降の本文を取得
-async function extractMemoSection(md: string): Promise<string | null> {
+function extractMemoSection(md: string): string | null {
   const lines = md.split("\n");
   const idx = lines.findIndex(l => l.trim().startsWith("## きょうのメモ"));
   if (idx === -1) return null;
@@ -64,30 +64,11 @@ async function main() {
   }
 
   const md = await Deno.readTextFile(logFile);
-  const memo = await extractMemoSection(md);
+  const memo = extractMemoSection(md);
   if (!memo) return;
 
-  // 既存dailylog.mdを読み込み
-  let prev = "";
-  try {
-    prev = await Deno.readTextFile(DAILYLOG_PATH);
-  } catch (_) {}
-
-  // 既存エントリを配列化
-  const entries = prev.split(/^## .+のメモ$/m)
-    .map(e => e.trim())
-    .filter(e => e.length > 0);
-
-  // 新規エントリが既存と重複しない場合のみ追加
-  const newBody = memo.trim();
-  const newHeading = `## ${date}のメモ`;
-  const newEntryBlock = `${newHeading}\n${newBody}\n\n`;
-  const exists = entries.some(e => e === newBody);
-  const result = exists ? prev : newEntryBlock + prev;
-
-  await Deno.writeTextFile(DAILYLOG_PATH, result);
-
   // --- JSON出力処理 ---
+  const newBody = memo.trim();
 // 既存JSON読み込み
 let jsonArr: { id: string; datetime: string; content: string }[] = [];
 try {

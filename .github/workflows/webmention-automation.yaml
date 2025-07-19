@@ -9,7 +9,7 @@ on:
       dry_run:
         description: 'ドライランモードで実行'
         required: false
-        default: 'false'
+        default: false
         type: boolean
 
 jobs:
@@ -21,9 +21,9 @@ jobs:
       uses: actions/checkout@v4
       
     - name: Deno セットアップ
-      uses: denoland/setup-deno@v1
+      uses: denoland/setup-deno@v2
       with:
-        deno-version: v1.x
+        deno-version: v2.x
         
     - name: 依存関係キャッシュ
       uses: actions/cache@v3
@@ -36,7 +36,7 @@ jobs:
     - name: Webmention送信実行
       run: |
         cd scripts
-        if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+        if [ "${{ github.event.inputs.dry_run }}" = true ]; then
           echo "🔍 ドライランモードで実行中..."
           deno run --allow-net --allow-read --allow-write send-webmentions.ts --dry-run
         else
