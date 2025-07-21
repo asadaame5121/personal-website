@@ -46,6 +46,26 @@ const site = lume({
 site.add("_data/clippingshare.json");
 site.add("_data/dailylog.json");
 
+// --- RSS/JSONフィード生成 ---
+// 投稿記事（type:postやcategory:blog等）に合わせてqueryやoutputパスを調整してください
+site.use(feed({
+  output: ["/feed.rss", "/feed.json"], // RSSとJSON両方生成
+  query: "url^=/Book/|/Article/|/Glossary/|/People/", // 投稿記事のみ対象。必要に応じて"category=blog"等に変更可
+  info: {
+    title: "=site.title",           // サイトタイトルを自動取得
+    description: "=site.description", // サイト説明を自動取得
+    lang: "ja",                       // 日本語サイトの場合
+  },
+  items: {
+    title: "=title",
+    description: "=excerpt", // または"=description"。記事の要約プロパティ名に合わせて調整
+    published: "=date",
+    content: "=children"
+  },
+  limit: 20, // 最新20件を出力
+}));
+
+
 // Bluesky投稿取得フィルターを登録
 site.filter("getBlueskyPosts", () => []); // ★ダミー実装（ビルド通過用）
 site.filter("decodeURIComponent", decodeURIComponentFilter);

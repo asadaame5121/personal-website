@@ -6,8 +6,8 @@
     "@std/fs": "jsr:@std/fs@^1.0.16",
     "daisyui": "npm:daisyui@^5.0.43",
     "fast-xml-parser": "npm:fast-xml-parser@^5.2.0",
-    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@79f08f0d4911c0ce065f7277dfa17792634deb53/",
-    "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.10/jsx-runtime.ts"
+    "lume/": "https://deno.land/x/lume@v3.0.5/",
+    "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.11/jsx-runtime.ts"
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
@@ -27,7 +27,7 @@
   ],
   "lint": {
     "plugins": [
-      "https://cdn.jsdelivr.net/gh/lumeland/lume@79f08f0d4911c0ce065f7277dfa17792634deb53/lint.ts"
+      "https://deno.land/x/lume@v3.0.5/lint.ts"
     ]
   }
 }
