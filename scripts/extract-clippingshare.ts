@@ -12,15 +12,27 @@ const OUTPUT_PATH = Deno.env.get("CLIPPINGS_OUTPUT_PATH") ?? "C:/Users/Yudai/per
 const clippings: Array<{ filename: string; source?: string; created?: string; sitename?: string; comment?: string }> = [];
 
 for await (const entry of walk(SOURCE_DIR, { exts: [".md"], includeDirs: false })) {
-  const text = await Deno.readTextFile(entry.path);
-  const { attrs } = extract(text);
-  const fm = attrs as Record<string, unknown>;
+  let text: string;
+  try {
+    text = await Deno.readTextFile(entry.path);
+  } catch (e) {
+    console.warn(`[extract-clippingshare] ファイル読み込み失敗: ${entry.path}`);
+    continue;
+  }
+  let attrs: Record<string, unknown> = {};
+  try {
+    const result = extract(text);
+    attrs = result.attrs as Record<string, unknown>;
+  } catch (e) {
+    console.warn(`[extract-clippingshare] フロントマター抽出失敗: ${entry.path}`);
+    continue;
+  }
   clippings.push({
-    filename: typeof fm.title === "string" ? fm.title : entry.name,
-    source: typeof fm.source === "string" ? fm.source : undefined,
-    created: typeof fm.created === "string" ? fm.created : undefined,
-    sitename: typeof fm.sitename === "string" ? fm.sitename : undefined,
-    comment: typeof fm.comment === "string" ? fm.comment : undefined
+    filename: typeof attrs.title === "string" ? attrs.title : entry.name,
+    source: typeof attrs.source === "string" ? attrs.source : undefined,
+    created: typeof attrs.created === "string" ? attrs.created : undefined,
+    sitename: typeof attrs.sitename === "string" ? attrs.sitename : undefined,
+    comment: typeof attrs.comment === "string" ? attrs.comment : undefined
   });
 }
 
