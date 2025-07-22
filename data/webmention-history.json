@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-07-21T01:41:00.156Z",
+  "last_updated": "2025-07-22T01:27:32.472Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -57,6 +57,13 @@
         "source_url": "https://asadaame5121.net/dailylog#entry-8cfd51c5-b2d4-455c-a1db-ee3546d6b3c5",
         "target_url": "https://brid.gy/publish/bluesky",
         "sent_at": "2025-07-20T01:43:04.858Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "d03759c1-25bd-4f14-95b5-9efd14db6dc6",
+        "source_url": "https://asadaame5121.net/dailylog#entry-d03759c1-25bd-4f14-95b5-9efd14db6dc6",
+        "target_url": "https://brid.gy/publish/bluesky",
+        "sent_at": "2025-07-22T01:27:12.222Z",
         "status": "success"
       }
     ],
@@ -4399,6 +4406,30 @@
         "sent_at": "2025-07-20T02:04:14.804Z",
         "status": "failed",
         "error_message": "Webmentionエンドポイントが見つかりません: https://www.msz.co.jp/book/upcoming/ (not-found)"
+      },
+      {
+        "clip_id": "36fd1e95-0645-4858-85e6-e7ab19002290",
+        "source_url": "https://asadaame5121.net/clippingshare/36fd1e95-0645-4858-85e6-e7ab19002290",
+        "target_url": "https://u-site.jp/alertbox/981129",
+        "sent_at": "2025-07-22T01:27:12.225Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://u-site.jp/alertbox/981129 (not-found)"
+      },
+      {
+        "clip_id": "544f6637-4d94-45f2-9987-b5c48d2f29be",
+        "source_url": "https://asadaame5121.net/clippingshare/544f6637-4d94-45f2-9987-b5c48d2f29be",
+        "target_url": "https://sugawarataku.theletter.jp/posts/fe86bda0-64e1-11f0-a647-937666d212e1?utm_medium=email&utm_source=newsletter&utm_campaign=fe86bda0-64e1-11f0-a647-937666d212e1",
+        "sent_at": "2025-07-22T01:27:19.246Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://sugawarataku.theletter.jp/posts/fe86bda0-64e1-11f0-a647-937666d212e1?utm_medium=email&utm_source=newsletter&utm_campaign=fe86bda0-64e1-11f0-a647-937666d212e1 (not-found)"
+      },
+      {
+        "clip_id": "b046b057-a3cf-4dae-b544-5033f961b560",
+        "source_url": "https://asadaame5121.net/clippingshare/b046b057-a3cf-4dae-b544-5033f961b560",
+        "target_url": "https://sugawarataku.theletter.jp/posts/fe86bda0-64e1-11f0-a647-937666d212e1?utm_medium=email&utm_source=newsletter&utm_campaign=fe86bda0-64e1-11f0-a647-937666d212e1",
+        "sent_at": "2025-07-22T01:27:26.194Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://sugawarataku.theletter.jp/posts/fe86bda0-64e1-11f0-a647-937666d212e1?utm_medium=email&utm_source=newsletter&utm_campaign=fe86bda0-64e1-11f0-a647-937666d212e1 (not-found)"
       }
     ],
     "blog_updates": []
