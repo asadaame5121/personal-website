@@ -1,4 +1,4 @@
-export const layout = "layout-article.jsx";
+export const layout = "new_layouts/ArticleLayout.jsx";
 
 export default function* ({ search }) {
   // 全ページからtagsを集めてユニーク化

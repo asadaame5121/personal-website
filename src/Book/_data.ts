@@ -2,7 +2,7 @@
 // 各BookページのISBNからog_image(OpenBD書影URL)を自動生成するLumeデータファイル
 
 export default {
-    layout: "layout-article.jsx",
+    layout: "new_layouts/ArticleLayout.jsx",
     basename: "Book",
 };
 

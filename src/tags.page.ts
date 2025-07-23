@@ -1,4 +1,4 @@
-export const layout = "layout-article.jsx"; // 全ページ共通のフロントマター
+export const layout = "new_layouts/ArticleLayout.jsx"; // 全ページ共通のフロントマター
 
 export default function* ({ search }) {
   const tags = search.values("tags"); // 全タグを収集
