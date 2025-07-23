@@ -167,7 +167,7 @@ site.page({
 
 // TailwindCSS 設定（詳細は tailwind.config.js と CSS に記述）
 site.use(tailwindcss({
-  minify: true,
+  minify: false,
 }));
 site.use(transformImages());
 
