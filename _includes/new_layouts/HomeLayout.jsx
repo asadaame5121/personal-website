@@ -1,9 +1,7 @@
 import BaseLayout from "./BaseLayout.jsx";
 import DrawerMenu from "../../_components/new_components/DrawerMenu.jsx";
-
 import SearchBox from "../../_components/new_components/SearchBox.jsx";
-
-import { siteAuthor } from "../../_components/site-author.js";
+import AuthorCard from "../../_components/AuthorCard.jsx";
 
 export default function HomeLayout({
   title = "DropGarden",
@@ -11,7 +9,7 @@ export default function HomeLayout({
   date,
   category,
   tags,
-  author = siteAuthor,
+  author = "asadaame",
   children,
   comp,
 }) {
@@ -85,21 +83,7 @@ export default function HomeLayout({
               )}
 
               {/* 著者 */}
-              {author && (
-                <div className="p-author h-card mt-8 pt-4 border-t border-mono-lightgray">
-                  {author.photo && (
-                    <img
-                      src={author.photo}
-                      alt={author.name}
-                      className="w-12 h-12 rounded-full mr-3"
-                    />
-                  )}
-                  <div className="p-author-info">
-                    <div className="p-author-name font-bold">{author.name}</div>
-                    {author.bio && <div>{author.bio}</div>}
-                  </div>
-                </div>
-              )}
+              <AuthorCard blogAuthorID={author} display />
             </article>
           </main>
 

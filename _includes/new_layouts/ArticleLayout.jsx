@@ -1,6 +1,6 @@
 import BaseLayout from "./BaseLayout.jsx";
+import AuthorCard from "../../_components/AuthorCard.jsx";
 import DrawerMenu from "../../_components/new_components/DrawerMenu.jsx";
-
 import SearchBox from "../../_components/new_components/SearchBox.jsx";
 
 function renderToc(toc) {
@@ -31,7 +31,7 @@ export default function ArticleLayout({
   date,
   category,
   tags,
-  author,
+  blogAuthorID = "asadaame",
   previousPost,
   nextPost,
   children,
@@ -61,6 +61,7 @@ export default function ArticleLayout({
                     </a>
                   </h1>
                 )}
+
                 {date && (
                   <div className="post-date mb-2">
                     <time
@@ -160,40 +161,10 @@ export default function ArticleLayout({
                   </div>
                 )}
 
-                {/* 著者 */}
-                {author && (
-                  <div className="p-author h-card mt-4">
-                    {author.photo && (
-                      <img
-                        src={author.photo}
-                        alt={author.name}
-                        className="inline-block w-12 h-12 rounded-full mr-2"
-                      />
-                    )}
-                    <div className="p-author-info inline-block align-middle">
-                      <div className="p-author-name font-bold">{author.name}</div>
-                      {author.bio && <div>{author.bio}</div>}
-                    </div>
-                  </div>
-                )}
-
-                {/* 前後ナビ */}
-                <div className="post-navigation mt-8 flex justify-between">
-                  {previousPost ? (
-                    <a href={previousPost.url} className="prev-post u-url">
-                      ← 前の記事
-                    </a>
-                  ) : (
-                    <span></span>
-                  )}
-                  {nextPost ? (
-                    <a href={nextPost.url} className="next-post u-url">
-                      次の記事 →
-                    </a>
-                  ) : (
-                    <span></span>
-                  )}
-                </div>
+ 
+              {/* 著者カード */}
+              <AuthorCard blogAuthorID={blogAuthorID} display />
+                
               </article>
             </div>
           </main>

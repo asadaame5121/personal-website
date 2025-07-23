@@ -1,2 +1,2 @@
-layout: layout-article.jsx
+layout: new_layouts/ArticleLayout.jsx
 basename: People

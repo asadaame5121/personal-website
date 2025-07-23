@@ -1,12 +1,33 @@
 // 著者情報カード（IndieWeb h-card, display:none）
-export default function AuthorCard() {
+import blogAuthorData from "../src/_data/blogAuthor.json" with { type: "json" };
+
+
+export default function AuthorCard({ blogAuthorID = "asadaame", display = true }) {
+  const blogAuthor = blogAuthorData[blogAuthorID];
+  if (!blogAuthor) return null;
   return (
-    <div className="h-card" style={{ display: "none" }}>
-      <a className="u-url u-uid p-name" href="https://asadaame5121.net/">あさだあめ</a>
-      <img className="u-photo" src="/assets/images/profile.jpg" alt="あさだあめ" />
-      <span className="p-note">本を読んだりするおじさん。</span>
-      <a className="u-github" rel="me" href="https://github.com/asadaame5121">GitHub</a>
-      <a className="u-fediverse" rel="me" href="https://bsky.app/profile/asadaame5121.bsky.social">Fediverse</a>
+    <div className="card card-side bg-base-100 shadow-md flex-col sm:flex-row h-card" style={{ display: display ? undefined : "none" }}>
+      <figure className="flex justify-center items-center p-4">
+        <img
+          className="u-photo w-24 h-24 rounded-full object-cover border border-base-200"
+          src={blogAuthor.photo}
+          alt={blogAuthor.name}
+        />
+      </figure>
+      <div className="card-body flex-1">
+        <h2 className="card-title p-name u-url">
+          <a href={blogAuthor.url} className="u-url u-uid">{blogAuthor.name}</a>
+        </h2>
+        <p className="p-note mb-2">{blogAuthor.bio}</p>
+        <div className="flex gap-4 mt-2">
+          {blogAuthor.github && (
+            <a className="u-github btn btn-sm btn-outline" rel="me" href={blogAuthor.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+          )}
+          {blogAuthor.fediverse && (
+            <a className="u-fediverse btn btn-sm btn-outline" rel="me" href={blogAuthor.fediverse} target="_blank" rel="noopener noreferrer">Fediverse</a>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
