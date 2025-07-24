@@ -31,14 +31,11 @@ export interface ClippingWebmention {
 }
 
 export interface BlogUpdateWebmention {
-  update_id: string;
-  post_url: string;
-  post_title: string;
-  update_comment: string;
-  format: 'note' | 'article';
-  temp_file_path?: string;
+  entry_id: string;
+  source_url: string;
+  title: string;
+  target_url: string;
   sent_at: string;
-  bridgy_url: string;
   status: 'success' | 'failed' | 'pending';
   response_code?: number;
   error_message?: string;
@@ -70,6 +67,8 @@ export interface WebmentionConfig {
       enabled: boolean;
       format: 'note' | 'article';
       significant_only: boolean;
+      feed_url?: string;
+      max_entries?: number;
       template: {
         comment_max_length: number;
         include_title_link: boolean;

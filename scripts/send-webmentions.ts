@@ -7,7 +7,7 @@ import type {
   WebmentionConfig,
   DailylogWebmention,
   ClippingWebmention,
-  BlogUpdateWebmention as _BlogUpdateWebmention
+  BlogUpdateWebmention
 } from './webmention-types.ts';
 
 import {
@@ -43,6 +43,12 @@ async function main() {
     logger.info(`履歴: dailylog=${history.sent_webmentions.dailylog.length}, clipping=${history.sent_webmentions.clippingshare.length}, blog=${history.sent_webmentions.blog_updates.length}`);
     
     let totalSent = 0;
+    
+    // ブログ更新の処理（feed.jsonからの記事抽出）
+    if (config.sources.blog_updates?.enabled) {
+      const blogUpdatesSent = await _processBlogUpdates(config, history, isDryRun);
+      totalSent += blogUpdatesSent;
+    }
     
     // dailylogエントリの処理
     if (config.sources.dailylog.enabled) {
@@ -165,14 +171,120 @@ async function main() {
 /**
  * ブログ更新告知の処理（将来の拡張用）
  */
-function _processBlogUpdates(
-  _config: WebmentionConfig,
-  _history: WebmentionHistory,
-  _isDryRun: boolean
+/**
+ * feed.jsonから新着記事を抽出し、Webmention送信
+ */
+async function _processBlogUpdates(
+  config: WebmentionConfig,
+  history: WebmentionHistory,
+  isDryRun: boolean
 ): Promise<number> {
-  // TODO: ブログ更新の検出ロジックを実装
-  // 現在はプレースホルダー
-  return Promise.resolve(0);
+  logger.info('📰 ブログ更新処理中...');
+  
+  // feed.jsonの公開URLから取得
+  const feedUrl = config.sources.blog_updates?.feed_url || 'https://asadaame5121.net/feed.json';
+  logger.info(`フィードURL: ${feedUrl}`);
+  
+  try {
+    // feed.jsonを取得
+    const response = await fetch(feedUrl);
+    if (!response.ok) {
+      throw new Error(`フィード取得エラー: ${response.status} ${response.statusText}`);
+    }
+    
+    const feedData = await response.json();
+    if (!feedData.items || !Array.isArray(feedData.items)) {
+      throw new Error('フィードの形式が不正です');
+    }
+    
+    logger.info(`フィード取得成功: ${feedData.items.length}件の記事`);
+    
+    // 送信先（bridgy_fed）
+    const targetUrl = config.endpoints.bridgy_fed;
+    
+    // 送信済み記事を確認するための関数
+    const isAlreadySentBlogUpdate = (sourceUrl: string, title: string): boolean => {
+      const encodedSourceUrl = encodeURIComponent(sourceUrl);
+      const encodedTitle = encodeURIComponent(title);
+      
+      return history.sent_webmentions.blog_updates.some(item => {
+        return item.source_url === encodedSourceUrl && 
+               item.title === encodedTitle && 
+               item.target_url === encodeURIComponent(targetUrl);
+      });
+    };
+    
+    // 処理する記事数を制限（設定またはデフォルト10件）
+    const maxEntries = config.sources.blog_updates?.max_entries || 10;
+    let processedCount = 0;
+    let sentCount = 0;
+    
+    // 先頭から順に処理（新しい記事順）
+    for (const item of feedData.items) {
+      if (processedCount >= maxEntries) break;
+      
+      const sourceUrl = item.url;
+      const title = item.title;
+      
+      if (!sourceUrl || !title) {
+        logger.warn('URLまたはタイトルがない記事をスキップ');
+        continue;
+      }
+      
+      processedCount++;
+      
+      // 既に送信済みかチェック
+      if (isAlreadySentBlogUpdate(sourceUrl, title)) {
+        logger.info(`[スキップ] 送信済み: ${title}`);
+        continue;
+      }
+      
+      logger.info(`📤 送信準備: ${title}`);
+      logger.debug(`   ソース: ${sourceUrl}`);
+      logger.debug(`   ターゲット: ${targetUrl}`);
+      
+      if (!isDryRun) {
+        // レート制限チェック
+        const rateLimitCheck = checkRateLimit(history, config);
+        if (!rateLimitCheck.canSend) {
+          logger.warn(`⏳ レート制限のため${rateLimitCheck.waitTime}秒待機中...`);
+          await sleep(rateLimitCheck.waitTime!);
+        }
+        
+        // Webmention送信
+        const result = await sendWebmention(sourceUrl, targetUrl, config);
+        
+        // 履歴に追加
+        const webmention: BlogUpdateWebmention = {
+          entry_id: `blog-${new Date().getTime()}`,
+          source_url: encodeURIComponent(sourceUrl),
+          title: encodeURIComponent(title),
+          target_url: encodeURIComponent(targetUrl),
+          sent_at: new Date().toISOString(),
+          status: result.success ? 'success' : 'failed',
+          error_message: result.error_message
+        };
+        
+        history.sent_webmentions.blog_updates.push(webmention);
+        sentCount++;
+        
+        if (result.success) {
+          logger.success(`ブログ記事 ${title}`);
+        } else {
+          logger.failure(`ブログ記事 ${title}`, result.error_message);
+        }
+      } else {
+        logger.info(`[DRY RUN] ブログ記事: ${title}`);
+        sentCount++; // DRY RUNでもカウント
+      }
+    }
+    
+    logger.info(`ブログ更新処理完了: ${processedCount}件処理, ${sentCount}件送信`);
+    return sentCount;
+  } catch (error) {
+    logger.error(`ブログ更新処理エラー: ${error.message}`);
+    return 0;
+  }
 }
 
 // スクリプト実行

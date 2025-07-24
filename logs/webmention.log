@@ -1389,3 +1389,123 @@
 [2025-07-19T06:10:44.561Z] INFO: 🔍 新しいclippingshareエントリ: 0件
 [2025-07-19T06:10:44.565Z] INFO: 💾 履歴保存完了
 [2025-07-19T06:10:44.567Z] INFO: 🎉 Webmention送信完了: 0件送信
+[2025-07-24T15:04:01.733Z] INFO: Webmention送信スクリプト開始
+[2025-07-24T15:04:01.737Z] INFO: モード: DRY RUN (テスト)
+[2025-07-24T15:04:01.785Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-24T15:04:01.786Z] INFO: 履歴: dailylog=13, clipping=547, blog=0
+[2025-07-24T15:04:01.789Z] INFO: 📰 ブログ更新処理中...
+[2025-07-24T15:04:01.792Z] INFO: フィードURL: https://asadaame5121.net/feed.json
+[2025-07-24T15:04:02.418Z] INFO: フィード取得成功: 20件の記事
+[2025-07-24T15:04:02.423Z] INFO: 📤 送信準備: 五十八歳、山の家で猫と暮らす
+[2025-07-24T15:04:02.426Z] DEBUG:    ソース: https://asadaame5121.net/Book/五十八歳、山の家で猫と暮らす.html
+[2025-07-24T15:04:02.432Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:02.433Z] INFO: [DRY RUN] ブログ記事: 五十八歳、山の家で猫と暮らす
+[2025-07-24T15:04:02.435Z] INFO: 📤 送信準備: 群れから逸れて生きるための自学自習法
+[2025-07-24T15:04:02.439Z] DEBUG:    ソース: https://asadaame5121.net/Book/群れから逸れて生きるための自学自習法.html
+[2025-07-24T15:04:02.441Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:02.444Z] INFO: [DRY RUN] ブログ記事: 群れから逸れて生きるための自学自習法
+[2025-07-24T15:04:02.447Z] INFO: 📤 送信準備: 活断層地震はどこまで予測できるか 日本列島で今起きていること
+[2025-07-24T15:04:02.450Z] DEBUG:    ソース: https://asadaame5121.net/Book/活断層地震はどこまで予測できるか 日本列島で今起きていること.html
+[2025-07-24T15:04:02.453Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:02.457Z] INFO: [DRY RUN] ブログ記事: 活断層地震はどこまで予測できるか 日本列島で今起きていること
+[2025-07-24T15:04:02.460Z] INFO: 📤 送信準備: 離脱・発言・忠誠
+[2025-07-24T15:04:02.463Z] INFO: [DRY RUN] ブログ記事: 離脱・発言・忠誠
+[2025-07-24T15:04:02.467Z] DEBUG:    ソース: https://asadaame5121.net/Book/離脱・発言・忠誠.html
+[2025-07-24T15:04:02.469Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:02.474Z] INFO: 📤 送信準備: 中世の幽霊
+[2025-07-24T15:04:02.475Z] DEBUG:    ソース: https://asadaame5121.net/Book/中世の幽霊.html
+[2025-07-24T15:04:02.479Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:02.482Z] INFO: [DRY RUN] ブログ記事: 中世の幽霊
+[2025-07-24T15:04:02.485Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:02.488Z] INFO: [DRY RUN] ブログ記事: バーナード・ウィリアムズの哲学
+[2025-07-24T15:04:02.491Z] INFO: [DRY RUN] ブログ記事: 例外状態
+[2025-07-24T15:04:02.495Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:02.497Z] INFO: [DRY RUN] ブログ記事: 村に火をつけ、白痴になれ
+[2025-07-24T15:04:02.501Z] DEBUG:    ソース: https://asadaame5121.net/Book/アセクシュアルアロマンティック入門.html
+[2025-07-24T15:04:02.506Z] INFO: 📤 送信準備: アセクシュアルアロマンティック入門
+[2025-07-24T15:04:02.510Z] DEBUG:    ソース: https://asadaame5121.net/Book/例外状態.html
+[2025-07-24T15:04:02.514Z] INFO: 📤 送信準備: 例外状態
+[2025-07-24T15:04:02.518Z] DEBUG:    ソース: https://asadaame5121.net/Book/バーナード・ウィリアムズの哲学.html
+[2025-07-24T15:04:02.521Z] INFO: [DRY RUN] ブログ記事: アセクシュアルアロマンティック入門
+[2025-07-24T15:04:02.524Z] INFO: 📤 送信準備: アネマリー・モル
+[2025-07-24T15:04:02.528Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:02.531Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:02.534Z] DEBUG:    ソース: https://asadaame5121.net/People/アネマリー・モル.html
+[2025-07-24T15:04:02.537Z] INFO: 📅 dailylog処理中...
+[2025-07-24T15:04:02.540Z] INFO: ブログ更新処理完了: 10件処理, 10件送信
+[2025-07-24T15:04:02.544Z] INFO: [DRY RUN] ブログ記事: アネマリー・モル
+[2025-07-24T15:04:02.547Z] INFO: 📤 送信準備: バーナード・ウィリアムズの哲学
+[2025-07-24T15:04:02.550Z] INFO: 📤 送信準備: 村に火をつけ、白痴になれ
+[2025-07-24T15:04:02.553Z] DEBUG:    ソース: https://asadaame5121.net/Book/村に火をつけ、白痴になれ.html
+[2025-07-24T15:04:02.556Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:02.565Z] INFO: dailylog: 1件の新エントリ
+[2025-07-24T15:04:02.565Z] INFO: [DRY RUN] dailylog: 0db9a123-2dcc-49d9-8798-9b04d3e41cc4
+[2025-07-24T15:04:02.568Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-24T15:04:02.588Z] INFO: 🔍 新しいclippingshareエントリ: 1件
+[2025-07-24T15:04:02.591Z] INFO: 📤 clipping送信準備: 8e6677a5-21ad-4cf3-b4f9-669268f8a6df
+[2025-07-24T15:04:02.594Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/8e6677a5-21ad-4cf3-b4f9-669268f8a6df
+[2025-07-24T15:04:02.598Z] DEBUG:    ターゲット: https://www.ibunsha.co.jp/contents/haraguchi04/
+[2025-07-24T15:04:02.602Z] INFO: 🔍 [DRY RUN] clippingshareエントリ送信予定: 8e6677a5-21ad-4cf3-b4f9-669268f8a6df
+[2025-07-24T15:04:02.606Z] DEBUG:    [DRY RUN] ソース: https://asadaame5121.net/clippingshare/8e6677a5-21ad-4cf3-b4f9-669268f8a6df
+[2025-07-24T15:04:02.610Z] DEBUG:    [DRY RUN] ターゲット: https://www.ibunsha.co.jp/contents/haraguchi04/
+[2025-07-24T15:04:08.617Z] INFO: 🎉 Webmention送信完了: 10件送信
+[2025-07-24T15:04:39.907Z] INFO: Webmention送信スクリプト開始
+[2025-07-24T15:04:39.911Z] INFO: モード: DRY RUN (テスト)
+[2025-07-24T15:04:39.922Z] INFO: 設定読み込み完了 - dailylog:ON, clipping:ON
+[2025-07-24T15:04:39.923Z] INFO: 履歴: dailylog=13, clipping=547, blog=0
+[2025-07-24T15:04:39.927Z] INFO: 📰 ブログ更新処理中...
+[2025-07-24T15:04:39.929Z] INFO: フィードURL: https://asadaame5121.net/feed.json
+[2025-07-24T15:04:40.629Z] INFO: フィード取得成功: 20件の記事
+[2025-07-24T15:04:40.633Z] INFO: 📤 送信準備: 五十八歳、山の家で猫と暮らす
+[2025-07-24T15:04:40.636Z] DEBUG:    ソース: https://asadaame5121.net/Book/五十八歳、山の家で猫と暮らす.html
+[2025-07-24T15:04:40.639Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:40.642Z] INFO: [DRY RUN] ブログ記事: 五十八歳、山の家で猫と暮らす
+[2025-07-24T15:04:40.649Z] DEBUG:    ソース: https://asadaame5121.net/Book/群れから逸れて生きるための自学自習法.html
+[2025-07-24T15:04:40.649Z] INFO: 📤 送信準備: 群れから逸れて生きるための自学自習法
+[2025-07-24T15:04:40.652Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:40.656Z] INFO: [DRY RUN] ブログ記事: 群れから逸れて生きるための自学自習法
+[2025-07-24T15:04:40.658Z] INFO: 📤 送信準備: 活断層地震はどこまで予測できるか 日本列島で今起きていること
+[2025-07-24T15:04:40.661Z] DEBUG:    ソース: https://asadaame5121.net/Book/活断層地震はどこまで予測できるか 日本列島で今起きていること.html
+[2025-07-24T15:04:40.665Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:40.669Z] INFO: [DRY RUN] ブログ記事: 活断層地震はどこまで予測できるか 日本列島で今起きていること
+[2025-07-24T15:04:40.673Z] INFO: 📤 送信準備: 離脱・発言・忠誠
+[2025-07-24T15:04:40.676Z] DEBUG:    ソース: https://asadaame5121.net/Book/離脱・発言・忠誠.html
+[2025-07-24T15:04:40.678Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:40.681Z] INFO: 📤 送信準備: 中世の幽霊
+[2025-07-24T15:04:40.687Z] INFO: [DRY RUN] ブログ記事: 離脱・発言・忠誠
+[2025-07-24T15:04:40.690Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:40.692Z] INFO: [DRY RUN] ブログ記事: 中世の幽霊
+[2025-07-24T15:04:40.695Z] INFO: 📤 送信準備: バーナード・ウィリアムズの哲学
+[2025-07-24T15:04:40.698Z] DEBUG:    ソース: https://asadaame5121.net/Book/バーナード・ウィリアムズの哲学.html
+[2025-07-24T15:04:40.703Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:40.707Z] DEBUG:    ソース: https://asadaame5121.net/Book/中世の幽霊.html
+[2025-07-24T15:04:40.710Z] INFO: [DRY RUN] ブログ記事: バーナード・ウィリアムズの哲学
+[2025-07-24T15:04:40.713Z] INFO: 📤 送信準備: 例外状態
+[2025-07-24T15:04:40.719Z] DEBUG:    ソース: https://asadaame5121.net/Book/例外状態.html
+[2025-07-24T15:04:40.722Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:40.725Z] INFO: [DRY RUN] ブログ記事: 例外状態
+[2025-07-24T15:04:40.728Z] INFO: 📤 送信準備: 村に火をつけ、白痴になれ
+[2025-07-24T15:04:40.731Z] DEBUG:    ソース: https://asadaame5121.net/Book/村に火をつけ、白痴になれ.html
+[2025-07-24T15:04:40.736Z] INFO: [DRY RUN] ブログ記事: 村に火をつけ、白痴になれ
+[2025-07-24T15:04:40.739Z] INFO: 📤 送信準備: アセクシュアルアロマンティック入門
+[2025-07-24T15:04:40.742Z] DEBUG:    ソース: https://asadaame5121.net/Book/アセクシュアルアロマンティック入門.html
+[2025-07-24T15:04:40.745Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:40.749Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:40.752Z] INFO: [DRY RUN] ブログ記事: アセクシュアルアロマンティック入門
+[2025-07-24T15:04:40.755Z] INFO: 📤 送信準備: アネマリー・モル
+[2025-07-24T15:04:40.758Z] DEBUG:    ソース: https://asadaame5121.net/People/アネマリー・モル.html
+[2025-07-24T15:04:40.761Z] DEBUG:    ターゲット: https://fed.brid.gy/
+[2025-07-24T15:04:40.765Z] INFO: [DRY RUN] ブログ記事: アネマリー・モル
+[2025-07-24T15:04:40.768Z] INFO: ブログ更新処理完了: 10件処理, 10件送信
+[2025-07-24T15:04:40.771Z] INFO: 📅 dailylog処理中...
+[2025-07-24T15:04:40.778Z] INFO: dailylog: 1件の新エントリ
+[2025-07-24T15:04:40.778Z] INFO: [DRY RUN] dailylog: 0db9a123-2dcc-49d9-8798-9b04d3e41cc4
+[2025-07-24T15:04:40.781Z] INFO: 🔍 clippingshareエントリを検出中...
+[2025-07-24T15:04:40.802Z] INFO: 🔍 新しいclippingshareエントリ: 1件
+[2025-07-24T15:04:40.806Z] INFO: 📤 clipping送信準備: 8e6677a5-21ad-4cf3-b4f9-669268f8a6df
+[2025-07-24T15:04:40.809Z] DEBUG:    ソース: https://asadaame5121.net/clippingshare/8e6677a5-21ad-4cf3-b4f9-669268f8a6df
+[2025-07-24T15:04:40.811Z] DEBUG:    ターゲット: https://www.ibunsha.co.jp/contents/haraguchi04/
+[2025-07-24T15:04:40.815Z] INFO: 🔍 [DRY RUN] clippingshareエントリ送信予定: 8e6677a5-21ad-4cf3-b4f9-669268f8a6df
+[2025-07-24T15:04:40.824Z] DEBUG:    [DRY RUN] ソース: https://asadaame5121.net/clippingshare/8e6677a5-21ad-4cf3-b4f9-669268f8a6df
+[2025-07-24T15:04:40.829Z] DEBUG:    [DRY RUN] ターゲット: https://www.ibunsha.co.jp/contents/haraguchi04/
+[2025-07-24T15:04:46.849Z] INFO: 🎉 Webmention送信完了: 10件送信
