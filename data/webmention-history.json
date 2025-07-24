@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-07-23T01:27:53.370Z",
+  "last_updated": "2025-07-24T01:27:36.395Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -64,6 +64,34 @@
         "source_url": "https://asadaame5121.net/dailylog#entry-d03759c1-25bd-4f14-95b5-9efd14db6dc6",
         "target_url": "https://brid.gy/publish/bluesky",
         "sent_at": "2025-07-22T01:27:12.222Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "e1593fa0-e4c4-456f-a10a-a078e6bdcb10",
+        "source_url": "https://asadaame5121.net/dailylog#entry-e1593fa0-e4c4-456f-a10a-a078e6bdcb10",
+        "target_url": "https://brid.gy/publish/bluesky",
+        "sent_at": "2025-07-24T01:27:19.140Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "bfd47f29-b9bf-4773-a98b-2e376c49c7ec",
+        "source_url": "https://asadaame5121.net/dailylog#entry-bfd47f29-b9bf-4773-a98b-2e376c49c7ec",
+        "target_url": "https://brid.gy/publish/bluesky",
+        "sent_at": "2025-07-24T01:27:20.693Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "a027afcb-3a64-45de-8c11-d52d3d3eed3e",
+        "source_url": "https://asadaame5121.net/dailylog#entry-a027afcb-3a64-45de-8c11-d52d3d3eed3e",
+        "target_url": "https://brid.gy/publish/bluesky",
+        "sent_at": "2025-07-24T01:27:22.436Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "77353b07-3359-44d3-9370-7d50a621098c",
+        "source_url": "https://asadaame5121.net/dailylog#entry-77353b07-3359-44d3-9370-7d50a621098c",
+        "target_url": "https://brid.gy/publish/bluesky",
+        "sent_at": "2025-07-24T01:27:23.770Z",
         "status": "success"
       }
     ],
@@ -4430,6 +4458,22 @@
         "sent_at": "2025-07-22T01:27:26.194Z",
         "status": "failed",
         "error_message": "Webmentionエンドポイントが見つかりません: https://sugawarataku.theletter.jp/posts/fe86bda0-64e1-11f0-a647-937666d212e1?utm_medium=email&utm_source=newsletter&utm_campaign=fe86bda0-64e1-11f0-a647-937666d212e1 (not-found)"
+      },
+      {
+        "clip_id": "58c440c0-5169-431e-a094-58c9b4329472",
+        "source_url": "https://asadaame5121.net/clippingshare/58c440c0-5169-431e-a094-58c9b4329472",
+        "target_url": "https://gigazine.net/news/20250722-steam-introduced-confusing-new-rules-adult-content/",
+        "sent_at": "2025-07-24T01:27:23.774Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://gigazine.net/news/20250722-steam-introduced-confusing-new-rules-adult-content/ (not-found)"
+      },
+      {
+        "clip_id": "fb005d76-aa72-49c3-b3f0-9c345562216e",
+        "source_url": "https://asadaame5121.net/clippingshare/fb005d76-aa72-49c3-b3f0-9c345562216e",
+        "target_url": "https://maggieappleton.com/smidgeons",
+        "sent_at": "2025-07-24T01:27:29.914Z",
+        "status": "success",
+        "response_code": 201
       }
     ],
     "blog_updates": []
