@@ -60,7 +60,7 @@ async function main() {
       
       for (const entry of newDailylogEntries) {
         const sourceUrl = `${config.sources.dailylog.base_url}#entry-${entry.id}`;
-        const targetUrl = config.endpoints.bridgy_bluesky;
+        const targetUrl = config.endpoints.bridgy_fed;
         
         if (!isDryRun) {
           const result = await sendWebmention(sourceUrl, targetUrl, config);

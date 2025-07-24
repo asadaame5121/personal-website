@@ -97,13 +97,13 @@ export default async function Dailylog({ showAll = false } = {}) {
           htmlEntries.map(e => (
             <article class="h-entry card bg-base-100 shadow-md" key={e.id} id={`entry-${e.id}`}>
               <div class="card-body p-4">
-                <time class="dt-published card-title text-base-content/80 text-sm mb-1" 
+                <time class="card-title text-base-content/80 text-sm mb-1" 
                       datetime={e.datetime}>
                   {e.displayDate}
                 </time>
                 <div class="e-content prose max-w-none" 
                      dangerouslySetInnerHTML={{ __html: e.html }}></div>
-                <a href="https://brid.gy/publish/bluesky" hidden="from-humans"></a>
+                <a href="https://fed.brid.gy/" hidden="from-humans"></a>
               </div>
             </article>
           ))

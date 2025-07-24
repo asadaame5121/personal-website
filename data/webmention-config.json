@@ -6,7 +6,8 @@
   },
   "endpoints": {
     "bridgy_bluesky": "https://brid.gy/publish/bluesky",
-    "bridgy_mastodon": "https://brid.gy/publish/mastodon"
+    "bridgy_mastodon": "https://brid.gy/publish/mastodon",
+    "bridgy_fed": "https://fed.brid.gy/"
   },
   "sources": {
     "dailylog": {
