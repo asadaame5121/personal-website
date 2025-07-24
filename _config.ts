@@ -49,6 +49,7 @@ site.add("_data/dailylog.json");
 // 投稿記事（type:postやcategory:blog等）に合わせてqueryやoutputパスを調整してください
 site.use(feed({
   output: ["/feed.rss", "/feed.json"], // RSSとJSON両方生成
+  sort: "updated=desc",
   query: "url^=/Book/|/Article/|/Glossary/|/People/", // 投稿記事のみ対象。必要に応じて"category=blog"等に変更可
   info: {
     title: "=site.title",           // サイトタイトルを自動取得

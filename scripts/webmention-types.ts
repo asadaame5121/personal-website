@@ -53,6 +53,7 @@ export interface WebmentionConfig {
   endpoints: {
     bridgy_bluesky: string;
     bridgy_mastodon: string;
+    bridgy_fed: string;
   };
   sources: {
     dailylog: {
