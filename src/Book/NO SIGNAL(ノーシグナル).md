@@ -23,7 +23,7 @@ updated: '2025-06-19 17:32'
 metas:
   title: NO SIGNAL(ノーシグナル)
   description: NO SIGNAL(ノーシグナル)についてのページです。
-  image: 'https://asadaame5121.net\Book\NO SIGNAL(ノーシグナル).png'
+  image: 'https://asadaame5121.net/Book/NO SIGNAL(ノーシグナル).png'
 ---
 ![cover|150](http://books.google.com/books/content?id=6hQuzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api)
 
