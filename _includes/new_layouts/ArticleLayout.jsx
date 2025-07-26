@@ -136,6 +136,7 @@ export default function ArticleLayout({
                       </svg>
                     </a>
                     <a href="https://brid.gy/publish/bluesky" hidden></a>
+                    <a href="https://fed.brid.gy/" hidden></a>
                   </div>
                 )}
 
