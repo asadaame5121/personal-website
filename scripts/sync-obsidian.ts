@@ -18,12 +18,12 @@ async function run(cmd: string[], cwd?: string) {
   return new TextDecoder().decode(stdout);
 }
 
-async function copyMarkdownIfDraftFalse(srcDir: string, destDir: string, errorLog: string[]): Promise<void> {
+async function copyMarkdownIfDraftFalse(srcDir: string, destDir: string, errorLog: string[], syncedFiles: string[]): Promise<void> {
   for await (const entry of Deno.readDir(srcDir)) {
     const srcPath = `${srcDir}/${entry.name}`;
     const destPath = `${destDir}/${entry.name}`;
     if (entry.isDirectory) {
-      await copyMarkdownIfDraftFalse(srcPath, destPath, errorLog);
+      await copyMarkdownIfDraftFalse(srcPath, destPath, errorLog, syncedFiles);
     } else if (entry.isFile && entry.name.endsWith(".md")) {
       try {
         const text = await Deno.readTextFile(srcPath);
@@ -73,6 +73,7 @@ async function copyMarkdownIfDraftFalse(srcDir: string, destDir: string, errorLo
             const newText = `---\n${newYaml}---\n${body}\n`;
             await Deno.mkdir(destDir, { recursive: true });
             await Deno.writeTextFile(destPath, newText);
+            syncedFiles.push(destPath);
           }
         } catch (e) {
           errorLog.push(`${srcPath} | YAMLパースエラー: ${e}`);
@@ -85,6 +86,7 @@ async function copyMarkdownIfDraftFalse(srcDir: string, destDir: string, errorLo
 }
 
 async function main() {
+  const syncedFiles: string[] = [];
   const tmpDir = await Deno.makeTempDir();
   console.log(`Cloning Obsidian repo into ${tmpDir}...`);
   await run(["git", "clone", "--depth=1", OBSIDIAN_REPO_URL, tmpDir]);
@@ -94,8 +96,13 @@ async function main() {
     const src = `${tmpDir}/${dir}`;
     const dest = `${DEST_ROOT}/${dir}`;
     console.log(`Syncing ${dir}...`);
-    await copyMarkdownIfDraftFalse(src, dest, errorLog);
+    await copyMarkdownIfDraftFalse(src, dest, errorLog, syncedFiles);
   }
+  // 出力ログ
+  const SYNC_LOG = Deno.env.get("SYNC_LOG") ?? "./scripts/sync-obsidian-files.log";
+  await Deno.writeTextFile(SYNC_LOG, syncedFiles.join("\n"));
+  console.log(`Synced ${syncedFiles.length} files. List saved to ${SYNC_LOG}`);
+
   if (errorLog.length > 0) {
     await Deno.writeTextFile(ERROR_LOG, errorLog.join("\n"));
     console.log(`Some files skipped or errored. See ${ERROR_LOG}`);
