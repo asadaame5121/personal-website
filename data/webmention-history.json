@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-07-26T01:25:00.546Z",
+  "last_updated": "2025-07-27T01:43:39.355Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -99,6 +99,13 @@
         "source_url": "https://asadaame5121.net/dailylog#entry-0db9a123-2dcc-49d9-8798-9b04d3e41cc4",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-07-25T01:05:26.931Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "624507cd-5bd4-4d3b-84d9-0871dd16e775",
+        "source_url": "https://asadaame5121.net/dailylog#entry-624507cd-5bd4-4d3b-84d9-0871dd16e775",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-27T01:43:39.353Z",
         "status": "success"
       }
     ],
@@ -4570,6 +4577,14 @@
         "title": "%E3%82%A2%E3%83%8D%E3%83%9E%E3%83%AA%E3%83%BC%E3%83%BB%E3%83%A2%E3%83%AB",
         "target_url": "https%3A%2F%2Ffed.brid.gy%2F",
         "sent_at": "2025-07-25T01:05:26.329Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753580619156",
+        "source_url": "https%3A%2F%2Fasadaame5121.net%2FBook%2F%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E8%AB%96%E4%BA%89%E5%8F%B2.html",
+        "title": "%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E8%AB%96%E4%BA%89%E5%8F%B2",
+        "target_url": "https%3A%2F%2Ffed.brid.gy%2F",
+        "sent_at": "2025-07-27T01:43:39.156Z",
         "status": "success"
       }
     ]
