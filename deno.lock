@@ -4728,7 +4728,9 @@
     "https://deno.land/x/xml@7.0.0/stringify.ts": "f604d3d88b8bdaff11dbc9d57a6e98fd9b353e3bfbafcaa3f421e6b470ea0e02",
     "https://deno.land/x/xml@7.0.0/wasm_xml_parser/wasm_xml_parser.js": "960229e82be5dfc58d2d4fe47d800034f892f8f13da4492e0a95fee64050fb34",
     "https://esm.sh/markdown-it@13.0.1/denonext/markdown-it.bundle.mjs": "925a47cf7ddf44d121c18177364ce3eda715659a7b8b4f9324755b9a25da4c5c",
-    "https://esm.sh/markdown-it@13.0.1?bundle": "302fc506fa911be5e16c0065397f718f9e008758ea49eda9c71b77b13440dc81"
+    "https://esm.sh/markdown-it@13.0.1?bundle": "302fc506fa911be5e16c0065397f718f9e008758ea49eda9c71b77b13440dc81",
+    "https://raw.githubusercontent.com/lumeland/markdown-plugins/main/references.ts": "73aa19f06850f7af85bd59664652381bb50562e3145cd1382b34faf3ae419503",
+    "https://raw.githubusercontent.com/lumeland/markdown-plugins/main/references/mod.ts": "48470cf94381ef8b4709a787850380d84568d1bc1c46461e7af41dee5ac01256"
   },
   "workspace": {
     "dependencies": [

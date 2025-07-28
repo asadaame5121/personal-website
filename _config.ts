@@ -18,6 +18,7 @@ import transformImages from "lume/plugins/transform_images.ts";
 import feed from "lume/plugins/feed.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins@v0.9.0/toc.ts";
 import footnotes from "https://deno.land/x/lume_markdown_plugins@v0.9.0/footnotes.ts";
+import references from "https://raw.githubusercontent.com/lumeland/markdown-plugins/main/references.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 import brotli from "lume/plugins/brotli.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
@@ -26,7 +27,7 @@ import precompress from "lume/middlewares/precompress.ts";
 
 
 const markdown = {
-  plugins: [callout]
+  plugins: [callout, references]
 }
 
 const site = lume({
@@ -99,8 +100,8 @@ site.ignore((path) => {
 // });
 
 // 基本プラグインの設定
-site.use(toc())
-site.use(footnotes())
+site.use(toc());
+site.use(footnotes());
 site.use(date());
 site.use(nunjucks());
 site.use(jsx());
@@ -292,7 +293,7 @@ site.process([".html"], (pages) => {
     }
   }
 });
-
+site.use(references());
 site.use(minifyHTML({
   options: {
     keep_html_and_head_opening_tags: true,
