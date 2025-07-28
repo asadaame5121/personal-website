@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-07-27T01:43:39.355Z",
+  "last_updated": "2025-07-28T03:52:33.119Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -106,6 +106,27 @@
         "source_url": "https://asadaame5121.net/dailylog#entry-624507cd-5bd4-4d3b-84d9-0871dd16e775",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-07-27T01:43:39.353Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "3339f404-9092-429b-b779-8c297a224e6f",
+        "source_url": "https://asadaame5121.net/dailylog#entry-3339f404-9092-429b-b779-8c297a224e6f",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-28T03:52:19.486Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "d8d87277-c474-42c2-a15a-c057a7b04cfb",
+        "source_url": "https://asadaame5121.net/dailylog#entry-d8d87277-c474-42c2-a15a-c057a7b04cfb",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-28T03:52:19.711Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "c7e6b95f-7dd9-43f4-9de9-387ad04b8e5e",
+        "source_url": "https://asadaame5121.net/dailylog#entry-c7e6b95f-7dd9-43f4-9de9-387ad04b8e5e",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-28T03:52:19.983Z",
         "status": "success"
       }
     ],
@@ -4496,6 +4517,22 @@
         "sent_at": "2025-07-25T01:06:21.936Z",
         "status": "failed",
         "error_message": "Webmentionエンドポイントが見つかりません: https://www.ibunsha.co.jp/contents/haraguchi04/ (error sending request for url (https://www.ibunsha.co.jp/contents/haraguchi04/): client error (Connect): tcp connect error: Connection timed out (os error 110): Connection timed out (os error 110))"
+      },
+      {
+        "clip_id": "467a595b-9bce-4db4-ac68-1518aa4072bf",
+        "source_url": "https://asadaame5121.net/clippingshare/467a595b-9bce-4db4-ac68-1518aa4072bf",
+        "target_url": "https://www.taylorfrancis.com/books/oa-edit/10.4324/9781003571384/new-global-economic-order-lili-yan-ing-dani-rodrik",
+        "sent_at": "2025-07-28T03:52:19.987Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.taylorfrancis.com/books/oa-edit/10.4324/9781003571384/new-global-economic-order-lili-yan-ing-dani-rodrik (not-found)"
+      },
+      {
+        "clip_id": "e468a283-8576-48be-a314-817504f8a287",
+        "source_url": "https://asadaame5121.net/clippingshare/e468a283-8576-48be-a314-817504f8a287",
+        "target_url": "https://qiita.com/ko1nksm/items/c4e25a489e19698a4809",
+        "sent_at": "2025-07-28T03:52:26.576Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://qiita.com/ko1nksm/items/c4e25a489e19698a4809 (not-found)"
       }
     ],
     "blog_updates": [
@@ -4585,6 +4622,14 @@
         "title": "%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E8%AB%96%E4%BA%89%E5%8F%B2",
         "target_url": "https%3A%2F%2Ffed.brid.gy%2F",
         "sent_at": "2025-07-27T01:43:39.156Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753674739019",
+        "source_url": "https%3A%2F%2Fasadaame5121.net%2FArticle%2F%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E5%BB%83%E6%AD%A2%E8%AB%96%E3%81%AE%E8%AB%96%E7%82%B9%E4%B8%80%E8%A6%A7.html",
+        "title": "%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E5%BB%83%E6%AD%A2%E8%AB%96%E3%81%AE%E8%AB%96%E7%82%B9%E4%B8%80%E8%A6%A7",
+        "target_url": "https%3A%2F%2Ffed.brid.gy%2F",
+        "sent_at": "2025-07-28T03:52:19.019Z",
         "status": "success"
       }
     ]
