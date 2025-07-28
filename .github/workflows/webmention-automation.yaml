@@ -2,8 +2,8 @@ name: Webmention送信自動化
 
 on:
   schedule:
-    # 毎日午前9時（JST）に実行
-    - cron: '0 0 * * *'
+    # 毎日午後12時（JST）に実行
+    - cron: '0 12 * * *'
   workflow_dispatch:
     inputs:
       dry_run:
