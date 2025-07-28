@@ -1,0 +1,5 @@
+<ul>
+  {{ for link of search.pages(`references*='${url}'`) }}
+  <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+  {{ /for }}
+</ul>

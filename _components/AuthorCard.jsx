@@ -16,7 +16,7 @@ export default function AuthorCard({ blogAuthorID = "asadaame", display = true }
       </figure>
       <div className="card-body flex-1">
         <h2 className="card-title p-name u-url">
-          <a href={blogAuthor.url} className="u-url u-uid">{blogAuthor.name}</a>
+          <a href={blogAuthor.url} className="u-url u-uid p-author">{blogAuthor.name}</a>
         </h2>
         <p className="p-note mb-2">{blogAuthor.bio}</p>
         <div className="flex gap-4 mt-2">
