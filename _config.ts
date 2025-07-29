@@ -204,6 +204,8 @@ site.ignore((path) => {
 site.ignore("README.md", "obsidian/template", "obsidian/template/*", "obsidian/Workinprogress", "obsidian/Clippings/*", "obsidian/.obsidian", "obsidian/Extra", "obsidian/forpixel8", "obsidian/Omnivore");
 site.script("extract-log-content", "./_filters/extract-log-content.js");
 
+// LinkGraph をここにつくる
+
 site.process([".html"], (pages) => {
   for (const page of pages) {
     // Search all wikilinks in the page
