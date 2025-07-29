@@ -18,16 +18,16 @@ import transformImages from "lume/plugins/transform_images.ts";
 import feed from "lume/plugins/feed.ts";
 import toc from "https://deno.land/x/lume_markdown_plugins@v0.9.0/toc.ts";
 import footnotes from "https://deno.land/x/lume_markdown_plugins@v0.9.0/footnotes.ts";
-import references from "https://raw.githubusercontent.com/lumeland/markdown-plugins/main/references.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 import brotli from "lume/plugins/brotli.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
 import precompress from "lume/middlewares/precompress.ts";
+import linkGraph from "./plugin/link_graph.ts";
 
 
 
 const markdown = {
-  plugins: [callout, references]
+  plugins: [callout]
 }
 
 const site = lume({
@@ -295,7 +295,7 @@ site.process([".html"], (pages) => {
     }
   }
 });
-site.use(references());
+site.use(linkGraph());
 site.use(minifyHTML({
   options: {
     keep_html_and_head_opening_tags: true,
