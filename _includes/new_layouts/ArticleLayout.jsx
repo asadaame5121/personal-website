@@ -1,7 +1,7 @@
 import BaseLayout from "./BaseLayout.jsx";
 import AuthorCard from "../../_components/AuthorCard.jsx";
 import DrawerMenu from "../../_components/new_components/DrawerMenu.jsx";
-import SearchBox from "../../_components/new_components/SearchBox.jsx";
+
 
 function renderToc(toc) {
   if (!Array.isArray(toc) || toc.length === 0) return null;
@@ -41,13 +41,13 @@ export default function ArticleLayout({
   bluesky,
 }) {
   return (
-    <BaseLayout title={title}>
-      <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col lg:flex-row gap-6">
-          {/* モバイル Drawer */}
-          <DrawerMenu id="drawer-nav">
-            <SearchBox id="search" />
-            {comp?.nav && <comp.nav />}
+    <>
+      <BaseLayout title={title}>
+        <div className="container mx-auto px-4 py-8">
+          <div className="flex flex-col lg:flex-row gap-6">
+            {/* モバイル Drawer */}
+            <DrawerMenu id="drawer-nav">
+              {comp?.nav && <comp.nav />}
           </DrawerMenu>
 
           {/* メインカラム */}
@@ -188,5 +188,12 @@ export default function ArticleLayout({
         </div>
       </div>
     </BaseLayout>
-  );
+    {/* Cloudflare Web Analytics */}
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "a7178f3600b44953903b40f9872e592b"}'
+    ></script>
+  </>
+);
 }
