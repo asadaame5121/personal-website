@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-07-28T12:40:32.853Z",
+  "last_updated": "2025-07-29T12:42:06.875Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -127,6 +127,13 @@
         "source_url": "https://asadaame5121.net/dailylog#entry-c7e6b95f-7dd9-43f4-9de9-387ad04b8e5e",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-07-28T03:52:19.983Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "d9789939-1ebf-43a7-99f6-97858431beb3",
+        "source_url": "https://asadaame5121.net/dailylog#entry-d9789939-1ebf-43a7-99f6-97858431beb3",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-29T12:40:42.286Z",
         "status": "success"
       }
     ],
@@ -4533,6 +4540,38 @@
         "sent_at": "2025-07-28T03:52:26.576Z",
         "status": "failed",
         "error_message": "Webmentionエンドポイントが見つかりません: https://qiita.com/ko1nksm/items/c4e25a489e19698a4809 (not-found)"
+      },
+      {
+        "clip_id": "c763a537-a685-46bd-9b03-f9f215b489c2",
+        "source_url": "https://asadaame5121.net/clippingshare/c763a537-a685-46bd-9b03-f9f215b489c2",
+        "target_url": "https://prtimes.jp/main/html/rd/p/000000006.000166170.html",
+        "sent_at": "2025-07-29T12:41:40.291Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://prtimes.jp/main/html/rd/p/000000006.000166170.html (not-found)"
+      },
+      {
+        "clip_id": "353e326e-dcee-4df7-92fb-c82a8d31849f",
+        "source_url": "https://asadaame5121.net/clippingshare/353e326e-dcee-4df7-92fb-c82a8d31849f",
+        "target_url": "https://maggieappleton.com/bidirectionals/",
+        "sent_at": "2025-07-29T12:41:46.974Z",
+        "status": "success",
+        "response_code": 201
+      },
+      {
+        "clip_id": "28fe0869-a969-471e-a088-8765c56b03f8",
+        "source_url": "https://asadaame5121.net/clippingshare/28fe0869-a969-471e-a088-8765c56b03f8",
+        "target_url": "https://gwern.net/design",
+        "sent_at": "2025-07-29T12:41:53.467Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://gwern.net/design (not-found)"
+      },
+      {
+        "clip_id": "b1f01aa9-9993-43e4-bcee-e21167f3eb08",
+        "source_url": "https://asadaame5121.net/clippingshare/b1f01aa9-9993-43e4-bcee-e21167f3eb08",
+        "target_url": "https://www.taylorfrancis.com/books/oa-edit/10.4324/9781003571384/new-global-economic-order-lili-yan-ing-dani-rodrik",
+        "sent_at": "2025-07-29T12:42:00.138Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.taylorfrancis.com/books/oa-edit/10.4324/9781003571384/new-global-economic-order-lili-yan-ing-dani-rodrik (not-found)"
       }
     ],
     "blog_updates": [
@@ -4630,6 +4669,86 @@
         "title": "%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E5%BB%83%E6%AD%A2%E8%AB%96%E3%81%AE%E8%AB%96%E7%82%B9%E4%B8%80%E8%A6%A7",
         "target_url": "https%3A%2F%2Ffed.brid.gy%2F",
         "sent_at": "2025-07-28T03:52:19.019Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753792839471",
+        "source_url": "https://asadaame5121.net/Article/英語教育廃止論の論点一覧.html",
+        "title": "英語教育廃止論の論点一覧",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-29T12:40:39.471Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753792839733",
+        "source_url": "https://asadaame5121.net/Book/英語教育論争史.html",
+        "title": "英語教育論争史",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-29T12:40:39.733Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753792839959",
+        "source_url": "https://asadaame5121.net/Book/群れから逸れて生きるための自学自習法.html",
+        "title": "群れから逸れて生きるための自学自習法",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-29T12:40:39.959Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753792840565",
+        "source_url": "https://asadaame5121.net/Book/五十八歳、山の家で猫と暮らす.html",
+        "title": "五十八歳、山の家で猫と暮らす",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-29T12:40:40.565Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753792840812",
+        "source_url": "https://asadaame5121.net/Book/活断層地震はどこまで予測できるか 日本列島で今起きていること.html",
+        "title": "活断層地震はどこまで予測できるか 日本列島で今起きていること",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-29T12:40:40.812Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753792841032",
+        "source_url": "https://asadaame5121.net/Book/離脱・発言・忠誠.html",
+        "title": "離脱・発言・忠誠",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-29T12:40:41.032Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753792841326",
+        "source_url": "https://asadaame5121.net/Book/中世の幽霊.html",
+        "title": "中世の幽霊",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-29T12:40:41.326Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753792841545",
+        "source_url": "https://asadaame5121.net/Book/バーナード・ウィリアムズの哲学.html",
+        "title": "バーナード・ウィリアムズの哲学",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-29T12:40:41.545Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753792841851",
+        "source_url": "https://asadaame5121.net/Book/例外状態.html",
+        "title": "例外状態",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-29T12:40:41.851Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753792842070",
+        "source_url": "https://asadaame5121.net/Book/村に火をつけ、白痴になれ.html",
+        "title": "村に火をつけ、白痴になれ",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-29T12:40:42.070Z",
         "status": "success"
       }
     ]
