@@ -204,13 +204,13 @@ async function _processBlogUpdates(
     
     // 送信済み記事を確認するための関数
     const isAlreadySentBlogUpdate = (sourceUrl: string, title: string): boolean => {
-      const encodedSourceUrl = encodeURIComponent(sourceUrl);
-      const encodedTitle = encodeURIComponent(title);
+      const encodedSourceUrl = sourceUrl;
+      const encodedTitle = title;
       
       return history.sent_webmentions.blog_updates.some(item => {
         return item.source_url === encodedSourceUrl && 
                item.title === encodedTitle && 
-               item.target_url === encodeURIComponent(targetUrl);
+               item.target_url === targetUrl;
       });
     };
     
@@ -257,9 +257,9 @@ async function _processBlogUpdates(
         // 履歴に追加
         const webmention: BlogUpdateWebmention = {
           entry_id: `blog-${new Date().getTime()}`,
-          source_url: encodeURIComponent(sourceUrl),
-          title: encodeURIComponent(title),
-          target_url: encodeURIComponent(targetUrl),
+          source_url: sourceUrl,
+          title: title,
+          target_url: targetUrl,
           sent_at: new Date().toISOString(),
           status: result.success ? 'success' : 'failed',
           error_message: result.error_message
