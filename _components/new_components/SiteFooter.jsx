@@ -6,6 +6,7 @@ export default function SiteFooter() {
         <div className="flex gap-4 text-sm">
           <a href="/privacy" className="hover:text-mono-white">プライバシーポリシー</a>
           <a href="/terms" className="hover:text-mono-white">利用規約</a>
+          <a href="/contact" className="hover:text-mono-white">お問い合わせ</a>
         </div>
       </div>
     </footer>

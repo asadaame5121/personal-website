@@ -1,6 +1,6 @@
 import BaseLayout from "./BaseLayout.jsx";
 import DrawerMenu from "../../_components/new_components/DrawerMenu.jsx";
-import SearchBox from "../../_components/new_components/SearchBox.jsx";
+
 import AuthorCard from "../../_components/AuthorCard.jsx";
 
 export default function HomeLayout({
@@ -14,15 +14,15 @@ export default function HomeLayout({
   comp,
 }) {
   return (
-    <BaseLayout
-      title={title}
-      headExtra={<link rel="syndication" href="https://bsky.app/profile/asadaame5121.bsky.social" />}
-    >
-      <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col lg:flex-row gap-6">
-          {/* モバイル Drawer */}
-          <DrawerMenu id="drawer-nav">
-            <SearchBox id="search" />
+    <>
+      <BaseLayout
+        title={title}
+        headExtra={<link rel="syndication" href="https://bsky.app/profile/asadaame5121.bsky.social" />}
+      >
+        <div className="container mx-auto px-4 py-8">
+          <div className="flex flex-col lg:flex-row gap-6">
+            {/* モバイル Drawer */}
+            <DrawerMenu id="drawer-nav">
             {comp?.nav && <comp.nav />}
           </DrawerMenu>
 
@@ -101,5 +101,12 @@ export default function HomeLayout({
         </div>
       </div>
     </BaseLayout>
-  );
+    {/* Cloudflare Web Analytics */}
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "a7178f3600b44953903b40f9872e592b"}'
+    ></script>
+  </>
+);
 }
