@@ -1,0 +1,27 @@
+---
+tags:
+  - "\U0001F464"
+aliases:
+  - アルバート・O.ハーシュマン
+  - A.O.ハーシュマン
+  - ハーシュマン
+cdatelink: '[[2025-07-30]]'
+created: '2025-07-30 18:50'
+description: null
+draft: false
+linter-yaml-title-alias: アルバート・O.ハーシュマン
+status: だめ
+title: アルバート・O.ハーシュマン
+updated: '2025-07-30 18:58'
+metas:
+  title: アルバート・O.ハーシュマン
+  description: アルバート・O.ハーシュマンについてのページです。
+  image: 'https://asadaame5121.net/People/アルバート・O.ハーシュマン.png'
+---
+## 解説
+経済学者
+## 著作目録
+[[反動のレトリック]]
+[[離脱・発言・忠誠]]
+## 関連ノート
+[[経済学のパラレルワールド　入門・異端派総合アプローチ 新評論]]　この本でも取り上げられていた。
