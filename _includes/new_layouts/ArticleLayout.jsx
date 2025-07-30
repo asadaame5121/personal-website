@@ -1,7 +1,7 @@
 import BaseLayout from "./BaseLayout.jsx";
 import AuthorCard from "../../_components/AuthorCard.jsx";
 import DrawerMenu from "../../_components/new_components/DrawerMenu.jsx";
-
+import BaseHead from "../../_components/new_components/BaseHead.jsx";
 
 function renderToc(toc) {
   if (!Array.isArray(toc) || toc.length === 0) return null;
@@ -39,10 +39,12 @@ export default function ArticleLayout({
   url,
   toc,
   bluesky,
+  page,
 }) {
   return (
     <>
-      <BaseLayout title={title}>
+      <BaseLayout title={title} url={page.data.url}>
+        
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col lg:flex-row gap-6">
             {/* モバイル Drawer */}

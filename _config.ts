@@ -40,6 +40,19 @@ const site = lume({
   },
 }, { markdown });
 
+// --- URLエンコード統一 preprocessor ---
+site.preprocess([".html"], (pages) => {
+  function encodePath(path: string): string {
+    return path.split("/").map(encodeURIComponent).join("/");
+  }
+  for (const page of pages) {
+    // outputPathはreadonlyのため書き換え不可
+    if (page.data && page.data.url && /[^\u0000-\u007F]/.test(page.data.url)) {
+      page.data.url = encodePath(page.data.url);
+    }
+  }
+});
+
 
 
 // --- JSONデータを静的ファイルとして出力に含める ---
