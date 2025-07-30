@@ -1,4 +1,6 @@
-export default function BaseHead({ title = "", extra = null }) {
+const SITE_URL = "https://asadaame5121.net";
+
+export default function BaseHead({url,title = "", extra = null}) {
   return (
     <head>
       <meta charSet="UTF-8" />
@@ -6,6 +8,7 @@ export default function BaseHead({ title = "", extra = null }) {
       <link rel="stylesheet" href="/assets/css/tailwind.css" />
       <link rel="stylesheet" href="/assets/css/dailylog.css" />
       <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+      <link rel="canonical" href={url?.startsWith("http") ? url : SITE_URL + url} />
       <link rel="icon" href="/assets/images/favicon.jpeg" type="image/jpeg" />
       <link rel="webmention" href="https://webmention.io/asadaame5121.net/webmention" />
       <link rel="me" href="https://github.com/asadaame5121" />

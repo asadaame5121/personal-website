@@ -1,5 +1,5 @@
 ---
-layout: layout-article.jsx
+layout: new_layouts/ArticleLayout.jsx
 title: プライバシーポリシー・免責事項
 url: /privacy
 ---

@@ -1,6 +1,6 @@
 import BaseLayout from "./BaseLayout.jsx";
 import DrawerMenu from "../../_components/new_components/DrawerMenu.jsx";
-
+import BaseHead from "../../_components/new_components/BaseHead.jsx";
 import AuthorCard from "../../_components/AuthorCard.jsx";
 
 export default function HomeLayout({
@@ -12,11 +12,13 @@ export default function HomeLayout({
   author = "asadaame",
   children,
   comp,
+  page,
 }) {
   return (
     <>
       <BaseLayout
         title={title}
+        url={page.data.url}
         headExtra={<link rel="syndication" href="https://bsky.app/profile/asadaame5121.bsky.social" />}
       >
         <div className="container mx-auto px-4 py-8">
