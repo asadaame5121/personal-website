@@ -1,8 +1,6 @@
 export default ({ Calil, amazonUrl }) => {
-    console.log("[BookLinks] props:", { Calil, amazonUrl });
     return (
       <>
-        <div>BookLinks DEBUG: Calil={String(Calil)} amazonUrl={String(amazonUrl)}</div>
         <div className="flex gap-4 mt-8">
           {amazonUrl && (
             <a

@@ -47,8 +47,7 @@ export default function ArticleLayout({
 }) {
   // Calilが配列なら先頭のみ、なければundefined
   const calilValue = Array.isArray(Calil) ? Calil[0] : Calil;
-  // サーバーログでBookLinks用データを出力
-  console.log("[ArticleLayout] calilValue:", calilValue, "amazonUrl:", amazonUrl);
+
   return (
     <>
       <BaseLayout title={title} url={page.data.url}>
