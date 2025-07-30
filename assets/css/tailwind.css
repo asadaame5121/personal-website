@@ -17,6 +17,38 @@
 }
 
 /* カスタムスタイル */
+
+/* Obsidian式Callout対応（markdown-it-obsidian-callouts用） */
+.callout {
+  @apply border-l-4 rounded px-4 py-3 my-4 shadow bg-base-100;
+  border-left-color: #3b82f6; /* デフォルト: 青 */
+}
+.callout-note {
+  border-left-color: #3b82f6;
+  background-color: #eff6ff;
+}
+.callout-warning {
+  border-left-color: #f59e42;
+  background-color: #fff7e6;
+}
+.callout-error {
+  border-left-color: #e53e3e;
+  background-color: #ffeaea;
+}
+.callout-success {
+  border-left-color: #22c55e;
+  background-color: #ecfdf5;
+}
+.callout-title {
+  @apply font-bold flex items-center mb-2 text-base;
+}
+.callout-icon {
+  @apply mr-2 text-lg;
+}
+.callout-content {
+  @apply ml-4;
+}
+
 @layer base {
   body {
     @apply antialiased;

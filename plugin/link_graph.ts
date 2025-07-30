@@ -81,10 +81,6 @@ export default function linkGraphPlugin(options: Partial<LinkGraphOptions> = {})
         graphData,
       });
 
-      // デバッグ用
-      console.log("[link-graph] linkMap:", linkMap);
-      console.log("[link-graph] inboundMap:", inboundMap);
-      console.log("[link-graph] twoHopMap:", twoHopMap);
     });
   };
 }

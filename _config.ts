@@ -23,11 +23,15 @@ import brotli from "lume/plugins/brotli.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
 import precompress from "lume/middlewares/precompress.ts";
 import linkGraph from "./plugin/link_graph.ts";
+import cjkBreaks from "npm:markdown-it-cjk-breaks";
 
 
 
 const markdown = {
-  plugins: [callout]
+  plugins: [callout, cjkBreaks],
+  options: {
+    breaks: true,
+  }
 }
 
 const site = lume({
@@ -146,7 +150,9 @@ await (async () => {
   }));
 })();
 site.use(metas());
-site.use(sitemap());
+site.use(sitemap({
+  query: "unlisted!=true !url^=/tags/",
+}));
 site.use(feed({
   output: ["/posts.rss", "/posts.json"],
   query: "type=post",

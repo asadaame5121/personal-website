@@ -1,5 +1,7 @@
 import BaseLayout from "./BaseLayout.jsx";
 import AuthorCard from "../../_components/AuthorCard.jsx";
+import BookLinks from "../../_components/BookLinks.jsx";
+import books from "../../_data/books.json" with { type: "json" };
 import DrawerMenu from "../../_components/new_components/DrawerMenu.jsx";
 import BaseHead from "../../_components/new_components/BaseHead.jsx";
 
@@ -39,8 +41,14 @@ export default function ArticleLayout({
   url,
   toc,
   bluesky,
+  Calil,
+  amazonUrl,
   page,
 }) {
+  // Calilが配列なら先頭のみ、なければundefined
+  const calilValue = Array.isArray(Calil) ? Calil[0] : Calil;
+  // サーバーログでBookLinks用データを出力
+  console.log("[ArticleLayout] calilValue:", calilValue, "amazonUrl:", amazonUrl);
   return (
     <>
       <BaseLayout title={title} url={page.data.url}>
@@ -116,11 +124,14 @@ export default function ArticleLayout({
                       __html: content.replace(/<a\b(?![^>]*\bclass=)/g, '<a class="not-prose" '),
                     }}
                   />
+                  {/* BookLinks: Bookページ用Amazon・カーリルボタン */}
+                 
+
                   <a href="https://brid.gy/publish/bluesky" hidden></a>
                   <a href="https://fed.brid.gy/" hidden></a>
                 </div>
 
-
+                {comp.Booklinks && <comp.Booklinks Calil={calilValue} amazonUrl={amazonUrl} />}
 
                 {/* Bluesky Syndication */}
                 {bluesky && (
