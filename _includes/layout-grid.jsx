@@ -6,7 +6,6 @@ export default function LayoutGrid({ title, content, date, category, tags, autho
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/assets/css/tailwind.css" />
-        <link rel="stylesheet" href="/assets/css/dailylog.css" />
         <link rel="icon" href="/assets/images/favicon.jpeg" type="image/jpeg" />
         <link rel="syndication" href="https://bsky.app/profile/asadaame5121.bsky.social" />
         <link rel="webmention" href="https://webmention.io/asadaame5121.net/webmention" />

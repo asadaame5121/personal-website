@@ -6,7 +6,6 @@ export default function BaseHead({url,title = "", extra = null}) {
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="/assets/css/tailwind.css" />
-      <link rel="stylesheet" href="/assets/css/dailylog.css" />
       <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
       <link rel="canonical" href={url?.startsWith("http") ? url : SITE_URL + url} />
       <link rel="icon" href="/assets/images/favicon.jpeg" type="image/jpeg" />

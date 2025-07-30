@@ -29,7 +29,6 @@ export default function LayoutArticle({ title, content, date, category, tags, au
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/assets/css/tailwind.css" />
-        <link rel="stylesheet" href="/assets/css/dailylog.css" />
         <link rel="icon" href="/assets/images/favicon.jpeg" type="image/jpeg" />
         <link rel="webmention" href="https://webmention.io/asadaame5121.net/webmention" />
         <title>{title}</title>
