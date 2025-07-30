@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-07-29T12:42:06.875Z",
+  "last_updated": "2025-07-30T12:41:30.089Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -134,6 +134,13 @@
         "source_url": "https://asadaame5121.net/dailylog#entry-d9789939-1ebf-43a7-99f6-97858431beb3",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-07-29T12:40:42.286Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "c218519d-9dae-4460-b94f-3639ee351272",
+        "source_url": "https://asadaame5121.net/dailylog#entry-c218519d-9dae-4460-b94f-3639ee351272",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-30T12:40:21.269Z",
         "status": "success"
       }
     ],
@@ -4572,6 +4579,22 @@
         "sent_at": "2025-07-29T12:42:00.138Z",
         "status": "failed",
         "error_message": "Webmentionエンドポイントが見つかりません: https://www.taylorfrancis.com/books/oa-edit/10.4324/9781003571384/new-global-economic-order-lili-yan-ing-dani-rodrik (not-found)"
+      },
+      {
+        "clip_id": "6d069b42-a34a-4ec0-a51f-58a66c318cf9",
+        "source_url": "https://asadaame5121.net/clippingshare/6d069b42-a34a-4ec0-a51f-58a66c318cf9",
+        "target_url": "https://wirelesswire.jp/2025/06/88810/",
+        "sent_at": "2025-07-30T12:41:16.274Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://wirelesswire.jp/2025/06/88810/ (not-found)"
+      },
+      {
+        "clip_id": "04855b3c-bfc1-44bc-9a09-7720704b3127",
+        "source_url": "https://asadaame5121.net/clippingshare/04855b3c-bfc1-44bc-9a09-7720704b3127",
+        "target_url": "https://wirelesswire.jp/2025/06/88810/",
+        "sent_at": "2025-07-30T12:41:23.610Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://wirelesswire.jp/2025/06/88810/ (not-found)"
       }
     ],
     "blog_updates": [
@@ -4749,6 +4772,86 @@
         "title": "村に火をつけ、白痴になれ",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-07-29T12:40:42.070Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753879215942",
+        "source_url": "https://asadaame5121.net/Book/%E5%8F%8D%E5%8B%95%E3%81%AE%E3%83%AC%E3%83%88%E3%83%AA%E3%83%83%E3%82%AF.html",
+        "title": "反動のレトリック",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-30T12:40:15.942Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753879216299",
+        "source_url": "https://asadaame5121.net/Article/%E7%AC%AC%E4%B8%89%E8%80%85%E5%8A%B9%E6%9E%9C.html",
+        "title": "第三者効果",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-30T12:40:16.299Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753879216926",
+        "source_url": "https://asadaame5121.net/Article/%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E8%AB%96%E4%BA%89%E3%81%AF%E3%81%AA%E3%81%9C%E7%B5%82%E3%82%8F%E3%82%89%E3%81%AA%E3%81%84%E3%81%AE%E3%81%8B.html",
+        "title": "英語教育論争はなぜ終わらないのか",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-30T12:40:16.926Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753879217593",
+        "source_url": "https://asadaame5121.net/Article/%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E5%BB%83%E6%AD%A2%E8%AB%96%E3%81%AE%E8%AB%96%E7%82%B9%E4%B8%80%E8%A6%A7.html",
+        "title": "英語教育廃止論の論点一覧",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-30T12:40:17.593Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753879217843",
+        "source_url": "https://asadaame5121.net/Book/%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E8%AB%96%E4%BA%89%E5%8F%B2.html",
+        "title": "英語教育論争史",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-30T12:40:17.843Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753879218074",
+        "source_url": "https://asadaame5121.net/Book/%E7%BE%A4%E3%82%8C%E3%81%8B%E3%82%89%E9%80%B8%E3%82%8C%E3%81%A6%E7%94%9F%E3%81%8D%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E8%87%AA%E5%AD%A6%E8%87%AA%E7%BF%92%E6%B3%95.html",
+        "title": "群れから逸れて生きるための自学自習法",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-30T12:40:18.074Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753879219115",
+        "source_url": "https://asadaame5121.net/Book/%E4%BA%94%E5%8D%81%E5%85%AB%E6%AD%B3%E3%80%81%E5%B1%B1%E3%81%AE%E5%AE%B6%E3%81%A7%E7%8C%AB%E3%81%A8%E6%9A%AE%E3%82%89%E3%81%99.html",
+        "title": "五十八歳、山の家で猫と暮らす",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-30T12:40:19.115Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753879220386",
+        "source_url": "https://asadaame5121.net/Book/%E6%B4%BB%E6%96%AD%E5%B1%A4%E5%9C%B0%E9%9C%87%E3%81%AF%E3%81%A9%E3%81%93%E3%81%BE%E3%81%A7%E4%BA%88%E6%B8%AC%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%8B%20%E6%97%A5%E6%9C%AC%E5%88%97%E5%B3%B6%E3%81%A7%E4%BB%8A%E8%B5%B7%E3%81%8D%E3%81%A6%E3%81%84%E3%82%8B%E3%81%93%E3%81%A8.html",
+        "title": "活断層地震はどこまで予測できるか 日本列島で今起きていること",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-30T12:40:20.386Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753879220646",
+        "source_url": "https://asadaame5121.net/Book/%E9%9B%A2%E8%84%B1%E3%83%BB%E7%99%BA%E8%A8%80%E3%83%BB%E5%BF%A0%E8%AA%A0.html",
+        "title": "離脱・発言・忠誠",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-30T12:40:20.646Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753879220916",
+        "source_url": "https://asadaame5121.net/Book/%E4%B8%AD%E4%B8%96%E3%81%AE%E5%B9%BD%E9%9C%8A.html",
+        "title": "中世の幽霊",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-30T12:40:20.916Z",
         "status": "success"
       }
     ]
