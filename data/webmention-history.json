@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-07-30T12:41:30.089Z",
+  "last_updated": "2025-07-31T12:38:42.561Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -141,6 +141,13 @@
         "source_url": "https://asadaame5121.net/dailylog#entry-c218519d-9dae-4460-b94f-3639ee351272",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-07-30T12:40:21.269Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "718c678e-34b7-4346-b66e-82def0237190",
+        "source_url": "https://asadaame5121.net/dailylog#entry-718c678e-34b7-4346-b66e-82def0237190",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-31T12:38:35.462Z",
         "status": "success"
       }
     ],
@@ -4595,6 +4602,14 @@
         "sent_at": "2025-07-30T12:41:23.610Z",
         "status": "failed",
         "error_message": "Webmentionエンドポイントが見つかりません: https://wirelesswire.jp/2025/06/88810/ (not-found)"
+      },
+      {
+        "clip_id": "6bcc6781-4f72-4756-bcf9-e538648b5912",
+        "source_url": "https://asadaame5121.net/clippingshare/6bcc6781-4f72-4756-bcf9-e538648b5912",
+        "target_url": "https://wirelesswire.jp/2025/06/88810/",
+        "sent_at": "2025-07-31T12:38:35.465Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://wirelesswire.jp/2025/06/88810/ (not-found)"
       }
     ],
     "blog_updates": [
@@ -4852,6 +4867,30 @@
         "title": "中世の幽霊",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-07-30T12:40:20.916Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753965514272",
+        "source_url": "https://asadaame5121.net/People/%E3%82%A2%E3%83%AB%E3%83%90%E3%83%BC%E3%83%88%E3%83%BBO.%E3%83%8F%E3%83%BC%E3%82%B7%E3%83%A5%E3%83%9E%E3%83%B3.html",
+        "title": "アルバート・O.ハーシュマン",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-31T12:38:34.272Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753965514604",
+        "source_url": "https://asadaame5121.net/Book/%E7%AC%AC%E4%B8%89%E8%80%85%E5%8A%B9%E6%9E%9C.html",
+        "title": "第三者効果",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-31T12:38:34.604Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1753965515132",
+        "source_url": "https://asadaame5121.net/Book/%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E8%AB%96%E4%BA%89%E3%81%AF%E3%81%AA%E3%81%9C%E7%B5%82%E3%82%8F%E3%82%89%E3%81%AA%E3%81%84%E3%81%AE%E3%81%8B.html",
+        "title": "英語教育論争はなぜ終わらないのか",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-07-31T12:38:35.132Z",
         "status": "success"
       }
     ]
