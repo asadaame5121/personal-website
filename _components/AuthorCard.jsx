@@ -21,18 +21,25 @@ export default function AuthorCard({ blogAuthorID = "asadaame", display = true }
         <p className="p-note mb-2">{blogAuthor.bio}</p>
         <div className="flex gap-4 mt-2">
           {blogAuthor.github && (
-            <a className="u-github btn btn-sm btn-outline" rel="me" href={blogAuthor.github} target="_blank" rel="noopener noreferrer">GitHub</a>
-          )}
-          {blogAuthor.fediverse && (
-            <a className="u-fediverse btn btn-sm btn-outline" rel="me" href={blogAuthor.fediverse} target="_blank" rel="noopener noreferrer">Fediverse</a>
+            <a className="u-github" rel="me" href={blogAuthor.github} target="_blank" rel="noopener noreferrer">
+              <img src="/assets/icons/github.svg" alt="GitHub" width="24" height="24" />
+            </a>
           )}
           {blogAuthor.bluesky && (
-            <a className="u-bluesky btn btn-sm btn-outline" rel="me" href={blogAuthor.bluesky} target="_blank" rel="noopener noreferrer">Bluesky</a>
+            <a className="u-bluesky" rel="me" href={blogAuthor.bluesky} target="_blank" rel="noopener noreferrer">
+              <img src="/assets/icons/bluesky.svg" alt="Bluesky" width="24" height="24" />
+            </a>
+          )}
+          {blogAuthor.fediverse && (
+            <a className="u-fediverse" rel="me" href={blogAuthor.fediverse} target="_blank" rel="noopener noreferrer">
+              <img src="/assets/icons/mastodon.svg" alt="Mastodon" width="24" height="24" />
+            </a>
           )}
           {blogAuthor.twitter && (
-            <a className="u-twitter btn btn-sm btn-outline" rel="me" href={blogAuthor.twitter} target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a className="u-twitter" rel="me" href={blogAuthor.twitter} target="_blank" rel="noopener noreferrer">
+              <img src="/assets/icons/x.svg" alt="X" width="24" height="24" />
+            </a>
           )}
-
         </div>
       </div>
       {/* 他の著者情報表示 */}

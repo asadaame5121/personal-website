@@ -12,9 +12,16 @@ import SmallCardGrid from "../_components/SmallCardComponents.jsx";
 export default function IndexPage({ search }) {
   return (
     <>
-      <div className="prose max-w-none mb-8">
-        <p>ここはドロップガーデン。日々の記録やアイデア、読書記録などを整理・共有するための個人的なデジタルガーデンです。</p>
-      </div>
+    <CardContainer>
+        <p>ここはドロップガーデン。<a href="/about">あさだあめ</a>が、日々の記録やアイデア、読書記録などを整理・共有するための個人的なデジタルガーデンです。</p>
+        <p>主に以下のような内容を整理・共有しています。</p>
+        <ul>
+          <li><a href="/Article/">Article</a>カテゴリ:自分の書いたメモ、文章など</li>
+          <li><a href="/Book/">Book</a>カテゴリ: 読んだ本について</li>
+          <li><a href="/Glossary/">Glossary</a>カテゴリ:自分用の語彙集</li>
+          <li><a href="/People/">People</a>カテゴリ:自分用の人名辞典</li>
+        </ul>
+      </CardContainer>
       <SmallCardGrid className="my-8">
         <CardContainer title="Reading List">
           <ReadingList search={search} />

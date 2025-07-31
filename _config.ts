@@ -23,6 +23,7 @@ import brotli from "lume/plugins/brotli.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
 import precompress from "lume/middlewares/precompress.ts";
 import linkGraph from "./plugin/link_graph.ts";
+import icons from "lume/plugins/icons.ts";
 import cjkBreaks from "npm:markdown-it-cjk-breaks";
 
 
@@ -126,6 +127,7 @@ site.use(wikilinks());
 site.use(nav());
 site.use(pagefind());
 site.use(mdx());
+site.use(icons());
 site.use(esbuild({
   extensions: [".ts", ".js", ".tsx", ".jsx"]
 }));
@@ -199,6 +201,7 @@ site.use(transformImages());
 site.add("assets/css");
 site.add("assets/images");
 site.add("assets/js");
+site.add("assets/icons");
 
 // コンポーネント設定
 // _componentsフォルダ内のコンポーネントは自動的に読み込まれるため、
