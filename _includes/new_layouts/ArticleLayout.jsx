@@ -43,6 +43,7 @@ export default function ArticleLayout({
   bluesky,
   Calil,
   amazonUrl,
+  shopUrl,
   page,
 }) {
   // Calilが配列なら先頭のみ、なければundefined
@@ -130,7 +131,7 @@ export default function ArticleLayout({
                   <a href="https://fed.brid.gy/" hidden></a>
                 </div>
 
-                {comp.Booklinks && <comp.Booklinks Calil={calilValue} amazonUrl={amazonUrl} />}
+                {comp.Booklinks && <comp.Booklinks Calil={calilValue} amazonUrl={amazonUrl} shopUrl={shopUrl} />}
 
                 {/* Bluesky Syndication */}
                 {bluesky && (

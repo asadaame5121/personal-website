@@ -1,4 +1,4 @@
-export default ({ Calil, amazonUrl }) => {
+export default ({ Calil, amazonUrl, shopUrl }) => {
     return (
       <>
         <div className="flex gap-4 mt-8">
@@ -10,6 +10,16 @@ export default ({ Calil, amazonUrl }) => {
               className="btn btn-primary"
             >
               Amazonで購入
+            </a>
+          )}
+          {shopUrl && (
+            <a
+              href={shopUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Amazon以外で購入
             </a>
           )}
           {(() => {
