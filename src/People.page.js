@@ -7,5 +7,6 @@ export default function* ({ nav }) {
     url: "/People/",
     categoryUrl,
     categoryName,
+    title: "People",
   };
 }

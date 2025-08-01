@@ -7,5 +7,6 @@ export default function* ({ nav }) {
     url: "/Glossary/",
     categoryUrl,
     categoryName,
+    title: "Glossary",
   };
 }

@@ -1,0 +1,16 @@
+{{set page_url = url}}
+<div class="breadcrumbs text-sm">
+<ul>
+  {{ for item of nav.breadcrumb(page_url) }}
+  <li>
+    {{ if item.data }}
+     <a href="{{ item.data.url || '/' + item.slug + '/' }}">
+        {{ item.data.title || item.categoryName || item.slug || "?" }}
+      </a>
+    {{ else }}
+      <span>{{ item.slug }}</span>
+    {{ /if }}
+  </li>
+  {{ /for }}
+</ul>
+</div>

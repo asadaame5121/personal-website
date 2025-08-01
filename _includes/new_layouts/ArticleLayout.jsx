@@ -62,6 +62,7 @@ export default function ArticleLayout({
 
           {/* メインカラム */}
           <main className="flex-1">
+            {comp?.breadcrumb && <comp.breadcrumb url={url} />}
             <div className="card bg-base-100 shadow-md p-6">
               <article className="h-entry">
                 {title && (
@@ -195,6 +196,7 @@ export default function ArticleLayout({
               <div className="space-y-4">
                 {comp?.resentPages && <comp.resentPages />}
                 {children?.sidebar}
+                {comp?.relatedLinks && <comp.relatedLinks />}
               </div>
             </div>
           </aside>
