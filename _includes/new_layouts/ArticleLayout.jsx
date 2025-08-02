@@ -4,6 +4,7 @@ import BookLinks from "../../_components/BookLinks.jsx";
 import books from "../../_data/books.json" with { type: "json" };
 import DrawerMenu from "../../_components/new_components/DrawerMenu.jsx";
 import BaseHead from "../../_components/new_components/BaseHead.jsx";
+import linkGraph from "../../_data/link_graph.json" with { type: "json" };
 
 function renderToc(toc) {
   if (!Array.isArray(toc) || toc.length === 0) return null;
@@ -196,7 +197,7 @@ export default function ArticleLayout({
               <div className="space-y-4">
                 {comp?.resentPages && <comp.resentPages />}
                 {children?.sidebar}
-                {comp?.relatedLinks && <comp.relatedLinks />}
+                {comp?.relatedLinks && <comp.relatedLinks pagePath={url} linkMap={linkGraph.linkMap} inboundMap={linkGraph.inboundMap} twoHopMap={linkGraph.twoHopMap} nodes={linkGraph.graphData.nodes} />}
               </div>
             </div>
           </aside>

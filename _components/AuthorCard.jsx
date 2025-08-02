@@ -22,24 +22,33 @@ export default function AuthorCard({ blogAuthorID = "asadaame", display = true }
         <div className="flex gap-4 mt-2">
           {blogAuthor.github && (
             <a className="u-github" rel="me" href={blogAuthor.github} target="_blank" rel="noopener noreferrer">
-              <img src="/assets/icons/github.svg" alt="GitHub" width="24" height="24" />
-            </a>
-          )}
+    <img src="/assets/icons/github.svg" alt="GitHub" width="24" height="24" />
+    <span className="sr-only md:not-sr-only text-xs">GitHub</span>
+  </a>
+)}
           {blogAuthor.bluesky && (
             <a className="u-bluesky" rel="me" href={blogAuthor.bluesky} target="_blank" rel="noopener noreferrer">
-              <img src="/assets/icons/bluesky.svg" alt="Bluesky" width="24" height="24" />
-            </a>
-          )}
+    <img src="/assets/icons/bluesky.svg" alt="Bluesky" width="24" height="24" />
+    <span className="sr-only md:not-sr-only text-xs">Bluesky</span>
+  </a>
+)}
           {blogAuthor.fediverse && (
             <a className="u-fediverse" rel="me" href={blogAuthor.fediverse} target="_blank" rel="noopener noreferrer">
-              <img src="/assets/icons/mastodon.svg" alt="Mastodon" width="24" height="24" />
-            </a>
-          )}
+    <img src="/assets/icons/mastodon.svg" alt="Mastodon" width="24" height="24" />
+    <span className="sr-only md:not-sr-only text-xs">Mastodon</span>
+  </a>
+)}
           {blogAuthor.twitter && (
             <a className="u-twitter" rel="me" href={blogAuthor.twitter} target="_blank" rel="noopener noreferrer">
               <img src="/assets/icons/x.svg" alt="X" width="24" height="24" />
-            </a>
-          )}
+  </a>
+)}
+          {blogAuthor.bookmeter && (
+            <a className="u-bookmeter" rel="me" href={blogAuthor.bookmeter} target="_blank" rel="noopener noreferrer">
+    <img src="/assets/icons/bookmeter.svg" alt="Bookmeter" width="24" height="24" />
+    <span className="sr-only md:not-sr-only text-xs">読書メーター</span>
+  </a>
+)}
         </div>
       </div>
       {/* 他の著者情報表示 */}

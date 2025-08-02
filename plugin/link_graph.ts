@@ -4,6 +4,7 @@ import type Site from "lume/core/site.ts";
 import { setup, getLogger, FileHandler } from "jsr:@std/log";
 import { ensureDir } from "jsr:@std/fs";
 
+
 // ログとデバッグ出力用ユーティリティ
 const LOG_DIR = "logs";
 const LOG_FILE = `${LOG_DIR}/link_graph.log`;
