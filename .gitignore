@@ -27,6 +27,7 @@ Thumbs.db
 
 # Project specific
 site-plan.md
+logs/link_graph.log
 
 # Lume cache
 _cache/
