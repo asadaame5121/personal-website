@@ -30,8 +30,12 @@
     "/Article/%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E8%AB%96%E4%BA%89%E3%81%AF%E3%81%AA%E3%81%9C%E7%B5%82%E3%82%8F%E3%82%89%E3%81%AA%E3%81%84%E3%81%AE%E3%81%8B.html": [
       "/Book/%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E8%AB%96%E4%BA%89%E5%8F%B2.html"
     ],
+    "/Article/%E8%AA%B2%E9%A1%8C%E5%9B%B3%E6%9B%B8%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E3%81%8B%EF%BC%88%E3%83%96%E3%83%AD%E3%83%BC%E3%82%AC%E3%82%B9%E3%83%88day2%EF%BC%89.html": [
+      "/Book/%E3%82%A2%E3%82%BB%E3%82%AF%E3%82%B7%E3%83%A5%E3%82%A2%E3%83%AB%E3%82%A2%E3%83%AD%E3%83%9E%E3%83%B3%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E5%85%A5%E9%96%80.html"
+    ],
     "/Book/7%E3%81%A4%E3%81%AE%E5%AE%89%E3%81%84%E3%83%A2%E3%83%8E%E3%81%8B%E3%82%89%E8%A6%8B%E3%82%8B%E4%B8%96%E7%95%8C%E3%81%AE%E6%AD%B4%E5%8F%B2.html": [],
     "/Book/NO%20SIGNAL(%E3%83%8E%E3%83%BC%E3%82%B7%E3%82%B0%E3%83%8A%E3%83%AB).html": [],
+    "/Book/Not All Dead White Men Classics and Misogyny in the Digital Age.html": [],
     "/Book/%E3%80%88%E5%80%8B%E3%80%89%E3%81%AE%E8%AA%95%E7%94%9F.html": [
       "/People/%E5%9D%82%E5%8F%A3%E3%81%B5%E3%81%BF.html",
       "/People/%E5%B1%B1%E6%9C%AC%E8%8A%B3%E4%B9%85.html",
@@ -148,7 +152,10 @@
     "/Book/%E9%A3%9F%E3%81%B9%E3%82%8B(%E6%9B%B8%E7%B1%8D).html": [],
     "/clippingshare.html": [],
     "/contact.html": [],
-    "/dailylog.html": [],
+    "/dailylog.html": [
+      "/Book/Not All Dead White Men Classics and Misogyny in the Digital Age.html",
+      "/Book/Not All Dead White Men Classics and Misogyny in the Digital Age.html"
+    ],
     "/Glossary/Omnivore.html": [],
     "/Glossary/%E3%82%A2%E3%83%A9%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AA%E3%83%86%E3%82%A3%E5%8E%9F%E7%90%86.html": [],
     "/Glossary/%E3%82%AB%E3%83%BC%E3%82%BB%E3%83%A9%E3%83%AB%E3%83%BB%E3%83%95%E3%82%A7%E3%83%9F%E3%83%8B%E3%82%BA%E3%83%A0.html": [
@@ -167,9 +174,14 @@
       "/Book/%E4%B8%AD%E4%B8%96%E3%81%AE%E5%B9%BD%E9%9C%8A.html",
       "/Book/%E8%AA%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AB%E6%B3%95%E3%81%AF%E7%94%9F%E3%81%BE%E3%82%8C%E3%81%9F.html",
       "/Book/%E8%B4%88%E4%B8%8E%E3%81%AE%E6%AD%B4%E5%8F%B2%E5%AD%A6.html",
-      "/Book/%E7%BE%A4%E3%82%8C%E3%81%8B%E3%82%89%E9%80%B8%E3%82%8C%E3%81%A6%E7%94%9F%E3%81%8D%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E8%87%AA%E5%AD%A6%E8%87%AA%E7%BF%92%E6%B3%95.html"
+      "/Book/%E7%BE%A4%E3%82%8C%E3%81%8B%E3%82%89%E9%80%B8%E3%82%8C%E3%81%A6%E7%94%9F%E3%81%8D%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E8%87%AA%E5%AD%A6%E8%87%AA%E7%BF%92%E6%B3%95.html",
+      "/Book/Not All Dead White Men Classics and Misogyny in the Digital Age.html",
+      "/Book/Not All Dead White Men Classics and Misogyny in the Digital Age.html",
+      "/Book/Not All Dead White Men Classics and Misogyny in the Digital Age.html"
     ],
-    "/People/%E3%82%A2%E3%83%8A%E3%83%BB%E3%83%81%E3%83%B3.html": [],
+    "/People/%E3%82%A2%E3%83%8A%E3%83%BB%E3%83%81%E3%83%B3.html": [
+      "/Book/%E6%91%A9%E6%93%A6(%E3%82%A2%E3%83%8A%E3%83%BB%E3%83%84%E3%82%A3%E3%83%B3).html"
+    ],
     "/People/%E3%82%A2%E3%83%8D%E3%83%9E%E3%83%AA%E3%83%BC%E3%83%BB%E3%83%A2%E3%83%AB.html": [
       "/Book/%E9%A3%9F%E3%81%B9%E3%82%8B(%E6%9B%B8%E7%B1%8D).html"
     ],
@@ -216,6 +228,9 @@
       "/Article/%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E8%AB%96%E4%BA%89%E3%81%AF%E3%81%AA%E3%81%9C%E7%B5%82%E3%82%8F%E3%82%89%E3%81%AA%E3%81%84%E3%81%AE%E3%81%8B.html",
       "/Book/%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E8%AB%96%E4%BA%89%E3%81%AF%E3%81%AA%E3%81%9C%E7%B5%82%E3%82%8F%E3%82%89%E3%81%AA%E3%81%84%E3%81%AE%E3%81%8B.html",
       "/People/%E6%B1%9F%E5%88%A9%E5%B7%9D%E6%98%A5%E9%9B%84.html"
+    ],
+    "/Book/%E3%82%A2%E3%82%BB%E3%82%AF%E3%82%B7%E3%83%A5%E3%82%A2%E3%83%AB%E3%82%A2%E3%83%AD%E3%83%9E%E3%83%B3%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E5%85%A5%E9%96%80.html": [
+      "/Article/%E8%AA%B2%E9%A1%8C%E5%9B%B3%E6%9B%B8%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E3%81%8B%EF%BC%88%E3%83%96%E3%83%AD%E3%83%BC%E3%82%AC%E3%82%B9%E3%83%88day2%EF%BC%89.html"
     ],
     "/People/%E5%9D%82%E5%8F%A3%E3%81%B5%E3%81%BF.html": [
       "/Book/%E3%80%88%E5%80%8B%E3%80%89%E3%81%AE%E8%AA%95%E7%94%9F.html"
@@ -270,7 +285,8 @@
       "/People/%E3%82%A2%E3%83%AB%E3%83%90%E3%83%BC%E3%83%88%E3%83%BBO.%E3%83%8F%E3%83%BC%E3%82%B7%E3%83%A5%E3%83%9E%E3%83%B3.html"
     ],
     "/Book/%E6%91%A9%E6%93%A6(%E3%82%A2%E3%83%8A%E3%83%BB%E3%83%84%E3%82%A3%E3%83%B3).html": [
-      "/Book/%E5%A4%A7%E8%A1%86%E6%BC%94%E5%8A%87%E3%81%B8%E3%81%AE%E6%97%85.html"
+      "/Book/%E5%A4%A7%E8%A1%86%E6%BC%94%E5%8A%87%E3%81%B8%E3%81%AE%E6%97%85.html",
+      "/People/%E3%82%A2%E3%83%8A%E3%83%BB%E3%83%81%E3%83%B3.html"
     ],
     "/Book/%E5%85%AC%E9%96%8B%E6%80%A7%E3%81%AE%E6%A0%B9%E6%BA%90.html": [
       "/Book/%E6%9D%89%E6%B5%A6%E5%BA%B7%E5%B9%B3%E3%81%A8%E5%86%99%E6%A4%8D%E3%81%AE%E6%99%82%E4%BB%A3.html"
@@ -290,6 +306,13 @@
     "/Book/%E5%8F%8D%E5%8B%95%E3%81%AE%E3%83%AC%E3%83%88%E3%83%AA%E3%83%83%E3%82%AF.html": [
       "/Book/%E9%9B%A2%E8%84%B1%E3%83%BB%E7%99%BA%E8%A8%80%E3%83%BB%E5%BF%A0%E8%AA%A0.html",
       "/People/%E3%82%A2%E3%83%AB%E3%83%90%E3%83%BC%E3%83%88%E3%83%BBO.%E3%83%8F%E3%83%BC%E3%82%B7%E3%83%A5%E3%83%9E%E3%83%B3.html"
+    ],
+    "/Book/Not All Dead White Men Classics and Misogyny in the Digital Age.html": [
+      "/dailylog.html",
+      "/dailylog.html",
+      "/",
+      "/",
+      "/"
     ],
     "/Book/%E3%83%95%E3%82%A7%E3%83%9F%E3%83%8B%E3%82%B9%E3%83%88%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3.html": [
       "/Glossary/%E3%82%AB%E3%83%BC%E3%82%BB%E3%83%A9%E3%83%AB%E3%83%BB%E3%83%95%E3%82%A7%E3%83%9F%E3%83%8B%E3%82%BA%E3%83%A0.html"
@@ -375,8 +398,12 @@
       "/Article/%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E5%BB%83%E6%AD%A2%E8%AB%96%E3%81%AE%E8%AB%96%E7%82%B9%E4%B8%80%E8%A6%A7.html",
       "/Book/%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E8%AB%96%E4%BA%89%E3%81%AF%E3%81%AA%E3%81%9C%E7%B5%82%E3%82%8F%E3%82%89%E3%81%AA%E3%81%84%E3%81%AE%E3%81%8B.html"
     ],
+    "/Article/%E8%AA%B2%E9%A1%8C%E5%9B%B3%E6%9B%B8%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E3%81%8B%EF%BC%88%E3%83%96%E3%83%AD%E3%83%BC%E3%82%AC%E3%82%B9%E3%83%88day2%EF%BC%89.html": [
+      "/Article/%E8%AA%B2%E9%A1%8C%E5%9B%B3%E6%9B%B8%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E3%81%8B%EF%BC%88%E3%83%96%E3%83%AD%E3%83%BC%E3%82%AC%E3%82%B9%E3%83%88day2%EF%BC%89.html"
+    ],
     "/Book/7%E3%81%A4%E3%81%AE%E5%AE%89%E3%81%84%E3%83%A2%E3%83%8E%E3%81%8B%E3%82%89%E8%A6%8B%E3%82%8B%E4%B8%96%E7%95%8C%E3%81%AE%E6%AD%B4%E5%8F%B2.html": [],
     "/Book/NO%20SIGNAL(%E3%83%8E%E3%83%BC%E3%82%B7%E3%82%B0%E3%83%8A%E3%83%AB).html": [],
+    "/Book/Not All Dead White Men Classics and Misogyny in the Digital Age.html": [],
     "/Book/%E3%80%88%E5%80%8B%E3%80%89%E3%81%AE%E8%AA%95%E7%94%9F.html": [
       "/Book/%E3%80%88%E5%80%8B%E3%80%89%E3%81%AE%E8%AA%95%E7%94%9F.html"
     ],
@@ -447,7 +474,8 @@
     "/Book/%E5%9B%B3%E6%9B%B8%E9%A4%A8%E3%82%92%E5%AD%A6%E5%95%8F%E3%81%99%E3%82%8B.html": [],
     "/Book/%E5%9C%B0%E7%90%83%E3%81%AB%E9%99%8D%E3%82%8A%E7%AB%8B%E3%81%A4%20%E6%96%B0%E6%B0%97%E5%80%99%E4%BD%93%E5%88%B6%E3%82%92%E7%94%9F%E3%81%8D%E6%8A%9C%E3%81%8F%E3%81%9F%E3%82%81%E3%81%AE%E6%94%BF%E6%B2%BB.html": [],
     "/Book/%E5%A4%A7%E8%A1%86%E6%BC%94%E5%8A%87%E3%81%B8%E3%81%AE%E6%97%85.html": [
-      "/Book/%E5%A4%A7%E8%A1%86%E6%BC%94%E5%8A%87%E3%81%B8%E3%81%AE%E6%97%85.html"
+      "/Book/%E5%A4%A7%E8%A1%86%E6%BC%94%E5%8A%87%E3%81%B8%E3%81%AE%E6%97%85.html",
+      "/People/%E3%82%A2%E3%83%8A%E3%83%BB%E3%83%81%E3%83%B3.html"
     ],
     "/Book/%E5%B2%A9%E4%BA%95%E5%85%8B%E4%BA%BA%E3%80%8C%E6%AC%B2%E6%9C%9B%E3%81%AE%E8%B2%A8%E5%B9%A3%E8%AB%96%E3%80%8D%E3%82%92%E8%AA%9E%E3%82%8B.html": [],
     "/Book/%E6%80%AA%E7%95%B0%E3%81%AE%E8%A1%A8%E8%B1%A1%E7%A9%BA%E9%96%93.html": [],
@@ -501,7 +529,10 @@
     "/Book/%E9%A3%9F%E3%81%B9%E3%82%8B(%E6%9B%B8%E7%B1%8D).html": [],
     "/clippingshare.html": [],
     "/contact.html": [],
-    "/dailylog.html": [],
+    "/dailylog.html": [
+      "/dailylog.html",
+      "/"
+    ],
     "/Glossary/Omnivore.html": [],
     "/Glossary/%E3%82%A2%E3%83%A9%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AA%E3%83%86%E3%82%A3%E5%8E%9F%E7%90%86.html": [],
     "/Glossary/%E3%82%AB%E3%83%BC%E3%82%BB%E3%83%A9%E3%83%AB%E3%83%BB%E3%83%95%E3%82%A7%E3%83%9F%E3%83%8B%E3%82%BA%E3%83%A0.html": [
@@ -515,9 +546,13 @@
     "/": [
       "/",
       "/Book/%E8%B4%88%E4%B8%8E%E3%81%AE%E6%AD%B4%E5%8F%B2%E5%AD%A6.html",
-      "/Book/%E4%B8%AD%E4%B8%96%E3%81%AE%E5%B9%BD%E9%9C%8A.html"
+      "/Book/%E4%B8%AD%E4%B8%96%E3%81%AE%E5%B9%BD%E9%9C%8A.html",
+      "/dailylog.html"
     ],
-    "/People/%E3%82%A2%E3%83%8A%E3%83%BB%E3%83%81%E3%83%B3.html": [],
+    "/People/%E3%82%A2%E3%83%8A%E3%83%BB%E3%83%81%E3%83%B3.html": [
+      "/Book/%E5%A4%A7%E8%A1%86%E6%BC%94%E5%8A%87%E3%81%B8%E3%81%AE%E6%97%85.html",
+      "/People/%E3%82%A2%E3%83%8A%E3%83%BB%E3%83%81%E3%83%B3.html"
+    ],
     "/People/%E3%82%A2%E3%83%8D%E3%83%9E%E3%83%AA%E3%83%BC%E3%83%BB%E3%83%A2%E3%83%AB.html": [
       "/People/%E3%82%A2%E3%83%8D%E3%83%9E%E3%83%AA%E3%83%BC%E3%83%BB%E3%83%A2%E3%83%AB.html"
     ],
@@ -594,10 +629,16 @@
         "id": "/Article/%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E8%AB%96%E4%BA%89%E3%81%AF%E3%81%AA%E3%81%9C%E7%B5%82%E3%82%8F%E3%82%89%E3%81%AA%E3%81%84%E3%81%AE%E3%81%8B.html"
       },
       {
+        "id": "/Article/%E8%AA%B2%E9%A1%8C%E5%9B%B3%E6%9B%B8%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E3%81%8B%EF%BC%88%E3%83%96%E3%83%AD%E3%83%BC%E3%82%AC%E3%82%B9%E3%83%88day2%EF%BC%89.html"
+      },
+      {
         "id": "/Book/7%E3%81%A4%E3%81%AE%E5%AE%89%E3%81%84%E3%83%A2%E3%83%8E%E3%81%8B%E3%82%89%E8%A6%8B%E3%82%8B%E4%B8%96%E7%95%8C%E3%81%AE%E6%AD%B4%E5%8F%B2.html"
       },
       {
         "id": "/Book/NO%20SIGNAL(%E3%83%8E%E3%83%BC%E3%82%B7%E3%82%B0%E3%83%8A%E3%83%AB).html"
+      },
+      {
+        "id": "/Book/Not All Dead White Men Classics and Misogyny in the Digital Age.html"
       },
       {
         "id": "/Book/%E3%80%88%E5%80%8B%E3%80%89%E3%81%AE%E8%AA%95%E7%94%9F.html"
@@ -877,6 +918,10 @@
         "to": "/Book/%E8%8B%B1%E8%AA%9E%E6%95%99%E8%82%B2%E8%AB%96%E4%BA%89%E5%8F%B2.html"
       },
       {
+        "from": "/Article/%E8%AA%B2%E9%A1%8C%E5%9B%B3%E6%9B%B8%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E3%81%8B%EF%BC%88%E3%83%96%E3%83%AD%E3%83%BC%E3%82%AC%E3%82%B9%E3%83%88day2%EF%BC%89.html",
+        "to": "/Book/%E3%82%A2%E3%82%BB%E3%82%AF%E3%82%B7%E3%83%A5%E3%82%A2%E3%83%AB%E3%82%A2%E3%83%AD%E3%83%9E%E3%83%B3%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E5%85%A5%E9%96%80.html"
+      },
+      {
         "from": "/Book/%E3%80%88%E5%80%8B%E3%80%89%E3%81%AE%E8%AA%95%E7%94%9F.html",
         "to": "/People/%E5%9D%82%E5%8F%A3%E3%81%B5%E3%81%BF.html"
       },
@@ -1001,6 +1046,14 @@
         "to": "/Book/%E5%8F%8D%E5%8B%95%E3%81%AE%E3%83%AC%E3%83%88%E3%83%AA%E3%83%83%E3%82%AF.html"
       },
       {
+        "from": "/dailylog.html",
+        "to": "/Book/Not All Dead White Men Classics and Misogyny in the Digital Age.html"
+      },
+      {
+        "from": "/dailylog.html",
+        "to": "/Book/Not All Dead White Men Classics and Misogyny in the Digital Age.html"
+      },
+      {
         "from": "/Glossary/%E3%82%AB%E3%83%BC%E3%82%BB%E3%83%A9%E3%83%AB%E3%83%BB%E3%83%95%E3%82%A7%E3%83%9F%E3%83%8B%E3%82%BA%E3%83%A0.html",
         "to": "/Book/%E3%83%95%E3%82%A7%E3%83%9F%E3%83%8B%E3%82%B9%E3%83%88%E3%83%BB%E3%82%B7%E3%83%86%E3%82%A3.html"
       },
@@ -1047,6 +1100,22 @@
       {
         "from": "/",
         "to": "/Book/%E7%BE%A4%E3%82%8C%E3%81%8B%E3%82%89%E9%80%B8%E3%82%8C%E3%81%A6%E7%94%9F%E3%81%8D%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E8%87%AA%E5%AD%A6%E8%87%AA%E7%BF%92%E6%B3%95.html"
+      },
+      {
+        "from": "/",
+        "to": "/Book/Not All Dead White Men Classics and Misogyny in the Digital Age.html"
+      },
+      {
+        "from": "/",
+        "to": "/Book/Not All Dead White Men Classics and Misogyny in the Digital Age.html"
+      },
+      {
+        "from": "/",
+        "to": "/Book/Not All Dead White Men Classics and Misogyny in the Digital Age.html"
+      },
+      {
+        "from": "/People/%E3%82%A2%E3%83%8A%E3%83%BB%E3%83%81%E3%83%B3.html",
+        "to": "/Book/%E6%91%A9%E6%93%A6(%E3%82%A2%E3%83%8A%E3%83%BB%E3%83%84%E3%82%A3%E3%83%B3).html"
       },
       {
         "from": "/People/%E3%82%A2%E3%83%8D%E3%83%9E%E3%83%AA%E3%83%BC%E3%83%BB%E3%83%A2%E3%83%AB.html",

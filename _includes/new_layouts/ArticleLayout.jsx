@@ -159,12 +159,18 @@ export default function ArticleLayout({
                 )}
 
                 {/* Webmention */}
+            
                 <div className="mt-8">
                   <h2 className="text-lg font-bold mb-2">Webmention コメント</h2>
                   <div id="webmention-comments"></div>
                 </div>
-                <script src="/assets/js/webmention.js" defer></script>
-
+                <div id="webmentions"></div>
+<script
+  src="/assets/js/webmention.min.js"
+  async
+  data-page-url={`https://asadaame5121.net${url}`}
+></script>
+            
                 {/* タグ */}
                 {tags && tags.length > 0 && (
                   <div className="tags mt-4">

@@ -2,6 +2,7 @@
 export const layout = "../_includes/new_layouts/HomeLayout.jsx";
 export const title = "DropGarden";
 export const url = "/";
+export const description = "DropGardenは、あさだあめが日々の気づきや読書記録、クリッピングをまとめるデジタルガーデンです。知的探究や創作の過程を公開し、誰もが自由に巡れる知識の庭を目指しています。";
 import DailyLog from "../_components/dailylog.jsx";
 import ClippingList from "../_components/clippinglist.jsx";
 import ReadingList from "../_components/ReadingList.jsx";

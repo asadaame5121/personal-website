@@ -12,6 +12,7 @@ export default function BaseHead({url,title = "", extra = null}) {
       <link rel="webmention" href="https://webmention.io/asadaame5121.net/webmention" />
       <link rel="me" href="https://github.com/asadaame5121" />
       <link rel="me" href="https://bsky.app/profile/asadaame5121.bsky.social" />
+      <script src="/assets/js/webmention.min.js" async></script>
       <script dangerouslySetInnerHTML={{
         __html: `document.addEventListener('DOMContentLoaded', () => {
           document.querySelectorAll('.pagefind-ui-container').forEach(el => {
