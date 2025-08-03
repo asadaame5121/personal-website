@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-08-01T12:39:16.476Z",
+  "last_updated": "2025-08-03T12:37:32.865Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -148,6 +148,41 @@
         "source_url": "https://asadaame5121.net/dailylog#entry-718c678e-34b7-4346-b66e-82def0237190",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-07-31T12:38:35.462Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "cb675649-2a81-4376-b14f-7bd6b86ef508",
+        "source_url": "https://asadaame5121.net/dailylog#entry-cb675649-2a81-4376-b14f-7bd6b86ef508",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-03T12:37:31.827Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "899fcbfe-21af-4f3d-9bb1-c2ee06acdf4a",
+        "source_url": "https://asadaame5121.net/dailylog#entry-899fcbfe-21af-4f3d-9bb1-c2ee06acdf4a",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-03T12:37:32.091Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "8ce72413-a33a-4e8f-8de3-062054783d33",
+        "source_url": "https://asadaame5121.net/dailylog#entry-8ce72413-a33a-4e8f-8de3-062054783d33",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-03T12:37:32.298Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "27cb0727-d69a-4e68-8ef1-306816c8a21b",
+        "source_url": "https://asadaame5121.net/dailylog#entry-27cb0727-d69a-4e68-8ef1-306816c8a21b",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-03T12:37:32.630Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "a859180e-906d-4ce3-8331-ffb313c93526",
+        "source_url": "https://asadaame5121.net/dailylog#entry-a859180e-906d-4ce3-8331-ffb313c93526",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-03T12:37:32.864Z",
         "status": "success"
       }
     ],
@@ -4891,6 +4926,70 @@
         "title": "英語教育論争はなぜ終わらないのか",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-07-31T12:38:35.132Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1754224649845",
+        "source_url": "https://asadaame5121.net/Article/%E3%81%AA%E3%81%9C%E7%AE%87%E6%9D%A1%E6%9B%B8%E3%81%8D%E3%81%8B%E3%82%89%E6%96%87%E7%AB%A0%E3%82%92%E3%81%8A%E3%81%93%E3%81%99%E3%81%AE%E3%81%AF%E3%82%80%E3%81%9A%E3%81%8B%E3%81%97%E3%81%84%E3%81%AE%E3%81%8B(%E3%83%96%E3%83%AD%E3%83%BC%E3%82%AC%E3%82%B9%E3%83%88Day3).html",
+        "title": "なぜ箇条書きから文章をおこすのはむずかしいのか(ブローガストDay3)",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-03T12:37:29.845Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1754224650230",
+        "source_url": "https://asadaame5121.net/Glossary/%E6%80%A7%E5%99%A8%E4%B8%AD%E5%BF%83%E4%B8%BB%E7%BE%A9.html",
+        "title": "性器中心主義",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-03T12:37:30.230Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1754224650654",
+        "source_url": "https://asadaame5121.net/Glossary/%E3%82%B9%E3%83%97%E3%83%AA%E3%83%83%E3%83%88%E3%83%BB%E3%82%A2%E3%83%88%E3%83%A9%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%BB%E3%83%A2%E3%83%87%E3%83%AB.html",
+        "title": "スプリット・アトラクション・モデル",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-03T12:37:30.654Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1754224650842",
+        "source_url": "https://asadaame5121.net/Article/%E8%AA%B2%E9%A1%8C%E5%9B%B3%E6%9B%B8%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E3%81%8B%EF%BC%88%E3%83%96%E3%83%AD%E3%83%BC%E3%82%AC%E3%82%B9%E3%83%88day2%EF%BC%89.html",
+        "title": "課題図書を設定するか（ブローガストday2）",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-03T12:37:30.842Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1754224651004",
+        "source_url": "https://asadaame5121.net/Article/%E3%83%AD%E3%82%AE%E3%83%B3%E3%82%B0%E4%BB%95%E4%BA%8B%E8%A1%93%E3%81%AE%E8%AA%AD%E6%9B%B8%E3%83%AD%E3%82%B0%E3%81%B8%E3%81%AE%E5%BF%9C%E7%94%A8.html",
+        "title": "ロギング仕事術の読書ログへの応用",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-03T12:37:31.004Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1754224651263",
+        "source_url": "https://asadaame5121.net/Article/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E3%81%AE%E5%85%AC%E9%96%8B%E3%82%92%E3%81%AF%E3%81%98%E3%82%81%E3%81%9F%E3%80%82.html",
+        "title": "デジタルガーデンの公開をはじめた。",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-03T12:37:31.263Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1754224651480",
+        "source_url": "https://asadaame5121.net/Book/%E6%A5%BD%E3%81%97%E3%81%84%E6%94%BF%E6%B2%BB%20%E3%80%8C%E3%81%A4%E3%81%8F%E3%82%89%E3%82%8C%E3%81%9F%E6%AD%B4%E5%8F%B2%E3%80%8D%E3%81%A8%E3%80%8C%E3%81%A4%E3%81%8F%E3%82%8B%E7%8F%BE%E5%A0%B4%E3%80%8D%E3%81%8B%E3%82%89%E7%8F%BE%E4%BB%A3%E3%82%92%E7%9F%A5%E3%82%8B.html",
+        "title": "楽しい政治 「つくられた歴史」と「つくる現場」から現代を知る",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-03T12:37:31.480Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1754224651650",
+        "source_url": "https://asadaame5121.net/Book/%E8%AA%B0%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AB%E6%B3%95%E3%81%AF%E7%94%9F%E3%81%BE%E3%82%8C%E3%81%9F.html",
+        "title": "誰のために法は生まれた",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-03T12:37:31.650Z",
         "status": "success"
       }
     ]
