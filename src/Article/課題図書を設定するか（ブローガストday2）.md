@@ -4,7 +4,9 @@ tags:
 aliases:
   - 課題図書を設定するか（ブローガスト2日目）
 created: '2025-08-02 19:12'
-description: null
+description: >-
+  ブローガスト企画への参加表明。移り気な性格から自由研究ではなく、課題図書形式での参加を決意。『Not All Dead White
+  Men』と『クィア・レヴィナス』の2冊を取り上げ、選書理由と読書への期待を綴る。
 draft: false
 linter-yaml-title-alias: 課題図書を設定するか（ブローガスト2日目）
 status: 完成

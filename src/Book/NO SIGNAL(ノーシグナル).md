@@ -7,7 +7,8 @@ aliases:
 author:
   - ブリス・ポルトラーノ
 created: '2025-03-29 17:41'
-description: 'null'
+description: >-
+  写真家が人里離れた場所で自然と触れ合うライフスタイルを選択した10人に密着したフォトエッセイ。社会的慣習から自由になり、自己を深める生き方を探る。ウォールデンの引用を交え、自然とのシンプルな関係を問う。
 draft: false
 isbn: 4863135394 9784863135390
 linter-yaml-title-alias: NO SIGNAL(ノーシグナル)

@@ -13,8 +13,7 @@ author:
 cdatelink: '[[2025-03-26]]'
 created: '2025-03-27 16:49'
 description: >-
-  Amazon配送商品ならNot All Dead White Men: Classics and Misogyny in the Digital
-  Ageが通常配送無料。更にAmazonならポイント還元本が多数。Zuckerberg, Donna作品ほか、お急ぎ便対象商品は当日お届けも可能。
+  オルタナ右翼がネット上でギリシャ・ラテンの古典を権威として利用し、トローリング、ミソジニー、人種差別を拡散する様を分析。古代と現代世界の間に、より批判的で居心地の悪い関係が必要だと説く。
 draft: false
 ISBN: '9780674975552'
 linter-yaml-title-alias: Not All Dead White Men Classics and Misogyny in the Digital Age
@@ -45,9 +44,7 @@ A chilling account of trolling, misogyny, racism, and bad history proliferated o
 ## 読書メモ
 ## 感想
 ## 関連ノート
-[[ストア派]]
-[[現代ストア派]]
-ミソジニー
-[[ストア派哲学入門 ──成功者が魅了される思考術]]
-る
-<a href="https://asadaame5121.net/9780674975552" class="u-url">リンク</a>
+- [[ストア派]]
+- [[現代ストア派]]
+- ミソジニー
+- [[ストア派哲学入門 ──成功者が魅了される思考術]]
