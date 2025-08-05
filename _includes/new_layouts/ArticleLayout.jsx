@@ -45,6 +45,7 @@ export default function ArticleLayout({
   Calil,
   amazonUrl,
   shopUrl,
+  footnotes,
   page,
 }) {
   // Calilが配列なら先頭のみ、なければundefined
@@ -157,20 +158,34 @@ export default function ArticleLayout({
 
                   </div>
                 )}
+                {footnotes && (
+                  <div className="mt-8">
+                    <h2 className="text-lg font-bold mb-2">脚注</h2>
+                    {Array.isArray(footnotes) && (
+                      <ol>
+                        {footnotes.map((fn, idx) => (
+                          <li key={fn.id} id={fn.id}>
+                            <span className="footnote-number">{fn.label || idx + 1}</span>{" "}
+                            <span dangerouslySetInnerHTML={{ __html: fn.content }} />
+                          </li>
+                        ))}
+                      </ol>
+                    )}
+                  </div>
+                )}
 
                 {/* Webmention */}
-            
                 <div className="mt-8">
                   <h2 className="text-lg font-bold mb-2">Webmention コメント</h2>
                   <div id="webmention-comments"></div>
                 </div>
                 <div id="webmentions"></div>
-<script
-  src="/assets/js/webmention.min.js"
-  async
-  data-page-url={`https://asadaame5121.net${url}`}
-></script>
-            
+                <script
+                  src="/assets/js/webmention.min.js"
+                  async
+                  data-page-url={`https://asadaame5121.net${url}`}
+                ></script>
+
                 {/* タグ */}
                 {tags && tags.length > 0 && (
                   <div className="tags mt-4">
@@ -186,10 +201,9 @@ export default function ArticleLayout({
                   </div>
                 )}
 
- 
-              {/* 著者カード */}
-              <AuthorCard blogAuthorID={blogAuthorID} display />
-                
+                {/* 著者カード */}
+                <AuthorCard blogAuthorID={blogAuthorID} display />
+
               </article>
             </div>
           </main>

@@ -1,32 +1,15 @@
 // plugin/link_graph.ts
 import { Page } from "lume/core/file.ts";
 import type Site from "lume/core/site.ts";
-import { setup, getLogger, FileHandler } from "jsr:@std/log";
+
 import { ensureDir } from "jsr:@std/fs";
 
 
 // ログとデバッグ出力用ユーティリティ
 const LOG_DIR = "logs";
-const LOG_FILE = `${LOG_DIR}/link_graph.log`;
 const LINK_GRAPH_JSON = `${LOG_DIR}/link_graph.json`;
 
-async function setupLogger() {
-  await ensureDir(LOG_DIR);
-  await setup({
-    handlers: {
-      file: new FileHandler("DEBUG", {
-        filename: LOG_FILE,
-        formatter: (logRecord) => `${logRecord.levelName} ${logRecord.datetime} ${logRecord.msg}`,
-      }),
-    },
-    loggers: {
-      default: {
-        level: "DEBUG",
-        handlers: ["file"],
-      },
-    },
-  });
-}
+
 
 async function writeLinkGraphJsonOut(data: unknown) {
   await ensureDir(LOG_DIR);
@@ -87,17 +70,14 @@ function extractOutboundLinks(
     }
     if (page.document) {
       extractLinks(page.document);
-      getLogger().debug(`[document] ${page.src.path}: ${links.length} links`);
     } else if (typeof page.content === 'string') {
       try {
         const dom = new DOMParser().parseFromString(page.content, 'text/html');
         extractLinks(dom);
-        getLogger().debug(`[content] ${page.src.path}: ${links.length} links`);
       } catch (e) {
-        getLogger().error(`[content-parse-error] ${page.src.path}: ${e}`);
+        console.error(`[content-parse-error] ${page.src.path}: ${e}`);
       }
     } else {
-      getLogger().debug(`[no-document-no-content] ${page.src.path}`);
     }
     // カテゴリフィルタ: リンク先も対象カテゴリのみ抽出
     // セルフリンク（自ページへのリンク）を除外
@@ -110,7 +90,6 @@ function extractOutboundLinks(
     }
     linkMap[pageUrl] = filteredLinks;
   }
-  getLogger().debug(`extractOutboundLinks: ${JSON.stringify(linkMap)}`);
   return linkMap;
 }
 
@@ -122,7 +101,7 @@ function buildInboundIndex(linkMap: LinkMap): LinkMap {
       inbound[to].push(from);
     }
   }
-  getLogger().debug(`buildInboundIndex: ${JSON.stringify(inbound)}`);
+
   return inbound;
 }
 
@@ -136,7 +115,7 @@ function generateTwoHopLinks(linkMap: LinkMap, inboundMap: LinkMap): TwoHopMap {
     }
     twoHop[from] = Array.from(secondHop);
   }
-  getLogger().debug(`generateTwoHopLinks: ${JSON.stringify(twoHop)}`);
+
   return twoHop;
 }
 
@@ -152,13 +131,11 @@ function buildGraphData(linkMap: LinkMap, inboundMap: LinkMap, twoHopMap: TwoHop
       edges.push({ from, to });
     }
   }
-  getLogger().debug(`buildGraphData: nodes=${nodes.length}, edges=${edges.length}`);
   return { nodes, edges };
 }
 
-export default function linkGraphPlugin(options: Partial<LinkGraphOptions> = {}) {
+export default function linkGraphPlugin(_options: Partial<LinkGraphOptions> = {}) {
   return async (site: Site) => {
-    await setupLogger();
     site.process([".md", ".html"], async (pages) => {
       const linkMap = extractOutboundLinks(pages);
       const inboundMap = buildInboundIndex(linkMap);
@@ -187,7 +164,7 @@ export default function linkGraphPlugin(options: Partial<LinkGraphOptions> = {})
         twoHopMap: filteredTwoHopMap,
         graphData: filteredGraphData,
       });
-      getLogger().info("link_graph: データをlogs/link_graph.logとlogs/link_graph.jsonに出力しました");
+
     });
   };
 }

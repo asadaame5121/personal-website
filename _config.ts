@@ -29,7 +29,7 @@ import cjkBreaks from "npm:markdown-it-cjk-breaks";
 
 
 const markdown = {
-  plugins: [callout, cjkBreaks],
+  plugins: [callout, cjkBreaks, footnotes],
   options: {
     breaks: true,
   }
