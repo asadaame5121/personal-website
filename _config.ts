@@ -84,6 +84,23 @@ site.use(feed({
   limit: 20, // 最新20件を出力
 }));
 
+// --- Article更新通知専用RSSフィード ---
+site.use(feed({
+  output: ["/article-updates.rss"],
+  sort: "updated=desc",
+  query: "url^=/Article/",
+  info: {
+    title: "=site.title + ' Article Updates'",
+    description: "Articleの更新通知専用RSS",
+    lang: "ja",
+  },
+  items: {
+    title: "=title",
+    updated: "=updated",
+  },
+  limit: 30,
+}));
+
 
 // Bluesky投稿取得フィルターを登録
 site.filter("getBlueskyPosts", () => []); // ★ダミー実装（ビルド通過用）
