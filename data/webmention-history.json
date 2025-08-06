@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-08-05T12:41:26.246Z",
+  "last_updated": "2025-08-06T12:43:20.659Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -197,6 +197,27 @@
         "source_url": "https://asadaame5121.net/dailylog#entry-adaf7e87-548c-43f6-a2b4-225b4c111e18",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-08-04T12:41:17.230Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "074647ac-c1a2-44f1-83b6-1b539ffeeb26",
+        "source_url": "https://asadaame5121.net/dailylog#entry-074647ac-c1a2-44f1-83b6-1b539ffeeb26",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-06T12:41:11.049Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "271f9d76-6a1b-4d9d-ba12-40f9122814ba",
+        "source_url": "https://asadaame5121.net/dailylog#entry-271f9d76-6a1b-4d9d-ba12-40f9122814ba",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-06T12:41:13.148Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "b6b1a7b6-96ba-4b7e-8a77-48c248b5a0b9",
+        "source_url": "https://asadaame5121.net/dailylog#entry-b6b1a7b6-96ba-4b7e-8a77-48c248b5a0b9",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-06T12:41:13.352Z",
         "status": "success"
       }
     ],
@@ -4659,6 +4680,15 @@
         "sent_at": "2025-07-31T12:38:35.465Z",
         "status": "failed",
         "error_message": "Webmentionエンドポイントが見つかりません: https://wirelesswire.jp/2025/06/88810/ (not-found)"
+      },
+      {
+        "clip_id": "cea5e9a8-1363-426b-b4ff-cb00c3e128a5",
+        "source_url": "https://asadaame5121.net/clippingshare/cea5e9a8-1363-426b-b4ff-cb00c3e128a5",
+        "target_url": "https://www.tkskkd.com/2020/indieweb%E3%82%92%E3%81%AF%E3%81%97%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F-1",
+        "sent_at": "2025-08-06T12:41:13.355Z",
+        "status": "failed",
+        "response_code": 400,
+        "error_message": "HTTP 400: {\"error\":\"no_link_found\",\"error_text\":\"The source URI does not contain a link to the target URI.\"}"
       }
     ],
     "blog_updates": [
@@ -5012,6 +5042,14 @@
         "title": "アウトライナー",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-08-04T12:41:16.777Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1754484070786",
+        "source_url": "https://asadaame5121.net/Article/%E6%99%82%E9%96%93%E9%8A%80%E8%A1%8C%E3%82%92%E3%82%84%E3%82%8A%E3%81%9F%E3%81%84(%E3%83%96%E3%83%AD%E3%83%BC%E3%82%AC%E3%82%B9%E3%83%88Day5).html",
+        "title": "時間銀行をやりたい(ブローガストDay5)",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-06T12:41:10.786Z",
         "status": "success"
       }
     ]
