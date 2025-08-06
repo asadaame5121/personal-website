@@ -7,7 +7,7 @@ aliases:
   - ハーシュマン
 cdatelink: '[[2025-07-30]]'
 created: '2025-07-30 18:50'
-description: null
+description: 経済学者。主な著作に『反動のレトリック』『離脱・発言・忠誠』がある。『経済学のパラレルワールド』でも取り上げられている。
 draft: false
 linter-yaml-title-alias: アルバート・O.ハーシュマン
 status: だめ

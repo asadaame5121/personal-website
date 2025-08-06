@@ -6,7 +6,8 @@ tags:
 aliases:
   - 時間銀行をやりたい(ブローガストDay5)
 created: '2025-08-05 21:05'
-description: null
+description: >-
+  「時間銀行」とは、お金を使わず時間を交換単位とする互助の仕組み。日本発祥で、アメリカやスペインに波及。共同体における平等な資源の贈与と互酬の重要性を説き、インターネットでの実装例も紹介。
 draft: false
 linter-yaml-title-alias: 時間銀行をやりたい(ブローガストDay5)
 status: 完成

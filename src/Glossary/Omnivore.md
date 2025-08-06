@@ -5,7 +5,8 @@ tags:
 aliases:
   - Omnivore
 created: '2025-03-27 17:22'
-description: null
+description: >-
+  Omnivoreは、ウェブ記事やPDFなどを保存・管理できるソーシャル・ブックマーキングサービス。2023年末から利用し始めたが、2024年11月30日をもってサービス終了となった。
 draft: false
 linter-yaml-title-alias: Omnivore
 status: null
