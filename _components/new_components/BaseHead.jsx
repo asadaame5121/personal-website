@@ -13,6 +13,8 @@ export default function BaseHead({url,title = "", extra = null}) {
       <link rel="me" href="https://github.com/asadaame5121" />
       <link rel="me" href="https://bsky.app/profile/asadaame5121.bsky.social" />
       <script src="/assets/js/webmention.min.js" async></script>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6712420256268662"
+     crossorigin="anonymous"></script>
       <script dangerouslySetInnerHTML={{
         __html: `document.addEventListener('DOMContentLoaded', () => {
           document.querySelectorAll('.pagefind-ui-container').forEach(el => {
