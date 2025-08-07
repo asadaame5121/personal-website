@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-08-06T12:43:20.659Z",
+  "last_updated": "2025-08-07T12:41:08.996Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -218,6 +218,27 @@
         "source_url": "https://asadaame5121.net/dailylog#entry-b6b1a7b6-96ba-4b7e-8a77-48c248b5a0b9",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-08-06T12:41:13.352Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "e01608ca-ddfa-4934-9f9d-0908003bbbf7",
+        "source_url": "https://asadaame5121.net/dailylog#entry-e01608ca-ddfa-4934-9f9d-0908003bbbf7",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-07T12:41:01.004Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "f9eaf0ae-2a48-4c14-b5c7-5c2c6c8ce8bd",
+        "source_url": "https://asadaame5121.net/dailylog#entry-f9eaf0ae-2a48-4c14-b5c7-5c2c6c8ce8bd",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-07T12:41:01.801Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "e4a4ee68-ce88-490c-a62e-b9479e56b160",
+        "source_url": "https://asadaame5121.net/dailylog#entry-e4a4ee68-ce88-490c-a62e-b9479e56b160",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-07T12:41:02.018Z",
         "status": "success"
       }
     ],
@@ -4689,6 +4710,14 @@
         "status": "failed",
         "response_code": 400,
         "error_message": "HTTP 400: {\"error\":\"no_link_found\",\"error_text\":\"The source URI does not contain a link to the target URI.\"}"
+      },
+      {
+        "clip_id": "22336c69-4c50-457b-b050-119995382c2c",
+        "source_url": "https://asadaame5121.net/clippingshare/22336c69-4c50-457b-b050-119995382c2c",
+        "target_url": "https://mxb.dev/blog/webring-kit/",
+        "sent_at": "2025-08-07T12:41:02.021Z",
+        "status": "success",
+        "response_code": 201
       }
     ],
     "blog_updates": [
