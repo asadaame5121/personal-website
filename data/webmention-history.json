@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-08-07T12:41:08.996Z",
+  "last_updated": "2025-08-08T12:39:53.036Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -239,6 +239,13 @@
         "source_url": "https://asadaame5121.net/dailylog#entry-e4a4ee68-ce88-490c-a62e-b9479e56b160",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-08-07T12:41:02.018Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "abbd12da-3e55-49b4-a664-7ca5a1c29581",
+        "source_url": "https://asadaame5121.net/dailylog#entry-abbd12da-3e55-49b4-a664-7ca5a1c29581",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-08T12:39:44.793Z",
         "status": "success"
       }
     ],
@@ -4718,6 +4725,14 @@
         "sent_at": "2025-08-07T12:41:02.021Z",
         "status": "success",
         "response_code": 201
+      },
+      {
+        "clip_id": "b3eccd2a-0769-49c7-97e5-36287b0cbb9e",
+        "source_url": "https://asadaame5121.net/clippingshare/b3eccd2a-0769-49c7-97e5-36287b0cbb9e",
+        "target_url": "https://digital.asahi.com/sp/articles/AST844DKPT84ULLI001M.html?ptoken=01K21NR3KKZYVCD0VYD8DXJ14C",
+        "sent_at": "2025-08-08T12:39:44.796Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST844DKPT84ULLI001M.html?ptoken=01K21NR3KKZYVCD0VYD8DXJ14C (not-found)"
       }
     ],
     "blog_updates": [
