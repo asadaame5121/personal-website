@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-08-09T12:35:23.057Z",
+  "last_updated": "2025-08-10T12:35:42.342Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -5094,6 +5094,22 @@
         "title": "時間銀行をやりたい(ブローガストDay5)",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-08-06T12:41:10.786Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1754829342140",
+        "source_url": "https://asadaame5121.net/Book/%E6%9A%B4%E6%94%BF-backup-20250809-212852.html",
+        "title": "暴政",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-10T12:35:42.140Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1754829342338",
+        "source_url": "https://asadaame5121.net/Book/%E6%9A%B4%E6%94%BF.html",
+        "title": "暴政",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-10T12:35:42.338Z",
         "status": "success"
       }
     ]
