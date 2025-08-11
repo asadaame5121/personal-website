@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-08-10T12:35:42.342Z",
+  "last_updated": "2025-08-11T12:39:39.795Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -246,6 +246,20 @@
         "source_url": "https://asadaame5121.net/dailylog#entry-abbd12da-3e55-49b4-a664-7ca5a1c29581",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-08-08T12:39:44.793Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "13d7c5e4-2c97-4982-9be6-883d49ee2815",
+        "source_url": "https://asadaame5121.net/dailylog#entry-13d7c5e4-2c97-4982-9be6-883d49ee2815",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-11T12:39:39.214Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "7558d171-4560-4bfe-9d4a-64b933682065",
+        "source_url": "https://asadaame5121.net/dailylog#entry-7558d171-4560-4bfe-9d4a-64b933682065",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-11T12:39:39.793Z",
         "status": "success"
       }
     ],
@@ -5110,6 +5124,14 @@
         "title": "暴政",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-08-10T12:35:42.338Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1754915978912",
+        "source_url": "https://asadaame5121.net/Article/%E6%8E%A8%E6%95%B2%E3%81%AB%E5%8F%96%E3%82%8A%E7%B5%84%E3%82%93%E3%81%A7%E3%81%84%E3%81%8D%E3%81%9F%E3%81%84.html",
+        "title": "推敲に取り組んでいきたい",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-11T12:39:38.912Z",
         "status": "success"
       }
     ]
