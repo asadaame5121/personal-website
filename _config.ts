@@ -24,12 +24,13 @@ import minifyHTML from "lume/plugins/minify_html.ts";
 import precompress from "lume/middlewares/precompress.ts";
 import linkGraph from "./plugin/link_graph.ts";
 import icons from "lume/plugins/icons.ts";
-import cjkBreaks from "npm:markdown-it-cjk-breaks";
 
 
 
 const markdown = {
-  plugins: [callout, cjkBreaks, footnotes],
+  // NOTE: markdown-it-cjk-breaks は一部入力で例外を投げるため一時的に無効化
+  // 参考エラー: TypeError: Expected a code point, got `undefined`
+  plugins: [callout, footnotes],
   options: {
     breaks: true,
   }
