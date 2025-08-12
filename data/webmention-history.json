@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-08-11T12:39:39.795Z",
+  "last_updated": "2025-08-12T12:37:40.696Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -4747,6 +4747,14 @@
         "sent_at": "2025-08-08T12:39:44.796Z",
         "status": "failed",
         "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST844DKPT84ULLI001M.html?ptoken=01K21NR3KKZYVCD0VYD8DXJ14C (not-found)"
+      },
+      {
+        "clip_id": "208ba8cc-34a0-4651-93ad-a4e331f9f4c2",
+        "source_url": "https://asadaame5121.net/clippingshare/208ba8cc-34a0-4651-93ad-a4e331f9f4c2",
+        "target_url": "https://www.taiwan-panorama.com/ja/Articles/Details?Guid=f8d98dd9-ea9c-4762-8b3b-d7bf685a1d16",
+        "sent_at": "2025-08-12T12:37:34.400Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.taiwan-panorama.com/ja/Articles/Details?Guid=f8d98dd9-ea9c-4762-8b3b-d7bf685a1d16 (not-found)"
       }
     ],
     "blog_updates": [
