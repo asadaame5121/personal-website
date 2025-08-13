@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-08-12T12:37:40.696Z",
+  "last_updated": "2025-08-13T12:38:23.716Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -5140,6 +5140,22 @@
         "title": "推敲に取り組んでいきたい",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-08-11T12:39:38.912Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1755088703489",
+        "source_url": "https://asadaame5121.net/Book/%E3%82%AF%E3%82%A3%E3%82%A2%E3%83%BB%E3%83%AC%E3%83%B4%E3%82%A3%E3%83%8A%E3%82%B9.html",
+        "title": "クィア・レヴィナス",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-13T12:38:23.489Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1755088703713",
+        "source_url": "https://asadaame5121.net/Article/%E5%8F%8B%E9%81%94%E3%81%A8%E5%AF%BF%E5%8F%B8%E9%A3%9F%E3%81%A3%E3%81%9F(%E3%83%96%E3%83%AD%E3%83%BC%E3%82%AC%E3%82%B9%E3%83%88Day7%E3%81%8F%E3%82%89%E3%81%84%EF%BC%9F).html",
+        "title": "友達と寿司食った(ブローガストDay7くらい？)",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-13T12:38:23.713Z",
         "status": "success"
       }
     ]
