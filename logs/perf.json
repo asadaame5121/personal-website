@@ -1,0 +1,127 @@
+{
+  "timestamp": "2025-08-15T15:19:15.570Z",
+  "measures": [
+    {
+      "name": "plugin:toc",
+      "ms": 0.15
+    },
+    {
+      "name": "plugin:footnotes",
+      "ms": 0.15
+    },
+    {
+      "name": "plugin:date",
+      "ms": 0.12
+    },
+    {
+      "name": "plugin:nunjucks",
+      "ms": 1.21
+    },
+    {
+      "name": "plugin:jsx",
+      "ms": 0.29
+    },
+    {
+      "name": "plugin:wikilinks",
+      "ms": 0.2
+    },
+    {
+      "name": "plugin:nav",
+      "ms": 0.12
+    },
+    {
+      "name": "plugin:pagefind",
+      "ms": 0.28
+    },
+    {
+      "name": "plugin:mdx",
+      "ms": 0.4
+    },
+    {
+      "name": "plugin:icons",
+      "ms": 0.21
+    },
+    {
+      "name": "plugin:esbuild",
+      "ms": 1.07
+    },
+    {
+      "name": "config:readFont:ShipporiMinchoB1-ExtraBold",
+      "ms": 7.83
+    },
+    {
+      "name": "plugin:og_images",
+      "ms": 0.49
+    },
+    {
+      "name": "plugin:metas",
+      "ms": 0.3
+    },
+    {
+      "name": "plugin:sitemap",
+      "ms": 0.25
+    },
+    {
+      "name": "plugin:feed:posts",
+      "ms": 0.07
+    },
+    {
+      "name": "plugin:tailwindcss",
+      "ms": 0.48
+    },
+    {
+      "name": "plugin:transform_images",
+      "ms": 0.2
+    },
+    {
+      "name": "plugin:link_graph",
+      "ms": 0.2
+    },
+    {
+      "name": "plugin:minify_html",
+      "ms": 0.27
+    },
+    {
+      "name": "plugin:brotli",
+      "ms": 0.12
+    },
+    {
+      "name": "phase:load",
+      "ms": 238.04
+    },
+    {
+      "name": "preprocess:.html",
+      "ms": 0.55
+    },
+    {
+      "name": "preprocess:.html",
+      "ms": 0.28
+    },
+    {
+      "name": "phase:render",
+      "ms": 746.94
+    },
+    {
+      "name": "process:.html",
+      "ms": 4801.11
+    },
+    {
+      "name": "phase:beforeSave",
+      "ms": 0
+    },
+    {
+      "name": "build:total",
+      "ms": 25607.11
+    }
+  ],
+  "counts": {
+    "pages": 847,
+    "staticFiles": 9
+  },
+  "memory": {
+    "rss": 352161792,
+    "heapTotal": 61546496,
+    "heapUsed": 58335056,
+    "external": 77701575
+  }
+}
