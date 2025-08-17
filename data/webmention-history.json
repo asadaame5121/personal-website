@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-08-16T12:34:01.060Z",
+  "last_updated": "2025-08-17T12:34:49.094Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -267,6 +267,13 @@
         "source_url": "https://asadaame5121.net/dailylog#entry-897e20ee-98ed-41a6-92c3-48284aae5286",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-08-16T12:34:01.059Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "3551a25b-fa6e-4ff3-ac43-f2849548ce8c",
+        "source_url": "https://asadaame5121.net/dailylog#entry-3551a25b-fa6e-4ff3-ac43-f2849548ce8c",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-17T12:34:49.092Z",
         "status": "success"
       }
     ],
@@ -5171,6 +5178,14 @@
         "title": "2025-08-15日雑記",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-08-16T12:34:00.858Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1755434088511",
+        "source_url": "https://asadaame5121.net/Article/2025-08-15%E6%97%A5%E9%9B%91%E8%A8%98(%E3%83%96%E3%83%AD%E3%83%BC%E3%82%AC%E3%82%B9%E3%83%88Day8).html",
+        "title": "2025-08-15日雑記(ブローガストDay8)",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-08-17T12:34:48.511Z",
         "status": "success"
       }
     ]
