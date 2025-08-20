@@ -6,7 +6,6 @@ tags:
   - ミソジニー
   - 古典
 aliases:
-  - 'null'
   - Not All Dead White Men Classics and Misogyny in the Digital Age
 author:
   - Donna Zuckerberg
