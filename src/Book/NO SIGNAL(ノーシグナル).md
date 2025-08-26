@@ -1,6 +1,7 @@
 ---
 tags:
   - "\U0001F4DA/読んだ"
+  - ルポルタージュ
 aliases:
   - 'null'
   - NO SIGNAL(ノーシグナル)
