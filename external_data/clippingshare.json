@@ -28,6 +28,13 @@
     "comment": ""
   },
   {
+    "id": "28fe0869-a969-471e-a088-8765c56b03f8",
+    "title": "Design Of This Website",
+    "url": "https://gwern.net/design",
+    "source": "Gwern",
+    "comment": ""
+  },
+  {
     "id": "353e326e-dcee-4df7-92fb-c82a8d31849f",
     "title": "A Short History of Bi-Directional Links",
     "url": "https://maggieappleton.com/bidirectionals/",
@@ -42,10 +49,10 @@
     "comment": "昔行ったな。懐かしい。"
   },
   {
-    "id": "28fe0869-a969-471e-a088-8765c56b03f8",
-    "title": "Design Of This Website",
-    "url": "https://gwern.net/design",
-    "source": "Gwern",
+    "id": "b1f01aa9-9993-43e4-bcee-e21167f3eb08",
+    "title": "The New Global Economic Order  Lili Yan Ing, Dani Rodrik  Taylor & F",
+    "url": "https://www.taylorfrancis.com/books/oa-edit/10.4324/9781003571384/new-global-economic-order-lili-yan-ing-dani-rodrik",
+    "source": "Taylor & Francis",
     "comment": ""
   },
   {
@@ -54,13 +61,6 @@
     "url": "https://qiita.com/ko1nksm/items/c4e25a489e19698a4809",
     "source": "Qiita",
     "comment": "まぁこんなもんだよな。自分も昔はBTRONに夢をみていた"
-  },
-  {
-    "id": "b1f01aa9-9993-43e4-bcee-e21167f3eb08",
-    "title": "The New Global Economic Order  Lili Yan Ing, Dani Rodrik  Taylor & F",
-    "url": "https://www.taylorfrancis.com/books/oa-edit/10.4324/9781003571384/new-global-economic-order-lili-yan-ing-dani-rodrik",
-    "source": "Taylor & Francis",
-    "comment": ""
   },
   {
     "id": "8e6677a5-21ad-4cf3-b4f9-669268f8a6df",
@@ -77,17 +77,17 @@
     "comment": ""
   },
   {
-    "id": "36fd1e95-0645-4858-85e6-e7ab19002290",
-    "title": "Webページは永遠に",
-    "url": "https://u-site.jp/alertbox/981129",
-    "source": "U-Site",
-    "comment": ""
-  },
-  {
     "id": "fb005d76-aa72-49c3-b3f0-9c345562216e",
     "title": "Smidgeons Stream  Maggie Appleton",
     "url": "https://maggieappleton.com/smidgeons",
     "source": "@mappletons",
+    "comment": ""
+  },
+  {
+    "id": "36fd1e95-0645-4858-85e6-e7ab19002290",
+    "title": "Webページは永遠に",
+    "url": "https://u-site.jp/alertbox/981129",
+    "source": "U-Site",
     "comment": ""
   },
   {
@@ -161,18 +161,18 @@
     "comment": "さっそくヴィクトリア朝時代のインターネットを買った。"
   },
   {
-    "id": "b4ac9e35-b483-48b0-83dc-cc8e2fcf0375",
-    "title": "植民地支配では「良いこと」も？　戦後生まれの人にもある「義務」：朝日新聞",
-    "url": "https://digital.asahi.com/sp/articles/AST771PC0T77UPQJ00JM.html?ptoken=01JZKK0K93AX0F5BE6NRNVHQES",
-    "source": "",
-    "comment": ""
-  },
-  {
     "id": "876ebea5-0e30-4e56-85ea-4c2efbfcf214",
     "title": "デライト",
     "url": "https://dlt.kitetu.com/",
     "source": "",
     "comment": "タイムラインでWikinoの話題を見て思い出した。こっちも面白そうなんだよな。"
+  },
+  {
+    "id": "b4ac9e35-b483-48b0-83dc-cc8e2fcf0375",
+    "title": "植民地支配では「良いこと」も？　戦後生まれの人にもある「義務」：朝日新聞",
+    "url": "https://digital.asahi.com/sp/articles/AST771PC0T77UPQJ00JM.html?ptoken=01JZKK0K93AX0F5BE6NRNVHQES",
+    "source": "",
+    "comment": ""
   },
   {
     "id": "44f7fc89-9e70-4d54-bbb8-ce9580461841",
@@ -210,16 +210,16 @@
     "comment": ""
   },
   {
-    "id": "e0640ba3-fd68-4357-bd8d-176b7184c520",
-    "title": "西田昌司氏の「ひめゆり」侮辱発言は、この30年の政治劣化の集大成　岡野八代さんインタビュー",
-    "url": "https://s-newscommons.com/article/8623",
+    "id": "5bce8e19-0d81-490d-baf2-bd6433a2c253",
+    "title": "うつ病と炎症に相関はあるか？　5万人以上を対象に調査海外チームが発表",
+    "url": "https://www.itmedia.co.jp/news/spv/2507/03/news027.html",
     "source": "",
     "comment": ""
   },
   {
-    "id": "5bce8e19-0d81-490d-baf2-bd6433a2c253",
-    "title": "うつ病と炎症に相関はあるか？　5万人以上を対象に調査海外チームが発表",
-    "url": "https://www.itmedia.co.jp/news/spv/2507/03/news027.html",
+    "id": "e0640ba3-fd68-4357-bd8d-176b7184c520",
+    "title": "西田昌司氏の「ひめゆり」侮辱発言は、この30年の政治劣化の集大成　岡野八代さんインタビュー",
+    "url": "https://s-newscommons.com/article/8623",
     "source": "",
     "comment": ""
   },
@@ -238,6 +238,13 @@
     "comment": ""
   },
   {
+    "id": "6a5cf0b9-8da4-45bd-ab28-b0e3f38cea3a",
+    "title": "SNSにあふれる中傷　問われる個々人の人権感覚　生活保護費判決",
+    "url": "https://mainichi.jp/articles/20250627/k00/00m/040/391000c",
+    "source": "",
+    "comment": ""
+  },
+  {
     "id": "4cc5227b-f401-4d71-a045-0d81029b9c8b",
     "title": "参政党支持層の研究",
     "url": "https://news.yahoo.co.jp/expert/articles/a8c540ceeac4bad06c7f110d2c927b1b0f2763e2",
@@ -252,16 +259,16 @@
     "comment": ""
   },
   {
-    "id": "6a5cf0b9-8da4-45bd-ab28-b0e3f38cea3a",
-    "title": "SNSにあふれる中傷　問われる個々人の人権感覚　生活保護費判決",
-    "url": "https://mainichi.jp/articles/20250627/k00/00m/040/391000c",
+    "id": "8de0a3aa-ccb6-4109-9218-66d2227bc0db",
+    "title": "陰謀論ライターが都市伝説解体センターをやってみた（前編）雨宮純",
+    "url": "https://note.com/caffelover/n/n350fc02af2fc?sub_rt=share_pb",
     "source": "",
     "comment": ""
   },
   {
-    "id": "8de0a3aa-ccb6-4109-9218-66d2227bc0db",
-    "title": "陰謀論ライターが都市伝説解体センターをやってみた（前編）雨宮純",
-    "url": "https://note.com/caffelover/n/n350fc02af2fc?sub_rt=share_pb",
+    "id": "64d1618c-8870-4811-9104-c4a5b4c492ec",
+    "title": "先端課題研究19（質的研究方法論)",
+    "url": "https://www.soc.hit-u.ac.jp/~methodology/review.html",
     "source": "",
     "comment": ""
   },
@@ -273,13 +280,6 @@
     "comment": ""
   },
   {
-    "id": "344e457d-b190-4386-bee2-d84ca7312b35",
-    "title": "法の世界における人と物の区別",
-    "url": "",
-    "source": "",
-    "comment": ""
-  },
-  {
     "id": "f29c7472-553e-4e18-b554-48969029483c",
     "title": "トランプ政権のDEI廃止、プライド月間のアメリカに影を落とす　企業も対応割れる",
     "url": "https://globe.asahi.com/article/15845779",
@@ -287,9 +287,9 @@
     "comment": ""
   },
   {
-    "id": "64d1618c-8870-4811-9104-c4a5b4c492ec",
-    "title": "先端課題研究19（質的研究方法論)",
-    "url": "https://www.soc.hit-u.ac.jp/~methodology/review.html",
+    "id": "344e457d-b190-4386-bee2-d84ca7312b35",
+    "title": "法の世界における人と物の区別",
+    "url": "",
     "source": "",
     "comment": ""
   },
@@ -315,16 +315,16 @@
     "comment": ""
   },
   {
-    "id": "4d57fd9a-4ea3-470b-8807-220f83ec4c75",
-    "title": "amatya-adityaobsidian-rss-dashboard",
-    "url": "https://github.com/amatya-aditya/obsidian-rss-dashboard",
+    "id": "5162206b-9029-4325-93c8-1714a4d2f570",
+    "title": "Working on a new Obsidian plugin RSS Dashboard – What features would you like to see",
+    "url": "https://www.reddit.com/r/ObsidianMD/comments/1jd5ccf/working_on_a_new_obsidian_plugin_rss_dashboard/",
     "source": "",
     "comment": ""
   },
   {
-    "id": "5162206b-9029-4325-93c8-1714a4d2f570",
-    "title": "Working on a new Obsidian plugin RSS Dashboard – What features would you like to see",
-    "url": "https://www.reddit.com/r/ObsidianMD/comments/1jd5ccf/working_on_a_new_obsidian_plugin_rss_dashboard/",
+    "id": "4d57fd9a-4ea3-470b-8807-220f83ec4c75",
+    "title": "amatya-adityaobsidian-rss-dashboard",
+    "url": "https://github.com/amatya-aditya/obsidian-rss-dashboard",
     "source": "",
     "comment": ""
   },
@@ -385,6 +385,13 @@
     "comment": ""
   },
   {
+    "id": "f1857db8-a38d-4923-a7b0-63a5a74cc575",
+    "title": "「でたらめ」は「噓」より強大な敵　その違いと深刻な問題や害悪とは：朝日新聞",
+    "url": "https://digital.asahi.com/sp/articles/AST6D20T1T6DULLI005M.html?ptoken=01JXYJY4WYK36NWAG7R00C8S9S",
+    "source": "",
+    "comment": ""
+  },
+  {
     "id": "8e8cb5b3-8935-476c-b825-586425a284f7",
     "title": "作られる「女性活躍」、見えなくなる不平等　成功してもガラスの天井：朝日新聞 1",
     "url": "",
@@ -399,16 +406,9 @@
     "comment": ""
   },
   {
-    "id": "f1857db8-a38d-4923-a7b0-63a5a74cc575",
-    "title": "「でたらめ」は「噓」より強大な敵　その違いと深刻な問題や害悪とは：朝日新聞",
-    "url": "https://digital.asahi.com/sp/articles/AST6D20T1T6DULLI005M.html?ptoken=01JXYJY4WYK36NWAG7R00C8S9S",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "4d95c21d-b9bd-4f2f-87b6-0eef7bdabc9d",
-    "title": "コメ価格の「異常事態」伏線は4年前に　今後想定されるシナリオとは：朝日新聞",
-    "url": "https://digital.asahi.com/sp/articles/AST613JXGT61UTIL033M.html?ptoken=01JWQ2CGVZBDTQV8QVS8W70JS7",
+    "id": "a5e0e022-624a-4ce8-b78d-951e507c272b",
+    "title": "（交論）政治家の歴史利用　戸邉秀明さん、武井彩佳さん：朝日新聞",
+    "url": "https://digital.asahi.com/sp/articles/DA3S16233362.html?ptoken=01JXGEM0YPTF3AKHPJKD1QJXPB",
     "source": "",
     "comment": ""
   },
@@ -427,9 +427,9 @@
     "comment": ""
   },
   {
-    "id": "b62c6da7-2992-4b8b-8533-07370a9eaad2",
-    "title": "The Pentagon Disinformation That Fueled America’s UFO Mythology",
-    "url": "https://www.wsj.com/politics/national-security/ufo-us-disinformation-45376f7e?st=NWhKJy&reflink=desktopwebshare_permalink",
+    "id": "4d95c21d-b9bd-4f2f-87b6-0eef7bdabc9d",
+    "title": "コメ価格の「異常事態」伏線は4年前に　今後想定されるシナリオとは：朝日新聞",
+    "url": "https://digital.asahi.com/sp/articles/AST613JXGT61UTIL033M.html?ptoken=01JWQ2CGVZBDTQV8QVS8W70JS7",
     "source": "",
     "comment": ""
   },
@@ -437,6 +437,13 @@
     "id": "c1e37688-6b30-427b-b66b-48484db9e837",
     "title": "貧乏人のキャビアと呼ばれるフランスの定番惣菜キャビア・ド・オーベルジーヌ  dancyu (ダンチュウ)  食こそエンターテインメント！",
     "url": "https://dancyu.jp/recipe/2022_00005549.html",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "b62c6da7-2992-4b8b-8533-07370a9eaad2",
+    "title": "The Pentagon Disinformation That Fueled America’s UFO Mythology",
+    "url": "https://www.wsj.com/politics/national-security/ufo-us-disinformation-45376f7e?st=NWhKJy&reflink=desktopwebshare_permalink",
     "source": "",
     "comment": ""
   },
@@ -455,23 +462,9 @@
     "comment": ""
   },
   {
-    "id": "a5e0e022-624a-4ce8-b78d-951e507c272b",
-    "title": "（交論）政治家の歴史利用　戸邉秀明さん、武井彩佳さん：朝日新聞",
-    "url": "https://digital.asahi.com/sp/articles/DA3S16233362.html?ptoken=01JXGEM0YPTF3AKHPJKD1QJXPB",
-    "source": "",
-    "comment": ""
-  },
-  {
     "id": "5920ca5d-8647-4eb3-bcf2-2b473a952a18",
     "title": "（インタビュー）米国の大いなる誤り　経済学者・岩井克人さん：朝日新聞",
     "url": "https://digital.asahi.com/sp/articles/DA3S16218774.html?ptoken=01JVTEDTNMS8KCS6X3R6WVA5FS",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "6145edb7-1d00-4a0b-9188-0e08e28fffc8",
-    "title": "凡人のための思考革命！AIと脳をハックする「Zetteldistillat」爆誕！～あなたの「学び」を「使える武器」に変える新メソッド～",
-    "url": "https://masatler.hatenablog.com/entry/2025/05/09/160801",
     "source": "",
     "comment": ""
   },
@@ -483,9 +476,23 @@
     "comment": ""
   },
   {
+    "id": "6145edb7-1d00-4a0b-9188-0e08e28fffc8",
+    "title": "凡人のための思考革命！AIと脳をハックする「Zetteldistillat」爆誕！～あなたの「学び」を「使える武器」に変える新メソッド～",
+    "url": "https://masatler.hatenablog.com/entry/2025/05/09/160801",
+    "source": "",
+    "comment": ""
+  },
+  {
     "id": "df69f1df-ee64-4ead-958b-be2c5fbe2f90",
     "title": "NAKAHARA-LAB.NET 東京大学 中原淳研究室 - 大人の学びを科学する 先行研究をまとめる５つのプロセス、陥りやすい３つの罠",
     "url": "https://www.nakahara-lab.net/blog/2011/10/post_1803.html",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "e6f9b9ab-2482-44fa-a977-ed0ed34af630",
+    "title": "どうして働いていても本が読めるのか｜リー・ンゴ　Lee・Ngo",
+    "url": "https://note.com/kori52661/n/n216de0802c48?sub_rt=share_pw",
     "source": "",
     "comment": ""
   },
@@ -497,9 +504,9 @@
     "comment": ""
   },
   {
-    "id": "e6f9b9ab-2482-44fa-a977-ed0ed34af630",
-    "title": "どうして働いていても本が読めるのか｜リー・ンゴ　Lee・Ngo",
-    "url": "https://note.com/kori52661/n/n216de0802c48?sub_rt=share_pw",
+    "id": "dbff625b-0308-4b79-8cd4-926fdb55c7b3",
+    "title": "デザインシステム｜デジタル庁",
+    "url": "https://www.digital.go.jp/policies/servicedesign/designsystem",
     "source": "",
     "comment": ""
   },
@@ -514,13 +521,6 @@
     "id": "0aa2c000-ccc3-4f6a-983c-0639bf8d1889",
     "title": "デジタル庁デザインシステムβ版",
     "url": "https://design.digital.go.jp/",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "dbff625b-0308-4b79-8cd4-926fdb55c7b3",
-    "title": "デザインシステム｜デジタル庁",
-    "url": "https://www.digital.go.jp/policies/servicedesign/designsystem",
     "source": "",
     "comment": ""
   },
@@ -609,23 +609,9 @@
     "comment": ""
   },
   {
-    "id": "138a92d0-69fb-4f4e-bdd0-1841e9098ed0",
-    "title": "「精神疾患とは何か」について哲学的に考えてみる─精神疾患の定義問題",
-    "url": "https://www.note.kanekoshobo.co.jp/n/n31042f72bcdc",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "77e084d9-5510-407d-9056-95cebd7f488c",
-    "title": "トラッドワイフ - Wikipedia",
-    "url": "https://ja.m.wikipedia.org/wiki/%E3%83%88%E3%83%A9%E3%83%83%E3%83%89%E3%83%AF%E3%82%A4%E3%83%95",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "ff85c2f4-05eb-47ec-b836-4a489fcaf934",
-    "title": "SSG with Obsidian and Lume 1",
-    "url": "https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html",
+    "id": "9b0f3c94-d44e-49f2-beef-3501f34e5e3c",
+    "title": "昭和軽薄体 - Wikipedia",
+    "url": "https://ja.m.wikipedia.org/wiki/%E6%98%AD%E5%92%8C%E8%BB%BD%E8%96%84%E4%BD%93",
     "source": "",
     "comment": ""
   },
@@ -644,9 +630,23 @@
     "comment": ""
   },
   {
-    "id": "9b0f3c94-d44e-49f2-beef-3501f34e5e3c",
-    "title": "昭和軽薄体 - Wikipedia",
-    "url": "https://ja.m.wikipedia.org/wiki/%E6%98%AD%E5%92%8C%E8%BB%BD%E8%96%84%E4%BD%93",
+    "id": "ff85c2f4-05eb-47ec-b836-4a489fcaf934",
+    "title": "SSG with Obsidian and Lume 1",
+    "url": "https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "77e084d9-5510-407d-9056-95cebd7f488c",
+    "title": "トラッドワイフ - Wikipedia",
+    "url": "https://ja.m.wikipedia.org/wiki/%E3%83%88%E3%83%A9%E3%83%83%E3%83%89%E3%83%AF%E3%82%A4%E3%83%95",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "138a92d0-69fb-4f4e-bdd0-1841e9098ed0",
+    "title": "「精神疾患とは何か」について哲学的に考えてみる─精神疾患の定義問題",
+    "url": "https://www.note.kanekoshobo.co.jp/n/n31042f72bcdc",
     "source": "",
     "comment": ""
   },
@@ -661,48 +661,6 @@
     "id": "d36d92fb-fb27-4f60-bad1-a1a69a52b041",
     "title": "ウェブサイトモックデザイン",
     "url": "https://chatgpt.com/c/67e7a8bf-100c-800b-b260-24db207b8d94",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "ee0ca5c2-851a-4989-8f7c-af6156e8f911",
-    "title": "白頭庵熱弁７",
-    "url": "",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "2de64204-e088-4145-9bec-babe48958afc",
-    "title": "白頭庵熱弁６",
-    "url": "",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "bb01a6d0-d126-49fa-9eac-29d8723d32db",
-    "title": "Why Earth's History Appears So Miraculous",
-    "url": "https://www.theatlantic.com/science/archive/2018/03/human-existence-will-look-more-miraculous-the-longer-we-survive/554513/?gift=q1KByJV9yb84eTRhFiNthYz8gd2O-8qrri3Nf7YBmRE&utm_source=copy-link&utm_medium=social&utm_campaign=share",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "e490d3a7-67b7-4560-909b-817cc248b0da",
-    "title": "白頭庵熱弁４",
-    "url": "",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "cf81bc2e-183b-447a-a954-58beffc1ad22",
-    "title": "ブックガイド2：再野生化（リワイルディング）について  生環境構築史",
-    "url": "https://hbh.center/05-issue_04/",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "8253b1d8-92c9-4d86-a204-0ff667dd47f5",
-    "title": "生物多様性を腑分けする  なぜ人は自然を守りたいのか？  深野祐也  WEBみすず",
-    "url": "https://magazine.msz.co.jp/series/evolution-ecology/1/",
     "source": "",
     "comment": ""
   },
@@ -728,226 +686,44 @@
     "comment": ""
   },
   {
-    "id": "c2de7600-a0d7-4227-94d6-4c39b0d719db",
-    "title": "📘【連載】ホームページを作ろう(2)",
-    "url": "https://masaki39.github.io/%F0%9F%93%98%E3%80%90%E9%80%A3%E8%BC%89%E3%80%91%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E4%BD%9C%E3%82%8D%E3%81%86(2)",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "061b64f5-7308-4e73-a7fa-b0a74c680603",
-    "title": "闇バイトに奪われていく若者たち　社会が育てた都合のいい労働者？：朝日新聞デジタル 1",
-    "url": "https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "a6f30914-be9e-452f-890b-10b02ebcec4e",
-    "title": "義実家に行かず書店で過ごす年始 あえて三が日に営業する店主の思い：朝日新聞デジタル",
-    "url": "https://digital.asahi.com/sp/articles/ASSD40QT1SD4UTIL02CM.html?ptoken=01JGK8NT4GKZ9HP3MREE65MRTD",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "f35d5168-b590-4674-be72-3a0d6c8f2b40",
-    "title": "白頭庵熱弁３",
+    "id": "ee0ca5c2-851a-4989-8f7c-af6156e8f911",
+    "title": "白頭庵熱弁７",
     "url": "",
     "source": "",
     "comment": ""
   },
   {
-    "id": "33796cc9-f198-4ef1-852a-6d31e1de2374",
-    "title": "「過疎地を復興させてもね」を許す社会　下り坂の30年が生んだ空気：朝日新聞デジタル",
-    "url": "https://digital.asahi.com/sp/articles/AST1G7R3MT1GUPQJ001M.html?ptoken=01JHXZ3QJR1HAAW8XGGRKX8GXZ",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "13d70ed6-c922-4110-b1fc-d3a518393a03",
-    "title": "【Obsidian】Spaced Repetition の使い方 - Qiita",
-    "url": "https://qiita.com/P-man_Brown/items/76b3abe3f8d7a8ca0dee",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "c55c4c03-f390-42ae-bf46-1008ba908fbb",
-    "title": "ロシア宇宙主義 - Wikipedia",
-    "url": "https://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%B7%E3%82%A2%E5%AE%87%E5%AE%99%E4%B8%BB%E7%BE%A9",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "0fc1711e-0039-4bca-ac26-3df96ad3e381",
-    "title": "アサド政権、深まる苦境　南部でも蜂起、主要都市の陥落相次ぐ：朝日新聞デジタル",
-    "url": "https://digital.asahi.com/sp/articles/ASSD73DF6SD7UHBI02BM.html?ptoken=01JEGZGGKAK56NF4THMY61JQGQ",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "42ed2ff9-a750-4861-96a0-f1a348842f1f",
-    "title": "「嫌ならはっきりと…」の幻想　ゆがんだ性交観と無縁じゃない法廷：朝日新聞",
-    "url": "https://digital.asahi.com/sp/articles/AST3F35CMT3FUTFL00GM.html?ptoken=01JPMGDVV049ECX7E3V59MHRPS",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "799418b0-9ef3-4817-8a9c-c7d26fb8f1d1",
-    "title": "It's Not As Bad As All That",
-    "url": "https://democracyjournal.org/magazine/48/its-not-as-bad-as-all-that/?ref=quillette.com",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "c7d8dc58-de99-4ebb-92db-1f382ec3735c",
-    "title": "白頭庵熱弁２",
+    "id": "2de64204-e088-4145-9bec-babe48958afc",
+    "title": "白頭庵熱弁６",
     "url": "",
     "source": "",
     "comment": ""
   },
   {
-    "id": "3411f075-6b01-448e-a0b2-289414aab76e",
-    "title": "イーロン・マスク氏は西洋文明を「共感」から救いたい",
-    "url": "https://www.cnn.co.jp/usa/35230176.html",
+    "id": "bb01a6d0-d126-49fa-9eac-29d8723d32db",
+    "title": "Why Earth's History Appears So Miraculous",
+    "url": "https://www.theatlantic.com/science/archive/2018/03/human-existence-will-look-more-miraculous-the-longer-we-survive/554513/?gift=q1KByJV9yb84eTRhFiNthYz8gd2O-8qrri3Nf7YBmRE&utm_source=copy-link&utm_medium=social&utm_campaign=share",
     "source": "",
     "comment": ""
   },
   {
-    "id": "0e4d02f1-a23a-4edb-9937-cee9002898b2",
-    "title": "SSG with Obsidian and Lume",
-    "url": "https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html",
+    "id": "8253b1d8-92c9-4d86-a204-0ff667dd47f5",
+    "title": "生物多様性を腑分けする  なぜ人は自然を守りたいのか？  深野祐也  WEBみすず",
+    "url": "https://magazine.msz.co.jp/series/evolution-ecology/1/",
     "source": "",
     "comment": ""
   },
   {
-    "id": "3a27f8d5-d699-4a3e-a313-045decd73d5c",
-    "title": "『新・動物の解放』",
-    "url": "https://comingbook.honzuki.jp/?detail=9784794974549",
+    "id": "cf81bc2e-183b-447a-a954-58beffc1ad22",
+    "title": "ブックガイド2：再野生化（リワイルディング）について  生環境構築史",
+    "url": "https://hbh.center/05-issue_04/",
     "source": "",
     "comment": ""
   },
   {
-    "id": "5e3b9b64-8140-4049-bafe-abc61926748c",
-    "title": "「昭和と平成で大きく変わった」　御厨さんが見た「ナベツネ」の実像：朝日新聞デジタル",
-    "url": "https://digital.asahi.com/sp/articles/ASSDM2R4DSDMUTFK01PM.html?ptoken=01JFH8BC3JMTHKS0E0KHXW538Y",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "1453ea20-c68b-43b4-9512-5d385b9d959c",
-    "title": "「無知の時代」を生き抜くために｜じんぶん堂",
-    "url": "https://book.asahi.com/jinbun/article/15664692",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "4f687a95-46d6-403b-8178-b31f7e582aeb",
-    "title": "デジタルガーデンと個人サイトを育てること。  世界のねじを巻くラジオ",
-    "url": "https://nejimaki-radio.com/digital-garden-blog-indie-website-personal-internet/",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "a0e41276-c357-4925-b4dd-5a621d2747d9",
-    "title": "伊藤詩織さんアカデミー賞候補作　日本未公開のまま、2日の授賞式へ：朝日新聞",
-    "url": "https://digital.asahi.com/sp/articles/AST2W26M2T2WUHBI00VM.html?ptoken=01JNFCK1XACTB86NRK8C1M1F7T",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "276a4ecb-b8b6-4f9a-a92f-15ded2a1f19c",
-    "title": "Obsidian：WebClipperをKindle対応にする",
-    "url": "https://wineroses.hatenablog.com/entry/2024/12/06/170041",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "9b07fe48-76cc-43bf-94f7-c96f551961e7",
-    "title": "“男はこう”“女はこう” ある日、新聞に載った全面広告",
-    "url": "https://s-newscommons.com/article/7161",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "4b15b057-ba5f-48e2-8ce1-13166be6ef32",
-    "title": "渋谷が文化的廃虚に？再開発で若者散るリスク　識者が説く脱・車社会：朝日新聞デジタル",
-    "url": "https://digital.asahi.com/sp/articles/ASSDR4FNWSDRUCVL009M.html?ptoken=01JGQSHA31FS2F5QZNNWY2AYSB",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "cfb5b73a-8335-4d12-9b5e-b46cdb89460b",
-    "title": "📘Dashboard++で魅力的なホームページをつくろう！",
-    "url": "https://masaki39.github.io/%F0%9F%93%98Dashboard++%E3%81%A7%E9%AD%85%E5%8A%9B%E7%9A%84%E3%81%AA%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8D%E3%81%86%EF%BC%81",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "c1c73ef9-a5a6-4f58-85a2-c28e12860563",
-    "title": "闇バイトに奪われていく若者たち　社会が育てた都合のいい労働者？：朝日新聞デジタル",
-    "url": "https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "095e3b51-ddcb-48d8-ac7a-f8df01e96326",
-    "title": "広がる「財務省解体」のデモ　SNSに流れる言説に駆り立てられて：朝日新聞 1",
-    "url": "https://digital.asahi.com/sp/articles/AST3G1V44T3GPQIP03WM.html?ptoken=01JPC59QE9Z68JVQFDKB514GB9",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "a9d96100-58ae-4cd1-b289-7291857d2a04",
-    "title": "「ジェンダー先進国」ナミビア、初の女性大統領誕生の陰で募る不安：朝日新聞",
-    "url": "https://digital.asahi.com/sp/articles/AST3C5W3TT3CUHBI008M.html?ptoken=01JP9R19TA8Z3W65V5PSMH8B16",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "a48f7f23-fa3d-4f1e-9679-771a493caa44",
-    "title": "調査で見えてきた斎藤氏支持する心理　見逃されてきた「常民」的判断：朝日新聞デジタル",
-    "url": "https://digital.asahi.com/sp/articles/ASSDD1VSLSDDUCVL00ZM.html?ptoken=01JJ15MT0KXD1ZY6T1ZJ25SN7R",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "8df356e9-db7c-4586-bc71-f33b5979782f",
-    "title": "土砂搬出現場で死亡事故、崩れた暗黙の了解　ダンプ運転手が語る予兆：朝日新聞デジタル",
-    "url": "https://digital.asahi.com/sp/articles/ASSDW3584SDWUTIL00XM.html?ptoken=01JG63Z57EDD7Y6TB1C5YTCYTY",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "bca977f7-e5dc-4aac-a57d-5539240faeed",
-    "title": "広がる「財務省解体」のデモ　SNSに流れる言説に駆り立てられて：朝日新聞",
-    "url": "https://digital.asahi.com/sp/articles/AST3G1V44T3GPQIP03WM.html?ptoken=01JPAJNJ8HVYBG872QCZ2016XP",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "b4912539-c402-4f3f-b031-3c35653149af",
-    "title": "このブログがFediverseに対応しました",
-    "url": "https://blog.tyage.net/post/2023/2023-07-17-bridgy-fed/",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "c7a25471-476f-44b5-b88f-16d639afa426",
-    "title": "マスク氏らによる「政府効率化」のデータ閲覧を差し止め　米連邦地裁：朝日新聞",
-    "url": "https://digital.asahi.com/sp/articles/AST2902JCT29UHBI001M.html?ptoken=01JKMACBEP3JTF72C380W084BR",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "9b115d04-6e1b-4726-802d-b85165c199d5",
-    "title": "料理レシピの一覧 - ポケモンスリープ攻略・検証 Wiki",
-    "url": "https://wikiwiki.jp/poke_sleep/%E6%96%99%E7%90%86/%E3%83%AC%E3%82%B7%E3%83%94%E3%81%AE%E4%B8%80%E8%A6%A7",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "fda343aa-2f7e-44ac-b721-89dc4d65a773",
-    "title": "現代哲学の研究に哲学史は必要なのか - 研究日誌",
-    "url": "https://uemurag.hatenablog.jp/entry/2022/09/24/075600",
+    "id": "e490d3a7-67b7-4560-909b-817cc248b0da",
+    "title": "白頭庵熱弁４",
+    "url": "",
     "source": "",
     "comment": ""
   },
@@ -959,51 +735,37 @@
     "comment": ""
   },
   {
-    "id": "63b9ff77-e774-4c23-8bba-94364461907f",
-    "title": "Obsidianというアプリをより良く知るための外部リンク集",
-    "url": "",
+    "id": "a6f30914-be9e-452f-890b-10b02ebcec4e",
+    "title": "義実家に行かず書店で過ごす年始 あえて三が日に営業する店主の思い：朝日新聞デジタル",
+    "url": "https://digital.asahi.com/sp/articles/ASSD40QT1SD4UTIL02CM.html?ptoken=01JGK8NT4GKZ9HP3MREE65MRTD",
     "source": "",
     "comment": ""
   },
   {
-    "id": "7845bc33-bd1e-408f-99cc-87f8f623e695",
-    "title": "ガーデニングが社会運動？　声を上げるのとは違う「静かさ」の意義：朝日新聞デジタル",
-    "url": "https://digital.asahi.com/sp/articles/ASSDQ7D8MSDQULLI00GM.html?ptoken=01JG3G4R2H4WBV3TQ57VRNBFJ1",
+    "id": "b4912539-c402-4f3f-b031-3c35653149af",
+    "title": "このブログがFediverseに対応しました",
+    "url": "https://blog.tyage.net/post/2023/2023-07-17-bridgy-fed/",
     "source": "",
     "comment": ""
   },
   {
-    "id": "a2ed8174-93cb-49f7-9bb5-65748fe5e08f",
-    "title": "「反戦詩」詠んだ与謝野晶子像に突然の撤去要請　裁判応酬の事態に：朝日新聞デジタル",
-    "url": "https://digital.asahi.com/sp/articles/AST172Q3MT17PTIL009M.html?ptoken=01JH4NXYV1SZA23JQSTKKCQ4T0",
+    "id": "a9d96100-58ae-4cd1-b289-7291857d2a04",
+    "title": "「ジェンダー先進国」ナミビア、初の女性大統領誕生の陰で募る不安：朝日新聞",
+    "url": "https://digital.asahi.com/sp/articles/AST3C5W3TT3CUHBI008M.html?ptoken=01JP9R19TA8Z3W65V5PSMH8B16",
     "source": "",
     "comment": ""
   },
   {
-    "id": "11c09146-def1-4cde-94e4-3d4f2c628dc4",
-    "title": "根深い「女嫌」、見えた韓国社会の溝　崔誠姫・大阪産業大准教授：朝日新聞デジタル",
-    "url": "https://digital.asahi.com/sp/articles/DA3S16126258.html?ptoken=01JHKQKNSQ956QPT8FNC1H67RK",
+    "id": "1453ea20-c68b-43b4-9512-5d385b9d959c",
+    "title": "「無知の時代」を生き抜くために｜じんぶん堂",
+    "url": "https://book.asahi.com/jinbun/article/15664692",
     "source": "",
     "comment": ""
   },
   {
-    "id": "f59f15f4-9b21-4cf8-a912-688ea6351a14",
-    "title": "兵庫前県議への批判投稿、13アカウントから　立花氏が2番目の多さ：朝日新聞",
-    "url": "https://digital.asahi.com/sp/articles/AST3F1VVNT3FPTIL00MM.html?ptoken=01JQ0CZJS6FB5FA84GB6W5QR72",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "e501d909-05e0-45c3-a79c-79471a5c620c",
-    "title": "右傾化する億万長者たち　より良い世界に戻る道は　NYTコラム：朝日新聞デジタル",
-    "url": "https://digital.asahi.com/sp/articles/ASSDM2199SDMUHBI00LM.html?ptoken=01JFPV64TCM3ZPEY6S6PM25B3J",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "e28cfb2c-3321-449c-9955-56be274e2269",
-    "title": "斎藤知事を押し上げた「切り抜き動画」の高揚感　変わる選挙の風景：朝日新聞デジタル",
-    "url": "https://digital.asahi.com/sp/articles/ASSDH05R8SDHUTIL01GM.html?ptoken=01JF9SC3CEDRGVB5A98HF09NQT",
+    "id": "3411f075-6b01-448e-a0b2-289414aab76e",
+    "title": "イーロン・マスク氏は西洋文明を「共感」から救いたい",
+    "url": "https://www.cnn.co.jp/usa/35230176.html",
     "source": "",
     "comment": ""
   },
@@ -1022,9 +784,247 @@
     "comment": ""
   },
   {
+    "id": "4b15b057-ba5f-48e2-8ce1-13166be6ef32",
+    "title": "渋谷が文化的廃虚に？再開発で若者散るリスク　識者が説く脱・車社会：朝日新聞デジタル",
+    "url": "https://digital.asahi.com/sp/articles/ASSDR4FNWSDRUCVL009M.html?ptoken=01JGQSHA31FS2F5QZNNWY2AYSB",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "968e56e8-bbeb-4016-9f86-cdece07b3349",
+    "title": "イーロン・マスクら大富豪を英雄視するのは危険　ノーベル賞学者の警告",
+    "url": "https://business.nikkei.com/atcl/gen/19/00087/121800419/?gift=8vIHoLnslgBqC6vlqZb%252FqgQ5FtJX49JWdA3SoIe%252FBgo%253D&n_cid=nbpnb_gift",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "095e3b51-ddcb-48d8-ac7a-f8df01e96326",
+    "title": "広がる「財務省解体」のデモ　SNSに流れる言説に駆り立てられて：朝日新聞 1",
+    "url": "https://digital.asahi.com/sp/articles/AST3G1V44T3GPQIP03WM.html?ptoken=01JPC59QE9Z68JVQFDKB514GB9",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "a2ed8174-93cb-49f7-9bb5-65748fe5e08f",
+    "title": "「反戦詩」詠んだ与謝野晶子像に突然の撤去要請　裁判応酬の事態に：朝日新聞デジタル",
+    "url": "https://digital.asahi.com/sp/articles/AST172Q3MT17PTIL009M.html?ptoken=01JH4NXYV1SZA23JQSTKKCQ4T0",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "f35d5168-b590-4674-be72-3a0d6c8f2b40",
+    "title": "白頭庵熱弁３",
+    "url": "",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "7845bc33-bd1e-408f-99cc-87f8f623e695",
+    "title": "ガーデニングが社会運動？　声を上げるのとは違う「静かさ」の意義：朝日新聞デジタル",
+    "url": "https://digital.asahi.com/sp/articles/ASSDQ7D8MSDQULLI00GM.html?ptoken=01JG3G4R2H4WBV3TQ57VRNBFJ1",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "4f687a95-46d6-403b-8178-b31f7e582aeb",
+    "title": "デジタルガーデンと個人サイトを育てること。  世界のねじを巻くラジオ",
+    "url": "https://nejimaki-radio.com/digital-garden-blog-indie-website-personal-internet/",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "c5cc14da-025a-40dd-bd03-e7a9a728076b",
+    "title": "牛肉の旨味が溶け出したボルシチ  【公式】dancyu (ダンチュウ)",
+    "url": "https://dancyu.jp/recipe/2022_00006408.html",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "0e4d02f1-a23a-4edb-9937-cee9002898b2",
+    "title": "SSG with Obsidian and Lume",
+    "url": "https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "5e3b9b64-8140-4049-bafe-abc61926748c",
+    "title": "「昭和と平成で大きく変わった」　御厨さんが見た「ナベツネ」の実像：朝日新聞デジタル",
+    "url": "https://digital.asahi.com/sp/articles/ASSDM2R4DSDMUTFK01PM.html?ptoken=01JFH8BC3JMTHKS0E0KHXW538Y",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "c7d8dc58-de99-4ebb-92db-1f382ec3735c",
+    "title": "白頭庵熱弁２",
+    "url": "",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "c2de7600-a0d7-4227-94d6-4c39b0d719db",
+    "title": "📘【連載】ホームページを作ろう(2)",
+    "url": "https://masaki39.github.io/%F0%9F%93%98%E3%80%90%E9%80%A3%E8%BC%89%E3%80%91%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E4%BD%9C%E3%82%8D%E3%81%86(2)",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "33796cc9-f198-4ef1-852a-6d31e1de2374",
+    "title": "「過疎地を復興させてもね」を許す社会　下り坂の30年が生んだ空気：朝日新聞デジタル",
+    "url": "https://digital.asahi.com/sp/articles/AST1G7R3MT1GUPQJ001M.html?ptoken=01JHXZ3QJR1HAAW8XGGRKX8GXZ",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "63b9ff77-e774-4c23-8bba-94364461907f",
+    "title": "Obsidianというアプリをより良く知るための外部リンク集",
+    "url": "",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "276a4ecb-b8b6-4f9a-a92f-15ded2a1f19c",
+    "title": "Obsidian：WebClipperをKindle対応にする",
+    "url": "https://wineroses.hatenablog.com/entry/2024/12/06/170041",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "3a27f8d5-d699-4a3e-a313-045decd73d5c",
+    "title": "『新・動物の解放』",
+    "url": "https://comingbook.honzuki.jp/?detail=9784794974549",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "42ed2ff9-a750-4861-96a0-f1a348842f1f",
+    "title": "「嫌ならはっきりと…」の幻想　ゆがんだ性交観と無縁じゃない法廷：朝日新聞",
+    "url": "https://digital.asahi.com/sp/articles/AST3F35CMT3FUTFL00GM.html?ptoken=01JPMGDVV049ECX7E3V59MHRPS",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "f59f15f4-9b21-4cf8-a912-688ea6351a14",
+    "title": "兵庫前県議への批判投稿、13アカウントから　立花氏が2番目の多さ：朝日新聞",
+    "url": "https://digital.asahi.com/sp/articles/AST3F1VVNT3FPTIL00MM.html?ptoken=01JQ0CZJS6FB5FA84GB6W5QR72",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "e28cfb2c-3321-449c-9955-56be274e2269",
+    "title": "斎藤知事を押し上げた「切り抜き動画」の高揚感　変わる選挙の風景：朝日新聞デジタル",
+    "url": "https://digital.asahi.com/sp/articles/ASSDH05R8SDHUTIL01GM.html?ptoken=01JF9SC3CEDRGVB5A98HF09NQT",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "11c09146-def1-4cde-94e4-3d4f2c628dc4",
+    "title": "根深い「女嫌」、見えた韓国社会の溝　崔誠姫・大阪産業大准教授：朝日新聞デジタル",
+    "url": "https://digital.asahi.com/sp/articles/DA3S16126258.html?ptoken=01JHKQKNSQ956QPT8FNC1H67RK",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "cfb5b73a-8335-4d12-9b5e-b46cdb89460b",
+    "title": "📘Dashboard++で魅力的なホームページをつくろう！",
+    "url": "https://masaki39.github.io/%F0%9F%93%98Dashboard++%E3%81%A7%E9%AD%85%E5%8A%9B%E7%9A%84%E3%81%AA%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8D%E3%81%86%EF%BC%81",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "fda343aa-2f7e-44ac-b721-89dc4d65a773",
+    "title": "現代哲学の研究に哲学史は必要なのか - 研究日誌",
+    "url": "https://uemurag.hatenablog.jp/entry/2022/09/24/075600",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "9b07fe48-76cc-43bf-94f7-c96f551961e7",
+    "title": "“男はこう”“女はこう” ある日、新聞に載った全面広告",
+    "url": "https://s-newscommons.com/article/7161",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "a0e41276-c357-4925-b4dd-5a621d2747d9",
+    "title": "伊藤詩織さんアカデミー賞候補作　日本未公開のまま、2日の授賞式へ：朝日新聞",
+    "url": "https://digital.asahi.com/sp/articles/AST2W26M2T2WUHBI00VM.html?ptoken=01JNFCK1XACTB86NRK8C1M1F7T",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "bca977f7-e5dc-4aac-a57d-5539240faeed",
+    "title": "広がる「財務省解体」のデモ　SNSに流れる言説に駆り立てられて：朝日新聞",
+    "url": "https://digital.asahi.com/sp/articles/AST3G1V44T3GPQIP03WM.html?ptoken=01JPAJNJ8HVYBG872QCZ2016XP",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "c55c4c03-f390-42ae-bf46-1008ba908fbb",
+    "title": "ロシア宇宙主義 - Wikipedia",
+    "url": "https://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%B7%E3%82%A2%E5%AE%87%E5%AE%99%E4%B8%BB%E7%BE%A9",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "061b64f5-7308-4e73-a7fa-b0a74c680603",
+    "title": "闇バイトに奪われていく若者たち　社会が育てた都合のいい労働者？：朝日新聞デジタル 1",
+    "url": "https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "a48f7f23-fa3d-4f1e-9679-771a493caa44",
+    "title": "調査で見えてきた斎藤氏支持する心理　見逃されてきた「常民」的判断：朝日新聞デジタル",
+    "url": "https://digital.asahi.com/sp/articles/ASSDD1VSLSDDUCVL00ZM.html?ptoken=01JJ15MT0KXD1ZY6T1ZJ25SN7R",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "0fc1711e-0039-4bca-ac26-3df96ad3e381",
+    "title": "アサド政権、深まる苦境　南部でも蜂起、主要都市の陥落相次ぐ：朝日新聞デジタル",
+    "url": "https://digital.asahi.com/sp/articles/ASSD73DF6SD7UHBI02BM.html?ptoken=01JEGZGGKAK56NF4THMY61JQGQ",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "c7a25471-476f-44b5-b88f-16d639afa426",
+    "title": "マスク氏らによる「政府効率化」のデータ閲覧を差し止め　米連邦地裁：朝日新聞",
+    "url": "https://digital.asahi.com/sp/articles/AST2902JCT29UHBI001M.html?ptoken=01JKMACBEP3JTF72C380W084BR",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "e501d909-05e0-45c3-a79c-79471a5c620c",
+    "title": "右傾化する億万長者たち　より良い世界に戻る道は　NYTコラム：朝日新聞デジタル",
+    "url": "https://digital.asahi.com/sp/articles/ASSDM2199SDMUHBI00LM.html?ptoken=01JFPV64TCM3ZPEY6S6PM25B3J",
+    "source": "",
+    "comment": ""
+  },
+  {
     "id": "34f57a35-d14a-4a2d-8f8d-9553d9324980",
     "title": "「そんな人でない」「才能ある」　性加害男性に集まる「ヒムパシー」：朝日新聞",
     "url": "https://digital.asahi.com/sp/articles/AST3L1RZ3T3LUEFT00WM.html?ptoken=01JPVWDQP60SV8FJMCPE4FV53C",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "9b115d04-6e1b-4726-802d-b85165c199d5",
+    "title": "料理レシピの一覧 - ポケモンスリープ攻略・検証 Wiki",
+    "url": "https://wikiwiki.jp/poke_sleep/%E6%96%99%E7%90%86/%E3%83%AC%E3%82%B7%E3%83%94%E3%81%AE%E4%B8%80%E8%A6%A7",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "8df356e9-db7c-4586-bc71-f33b5979782f",
+    "title": "土砂搬出現場で死亡事故、崩れた暗黙の了解　ダンプ運転手が語る予兆：朝日新聞デジタル",
+    "url": "https://digital.asahi.com/sp/articles/ASSDW3584SDWUTIL00XM.html?ptoken=01JG63Z57EDD7Y6TB1C5YTCYTY",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "799418b0-9ef3-4817-8a9c-c7d26fb8f1d1",
+    "title": "It's Not As Bad As All That",
+    "url": "https://democracyjournal.org/magazine/48/its-not-as-bad-as-all-that/?ref=quillette.com",
     "source": "",
     "comment": ""
   },
@@ -1036,9 +1036,16 @@
     "comment": ""
   },
   {
-    "id": "968e56e8-bbeb-4016-9f86-cdece07b3349",
-    "title": "イーロン・マスクら大富豪を英雄視するのは危険　ノーベル賞学者の警告",
-    "url": "https://business.nikkei.com/atcl/gen/19/00087/121800419/?gift=8vIHoLnslgBqC6vlqZb%252FqgQ5FtJX49JWdA3SoIe%252FBgo%253D&n_cid=nbpnb_gift",
+    "id": "13d70ed6-c922-4110-b1fc-d3a518393a03",
+    "title": "【Obsidian】Spaced Repetition の使い方 - Qiita",
+    "url": "https://qiita.com/P-man_Brown/items/76b3abe3f8d7a8ca0dee",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "c1c73ef9-a5a6-4f58-85a2-c28e12860563",
+    "title": "闇バイトに奪われていく若者たち　社会が育てた都合のいい労働者？：朝日新聞デジタル",
+    "url": "https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM",
     "source": "",
     "comment": ""
   },
@@ -1057,16 +1064,9 @@
     "comment": ""
   },
   {
-    "id": "c5cc14da-025a-40dd-bd03-e7a9a728076b",
-    "title": "牛肉の旨味が溶け出したボルシチ  【公式】dancyu (ダンチュウ)",
-    "url": "https://dancyu.jp/recipe/2022_00006408.html",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "f80d32d4-6b08-4912-aabf-585297fe7528",
-    "title": "Obsidian Web Clipper",
-    "url": "https://stephango.com/obsidian-web-clipper",
+    "id": "1b86551d-5b14-42a5-a5c9-b91b1b7257e5",
+    "title": "夜と霧新版 ヴィクトール・E・フランクル(著文) - みすず書房",
+    "url": "",
     "source": "",
     "comment": ""
   },
@@ -1078,9 +1078,9 @@
     "comment": ""
   },
   {
-    "id": "1b86551d-5b14-42a5-a5c9-b91b1b7257e5",
-    "title": "夜と霧新版 ヴィクトール・E・フランクル(著文) - みすず書房",
-    "url": "",
+    "id": "f80d32d4-6b08-4912-aabf-585297fe7528",
+    "title": "Obsidian Web Clipper",
+    "url": "https://stephango.com/obsidian-web-clipper",
     "source": "",
     "comment": ""
   },
@@ -1113,13 +1113,6 @@
     "comment": ""
   },
   {
-    "id": "870bb8cf-c901-45fa-8fb4-a84ec47b6f36",
-    "title": "ドイツ中世後期の世界 阿部　謹也(著文) - 未来社",
-    "url": "",
-    "source": "",
-    "comment": ""
-  },
-  {
     "id": "2838da38-763a-4fc0-b9b6-484aea806a27",
     "title": "X Is a White-Supremacist Site 2",
     "url": "",
@@ -1134,13 +1127,6 @@
     "comment": ""
   },
   {
-    "id": "f3ef9c9f-2a59-404a-8dfd-4cd1e82f1e28",
-    "title": "ブックガイド2：再野生化（リワイルディング）について  生環境構築史 1",
-    "url": "",
-    "source": "",
-    "comment": ""
-  },
-  {
     "id": "0a53e190-eec3-4a72-bd01-200123e7fc63",
     "title": "根深い「女嫌」、見えた韓国社会の溝　崔誠姫・大阪産業大准教授：朝日新聞デジタル 1",
     "url": "",
@@ -1148,51 +1134,16 @@
     "comment": ""
   },
   {
-    "id": "c82ef683-c399-4055-bc3d-5d0fe84a848d",
-    "title": "Enlightenment Wars Some Reflections on 'Enlightenment Now,' One Year Later",
-    "url": "https://quillette.com/2019/01/14/enlightenment-wars-some-reflections-on-enlightenment-now-one-year-later/",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "768ccfdf-d160-4631-98e1-d98cb4b01888",
-    "title": "Opinion  Things Are Terrible in Europe, and They’re Only Going to Get Worse",
-    "url": "https://www.nytimes.com/2024/12/22/opinion/europe-germany-france-trump.html?unlocked_article_code=1.kU4.bk8O.k8CTdlH3cyFj&smid=nytcore-ios-share&referringSource=articleShare",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "f7193cd0-a273-4ac0-8917-72c2e3bdd70d",
-    "title": "「大学の同期が起床標準時を採用しているせいで時間が予測できない」→起床標準時ってなんだよ！と盛大なツッコミ→時刻を可視化してくれるサイトが作られる",
-    "url": "https://togetter.com/li/2472403",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "69a869ca-90dd-4777-94d9-aba32bd5f388",
-    "title": "George Foreman, Boxing Champion and Grilling Magnate, Dies at 76",
-    "url": "https://www.nytimes.com/2025/03/21/sports/george-foreman-dead.html?unlocked_article_code=1.504.0UgN.EH0XkuBJd6Qr&smid=bs-share",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "a342aba8-432b-4dd0-9f42-295757ba18b3",
-    "title": "Buttigieg Warns Trump-Panicked Democrats, ‘We Cannot Be Mesmerized’",
-    "url": "https://www.nytimes.com/2024/11/21/us/politics/pete-buttigieg-trump-democrats.html?unlocked_article_code=1.b04.gAmY.crNey8h19RYO&smid=nytcore-ios-share&referringSource=articleShare",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "c694307d-3a0f-44a3-88e5-c9c3d0d2421a",
-    "title": "In ‘Finding Flaco,’ Manhattan’s Beloved Celebrity Owl Is Memorialized 1",
+    "id": "f3ef9c9f-2a59-404a-8dfd-4cd1e82f1e28",
+    "title": "ブックガイド2：再野生化（リワイルディング）について  生環境構築史 1",
     "url": "",
     "source": "",
     "comment": ""
   },
   {
-    "id": "1fd3179d-cc36-49ae-a770-b430555c67ce",
-    "title": "Elon Musk and the Tech Billionaires Steering Trump’s Transition Team",
-    "url": "https://www.nytimes.com/2024/12/06/us/politics/trump-elon-musk-silicon-valley.html?unlocked_article_code=1.fk4.t4DI.b2jiZ0jkWFLe&smid=nytcore-ios-share&referringSource=articleShare",
+    "id": "870bb8cf-c901-45fa-8fb4-a84ec47b6f36",
+    "title": "ドイツ中世後期の世界 阿部　謹也(著文) - 未来社",
+    "url": "",
     "source": "",
     "comment": ""
   },
@@ -1204,9 +1155,16 @@
     "comment": ""
   },
   {
-    "id": "1360f65f-6908-4f1a-81ee-95bb9ba2e423",
-    "title": "仕事の『点』も『線』も管理出来て便利な机上に立てて使うブロックマンスリー＆プロジェクト管理：ミドリ プラススタンドダイアリー - tadachi-net 出張所",
-    "url": "https://tadachi.txt-nifty.com/blog/2022/10/post-973c73.html",
+    "id": "c694307d-3a0f-44a3-88e5-c9c3d0d2421a",
+    "title": "In ‘Finding Flaco,’ Manhattan’s Beloved Celebrity Owl Is Memorialized 1",
+    "url": "",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "a342aba8-432b-4dd0-9f42-295757ba18b3",
+    "title": "Buttigieg Warns Trump-Panicked Democrats, ‘We Cannot Be Mesmerized’",
+    "url": "https://www.nytimes.com/2024/11/21/us/politics/pete-buttigieg-trump-democrats.html?unlocked_article_code=1.b04.gAmY.crNey8h19RYO&smid=nytcore-ios-share&referringSource=articleShare",
     "source": "",
     "comment": ""
   },
@@ -1214,6 +1172,62 @@
     "id": "32450480-054c-4e87-8034-254c7053083b",
     "title": "How Zelensky’s popularity has sunk after nearly three years of war",
     "url": "https://www.thetimes.com/article/581645cf-e4aa-483f-ac7a-d2d5d841b78b?shareToken=cbb35e487313af77515c19c4b2fb18bd",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "8be4adaf-641d-4930-9e32-9cbd1dc5abd6",
+    "title": "Opinion  Temporarily Disconnected From Politics Feel No Guilt About It. 2",
+    "url": "",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "d9ce7876-4f32-45dd-8af2-27496ebdfc9b",
+    "title": "「椿発言」と僕の主義主張は違う　番組打ち切りに「僕があまりにも傲慢になっていた」　話の肖像画　ジャーナリスト・田原総一朗＜25＞",
+    "url": "https://www.sankei.com/article/20241026-KYBUOIFN5BKAHCP3G4JLPFCNTI/?outputType=theme_portrait",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "23aafb58-f81f-4612-b81f-aaa3d2aee94f",
+    "title": "Opinion  Temporarily Disconnected From Politics Feel No Guilt About It.",
+    "url": "https://www.nytimes.com/2024/12/18/opinion/trump-liberals-resistance.html?unlocked_article_code=1.ik4.jCMw.LGQrqLm3bWVE&smid=url-share",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "e745e2fb-5b1f-4c6c-99c4-a3490c57cea0",
+    "title": "Tulsa Massacre Was a ‘Coordinated, Military-Style Attack,’ Federal Report Says",
+    "url": "https://www.nytimes.com/2025/01/11/us/tulsa-race-massacre-report.html?unlocked_article_code=1.oU4.TEOz.fQYoQ9jIRDyb&smid=nytcore-ios-share&referringSource=articleShare",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "0a0cadab-a253-4848-9655-57375a49cde9",
+    "title": "Jimmy Carter, Peacemaking President Amid Crises, Is Dead at 100",
+    "url": "https://www.nytimes.com/2024/12/29/us/politics/jimmy-carter-dead.html?unlocked_article_code=1.lE4.Mw0A.Pg8pMCYL4jg2&smid=url-share",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "1360f65f-6908-4f1a-81ee-95bb9ba2e423",
+    "title": "仕事の『点』も『線』も管理出来て便利な机上に立てて使うブロックマンスリー＆プロジェクト管理：ミドリ プラススタンドダイアリー - tadachi-net 出張所",
+    "url": "https://tadachi.txt-nifty.com/blog/2022/10/post-973c73.html",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "1aabe599-7178-4bcb-ba72-d26e6026228b",
+    "title": "Column  The triumph of anti-identity-politics identity politics",
+    "url": "https://www.washingtonpost.com/politics/2024/12/10/triumph-anti-identity-politics-identity-politics/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzMzODA2ODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM1MTg5MTk5LCJpYXQiOjE3MzM4MDY4MDAsImp0aSI6IjFlN2FmOWJmLWMwMjgtNDU0ZC05N2RiLTdmODgxMDU1MjU4ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI0LzEyLzEwL3RyaXVtcGgtYW50aS1pZGVudGl0eS1wb2xpdGljcy1pZGVudGl0eS1wb2xpdGljcy8ifQ.-4leB-_Q9is-y6YmrTobhUfFyGTe9NOjshE2g42P238",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "6ba662bd-1108-4360-878c-f737019381bc",
+    "title": "子どもではなく類縁関係をつくろう──サイボーグ、伴侶種、堆肥体、クトゥルー新世｜ダナ・ハラウェイが次なる千年紀に向けて語る",
+    "url": "https://hagamag.com/uncategory/4293",
     "source": "",
     "comment": ""
   },
@@ -1232,86 +1246,9 @@
     "comment": ""
   },
   {
-    "id": "8be4adaf-641d-4930-9e32-9cbd1dc5abd6",
-    "title": "Opinion  Temporarily Disconnected From Politics Feel No Guilt About It. 2",
-    "url": "",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "7ddc426b-3c80-42c6-b13d-07a38a241c29",
-    "title": "Opinion  Oops! Consumers finally realize that Trump could worsen inflation.",
-    "url": "https://www.washingtonpost.com/opinions/2024/12/26/trump-tariffs-worsen-inflation/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzM1MTg5MjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM2NTcxNTk5LCJpYXQiOjE3MzUxODkyMDAsImp0aSI6ImZjODdlNGNmLTI2MDAtNDM0OC1hOTgxLTFhZmJjMjQ2NDU3YSIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9vcGluaW9ucy8yMDI0LzEyLzI2L3RydW1wLXRhcmlmZnMtd29yc2VuLWluZmxhdGlvbi8ifQ.2ze3RS75QDz6znHHFYRjLkAPSrP6hlsWJOrx-RVTfnk",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "23aafb58-f81f-4612-b81f-aaa3d2aee94f",
-    "title": "Opinion  Temporarily Disconnected From Politics Feel No Guilt About It.",
-    "url": "https://www.nytimes.com/2024/12/18/opinion/trump-liberals-resistance.html?unlocked_article_code=1.ik4.jCMw.LGQrqLm3bWVE&smid=url-share",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "ea3bc54b-44ed-4a08-9704-87d3dd0463a6",
-    "title": "社会構築主義以降の社会記述法　ストラザーン『部分的つながり』に見るハラウェイの可能性について - ポストフェミニズムに関するブログ",
-    "url": "https://ytakahashi0505.hatenablog.com/entry/2019/09/05/183654",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "ccc0d91b-183c-49fb-8d70-9cbe82da8de5",
-    "title": "Opinion  Trump’s Shameful Campaign Against Transgender Americans",
-    "url": "https://www.nytimes.com/2025/02/09/opinion/transgender-trump-orders.html?unlocked_article_code=1.v04.1-3q.i9gkm8wm4qy9&smid=url-share",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "6ba662bd-1108-4360-878c-f737019381bc",
-    "title": "子どもではなく類縁関係をつくろう──サイボーグ、伴侶種、堆肥体、クトゥルー新世｜ダナ・ハラウェイが次なる千年紀に向けて語る",
-    "url": "https://hagamag.com/uncategory/4293",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "0a0cadab-a253-4848-9655-57375a49cde9",
-    "title": "Jimmy Carter, Peacemaking President Amid Crises, Is Dead at 100",
-    "url": "https://www.nytimes.com/2024/12/29/us/politics/jimmy-carter-dead.html?unlocked_article_code=1.lE4.Mw0A.Pg8pMCYL4jg2&smid=url-share",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "fc9180ea-2efa-4c41-88e9-2cecc3e0346f",
-    "title": "Opinion  The Shock of Faith It’s Nothing Like I Thought It Would Be",
-    "url": "https://www.nytimes.com/2024/12/19/opinion/faith-god-christianity.html?unlocked_article_code=1.jE4.bKhR.zCct3VH6eOgP&smid=url-share",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "f03f8a99-4224-4e98-b055-79d0c3850f39",
-    "title": "In ‘Finding Flaco,’ Manhattan’s Beloved Celebrity Owl Is Memorialized",
-    "url": "https://www.nytimes.com/2024/12/24/books/review/finding-flaco-owl-photo-book.html?unlocked_article_code=1.j04.ZFJo.zwTahFAYxA1U&smid=bs-share",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "6bc660a1-671d-4fbb-80c1-ff04bbac79f1",
-    "title": "VIAF (Virtual International Authority File)  OCLC Developer Network",
-    "url": "https://www.oclc.org/developer/api/oclc-apis/viaf.en.html",
-    "source": "",
-    "comment": ""
-  },
-  {
     "id": "79c28d9e-532a-4d1d-9e65-bd574a9bf4d0",
     "title": "‘A Day of Love’ How Trump Inverted the Violent History of Jan. 6",
     "url": "https://www.nytimes.com/2025/01/05/us/politics/january-6-capitol-riot-trump.html?unlocked_article_code=1.vU4.Nwih.gknVldzlg88a&smid=url-share",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "1aabe599-7178-4bcb-ba72-d26e6026228b",
-    "title": "Column  The triumph of anti-identity-politics identity politics",
-    "url": "https://www.washingtonpost.com/politics/2024/12/10/triumph-anti-identity-politics-identity-politics/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzMzODA2ODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM1MTg5MTk5LCJpYXQiOjE3MzM4MDY4MDAsImp0aSI6IjFlN2FmOWJmLWMwMjgtNDU0ZC05N2RiLTdmODgxMDU1MjU4ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI0LzEyLzEwL3RyaXVtcGgtYW50aS1pZGVudGl0eS1wb2xpdGljcy1pZGVudGl0eS1wb2xpdGljcy8ifQ.-4leB-_Q9is-y6YmrTobhUfFyGTe9NOjshE2g42P238",
     "source": "",
     "comment": ""
   },
@@ -1323,51 +1260,79 @@
     "comment": ""
   },
   {
-    "id": "e745e2fb-5b1f-4c6c-99c4-a3490c57cea0",
-    "title": "Tulsa Massacre Was a ‘Coordinated, Military-Style Attack,’ Federal Report Says",
-    "url": "https://www.nytimes.com/2025/01/11/us/tulsa-race-massacre-report.html?unlocked_article_code=1.oU4.TEOz.fQYoQ9jIRDyb&smid=nytcore-ios-share&referringSource=articleShare",
+    "id": "7ddc426b-3c80-42c6-b13d-07a38a241c29",
+    "title": "Opinion  Oops! Consumers finally realize that Trump could worsen inflation.",
+    "url": "https://www.washingtonpost.com/opinions/2024/12/26/trump-tariffs-worsen-inflation/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzM1MTg5MjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM2NTcxNTk5LCJpYXQiOjE3MzUxODkyMDAsImp0aSI6ImZjODdlNGNmLTI2MDAtNDM0OC1hOTgxLTFhZmJjMjQ2NDU3YSIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9vcGluaW9ucy8yMDI0LzEyLzI2L3RydW1wLXRhcmlmZnMtd29yc2VuLWluZmxhdGlvbi8ifQ.2ze3RS75QDz6znHHFYRjLkAPSrP6hlsWJOrx-RVTfnk",
     "source": "",
     "comment": ""
   },
   {
-    "id": "d9ce7876-4f32-45dd-8af2-27496ebdfc9b",
-    "title": "「椿発言」と僕の主義主張は違う　番組打ち切りに「僕があまりにも傲慢になっていた」　話の肖像画　ジャーナリスト・田原総一朗＜25＞",
-    "url": "https://www.sankei.com/article/20241026-KYBUOIFN5BKAHCP3G4JLPFCNTI/?outputType=theme_portrait",
+    "id": "c82ef683-c399-4055-bc3d-5d0fe84a848d",
+    "title": "Enlightenment Wars Some Reflections on 'Enlightenment Now,' One Year Later",
+    "url": "https://quillette.com/2019/01/14/enlightenment-wars-some-reflections-on-enlightenment-now-one-year-later/",
     "source": "",
     "comment": ""
   },
   {
-    "id": "7ebe2caf-d049-43ea-a142-280ef4d04a39",
-    "title": "Insurers Are Deserting Homeowners as Climate Shocks Worsen",
-    "url": "https://www.nytimes.com/interactive/2024/12/18/climate/insurance-non-renewal-climate-crisis.html?unlocked_article_code=1.jE4.lNsl.WilUxKWri2gP&smid=nytcore-ios-share&referringSource=articleShare&tgrp=on",
+    "id": "6bc660a1-671d-4fbb-80c1-ff04bbac79f1",
+    "title": "VIAF (Virtual International Authority File)  OCLC Developer Network",
+    "url": "https://www.oclc.org/developer/api/oclc-apis/viaf.en.html",
     "source": "",
     "comment": ""
   },
   {
-    "id": "e5824fe4-7a0b-4933-8f1e-4e31142be622",
-    "title": "ポップヒストリアンは、いかにして〈未来擬史〉をしたためたのか？──『ホモ・デウス』書評（評者：池田純一）｜Web河出",
-    "url": "https://web.kawade.co.jp/bungei/2313/",
+    "id": "ea3bc54b-44ed-4a08-9704-87d3dd0463a6",
+    "title": "社会構築主義以降の社会記述法　ストラザーン『部分的つながり』に見るハラウェイの可能性について - ポストフェミニズムに関するブログ",
+    "url": "https://ytakahashi0505.hatenablog.com/entry/2019/09/05/183654",
     "source": "",
     "comment": ""
   },
   {
-    "id": "52675ea7-dee1-43c7-8a03-5ef3337ac376",
-    "title": "Opinion  My Last Column Finding Hope in an Age of Resentment",
-    "url": "https://www.nytimes.com/2024/12/09/opinion/elites-euro-social-media.html?unlocked_article_code=1.jU4.YGsX.geR43TP9RUlv&smid=nytcore-ios-share&referringSource=articleShare",
+    "id": "fc9180ea-2efa-4c41-88e9-2cecc3e0346f",
+    "title": "Opinion  The Shock of Faith It’s Nothing Like I Thought It Would Be",
+    "url": "https://www.nytimes.com/2024/12/19/opinion/faith-god-christianity.html?unlocked_article_code=1.jE4.bKhR.zCct3VH6eOgP&smid=url-share",
     "source": "",
     "comment": ""
   },
   {
-    "id": "a875e297-70c7-48cc-af30-9e078941db59",
-    "title": "Long a ‘Crown Jewel’ of Government, N.I.H. Is Now a Target",
-    "url": "https://www.nytimes.com/2024/12/01/health/nih-trump-kennedy-bhattacharya.html?unlocked_article_code=1.eU4.pd3-.WIzKYj8lDU9M&smid=url-share",
+    "id": "ccc0d91b-183c-49fb-8d70-9cbe82da8de5",
+    "title": "Opinion  Trump’s Shameful Campaign Against Transgender Americans",
+    "url": "https://www.nytimes.com/2025/02/09/opinion/transgender-trump-orders.html?unlocked_article_code=1.v04.1-3q.i9gkm8wm4qy9&smid=url-share",
     "source": "",
     "comment": ""
   },
   {
-    "id": "57972be6-0702-4222-8da4-eca557bc4d85",
-    "title": "Qアノン陰謀論との関連で「物議の映画」が米2位に急浮上  Forbes JAPAN 公式サイト（フォーブス ジャパン）",
-    "url": "https://forbesjapan.com/articles/detail/64649?read_more=1",
+    "id": "768ccfdf-d160-4631-98e1-d98cb4b01888",
+    "title": "Opinion  Things Are Terrible in Europe, and They’re Only Going to Get Worse",
+    "url": "https://www.nytimes.com/2024/12/22/opinion/europe-germany-france-trump.html?unlocked_article_code=1.kU4.bk8O.k8CTdlH3cyFj&smid=nytcore-ios-share&referringSource=articleShare",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "1fd3179d-cc36-49ae-a770-b430555c67ce",
+    "title": "Elon Musk and the Tech Billionaires Steering Trump’s Transition Team",
+    "url": "https://www.nytimes.com/2024/12/06/us/politics/trump-elon-musk-silicon-valley.html?unlocked_article_code=1.fk4.t4DI.b2jiZ0jkWFLe&smid=nytcore-ios-share&referringSource=articleShare",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "f03f8a99-4224-4e98-b055-79d0c3850f39",
+    "title": "In ‘Finding Flaco,’ Manhattan’s Beloved Celebrity Owl Is Memorialized",
+    "url": "https://www.nytimes.com/2024/12/24/books/review/finding-flaco-owl-photo-book.html?unlocked_article_code=1.j04.ZFJo.zwTahFAYxA1U&smid=bs-share",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "69a869ca-90dd-4777-94d9-aba32bd5f388",
+    "title": "George Foreman, Boxing Champion and Grilling Magnate, Dies at 76",
+    "url": "https://www.nytimes.com/2025/03/21/sports/george-foreman-dead.html?unlocked_article_code=1.504.0UgN.EH0XkuBJd6Qr&smid=bs-share",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "f7193cd0-a273-4ac0-8917-72c2e3bdd70d",
+    "title": "「大学の同期が起床標準時を採用しているせいで時間が予測できない」→起床標準時ってなんだよ！と盛大なツッコミ→時刻を可視化してくれるサイトが作られる",
+    "url": "https://togetter.com/li/2472403",
     "source": "",
     "comment": ""
   },
@@ -1379,23 +1344,9 @@
     "comment": ""
   },
   {
-    "id": "19d9c36e-8cbd-4da5-8b9e-f6f8002625ac",
-    "title": "Read Vice President Kamala Harris' Full Concession Speech",
-    "url": "https://time.com/7173617/kamala-harris-concession-speech-full-transcript/",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "2900d9c4-f7e9-4af3-89de-49bcb2cd2a38",
-    "title": "リング型スケジューラーを複数年分連結して便利に使う：ミドリ プラススタンドダイアリー - tadachi-net 出張所",
-    "url": "https://tadachi.txt-nifty.com/blog/2023/11/post-039217.html",
-    "source": "",
-    "comment": ""
-  },
-  {
-    "id": "7fe79df0-f992-44d7-b142-44155631f45a",
-    "title": "「日本の政策はなぜ機能しないのか？」書評　数値目標ありきの解決法はない（好書好日）｜ｄメニューニュース",
-    "url": "https://topics.smt.docomo.ne.jp/article/book_asahi/trend/book_asahi-15408143?redirect=1",
+    "id": "1f71ee71-1c9d-4a5d-a8e7-d3d9dbb95606",
+    "title": "Musk, Thiel and the shadow of apartheid South Africa",
+    "url": "https://www.ft.com/content/cfbfa1e8-d8f8-42b9-b74c-dae6cc6185a0?accessToken=zwAGKdHEqmkwkdPPv6Ho2PhCudO3TNrmzGGFoA.MEQCIA3h79YXDdcwW1XGH6QelD2ZvifwTUhkRcrmvjgonjUaAiBks4VrNidmmbGBTFHWFk8ryyRmrB4xcjdv59PK6N5l8g&sharetype=gift&token=eb57abd5-ea40-4e4c-9508-277bb72d5173",
     "source": "",
     "comment": ""
   },
@@ -1407,6 +1358,34 @@
     "comment": ""
   },
   {
+    "id": "19d9c36e-8cbd-4da5-8b9e-f6f8002625ac",
+    "title": "Read Vice President Kamala Harris' Full Concession Speech",
+    "url": "https://time.com/7173617/kamala-harris-concession-speech-full-transcript/",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "57972be6-0702-4222-8da4-eca557bc4d85",
+    "title": "Qアノン陰謀論との関連で「物議の映画」が米2位に急浮上  Forbes JAPAN 公式サイト（フォーブス ジャパン）",
+    "url": "https://forbesjapan.com/articles/detail/64649?read_more=1",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "7fe79df0-f992-44d7-b142-44155631f45a",
+    "title": "「日本の政策はなぜ機能しないのか？」書評　数値目標ありきの解決法はない（好書好日）｜ｄメニューニュース",
+    "url": "https://topics.smt.docomo.ne.jp/article/book_asahi/trend/book_asahi-15408143?redirect=1",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "a875e297-70c7-48cc-af30-9e078941db59",
+    "title": "Long a ‘Crown Jewel’ of Government, N.I.H. Is Now a Target",
+    "url": "https://www.nytimes.com/2024/12/01/health/nih-trump-kennedy-bhattacharya.html?unlocked_article_code=1.eU4.pd3-.WIzKYj8lDU9M&smid=url-share",
+    "source": "",
+    "comment": ""
+  },
+  {
     "id": "a69faabb-684f-4b1c-a8c3-ec982b187726",
     "title": "DLsiteの“ドスケベメルマガ”、実は若手女性社員率いるチームが書いていた　プロフェッショナルな作業風景",
     "url": "https://www.itmedia.co.jp/news/spv/2411/29/news026.html",
@@ -1414,16 +1393,37 @@
     "comment": ""
   },
   {
-    "id": "1f71ee71-1c9d-4a5d-a8e7-d3d9dbb95606",
-    "title": "Musk, Thiel and the shadow of apartheid South Africa",
-    "url": "https://www.ft.com/content/cfbfa1e8-d8f8-42b9-b74c-dae6cc6185a0?accessToken=zwAGKdHEqmkwkdPPv6Ho2PhCudO3TNrmzGGFoA.MEQCIA3h79YXDdcwW1XGH6QelD2ZvifwTUhkRcrmvjgonjUaAiBks4VrNidmmbGBTFHWFk8ryyRmrB4xcjdv59PK6N5l8g&sharetype=gift&token=eb57abd5-ea40-4e4c-9508-277bb72d5173",
+    "id": "52675ea7-dee1-43c7-8a03-5ef3337ac376",
+    "title": "Opinion  My Last Column Finding Hope in an Age of Resentment",
+    "url": "https://www.nytimes.com/2024/12/09/opinion/elites-euro-social-media.html?unlocked_article_code=1.jU4.YGsX.geR43TP9RUlv&smid=nytcore-ios-share&referringSource=articleShare",
     "source": "",
     "comment": ""
   },
   {
-    "id": "32de802f-6da8-4aa1-91e3-c67186fc8665",
-    "title": "上田淳子さんも最初はびっくり！ フランスで覚えた「キノコの最強の調理法」はこれ（上田 淳子）",
-    "url": "https://gendai.media/articles/-/141776?page=1&imp=0",
+    "id": "2900d9c4-f7e9-4af3-89de-49bcb2cd2a38",
+    "title": "リング型スケジューラーを複数年分連結して便利に使う：ミドリ プラススタンドダイアリー - tadachi-net 出張所",
+    "url": "https://tadachi.txt-nifty.com/blog/2023/11/post-039217.html",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "e5824fe4-7a0b-4933-8f1e-4e31142be622",
+    "title": "ポップヒストリアンは、いかにして〈未来擬史〉をしたためたのか？──『ホモ・デウス』書評（評者：池田純一）｜Web河出",
+    "url": "https://web.kawade.co.jp/bungei/2313/",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "7ebe2caf-d049-43ea-a142-280ef4d04a39",
+    "title": "Insurers Are Deserting Homeowners as Climate Shocks Worsen",
+    "url": "https://www.nytimes.com/interactive/2024/12/18/climate/insurance-non-renewal-climate-crisis.html?unlocked_article_code=1.jE4.lNsl.WilUxKWri2gP&smid=nytcore-ios-share&referringSource=articleShare&tgrp=on",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "7483be2c-1f9a-4f36-9538-f54bb242238b",
+    "title": "「僕たちは多文化主義から多自然主義へと向かわなければならない」奥野克巳に訊く“人類学の静かなる革命”",
+    "url": "https://hagamag.com/uncategory/3529",
     "source": "",
     "comment": ""
   },
@@ -1435,9 +1435,16 @@
     "comment": ""
   },
   {
-    "id": "0df5cc03-b104-4424-a856-3f2c1a130131",
-    "title": "How Gen Z Came to See Books as a Waste of Time",
-    "url": "https://www.theatlantic.com/newsletters/archive/2024/11/books-briefing-gen-z-reading-books-waste-time/680586/?gift=NX91pXe_h9-jpMCTAKKndty65e7pWc3ow1FucIBUtZs&utm_source=copy-link&utm_medium=social&utm_campaign=share",
+    "id": "6436d0b3-4076-4762-a6b0-660dd3eca3b7",
+    "title": "Don't Let the Enemies of Truth Ruin Wikipedia",
+    "url": "https://www.arcdigital.media/p/dont-let-the-enemies-of-truth-ruin",
+    "source": "",
+    "comment": ""
+  },
+  {
+    "id": "32de802f-6da8-4aa1-91e3-c67186fc8665",
+    "title": "上田淳子さんも最初はびっくり！ フランスで覚えた「キノコの最強の調理法」はこれ（上田 淳子）",
+    "url": "https://gendai.media/articles/-/141776?page=1&imp=0",
     "source": "",
     "comment": ""
   },
@@ -1449,6 +1456,13 @@
     "comment": ""
   },
   {
+    "id": "0df5cc03-b104-4424-a856-3f2c1a130131",
+    "title": "How Gen Z Came to See Books as a Waste of Time",
+    "url": "https://www.theatlantic.com/newsletters/archive/2024/11/books-briefing-gen-z-reading-books-waste-time/680586/?gift=NX91pXe_h9-jpMCTAKKndty65e7pWc3ow1FucIBUtZs&utm_source=copy-link&utm_medium=social&utm_campaign=share",
+    "source": "",
+    "comment": ""
+  },
+  {
     "id": "c2fb95c0-c3c5-4448-b066-07b265dcee2a",
     "title": "（憲法季評）手続き軽視の態度、生まれる分断　「お茶の間の正義」社会の昏さ　安藤馨：朝日新聞",
     "url": "https://digital.asahi.com/sp/articles/DA3S16148039.html?ptoken=01JKY7TQQ2N2JPFC5TF5Y8TGE4",
@@ -1456,17 +1470,45 @@
     "comment": ""
   },
   {
-    "id": "6436d0b3-4076-4762-a6b0-660dd3eca3b7",
-    "title": "Don't Let the Enemies of Truth Ruin Wikipedia",
-    "url": "https://www.arcdigital.media/p/dont-let-the-enemies-of-truth-ruin",
-    "source": "",
+    "id": "c6423825-0ed5-4902-95e3-2ac27c4a38bd",
+    "title": "「選挙という幻想」 —ラカン精神分析的に読む〈義務〉への同調圧力｜ひらが ごう",
+    "url": "https://note.com/simpleway/n/n430c35e3afcd",
+    "source": "note（ノート）",
     "comment": ""
   },
   {
-    "id": "7483be2c-1f9a-4f36-9538-f54bb242238b",
-    "title": "「僕たちは多文化主義から多自然主義へと向かわなければならない」奥野克巳に訊く“人類学の静かなる革命”",
-    "url": "https://hagamag.com/uncategory/3529",
-    "source": "",
+    "id": "85b17685-4422-4ebe-9695-7b0ccbcab268",
+    "title": "Sending webmentions from a static site",
+    "url": "https://localghost.dev/blog/sending-webmentions-from-a-static-site/",
+    "source": "localghost",
+    "comment": "静的サイトからWebmentionを送る方法"
+  },
+  {
+    "id": "b537741b-ad96-4aa6-9ce2-dbbb3e7a9757",
+    "title": "今の憲法にはあるのに？参政党の創憲案で消された私たちの「権利」",
+    "url": "https://mainichi.jp/articles/20250715/k00/00m/010/230000c",
+    "source": "毎日新聞",
+    "comment": "参政党創憲案、ふざけてるな。"
+  },
+  {
+    "id": "b046b057-a3cf-4dae-b544-5033f961b560",
+    "title": "参政党は自民党の票を奪っているのか？",
+    "url": "https://sugawarataku.theletter.jp/posts/fe86bda0-64e1-11f0-a647-937666d212e1?utm_medium=email&utm_source=newsletter&utm_campaign=fe86bda0-64e1-11f0-a647-937666d212e1",
+    "source": "菅原琢",
+    "comment": ""
+  },
+  {
+    "id": "aad287f0-96e9-4e3c-84c1-599845a505e5",
+    "title": "近刊情報",
+    "url": "https://www.msz.co.jp/book/upcoming/",
+    "source": "みすず書房",
+    "comment": ""
+  },
+  {
+    "id": "6d069b42-a34a-4ec0-a51f-58a66c318cf9",
+    "title": "MCPが後押しするAIじかけのウェブ、AIが後押しするオープンなウェブの空洞化",
+    "url": "https://wirelesswire.jp/2025/06/88810/",
+    "source": "執筆者一覧, yomoyomo",
     "comment": ""
   },
   {
@@ -1484,24 +1526,10 @@
     "comment": ""
   },
   {
-    "id": "aad287f0-96e9-4e3c-84c1-599845a505e5",
-    "title": "近刊情報",
-    "url": "https://www.msz.co.jp/book/upcoming/",
-    "source": "みすず書房",
-    "comment": ""
-  },
-  {
-    "id": "85b17685-4422-4ebe-9695-7b0ccbcab268",
-    "title": "Sending webmentions from a static site",
-    "url": "https://localghost.dev/blog/sending-webmentions-from-a-static-site/",
-    "source": "localghost",
-    "comment": "静的サイトからWebmentionを送る方法"
-  },
-  {
-    "id": "c6423825-0ed5-4902-95e3-2ac27c4a38bd",
-    "title": "「選挙という幻想」 —ラカン精神分析的に読む〈義務〉への同調圧力｜ひらが ごう",
-    "url": "https://note.com/simpleway/n/n430c35e3afcd",
-    "source": "note（ノート）",
+    "id": "cea5e9a8-1363-426b-b4ff-cb00c3e128a5",
+    "title": "IndieWebをはじめてみた",
+    "url": "https://www.tkskkd.com/2020/indieweb%E3%82%92%E3%81%AF%E3%81%97%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F-1",
+    "source": "tkskkd’s iki-iki",
     "comment": ""
   },
   {
@@ -1509,34 +1537,6 @@
     "title": "「マブラヴ」シリア人の視点｜Noobie",
     "url": "https://note.com/noobie1920/n/na35bdf5874d5",
     "source": "note（ノート）",
-    "comment": ""
-  },
-  {
-    "id": "b537741b-ad96-4aa6-9ce2-dbbb3e7a9757",
-    "title": "今の憲法にはあるのに？参政党の創憲案で消された私たちの「権利」",
-    "url": "https://mainichi.jp/articles/20250715/k00/00m/010/230000c",
-    "source": "毎日新聞",
-    "comment": "参政党創憲案、ふざけてるな。"
-  },
-  {
-    "id": "b046b057-a3cf-4dae-b544-5033f961b560",
-    "title": "参政党は自民党の票を奪っているのか？",
-    "url": "https://sugawarataku.theletter.jp/posts/fe86bda0-64e1-11f0-a647-937666d212e1?utm_medium=email&utm_source=newsletter&utm_campaign=fe86bda0-64e1-11f0-a647-937666d212e1",
-    "source": "菅原琢",
-    "comment": ""
-  },
-  {
-    "id": "6d069b42-a34a-4ec0-a51f-58a66c318cf9",
-    "title": "MCPが後押しするAIじかけのウェブ、AIが後押しするオープンなウェブの空洞化",
-    "url": "https://wirelesswire.jp/2025/06/88810/",
-    "source": "執筆者一覧, yomoyomo",
-    "comment": ""
-  },
-  {
-    "id": "cea5e9a8-1363-426b-b4ff-cb00c3e128a5",
-    "title": "IndieWebをはじめてみた",
-    "url": "https://www.tkskkd.com/2020/indieweb%E3%82%92%E3%81%AF%E3%81%97%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F-1",
-    "source": "tkskkd’s iki-iki",
     "comment": ""
   }
 ]
