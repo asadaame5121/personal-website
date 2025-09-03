@@ -10,8 +10,7 @@ import ogImages from "lume/plugins/og_images.ts";
 import metas from "lume/plugins/metas.ts";
 import date from "lume/plugins/date.ts";
 import decodeURIComponentFilter from "./_filters/decodeURIComponent.js";
-import Server from "lume/core/server.ts";
-import redirectAS2, { bridgyFed } from "lume/middlewares/redirect_as2.ts";
+import config from "./config.json" with { type: "json" };
 import sitemap from "lume/plugins/sitemap.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 import feed from "lume/plugins/feed.ts";
@@ -38,7 +37,7 @@ const markdown = {
 const site = lume({
   src: ".",
   dest: "_site",
-  location: new URL("https://asadaame5121.net"),
+  location: new URL(config.baseUrl),
   prettyUrls: false, // 特殊文字を含むURLの問題を回避するために無効化
   server: {
     middlewares: [precompress()],
@@ -142,23 +141,20 @@ site.use(esbuild({
 
 // --- JS/TS バンドル & 最適化 ---
 
-
-await (async () => {
-  site.use(ogImages({
-    options: {
-      width: 1200,
-      height: 630,
-      fonts: [
-        {
-          name: "Shippori Mincho B1",
-          data: (await Deno.readFile("assets/fonts/ShipporiMinchoB1-ExtraBold.ttf")).buffer,
-          weight: 800,
-          style: "normal",
-        },
-      ],
-    },
-  }));
-})();
+site.use(ogImages({
+  options: {
+    width: 1200,
+    height: 630,
+    fonts: [
+      {
+        name: "Shippori Mincho B1",
+        data: (await Deno.readFile("assets/fonts/ShipporiMinchoB1-ExtraBold.ttf")).buffer,
+        weight: 800,
+        style: "normal",
+      },
+    ],
+  },
+}));
 site.use(metas());
 site.use(sitemap({
   query: "unlisted!=true !url^=/tags/",
@@ -175,11 +171,6 @@ site.use(feed({
     description: "=excerpt",
   },
 }));
-const server = new Server();
-
-const rewriteUrl = bridgyFed();
-
-server.use(redirectAS2({ rewriteUrl }));
 
 
 // TailwindCSSとPostCSSの設定
@@ -229,7 +220,6 @@ site.ignore((path) => {
 });
 
 site.ignore("README.md", "obsidian/template", "obsidian/template/*", "obsidian/Workinprogress", "obsidian/Clippings/*", "obsidian/.obsidian", "obsidian/Extra", "obsidian/forpixel8", "obsidian/Omnivore");
-site.script("extract-log-content", "./_filters/extract-log-content.js");
 
 // LinkGraph をここにつくる
 
