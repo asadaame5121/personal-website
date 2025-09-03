@@ -4,7 +4,6 @@ import tailwindcss from "lume/plugins/tailwindcss.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
 import nav from "lume/plugins/nav.ts";
 import pagefind from "lume/plugins/pagefind.ts";
-import mdx from "lume/plugins/mdx.ts";
 import wikilinks from "https://deno.land/x/lume_markdown_plugins@v0.9.0/wikilinks.ts";
 import callout from "npm:markdown-it-obsidian-callouts";
 import ogImages from "lume/plugins/og_images.ts";
@@ -103,8 +102,6 @@ site.use(feed({
 }));
 
 
-// Bluesky投稿取得フィルターを登録
-site.filter("getBlueskyPosts", () => []); // ★ダミー実装（ビルド通過用）
 site.filter("decodeURIComponent", decodeURIComponentFilter);
 
 // 特定のフォルダを除外する設定
@@ -128,12 +125,6 @@ site.ignore((path) => {
          problematicFiles.some(keyword => path.includes(keyword));
 });
 
-// obsidianディレクトリを削除対象から除外
-// site.clean()の動作を調整
-// site.addEventListener("beforeBuild", () => {
-//   // obsidianディレクトリをクリーンアップ時に無視するための設定
-//   site.ignore("/obsidian/**/*");
-// });
 
 // 基本プラグインの設定
 site.use(toc());
@@ -144,7 +135,6 @@ site.use(jsx());
 site.use(wikilinks());
 site.use(nav());
 site.use(pagefind());
-site.use(mdx());
 site.use(icons());
 site.use(esbuild({
   extensions: [".ts", ".js", ".tsx", ".jsx"]
@@ -231,11 +221,8 @@ site.options.components = {
   jsFile: "/assets/components.js"
 };
 
-// Blueskyポスト取得フィルターを登録
-site.filter("getBlueskyPosts", () => []); // ★ダミー実装（ビルド通過用）
 
-// JSXファイルをプライマリーテンプレートとして使用するため、下記の行をコメントアウト
-// site.ignore((path) => path.endsWith('.jsx') || path.endsWith('.tsx'));
+
 site.ignore((path) => {
   // /obsidian/example.mdのようなパスに一致し、さらに深いディレクトリ構造を持たないものを除外
   return /^\/obsidian\/[^\/]+\.md$/.test(path);
