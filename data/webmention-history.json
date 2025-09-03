@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-09-02T12:35:55.370Z",
+  "last_updated": "2025-09-03T12:34:44.736Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -4783,6 +4783,22 @@
         "sent_at": "2025-08-12T12:37:34.400Z",
         "status": "failed",
         "error_message": "Webmentionエンドポイントが見つかりません: https://www.taiwan-panorama.com/ja/Articles/Details?Guid=f8d98dd9-ea9c-4762-8b3b-d7bf685a1d16 (not-found)"
+      },
+      {
+        "clip_id": "35bdb453-a482-4363-bbef-fdb24a0b8fe7",
+        "source_url": "https://asadaame5121.net/clippingshare/35bdb453-a482-4363-bbef-fdb24a0b8fe7",
+        "target_url": "https://zenn.dev/wyuma/articles/4c9ca1eedca8e9#discuss",
+        "sent_at": "2025-09-03T12:34:31.159Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://zenn.dev/wyuma/articles/4c9ca1eedca8e9#discuss (not-found)"
+      },
+      {
+        "clip_id": "94c17da8-53af-4639-b80b-2ecedb6aff09",
+        "source_url": "https://asadaame5121.net/clippingshare/94c17da8-53af-4639-b80b-2ecedb6aff09",
+        "target_url": "https://techfeed.io/entries/68b60f6cd0e17253abf4298c",
+        "sent_at": "2025-09-03T12:34:37.831Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://techfeed.io/entries/68b60f6cd0e17253abf4298c (not-found)"
       }
     ],
     "blog_updates": [
@@ -5216,6 +5232,14 @@
         "title": "今日のフリーライティング",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-08-26T14:37:12.333Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1756902871154",
+        "source_url": "https://asadaame5121.net/Article/%E8%AA%AD%E6%9B%B8%E3%83%AD%E3%82%B0.html",
+        "title": "読書ログ",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-09-03T12:34:31.154Z",
         "status": "success"
       }
     ]
