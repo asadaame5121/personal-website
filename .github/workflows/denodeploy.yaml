@@ -2,9 +2,14 @@ name: Publish on Deno Deploy
 
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Publish JSON and Sync Obsidian"]
+    types:
+      - completed
 
 jobs:
   build:
+    if: ${{ github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') }}
     runs-on: ubuntu-latest
     permissions:
       id-token: write
