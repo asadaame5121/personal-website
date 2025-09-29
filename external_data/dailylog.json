@@ -1,5 +1,10 @@
 [
   {
+    "id": "a4161a73-d31d-42a3-8a95-1d21ba04e715",
+    "datetime": "2025-09-29T13:22:55.746+09:00",
+    "content": "APIError: GitHub event 'workflow_run' is not supported.\nとはなんだ"
+  },
+  {
     "id": "8005a7cc-b76d-466a-8af7-946810d06db1",
     "datetime": "2025-09-09T18:58:43.291+09:00",
     "content": "Verso Booksの販促メールが強い。あなたの本棚を脱植民地化しよう!みたいなパンチラインをぶち込まれるとついアクセスしてしまう。"
