@@ -1,5 +1,10 @@
 [
   {
+    "id": "624b8da6-cf7a-42b8-ab28-7800de516665",
+    "datetime": "2025-09-29T14:08:56.634+09:00",
+    "content": "とりあえずGithubActionsを編集した。"
+  },
+  {
     "id": "a4161a73-d31d-42a3-8a95-1d21ba04e715",
     "datetime": "2025-09-29T13:22:55.746+09:00",
     "content": "APIError: GitHub event 'workflow_run' is not supported.\nとはなんだ"
