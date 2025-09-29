@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-09-28T12:31:21.305Z",
+  "last_updated": "2025-09-29T12:37:00.222Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -295,6 +295,20 @@
         "source_url": "https://asadaame5121.net/dailylog#entry-8005a7cc-b76d-466a-8af7-946810d06db1",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-09-09T12:36:56.720Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "624b8da6-cf7a-42b8-ab28-7800de516665",
+        "source_url": "https://asadaame5121.net/dailylog#entry-624b8da6-cf7a-42b8-ab28-7800de516665",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-09-29T12:36:59.888Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "a4161a73-d31d-42a3-8a95-1d21ba04e715",
+        "source_url": "https://asadaame5121.net/dailylog#entry-a4161a73-d31d-42a3-8a95-1d21ba04e715",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-09-29T12:37:00.220Z",
         "status": "success"
       }
     ],
