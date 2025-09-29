@@ -59,14 +59,14 @@ jobs:
             git push origin main
           fi
 
-      - name: Trigger Deno Deploy workflow (repository_dispatch)
+      - name: Trigger Deno Deploy workflow (workflow_dispatch)
         if: ${{ success() }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "Triggering repository_dispatch: deploy"
+          echo "Triggering workflow_dispatch for denodeploy.yaml on ref main"
           curl -sS -X POST \
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer $GITHUB_TOKEN" \
-            https://api.github.com/repos/${{ github.repository }}/dispatches \
-            -d '{"event_type":"deploy"}'
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/denodeploy.yaml/dispatches \
+            -d '{"ref":"main"}'

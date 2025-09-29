@@ -2,12 +2,10 @@ name: Publish on Deno Deploy
 
 on:
   workflow_dispatch:
-  repository_dispatch:
-    types: [deploy]
 
 jobs:
   build:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch' }}
+    if: ${{ github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     permissions:
       id-token: write
