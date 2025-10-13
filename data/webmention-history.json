@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-10-12T12:31:26.737Z",
+  "last_updated": "2025-10-13T12:36:16.906Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -309,6 +309,13 @@
         "source_url": "https://asadaame5121.net/dailylog#entry-a4161a73-d31d-42a3-8a95-1d21ba04e715",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-09-29T12:37:00.220Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "6579a624-0bb7-4286-8f16-7dc605d6cec5",
+        "source_url": "https://asadaame5121.net/dailylog#entry-6579a624-0bb7-4286-8f16-7dc605d6cec5",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-10-13T12:36:16.905Z",
         "status": "success"
       }
     ],
@@ -5269,6 +5276,30 @@
         "title": "FSRS",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-09-21T12:31:29.448Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1760358976169",
+        "source_url": "https://asadaame5121.net/Book/%E8%87%AA%E5%85%AC%E6%94%BF%E6%A8%A9%E3%81%A8%E3%81%AF%E4%BD%95%E3%81%8B.html",
+        "title": "自公政権とは何か",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-10-13T12:36:16.169Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1760358976354",
+        "source_url": "https://asadaame5121.net/Glossary/MAUSS.html",
+        "title": "MAUSS",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-10-13T12:36:16.354Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1760358976643",
+        "source_url": "https://asadaame5121.net/Book/%E9%96%A2%E8%A5%BF%E5%A4%A7%E8%A1%86%E9%A3%9F%E5%A0%82%E3%81%AE%E7%A4%BE%E4%BC%9A%E5%8F%B2.html",
+        "title": "関西大衆食堂の社会史",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-10-13T12:36:16.643Z",
         "status": "success"
       }
     ]
