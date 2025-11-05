@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "../personal-website-MigrationToHonox"
+		},
+		{
+			"path": "../DokushoMeterScraping"
 		}
 	],
 	"settings": {
