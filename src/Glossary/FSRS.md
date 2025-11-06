@@ -12,7 +12,7 @@ updated: '2025-09-11 14:34'
 metas:
   title: FSRS
   description: FSRSについてのページです。
-  image: 'https://asadaame5121.net/Glossary/FSRS.png'
+  image: 'https://asadaame5121.net\Glossary\FSRS.png'
 ---
 ## 解説
 間隔学習システムの[[アルゴリズム]]。AnkiでもSM-2からの移行が進んでいるらしい。

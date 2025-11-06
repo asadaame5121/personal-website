@@ -8,6 +8,7 @@ type BookMeta = {
   amazonUrl: string;
   calilUrl: string;
   image: string;
+  openbdBookCover: string;
 };
 
 const booksDir = "./src/Book";
@@ -50,6 +51,7 @@ for await (const entry of walk(booksDir, { exts: [".md"], includeFiles: true, ma
     amazonUrl: typeof frontmatter.amazonUrl === "string" ? frontmatter.amazonUrl : "",
     calilUrl,
     image: typeof metas?.image === "string" ? metas.image : "",
+    openbdBookCover: typeof frontmatter.OPENBDBookCover === "string" ? frontmatter.OPENBDBookCover : "",
   };
 }
 
