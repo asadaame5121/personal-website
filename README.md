@@ -1,10 +1,10 @@
 # personal-website
 
-個人ウェブサイト（Deno + Lume + Nunjucks + Obsidian連携）
+個人ウェブサイト（Deno + Lume + Obsidian連携）
 
 ## 概要
 
-このリポジトリは、DenoとLume（静的サイトジェネレーター）、Nunjucksテンプレート、Obsidianノートのサブモジュール連携を活用した個人ウェブサイトのソースです。Obsidianのメモやクリッピング、日報などを自動で抽出・Web公開する仕組みを持ち、独自のタイル型ナビゲーションやソーシャルブックマーク機能も搭載しています。
+このリポジトリは、DenoとLume（静的サイトジェネレーター）、Obsidianノートのサブモジュール連携を活用した個人ウェブサイトのソースです。Obsidianのメモやクリッピング、日報などを自動で抽出・Web公開する仕組みを持ち、ソーシャルブックマーク機能も搭載しています。
 
 ## 技術スタック
 - Deno
@@ -33,8 +33,8 @@
 
 ```
 personal-website/
-├── _components/      # Nunjucks/JSXコンポーネント
-├── _includes/        # Nunjucksテンプレート
+├── _components/      # JSXコンポーネント
+├── _includes/        # テンプレート
 ├── assets/           # 画像・JS・CSS等のアセット
 ├── data/             # サイト用データ（dailylog.mdなど）
 ├── obsidian/         # Obsidianノート（サブモジュール）
