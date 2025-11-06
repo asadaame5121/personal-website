@@ -1,7 +1,7 @@
 // scripts/test-bluesky-auth.js
 // Blueskyの認証情報をテストするシンプルなスクリプト
-import { AtpAgent } from "npm:@atproto/api";
-import { load } from "https://deno.land/std/dotenv/mod.ts";
+import { AtpAgent } from "@atproto/api";
+import { load } from "@std/dotenv";
 
 // .envファイルから環境変数を読み込む
 await load({ export: true });
@@ -52,6 +52,8 @@ async function testBlueskyAuth() {
     console.log(`いいね数: ${likeResult.data.total}`);
     
     const posts = feedResult.data.feed;
+    const BskyPost = JSON.stringify(posts);
+    await Deno.writeTextFile("./logs/BskyPost.json", BskyPost);
     
     console.log(`取得結果: ${posts.length}件の投稿`);
     

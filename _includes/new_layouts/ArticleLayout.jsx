@@ -45,6 +45,7 @@ export default function ArticleLayout({
   Calil,
   amazonUrl,
   shopUrl,
+  OPENBDBookCover,
   footnotes,
   page,
 }) {
@@ -134,7 +135,7 @@ export default function ArticleLayout({
                   <a href="https://fed.brid.gy/" hidden></a>
                 </div>
 
-                {comp.Booklinks && <comp.Booklinks Calil={calilValue} amazonUrl={amazonUrl} shopUrl={shopUrl} />}
+                {comp.Booklinks && <comp.Booklinks Calil={calilValue} amazonUrl={amazonUrl} shopUrl={shopUrl} OPENBDBookCover={OPENBDBookCover} />}
 
                 {/* Bluesky Syndication */}
                 {bluesky && (

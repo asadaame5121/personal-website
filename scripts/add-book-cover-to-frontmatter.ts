@@ -71,9 +71,9 @@ function getIsbnFromFrontmatter(fm: Record<string, unknown>): string | undefined
   }
   return undefined;
 }
-
 function buildFrontmatter(fm: Record<string, unknown>): string {
-  return ["---", ...Object.entries(fm).map(([k, v]) => `${k}: ${v}`), "---"].join("\n");
+  const yaml = stringifyYaml(fm).trimEnd();
+  return `---\n${yaml}\n---`;
 }
 
 for await (const entry of Deno.readDir(BOOK_SRC_DIR)) {
@@ -81,8 +81,8 @@ for await (const entry of Deno.readDir(BOOK_SRC_DIR)) {
   const filePath = join(BOOK_SRC_DIR, entry.name);
   const raw = await Deno.readTextFile(filePath);
   const { front, body, fm } = parseFrontmatter(raw);
-  // 既にimageがあればスキップ
-  if (fm["image"]) continue;
+  // 既に書影が登録済みならスキップ
+  if (fm["OPENBDBookCover"]) continue;
   // frontmatterからISBNを取得
   const ISBN = getIsbnFromFrontmatter(fm);
   console.log(`[DEBUG] ${entry.name} | ISBN:`, ISBN);
@@ -97,8 +97,8 @@ for await (const entry of Deno.readDir(BOOK_SRC_DIR)) {
     console.log(`[DEBUG] ${entry.name} | 書影画像なし`);
     continue;
   }
-  console.log(`[DEBUG] ${entry.name} | image取得:`, image);
-  fm["image"] = image;
+  console.log(`[DEBUG] ${entry.name} | OPENBDBookCover取得:`, image);
+  fm["OPENBDBookCover"] = image;
   const newFront = buildFrontmatter(fm);
   await Deno.writeTextFile(filePath, `${newFront}\n${body}`);
   console.log(`✅ image付与: ${entry.name}`);

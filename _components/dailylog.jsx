@@ -1,42 +1,5 @@
-// dailylog.jsx: Obsidianデイリーノートの「きょうのメモ」一覧をJSXで表示
-let mdParser = null;
-
-async function md2html(md) {
-  if (!mdParser) {
-    const mdmod = (await import("https://esm.sh/markdown-it@13.0.1?bundle"));
-    const MarkdownIt = mdmod.default;
-    
-    // 簡易wikilinkプラグイン
-    function wikilinkPlugin(md) {
-      md.inline.ruler.before('emphasis', 'wikilink', function wikilink(state, silent) {
-        const start = state.pos;
-        if (state.src.slice(start, start + 2) !== '[[') return false;
-        
-        const end = state.src.indexOf(']]', start + 2);
-        if (end === -1) return false;
-        
-        if (!silent) {
-          const content = state.src.slice(start + 2, end);
-          const [page, alias] = content.split('|');
-          
-          const token = state.push('link_open', 'a', 1);
-          token.attrs = [['data-wikilink', encodeURIComponent(page.trim())]];
-          
-          const textToken = state.push('text', '', 0);
-          textToken.content = alias ? alias.trim() : page.trim();
-          
-          state.push('link_close', 'a', -1);
-        }
-        
-        state.pos = end + 2;
-        return true;
-      });
-    }
-    
-    mdParser = new MarkdownIt();
-    mdParser.use(wikilinkPlugin);
-  }
-  return mdParser.render(md);
+function md2html(md) {
+  return md.replace(/\n/g, "<br>");
 }
 
 export default async function Dailylog({ showAll = false } = {}) {
