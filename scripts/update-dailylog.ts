@@ -15,7 +15,7 @@ const OBSIDIAN_LOG_DIR = Deno.env.get("OBSIDIAN_LOG_DIR") ?? "log";
 const ObsidianIntegrationGithubToken = Deno.env.get("ObsidianIntegrationGithubToken");
 
 // 出力先設定
-const DAILYLOG_JSON = Deno.env.get("DAILYLOG_JSON") ?? "C:/Users/Yudai/personal-website-refactoring/external_data/dailylog.json";
+const DAILYLOG_JSON = Deno.env.get("DAILYLOG_JSON") ?? "C:/Users/Yudai/personal-website/external_data/dailylog.json";
 
 const textDecoder = new TextDecoder();
 // 日付取得（コマンドライン引数 or 今日）

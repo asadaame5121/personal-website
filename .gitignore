@@ -28,6 +28,7 @@ Thumbs.db
 # Project specific
 site-plan.md
 logs/link_graph.log
+brogproject.code-workspace
 
 # Lume cache
 _cache/

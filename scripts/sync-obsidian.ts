@@ -1,5 +1,5 @@
 // Obsidianリポジトリから特定ディレクトリのみ同期コピーするDenoスクリプト
-import { parse, stringify } from "jsr:@std/yaml";
+import { parse, stringify } from "@std/yaml";
 
 // 設定
 const OBSIDIAN_REPO_URL = Deno.env.get("OBSIDIAN_REPO_URL") ?? "https://github.com/asadaame5121/Obsidianbackup.git";
@@ -62,7 +62,7 @@ async function copyMarkdownIfDraftFalse(srcDir: string, destDir: string, errorLo
                 // 設定ファイルからベースURLを取得し、パス結合も堅牢に
                 const config = JSON.parse(await Deno.readTextFile("config.json"));
                 const baseUrl = config.baseUrl ?? "https://asadaame5121.net";
-                const { join } = await import("jsr:@std/path");
+                const { join } = await import("@std/path");
                 const relDir = srcDir.replace(/^.*?([^/\\]+)$/, '$1');
                 const pngName = entry.name.replace(/\.md$/, ".png");
                 frontmatter.metas.image = `${baseUrl}${join("/", relDir, pngName)}`;

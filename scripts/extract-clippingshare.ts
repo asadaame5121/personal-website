@@ -12,7 +12,7 @@ const GITHUB_REPO = Deno.env.get("GITHUB_REPO") ?? "Obsidianbackup";
 const GITHUB_BRANCH = Deno.env.get("GITHUB_BRANCH") ?? "main";
 const CLIPPINGS_DIR = Deno.env.get("CLIPPINGS_DIR") ?? "Clippings";
 const ObsidianIntegrationGithubToken = Deno.env.get("ObsidianIntegrationGithubToken");
-const OUTPUT_PATH = Deno.env.get("CLIPPINGS_OUTPUT_PATH") ?? "C:/Users/Yudai/personal-website-refactoring/external_data/clippingshare.json";
+const OUTPUT_PATH = Deno.env.get("CLIPPINGS_OUTPUT_PATH") ?? "C:/Users/Yudai/personal-website/external_data/clippingshare.json";
 
 const textDecoder = new TextDecoder();
 
