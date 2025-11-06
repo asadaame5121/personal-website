@@ -16,7 +16,7 @@ updated: '2025-07-30 18:58'
 metas:
   title: アルバート・O.ハーシュマン
   description: アルバート・O.ハーシュマンについてのページです。
-  image: 'https://asadaame5121.net\People\アルバート・O.ハーシュマン.png'
+  image: 'https://asadaame5121.net/People/アルバート・O.ハーシュマン.png'
 ---
 ## 解説
 経済学者

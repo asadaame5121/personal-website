@@ -14,7 +14,7 @@ updated: '2025-10-13 14:18'
 metas:
   title: MAUSS
   description: MAUSSについてのページです。
-  image: 'https://asadaame5121.net\Glossary\MAUSS.png'
+  image: 'https://asadaame5121.net/Glossary/MAUSS.png'
 ---
 ## 解説
 Mouvement anti-utilitariste en science sociale

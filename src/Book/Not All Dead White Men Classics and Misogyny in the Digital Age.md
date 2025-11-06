@@ -30,7 +30,7 @@ metas:
   title: Not All Dead White Men Classics and Misogyny in the Digital Age
   description: Not All Dead White Men Classics and Misogyny in the Digital Ageについてのページです。
   image: >-
-    https://asadaame5121.net\Book\Not All Dead White Men Classics and Misogyny
+    https://asadaame5121.net/Book/Not All Dead White Men Classics and Misogyny
     in the Digital Age.png
 ---
 >[!書誌情報]-

@@ -15,7 +15,7 @@ updated: '2025-06-19 17:32'
 metas:
   title: Omnivore
   description: Omnivoreについてのページです。
-  image: 'https://asadaame5121.net\Glossary\Omnivore.png'
+  image: 'https://asadaame5121.net/Glossary/Omnivore.png'
 ---
 ソーシャル・ブックマーキング・サービスの一つ
 ２０２３年末くらいからキャプチャー代わりに使用している

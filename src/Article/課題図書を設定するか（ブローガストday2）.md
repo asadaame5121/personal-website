@@ -16,7 +16,7 @@ amazonUrl: null
 metas:
   title: 課題図書を設定するか（ブローガストday2）
   description: 課題図書を設定するか（ブローガストday2）についてのページです。
-  image: 'https://asadaame5121.net\Article\課題図書を設定するか（ブローガストday2）.png'
+  image: 'https://asadaame5121.net/Article/課題図書を設定するか（ブローガストday2）.png'
 ---
 # 課題図書を設定するか（ブローガスト2日目）
 

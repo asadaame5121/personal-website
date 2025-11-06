@@ -16,7 +16,7 @@ updated: '2025-08-05 21:06'
 metas:
   title: 時間銀行をやりたい(ブローガストDay5)
   description: 時間銀行をやりたい(ブローガストDay5)についてのページです。
-  image: 'https://asadaame5121.net\Article\時間銀行をやりたい(ブローガストDay5).png'
+  image: 'https://asadaame5121.net/Article/時間銀行をやりたい(ブローガストDay5).png'
 ---
 > [!success] 完成
 > このノートは完成しています。
