@@ -34,7 +34,7 @@ jobs:
           SYNC_LOG: ./scripts/sync-obsidian-files.log
 
       - name: Update dailylog JSON (today)
-        run: deno run --allow-read --allow-write --allow-env scripts/update-dailylog.ts
+        run: deno run --allow-read --allow-write --allow-env --allow-net scripts/update-dailylog.ts
         env:
           OBSIDIAN_LOG_DIR: obsidian-latest/log
           DAILYLOG_JSON: external_data/dailylog.json
@@ -42,7 +42,7 @@ jobs:
       - name: Update dailylog JSON (yesterday)
         run: |
           YESTERDAY=$(date -d 'yesterday' +"%Y-%m-%d")
-          deno run --allow-read --allow-write --allow-env scripts/update-dailylog.ts "$YESTERDAY"
+          deno run --allow-read --allow-write --allow-env --allow-net scripts/update-dailylog.ts "$YESTERDAY"
         env:
           OBSIDIAN_LOG_DIR: obsidian-latest/log
           DAILYLOG_JSON: external_data/dailylog.json
