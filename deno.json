@@ -16,7 +16,7 @@
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
-    "build": "deno run --allow-net --allow-write --allow-read --allow-env scripts/extract-clippingshare.ts && deno run --allow-all --allow-net --allow-write --allow-read scripts/update-dailylog.ts && deno task lume",
+    "build": "deno run --allow-all --allow-net --allow-write --allow-read --allow-env scripts/extract-clippingshare.ts && deno run --allow-all --allow-net --allow-write --allow-read scripts/update-dailylog.ts && deno task lume",
     "serve": "deno task lume -s --port 3002"
   },
   "compilerOptions": {
