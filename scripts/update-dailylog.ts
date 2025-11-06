@@ -1,12 +1,23 @@
-// Deno用: Obsidianのデイリーノートから「## きょうのメモ」以降を抽出し、_data/dailylog.mdの先頭に追記するスクリプト
-// 2025-06-24仕様
+// Deno用: GitHub API経由でObsidianのデイリーノートから「## きょうのメモ」以降を抽出し、external_data/dailylog.jsonに書き出すスクリプト
+// 2025-11仕様
 
-import { join } from "jsr:@std/path";
+import { decodeBase64 } from "@std/encoding/base64";
+import { load } from "@std/dotenv";
 
-// 設定
-const OBSIDIAN_LOG_DIR = join(Deno.env.get("OBSIDIAN_LOG_DIR") ?? "C:/Users/Yudai/Documents/Obsidian/log");
-// DAILYLOG_PATHは不要（md出力廃止）
-const DAILYLOG_JSON = join(Deno.env.get("DAILYLOG_JSON") ?? "C:/Users/Yudai/personal-website/external_data/dailylog.json");
+await load({ export: true });
+
+// GitHub API設定
+const GITHUB_API_BASE = Deno.env.get("GITHUB_API_BASE") ?? "https://api.github.com";
+const GITHUB_OWNER = Deno.env.get("GITHUB_OWNER") ?? "asadaame5121";
+const GITHUB_REPO = Deno.env.get("GITHUB_REPO") ?? "Obsidianbackup";
+const GITHUB_BRANCH = Deno.env.get("GITHUB_BRANCH") ?? "main";
+const OBSIDIAN_LOG_DIR = Deno.env.get("OBSIDIAN_LOG_DIR") ?? "log";
+const ObsidianIntegrationGithubToken = Deno.env.get("ObsidianIntegrationGithubToken");
+
+// 出力先設定
+const DAILYLOG_JSON = Deno.env.get("DAILYLOG_JSON") ?? "C:/Users/Yudai/personal-website-refactoring/external_data/dailylog.json";
+
+const textDecoder = new TextDecoder();
 // 日付取得（コマンドライン引数 or 今日）
 function getTargetDate(): string {
   const arg = Deno.args[0];
@@ -53,17 +64,13 @@ function splitDailylogEntries(memo: string): { datetime: string; content: string
 
 async function main() {
   const date = getTargetDate();
-  const logFile = join(OBSIDIAN_LOG_DIR, `${date}.md`);
+  const logPath = buildRepoPath(`${OBSIDIAN_LOG_DIR}/${date}.md`);
 
-  // ファイル存在確認
-  try {
-    await Deno.stat(logFile);
-  } catch (_) {
-    // ファイルがなければ何もしない
+  const md = await readGitHubFile(logPath);
+  if (!md) {
+    // ファイルが存在しない、または取得できない場合は終了
     return;
   }
-
-  const md = await Deno.readTextFile(logFile);
   const memo = extractMemoSection(md);
   if (!memo) return;
 
@@ -91,6 +98,68 @@ await Deno.writeTextFile(
 );
 }
 
+function normalizePath(path: string): string {
+  return path.replace(/^\/+/, "").replace(/\/+$/, "");
+}
+
+function buildRepoPath(path: string): string {
+  const normalized = normalizePath(path);
+  return normalized.split("/").filter(Boolean).join("/");
+}
+
+function buildFileUrl(path: string): string {
+  const normalized = buildRepoPath(path);
+  const base = `${GITHUB_API_BASE}/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents`;
+  const url = new URL(`${base}/${normalized.split("/").map(encodeURIComponent).join("/")}`);
+  url.searchParams.set("ref", GITHUB_BRANCH);
+  return url.toString();
+}
+
+async function githubFetch(url: string): Promise<Response> {
+  const headers = new Headers({
+    "Accept": "application/vnd.github.v3+json",
+    "User-Agent": "update-dailylog-script",
+  });
+  if (ObsidianIntegrationGithubToken) {
+    headers.set("Authorization", `Bearer ${ObsidianIntegrationGithubToken}`);
+  }
+  const response = await fetch(url, { headers });
+  if (response.status === 403 && response.headers.get("X-RateLimit-Remaining") === "0") {
+    const resetUnix = response.headers.get("X-RateLimit-Reset");
+    const resetTime = resetUnix ? new Date(Number(resetUnix) * 1000).toISOString() : "unknown";
+    console.error(`[update-dailylog] GitHub API rate limit exceeded. Resets at ${resetTime}.`);
+  }
+  return response;
+}
+
+async function readGitHubFile(path: string): Promise<string | null> {
+  const url = buildFileUrl(path);
+  const response = await githubFetch(url);
+  if (response.status === 404) {
+    console.warn(`[update-dailylog] ファイルが見つかりません: ${path}`);
+    return null;
+  }
+  if (!response.ok) {
+    console.warn(`[update-dailylog] ファイル取得失敗 (${response.status}): ${path}`);
+    return null;
+  }
+  const json = await response.json() as { content?: string; encoding?: string };
+  if (typeof json.content !== "string") {
+    console.warn(`[update-dailylog] content フィールドが文字列ではありません: ${path}`);
+    return null;
+  }
+  const encoding = typeof json.encoding === "string" ? json.encoding : "base64";
+  if (encoding !== "base64") {
+    console.warn(`[update-dailylog] 未対応のエンコードです (${encoding}): ${path}`);
+    return null;
+  }
+  const bytes = decodeBase64(json.content.replace(/\n/g, ""));
+  return textDecoder.decode(bytes);
+}
+
 if (import.meta.main) {
-  main();
+  main().catch((error) => {
+    console.error(error);
+    Deno.exit(1);
+  });
 }

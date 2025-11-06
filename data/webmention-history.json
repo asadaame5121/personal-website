@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-11-04T12:39:35.969Z",
+  "last_updated": "2025-11-05T12:37:31.962Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -5329,6 +5329,30 @@
         "title": "ラディカル・オーラル・ヒストリー",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-10-31T12:36:36.991Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1762346251507",
+        "source_url": "https://asadaame5121.net/Book/%E9%96%A2%E8%A5%BF%E3%81%AE%E9%9A%A0%E3%82%8C%E3%82%AD%E3%83%AA%E3%82%B7%E3%82%BF%E3%83%B3%E7%99%BA%E8%A6%8B.html",
+        "title": "関西の隠れキリシタン発見",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-11-05T12:37:31.507Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1762346251718",
+        "source_url": "https://asadaame5121.net/Book/%E3%83%9D%E3%82%B9%E3%83%88%E6%A7%8B%E9%80%A0%E4%B8%BB%E7%BE%A9%E3%83%95%E3%82%A7%E3%83%9F%E3%83%8B%E3%82%BA%E3%83%A0%E3%81%A8%E3%81%AF%E4%BD%95%E3%81%A0%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%8B.html",
+        "title": "ポスト構造主義フェミニズムとは何だったのか",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-11-05T12:37:31.718Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1762346251959",
+        "source_url": "https://asadaame5121.net/Book/%E3%81%AA%E3%81%9C%E7%A7%81%E3%81%9F%E3%81%A1%E3%81%AF%E3%80%81%E5%96%9C%E3%82%93%E3%81%A7%E2%80%9C%E8%B3%87%E6%9C%AC%E4%B8%BB%E7%BE%A9%E3%81%AE%E5%A5%B4%E9%9A%B7%E2%80%9D%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%AE%E3%81%8B%EF%BC%9F.html",
+        "title": "なぜ私たちは、喜んで“資本主義の奴隷”になるのか？",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-11-05T12:37:31.959Z",
         "status": "success"
       }
     ]

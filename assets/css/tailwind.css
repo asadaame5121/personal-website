@@ -18,6 +18,89 @@
 
 /* カスタムスタイル */
 
+@layer base {
+  /* Pagefind UI 色調整 */
+  :root {
+    --pagefind-ui-primary: var(--color-mono-accent);
+    --pagefind-ui-text: var(--color-mono-black);
+    --pagefind-ui-text-secondary: var(--color-mono-gray);
+    --pagefind-ui-background: var(--color-mono-white);
+    --pagefind-ui-border: var(--color-mono-lightgray);
+    --pagefind-ui-tag: rgba(74, 85, 104, 0.12);
+    --pagefind-ui-search-outline: var(--color-mono-accent);
+  }
+
+  .pagefind-ui {
+    background-color: var(--pagefind-ui-background);
+    color: var(--pagefind-ui-text);
+  }
+
+  .pagefind-ui__result-title a {
+    color: inherit;
+  }
+
+  .pagefind-ui__result-excerpt,
+  .pagefind-ui__info,
+  .pagefind-ui__message {
+    color: var(--pagefind-ui-text-secondary);
+  }
+
+  .pagefind-ui__form,
+  .pagefind-ui__result {
+    background-color: var(--pagefind-ui-background);
+    border-color: var(--pagefind-ui-border);
+  }
+
+  .pagefind-ui__form input {
+    background-color: var(--pagefind-ui-background);
+    color: var(--pagefind-ui-text);
+    border-color: var(--pagefind-ui-border);
+  }
+
+  .pagefind-ui__tag {
+    background-color: var(--pagefind-ui-tag);
+    color: var(--pagefind-ui-primary);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --pagefind-ui-primary: #A991C5;
+      --pagefind-ui-text: var(--color-mono-white);
+      --pagefind-ui-text-secondary: var(--color-mono-silver);
+      --pagefind-ui-background: #111827;
+      --pagefind-ui-border: #374151;
+      --pagefind-ui-tag: rgba(169, 145, 197, 0.2);
+      --pagefind-ui-search-outline: #A991C5;
+    }
+
+    .pagefind-ui__form,
+    .pagefind-ui__result {
+      background-color: #1F2937;
+      border-color: var(--pagefind-ui-border);
+    }
+
+    .pagefind-ui__form input {
+      background-color: #111827;
+      border-color: var(--pagefind-ui-border);
+      color: var(--color-mono-white);
+    }
+
+    .pagefind-ui__result-title a {
+      color: var(--pagefind-ui-text);
+    }
+
+    .pagefind-ui__result-excerpt,
+    .pagefind-ui__info,
+    .pagefind-ui__message {
+      color: var(--pagefind-ui-text-secondary);
+    }
+
+    .pagefind-ui__tag {
+      color: var(--color-mono-white);
+    }
+  }
+}
+
 /* Obsidian式Callout対応（markdown-it-obsidian-callouts用） */
 .callout {
   @apply border-l-4 rounded px-4 py-3 my-4 shadow bg-base-100;

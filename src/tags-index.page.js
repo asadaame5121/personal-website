@@ -23,6 +23,6 @@ export default function* ({ search }) {
     tags,
     title: "タグ一覧",
     content,
-    layout: "layout-article.jsx",
+    layout: "new_layouts/ArticleLayout.jsx",
   };
 }
