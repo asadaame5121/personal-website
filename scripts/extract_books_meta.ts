@@ -1,6 +1,6 @@
-import { walk } from "https://deno.land/std@0.203.0/fs/walk.ts";
-import { parse } from "https://deno.land/std@0.203.0/yaml/mod.ts";
-import { printf } from "jsr:@std/fmt/printf";
+import { walk } from "@std/fs";
+import { parse } from "@std/yaml";
+import { printf } from "@std/fmt/printf";
 
 
 type BookMeta = {
@@ -25,15 +25,31 @@ for await (const entry of walk(booksDir, { exts: [".md"], includeFiles: true, ma
   const raw = await Deno.readTextFile(entry.path);
   const m = raw.match(/^---([\s\S]+?)---/);
   if (!m) continue;
-  const frontmatter = parse(m[1]);
-  const key = frontmatter.ISBN ?? entry.name.replace(/\.md$/, "");
-  const calilCandidates = Array.isArray(frontmatter["カーリル"]) ? frontmatter["カーリル"] : [frontmatter["カーリル"]];
+
+  const parsed = parse(m[1]);
+  if (!parsed || typeof parsed !== "object") {
+    continue;
+  }
+
+  const frontmatter = parsed as Record<string, unknown>;
+
+  const isbn = typeof frontmatter.ISBN === "string" ? frontmatter.ISBN : entry.name.replace(/\.md$/, "");
+
+  const calilField = frontmatter["カーリル"];
+  const calilCandidates = Array.isArray(calilField)
+    ? calilField.filter((value): value is string => typeof value === "string")
+    : (typeof calilField === "string" ? [calilField] : []);
   const calilUrl = (calilCandidates.find(isValidCalilUrl)) ?? "";
-  books[key] = {
-    title: frontmatter.title ?? "",
-    amazonUrl: frontmatter.amazonUrl ?? "",
+
+  const metas = frontmatter.metas && typeof frontmatter.metas === "object"
+    ? frontmatter.metas as Record<string, unknown>
+    : undefined;
+
+  books[isbn] = {
+    title: typeof frontmatter.title === "string" ? frontmatter.title : "",
+    amazonUrl: typeof frontmatter.amazonUrl === "string" ? frontmatter.amazonUrl : "",
     calilUrl,
-    image: frontmatter.metas?.image ?? "",
+    image: typeof metas?.image === "string" ? metas.image : "",
   };
 }
 
