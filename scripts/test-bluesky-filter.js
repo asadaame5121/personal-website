@@ -121,7 +121,7 @@ async function testBlueskyFilter() {
   } catch (error) {
     console.error("テスト実行中にエラーが発生しました:", error);
   }
-}
+
 
 // テスト実行
 await testBlueskyFilter();

@@ -1,7 +1,8 @@
 {
   "imports": {
     "@atproto/api": "npm:@atproto/api@^0.14.22",
-    "@std/dotenv": "jsr:@std/dotenv@^0.225.3",
+    "@std/dotenv": "jsr:@std/dotenv@^0.225.5",
+    "@std/encoding": "jsr:@std/encoding@^1.0.10",
     "@std/front-matter": "jsr:@std/front-matter@^1.0.9",
     "@std/fs": "jsr:@std/fs@^1.0.16",
     "@std/io": "jsr:@std/io@^0.225.2",
@@ -13,7 +14,7 @@
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "deno task lume",
-    "serve": "deno task lume -s"
+    "serve": "deno task lume -s --port 3002"
   },
   "compilerOptions": {
     "types": [

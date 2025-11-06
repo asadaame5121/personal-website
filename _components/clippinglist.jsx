@@ -1,6 +1,5 @@
 // clipping-list.jsx: ObsidianのClippingsフォルダ内の各mdファイルから「ファイル名」とフロントマターのsourceプロパティを抽出し、data/clippingshare.mdに保存（Deno用）
 // このコンポーネントはWebサイト上でクリッピング一覧を表示するためのもの。
-// clippingshare.mdは事前に外部スクリプトで生成されている前提。
 
 // Markdown→HTML変換用の関数。
 // 現状は改行のみ<br>タグに変換する超簡易実装。
