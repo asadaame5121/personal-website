@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2025-11-05T12:37:31.962Z",
+  "last_updated": "2025-11-07T13:02:25.141Z",
   "sent_webmentions": {
     "dailylog": [
       {
@@ -337,6 +337,20 @@
         "source_url": "https://asadaame5121.net/dailylog#entry-6a095a73-3c39-4bb0-a9cd-a5786bba9571",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-10-29T12:38:18.571Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "d14c21bb-5711-4c93-aaab-5803632da1b4",
+        "source_url": "https://asadaame5121.net/dailylog#entry-d14c21bb-5711-4c93-aaab-5803632da1b4",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-11-07T12:36:15.019Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "587c1bee-f069-4a0d-b9f3-ff86fd1c0bd6",
+        "source_url": "https://asadaame5121.net/dailylog#entry-587c1bee-f069-4a0d-b9f3-ff86fd1c0bd6",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-11-07T12:36:15.441Z",
         "status": "success"
       }
     ],
@@ -4848,6 +4862,1608 @@
         "sent_at": "2025-09-03T12:34:37.831Z",
         "status": "failed",
         "error_message": "Webmentionエンドポイントが見つかりません: https://techfeed.io/entries/68b60f6cd0e17253abf4298c (not-found)"
+      },
+      {
+        "clip_id": "09e80ae3-5459-46f9-aa5b-ae406d1673fa",
+        "source_url": "https://asadaame5121.net/clippingshare/09e80ae3-5459-46f9-aa5b-ae406d1673fa",
+        "target_url": "https://www.asahi.com/sp/articles/ASTBG22C1TBGUPQJ004M.html?iref=sp_new_news_list_n",
+        "sent_at": "2025-11-07T12:36:15.447Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.asahi.com/sp/articles/ASTBG22C1TBGUPQJ004M.html?iref=sp_new_news_list_n (not-found)"
+      },
+      {
+        "clip_id": "62af0930-170c-420e-89fb-2bf94bfcead3",
+        "source_url": "https://asadaame5121.net/clippingshare/62af0930-170c-420e-89fb-2bf94bfcead3",
+        "target_url": "https://www.kanaloco.jp/news/social/article-1215194.html",
+        "sent_at": "2025-11-07T12:36:22.349Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.kanaloco.jp/news/social/article-1215194.html (not-found)"
+      },
+      {
+        "clip_id": "34b393d5-781f-403e-a666-d71a5ca0c557",
+        "source_url": "https://asadaame5121.net/clippingshare/34b393d5-781f-403e-a666-d71a5ca0c557",
+        "target_url": "https://zenn.dev/wyuma/articles/4c9ca1eedca8e9#discuss",
+        "sent_at": "2025-11-07T12:36:30.250Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://zenn.dev/wyuma/articles/4c9ca1eedca8e9#discuss (not-found)"
+      },
+      {
+        "clip_id": "e5f9245f-fba7-4663-a49e-69b931edc423",
+        "source_url": "https://asadaame5121.net/clippingshare/e5f9245f-fba7-4663-a49e-69b931edc423",
+        "target_url": "https://www.taiwan-panorama.com/ja/Articles/Details?Guid=f8d98dd9-ea9c-4762-8b3b-d7bf685a1d16",
+        "sent_at": "2025-11-07T12:36:36.725Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.taiwan-panorama.com/ja/Articles/Details?Guid=f8d98dd9-ea9c-4762-8b3b-d7bf685a1d16 (Fetch failed: Maximum number of redirects (20) reached)"
+      },
+      {
+        "clip_id": "1eed2ed9-fd69-417d-93c4-f9e1ef77b25a",
+        "source_url": "https://asadaame5121.net/clippingshare/1eed2ed9-fd69-417d-93c4-f9e1ef77b25a",
+        "target_url": "https://digital.asahi.com/sp/articles/AST844DKPT84ULLI001M.html?ptoken=01K21NR3KKZYVCD0VYD8DXJ14C",
+        "sent_at": "2025-11-07T12:36:43.358Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST844DKPT84ULLI001M.html?ptoken=01K21NR3KKZYVCD0VYD8DXJ14C (not-found)"
+      },
+      {
+        "clip_id": "6e25f061-5c84-4cc8-bef4-67eb3ecca39d",
+        "source_url": "https://asadaame5121.net/clippingshare/6e25f061-5c84-4cc8-bef4-67eb3ecca39d",
+        "target_url": "https://mxb.dev/blog/webring-kit/",
+        "sent_at": "2025-11-07T12:36:51.468Z",
+        "status": "success",
+        "response_code": 201
+      },
+      {
+        "clip_id": "6d64eff8-0442-4899-ac37-d76c1b80c941",
+        "source_url": "https://asadaame5121.net/clippingshare/6d64eff8-0442-4899-ac37-d76c1b80c941",
+        "target_url": "https://wirelesswire.jp/2025/06/88810/",
+        "sent_at": "2025-11-07T12:37:13.470Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://wirelesswire.jp/2025/06/88810/ (not-found)"
+      },
+      {
+        "clip_id": "c1c49ac5-43a1-44a4-ae01-543173a2faad",
+        "source_url": "https://asadaame5121.net/clippingshare/c1c49ac5-43a1-44a4-ae01-543173a2faad",
+        "target_url": "https://maggieappleton.com/bidirectionals/",
+        "sent_at": "2025-11-07T12:37:20.580Z",
+        "status": "success",
+        "response_code": 201
+      },
+      {
+        "clip_id": "7aebd9ff-6a98-42ba-b1b0-789ba719b7f4",
+        "source_url": "https://asadaame5121.net/clippingshare/7aebd9ff-6a98-42ba-b1b0-789ba719b7f4",
+        "target_url": "https://gwern.net/design",
+        "sent_at": "2025-11-07T12:37:26.996Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://gwern.net/design (not-found)"
+      },
+      {
+        "clip_id": "e6ab2463-5184-46b0-9768-d4997fcf525a",
+        "source_url": "https://asadaame5121.net/clippingshare/e6ab2463-5184-46b0-9768-d4997fcf525a",
+        "target_url": "https://prtimes.jp/main/html/rd/p/000000006.000166170.html",
+        "sent_at": "2025-11-07T12:37:33.865Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://prtimes.jp/main/html/rd/p/000000006.000166170.html (not-found)"
+      },
+      {
+        "clip_id": "f57d3cac-627e-491c-b75d-77dd5e09246a",
+        "source_url": "https://asadaame5121.net/clippingshare/f57d3cac-627e-491c-b75d-77dd5e09246a",
+        "target_url": "https://www.taylorfrancis.com/books/oa-edit/10.4324/9781003571384/new-global-economic-order-lili-yan-ing-dani-rodrik",
+        "sent_at": "2025-11-07T12:37:40.315Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.taylorfrancis.com/books/oa-edit/10.4324/9781003571384/new-global-economic-order-lili-yan-ing-dani-rodrik (not-found)"
+      },
+      {
+        "clip_id": "7e2a6a20-ead2-487c-95c6-e57d12e68b8a",
+        "source_url": "https://asadaame5121.net/clippingshare/7e2a6a20-ead2-487c-95c6-e57d12e68b8a",
+        "target_url": "https://qiita.com/ko1nksm/items/c4e25a489e19698a4809",
+        "sent_at": "2025-11-07T12:37:46.890Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://qiita.com/ko1nksm/items/c4e25a489e19698a4809 (not-found)"
+      },
+      {
+        "clip_id": "c7916ab6-c072-4645-95c6-d10523f10965",
+        "source_url": "https://asadaame5121.net/clippingshare/c7916ab6-c072-4645-95c6-d10523f10965",
+        "target_url": "https://www.ibunsha.co.jp/contents/haraguchi04/",
+        "sent_at": "2025-11-07T12:37:53.557Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.ibunsha.co.jp/contents/haraguchi04/ (not-found)"
+      },
+      {
+        "clip_id": "14e4c639-149b-4ac9-9639-0226e7071463",
+        "source_url": "https://asadaame5121.net/clippingshare/14e4c639-149b-4ac9-9639-0226e7071463",
+        "target_url": "https://gigazine.net/news/20250722-steam-introduced-confusing-new-rules-adult-content/",
+        "sent_at": "2025-11-07T12:38:04.790Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://gigazine.net/news/20250722-steam-introduced-confusing-new-rules-adult-content/ (not-found)"
+      },
+      {
+        "clip_id": "6d9444a9-077d-4b46-96f3-33fcce798716",
+        "source_url": "https://asadaame5121.net/clippingshare/6d9444a9-077d-4b46-96f3-33fcce798716",
+        "target_url": "https://maggieappleton.com/smidgeons",
+        "sent_at": "2025-11-07T12:38:11.862Z",
+        "status": "success",
+        "response_code": 201
+      },
+      {
+        "clip_id": "578599af-f5f2-4764-9db5-481f603aff49",
+        "source_url": "https://asadaame5121.net/clippingshare/578599af-f5f2-4764-9db5-481f603aff49",
+        "target_url": "https://u-site.jp/alertbox/981129",
+        "sent_at": "2025-11-07T12:38:17.953Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://u-site.jp/alertbox/981129 (not-found)"
+      },
+      {
+        "clip_id": "4d376787-1cc8-454f-92d6-7e98273227a7",
+        "source_url": "https://asadaame5121.net/clippingshare/4d376787-1cc8-454f-92d6-7e98273227a7",
+        "target_url": "https://jxiv.jst.go.jp/jxiv_docs/ja/Jxiv_about_ja.html",
+        "sent_at": "2025-11-07T12:38:25.031Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://jxiv.jst.go.jp/jxiv_docs/ja/Jxiv_about_ja.html (not-found)"
+      },
+      {
+        "clip_id": "c2923dd9-2e61-4c25-aa14-19cecac20961",
+        "source_url": "https://asadaame5121.net/clippingshare/c2923dd9-2e61-4c25-aa14-19cecac20961",
+        "target_url": "https://www.wsj.com/politics/trump-jeffrey-epstein-birthday-letter-we-have-certain-things-in-common-f918d796?st=GBmkTi&reflink=desktopwebshare_permalink",
+        "sent_at": "2025-11-07T12:38:31.676Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.wsj.com/politics/trump-jeffrey-epstein-birthday-letter-we-have-certain-things-in-common-f918d796?st=GBmkTi&reflink=desktopwebshare_permalink (HTTP 401: Unauthorized)"
+      },
+      {
+        "clip_id": "38cd0a7a-53fb-4b92-9d10-c81e50cb1daf",
+        "source_url": "https://asadaame5121.net/clippingshare/38cd0a7a-53fb-4b92-9d10-c81e50cb1daf",
+        "target_url": "https://tybx.jp/posts/introduction-of-webmention",
+        "sent_at": "2025-11-07T12:38:37.919Z",
+        "status": "failed",
+        "response_code": 404,
+        "error_message": "HTTP 404: POST &#x2F;tybx.jp&#x2F;webmention&#x2F;"
+      },
+      {
+        "clip_id": "9d43aac1-d39d-4db5-bde4-4b23ae181551",
+        "source_url": "https://asadaame5121.net/clippingshare/9d43aac1-d39d-4db5-bde4-4b23ae181551",
+        "target_url": "https://nawashiro.dev/posts/240613-ideal-social-media",
+        "sent_at": "2025-11-07T12:39:44.941Z",
+        "status": "success",
+        "response_code": 201
+      },
+      {
+        "clip_id": "74b4c339-9a55-4513-b5db-b504a182a630",
+        "source_url": "https://asadaame5121.net/clippingshare/74b4c339-9a55-4513-b5db-b504a182a630",
+        "target_url": "https://www.nytimes.com/2025/07/15/opinion/israel-gaza-holocaust-genocide-palestinians.html?unlocked_article_code=1.W08.IFir.Li7qrZMUzEFt",
+        "sent_at": "2025-11-07T12:39:51.187Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2025/07/15/opinion/israel-gaza-holocaust-genocide-palestinians.html?unlocked_article_code=1.W08.IFir.Li7qrZMUzEFt (not-found)"
+      },
+      {
+        "clip_id": "9e0ca14b-2df7-43b5-9b24-9a950a5c11b0",
+        "source_url": "https://asadaame5121.net/clippingshare/9e0ca14b-2df7-43b5-9b24-9a950a5c11b0",
+        "target_url": "https://wirelesswire.jp/2025/07/88919/",
+        "sent_at": "2025-11-07T12:39:57.530Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://wirelesswire.jp/2025/07/88919/ (not-found)"
+      },
+      {
+        "clip_id": "8404be1f-6812-4283-8f8b-84fee518bdd1",
+        "source_url": "https://asadaame5121.net/clippingshare/8404be1f-6812-4283-8f8b-84fee518bdd1",
+        "target_url": "https://mainichi.jp/articles/20250712/k00/00m/010/201000c",
+        "sent_at": "2025-11-07T12:40:04.405Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://mainichi.jp/articles/20250712/k00/00m/010/201000c (not-found)"
+      },
+      {
+        "clip_id": "0b08ba9d-13fd-4376-83dc-39c74616de10",
+        "source_url": "https://asadaame5121.net/clippingshare/0b08ba9d-13fd-4376-83dc-39c74616de10",
+        "target_url": "https://aboutmonica.com/blog/automate-webmentions-with-github-actions/",
+        "sent_at": "2025-11-07T12:40:12.064Z",
+        "status": "success",
+        "response_code": 201
+      },
+      {
+        "clip_id": "993e6e75-52f1-44da-aadb-4af97c4cc08a",
+        "source_url": "https://asadaame5121.net/clippingshare/993e6e75-52f1-44da-aadb-4af97c4cc08a",
+        "target_url": "https://partytown.qwik.dev/",
+        "sent_at": "2025-11-07T12:40:18.472Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://partytown.qwik.dev/ (not-found)"
+      },
+      {
+        "clip_id": "7ed0a438-5630-4405-ac57-6df51151bccc",
+        "source_url": "https://asadaame5121.net/clippingshare/7ed0a438-5630-4405-ac57-6df51151bccc",
+        "target_url": "https://honeshabri.hatenablog.com/entry/books-2024-2025#2-%E3%83%B4%E3%82%A3%E3%82%AF%E3%83%88%E3%83%AA%E3%82%A2%E6%9C%9D%E6%99%82%E4%BB%A3%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88",
+        "sent_at": "2025-11-07T12:40:24.810Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://honeshabri.hatenablog.com/entry/books-2024-2025#2-%E3%83%B4%E3%82%A3%E3%82%AF%E3%83%88%E3%83%AA%E3%82%A2%E6%9C%9D%E6%99%82%E4%BB%A3%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88 (not-found)"
+      },
+      {
+        "clip_id": "f4c3837f-7085-4cce-80b5-80ae3a39e148",
+        "source_url": "https://asadaame5121.net/clippingshare/f4c3837f-7085-4cce-80b5-80ae3a39e148",
+        "target_url": "https://dlt.kitetu.com/",
+        "sent_at": "2025-11-07T12:40:31.671Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://dlt.kitetu.com/ (not-found)"
+      },
+      {
+        "clip_id": "aaba895c-cdb1-4329-90b4-c0d640a4146e",
+        "source_url": "https://asadaame5121.net/clippingshare/aaba895c-cdb1-4329-90b4-c0d640a4146e",
+        "target_url": "https://digital.asahi.com/sp/articles/AST771PC0T77UPQJ00JM.html?ptoken=01JZKK0K93AX0F5BE6NRNVHQES",
+        "sent_at": "2025-11-07T12:40:37.836Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST771PC0T77UPQJ00JM.html?ptoken=01JZKK0K93AX0F5BE6NRNVHQES (not-found)"
+      },
+      {
+        "clip_id": "7614f402-e69b-49e3-a0fb-c4a4c069d302",
+        "source_url": "https://asadaame5121.net/clippingshare/7614f402-e69b-49e3-a0fb-c4a4c069d302",
+        "target_url": "https://deno.com/blog/deploy-static-files",
+        "sent_at": "2025-11-07T12:40:45.419Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://deno.com/blog/deploy-static-files (not-found)"
+      },
+      {
+        "clip_id": "83d8a587-ace8-4a5e-93e9-3b0c864b9a83",
+        "source_url": "https://asadaame5121.net/clippingshare/83d8a587-ace8-4a5e-93e9-3b0c864b9a83",
+        "target_url": "https://benesult.com/ja/iaponia/index.html",
+        "sent_at": "2025-11-07T12:40:51.671Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://benesult.com/ja/iaponia/index.html (not-found)"
+      },
+      {
+        "clip_id": "127df0cf-d364-445a-9f84-d292aef3a4ac",
+        "source_url": "https://asadaame5121.net/clippingshare/127df0cf-d364-445a-9f84-d292aef3a4ac",
+        "target_url": "https://japan.cnet.com/article/35235125/",
+        "sent_at": "2025-11-07T12:40:58.476Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://japan.cnet.com/article/35235125/ (not-found)"
+      },
+      {
+        "clip_id": "bbb5e92a-ee96-4dd7-8e82-167969679ba9",
+        "source_url": "https://asadaame5121.net/clippingshare/bbb5e92a-ee96-4dd7-8e82-167969679ba9",
+        "target_url": "https://nejimaki-radio.com/digital-garden-blog-indie-website-personal-internet/",
+        "sent_at": "2025-11-07T12:41:05.232Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://nejimaki-radio.com/digital-garden-blog-indie-website-personal-internet/ (not-found)"
+      },
+      {
+        "clip_id": "eb594539-37bf-49df-901e-3521adbe2bd8",
+        "source_url": "https://asadaame5121.net/clippingshare/eb594539-37bf-49df-901e-3521adbe2bd8",
+        "target_url": "https://joelhooks.com/digital-garden/",
+        "sent_at": "2025-11-07T12:41:13.098Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://joelhooks.com/digital-garden/ (not-found)"
+      },
+      {
+        "clip_id": "bf516479-bbab-4187-a04e-8193e56f1198",
+        "source_url": "https://asadaame5121.net/clippingshare/bf516479-bbab-4187-a04e-8193e56f1198",
+        "target_url": "https://www.itmedia.co.jp/news/spv/2507/03/news027.html",
+        "sent_at": "2025-11-07T12:41:19.372Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.itmedia.co.jp/news/spv/2507/03/news027.html (not-found)"
+      },
+      {
+        "clip_id": "c59b5e82-f32d-4f90-b8ad-643a7d840109",
+        "source_url": "https://asadaame5121.net/clippingshare/c59b5e82-f32d-4f90-b8ad-643a7d840109",
+        "target_url": "https://s-newscommons.com/article/8623",
+        "sent_at": "2025-11-07T12:41:26.354Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://s-newscommons.com/article/8623 (not-found)"
+      },
+      {
+        "clip_id": "3e038dba-22de-4b09-88ae-c7cda044686a",
+        "source_url": "https://asadaame5121.net/clippingshare/3e038dba-22de-4b09-88ae-c7cda044686a",
+        "target_url": "https://ascii.jp/elem/000/004/213/4213879/",
+        "sent_at": "2025-11-07T12:41:33.245Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://ascii.jp/elem/000/004/213/4213879/ (not-found)"
+      },
+      {
+        "clip_id": "1a626095-5a6a-4b28-8b4b-d23aaa4aa28f",
+        "source_url": "https://asadaame5121.net/clippingshare/1a626095-5a6a-4b28-8b4b-d23aaa4aa28f",
+        "target_url": "https://mainichi.jp/articles/20250627/k00/00m/040/391000c",
+        "sent_at": "2025-11-07T12:41:40.512Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://mainichi.jp/articles/20250627/k00/00m/040/391000c (not-found)"
+      },
+      {
+        "clip_id": "510fbccb-2527-48d5-a6aa-2cfcb457109e",
+        "source_url": "https://asadaame5121.net/clippingshare/510fbccb-2527-48d5-a6aa-2cfcb457109e",
+        "target_url": "https://digital.asahi.com/sp/articles/AST6V31DST6VUTFK00TM.html?ptoken=01JYQFWM766WA9D4ETAKK0ZV7J",
+        "sent_at": "2025-11-07T12:41:47.599Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST6V31DST6VUTFK00TM.html?ptoken=01JYQFWM766WA9D4ETAKK0ZV7J (not-found)"
+      },
+      {
+        "clip_id": "6d235621-f572-4b8d-8eac-f1c5056124aa",
+        "source_url": "https://asadaame5121.net/clippingshare/6d235621-f572-4b8d-8eac-f1c5056124aa",
+        "target_url": "https://globe.asahi.com/article/15845779",
+        "sent_at": "2025-11-07T12:41:54.417Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://globe.asahi.com/article/15845779 (not-found)"
+      },
+      {
+        "clip_id": "30be1450-85a3-4431-b95a-41463004bd89",
+        "source_url": "https://asadaame5121.net/clippingshare/30be1450-85a3-4431-b95a-41463004bd89",
+        "target_url": "https://news.yahoo.co.jp/expert/articles/a8c540ceeac4bad06c7f110d2c927b1b0f2763e2",
+        "sent_at": "2025-11-07T12:42:03.743Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://news.yahoo.co.jp/expert/articles/a8c540ceeac4bad06c7f110d2c927b1b0f2763e2 (not-found)"
+      },
+      {
+        "clip_id": "8c19f82d-4ee6-4c11-bd81-7bf23ca08392",
+        "source_url": "https://asadaame5121.net/clippingshare/8c19f82d-4ee6-4c11-bd81-7bf23ca08392",
+        "target_url": "https://note.com/caffelover/n/n350fc02af2fc?sub_rt=share_pb",
+        "sent_at": "2025-11-07T12:42:11.770Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://note.com/caffelover/n/n350fc02af2fc?sub_rt=share_pb (not-found)"
+      },
+      {
+        "clip_id": "eee38582-cec7-4ab2-85f8-4528e8b16c59",
+        "source_url": "https://asadaame5121.net/clippingshare/eee38582-cec7-4ab2-85f8-4528e8b16c59",
+        "target_url": "https://www.synchronous.jp/articles/-/2566",
+        "sent_at": "2025-11-07T12:42:18.484Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.synchronous.jp/articles/-/2566 (not-found)"
+      },
+      {
+        "clip_id": "d10ecb8a-359e-431b-986a-b62a0bc2b061",
+        "source_url": "https://asadaame5121.net/clippingshare/d10ecb8a-359e-431b-986a-b62a0bc2b061",
+        "target_url": "https://globe.asahi.com/article/15845779",
+        "sent_at": "2025-11-07T12:42:26.135Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://globe.asahi.com/article/15845779 (not-found)"
+      },
+      {
+        "clip_id": "3959b81c-548d-4aab-b501-35401f4643d4",
+        "source_url": "https://asadaame5121.net/clippingshare/3959b81c-548d-4aab-b501-35401f4643d4",
+        "target_url": "https://www.soc.hit-u.ac.jp/~methodology/review.html",
+        "sent_at": "2025-11-07T12:42:32.186Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.soc.hit-u.ac.jp/~methodology/review.html (not-found)"
+      },
+      {
+        "clip_id": "397dadf9-05f8-4d44-8a88-3624f7573f46",
+        "source_url": "https://asadaame5121.net/clippingshare/397dadf9-05f8-4d44-8a88-3624f7573f46",
+        "target_url": "https://blog.overkast.jp/2011/06/%E3%83%A9%E3%82%AB%E3%83%B3%E7%90%86%E8%AB%96%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86-2/",
+        "sent_at": "2025-11-07T12:42:39.509Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://blog.overkast.jp/2011/06/%E3%83%A9%E3%82%AB%E3%83%B3%E7%90%86%E8%AB%96%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86-2/ (error sending request for url (https://blog.overkast.jp/2011/06/%E3%83%A9%E3%82%AB%E3%83%B3%E7%90%86%E8%AB%96%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86-2/): client error (Connect): invalid peer certificate: certificate expired: verification time 1762519360 (UNIX), but certificate is not valid after 1755918295 (6601065 seconds ago))"
+      },
+      {
+        "clip_id": "53b4f8b6-ef94-4ea0-a40b-a820911a7106",
+        "source_url": "https://asadaame5121.net/clippingshare/53b4f8b6-ef94-4ea0-a40b-a820911a7106",
+        "target_url": "https://blog.overkast.jp/2011/07/%E3%83%A9%E3%82%AB%E3%83%B3%E7%90%86%E8%AB%96%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86-3/",
+        "sent_at": "2025-11-07T12:42:46.051Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://blog.overkast.jp/2011/07/%E3%83%A9%E3%82%AB%E3%83%B3%E7%90%86%E8%AB%96%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86-3/ (error sending request for url (https://blog.overkast.jp/2011/07/%E3%83%A9%E3%82%AB%E3%83%B3%E7%90%86%E8%AB%96%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86-3/): client error (Connect): invalid peer certificate: certificate expired: verification time 1762519366 (UNIX), but certificate is not valid after 1755918295 (6601071 seconds ago))"
+      },
+      {
+        "clip_id": "ae5bab28-c549-4560-8e80-afe8afb5196a",
+        "source_url": "https://asadaame5121.net/clippingshare/ae5bab28-c549-4560-8e80-afe8afb5196a",
+        "target_url": "https://blog.overkast.jp/2011/06/%E3%83%A9%E3%82%AB%E3%83%B3%E7%90%86%E8%AB%96%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86-1/",
+        "sent_at": "2025-11-07T12:42:52.356Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://blog.overkast.jp/2011/06/%E3%83%A9%E3%82%AB%E3%83%B3%E7%90%86%E8%AB%96%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86-1/ (error sending request for url (https://blog.overkast.jp/2011/06/%E3%83%A9%E3%82%AB%E3%83%B3%E7%90%86%E8%AB%96%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%89%8B%E9%A0%86-1/): client error (Connect): invalid peer certificate: certificate expired: verification time 1762519372 (UNIX), but certificate is not valid after 1755918295 (6601077 seconds ago))"
+      },
+      {
+        "clip_id": "31cb1b9d-c625-4344-b41d-2b74bd7a053f",
+        "source_url": "https://asadaame5121.net/clippingshare/31cb1b9d-c625-4344-b41d-2b74bd7a053f",
+        "target_url": "https://www.reddit.com/r/ObsidianMD/comments/1jd5ccf/working_on_a_new_obsidian_plugin_rss_dashboard/",
+        "sent_at": "2025-11-07T12:42:58.605Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.reddit.com/r/ObsidianMD/comments/1jd5ccf/working_on_a_new_obsidian_plugin_rss_dashboard/ (HTTP 403: Forbidden)"
+      },
+      {
+        "clip_id": "e2aa9d6a-df55-43dd-9776-0c759f7867ac",
+        "source_url": "https://asadaame5121.net/clippingshare/e2aa9d6a-df55-43dd-9776-0c759f7867ac",
+        "target_url": "https://github.com/amatya-aditya/obsidian-rss-dashboard",
+        "sent_at": "2025-11-07T12:43:04.725Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://github.com/amatya-aditya/obsidian-rss-dashboard (not-found)"
+      },
+      {
+        "clip_id": "8c3cf58f-707d-4b7e-a8a4-dcb118c752d9",
+        "source_url": "https://asadaame5121.net/clippingshare/8c3cf58f-707d-4b7e-a8a4-dcb118c752d9",
+        "target_url": "https://digital.asahi.com/sp/articles/AST6S56R8T6SUTFL022M.html?ptoken=01JYN0C7Y4DQCRWK4CC9B0TTMN",
+        "sent_at": "2025-11-07T12:43:11.342Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST6S56R8T6SUTFL022M.html?ptoken=01JYN0C7Y4DQCRWK4CC9B0TTMN (not-found)"
+      },
+      {
+        "clip_id": "90845883-b185-46cb-b4a2-1d9d17ad1761",
+        "source_url": "https://asadaame5121.net/clippingshare/90845883-b185-46cb-b4a2-1d9d17ad1761",
+        "target_url": "https://book.asahi.com/jinbun/article/15752038",
+        "sent_at": "2025-11-07T12:43:18.641Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://book.asahi.com/jinbun/article/15752038 (not-found)"
+      },
+      {
+        "clip_id": "0e19980a-d975-4fdd-96ed-6ae3fb3e5ee3",
+        "source_url": "https://asadaame5121.net/clippingshare/0e19980a-d975-4fdd-96ed-6ae3fb3e5ee3",
+        "target_url": "https://digital.asahi.com/sp/articles/DA3S16242447.html?ptoken=01JYJ1BK7KWS067A16NSGNW05T",
+        "sent_at": "2025-11-07T12:43:25.678Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16242447.html?ptoken=01JYJ1BK7KWS067A16NSGNW05T (not-found)"
+      },
+      {
+        "clip_id": "9e318372-073d-4e47-bae6-762a1f0bad6a",
+        "source_url": "https://asadaame5121.net/clippingshare/9e318372-073d-4e47-bae6-762a1f0bad6a",
+        "target_url": "https://x.com/yasgreen615/status/1936223314932121735",
+        "sent_at": "2025-11-07T12:43:32.632Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://x.com/yasgreen615/status/1936223314932121735 (not-found)"
+      },
+      {
+        "clip_id": "cd495867-f2d9-44ff-9d44-e28eea3cff8b",
+        "source_url": "https://asadaame5121.net/clippingshare/cd495867-f2d9-44ff-9d44-e28eea3cff8b",
+        "target_url": "https://quillette.com/2022/10/22/the-dawn-of-everything-and-the-politics-of-human-prehistory/",
+        "sent_at": "2025-11-07T12:43:38.987Z",
+        "status": "success",
+        "response_code": 202
+      },
+      {
+        "clip_id": "ebbc8b03-39b7-4860-91dc-9dc3d3468c5b",
+        "source_url": "https://asadaame5121.net/clippingshare/ebbc8b03-39b7-4860-91dc-9dc3d3468c5b",
+        "target_url": "https://x.com/konoy541/status/1935296081367355739",
+        "sent_at": "2025-11-07T12:43:45.394Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://x.com/konoy541/status/1935296081367355739 (not-found)"
+      },
+      {
+        "clip_id": "37b39ee9-67b6-4ebc-b2fd-007503609247",
+        "source_url": "https://asadaame5121.net/clippingshare/37b39ee9-67b6-4ebc-b2fd-007503609247",
+        "target_url": "https://lume.land/plugins/nav/",
+        "sent_at": "2025-11-07T12:43:51.559Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://lume.land/plugins/nav/ (not-found)"
+      },
+      {
+        "clip_id": "0041afce-5959-47e4-8d4e-680928530b74",
+        "source_url": "https://asadaame5121.net/clippingshare/0041afce-5959-47e4-8d4e-680928530b74",
+        "target_url": "https://digital.asahi.com/sp/articles/AST6D20T1T6DULLI005M.html?ptoken=01JXYJY4WYK36NWAG7R00C8S9S",
+        "sent_at": "2025-11-07T12:43:58.077Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST6D20T1T6DULLI005M.html?ptoken=01JXYJY4WYK36NWAG7R00C8S9S (not-found)"
+      },
+      {
+        "clip_id": "b1155afa-31e1-4953-aa56-a2a81aa46b7a",
+        "source_url": "https://asadaame5121.net/clippingshare/b1155afa-31e1-4953-aa56-a2a81aa46b7a",
+        "target_url": "https://digital.asahi.com/sp/articles/AST6C2HS0T6CULLI007M.html?ptoken=01JXVRRJ9W57CDM9M09TN83N01",
+        "sent_at": "2025-11-07T12:44:04.885Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST6C2HS0T6CULLI007M.html?ptoken=01JXVRRJ9W57CDM9M09TN83N01 (not-found)"
+      },
+      {
+        "clip_id": "b26d801e-c9ee-4618-a93c-cb6985a03b48",
+        "source_url": "https://asadaame5121.net/clippingshare/b26d801e-c9ee-4618-a93c-cb6985a03b48",
+        "target_url": "https://www.wsj.com/politics/national-security/ufo-us-disinformation-45376f7e?st=NWhKJy&reflink=desktopwebshare_permalink",
+        "sent_at": "2025-11-07T12:44:11.615Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.wsj.com/politics/national-security/ufo-us-disinformation-45376f7e?st=NWhKJy&reflink=desktopwebshare_permalink (HTTP 401: Unauthorized)"
+      },
+      {
+        "clip_id": "20054ab1-b239-40ce-914f-92058f070053",
+        "source_url": "https://asadaame5121.net/clippingshare/20054ab1-b239-40ce-914f-92058f070053",
+        "target_url": "https://digital.asahi.com/sp/articles/AST633V2TT63UTIL03SM.html?ptoken=01JXF8Y5E3R338V310ASQF2D5H",
+        "sent_at": "2025-11-07T12:44:17.779Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST633V2TT63UTIL03SM.html?ptoken=01JXF8Y5E3R338V310ASQF2D5H (not-found)"
+      },
+      {
+        "clip_id": "580c2ca3-a002-4895-a059-31dc193317d5",
+        "source_url": "https://asadaame5121.net/clippingshare/580c2ca3-a002-4895-a059-31dc193317d5",
+        "target_url": "https://digital.asahi.com/sp/articles/AST613JXGT61UTIL033M.html?ptoken=01JWQ2CGVZBDTQV8QVS8W70JS7",
+        "sent_at": "2025-11-07T12:44:24.636Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST613JXGT61UTIL033M.html?ptoken=01JWQ2CGVZBDTQV8QVS8W70JS7 (not-found)"
+      },
+      {
+        "clip_id": "8ed4e68f-93ad-4ddb-b31a-3902df16967f",
+        "source_url": "https://asadaame5121.net/clippingshare/8ed4e68f-93ad-4ddb-b31a-3902df16967f",
+        "target_url": "https://dancyu.jp/recipe/2022_00005549.html",
+        "sent_at": "2025-11-07T12:44:31.683Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://dancyu.jp/recipe/2022_00005549.html (not-found)"
+      },
+      {
+        "clip_id": "e6a456bd-2101-425b-96c4-ccd84778a228",
+        "source_url": "https://asadaame5121.net/clippingshare/e6a456bd-2101-425b-96c4-ccd84778a228",
+        "target_url": "https://book.asahi.com/article/15820534",
+        "sent_at": "2025-11-07T12:44:38.705Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://book.asahi.com/article/15820534 (not-found)"
+      },
+      {
+        "clip_id": "a11c5097-880a-4f43-9681-b16c5f24506c",
+        "source_url": "https://asadaame5121.net/clippingshare/a11c5097-880a-4f43-9681-b16c5f24506c",
+        "target_url": "https://digital.asahi.com/sp/articles/DA3S16233362.html?ptoken=01JXGEM0YPTF3AKHPJKD1QJXPB",
+        "sent_at": "2025-11-07T12:44:45.469Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16233362.html?ptoken=01JXGEM0YPTF3AKHPJKD1QJXPB (not-found)"
+      },
+      {
+        "clip_id": "c5a20b21-2f3d-4854-a08d-a7814fad49fe",
+        "source_url": "https://asadaame5121.net/clippingshare/c5a20b21-2f3d-4854-a08d-a7814fad49fe",
+        "target_url": "https://digital.asahi.com/sp/articles/DA3S16231896.html?ptoken=01JXEDE2DBQC0HSJVPBNDVTR7S",
+        "sent_at": "2025-11-07T12:44:52.227Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16231896.html?ptoken=01JXEDE2DBQC0HSJVPBNDVTR7S (not-found)"
+      },
+      {
+        "clip_id": "224d656e-a752-4fe0-823b-f86c456cdefa",
+        "source_url": "https://asadaame5121.net/clippingshare/224d656e-a752-4fe0-823b-f86c456cdefa",
+        "target_url": "https://digital.asahi.com/sp/articles/DA3S16218774.html?ptoken=01JVTEDTNMS8KCS6X3R6WVA5FS",
+        "sent_at": "2025-11-07T12:44:58.881Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16218774.html?ptoken=01JVTEDTNMS8KCS6X3R6WVA5FS (not-found)"
+      },
+      {
+        "clip_id": "a615447e-1154-4a2d-ae7d-7be07b66e247",
+        "source_url": "https://asadaame5121.net/clippingshare/a615447e-1154-4a2d-ae7d-7be07b66e247",
+        "target_url": "https://masatler.hatenablog.com/entry/2025/05/09/160801",
+        "sent_at": "2025-11-07T12:45:05.711Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://masatler.hatenablog.com/entry/2025/05/09/160801 (not-found)"
+      },
+      {
+        "clip_id": "329c55c4-ffcd-48cf-b3a4-c9aa80ca49d6",
+        "source_url": "https://asadaame5121.net/clippingshare/329c55c4-ffcd-48cf-b3a4-c9aa80ca49d6",
+        "target_url": "https://www.kikkoman.co.jp/homecook/search/recipe/00057246/",
+        "sent_at": "2025-11-07T12:45:12.820Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.kikkoman.co.jp/homecook/search/recipe/00057246/ (not-found)"
+      },
+      {
+        "clip_id": "55921c4c-c1cc-46dd-8695-9ca4ee0d2580",
+        "source_url": "https://asadaame5121.net/clippingshare/55921c4c-c1cc-46dd-8695-9ca4ee0d2580",
+        "target_url": "https://www.nakahara-lab.net/blog/2011/10/post_1803.html",
+        "sent_at": "2025-11-07T12:45:19.735Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nakahara-lab.net/blog/2011/10/post_1803.html (not-found)"
+      },
+      {
+        "clip_id": "52efecd5-3b79-4c67-b4ce-349a7b5eaaff",
+        "source_url": "https://asadaame5121.net/clippingshare/52efecd5-3b79-4c67-b4ce-349a7b5eaaff",
+        "target_url": "https://note.com/kori52661/n/n216de0802c48?sub_rt=share_pw",
+        "sent_at": "2025-11-07T12:45:27.085Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://note.com/kori52661/n/n216de0802c48?sub_rt=share_pw (not-found)"
+      },
+      {
+        "clip_id": "ae165146-4c80-4802-85d6-1518520c3cd1",
+        "source_url": "https://asadaame5121.net/clippingshare/ae165146-4c80-4802-85d6-1518520c3cd1",
+        "target_url": "https://digital.asahi.com/sp/articles/AST4B1Q3NT4BULLI007M.html?ptoken=01JRSS1KV4KEJAQ7AW05ETFWDG",
+        "sent_at": "2025-11-07T12:45:33.627Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST4B1Q3NT4BULLI007M.html?ptoken=01JRSS1KV4KEJAQ7AW05ETFWDG (not-found)"
+      },
+      {
+        "clip_id": "c2357297-cdd3-4640-9f02-6fa3fc55fa71",
+        "source_url": "https://asadaame5121.net/clippingshare/c2357297-cdd3-4640-9f02-6fa3fc55fa71",
+        "target_url": "https://www.digital.go.jp/policies/servicedesign/designsystem",
+        "sent_at": "2025-11-07T12:45:40.479Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.digital.go.jp/policies/servicedesign/designsystem (not-found)"
+      },
+      {
+        "clip_id": "13456264-23d7-4de1-b504-b8607119dd12",
+        "source_url": "https://asadaame5121.net/clippingshare/13456264-23d7-4de1-b504-b8607119dd12",
+        "target_url": "https://design.digital.go.jp/",
+        "sent_at": "2025-11-07T12:45:46.688Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://design.digital.go.jp/ (not-found)"
+      },
+      {
+        "clip_id": "246af3e4-221d-4270-8478-c8cb9ee6d340",
+        "source_url": "https://asadaame5121.net/clippingshare/246af3e4-221d-4270-8478-c8cb9ee6d340",
+        "target_url": "https://weiyexing.win/callout-to-timeline-and-chatbubble?locale=ja",
+        "sent_at": "2025-11-07T12:45:56.939Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://weiyexing.win/callout-to-timeline-and-chatbubble?locale=ja (not-found)"
+      },
+      {
+        "clip_id": "97f77c07-6798-4920-96e3-a56a5701dacb",
+        "source_url": "https://asadaame5121.net/clippingshare/97f77c07-6798-4920-96e3-a56a5701dacb",
+        "target_url": "https://comingbook.honzuki.jp/?detail=9784472060366",
+        "sent_at": "2025-11-07T12:46:03.837Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://comingbook.honzuki.jp/?detail=9784472060366 (not-found)"
+      },
+      {
+        "clip_id": "c8913372-70ef-4057-9c45-077669bdba88",
+        "source_url": "https://asadaame5121.net/clippingshare/c8913372-70ef-4057-9c45-077669bdba88",
+        "target_url": "https://www.nytimes.com/2025/04/05/opinion/ezra-klein-podcast-paul-krugman.html?unlocked_article_code=1.9k4.y_hk.n7or4QsXGnas&smid=url-share",
+        "sent_at": "2025-11-07T12:46:10.559Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2025/04/05/opinion/ezra-klein-podcast-paul-krugman.html?unlocked_article_code=1.9k4.y_hk.n7or4QsXGnas&smid=url-share (not-found)"
+      },
+      {
+        "clip_id": "e39f7cb8-185f-4d03-b8b8-8dc464413823",
+        "source_url": "https://asadaame5121.net/clippingshare/e39f7cb8-185f-4d03-b8b8-8dc464413823",
+        "target_url": "https://dev.to/joshmo_dev/supercharging-obsidianmd-with-openai-qdrant-and-rust-504f",
+        "sent_at": "2025-11-07T12:46:17.128Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://dev.to/joshmo_dev/supercharging-obsidianmd-with-openai-qdrant-and-rust-504f (not-found)"
+      },
+      {
+        "clip_id": "2200792f-67a3-4486-929c-6576ecfdeda2",
+        "source_url": "https://asadaame5121.net/clippingshare/2200792f-67a3-4486-929c-6576ecfdeda2",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3X2GH7T3XUPQJ017M.html?ptoken=01JR1TAWNN2W41XHE8GAK25BEH",
+        "sent_at": "2025-11-07T12:46:23.282Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3X2GH7T3XUPQJ017M.html?ptoken=01JR1TAWNN2W41XHE8GAK25BEH (not-found)"
+      },
+      {
+        "clip_id": "2400f2f0-5ece-456e-852d-1cf2335432c7",
+        "source_url": "https://asadaame5121.net/clippingshare/2400f2f0-5ece-456e-852d-1cf2335432c7",
+        "target_url": "https://jasr.or.jp/asr/new/",
+        "sent_at": "2025-11-07T12:46:30.371Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://jasr.or.jp/asr/new/ (not-found)"
+      },
+      {
+        "clip_id": "bbe41d7b-136d-46f1-b1e7-44aef61d69f2",
+        "source_url": "https://asadaame5121.net/clippingshare/bbe41d7b-136d-46f1-b1e7-44aef61d69f2",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3P3CY0T3PUPQJ003M.html?ptoken=01JQZBYCF5M4X2AAH15GEGZS28",
+        "sent_at": "2025-11-07T12:46:39.311Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3P3CY0T3PUPQJ003M.html?ptoken=01JQZBYCF5M4X2AAH15GEGZS28 (not-found)"
+      },
+      {
+        "clip_id": "3e7ecd1d-6d20-4ad0-b3c4-b1f66f6f9e90",
+        "source_url": "https://asadaame5121.net/clippingshare/3e7ecd1d-6d20-4ad0-b3c4-b1f66f6f9e90",
+        "target_url": "https://www.theatlantic.com/ideas/archive/2025/04/project-2025-top-goal/682142/?gift=HtNVVY5d4WyXVjehmwGKLl0ub7b4Al-S57kFaZPmIP8&utm_source=copy-link&utm_medium=social&utm_campaign=share",
+        "sent_at": "2025-11-07T12:46:46.028Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.theatlantic.com/ideas/archive/2025/04/project-2025-top-goal/682142/?gift=HtNVVY5d4WyXVjehmwGKLl0ub7b4Al-S57kFaZPmIP8&utm_source=copy-link&utm_medium=social&utm_campaign=share (not-found)"
+      },
+      {
+        "clip_id": "adc36ae0-72f3-4c46-9569-d10b21c00d4a",
+        "source_url": "https://asadaame5121.net/clippingshare/adc36ae0-72f3-4c46-9569-d10b21c00d4a",
+        "target_url": "https://www.washingtonpost.com/lifestyle/style/silent-filibuster-got-too-easy/2021/07/05/93bf2ff2-d9cd-11eb-9bbb-37c30dcf9363_story.html?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzQzMzkzNjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzQ0Nzc1OTk5LCJpYXQiOjE3NDMzOTM2MDAsImp0aSI6IjQyMDJmNTYxLTBjODktNDdhZi05NmUwLTIxMzVmYzAwMzY4OCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9saWZlc3R5bGUvc3R5bGUvc2lsZW50LWZpbGlidXN0ZXItZ290LXRvby1lYXN5LzIwMjEvMDcvMDUvOTNiZjJmZjItZDljZC0xMWViLTliYmItMzdjMzBkY2Y5MzYzX3N0b3J5Lmh0bWwifQ.HlghlSh7JiUTsUMT49YjBN9v_zB0c0bDeCOK7o3zrw0",
+        "sent_at": "2025-11-07T12:46:52.760Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.washingtonpost.com/lifestyle/style/silent-filibuster-got-too-easy/2021/07/05/93bf2ff2-d9cd-11eb-9bbb-37c30dcf9363_story.html?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzQzMzkzNjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzQ0Nzc1OTk5LCJpYXQiOjE3NDMzOTM2MDAsImp0aSI6IjQyMDJmNTYxLTBjODktNDdhZi05NmUwLTIxMzVmYzAwMzY4OCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9saWZlc3R5bGUvc3R5bGUvc2lsZW50LWZpbGlidXN0ZXItZ290LXRvby1lYXN5LzIwMjEvMDcvMDUvOTNiZjJmZjItZDljZC0xMWViLTliYmItMzdjMzBkY2Y5MzYzX3N0b3J5Lmh0bWwifQ.HlghlSh7JiUTsUMT49YjBN9v_zB0c0bDeCOK7o3zrw0 (error sending request from 10.1.0.129:44668 for https://www.washingtonpost.com/lifestyle/style/silent-filibuster-got-too-easy/2021/07/05/93bf2ff2-d9cd-11eb-9bbb-37c30dcf9363_story.html?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzQzMzkzNjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzQ0Nzc1OTk5LCJpYXQiOjE3NDMzOTM2MDAsImp0aSI6IjQyMDJmNTYxLTBjODktNDdhZi05NmUwLTIxMzVmYzAwMzY4OCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9saWZlc3R5bGUvc3R5bGUvc2lsZW50LWZpbGlidXN0ZXItZ290LXRvby1lYXN5LzIwMjEvMDcvMDUvOTNiZjJmZjItZDljZC0xMWViLTliYmItMzdjMzBkY2Y5MzYzX3N0b3J5Lmh0bWwifQ.HlghlSh7JiUTsUMT49YjBN9v_zB0c0bDeCOK7o3zrw0 (104.69.114.204:443): client error (SendRequest): http2 error: stream error received: unexpected internal error encountered)"
+      },
+      {
+        "clip_id": "859e64c4-0130-41ee-844a-15aca465f4c0",
+        "source_url": "https://asadaame5121.net/clippingshare/859e64c4-0130-41ee-844a-15aca465f4c0",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3V20ZRT3VULLI004M.html?ptoken=01JQKH9D2R1648TQS7THF9FG7X",
+        "sent_at": "2025-11-07T12:46:59.128Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3V20ZRT3VULLI004M.html?ptoken=01JQKH9D2R1648TQS7THF9FG7X (not-found)"
+      },
+      {
+        "clip_id": "98cf4a43-6d44-406a-b9a4-f4e32c64000c",
+        "source_url": "https://asadaame5121.net/clippingshare/98cf4a43-6d44-406a-b9a4-f4e32c64000c",
+        "target_url": "https://univ-journal.jp/250863/",
+        "sent_at": "2025-11-07T12:47:06.155Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://univ-journal.jp/250863/ (not-found)"
+      },
+      {
+        "clip_id": "a35ec758-ef58-438b-bfcd-e972a50fd949",
+        "source_url": "https://asadaame5121.net/clippingshare/a35ec758-ef58-438b-bfcd-e972a50fd949",
+        "target_url": "https://chatgpt.com/c/67e7cb29-8c5c-800b-b7b8-0a756f6d93bc",
+        "sent_at": "2025-11-07T12:47:13.138Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://chatgpt.com/c/67e7cb29-8c5c-800b-b7b8-0a756f6d93bc (not-found)"
+      },
+      {
+        "clip_id": "a68e34f0-9207-4608-92fe-441752e90644",
+        "source_url": "https://asadaame5121.net/clippingshare/a68e34f0-9207-4608-92fe-441752e90644",
+        "target_url": "https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html",
+        "sent_at": "2025-11-07T12:47:19.398Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html (not-found)"
+      },
+      {
+        "clip_id": "ce5db322-d8cb-4087-8254-8692d4f83732",
+        "source_url": "https://asadaame5121.net/clippingshare/ce5db322-d8cb-4087-8254-8692d4f83732",
+        "target_url": "https://www.note.kanekoshobo.co.jp/n/n31042f72bcdc",
+        "sent_at": "2025-11-07T12:47:25.651Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.note.kanekoshobo.co.jp/n/n31042f72bcdc (not-found)"
+      },
+      {
+        "clip_id": "56631102-ab58-4721-b418-6c4f7e3d5fb8",
+        "source_url": "https://asadaame5121.net/clippingshare/56631102-ab58-4721-b418-6c4f7e3d5fb8",
+        "target_url": "https://www.note.kanekoshobo.co.jp/n/n68adf5fa7db8",
+        "sent_at": "2025-11-07T12:47:33.773Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.note.kanekoshobo.co.jp/n/n68adf5fa7db8 (not-found)"
+      },
+      {
+        "clip_id": "903a98f0-157b-49c8-be54-0299d6f0ce37",
+        "source_url": "https://asadaame5121.net/clippingshare/903a98f0-157b-49c8-be54-0299d6f0ce37",
+        "target_url": "https://shiki.esrille.com/2018/06/easy.html",
+        "sent_at": "2025-11-07T12:47:40.418Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://shiki.esrille.com/2018/06/easy.html (not-found)"
+      },
+      {
+        "clip_id": "7b48a829-6216-4fef-bc70-30c4907f5592",
+        "source_url": "https://asadaame5121.net/clippingshare/7b48a829-6216-4fef-bc70-30c4907f5592",
+        "target_url": "https://ja.m.wikipedia.org/wiki/%E3%83%88%E3%83%A9%E3%83%83%E3%83%89%E3%83%AF%E3%82%A4%E3%83%95",
+        "sent_at": "2025-11-07T12:47:46.745Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://ja.m.wikipedia.org/wiki/%E3%83%88%E3%83%A9%E3%83%83%E3%83%89%E3%83%AF%E3%82%A4%E3%83%95 (not-found)"
+      },
+      {
+        "clip_id": "b5b26cd3-4461-4345-bd67-0615d4f3a072",
+        "source_url": "https://asadaame5121.net/clippingshare/b5b26cd3-4461-4345-bd67-0615d4f3a072",
+        "target_url": "https://ja.m.wikipedia.org/wiki/%E6%98%AD%E5%92%8C%E8%BB%BD%E8%96%84%E4%BD%93",
+        "sent_at": "2025-11-07T12:47:53.476Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://ja.m.wikipedia.org/wiki/%E6%98%AD%E5%92%8C%E8%BB%BD%E8%96%84%E4%BD%93 (not-found)"
+      },
+      {
+        "clip_id": "9d892f42-441b-41cb-866a-2562f4f42b88",
+        "source_url": "https://asadaame5121.net/clippingshare/9d892f42-441b-41cb-866a-2562f4f42b88",
+        "target_url": "https://shiki.esrille.com/2022/06/rules.html",
+        "sent_at": "2025-11-07T12:47:59.780Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://shiki.esrille.com/2022/06/rules.html (not-found)"
+      },
+      {
+        "clip_id": "cbbcd749-724f-4f02-907a-bcd67ca33f4f",
+        "source_url": "https://asadaame5121.net/clippingshare/cbbcd749-724f-4f02-907a-bcd67ca33f4f",
+        "target_url": "https://chatgpt.com/c/67e7a8bf-100c-800b-b260-24db207b8d94",
+        "sent_at": "2025-11-07T12:48:06.064Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://chatgpt.com/c/67e7a8bf-100c-800b-b260-24db207b8d94 (not-found)"
+      },
+      {
+        "clip_id": "86f9b499-1534-4f72-9ca2-45270ba17aaa",
+        "source_url": "https://asadaame5121.net/clippingshare/86f9b499-1534-4f72-9ca2-45270ba17aaa",
+        "target_url": "https://www.theatlantic.com/science/archive/2018/03/human-existence-will-look-more-miraculous-the-longer-we-survive/554513/?gift=q1KByJV9yb84eTRhFiNthYz8gd2O-8qrri3Nf7YBmRE&utm_source=copy-link&utm_medium=social&utm_campaign=share",
+        "sent_at": "2025-11-07T12:48:12.237Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.theatlantic.com/science/archive/2018/03/human-existence-will-look-more-miraculous-the-longer-we-survive/554513/?gift=q1KByJV9yb84eTRhFiNthYz8gd2O-8qrri3Nf7YBmRE&utm_source=copy-link&utm_medium=social&utm_campaign=share (not-found)"
+      },
+      {
+        "clip_id": "0277941a-759b-4692-a49a-a39290bdd3bd",
+        "source_url": "https://asadaame5121.net/clippingshare/0277941a-759b-4692-a49a-a39290bdd3bd",
+        "target_url": "https://www.ibunsha.co.jp/contents/multispecies05/",
+        "sent_at": "2025-11-07T12:48:19.139Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.ibunsha.co.jp/contents/multispecies05/ (not-found)"
+      },
+      {
+        "clip_id": "9ef606e6-128c-421c-8b9b-95ca4e0d5347",
+        "source_url": "https://asadaame5121.net/clippingshare/9ef606e6-128c-421c-8b9b-95ca4e0d5347",
+        "target_url": "https://hbh.center/05-issue_04/",
+        "sent_at": "2025-11-07T12:48:29.793Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://hbh.center/05-issue_04/ (not-found)"
+      },
+      {
+        "clip_id": "7a3bdc75-bb6f-4151-9a2c-279fc7c9b5e4",
+        "source_url": "https://asadaame5121.net/clippingshare/7a3bdc75-bb6f-4151-9a2c-279fc7c9b5e4",
+        "target_url": "https://wikiwiki.jp/poke_sleep/%E6%96%99%E7%90%86#k850b592",
+        "sent_at": "2025-11-07T12:48:37.512Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://wikiwiki.jp/poke_sleep/%E6%96%99%E7%90%86#k850b592 (not-found)"
+      },
+      {
+        "clip_id": "b5bab06f-a056-440c-9775-587105c83347",
+        "source_url": "https://asadaame5121.net/clippingshare/b5bab06f-a056-440c-9775-587105c83347",
+        "target_url": "https://magazine.msz.co.jp/series/evolution-ecology/1/",
+        "sent_at": "2025-11-07T12:48:43.869Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://magazine.msz.co.jp/series/evolution-ecology/1/ (not-found)"
+      },
+      {
+        "clip_id": "67d96a2b-9378-4d89-af9b-710d49ffd3e3",
+        "source_url": "https://asadaame5121.net/clippingshare/67d96a2b-9378-4d89-af9b-710d49ffd3e3",
+        "target_url": "https://www.newsweek.com/elon-musk-takes-aim-wikipedia-fund-raising-editing-political-woke-2005742",
+        "sent_at": "2025-11-07T12:48:51.019Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.newsweek.com/elon-musk-takes-aim-wikipedia-fund-raising-editing-political-woke-2005742 (not-found)"
+      },
+      {
+        "clip_id": "d9e33bdc-b22e-470b-87ff-10b39d95de1d",
+        "source_url": "https://asadaame5121.net/clippingshare/d9e33bdc-b22e-470b-87ff-10b39d95de1d",
+        "target_url": "https://democracyjournal.org/magazine/48/its-not-as-bad-as-all-that/?ref=quillette.com",
+        "sent_at": "2025-11-07T12:48:57.242Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://democracyjournal.org/magazine/48/its-not-as-bad-as-all-that/?ref=quillette.com (not-found)"
+      },
+      {
+        "clip_id": "ed6e6870-743a-4704-85fa-aaff881db4e5",
+        "source_url": "https://asadaame5121.net/clippingshare/ed6e6870-743a-4704-85fa-aaff881db4e5",
+        "target_url": "https://wineroses.hatenablog.com/entry/2024/12/06/170041",
+        "sent_at": "2025-11-07T12:49:03.784Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://wineroses.hatenablog.com/entry/2024/12/06/170041 (not-found)"
+      },
+      {
+        "clip_id": "a6a03841-d778-4ac3-bfd9-bb434439bdd7",
+        "source_url": "https://asadaame5121.net/clippingshare/a6a03841-d778-4ac3-bfd9-bb434439bdd7",
+        "target_url": "https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html",
+        "sent_at": "2025-11-07T12:49:10.610Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.ebullient.dev/2023/12/30/ssg-with-obsidian-and-lume.html (not-found)"
+      },
+      {
+        "clip_id": "8479253b-a5b1-4aca-ba4a-425a7197179c",
+        "source_url": "https://asadaame5121.net/clippingshare/8479253b-a5b1-4aca-ba4a-425a7197179c",
+        "target_url": "https://www.theatlantic.com/ideas/archive/2024/12/food-deserts-robinson-patman/680765/?gift=-RS5b5Pu_ckblQ1qYX7r4TdLi38JCK1Ooopj_8j-_yM&utm_source=copy-link&utm_medium=social&utm_campaign=share",
+        "sent_at": "2025-11-07T12:49:16.737Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.theatlantic.com/ideas/archive/2024/12/food-deserts-robinson-patman/680765/?gift=-RS5b5Pu_ckblQ1qYX7r4TdLi38JCK1Ooopj_8j-_yM&utm_source=copy-link&utm_medium=social&utm_campaign=share (not-found)"
+      },
+      {
+        "clip_id": "684a2b1f-4540-455f-ae8f-9e0a7f4f7584",
+        "source_url": "https://asadaame5121.net/clippingshare/684a2b1f-4540-455f-ae8f-9e0a7f4f7584",
+        "target_url": "https://www.theatlantic.com/technology/archive/2024/11/x-white-supremacist-site/680538/?gift=N2aAVwSqDWDX9rA6Xm7u25Dry_QxlYGW1-QmU-YA3c8&utm_source=copy-link&utm_medium=social&utm_campaign=share",
+        "sent_at": "2025-11-07T12:49:23.410Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.theatlantic.com/technology/archive/2024/11/x-white-supremacist-site/680538/?gift=N2aAVwSqDWDX9rA6Xm7u25Dry_QxlYGW1-QmU-YA3c8&utm_source=copy-link&utm_medium=social&utm_campaign=share (not-found)"
+      },
+      {
+        "clip_id": "9c876200-ed00-4aac-88e6-aba78935d671",
+        "source_url": "https://asadaame5121.net/clippingshare/9c876200-ed00-4aac-88e6-aba78935d671",
+        "target_url": "https://s-newscommons.com/article/7161",
+        "sent_at": "2025-11-07T12:49:29.842Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://s-newscommons.com/article/7161 (not-found)"
+      },
+      {
+        "clip_id": "079fc6f8-166c-4e54-ace9-8fa2ffb4dd78",
+        "source_url": "https://asadaame5121.net/clippingshare/079fc6f8-166c-4e54-ace9-8fa2ffb4dd78",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3L1RZ3T3LUEFT00WM.html?ptoken=01JPVWDQP60SV8FJMCPE4FV53C",
+        "sent_at": "2025-11-07T12:49:36.679Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3L1RZ3T3LUEFT00WM.html?ptoken=01JPVWDQP60SV8FJMCPE4FV53C (not-found)"
+      },
+      {
+        "clip_id": "ba3d2e3d-02d2-4fe1-8e57-57eba588e279",
+        "source_url": "https://asadaame5121.net/clippingshare/ba3d2e3d-02d2-4fe1-8e57-57eba588e279",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3C5W3TT3CUHBI008M.html?ptoken=01JP9R19TA8Z3W65V5PSMH8B16",
+        "sent_at": "2025-11-07T12:49:43.746Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3C5W3TT3CUHBI008M.html?ptoken=01JP9R19TA8Z3W65V5PSMH8B16 (not-found)"
+      },
+      {
+        "clip_id": "486bb856-ee4c-45ec-9e4b-417a7fda79b1",
+        "source_url": "https://asadaame5121.net/clippingshare/486bb856-ee4c-45ec-9e4b-417a7fda79b1",
+        "target_url": "https://digital.asahi.com/sp/articles/AST172Q3MT17PTIL009M.html?ptoken=01JH4NXYV1SZA23JQSTKKCQ4T0",
+        "sent_at": "2025-11-07T12:49:50.519Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST172Q3MT17PTIL009M.html?ptoken=01JH4NXYV1SZA23JQSTKKCQ4T0 (not-found)"
+      },
+      {
+        "clip_id": "cb93cd26-4a38-4b28-830e-23c495789527",
+        "source_url": "https://asadaame5121.net/clippingshare/cb93cd26-4a38-4b28-830e-23c495789527",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3F35CMT3FUTFL00GM.html?ptoken=01JPMGDVV049ECX7E3V59MHRPS",
+        "sent_at": "2025-11-07T12:49:57.219Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3F35CMT3FUTFL00GM.html?ptoken=01JPMGDVV049ECX7E3V59MHRPS (not-found)"
+      },
+      {
+        "clip_id": "6086c46f-ebdc-4157-b8cc-067eec27616b",
+        "source_url": "https://asadaame5121.net/clippingshare/6086c46f-ebdc-4157-b8cc-067eec27616b",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSDM2R4DSDMUTFK01PM.html?ptoken=01JFH8BC3JMTHKS0E0KHXW538Y",
+        "sent_at": "2025-11-07T12:50:03.977Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDM2R4DSDMUTFK01PM.html?ptoken=01JFH8BC3JMTHKS0E0KHXW538Y (not-found)"
+      },
+      {
+        "clip_id": "34d5c18e-3bac-4e0f-b1b1-552c390ab7a9",
+        "source_url": "https://asadaame5121.net/clippingshare/34d5c18e-3bac-4e0f-b1b1-552c390ab7a9",
+        "target_url": "https://book.asahi.com/jinbun/article/15664692",
+        "sent_at": "2025-11-07T12:50:10.727Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://book.asahi.com/jinbun/article/15664692 (not-found)"
+      },
+      {
+        "clip_id": "ce134034-8eed-410e-973d-6f0a1fa67e59",
+        "source_url": "https://asadaame5121.net/clippingshare/ce134034-8eed-410e-973d-6f0a1fa67e59",
+        "target_url": "https://digital.asahi.com/sp/articles/AST1G7R3MT1GUPQJ001M.html?ptoken=01JHXZ3QJR1HAAW8XGGRKX8GXZ",
+        "sent_at": "2025-11-07T12:50:17.734Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST1G7R3MT1GUPQJ001M.html?ptoken=01JHXZ3QJR1HAAW8XGGRKX8GXZ (not-found)"
+      },
+      {
+        "clip_id": "2d5bb318-27ba-4043-a66e-cb7a69863deb",
+        "source_url": "https://asadaame5121.net/clippingshare/2d5bb318-27ba-4043-a66e-cb7a69863deb",
+        "target_url": "https://comingbook.honzuki.jp/?detail=9784794974549",
+        "sent_at": "2025-11-07T12:50:24.533Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://comingbook.honzuki.jp/?detail=9784794974549 (error sending request for url (http://jpo.flyingline.info/): client error (Connect): dns error: failed to lookup address information: Name or service not known)"
+      },
+      {
+        "clip_id": "a1f8e998-b09e-4132-a600-527c07a7ac1c",
+        "source_url": "https://asadaame5121.net/clippingshare/a1f8e998-b09e-4132-a600-527c07a7ac1c",
+        "target_url": "https://qiita.com/P-man_Brown/items/76b3abe3f8d7a8ca0dee",
+        "sent_at": "2025-11-07T12:50:31.356Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://qiita.com/P-man_Brown/items/76b3abe3f8d7a8ca0dee (not-found)"
+      },
+      {
+        "clip_id": "d23727f4-05a7-4c5f-ab5f-9d306a272d68",
+        "source_url": "https://asadaame5121.net/clippingshare/d23727f4-05a7-4c5f-ab5f-9d306a272d68",
+        "target_url": "https://blog.tyage.net/post/2023/2023-07-17-bridgy-fed/",
+        "sent_at": "2025-11-07T12:50:38.486Z",
+        "status": "success",
+        "response_code": 201
+      },
+      {
+        "clip_id": "bcf98222-236a-4abc-92c9-1e890ab6c2c2",
+        "source_url": "https://asadaame5121.net/clippingshare/bcf98222-236a-4abc-92c9-1e890ab6c2c2",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSD73DF6SD7UHBI02BM.html?ptoken=01JEGZGGKAK56NF4THMY61JQGQ",
+        "sent_at": "2025-11-07T12:50:45.368Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSD73DF6SD7UHBI02BM.html?ptoken=01JEGZGGKAK56NF4THMY61JQGQ (not-found)"
+      },
+      {
+        "clip_id": "7d5d60dc-98cd-4ac2-8dfc-f643073317d4",
+        "source_url": "https://asadaame5121.net/clippingshare/7d5d60dc-98cd-4ac2-8dfc-f643073317d4",
+        "target_url": "https://business.nikkei.com/atcl/gen/19/00087/121800419/?gift=8vIHoLnslgBqC6vlqZb%252FqgQ5FtJX49JWdA3SoIe%252FBgo%253D&n_cid=nbpnb_gift",
+        "sent_at": "2025-11-07T12:50:52.081Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://business.nikkei.com/atcl/gen/19/00087/121800419/?gift=8vIHoLnslgBqC6vlqZb%252FqgQ5FtJX49JWdA3SoIe%252FBgo%253D&n_cid=nbpnb_gift (not-found)"
+      },
+      {
+        "clip_id": "2e6383ed-0b7f-42d2-a65b-ee12de1f757d",
+        "source_url": "https://asadaame5121.net/clippingshare/2e6383ed-0b7f-42d2-a65b-ee12de1f757d",
+        "target_url": "https://www.cnn.co.jp/usa/35230176.html",
+        "sent_at": "2025-11-07T12:50:59.511Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.cnn.co.jp/usa/35230176.html (not-found)"
+      },
+      {
+        "clip_id": "b79ba4c2-7510-425f-95a9-ddfde0935274",
+        "source_url": "https://asadaame5121.net/clippingshare/b79ba4c2-7510-425f-95a9-ddfde0935274",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSDQ7D8MSDQULLI00GM.html?ptoken=01JG3G4R2H4WBV3TQ57VRNBFJ1",
+        "sent_at": "2025-11-07T12:51:07.198Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDQ7D8MSDQULLI00GM.html?ptoken=01JG3G4R2H4WBV3TQ57VRNBFJ1 (not-found)"
+      },
+      {
+        "clip_id": "3e77bc6c-7784-463a-b4a2-00886e05ad4f",
+        "source_url": "https://asadaame5121.net/clippingshare/3e77bc6c-7784-463a-b4a2-00886e05ad4f",
+        "target_url": "https://digital.asahi.com/sp/articles/AST1W2SB1T1WUTIL00XM.html?ptoken=01JJV7R66BFVY8S2SJ14H4W9MG",
+        "sent_at": "2025-11-07T12:51:13.944Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST1W2SB1T1WUTIL00XM.html?ptoken=01JJV7R66BFVY8S2SJ14H4W9MG (not-found)"
+      },
+      {
+        "clip_id": "e9307873-138b-4f26-a74f-1ef8367bf229",
+        "source_url": "https://asadaame5121.net/clippingshare/e9307873-138b-4f26-a74f-1ef8367bf229",
+        "target_url": "https://nejimaki-radio.com/digital-garden-blog-indie-website-personal-internet/",
+        "sent_at": "2025-11-07T12:51:20.626Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://nejimaki-radio.com/digital-garden-blog-indie-website-personal-internet/ (not-found)"
+      },
+      {
+        "clip_id": "23e80d63-e698-41e6-8a08-83a52f844e4b",
+        "source_url": "https://asadaame5121.net/clippingshare/23e80d63-e698-41e6-8a08-83a52f844e4b",
+        "target_url": "https://business.nikkei.com/atcl/NBD/19/world/00692/?gift=6ExlxXHrZebEblR5XB8j%252BZnt3tY4j3%252BIZ7JnB4QHOxQ%253D&n_cid=nbpnb_gift",
+        "sent_at": "2025-11-07T12:51:28.544Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://business.nikkei.com/atcl/NBD/19/world/00692/?gift=6ExlxXHrZebEblR5XB8j%252BZnt3tY4j3%252BIZ7JnB4QHOxQ%253D&n_cid=nbpnb_gift (not-found)"
+      },
+      {
+        "clip_id": "acd8b56d-b3d3-441c-a26c-2d03a0b4eeea",
+        "source_url": "https://asadaame5121.net/clippingshare/acd8b56d-b3d3-441c-a26c-2d03a0b4eeea",
+        "target_url": "https://digital.asahi.com/sp/articles/AST2902JCT29UHBI001M.html?ptoken=01JKMACBEP3JTF72C380W084BR",
+        "sent_at": "2025-11-07T12:51:34.826Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST2902JCT29UHBI001M.html?ptoken=01JKMACBEP3JTF72C380W084BR (not-found)"
+      },
+      {
+        "clip_id": "9b724a0f-3794-41e1-a290-6328e069ee45",
+        "source_url": "https://asadaame5121.net/clippingshare/9b724a0f-3794-41e1-a290-6328e069ee45",
+        "target_url": "https://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%B7%E3%82%A2%E5%AE%87%E5%AE%99%E4%B8%BB%E7%BE%A9",
+        "sent_at": "2025-11-07T12:51:41.725Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%B7%E3%82%A2%E5%AE%87%E5%AE%99%E4%B8%BB%E7%BE%A9 (not-found)"
+      },
+      {
+        "clip_id": "233f9c40-cc4d-4157-bc1b-713b82d96546",
+        "source_url": "https://asadaame5121.net/clippingshare/233f9c40-cc4d-4157-bc1b-713b82d96546",
+        "target_url": "https://digital.asahi.com/sp/articles/AST2W26M2T2WUHBI00VM.html?ptoken=01JNFCK1XACTB86NRK8C1M1F7T",
+        "sent_at": "2025-11-07T12:51:48.107Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST2W26M2T2WUHBI00VM.html?ptoken=01JNFCK1XACTB86NRK8C1M1F7T (not-found)"
+      },
+      {
+        "clip_id": "a7734f73-d22f-4094-a8a6-e4571f13a5a4",
+        "source_url": "https://asadaame5121.net/clippingshare/a7734f73-d22f-4094-a8a6-e4571f13a5a4",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3F1VVNT3FPTIL00MM.html?ptoken=01JQ0CZJS6FB5FA84GB6W5QR72",
+        "sent_at": "2025-11-07T12:51:54.900Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3F1VVNT3FPTIL00MM.html?ptoken=01JQ0CZJS6FB5FA84GB6W5QR72 (not-found)"
+      },
+      {
+        "clip_id": "70b63430-55ca-4743-8e3e-a92f5bad6113",
+        "source_url": "https://asadaame5121.net/clippingshare/70b63430-55ca-4743-8e3e-a92f5bad6113",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSDM2199SDMUHBI00LM.html?ptoken=01JFPV64TCM3ZPEY6S6PM25B3J",
+        "sent_at": "2025-11-07T12:52:01.783Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDM2199SDMUHBI00LM.html?ptoken=01JFPV64TCM3ZPEY6S6PM25B3J (not-found)"
+      },
+      {
+        "clip_id": "948e1eef-ed9b-4031-a3b4-eef9a5496287",
+        "source_url": "https://asadaame5121.net/clippingshare/948e1eef-ed9b-4031-a3b4-eef9a5496287",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSDW3584SDWUTIL00XM.html?ptoken=01JG63Z57EDD7Y6TB1C5YTCYTY",
+        "sent_at": "2025-11-07T12:52:08.632Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDW3584SDWUTIL00XM.html?ptoken=01JG63Z57EDD7Y6TB1C5YTCYTY (not-found)"
+      },
+      {
+        "clip_id": "45971db6-816c-4486-a1d6-3a531fac3670",
+        "source_url": "https://asadaame5121.net/clippingshare/45971db6-816c-4486-a1d6-3a531fac3670",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3G1V44T3GPQIP03WM.html?ptoken=01JPC59QE9Z68JVQFDKB514GB9",
+        "sent_at": "2025-11-07T12:52:15.534Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3G1V44T3GPQIP03WM.html?ptoken=01JPC59QE9Z68JVQFDKB514GB9 (not-found)"
+      },
+      {
+        "clip_id": "36265785-89d4-4075-9a9a-2ed3043e4e45",
+        "source_url": "https://asadaame5121.net/clippingshare/36265785-89d4-4075-9a9a-2ed3043e4e45",
+        "target_url": "https://digital.asahi.com/sp/articles/AST3G1V44T3GPQIP03WM.html?ptoken=01JPAJNJ8HVYBG872QCZ2016XP",
+        "sent_at": "2025-11-07T12:52:22.447Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST3G1V44T3GPQIP03WM.html?ptoken=01JPAJNJ8HVYBG872QCZ2016XP (not-found)"
+      },
+      {
+        "clip_id": "4890a41f-aa56-4098-85e5-281db17d9d5d",
+        "source_url": "https://asadaame5121.net/clippingshare/4890a41f-aa56-4098-85e5-281db17d9d5d",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSDH05R8SDHUTIL01GM.html?ptoken=01JF9SC3CEDRGVB5A98HF09NQT",
+        "sent_at": "2025-11-07T12:52:29.223Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDH05R8SDHUTIL01GM.html?ptoken=01JF9SC3CEDRGVB5A98HF09NQT (not-found)"
+      },
+      {
+        "clip_id": "6c0d35a9-3045-472c-8acb-e59811bd15f8",
+        "source_url": "https://asadaame5121.net/clippingshare/6c0d35a9-3045-472c-8acb-e59811bd15f8",
+        "target_url": "https://wikiwiki.jp/poke_sleep/%E6%96%99%E7%90%86/%E3%83%AC%E3%82%B7%E3%83%94%E3%81%AE%E4%B8%80%E8%A6%A7",
+        "sent_at": "2025-11-07T12:52:35.954Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://wikiwiki.jp/poke_sleep/%E6%96%99%E7%90%86/%E3%83%AC%E3%82%B7%E3%83%94%E3%81%AE%E4%B8%80%E8%A6%A7 (not-found)"
+      },
+      {
+        "clip_id": "0d1cba13-aa3b-423f-917d-eb2242282214",
+        "source_url": "https://asadaame5121.net/clippingshare/0d1cba13-aa3b-423f-917d-eb2242282214",
+        "target_url": "https://digital.asahi.com/sp/articles/DA3S16126258.html?ptoken=01JHKQKNSQ956QPT8FNC1H67RK",
+        "sent_at": "2025-11-07T12:52:42.377Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16126258.html?ptoken=01JHKQKNSQ956QPT8FNC1H67RK (not-found)"
+      },
+      {
+        "clip_id": "4405b09e-48fc-46a7-9713-f83e7bd342e0",
+        "source_url": "https://asadaame5121.net/clippingshare/4405b09e-48fc-46a7-9713-f83e7bd342e0",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSDR4FNWSDRUCVL009M.html?ptoken=01JGQSHA31FS2F5QZNNWY2AYSB",
+        "sent_at": "2025-11-07T12:52:49.225Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDR4FNWSDRUCVL009M.html?ptoken=01JGQSHA31FS2F5QZNNWY2AYSB (not-found)"
+      },
+      {
+        "clip_id": "67a06b73-e6e4-41bd-bd05-4a71113f2dfb",
+        "source_url": "https://asadaame5121.net/clippingshare/67a06b73-e6e4-41bd-bd05-4a71113f2dfb",
+        "target_url": "https://dancyu.jp/recipe/2022_00006408.html",
+        "sent_at": "2025-11-07T12:52:55.972Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://dancyu.jp/recipe/2022_00006408.html (not-found)"
+      },
+      {
+        "clip_id": "43413299-5614-4006-952d-106d69d7476a",
+        "source_url": "https://asadaame5121.net/clippingshare/43413299-5614-4006-952d-106d69d7476a",
+        "target_url": "https://uemurag.hatenablog.jp/entry/2022/09/24/075600",
+        "sent_at": "2025-11-07T12:53:02.925Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://uemurag.hatenablog.jp/entry/2022/09/24/075600 (not-found)"
+      },
+      {
+        "clip_id": "af8e3ed6-8429-49b2-93fb-7faa57faa7eb",
+        "source_url": "https://asadaame5121.net/clippingshare/af8e3ed6-8429-49b2-93fb-7faa57faa7eb",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSD40QT1SD4UTIL02CM.html?ptoken=01JGK8NT4GKZ9HP3MREE65MRTD",
+        "sent_at": "2025-11-07T12:53:10.099Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSD40QT1SD4UTIL02CM.html?ptoken=01JGK8NT4GKZ9HP3MREE65MRTD (not-found)"
+      },
+      {
+        "clip_id": "d57838ad-1675-4f32-8f66-bebbc4ab641e",
+        "source_url": "https://asadaame5121.net/clippingshare/d57838ad-1675-4f32-8f66-bebbc4ab641e",
+        "target_url": "https://digital.asahi.com/sp/articles/ASSDD1VSLSDDUCVL00ZM.html?ptoken=01JJ15MT0KXD1ZY6T1ZJ25SN7R",
+        "sent_at": "2025-11-07T12:53:16.898Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/ASSDD1VSLSDDUCVL00ZM.html?ptoken=01JJ15MT0KXD1ZY6T1ZJ25SN7R (not-found)"
+      },
+      {
+        "clip_id": "0edf75e6-049b-4661-bf59-54de117e5737",
+        "source_url": "https://asadaame5121.net/clippingshare/0edf75e6-049b-4661-bf59-54de117e5737",
+        "target_url": "https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM",
+        "sent_at": "2025-11-07T12:53:23.484Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM (not-found)"
+      },
+      {
+        "clip_id": "e0e02e24-2937-41c6-9eba-dcba9497f91c",
+        "source_url": "https://asadaame5121.net/clippingshare/e0e02e24-2937-41c6-9eba-dcba9497f91c",
+        "target_url": "https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM",
+        "sent_at": "2025-11-07T12:53:30.068Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST1H319FT1HUCVL007M.html?ptoken=01JJ4QR13BK5RR28E1H4PXY0ZM (not-found)"
+      },
+      {
+        "clip_id": "c74e5386-ed49-4dd9-8bca-32f4db215932",
+        "source_url": "https://asadaame5121.net/clippingshare/c74e5386-ed49-4dd9-8bca-32f4db215932",
+        "target_url": "https://masaki39.github.io/%F0%9F%93%98Dashboard++%E3%81%A7%E9%AD%85%E5%8A%9B%E7%9A%84%E3%81%AA%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8D%E3%81%86%EF%BC%81",
+        "sent_at": "2025-11-07T12:53:36.843Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://masaki39.github.io/%F0%9F%93%98Dashboard++%E3%81%A7%E9%AD%85%E5%8A%9B%E7%9A%84%E3%81%AA%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8D%E3%81%86%EF%BC%81 (not-found)"
+      },
+      {
+        "clip_id": "11d5400f-00ee-41fd-af18-4b5a105b47c2",
+        "source_url": "https://asadaame5121.net/clippingshare/11d5400f-00ee-41fd-af18-4b5a105b47c2",
+        "target_url": "https://masaki39.github.io/%F0%9F%93%98%E3%80%90%E9%80%A3%E8%BC%89%E3%80%91%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E4%BD%9C%E3%82%8D%E3%81%86(2)",
+        "sent_at": "2025-11-07T12:53:42.994Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://masaki39.github.io/%F0%9F%93%98%E3%80%90%E9%80%A3%E8%BC%89%E3%80%91%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E4%BD%9C%E3%82%8D%E3%81%86(2) (not-found)"
+      },
+      {
+        "clip_id": "2bb04a34-bcb1-4849-8005-e5336f6ce84f",
+        "source_url": "https://asadaame5121.net/clippingshare/2bb04a34-bcb1-4849-8005-e5336f6ce84f",
+        "target_url": "https://stephango.com/obsidian-web-clipper",
+        "sent_at": "2025-11-07T12:53:49.072Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://stephango.com/obsidian-web-clipper (not-found)"
+      },
+      {
+        "clip_id": "bbc6da17-ad81-48ea-b5c6-06ace045df93",
+        "source_url": "https://asadaame5121.net/clippingshare/bbc6da17-ad81-48ea-b5c6-06ace045df93",
+        "target_url": "https://digital.asahi.com/sp/articles/AST1P7WSPT1PUHBI007M.html?ptoken=01JJ8XR5GVMSCKWF4VBT3YRSKT",
+        "sent_at": "2025-11-07T12:53:55.466Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST1P7WSPT1PUHBI007M.html?ptoken=01JJ8XR5GVMSCKWF4VBT3YRSKT (not-found)"
+      },
+      {
+        "clip_id": "7add22df-15d5-49bd-b92f-b7e98bb516fb",
+        "source_url": "https://asadaame5121.net/clippingshare/7add22df-15d5-49bd-b92f-b7e98bb516fb",
+        "target_url": "https://www.utp.or.jp/book/b10087847.html",
+        "sent_at": "2025-11-07T12:54:02.255Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.utp.or.jp/book/b10087847.html (not-found)"
+      },
+      {
+        "clip_id": "10e9846f-fc6b-457f-8e59-a14949186118",
+        "source_url": "https://asadaame5121.net/clippingshare/10e9846f-fc6b-457f-8e59-a14949186118",
+        "target_url": "https://www.nytimes.com/2024/11/21/us/politics/pete-buttigieg-trump-democrats.html?unlocked_article_code=1.b04.gAmY.crNey8h19RYO&smid=nytcore-ios-share&referringSource=articleShare",
+        "sent_at": "2025-11-07T12:54:09.618Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/11/21/us/politics/pete-buttigieg-trump-democrats.html?unlocked_article_code=1.b04.gAmY.crNey8h19RYO&smid=nytcore-ios-share&referringSource=articleShare (not-found)"
+      },
+      {
+        "clip_id": "6ee26d3f-f6ee-42b1-9870-5cd69367841e",
+        "source_url": "https://asadaame5121.net/clippingshare/6ee26d3f-f6ee-42b1-9870-5cd69367841e",
+        "target_url": "https://www.washingtonpost.com/politics/2024/12/10/triumph-anti-identity-politics-identity-politics/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzMzODA2ODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM1MTg5MTk5LCJpYXQiOjE3MzM4MDY4MDAsImp0aSI6IjFlN2FmOWJmLWMwMjgtNDU0ZC05N2RiLTdmODgxMDU1MjU4ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI0LzEyLzEwL3RyaXVtcGgtYW50aS1pZGVudGl0eS1wb2xpdGljcy1pZGVudGl0eS1wb2xpdGljcy8ifQ.-4leB-_Q9is-y6YmrTobhUfFyGTe9NOjshE2g42P238",
+        "sent_at": "2025-11-07T12:54:16.290Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.washingtonpost.com/politics/2024/12/10/triumph-anti-identity-politics-identity-politics/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzMzODA2ODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM1MTg5MTk5LCJpYXQiOjE3MzM4MDY4MDAsImp0aSI6IjFlN2FmOWJmLWMwMjgtNDU0ZC05N2RiLTdmODgxMDU1MjU4ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI0LzEyLzEwL3RyaXVtcGgtYW50aS1pZGVudGl0eS1wb2xpdGljcy1pZGVudGl0eS1wb2xpdGljcy8ifQ.-4leB-_Q9is-y6YmrTobhUfFyGTe9NOjshE2g42P238 (error sending request from 10.1.0.129:53700 for https://www.washingtonpost.com/politics/2024/12/10/triumph-anti-identity-politics-identity-politics/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzMzODA2ODAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM1MTg5MTk5LCJpYXQiOjE3MzM4MDY4MDAsImp0aSI6IjFlN2FmOWJmLWMwMjgtNDU0ZC05N2RiLTdmODgxMDU1MjU4ZCIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9wb2xpdGljcy8yMDI0LzEyLzEwL3RyaXVtcGgtYW50aS1pZGVudGl0eS1wb2xpdGljcy1pZGVudGl0eS1wb2xpdGljcy8ifQ.-4leB-_Q9is-y6YmrTobhUfFyGTe9NOjshE2g42P238 (23.64.173.16:443): client error (SendRequest): http2 error: stream error received: unexpected internal error encountered)"
+      },
+      {
+        "clip_id": "dd4bee25-9d16-4811-9895-d08f1d96cd75",
+        "source_url": "https://asadaame5121.net/clippingshare/dd4bee25-9d16-4811-9895-d08f1d96cd75",
+        "target_url": "https://www.nytimes.com/2024/12/06/us/politics/trump-elon-musk-silicon-valley.html?unlocked_article_code=1.fk4.t4DI.b2jiZ0jkWFLe&smid=nytcore-ios-share&referringSource=articleShare",
+        "sent_at": "2025-11-07T12:54:22.398Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/06/us/politics/trump-elon-musk-silicon-valley.html?unlocked_article_code=1.fk4.t4DI.b2jiZ0jkWFLe&smid=nytcore-ios-share&referringSource=articleShare (not-found)"
+      },
+      {
+        "clip_id": "13f66ea1-f682-4706-be30-658ed9f1de87",
+        "source_url": "https://asadaame5121.net/clippingshare/13f66ea1-f682-4706-be30-658ed9f1de87",
+        "target_url": "https://quillette.com/2019/01/14/enlightenment-wars-some-reflections-on-enlightenment-now-one-year-later/",
+        "sent_at": "2025-11-07T12:54:29.064Z",
+        "status": "success",
+        "response_code": 202
+      },
+      {
+        "clip_id": "55f58469-a56d-4462-bcdf-bd762989cfa8",
+        "source_url": "https://asadaame5121.net/clippingshare/55f58469-a56d-4462-bcdf-bd762989cfa8",
+        "target_url": "https://www.nytimes.com/2025/03/21/sports/george-foreman-dead.html?unlocked_article_code=1.504.0UgN.EH0XkuBJd6Qr&smid=bs-share",
+        "sent_at": "2025-11-07T12:54:35.999Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2025/03/21/sports/george-foreman-dead.html?unlocked_article_code=1.504.0UgN.EH0XkuBJd6Qr&smid=bs-share (not-found)"
+      },
+      {
+        "clip_id": "03c36e4e-88d2-4ee3-8c15-b50c338ce34a",
+        "source_url": "https://asadaame5121.net/clippingshare/03c36e4e-88d2-4ee3-8c15-b50c338ce34a",
+        "target_url": "https://www.thetimes.com/article/581645cf-e4aa-483f-ac7a-d2d5d841b78b?shareToken=cbb35e487313af77515c19c4b2fb18bd",
+        "sent_at": "2025-11-07T12:54:42.307Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.thetimes.com/article/581645cf-e4aa-483f-ac7a-d2d5d841b78b?shareToken=cbb35e487313af77515c19c4b2fb18bd (not-found)"
+      },
+      {
+        "clip_id": "7366297b-1593-462f-964f-71f73680f4d2",
+        "source_url": "https://asadaame5121.net/clippingshare/7366297b-1593-462f-964f-71f73680f4d2",
+        "target_url": "https://www.nytimes.com/2024/12/24/books/review/finding-flaco-owl-photo-book.html?unlocked_article_code=1.j04.ZFJo.zwTahFAYxA1U&smid=bs-share",
+        "sent_at": "2025-11-07T12:54:50.256Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/24/books/review/finding-flaco-owl-photo-book.html?unlocked_article_code=1.j04.ZFJo.zwTahFAYxA1U&smid=bs-share (not-found)"
+      },
+      {
+        "clip_id": "e05f2026-9051-4cbe-b983-2cccd8b01b36",
+        "source_url": "https://asadaame5121.net/clippingshare/e05f2026-9051-4cbe-b983-2cccd8b01b36",
+        "target_url": "https://www.nytimes.com/2024/12/29/us/politics/jimmy-carter-dead.html?unlocked_article_code=1.lE4.Mw0A.Pg8pMCYL4jg2&smid=url-share",
+        "sent_at": "2025-11-07T12:54:56.659Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/29/us/politics/jimmy-carter-dead.html?unlocked_article_code=1.lE4.Mw0A.Pg8pMCYL4jg2&smid=url-share (not-found)"
+      },
+      {
+        "clip_id": "e67cb424-0733-4980-bdde-99d41d73e8f4",
+        "source_url": "https://asadaame5121.net/clippingshare/e67cb424-0733-4980-bdde-99d41d73e8f4",
+        "target_url": "https://www.economist.com/united-states/2024/12/12/luigi-mangiones-manifesto-reveals-his-hatred-of-insurance-companies?giftId=c838abb2-f4ce-4d44-bfa1-7f07c2c9a4b1&utm_campaign=gifted_article",
+        "sent_at": "2025-11-07T12:55:03.328Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.economist.com/united-states/2024/12/12/luigi-mangiones-manifesto-reveals-his-hatred-of-insurance-companies?giftId=c838abb2-f4ce-4d44-bfa1-7f07c2c9a4b1&utm_campaign=gifted_article (HTTP 403: Forbidden)"
+      },
+      {
+        "clip_id": "f9a4ce49-5de3-4fc0-8bbb-381149279bbe",
+        "source_url": "https://asadaame5121.net/clippingshare/f9a4ce49-5de3-4fc0-8bbb-381149279bbe",
+        "target_url": "https://www.washingtonpost.com/opinions/2024/12/26/trump-tariffs-worsen-inflation/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzM1MTg5MjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM2NTcxNTk5LCJpYXQiOjE3MzUxODkyMDAsImp0aSI6ImZjODdlNGNmLTI2MDAtNDM0OC1hOTgxLTFhZmJjMjQ2NDU3YSIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9vcGluaW9ucy8yMDI0LzEyLzI2L3RydW1wLXRhcmlmZnMtd29yc2VuLWluZmxhdGlvbi8ifQ.2ze3RS75QDz6znHHFYRjLkAPSrP6hlsWJOrx-RVTfnk",
+        "sent_at": "2025-11-07T12:55:09.638Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.washingtonpost.com/opinions/2024/12/26/trump-tariffs-worsen-inflation/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzM1MTg5MjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM2NTcxNTk5LCJpYXQiOjE3MzUxODkyMDAsImp0aSI6ImZjODdlNGNmLTI2MDAtNDM0OC1hOTgxLTFhZmJjMjQ2NDU3YSIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9vcGluaW9ucy8yMDI0LzEyLzI2L3RydW1wLXRhcmlmZnMtd29yc2VuLWluZmxhdGlvbi8ifQ.2ze3RS75QDz6znHHFYRjLkAPSrP6hlsWJOrx-RVTfnk (error sending request from 10.1.0.129:53700 for https://www.washingtonpost.com/opinions/2024/12/26/trump-tariffs-worsen-inflation/?pwapi_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZWFzb24iOiJnaWZ0IiwibmJmIjoxNzM1MTg5MjAwLCJpc3MiOiJzdWJzY3JpcHRpb25zIiwiZXhwIjoxNzM2NTcxNTk5LCJpYXQiOjE3MzUxODkyMDAsImp0aSI6ImZjODdlNGNmLTI2MDAtNDM0OC1hOTgxLTFhZmJjMjQ2NDU3YSIsInVybCI6Imh0dHBzOi8vd3d3Lndhc2hpbmd0b25wb3N0LmNvbS9vcGluaW9ucy8yMDI0LzEyLzI2L3RydW1wLXRhcmlmZnMtd29yc2VuLWluZmxhdGlvbi8ifQ.2ze3RS75QDz6znHHFYRjLkAPSrP6hlsWJOrx-RVTfnk (23.64.173.16:443): client error (SendRequest): http2 error: stream error received: unexpected internal error encountered)"
+      },
+      {
+        "clip_id": "dcb53cc4-3715-4a5c-81de-8dba4387b6c1",
+        "source_url": "https://asadaame5121.net/clippingshare/dcb53cc4-3715-4a5c-81de-8dba4387b6c1",
+        "target_url": "https://www.nytimes.com/2024/12/18/opinion/trump-liberals-resistance.html?unlocked_article_code=1.ik4.jCMw.LGQrqLm3bWVE&smid=url-share",
+        "sent_at": "2025-11-07T12:55:15.675Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/18/opinion/trump-liberals-resistance.html?unlocked_article_code=1.ik4.jCMw.LGQrqLm3bWVE&smid=url-share (not-found)"
+      },
+      {
+        "clip_id": "271f3e68-9837-4ce7-bccb-08fb39a96b0e",
+        "source_url": "https://asadaame5121.net/clippingshare/271f3e68-9837-4ce7-bccb-08fb39a96b0e",
+        "target_url": "https://www.nytimes.com/2024/12/19/opinion/faith-god-christianity.html?unlocked_article_code=1.jE4.bKhR.zCct3VH6eOgP&smid=url-share",
+        "sent_at": "2025-11-07T12:55:21.770Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/19/opinion/faith-god-christianity.html?unlocked_article_code=1.jE4.bKhR.zCct3VH6eOgP&smid=url-share (not-found)"
+      },
+      {
+        "clip_id": "96d95a7f-380c-49c7-bf47-61a868ea7c60",
+        "source_url": "https://asadaame5121.net/clippingshare/96d95a7f-380c-49c7-bf47-61a868ea7c60",
+        "target_url": "https://www.nytimes.com/2024/12/22/opinion/europe-germany-france-trump.html?unlocked_article_code=1.kU4.bk8O.k8CTdlH3cyFj&smid=nytcore-ios-share&referringSource=articleShare",
+        "sent_at": "2025-11-07T12:55:28.230Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/22/opinion/europe-germany-france-trump.html?unlocked_article_code=1.kU4.bk8O.k8CTdlH3cyFj&smid=nytcore-ios-share&referringSource=articleShare (not-found)"
+      },
+      {
+        "clip_id": "43eeefc4-47f8-42be-95f4-767579f626ac",
+        "source_url": "https://asadaame5121.net/clippingshare/43eeefc4-47f8-42be-95f4-767579f626ac",
+        "target_url": "https://www.nytimes.com/2025/02/09/opinion/transgender-trump-orders.html?unlocked_article_code=1.v04.1-3q.i9gkm8wm4qy9&smid=url-share",
+        "sent_at": "2025-11-07T12:55:34.325Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2025/02/09/opinion/transgender-trump-orders.html?unlocked_article_code=1.v04.1-3q.i9gkm8wm4qy9&smid=url-share (not-found)"
+      },
+      {
+        "clip_id": "12f81bbf-aa49-4d36-a27f-d8a9aa5ee60d",
+        "source_url": "https://asadaame5121.net/clippingshare/12f81bbf-aa49-4d36-a27f-d8a9aa5ee60d",
+        "target_url": "https://www.theguardian.com/commentisfree/2024/dec/30/donald-trump-elon-musk-genetics-science-right",
+        "sent_at": "2025-11-07T12:55:40.420Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.theguardian.com/commentisfree/2024/dec/30/donald-trump-elon-musk-genetics-science-right (not-found)"
+      },
+      {
+        "clip_id": "002d9dc0-1c3c-4498-8a9a-c647e8bb346a",
+        "source_url": "https://asadaame5121.net/clippingshare/002d9dc0-1c3c-4498-8a9a-c647e8bb346a",
+        "target_url": "https://www.nytimes.com/2025/01/11/us/tulsa-race-massacre-report.html?unlocked_article_code=1.oU4.TEOz.fQYoQ9jIRDyb&smid=nytcore-ios-share&referringSource=articleShare",
+        "sent_at": "2025-11-07T12:55:46.770Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2025/01/11/us/tulsa-race-massacre-report.html?unlocked_article_code=1.oU4.TEOz.fQYoQ9jIRDyb&smid=nytcore-ios-share&referringSource=articleShare (not-found)"
+      },
+      {
+        "clip_id": "d8c88b82-d3a1-4858-a9ee-95b867b7fc02",
+        "source_url": "https://asadaame5121.net/clippingshare/d8c88b82-d3a1-4858-a9ee-95b867b7fc02",
+        "target_url": "https://www.oclc.org/developer/api/oclc-apis/viaf.en.html",
+        "sent_at": "2025-11-07T12:55:53.204Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.oclc.org/developer/api/oclc-apis/viaf.en.html (not-found)"
+      },
+      {
+        "clip_id": "89c01726-d6bc-43ed-ae5c-b9755a2b4469",
+        "source_url": "https://asadaame5121.net/clippingshare/89c01726-d6bc-43ed-ae5c-b9755a2b4469",
+        "target_url": "https://www.nytimes.com/2025/01/05/us/politics/january-6-capitol-riot-trump.html?unlocked_article_code=1.vU4.Nwih.gknVldzlg88a&smid=url-share",
+        "sent_at": "2025-11-07T12:55:59.692Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2025/01/05/us/politics/january-6-capitol-riot-trump.html?unlocked_article_code=1.vU4.Nwih.gknVldzlg88a&smid=url-share (not-found)"
+      },
+      {
+        "clip_id": "8acb61eb-b639-4966-9ad8-8d1d129bbf88",
+        "source_url": "https://asadaame5121.net/clippingshare/8acb61eb-b639-4966-9ad8-8d1d129bbf88",
+        "target_url": "https://togetter.com/li/2472403",
+        "sent_at": "2025-11-07T12:56:06.341Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://togetter.com/li/2472403 (not-found)"
+      },
+      {
+        "clip_id": "195eacbb-b9eb-4ab6-9b1b-8c84dc98edf6",
+        "source_url": "https://asadaame5121.net/clippingshare/195eacbb-b9eb-4ab6-9b1b-8c84dc98edf6",
+        "target_url": "https://www.sankei.com/article/20241026-KYBUOIFN5BKAHCP3G4JLPFCNTI/?outputType=theme_portrait",
+        "sent_at": "2025-11-07T12:56:13.209Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.sankei.com/article/20241026-KYBUOIFN5BKAHCP3G4JLPFCNTI/?outputType=theme_portrait (not-found)"
+      },
+      {
+        "clip_id": "d3a96544-520c-4842-ad6c-b2c0d04c4cc0",
+        "source_url": "https://asadaame5121.net/clippingshare/d3a96544-520c-4842-ad6c-b2c0d04c4cc0",
+        "target_url": "https://tadachi.txt-nifty.com/blog/2022/10/post-973c73.html",
+        "sent_at": "2025-11-07T12:56:21.194Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://tadachi.txt-nifty.com/blog/2022/10/post-973c73.html (not-found)"
+      },
+      {
+        "clip_id": "7d11aeb2-5c67-49a1-9268-e48704f41b16",
+        "source_url": "https://asadaame5121.net/clippingshare/7d11aeb2-5c67-49a1-9268-e48704f41b16",
+        "target_url": "https://hagamag.com/uncategory/4293",
+        "sent_at": "2025-11-07T12:56:27.957Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://hagamag.com/uncategory/4293 (not-found)"
+      },
+      {
+        "clip_id": "e45a16b6-7f7b-4699-ab76-603443af0f08",
+        "source_url": "https://asadaame5121.net/clippingshare/e45a16b6-7f7b-4699-ab76-603443af0f08",
+        "target_url": "https://tennenseikatsu.jp/_ct/17738586",
+        "sent_at": "2025-11-07T12:56:34.975Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://tennenseikatsu.jp/_ct/17738586 (not-found)"
+      },
+      {
+        "clip_id": "c9587943-909a-47b9-baa8-12f94a0fbf91",
+        "source_url": "https://asadaame5121.net/clippingshare/c9587943-909a-47b9-baa8-12f94a0fbf91",
+        "target_url": "https://ytakahashi0505.hatenablog.com/entry/2019/09/05/183654",
+        "sent_at": "2025-11-07T12:56:43.799Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://ytakahashi0505.hatenablog.com/entry/2019/09/05/183654 (not-found)"
+      },
+      {
+        "clip_id": "2f1c68c3-750c-4cce-a38b-4ab2a85f745c",
+        "source_url": "https://asadaame5121.net/clippingshare/2f1c68c3-750c-4cce-a38b-4ab2a85f745c",
+        "target_url": "https://nattogohan-suki.hatenablog.com/entry/2019/11/08/125903",
+        "sent_at": "2025-11-07T12:56:50.919Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://nattogohan-suki.hatenablog.com/entry/2019/11/08/125903 (not-found)"
+      },
+      {
+        "clip_id": "4639a6c9-224b-4c0f-9ee1-e3826b3901cf",
+        "source_url": "https://asadaame5121.net/clippingshare/4639a6c9-224b-4c0f-9ee1-e3826b3901cf",
+        "target_url": "https://www.itmedia.co.jp/news/spv/2411/29/news026.html",
+        "sent_at": "2025-11-07T12:56:57.823Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.itmedia.co.jp/news/spv/2411/29/news026.html (not-found)"
+      },
+      {
+        "clip_id": "0350bb56-679f-4036-b047-b6556ba65906",
+        "source_url": "https://asadaame5121.net/clippingshare/0350bb56-679f-4036-b047-b6556ba65906",
+        "target_url": "https://www.nytimes.com/interactive/2024/12/18/climate/insurance-non-renewal-climate-crisis.html?unlocked_article_code=1.jE4.lNsl.WilUxKWri2gP&smid=nytcore-ios-share&referringSource=articleShare&tgrp=on",
+        "sent_at": "2025-11-07T12:57:04.775Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/interactive/2024/12/18/climate/insurance-non-renewal-climate-crisis.html?unlocked_article_code=1.jE4.lNsl.WilUxKWri2gP&smid=nytcore-ios-share&referringSource=articleShare&tgrp=on (not-found)"
+      },
+      {
+        "clip_id": "e7b845e4-19dc-49ee-ae3a-ce0c4e0daeb2",
+        "source_url": "https://asadaame5121.net/clippingshare/e7b845e4-19dc-49ee-ae3a-ce0c4e0daeb2",
+        "target_url": "https://www.nytimes.com/2024/12/01/health/nih-trump-kennedy-bhattacharya.html?unlocked_article_code=1.eU4.pd3-.WIzKYj8lDU9M&smid=url-share",
+        "sent_at": "2025-11-07T12:57:11.234Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/01/health/nih-trump-kennedy-bhattacharya.html?unlocked_article_code=1.eU4.pd3-.WIzKYj8lDU9M&smid=url-share (not-found)"
+      },
+      {
+        "clip_id": "4e9b0aad-24fe-456c-9490-4f98716babf2",
+        "source_url": "https://asadaame5121.net/clippingshare/4e9b0aad-24fe-456c-9490-4f98716babf2",
+        "target_url": "https://www.ft.com/content/cfbfa1e8-d8f8-42b9-b74c-dae6cc6185a0?accessToken=zwAGKdHEqmkwkdPPv6Ho2PhCudO3TNrmzGGFoA.MEQCIA3h79YXDdcwW1XGH6QelD2ZvifwTUhkRcrmvjgonjUaAiBks4VrNidmmbGBTFHWFk8ryyRmrB4xcjdv59PK6N5l8g&sharetype=gift&token=eb57abd5-ea40-4e4c-9508-277bb72d5173",
+        "sent_at": "2025-11-07T12:57:17.331Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.ft.com/content/cfbfa1e8-d8f8-42b9-b74c-dae6cc6185a0?accessToken=zwAGKdHEqmkwkdPPv6Ho2PhCudO3TNrmzGGFoA.MEQCIA3h79YXDdcwW1XGH6QelD2ZvifwTUhkRcrmvjgonjUaAiBks4VrNidmmbGBTFHWFk8ryyRmrB4xcjdv59PK6N5l8g&sharetype=gift&token=eb57abd5-ea40-4e4c-9508-277bb72d5173 (not-found)"
+      },
+      {
+        "clip_id": "52a035d2-da0b-471f-bdef-d217e519b77c",
+        "source_url": "https://asadaame5121.net/clippingshare/52a035d2-da0b-471f-bdef-d217e519b77c",
+        "target_url": "https://www.nytimes.com/2024/12/09/opinion/elites-euro-social-media.html?unlocked_article_code=1.jU4.YGsX.geR43TP9RUlv&smid=nytcore-ios-share&referringSource=articleShare",
+        "sent_at": "2025-11-07T12:57:23.821Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.nytimes.com/2024/12/09/opinion/elites-euro-social-media.html?unlocked_article_code=1.jU4.YGsX.geR43TP9RUlv&smid=nytcore-ios-share&referringSource=articleShare (not-found)"
+      },
+      {
+        "clip_id": "d5842fe2-367b-4bf5-92e8-99360ac30fb1",
+        "source_url": "https://asadaame5121.net/clippingshare/d5842fe2-367b-4bf5-92e8-99360ac30fb1",
+        "target_url": "https://forbesjapan.com/articles/detail/64649?read_more=1",
+        "sent_at": "2025-11-07T12:57:29.923Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://forbesjapan.com/articles/detail/64649?read_more=1 (not-found)"
+      },
+      {
+        "clip_id": "5e53499a-7fc8-463d-beae-36b44f1f332e",
+        "source_url": "https://asadaame5121.net/clippingshare/5e53499a-7fc8-463d-beae-36b44f1f332e",
+        "target_url": "https://time.com/7173617/kamala-harris-concession-speech-full-transcript/",
+        "sent_at": "2025-11-07T12:57:36.904Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://time.com/7173617/kamala-harris-concession-speech-full-transcript/ (not-found)"
+      },
+      {
+        "clip_id": "65e89fdc-ca56-42b3-977b-7db550590cc3",
+        "source_url": "https://asadaame5121.net/clippingshare/65e89fdc-ca56-42b3-977b-7db550590cc3",
+        "target_url": "https://topics.smt.docomo.ne.jp/article/book_asahi/trend/book_asahi-15408143?redirect=1",
+        "sent_at": "2025-11-07T12:57:43.450Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://topics.smt.docomo.ne.jp/article/book_asahi/trend/book_asahi-15408143?redirect=1 (HTTP 404: Not Found)"
+      },
+      {
+        "clip_id": "f81a133c-e888-4e1f-9c94-f3dc9ec4a945",
+        "source_url": "https://asadaame5121.net/clippingshare/f81a133c-e888-4e1f-9c94-f3dc9ec4a945",
+        "target_url": "https://web.kawade.co.jp/bungei/2313/",
+        "sent_at": "2025-11-07T12:57:50.314Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://web.kawade.co.jp/bungei/2313/ (not-found)"
+      },
+      {
+        "clip_id": "a37bbbb3-61c1-4efd-a5d4-56b11b9514c7",
+        "source_url": "https://asadaame5121.net/clippingshare/a37bbbb3-61c1-4efd-a5d4-56b11b9514c7",
+        "target_url": "https://nejimaki-radio.com/micro-blog-book-philosophy-fediverse-activitypub/",
+        "sent_at": "2025-11-07T12:57:58.758Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://nejimaki-radio.com/micro-blog-book-philosophy-fediverse-activitypub/ (not-found)"
+      },
+      {
+        "clip_id": "b1d9a8ac-fefc-4623-847f-ed3043a7a0d3",
+        "source_url": "https://asadaame5121.net/clippingshare/b1d9a8ac-fefc-4623-847f-ed3043a7a0d3",
+        "target_url": "https://tadachi.txt-nifty.com/blog/2023/11/post-039217.html",
+        "sent_at": "2025-11-07T12:58:06.127Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://tadachi.txt-nifty.com/blog/2023/11/post-039217.html (not-found)"
+      },
+      {
+        "clip_id": "74c45294-4719-4235-a3db-23bd7e780e40",
+        "source_url": "https://asadaame5121.net/clippingshare/74c45294-4719-4235-a3db-23bd7e780e40",
+        "target_url": "https://digital.asahi.com/sp/articles/DA3S16085863.html?ptoken=01JE2PTPB3S9MJT78MBFBCMY99",
+        "sent_at": "2025-11-07T12:58:12.863Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16085863.html?ptoken=01JE2PTPB3S9MJT78MBFBCMY99 (not-found)"
+      },
+      {
+        "clip_id": "74795a90-21f7-4cc6-ab9c-5d59a33c1f6f",
+        "source_url": "https://asadaame5121.net/clippingshare/74795a90-21f7-4cc6-ab9c-5d59a33c1f6f",
+        "target_url": "https://www.arcdigital.media/p/dont-let-the-enemies-of-truth-ruin",
+        "sent_at": "2025-11-07T12:58:19.863Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.arcdigital.media/p/dont-let-the-enemies-of-truth-ruin (not-found)"
+      },
+      {
+        "clip_id": "23e45501-c686-45d2-8771-1167a1d835ee",
+        "source_url": "https://asadaame5121.net/clippingshare/23e45501-c686-45d2-8771-1167a1d835ee",
+        "target_url": "https://www.theatlantic.com/newsletters/archive/2024/11/books-briefing-gen-z-reading-books-waste-time/680586/?gift=NX91pXe_h9-jpMCTAKKndty65e7pWc3ow1FucIBUtZs&utm_source=copy-link&utm_medium=social&utm_campaign=share",
+        "sent_at": "2025-11-07T12:58:26.633Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.theatlantic.com/newsletters/archive/2024/11/books-briefing-gen-z-reading-books-waste-time/680586/?gift=NX91pXe_h9-jpMCTAKKndty65e7pWc3ow1FucIBUtZs&utm_source=copy-link&utm_medium=social&utm_campaign=share (not-found)"
+      },
+      {
+        "clip_id": "fe3792d6-36a8-46c2-bc68-051b09097772",
+        "source_url": "https://asadaame5121.net/clippingshare/fe3792d6-36a8-46c2-bc68-051b09097772",
+        "target_url": "https://hagamag.com/uncategory/3529",
+        "sent_at": "2025-11-07T12:58:33.333Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://hagamag.com/uncategory/3529 (not-found)"
+      },
+      {
+        "clip_id": "6aa3961a-28d4-4ffa-b2a3-3d270f3b2c54",
+        "source_url": "https://asadaame5121.net/clippingshare/6aa3961a-28d4-4ffa-b2a3-3d270f3b2c54",
+        "target_url": "https://game8.jp/pokemonsleep/542649",
+        "sent_at": "2025-11-07T12:58:40.232Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://game8.jp/pokemonsleep/542649 (not-found)"
+      },
+      {
+        "clip_id": "67bfb6e4-7c7a-4422-96f6-aa29da8cad19",
+        "source_url": "https://asadaame5121.net/clippingshare/67bfb6e4-7c7a-4422-96f6-aa29da8cad19",
+        "target_url": "https://gendai.media/articles/-/141776?page=1&imp=0",
+        "sent_at": "2025-11-07T12:58:46.778Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://gendai.media/articles/-/141776?page=1&imp=0 (not-found)"
+      },
+      {
+        "clip_id": "8019fcd9-ffef-41b8-8d62-4c97e9df6fc7",
+        "source_url": "https://asadaame5121.net/clippingshare/8019fcd9-ffef-41b8-8d62-4c97e9df6fc7",
+        "target_url": "https://digital.asahi.com/sp/articles/DA3S16148039.html?ptoken=01JKY7TQQ2N2JPFC5TF5Y8TGE4",
+        "sent_at": "2025-11-07T12:58:53.283Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16148039.html?ptoken=01JKY7TQQ2N2JPFC5TF5Y8TGE4 (not-found)"
+      },
+      {
+        "clip_id": "e25d176e-89ec-4958-973a-86bda5d26fb9",
+        "source_url": "https://asadaame5121.net/clippingshare/e25d176e-89ec-4958-973a-86bda5d26fb9",
+        "target_url": "https://digital.asahi.com/sp/articles/DA3S16114429.html?ptoken=01JFZWH89WYECA07787RSW0659",
+        "sent_at": "2025-11-07T12:58:59.956Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/DA3S16114429.html?ptoken=01JFZWH89WYECA07787RSW0659 (not-found)"
+      },
+      {
+        "clip_id": "3f2a1882-4596-42e4-8c83-1eb86e1814e3",
+        "source_url": "https://asadaame5121.net/clippingshare/3f2a1882-4596-42e4-8c83-1eb86e1814e3",
+        "target_url": "https://stackoverflow.com/questions/45829540/how-to-code-an-app-that-blocks-other-apps-from-launching-for-a-certain-time-usin",
+        "sent_at": "2025-11-07T12:59:06.659Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://stackoverflow.com/questions/45829540/how-to-code-an-app-that-blocks-other-apps-from-launching-for-a-certain-time-usin (not-found)"
+      },
+      {
+        "clip_id": "1cd46430-d123-4efc-a812-038e819ff412",
+        "source_url": "https://asadaame5121.net/clippingshare/1cd46430-d123-4efc-a812-038e819ff412",
+        "target_url": "https://www.tkskkd.com/2020/indieweb%E3%82%92%E3%81%AF%E3%81%97%E3%82%81%E3%81%A6%E3%81%BF%E3%81%9F-1",
+        "sent_at": "2025-11-07T12:59:12.944Z",
+        "status": "failed",
+        "response_code": 400,
+        "error_message": "HTTP 400: {\"error\":\"no_link_found\",\"error_text\":\"The source URI does not contain a link to the target URI.\"}"
+      },
+      {
+        "clip_id": "6afb8e6e-17b1-44d0-87cd-cf286ef420d6",
+        "source_url": "https://asadaame5121.net/clippingshare/6afb8e6e-17b1-44d0-87cd-cf286ef420d6",
+        "target_url": "https://wirelesswire.jp/2025/06/88810/",
+        "sent_at": "2025-11-07T13:01:21.592Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://wirelesswire.jp/2025/06/88810/ (not-found)"
+      },
+      {
+        "clip_id": "bf5d73f3-5127-422d-b9b4-02f113f84252",
+        "source_url": "https://asadaame5121.net/clippingshare/bf5d73f3-5127-422d-b9b4-02f113f84252",
+        "target_url": "https://localghost.dev/blog/sending-webmentions-from-a-static-site/",
+        "sent_at": "2025-11-07T13:01:28.435Z",
+        "status": "success",
+        "response_code": 201
+      },
+      {
+        "clip_id": "4f24e788-d01e-4848-bc6b-1ef16a1d4b46",
+        "source_url": "https://asadaame5121.net/clippingshare/4f24e788-d01e-4848-bc6b-1ef16a1d4b46",
+        "target_url": "https://edition.cnn.com/2025/07/16/politics/trump-manosphere-theo-von?utm_medium=social&utm_source=blueskyCNN&utm_content=2025-07-16T11:08:57",
+        "sent_at": "2025-11-07T13:01:35.796Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://edition.cnn.com/2025/07/16/politics/trump-manosphere-theo-von?utm_medium=social&utm_source=blueskyCNN&utm_content=2025-07-16T11:08:57 (not-found)"
+      },
+      {
+        "clip_id": "9ff33d66-1493-4b7a-9d28-7dc435601922",
+        "source_url": "https://asadaame5121.net/clippingshare/9ff33d66-1493-4b7a-9d28-7dc435601922",
+        "target_url": "https://note.com/noobie1920/n/na35bdf5874d5",
+        "sent_at": "2025-11-07T13:01:42.578Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://note.com/noobie1920/n/na35bdf5874d5 (not-found)"
+      },
+      {
+        "clip_id": "a6f2a9ff-28d4-4ef5-bff3-66a59dfe5bb6",
+        "source_url": "https://asadaame5121.net/clippingshare/a6f2a9ff-28d4-4ef5-bff3-66a59dfe5bb6",
+        "target_url": "https://note.com/simpleway/n/n430c35e3afcd",
+        "sent_at": "2025-11-07T13:01:49.165Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://note.com/simpleway/n/n430c35e3afcd (not-found)"
+      },
+      {
+        "clip_id": "def90c6a-88bb-4e17-926e-b942eca490fe",
+        "source_url": "https://asadaame5121.net/clippingshare/def90c6a-88bb-4e17-926e-b942eca490fe",
+        "target_url": "https://mainichi.jp/articles/20250715/k00/00m/010/230000c",
+        "sent_at": "2025-11-07T13:01:55.562Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://mainichi.jp/articles/20250715/k00/00m/010/230000c (not-found)"
+      },
+      {
+        "clip_id": "7a880ebc-1e23-41be-a134-266595bcad26",
+        "source_url": "https://asadaame5121.net/clippingshare/7a880ebc-1e23-41be-a134-266595bcad26",
+        "target_url": "https://sugawarataku.theletter.jp/posts/fe86bda0-64e1-11f0-a647-937666d212e1?utm_medium=email&utm_source=newsletter&utm_campaign=fe86bda0-64e1-11f0-a647-937666d212e1",
+        "sent_at": "2025-11-07T13:02:03.971Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://sugawarataku.theletter.jp/posts/fe86bda0-64e1-11f0-a647-937666d212e1?utm_medium=email&utm_source=newsletter&utm_campaign=fe86bda0-64e1-11f0-a647-937666d212e1 (not-found)"
+      },
+      {
+        "clip_id": "2f1eb15b-f764-4395-aa7b-7c43a758e2fc",
+        "source_url": "https://asadaame5121.net/clippingshare/2f1eb15b-f764-4395-aa7b-7c43a758e2fc",
+        "target_url": "https://digital.asahi.com/sp/articles/AST7C2C1LT7CUCVL02PM.html?ptoken=01K08XVF3AWD66313STE94XKSX",
+        "sent_at": "2025-11-07T13:02:11.039Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://digital.asahi.com/sp/articles/AST7C2C1LT7CUCVL02PM.html?ptoken=01K08XVF3AWD66313STE94XKSX (not-found)"
+      },
+      {
+        "clip_id": "2f0f6ff2-e8a2-4371-aca3-4be2ab5d7b90",
+        "source_url": "https://asadaame5121.net/clippingshare/2f0f6ff2-e8a2-4371-aca3-4be2ab5d7b90",
+        "target_url": "https://www.msz.co.jp/book/upcoming/",
+        "sent_at": "2025-11-07T13:02:18.348Z",
+        "status": "failed",
+        "error_message": "Webmentionエンドポイントが見つかりません: https://www.msz.co.jp/book/upcoming/ (not-found)"
       }
     ],
     "blog_updates": [
@@ -5353,6 +6969,22 @@
         "title": "なぜ私たちは、喜んで“資本主義の奴隷”になるのか？",
         "target_url": "https://fed.brid.gy/",
         "sent_at": "2025-11-05T12:37:31.959Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1762518973262",
+        "source_url": "https://asadaame5121.net/Book/%E9%A3%9F%E3%81%B9%E3%82%8B(%E6%9B%B8%E7%B1%8D).html",
+        "title": "食べる(書籍)",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-11-07T12:36:13.262Z",
+        "status": "success"
+      },
+      {
+        "entry_id": "blog-1762518974736",
+        "source_url": "https://asadaame5121.net/Book/7%E3%81%A4%E3%81%AE%E5%AE%89%E3%81%84%E3%83%A2%E3%83%8E%E3%81%8B%E3%82%89%E8%A6%8B%E3%82%8B%E4%B8%96%E7%95%8C%E3%81%AE%E6%AD%B4%E5%8F%B2.html",
+        "title": "7つの安いモノから見る世界の歴史",
+        "target_url": "https://fed.brid.gy/",
+        "sent_at": "2025-11-07T12:36:14.736Z",
         "status": "success"
       }
     ]
