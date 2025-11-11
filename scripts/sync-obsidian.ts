@@ -67,6 +67,7 @@ async function copyMarkdownIfDraftFalse(srcDir: string, destDir: string, errorLo
                 const pngName = entry.name.replace(/\.md$/, ".png");
                 frontmatter.metas.image = `${baseUrl}${join("/", relDir, pngName)}`;
               }
+              
             }
             // Obsidian側frontmatterでmetasも含めて常に上書き
             const newYaml = stringify(frontmatter);
